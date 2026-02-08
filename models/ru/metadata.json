@@ -1,0 +1,12 @@
+{
+  "version": "2026-02-08T04:25:31Z",
+  "url": "converted:/Users/mulgogi/.kotoshu/models/ru/models/fasttext/cc.ru.300.vec",
+  "language": "ru",
+  "type": "onnx",
+  "file": "fasttext.ru.onnx",
+  "checksum": "9cb6b90cd45eca46d2c9b7ae07e67fbb512c39ddaac9f57c80294947b169bfd6",
+  "cached_at": "2026-02-08T04:25:31Z",
+  "source_model": "cc.ru.300.vec",
+  "conversion_method": "fasttext_to_onnx.py",
+  "opset_version": 11
+}

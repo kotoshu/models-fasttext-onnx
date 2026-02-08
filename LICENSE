@@ -1,0 +1,35 @@
+Creative Commons Attribution-ShareAlike 3.0 Unported
+
+Copyright (c) 2026 Kotoshu Project
+
+This work is based on the FastText pretrained word vectors, which are licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+Original FastText vectors available at: https://fasttext.cc/docs/en/crawl-vectors.html
+
+The ONNX conversion and additional tooling are also licensed under CC-BY-SA 3.0.
+
+---
+
+ATTRIBUTION NOTICE:
+
+These models are derived from the FastText pretrained word vectors,
+which were trained on Common Crawl data by Facebook AI Research.
+
+If you use these models, please cite:
+
+@inproceedings{bojar-2018-find,
+    title = "Findings of the 2018 Conference on Machine Translation ({WMT}18)",
+    author = "Bojar, Ond{\v{r}}ej  and
+      Federmann, Christian  and
+      Fishel, Mark  and
+      Graham, Yvette  and
+      Haddow, Barry  and
+      Huck, Matthias  and
+      Koehn, Philipp",
+    booktitle = "Proceedings of the Third Conference on Machine Translation",
+    month = oct,
+    year = "2018",
+    address = "Belgium, Brussels",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W18-6401",
+}
