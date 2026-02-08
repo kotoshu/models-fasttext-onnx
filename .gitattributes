@@ -1,0 +1,10 @@
+# Git LFS configuration for large files
+# All ONNX models are stored with Git LFS
+
+*.onnx filter=lfs diff=lfs merge=lfs -text
+*.vec filter=lfs diff=lfs merge=lfs -text
+*.vec.gz filter=lfs diff=lfs merge=lfs -text
+
+# Lock files (prevent concurrent modifications)
+*.onnx lock
+*.vec lock
