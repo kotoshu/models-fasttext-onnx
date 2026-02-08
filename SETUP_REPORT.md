@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Successfully created a new dedicated repository **kotoshu/fasttext-onnx-models** containing all 6 FastText ONNX models (de, en, es, fr, pt, ru) with full Git LFS support, comprehensive documentation, and testing infrastructure.
+Successfully created a new dedicated repository **kotoshu/models-fasttext-onnx** containing all 6 FastText ONNX models (de, en, es, fr, pt, ru) with full Git LFS support, comprehensive documentation, and testing infrastructure.
 
 ---
 
@@ -50,16 +50,16 @@ When running `kotoshu check examples/test-01-test.md`, the system:
 
 ## Part 2: New Repository Setup
 
-### Repository: kotoshu/fasttext-onnx-models
+### Repository: kotoshu/models-fasttext-onnx
 
 #### Location
 ```
-/Users/mulgogi/src/kotoshu/fasttext-onnx-models
+/Users/mulgogi/src/kotoshu/models-fasttext-onnx
 ```
 
 #### Structure
 ```
-fasttext-onnx-models/
+models-fasttext-onnx/
 ├── .gitattributes          # Git LFS configuration
 ├── .gitignore             # Ignore patterns
 ├── LICENSE                # CC-BY-SA 3.0
@@ -137,14 +137,14 @@ Date:   Sat Feb 8 16:05:00 2026
 ```bash
 # Create GitHub repository first:
 # 1. Go to https://github.com/new
-# 2. Name: fasttext-onnx-models
+# 2. Name: models-fasttext-onnx
 # 3. Description: FastText word embedding models in ONNX format for Kotoshu spell checker
 # 4. Initialize with README (we'll replace it)
 # 5. IMPORTANT: Enable Git LFS for large files
 
 # Add remote and push
-cd /Users/mulgogi/src/kotoshu/fasttext-onnx-models
-git remote add origin git@github.com:kotoshu/fasttext-onnx-models.git
+cd /Users/mulgogi/src/kotoshu/models-fasttext-onnx
+git remote add origin git@github.com:kotoshu/models-fasttext-onnx.git
 git branch -M main
 git push -u origin main
 
@@ -188,7 +188,7 @@ This would require:
 ### Test Models in New Repository
 
 ```bash
-cd /Users/mulgogi/src/kotoshu/fasttext-onnx-models
+cd /Users/mulgogi/src/kotoshu/models-fasttext-onnx
 
 # Test all models
 ruby scripts/verify_all_models.rb
@@ -214,7 +214,7 @@ bundle exec exe/kotoshu cache status
 ## Summary
 
 ✅ **Completed**:
-- Created new repository: kotoshu/fasttext-onnx-models
+- Created new repository: kotoshu/models-fasttext-onnx
 - Added all 6 ONNX models with metadata
 - Set up Git LFS for large files
 - Created comprehensive documentation
