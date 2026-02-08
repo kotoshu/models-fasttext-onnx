@@ -27,8 +27,8 @@ pip install onnx onnxruntime numpy
 
 ```bash
 # Clone with Git LFS (required for large model files)
-git clone https://github.com/kotoshu/fasttext-onnx-models.git
-cd fasttext-onnx-models
+git clone https://github.com/kotoshu/models-fasttext-onnx.git
+cd models-fasttext-onnx
 git lfs install
 git lfs pull
 ```

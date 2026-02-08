@@ -145,12 +145,12 @@ onnx_path = cache.get_onnx_model('de')
 
 ```bash
 # Using Git LFS
-git clone https://github.com/kotoshu/fasttext-onnx-models.git
-cd fasttext-onnx-models
+git clone https://github.com/kotoshu/models-fasttext-onnx.git
+cd models-fasttext-onnx
 git lfs pull
 
 # Download specific model
-wget https://github.com/kotoshu/fasttext-onnx-models/raw/main/models/en/fasttext.en.onnx
+wget https://github.com/kotoshu/models-fasttext-onnx/raw/main/models/en/fasttext.en.onnx
 ```
 
 ## Building from Source
