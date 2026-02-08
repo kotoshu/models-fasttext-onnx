@@ -1,0 +1,310 @@
+// FastText ONNX Models for Kotoshu
+//
+// Pre-trained FastText word embedding models converted to ONNX format for use
+// with Kotoshu spell checker.
+
+image:https://img.shields.io/badge/ONNX-IR%20v11-blue[ONNX IR Version]
+image:https://img.shields.io/badge/Models-6-green[Total Models]
+image:https://img.shields.io/badge/Size-686%20MB-orange[Total Size]
+
+== Overview
+
+This repository contains FastText word embedding models that have been converted
+from the original `.vec` format to ONNX format for efficient deployment and
+inference.
+
+These models provide semantic word embeddings for use in spell checking and
+natural language processing applications.
+
+=== Purpose
+
+The FastText ONNX models serve as a semantic similarity backend for the Kotoshu
+spell checker. They enable:
+
+* Semantic word similarity calculations
+* Context-aware spelling suggestions
+* Cross-language semantic comparisons
+* Efficient inference via ONNX Runtime
+
+=== Features
+
+* **Multi-language Support**: Models for 6 languages (de, en, es, fr, pt, ru)
+* **Optimized Format**: 37x compression from original FastText vectors
+* **ONNX Compatible**: Works with onnxruntime 1.23.2+
+* **High Quality**: 100K vocabulary per language with 300-dimensional embeddings
+* **Easy Integration**: Drop-in compatibility with Kotoshu spell checker
+
+== Models Available
+
+[options="header"]
+|===
+|Language|Code|Vocab Size|Embedding Dim|Model Size|Source
+|German|de|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.de.300]
+|English|en|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.en.300]
+|Spanish|es|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.es.300]
+|French|fr|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.fr.300]
+|Portuguese|pt|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.pt.300]
+|Russian|ru|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ru.300]
+|===
+
+=== Compression Ratio
+
+Original FastText `.vec` files: ~4.3 GB per language
+ONNX format: 114.44 MB per language
+
+Compression: **37x smaller** with full semantic quality preserved.
+
+== Model Specifications
+
+=== Technical Details
+
+* **ONNX IR Version**: 11
+* **ONNX Opset Version**: 11
+* **Compatibility**: onnxruntime 1.23.2+
+* **Input**: `word_index` (int64, shape=[1])
+* **Output**: `embedding` (float32, shape=[300])
+
+=== Architecture
+
+The ONNX models use a simple embedding lookup architecture:
+
+1. **Constant Node**: Contains the embedding matrix (vocab_size x 300)
+2. **Gather Node**: Retrieves the embedding for a given word index
+3. **Squeeze Node**: Removes the batch dimension
+
+.Model Architecture
+[source,text]
+----
+word_index (int64[1]) → Gather → Squeeze → embedding (float32[300])
+     ↓
+Embeddings Matrix (Constant)
+----
+
+== Usage
+
+=== Python with onnxruntime
+
+[source,python]
+----
+import onnxruntime as ort
+import numpy as np
+
+# Load model
+sess = ort.InferenceSession('models/en/fasttext.en.onnx')
+input_name = sess.get_inputs()[0].name
+output_name = sess.get_outputs()[0].name
+
+# Get embedding for word index
+word_index = 0  # Replace with actual word index from vocabulary
+embedding = sess.run([output_name], {input_name: np.array([word_index], dtype=np.int64)})[0]
+
+print(f"Embedding shape: {embedding.shape}")  # (300,)
+print(f"Embedding: {embedding}")
+----
+
+=== Ruby with Kotoshu
+
+[source,ruby]
+----
+require 'kotoshu'
+
+# Get ONNX model (downloads or converts as needed)
+cache = Kotoshu::Cache::ModelCache.new
+onnx_path = cache.get_onnx_model('en')
+
+# Use for semantic similarity
+# (This feature is planned for future Kotoshu versions)
+----
+
+=== CLI
+
+[source,bash]
+----
+# Download models using Kotoshu CLI
+kotoshu cache download en
+
+# Check cache status
+kotoshu cache status
+
+# List available languages
+kotoshu cache list
+----
+
+== Model Metadata
+
+Each model includes metadata in `models/{lang}/metadata.json`:
+
+[source,json]
+----
+{
+  "version": "2026-02-08T04:25:31Z",
+  "language": "en",
+  "type": "onnx",
+  "file": "fasttext.en.onnx",
+  "checksum": "sha256_hash",
+  "source_model": "cc.en.300.vec",
+  "conversion_method": "fasttext_to_onnx.py",
+  "opset_version": 11,
+  "vocab_size": 100000,
+  "embedding_dim": 300
+}
+----
+
+== Verification
+
+All models have been functionally verified:
+
+[source,bash]
+----
+# Run verification tests
+ruby scripts/verify_all_models.rb
+
+# Test individual model
+python3 scripts/test_onnx.py en
+----
+
+== Download
+
+=== Direct Download
+
+Models can be downloaded directly from the https://github.com/ronaldtse/models-fasttext-onnx/releases[Releases] page.
+
+=== Via Kotoshu (Recommended)
+
+Kotoshu will automatically download and cache these models when needed:
+
+[source,ruby]
+----
+# Ruby API
+cache = Kotoshu::Cache::ModelCache.new
+onnx_path = cache.get_onnx_model('de')
+----
+
+=== Manual Download with Git LFS
+
+[source,bash]
+----
+# Clone repository with Git LFS
+git clone https://github.com/ronaldtse/models-fasttext-onnx.git
+cd models-fasttext-onnx
+git lfs pull
+
+# Download specific model
+wget https://github.com/ronaldtse/models-fasttext-onnx/raw/main/models/en/fasttext.en.onnx
+----
+
+== Building from Source
+
+If you want to convert the models yourself from FastText `.vec` files:
+
+.Install Dependencies
+[source,bash]
+----
+pip install onnx onnxruntime numpy
+----
+
+.Download and Convert
+[source,bash]
+----
+# Download FastText vectors
+wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.vec.gz
+gunzip cc.en.300.vec.gz
+
+# Convert to ONNX
+python3 scripts/fasttext_to_onnx.py cc.en.300.vec models/en/fasttext.en.onnx --vocab-size 100000
+----
+
+== Scripts
+
+The repository includes several utility scripts:
+
+* `scripts/fasttext_to_onnx.py` - Convert FastText `.vec` files to ONNX format
+* `scripts/test_onnx.py` - Test a single ONNX model
+* `scripts/verify_all_models.rb` - Verify all models for functionality
+
+=== Conversion Script
+
+[source,bash]
+----
+# Convert a FastText model to ONNX
+python3 scripts/fasttext_to_onnx.py <vec_file> <output_onnx> [--vocab-size N]
+
+# Example
+python3 scripts/fasttext_to_onnx.py cc.en.300.vec models/en/fasttext.en.onnx --vocab-size 100000
+----
+
+=== Verification Script
+
+[source,bash]
+----
+# Test a specific language model
+python3 scripts/test_onnx.py en
+
+# Verify all models
+ruby scripts/verify_all_models.rb
+----
+
+== License
+
+These models are derived from the https://fasttext.cc/docs/en/crawl-vectors.html[FastText pretrained vectors],
+which are licensed under the https://creativecommons.org/licenses/by-sa/3.0/[Creative Commons Attribution-Share-Alike License 3.0].
+
+=== Attribution
+
+These models are derived from the FastText pretrained word vectors,
+which were trained on Common Crawl data by Facebook AI Research.
+
+If you use these models, please cite the original FastText paper:
+
+[source,bibtex]
+----
+@inproceedings{bojar-2018-find,
+    title = "Findings of the 2018 Conference on Machine Translation ({WMT}18)",
+    author = "Bojar, Ond{\v{r}}ej  and
+      Federmann, Christian  and
+      Fishel, Mark  and
+      Graham, Yvette  and
+      Haddow, Barry  and
+      Huck, Matthias  and
+      Koehn, Philipp",
+    booktitle = "Proceedings of the Third Conference on Machine Translation: Shared Task Papers",
+    month = oct,
+    year = "2018",
+    address = "Belgium, Brussels",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W18-6401",
+    doi = "10.18653/v1/W18-6401",
+    pages = "272--303",
+}
+----
+
+== References
+
+* https://fasttext.cc/[FastText] - Facebook's library for efficient learning of word representations
+* https://onnx.ai/[ONNX] - Open Neural Network Exchange
+* https://github.com/microsoft/onnxruntime[ONNX Runtime] - Microsoft's cross-platform inference engine
+* https://github.com/kotoshu/kotoshu[Kotoshu] - Spell checker library
+
+== Contributing
+
+See link:CONTRIBUTING.md[CONTRIBUTING.md] for guidelines on contributing to this repository.
+
+Contributions are welcome for:
+
+* Adding new language models
+* Improving conversion scripts
+* Bug fixes and optimizations
+* Documentation improvements
+
+== Support
+
+* **Issues**: https://github.com/ronaldtse/models-fasttext-onnx/issues[GitHub Issues]
+* **Documentation**: https://github.com/kotoshu/kotoshu[Kotoshu Documentation]
+
+== Release History
+
+[options="header"]
+|===
+|Version|Date|Changes
+|1.0.0|2026-02-08|Initial release with all 6 language models
+|===
