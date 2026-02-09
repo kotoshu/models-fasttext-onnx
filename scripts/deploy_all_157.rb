@@ -187,8 +187,14 @@ def main
   puts "Estimated time: 20-40 hours"
   puts "Estimated storage: ~700 GB temporary + ~18 GB final"
   puts
-  print "Continue? [y/N] "
-  return unless $stdin.gets.chomp =~ /^[Yy]/
+
+  # Check if running interactively
+  if $stdin.tty?
+    print "Continue? [y/N] "
+    return unless $stdin.gets.chomp =~ /^[Yy]/
+  else
+    puts "Running non-interactively - proceeding with conversion..."
+  end
 
   puts
   puts "Starting conversion..."
