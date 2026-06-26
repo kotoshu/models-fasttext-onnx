@@ -6,10 +6,13 @@ Converts FastText .vec files to ONNX format for efficient deployment.
 The ONNX model contains an embedding lookup layer with the word vectors.
 
 Usage:
-    python fasttext_to_onnx.py <vec_file> <output_onnx> [--vocab_size N]
+    python fasttext_to_onnx.py <vec_file> <output_onnx> [--vocab_size N] [--save-vocab PATH]
 
 Example:
     python fasttext_to_onnx.py cc.en.300.vec fasttext.en.onnx --vocab_size 50000
+
+Outputs <output_onnx> and a sibling <output_stem>.vocab.json (word -> row index)
+which the Kotoshu gem's OnnxModel.from_file requires to resolve lookups.
 """
 
 import sys
@@ -226,7 +229,7 @@ def main():
         '--save-vocab',
         type=str,
         default=None,
-        help='Path to save vocabulary JSON file (optional)'
+        help='Path to save vocabulary JSON file (default: alongside output_onnx as <stem>.vocab.json)'
     )
 
     args = parser.parse_args()
@@ -263,9 +266,10 @@ def main():
     print(f"  Output .onnx file: {onnx_size_mb:.2f} MB")
     print(f"  Compression ratio: {(vec_size_mb / onnx_size_mb):.2f}x")
 
-    # Save vocabulary if requested
-    if args.save_vocab:
-        save_vocabulary(word_to_idx, args.save_vocab)
+    # Save vocabulary — always. OnnxModel.from_file in the gem requires
+    # the <stem>.vocab.json sibling to resolve word -> row index.
+    vocab_path = args.save_vocab or str(output_path.with_suffix('.vocab.json'))
+    save_vocabulary(word_to_idx, vocab_path)
 
     print(f"\nConversion complete!")
     print(f"  Model metadata: {metadata}")

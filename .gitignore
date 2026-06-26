@@ -53,3 +53,16 @@ Gemfile.lock
 # Test artifacts
 test_output/
 *.log
+# Active ONNX model directories — only these are tracked.
+# To promote a language: validate it end-to-end with Kotoshu.correct?,
+# then remove its line from the negation block below and `git add`.
+models/*/
+!models/de/
+!models/en/
+!models/es/
+!models/fr/
+!models/ja/
+!models/ko/
+!models/pt/
+!models/ru/
+!models/zh/
