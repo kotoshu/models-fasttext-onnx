@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-06-26T11:53:57Z",
+  "generated_at": "2026-06-27T01:01:49Z",
   "repo_version": "v1",
-  "resource_count": 9,
+  "resource_count": 18,
   "language_count": 9,
   "resources": {
     "models/de/fasttext.de.onnx": {
@@ -10,6 +10,16 @@
       "sha256": "ec110016475e4760f043e18ec409d406332ad71f5028619020512a40c64b0196",
       "language": "de",
       "type": "onnx",
+      "source": "cc.de.300.vec",
+      "fasttext_source": "cc.de.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/de/fasttext.de.vocab.json": {
+      "size": 2033474,
+      "sha256": "54f25b5b7997ff53503fc9e7a3a23835ac64153c45d5c848ed8d3800b1117230",
+      "language": "de",
+      "type": "vocab",
       "source": "cc.de.300.vec",
       "fasttext_source": "cc.de.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
@@ -25,11 +35,31 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/en/fasttext.en.vocab.json": {
+      "size": 1802666,
+      "sha256": "0f5b80cfa369c52678eafd01273799b43706e80108ea669cf5af036fabc696b4",
+      "language": "en",
+      "type": "vocab",
+      "source": "cc.en.300.vec",
+      "fasttext_source": "cc.en.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/es/fasttext.es.onnx": {
       "size": 120000415,
       "sha256": "8072789f1d4862474bb833de6b646471f853f28d24486237a95ad169c7500c64",
       "language": "es",
       "type": "onnx",
+      "source": "cc.es.300.vec",
+      "fasttext_source": "cc.es.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/es/fasttext.es.vocab.json": {
+      "size": 1871482,
+      "sha256": "1e20472a9c76b7cfd9f215e79a5e549e8c16c59248897f50f43039f4b1e35866",
+      "language": "es",
+      "type": "vocab",
       "source": "cc.es.300.vec",
       "fasttext_source": "cc.es.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
@@ -45,11 +75,28 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/fr/fasttext.fr.vocab.json": {
+      "size": 1866720,
+      "sha256": "92e926d96d2319a1f543d38f650ed9e8e75999550a013eb7b5b088a6e965f9be",
+      "language": "fr",
+      "type": "vocab",
+      "source": "cc.fr.300.vec",
+      "fasttext_source": "cc.fr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/ja/fasttext.ja.onnx": {
       "size": 120000415,
       "sha256": "ca6203ebd550dad23a2469cd39ecf2cb3a81ce65fe0a88b69932b434cfd500b9",
       "language": "ja",
       "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/ja/fasttext.ja.vocab.json": {
+      "size": 1923767,
+      "sha256": "de718a50f64fa4ea705322fc1e7a656230d3c0624c152a8dc1e1111588348b37",
+      "language": "ja",
+      "type": "vocab",
       "source": "FastText Common Crawl"
     },
     "models/ko/fasttext.ko.onnx": {
@@ -59,11 +106,28 @@
       "type": "onnx",
       "source": "FastText Common Crawl"
     },
+    "models/ko/fasttext.ko.vocab.json": {
+      "size": 2033307,
+      "sha256": "479ac874e1ba4999a3af636c98dfc7a04f80c65baaa95f2a6d13a8bf13c41835",
+      "language": "ko",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
+    },
     "models/pt/fasttext.pt.onnx": {
       "size": 120000415,
       "sha256": "2905cfd281d5d338667525230cc348a2d720f069c318270d6436689ce0445839",
       "language": "pt",
       "type": "onnx",
+      "source": "cc.pt.300.vec",
+      "fasttext_source": "cc.pt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/pt/fasttext.pt.vocab.json": {
+      "size": 1876687,
+      "sha256": "4afb801db0f417be354ff79417393f3c25cb31197083c152195f30b9028a71ba",
+      "language": "pt",
+      "type": "vocab",
       "source": "cc.pt.300.vec",
       "fasttext_source": "cc.pt.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
@@ -79,11 +143,28 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/ru/fasttext.ru.vocab.json": {
+      "size": 2688688,
+      "sha256": "839cd205c245278ac76931a9b782869ab6062a96c7766f5c4e052b01377be07c",
+      "language": "ru",
+      "type": "vocab",
+      "source": "cc.ru.300.vec",
+      "fasttext_source": "cc.ru.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/zh/fasttext.zh.onnx": {
       "size": 120000415,
       "sha256": "5e137d691bd1170f728dad951af9c38be6430cb4738e13154065dafa5246336c",
       "language": "zh",
       "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/zh/fasttext.zh.vocab.json": {
+      "size": 1740489,
+      "sha256": "beec2932deb2f487329de5d3a0226c745f6158de82d9946bbe0ee94ca00b2491",
+      "language": "zh",
+      "type": "vocab",
       "source": "FastText Common Crawl"
     }
   }
