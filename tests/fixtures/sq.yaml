@@ -1,0 +1,64 @@
+---
+metadata:
+  language_code: sq
+  language_name: SQ
+  source_model: cc.sq.300.vec
+  vocab_size: 100000
+  embedding_dim: 300
+  onnx_opset: 11
+  onnx_ir: 11
+model_specifications:
+  input:
+    name: word_index
+    type: int64
+    shape:
+    - 1
+    description: Single word index from vocabulary
+  output:
+    name: embedding
+    type: float32
+    shape:
+    - 300
+    description: 300-dimensional word embedding
+validation_rules:
+  check_finite: true
+  check_shape:
+  - 300
+  embedding_dim: 300
+test_cases:
+- name: first_word
+  input:
+    word_index: 0
+  expected_output:
+    shape:
+    - 300
+    has_statistics: true
+    statistics:
+      mean: -0.004409
+      std: 0.069263
+      min: -0.8505
+      max: 0.2261
+- name: second_word
+  input:
+    word_index: 1
+  expected_output:
+    shape:
+    - 300
+    has_statistics: true
+    statistics:
+      mean: -0.000741
+      std: 0.088375
+      min: -0.9419
+      max: 0.2923
+- name: middle_word
+  input:
+    word_index: 50000
+  expected_output:
+    shape:
+    - 300
+- name: last_word
+  input:
+    word_index: 99999
+  expected_output:
+    shape:
+    - 300
