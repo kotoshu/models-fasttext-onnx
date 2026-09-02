@@ -1,0 +1,129 @@
+{
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "zh"
+  ],
+  "per_language": {
+    "de": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    },
+    "en": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    },
+    "es": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    },
+    "fr": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    },
+    "ja": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    },
+    "ko": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    },
+    "pt": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    },
+    "ru": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    },
+    "zh": {
+      "truncations": {
+        "fluency": 50000,
+        "mini": 10000
+      },
+      "mini_bytes": 3040752,
+      "fluency_bytes": 15200760,
+      "separate_bytes": 18241512,
+      "nested_bytes": 30400894,
+      "full_bytes": 120000415
+    }
+  },
+  "totals": {
+    "mini_bytes": 27366768,
+    "fluency_bytes": 136806840,
+    "separate_bytes": 164173608,
+    "nested_bytes": 273608046,
+    "full_bytes": 1080003735
+  },
+  "deltas": {
+    "nested_minus_separate_bytes": 109434438,
+    "nested_vs_mini_ratio": 10.0,
+    "nested_vs_full_ratio": 0.253
+  },
+  "recommendation": "Keep the separate tiers as the default download: a mini-only user pays ~3 MB today but would pay ~30 MB (10x) for the nested file, and both tiers together (~15-15 + 3 MB) are still smaller than nested. Ship the nested artifact as the single optional all-in-one file instead: one download per language, mini->fluency upgrades are free (bytes already on disk), and it uniquely offers full-100k-vocab coverage at ~30 MB int8 vs ~120 MB fp32 (a ~4x cut) \u2014 anyone wanting both tiers, upgrading, or wanting beyond-fluency coverage wins; only mini-only users lose.",
+  "note": "Experiment only (plan 71): registry.json, manifest.json and release workflow unchanged; parity evidence in eval/reports/nested.parity.json.",
+  "generated_at": "2026-09-02T22:47:48Z"
+}

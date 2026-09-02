@@ -1,0 +1,26 @@
+{
+  "language": "en",
+  "truncations": {
+    "fluency": 50000,
+    "mini": 10000
+  },
+  "vocab_size": 100000,
+  "dims": 300,
+  "quantization": "int8-per-row",
+  "bytes": 30400894,
+  "sha256": "988ac27d2257a792ecda7508653a5393bfc454448b7fe303158033e70e0d0ef5",
+  "source_full_sha256": "cf826747600aa353d9be18a47e63cbd3929e742088af338096edcf54aad17d36",
+  "check": {
+    "runtime_vs_dequant_max_abs": 0.0,
+    "spot_checked_indices": [
+      0,
+      1,
+      9999,
+      49999,
+      50000,
+      99999
+    ],
+    "dequant_vs_projected_max_abs": 0.030502378940582275
+  },
+  "generated_at": "2026-09-02T22:47:44Z"
+}
