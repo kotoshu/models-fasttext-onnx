@@ -8,3 +8,6 @@
 # Lock files (prevent concurrent modifications)
 *.onnx lock
 *.vec lock
+
+# Registry fixture fakes stay plain git (1-byte .onnx stand-ins)
+tests/registry_fixture/** -filter=lfs

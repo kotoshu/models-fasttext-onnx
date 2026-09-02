@@ -66,3 +66,10 @@ models/*/
 !models/pt/
 !models/ru/
 !models/zh/
+
+# Generated tier binaries/vocabs — release assets only, never committed.
+# tiers.json and eval/reports ARE committed.
+models/**/*.mini.onnx
+models/**/*.fluency.onnx
+models/**/*.mini.vocab.json
+models/**/*.fluency.vocab.json

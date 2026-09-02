@@ -1,0 +1,98 @@
+{
+  "language": "zh",
+  "tier": "mini",
+  "recipe": {
+    "dims": 300,
+    "vocab_size": 10000,
+    "quantization": "int8-per-row",
+    "reduction": "uncentered-covariance-eigendecomposition"
+  },
+  "metrics": {
+    "rank_corr": {
+      "mean_spearman": 0.9998610430187511,
+      "n_probes_scored": 2000,
+      "n_probes_skipped": 0,
+      "mean_comparisons_per_probe": 300.32,
+      "rank_range": [
+        50,
+        10000
+      ]
+    },
+    "top1_agreement": {
+      "agreement": 0.9908256880733946,
+      "n_probes_scored": 109,
+      "n_probes_skipped_typo": 291,
+      "n_probes_skipped_candidates": 0,
+      "mean_candidates_dropped_out_of_vocab": 3.455,
+      "rank_range": [
+        1000,
+        10000
+      ]
+    },
+    "coverage": {
+      "frequency_weighted_coverage": 0.8095523355063817,
+      "full_vocab_size": 100000,
+      "tier_vocab_size": 10000,
+      "weighting": "1/(rank+1)"
+    }
+  },
+  "gates": {
+    "thresholds": {
+      "top1_agreement_min": 0.85,
+      "rank_corr_min": 0.9
+    },
+    "checks": {
+      "rank_corr": true,
+      "top1_agreement": true
+    },
+    "passed": true
+  },
+  "metric_note": "top1_agreement is a proxy for the gem's spelling-correction rerank pipeline, not the pipeline itself: probes are edit-distance-1 typos that are themselves in-vocabulary, the candidate set is the true word plus the top-20 nearest neighbours of the typo under the full model over a 20000-word sample window, and each model scores candidates by cosine to the typo. It will be replaced by gem conformance vectors (kotoshu-rs M3).",
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "files": {
+    "tier_onnx": {
+      "path": "models/zh/fasttext.zh.mini.onnx",
+      "bytes": 3040752,
+      "sha256": "5b1b49324325bd166c7f8449ebf83cdf82b967cbd1fca774107e6ee592a048b3"
+    },
+    "tier_vocab": {
+      "path": "models/zh/fasttext.zh.mini.vocab.json",
+      "bytes": 193747,
+      "sha256": "beb96c765cb13cdc6a382a4b8a88a243fc7155406c0f7c1d5d059356015e5d27"
+    },
+    "full_onnx": {
+      "path": "models/zh/fasttext.zh.onnx",
+      "bytes": 120000415,
+      "sha256": "5e137d691bd1170f728dad951af9c38be6430cb4738e13154065dafa5246336c"
+    }
+  },
+  "generated_at": "2026-09-02T15:50:45Z",
+  "quantization_check": {
+    "runtime_vs_dequant_max_abs": 0.0,
+    "dequant_vs_projected_max_abs": 0.03241102397441864,
+    "dequant_vs_projected_tol": 0.05,
+    "passed": true
+  },
+  "attempts": [
+    {
+      "recipe": {
+        "dims": 300,
+        "vocab_size": 10000
+      },
+      "passed": true,
+      "metrics": {
+        "rank_corr": 0.999861,
+        "top1_agreement": 0.990826,
+        "recipe": {
+          "dims": 300,
+          "vocab_size": 10000,
+          "quantization": "int8-per-row",
+          "reduction": "uncentered-covariance-eigendecomposition"
+        }
+      }
+    }
+  ]
+}

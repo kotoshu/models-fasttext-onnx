@@ -1,0 +1,45 @@
+name: Release
+
+# Tags are pushed only by the owner; this workflow never creates one.
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true # full models come out of LFS as real files for upload
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python dependencies
+        run: python -m pip install onnx==1.22.0 onnxruntime==1.23.2 numpy scipy jsonschema
+      - name: Build tiers (release gate)
+        run: python scripts/build_tiers.py --all
+      - name: Build registry
+        run: python scripts/build_registry.py --tag "${{ github.ref_name }}" --strict
+      - name: Validate registry
+        run: python scripts/validate_registry.py --registry registry.json --check-files
+      # Byte-stable snapshot of the committed manifest; regenerating would
+      # only churn generated_at.
+      - name: Snapshot per-tag manifest
+        run: cp manifest.json "manifest-${{ github.ref_name }}.json"
+      - name: Generate release notes
+        run: python scripts/release_notes.py --registry registry.json > release-notes.md
+      - name: Create release and upload assets
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: release-notes.md
+          fail_on_unmatched_files: true
+          files: |
+            models/**/fasttext.*.onnx
+            models/**/fasttext.*.vocab.json
+            registry.json
+            manifest-*.json
