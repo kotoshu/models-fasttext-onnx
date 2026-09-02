@@ -4,8 +4,8 @@
 // with Kotoshu spell checker.
 
 image:https://img.shields.io/badge/ONNX-IR%20v11-blue[ONNX IR Version]
-image:https://img.shields.io/badge/Models-6-green[Total Models]
-image:https://img.shields.io/badge/Size-686%20MB-orange[Total Size]
+image:https://img.shields.io/badge/Models-27-green[Total Models]
+image:https://img.shields.io/badge/Size-1.25%20GB-orange[Total Size]
 
 == Overview
 
@@ -28,10 +28,10 @@ spell checker. They enable:
 
 === Features
 
-* **Multi-language Support**: Models for 6 languages (de, en, es, fr, pt, ru)
-* **Optimized Format**: 37x compression from original FastText vectors
+* **Multi-language Support**: Models for 9 languages (de, en, es, fr, ja, ko, pt, ru, zh), each in three tiers (mini, fluency, full)
+* **Optimized Format**: 37x compression from original FastText vectors for the full tier
 * **ONNX Compatible**: Works with onnxruntime 1.23.2+
-* **High Quality**: 100K vocabulary per language with 300-dimensional embeddings
+* **High Quality**: 300-dimensional embeddings in every tier; vocabulary 10K mini, 50K fluency (60K for de), 100K full
 * **Easy Integration**: Drop-in compatibility with Kotoshu spell checker
 
 == Models Available
@@ -43,14 +43,21 @@ spell checker. They enable:
 |English|en|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.en.300]
 |Spanish|es|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.es.300]
 |French|fr|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.fr.300]
+|Japanese|ja|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ja.300]
+|Korean|ko|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ko.300]
 |Portuguese|pt|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.pt.300]
 |Russian|ru|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ru.300]
+|Chinese|zh|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.zh.300]
 |===
+
+Sizes above are the `full` (fp32) tier. Every language also ships `fluency`
+and `mini` int8 tiers — see the tier table under _Registry and
+distribution_ and `registry.json`, the canonical catalog.
 
 === Compression Ratio
 
 Original FastText `.vec` files: ~4.3 GB per language
-ONNX format: 114.44 MB per language
+ONNX format: 114.44 MB per language (full tier)
 
 Compression: **37x smaller** with full semantic quality preserved.
 
@@ -132,21 +139,25 @@ kotoshu cache list
 
 == Model Metadata
 
-Each model includes metadata in `models/{lang}/metadata.json`:
+Each model embeds its metadata as ONNX `metadata_props`
+(`vocabulary_size`, `embedding_dimension`, `model_type`, and for tiers
+also `quantization` and `tier`) and ships a sibling `vocab.json`
+(word to row index). Every language directory carries a `tiers.json`;
+the six original languages (de en es fr pt ru) also carry
+`models/{lang}/metadata.json`:
 
 [source,json]
 ----
 {
-  "version": "2026-02-08T04:25:31Z",
+  "version": "2026-02-08T04:25:29Z",
   "language": "en",
   "type": "onnx",
   "file": "fasttext.en.onnx",
-  "checksum": "sha256_hash",
+  "checksum": "d9bcfaf25df624225efd1373641627bcefa178868cd4fd09b052022cc9e18671",
+  "cached_at": "2026-02-08T04:25:30Z",
   "source_model": "cc.en.300.vec",
   "conversion_method": "fasttext_to_onnx.py",
-  "opset_version": 11,
-  "vocab_size": 100000,
-  "embedding_dim": 300
+  "opset_version": 11
 }
 ----
 
@@ -161,6 +172,9 @@ ruby scripts/verify_all_models.rb
 
 # Test individual model
 python3 scripts/test_onnx.py en
+
+# Load-verify all 27 models (tiers included), writes docs/inventory.json
+python3 scripts/inventory.py
 ----
 
 == Registry and distribution
@@ -301,23 +315,17 @@ If you use these models, please cite the original FastText paper:
 
 [source,bibtex]
 ----
-@inproceedings{bojar-2018-find,
-    title = "Findings of the 2018 Conference on Machine Translation ({WMT}18)",
-    author = "Bojar, Ond{\v{r}}ej  and
-      Federmann, Christian  and
-      Fishel, Mark  and
-      Graham, Yvette  and
-      Haddow, Barry  and
-      Huck, Matthias  and
-      Koehn, Philipp",
-    booktitle = "Proceedings of the Third Conference on Machine Translation: Shared Task Papers",
-    month = oct,
-    year = "2018",
-    address = "Belgium, Brussels",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/W18-6401",
-    doi = "10.18653/v1/W18-6401",
-    pages = "272--303",
+@article{bojanowski-2017-enriching,
+    title = "Enriching Word Vectors with Subword Information",
+    author = "Bojanowski, Piotr and
+      Grave, Edouard and
+      Joulin, Armand and
+      Mikolov, Tomas",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "5",
+    year = "2017",
+    pages = "135--146",
+    doi = "10.1162/tacl_a_00051"
 }
 ----
 
