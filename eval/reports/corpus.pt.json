@@ -1,0 +1,66 @@
+{
+  "language": "pt",
+  "corpus": {
+    "name": "GitHub Typo Corpus",
+    "version": "1.0.0",
+    "url": "https://github-typo-corpus.s3.amazonaws.com/data/github-typo-corpus.v1.0.0.jsonl.gz",
+    "retrieved_from": "https://github-typo-corpus.s3.amazonaws.com/data/github-typo-corpus.v1.0.0.jsonl.gz",
+    "sha256": "98219d275a49ad28fca832891876c255581b890d893b6d9c974ceb454ba2909d",
+    "license": "MIT (repository license); individual texts follow their source repositories' terms",
+    "citation": "Hagiwara & Mita, 'GitHub Typo Corpus: A Large-Scale Multilingual Dataset of Misspellings and Grammatical Errors', LREC 2020 (arxiv 1911.12893)",
+    "extraction": {
+      "rule": "same token count, exactly one differing token, both sides pure letters (<=16 chars, or <=6-char diff core for sentence-like CJK tokens), lowercased, symmetric punctuation stripped",
+      "deduplicated": true
+    }
+  },
+  "pairs": {
+    "extracted_unique": 233,
+    "both_in_full_vocab": 83,
+    "sampled_for_eval": 83,
+    "sampling": "all pairs (below cap)"
+  },
+  "tiers": {
+    "full": {
+      "vocab_size": 100000,
+      "pairs_evaluated": 83,
+      "pairs_typo_oov": 0,
+      "pairs_correction_oov": 0,
+      "top1": 0.2891566265060241,
+      "top5": 0.4578313253012048,
+      "top20": 0.6506024096385542,
+      "mean_rank": 1949.710843373494,
+      "median_rank": 7.0,
+      "ranking": "rank of the correction among the tier's whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically)"
+    },
+    "fluency": {
+      "vocab_size": 50000,
+      "pairs_evaluated": 73,
+      "pairs_typo_oov": 9,
+      "pairs_correction_oov": 1,
+      "top1": 0.273972602739726,
+      "top5": 0.4657534246575342,
+      "top20": 0.6575342465753424,
+      "mean_rank": 936.1095890410959,
+      "median_rank": 6.0,
+      "ranking": "rank of the correction among the tier's whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically)"
+    },
+    "mini": {
+      "vocab_size": 10000,
+      "pairs_evaluated": 44,
+      "pairs_typo_oov": 35,
+      "pairs_correction_oov": 4,
+      "top1": 0.22727272727272727,
+      "top5": 0.45454545454545453,
+      "top20": 0.6590909090909091,
+      "mean_rank": 398.59090909090907,
+      "median_rank": 8.5,
+      "ranking": "rank of the correction among the tier's whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically)"
+    }
+  },
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "report_only": true,
+  "generated_at": "2026-09-02T22:41:11Z"
+}
