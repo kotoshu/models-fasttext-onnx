@@ -73,3 +73,10 @@ models/**/*.mini.onnx
 models/**/*.fluency.onnx
 models/**/*.mini.vocab.json
 models/**/*.fluency.vocab.json
+
+# GitHub Typo Corpus download + extracted per-language pairs
+# (scripts/fetch_corpus.py; eval/reports/corpus.*.json IS committed).
+eval/corpora/
+
+# Claude Code agent worktrees
+.claude/

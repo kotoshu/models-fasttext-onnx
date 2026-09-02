@@ -11,7 +11,8 @@ Metrics:
   so the comparison is apples-to-apples.
 - top1_agreement: fraction of typo-rerank probes where tier and full models
   pick the same top candidate. This is a PROXY for the gem's real rerank
-  pipeline (see METRIC_NOTE).
+  pipeline (see METRIC_NOTE). Typos come from the keyboard-layout-aware
+  generator in noise.py (see that module for the layout/confusion model).
 - coverage: frequency-weighted vocabulary coverage (weight 1/(rank+1)).
   Reported, not gated.
 
@@ -24,7 +25,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import string
 import sys
 import zlib
 from dataclasses import dataclass
@@ -37,6 +37,8 @@ import onnx
 import onnxruntime as ort
 from onnx import numpy_helper
 from scipy.stats import spearmanr
+
+from noise import make_typo  # keyboard-aware multilingual typo generator (eval/noise.py)
 
 SEED = 42
 
@@ -51,16 +53,18 @@ TOP1_LO = 1_000
 TOP1_HI = 30_000  # exclusive; also keeps probes inside the mini vocab
 TOP1_NEIGHBORS = 20
 TOP1_WINDOW = 20_000
-TYPO_ATTEMPTS = 50
 
 ORT_SPOT_CHECK_TOL = 1e-4
 
 METRIC_NOTE = (
     "top1_agreement is a proxy for the gem's spelling-correction rerank "
-    "pipeline, not the pipeline itself: probes are edit-distance-1 typos "
-    "that are themselves in-vocabulary, the candidate set is the true word "
-    "plus the top-20 nearest neighbours of the typo under the full model "
-    "over a 20000-word sample window, and each model scores candidates by "
+    "pipeline, not the pipeline itself: probes are single-edit typos "
+    "drawn from the keyboard-layout-aware generator in eval/noise.py "
+    "(QWERTY/QWERTZ/AZERTY/JCUKEN neighbor slips for Latin/Cyrillic, "
+    "curated character confusions + transposition for ja/ko/zh) that are "
+    "themselves in-vocabulary, the candidate set is the true word plus "
+    "the top-20 nearest neighbours of the typo under the full model over "
+    "a 20000-word sample window, and each model scores candidates by "
     "cosine to the typo. It will be replaced by gem conformance vectors "
     "(kotoshu-rs M3)."
 )
@@ -217,31 +221,7 @@ def rank_corr_metric(full: LoadedModel, tier: LoadedModel, rng: np.random.Genera
     }
 
 
-def make_typo(rng: np.random.Generator, word: str) -> str | None:
-    letters = list(string.ascii_lowercase)
-    for _ in range(TYPO_ATTEMPTS):
-        ops = ["insert", "substitute"]
-        if len(word) >= 2:
-            ops.append("delete")
-        op = ops[int(rng.integers(len(ops)))]
-        if op == "delete":
-            pos = int(rng.integers(len(word)))
-            typo = word[:pos] + word[pos + 1 :]
-        elif op == "insert":
-            pos = int(rng.integers(len(word) + 1))
-            typo = word[:pos] + str(rng.choice(letters)) + word[pos:]
-        else:
-            pos = int(rng.integers(len(word)))
-            c = str(rng.choice(letters))
-            if c == word[pos]:
-                continue
-            typo = word[:pos] + c + word[pos + 1 :]
-        if typo != word:
-            return typo
-    return None
-
-
-def top1_agreement_metric(full: LoadedModel, tier: LoadedModel, rng: np.random.Generator) -> dict:
+def top1_agreement_metric(full: LoadedModel, tier: LoadedModel, rng: np.random.Generator, lang: str) -> dict:
     hi = min(TOP1_HI, tier.vocab_size)
     probes = rng.integers(TOP1_LO, hi, size=TOP1_PROBES)
     rank_to_word = [None] * full.vocab_size
@@ -256,7 +236,7 @@ def top1_agreement_metric(full: LoadedModel, tier: LoadedModel, rng: np.random.G
 
     for r in probes:
         word = rank_to_word[int(r)]
-        typo = make_typo(rng, word)
+        typo = make_typo(rng, word, lang)
         if typo is None:
             skipped_typo += 1
             continue
@@ -360,7 +340,7 @@ def evaluate(
     rng = make_rng(lang)
     metrics = {
         "rank_corr": rank_corr_metric(full, tm, rng),
-        "top1_agreement": top1_agreement_metric(full, tm, rng),
+        "top1_agreement": top1_agreement_metric(full, tm, rng, lang),
         "coverage": coverage_metric(full.vocab_size, tm.vocab_size),
     }
     gates = apply_gates(metrics, load_gates(repo)[tier])
@@ -378,6 +358,11 @@ def evaluate(
         "gates": gates,
         "metric_note": METRIC_NOTE,
         "determinism": {"seed": SEED, "rng": "np.random.default_rng([seed, crc32(language)])"},
+        "typo_model": {
+            "generator": "eval/noise.py::make_typo",
+            "layouts": "mirrored from kotoshu gem lib/kotoshu/keyboard/layouts (qwerty/qwertz/azerty/jcuken)",
+            "cjk": "curated visual/phonetic confusion sets + transposition (not learned)",
+        },
         "files": {
             "tier_onnx": _file_info(repo, f"models/{lang}/fasttext.{lang}.{tier}.onnx"),
             "tier_vocab": _file_info(repo, f"models/{lang}/fasttext.{lang}.{tier}.vocab.json"),
