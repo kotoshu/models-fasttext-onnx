@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "generated_at": "2026-09-02T00:00:00Z",
+  "repo_version": "v1",
+  "resource_count": 4,
+  "language_count": 2,
+  "resources": {
+    "models/de/fasttext.de.onnx": {
+      "size": 1,
+      "sha256": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+      "language": "de",
+      "type": "onnx",
+      "source": "cc.de.300.vec",
+      "fasttext_source": "cc.de.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/de/fasttext.de.vocab.json": {
+      "size": 59,
+      "sha256": "dfc053b3c63cc412b562a3d170912a033a3491ce4eacba33f3f3ab1994a92525",
+      "language": "de",
+      "type": "vocab",
+      "source": "cc.de.300.vec",
+      "fasttext_source": "cc.de.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/en/fasttext.en.onnx": {
+      "size": 1,
+      "sha256": "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea",
+      "language": "en",
+      "type": "onnx",
+      "source": "cc.en.300.vec",
+      "fasttext_source": "cc.en.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/en/fasttext.en.vocab.json": {
+      "size": 51,
+      "sha256": "c080c6e11ac2c2abf99df70beee698a9383a3c5bb56ac8b7ca9db2c68396d638",
+      "language": "en",
+      "type": "vocab",
+      "source": "cc.en.300.vec",
+      "fasttext_source": "cc.en.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    }
+  }
+}

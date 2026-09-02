@@ -135,4 +135,11 @@ wording is an owner decision** — flag before the first release.
 
 ## Status
 
-_Planning._
+**Implemented (2026-09-02)** — `schemas/registry.schema.json` (draft
+2020-12), `scripts/build_registry.py` / `validate_registry.py` /
+`release_notes.py`, `.github/workflows/release.yml` (tag-gated,
+eval-gated, never creates tags), `docs/storage-decision.md`, README
+registry + URL-contract section, and a dev-flavor `registry.json` at
+the repo root: **27 resources, 9 languages × 3 tiers, validated with
+full local hash checks, 0 warnings**. First release pending the
+owner's tag — the workflow refuses to invent one.
