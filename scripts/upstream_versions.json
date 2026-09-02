@@ -1,0 +1,86 @@
+{
+  "comment": "Pins for the upstream fastText Common Crawl archives the 9 active models were converted from (per manifest.json). sha256_vec_gz/etag/size_bytes start as null because no .vec files remain locally; the weekly poll (.github/workflows/upstream-poll.yml) records first observations in its job summary only, and reports drift against pinned values. Filling a pin is a deliberate human step; the poll never commits, downloads, or converts.",
+  "sources": {
+    "de": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.de.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "ec110016475e4760f043e18ec409d406332ad71f5028619020512a40c64b0196",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "en": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "cf826747600aa353d9be18a47e63cbd3929e742088af338096edcf54aad17d36",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "es": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.es.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "8072789f1d4862474bb833de6b646471f853f28d24486237a95ad169c7500c64",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "fr": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.fr.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "f76468d726289f998ac2cbbd473787e07f8740bc31518bef1387c7c4c6077f06",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "ja": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ja.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "ca6203ebd550dad23a2469cd39ecf2cb3a81ce65fe0a88b69932b434cfd500b9",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "ko": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ko.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "e01d445ffaccc56b06c1bd5d6bfb1260c2308bfebc044149090b64c460cbf84e",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "pt": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.pt.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "2905cfd281d5d338667525230cc348a2d720f069c318270d6436689ce0445839",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "ru": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ru.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "da4c11be5dd9a50ef7fc34304f22881de2ce4ecfde63fb11321d1a8bdb8f3e15",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "zh": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.zh.300.vec.gz",
+      "sha256_vec_gz": null,
+      "etag": null,
+      "size_bytes": null,
+      "pinned_at": "2026-09-02",
+      "converted_manifest_sha256": "5e137d691bd1170f728dad951af9c38be6430cb4738e13154065dafa5246336c",
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# Conversion-validation pins: exact toolchain the converters and
+# registry/manifest validators are tested against.
+onnx==1.22.0
+onnxruntime==1.23.2
+numpy==2.2.6
+scipy==1.15.3
+jsonschema==4.23.0
+# unittest discovery imports the existing tests/test_onnx_model.py
+# framework, which imports yaml at module level.
+pyyaml==6.0.2

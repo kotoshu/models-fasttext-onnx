@@ -64,13 +64,11 @@ references `kotoshu/TODO.impl/09-integrity-security.md`.
 
 ## Status
 
-**Core shipped 2026-06-27** — `manifest.json` at the repo root with
-size + sha256 + language + type + source + opset per resource (9 onnx
-+ 9 vocab entries), per-model `metadata.json` sidecars. **Strengthened
-by plan 07**: `schemas/registry.schema.json` formalizes the shape,
-`validate_registry.py --check-files` re-verifies hashes at release
-time, per-tag `manifest-v{TAG}.json` ships as a release asset.
-
-Still open: the PR-time CI drift check (manifest must be regenerated
-on model changes — enforce in a `ci.yml`), and the minisign/sigstore
-signature stretch.
+**Closed (2026-09-02).** Core shipped earlier (manifest.json with
+size/sha256 per resource); strengthened by plan 07 (schema validation,
+release-time hash re-verification, per-tag manifest snapshots). The
+PR-time drift check now exists: `.github/workflows/ci.yml` regenerates
+the manifest and fails on any diff beyond `generated_at` (regeneration
+verified byte-stable locally). Remaining stretch, deliberately open:
+minisign/sigstore signing — requires owner-held keys, so it is an
+owner-gated future item, not an engineering gap.

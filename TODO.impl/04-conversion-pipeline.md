@@ -65,14 +65,18 @@ maintainer can't regenerate the models from scratch with confidence.
 
 ## Status
 
-**Partially implemented.** Shipped: `scripts/fasttext_to_onnx.py` as
-the canonical converter (deterministic graph build, opset 11,
-metadata_props provenance) and — via plan 06 — `scripts/build_tiers.py`
-extending the pipeline with the mini/fluency tier derivation + eval
-gates, run in CI at release time.
+**Closed (2026-09-02).** Shipped: `scripts/convert_one.py` (canonical
+one-language entry point wrapping the existing converter, provenance
+into metadata.json, refuses overwrite without --force, toy-test
+verified via --out-dir), `scripts/upstream_versions.json` (per-language
+URL + converted-model sha256 pins; etag/size/sha256 fill on first
+verification run), `.github/workflows/upstream-poll.yml` (weekly HEAD
+poll — opens/updates ONE `upstream-drift` tracking issue, never
+downloads, converts, or pushes), `scripts/requirements.txt` (pinned),
+and `tests/test_conversion.py` (toy 10×5 regression: loads, exact
+values, vocab mapping — runs in CI via `ci.yml`). Live HEAD check
+confirmed all 9 CDN URLs are up with stable ETags.
 
-Still open: `upstream_versions.json` pin file (upstream `.vec` URLs +
-SHA-256 + dates), pinned `requirements.txt`/venv setup, the weekly
-upstream-poll CI job (opens a tracking issue, never auto-reconverts),
-the toy-model conversion regression test, and byte-for-byte
-reproducibility verification of the committed full models.
+Deliberately open: byte-for-byte reproducibility of the committed full
+models — **blocked**: no `.vec` sources remain on disk; requires a
+deliberate re-download (~1.2 GB/language) by the owner to verify.
