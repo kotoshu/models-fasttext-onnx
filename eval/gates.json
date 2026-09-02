@@ -1,0 +1,10 @@
+{
+  "fluency": {
+    "top1_agreement_min": 0.95,
+    "rank_corr_min": 0.97
+  },
+  "mini": {
+    "top1_agreement_min": 0.85,
+    "rank_corr_min": 0.90
+  }
+}

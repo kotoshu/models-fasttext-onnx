@@ -106,4 +106,20 @@ below are the acceptance**.
 
 ## Status
 
-_Planning._
+**Implemented (2026-09-02)** — with the recipe the eval chose, not the
+one this plan sketched. Measured on en, the SVD-reduction recipes
+(fluency 128-160 dims, mini 64 dims) failed their gates decisively
+(rank_corr 0.87-0.91 vs ≥0.97): fastText neighbour rankings do not
+survive low-rank projection. The shipped recipes take size from the
+vocabulary and the byte width instead — **fluency: full 300d int8,
+top-50k vocab (~15 MB)** (Word parity), **mini: full 300d int8, top-10k
+(~3 MB)** — scoring rank_corr 0.9999 / top1 1.0000 on the retained
+vocabulary, with the vocab loss reported by the coverage metric.
+`scripts/build_tiers.py` (recipe ladders + manifest sha verification),
+`eval/run_eval.py` + `eval/gates.json` + `eval/reports/`, tier
+binaries gitignored as release-asset-only, `models/{lang}/tiers.json`
+feeding the registry (plan 07). Manifest tier blocks ship via the
+registry rather than manifest.json (compat view unchanged for the gem
+today). All 9 manifest languages built and gated — see
+`eval/reports/` for per-language numbers and the failed-SVD attempt
+history.

@@ -1,0 +1,17 @@
+{
+  "language": "en",
+  "tiers": {
+    "fluency": {
+      "dims": 128,
+      "vocab_size": 1,
+      "quantization": "int8-per-row",
+      "bytes": 1,
+      "sha256": "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111",
+      "vocab_sha256": "e8031828ccf12164b09ffd1ecfddab271e75f6c7659e1aff1e46df5dec7609f0",
+      "vocab_bytes": 43,
+      "eval_ref": "eval/reports/en.fluency.json",
+      "source_full_sha256": "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea"
+    }
+  },
+  "generated_at": "2026-09-02T00:00:00Z"
+}
