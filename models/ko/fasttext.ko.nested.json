@@ -1,0 +1,26 @@
+{
+  "language": "ko",
+  "truncations": {
+    "fluency": 50000,
+    "mini": 10000
+  },
+  "vocab_size": 100000,
+  "dims": 300,
+  "quantization": "int8-per-row",
+  "bytes": 30400894,
+  "sha256": "e225ce27851b4a9f8444a0604e48b790e4a3beded147f6deebc2fba471aef3e5",
+  "source_full_sha256": "e01d445ffaccc56b06c1bd5d6bfb1260c2308bfebc044149090b64c460cbf84e",
+  "check": {
+    "runtime_vs_dequant_max_abs": 0.0,
+    "spot_checked_indices": [
+      0,
+      1,
+      9999,
+      49999,
+      50000,
+      99999
+    ],
+    "dequant_vs_projected_max_abs": 0.018142491579055786
+  },
+  "generated_at": "2026-09-02T22:47:46Z"
+}
