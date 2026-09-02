@@ -20,10 +20,10 @@
     },
     "top1_agreement": {
       "agreement": 1.0,
-      "n_probes_scored": 25,
-      "n_probes_skipped_typo": 375,
-      "n_probes_skipped_candidates": 0,
-      "mean_candidates_dropped_out_of_vocab": 0.7025,
+      "n_probes_scored": 12,
+      "n_probes_skipped_typo": 386,
+      "n_probes_skipped_candidates": 2,
+      "mean_candidates_dropped_out_of_vocab": 0.3775,
       "rank_range": [
         1000,
         10000
@@ -47,10 +47,15 @@
     },
     "passed": true
   },
-  "metric_note": "top1_agreement is a proxy for the gem's spelling-correction rerank pipeline, not the pipeline itself: probes are edit-distance-1 typos that are themselves in-vocabulary, the candidate set is the true word plus the top-20 nearest neighbours of the typo under the full model over a 20000-word sample window, and each model scores candidates by cosine to the typo. It will be replaced by gem conformance vectors (kotoshu-rs M3).",
+  "metric_note": "top1_agreement is a proxy for the gem's spelling-correction rerank pipeline, not the pipeline itself: probes are single-edit typos drawn from the keyboard-layout-aware generator in eval/noise.py (QWERTY/QWERTZ/AZERTY/JCUKEN neighbor slips for Latin/Cyrillic, curated character confusions + transposition for ja/ko/zh) that are themselves in-vocabulary, the candidate set is the true word plus the top-20 nearest neighbours of the typo under the full model over a 20000-word sample window, and each model scores candidates by cosine to the typo. It will be replaced by gem conformance vectors (kotoshu-rs M3).",
   "determinism": {
     "seed": 42,
     "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "typo_model": {
+    "generator": "eval/noise.py::make_typo",
+    "layouts": "mirrored from kotoshu gem lib/kotoshu/keyboard/layouts (qwerty/qwertz/azerty/jcuken)",
+    "cjk": "curated visual/phonetic confusion sets + transposition (not learned)"
   },
   "files": {
     "tier_onnx": {
@@ -69,7 +74,7 @@
       "sha256": "cf826747600aa353d9be18a47e63cbd3929e742088af338096edcf54aad17d36"
     }
   },
-  "generated_at": "2026-09-02T15:47:32Z",
+  "generated_at": "2026-09-02T22:36:07Z",
   "quantization_check": {
     "runtime_vs_dequant_max_abs": 0.0,
     "dequant_vs_projected_max_abs": 0.015085816383361816,
