@@ -65,21 +65,16 @@ discover the discrepancy by surprise.
 
 ## Status
 
-**Partially superseded — v1 active set shipped as 9 languages** (de en
-es fr ja ko pt ru zh; commit 0eec64a "trimmed active ONNX catalog"), a
-variant of option (b) chosen for v1: one catalog the gem actually
-resolves, tiered ×3 by plan 06, distributed via the registry + releases
-(plan 07). The 158-model local corpus stays on disk untouched — never
-deleted; expanding the active set is now a registry operation (add
-manifest entries + tiers), id scheme supports all 157.
-
-Delivered: `manifest.json` (9 × onnx + 9 × vocab, sha256/size),
-per-language `metadata.json` + `vocab.json` (the vocabulary.txt sidecar
-idea shipped as vocab.json), `registry.json` replaces the `index.json`
-idea. README: registry/distribution section lands with plan 07; the
-model-count reconciliation pass over README.adoc/README.md remains
-open, as does the load-verification inventory sweep (`inventory.rb`)
-for anything newly added.
+**Closed (2026-09-02).** Inventory shipped: `scripts/inventory.py`
+load-verifies all 27 models (9 languages × 3 tiers) via onnx.checker +
+onnxruntime + vocab cross-check + gather round-trip, writing committed
+`docs/inventory.json`; zero mismatches vs `registry.json`. Both READMEs
+reconciled with reality (27 models / 1.25 GB / tier-accurate vocab
+sizes; README.md's FastText citation corrected to Bojanowski et al.
+2017). The active set remains the 9-language catalog; the 158-model
+era is historical (docs/ALL_157_LANGUAGES.md). Quarantine task is moot
+— every model in the active set loads. Expansion to more languages is
+a deliberate registry operation when wanted, not an open defect.
 
 ## Source
 

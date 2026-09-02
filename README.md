@@ -14,13 +14,18 @@ This repository contains FastText word embedding models that have been converted
 | English | en | 100,000 | 300D | 114.44 MB | [FastText CC.en.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Spanish | es | 100,000 | 300D | 114.44 MB | [FastText CC.es.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | French | fr | 100,000 | 300D | 114.44 MB | [FastText CC.fr.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Japanese | ja | 100,000 | 300D | 114.44 MB | [FastText CC.ja.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Korean | ko | 100,000 | 300D | 114.44 MB | [FastText CC.ko.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Portuguese | pt | 100,000 | 300D | 114.44 MB | [FastText CC.pt.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Russian | ru | 100,000 | 300D | 114.44 MB | [FastText CC.ru.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Chinese | zh | 100,000 | 300D | 114.44 MB | [FastText CC.zh.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+
+Sizes above are the `full` (fp32) tier: 27 models total across 9 languages, each in three tiers — `mini` (~3 MB, 10K vocab, int8), `fluency` (~15–18 MB, 50K vocab / 60K for de, int8), and `full` (~114 MB, 100K vocab, fp32). `registry.json` at the repo root is the canonical catalog (sha256, size, license, download URLs) of every model.
 
 ### Compression Ratio
 
 - Original FastText `.vec` files: ~4.3 GB per language
-- ONNX format: 114.44 MB per language
+- ONNX format: 114.44 MB per language (full tier)
 - Compression: **37x smaller** with full semantic quality preserved
 
 ## Model Specifications
@@ -96,20 +101,19 @@ kotoshu cache list
 
 ## Model Metadata
 
-Each model includes metadata in `models/{lang}/metadata.json`:
+Each model embeds its metadata as ONNX `metadata_props` (`vocabulary_size`, `embedding_dimension`, `model_type`, and for tiers also `quantization` and `tier`) and ships a sibling `vocab.json` (word to row index). Every language directory carries a `tiers.json`; the six original languages (de en es fr pt ru) also carry `models/{lang}/metadata.json`:
 
 ```json
 {
-  "version": "2026-02-08T04:25:31Z",
+  "version": "2026-02-08T04:25:29Z",
   "language": "en",
   "type": "onnx",
   "file": "fasttext.en.onnx",
-  "checksum": "sha256_hash",
+  "checksum": "d9bcfaf25df624225efd1373641627bcefa178868cd4fd09b052022cc9e18671",
+  "cached_at": "2026-02-08T04:25:30Z",
   "source_model": "cc.en.300.vec",
   "conversion_method": "fasttext_to_onnx.py",
-  "opset_version": 11,
-  "vocab_size": 100000,
-  "embedding_dim": 300
+  "opset_version": 11
 }
 ```
 
@@ -123,13 +127,16 @@ ruby scripts/verify_all_models.rb
 
 # Test individual model
 python3 scripts/test_onnx.py en
+
+# Load-verify all 27 models (tiers included), writes docs/inventory.json
+python3 scripts/inventory.py
 ```
 
 ## Download
 
 ### Direct Download
 
-Models can be downloaded directly from the [Releases](../../releases) page.
+Models can be downloaded directly from the [Releases](https://github.com/kotoshu/models-fasttext-onnx/releases) page.
 
 ### Via Kotoshu (Recommended)
 
@@ -178,24 +185,17 @@ These models are derived from the [FastText pretrained vectors](https://fasttext
 If you use these models, please cite the original FastText paper:
 
 ```bibtex
-@inproceedings{bojar-2018-find,
-    title = "Findings of the 2018 Conference on Machine Translation ({WMT}18)",
-    author = "Bojar, Ond{\v{r}}ej  and
-      Federmann, Christian  and
-      Fishel, Mark  and
-      Graham, Yvette  and
-      Haddow, Barry  and
-      Huck, Matthias  and
-      Koehn, Philipp  and
-      Koehn, Philipp",
-    booktitle = "Proceedings of the Third Conference on Machine Translation: Shared Task Papers",
-    month = oct,
-    year = "2018",
-    address = "Belgium, Brussels",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/W18-6401",
-    doi = "10.18653/v1/W18-6401",
-    pages = "272--303",
+@article{bojanowski-2017-enriching,
+    title = "Enriching Word Vectors with Subword Information",
+    author = "Bojanowski, Piotr and
+      Grave, Edouard and
+      Joulin, Armand and
+      Mikolov, Tomas",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "5",
+    year = "2017",
+    pages = "135--146",
+    doi = "10.1162/tacl_a_00051"
 }
 ```
 
@@ -212,7 +212,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this re
 
 ## Support
 
-- **Issues**: [GitHub Issues](../../issues)
+- **Issues**: [GitHub Issues](https://github.com/kotoshu/models-fasttext-onnx/issues)
 - **Documentation**: [Kotoshu Documentation](https://github.com/kotoshu/kotoshu)
 - **Email**: support@kotoshu.io
 

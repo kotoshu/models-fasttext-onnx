@@ -1,0 +1,556 @@
+{
+  "generated_at": "2026-09-02T21:52:52Z",
+  "counts": {
+    "languages": 9,
+    "models": 27,
+    "by_tier": {
+      "fluency": 9,
+      "full": 9,
+      "mini": 9
+    },
+    "total_bytes": 1247217343,
+    "failed": 0
+  },
+  "models": [
+    {
+      "language": "de",
+      "tier": "fluency",
+      "file": "models/de/fasttext.de.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 60000,
+      "quantization": "int8-per-row",
+      "bytes": 18240760,
+      "sha256": "78edb294f290bd8a010782e21f5b6650ee8dc887e47038d467f6a2c2d3577f2f",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        30000,
+        59999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "de",
+      "tier": "full",
+      "file": "models/de/fasttext.de.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "ec110016475e4760f043e18ec409d406332ad71f5028619020512a40c64b0196",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "de",
+      "tier": "mini",
+      "file": "models/de/fasttext.de.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "aa724e7eea8580d81a0e2e6c6aec3108b8b90f65381ae7bc2baeb830b1a90f69",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "en",
+      "tier": "fluency",
+      "file": "models/en/fasttext.en.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "f8fc02db13a7c7878cf15c9bfe1e559c6dad82b1e5558c80e1ed4670de3f1cc6",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        25000,
+        49999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "en",
+      "tier": "full",
+      "file": "models/en/fasttext.en.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "cf826747600aa353d9be18a47e63cbd3929e742088af338096edcf54aad17d36",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "en",
+      "tier": "mini",
+      "file": "models/en/fasttext.en.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "d81f36c5e0097414db95d48406ce615161dd07c697996fe973297186279d5e2f",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "es",
+      "tier": "fluency",
+      "file": "models/es/fasttext.es.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "7326f515d0055ebeea178760696b6dd780ef1bb58dd38e8f89acfe8fe8d5287f",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        25000,
+        49999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "es",
+      "tier": "full",
+      "file": "models/es/fasttext.es.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "8072789f1d4862474bb833de6b646471f853f28d24486237a95ad169c7500c64",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "es",
+      "tier": "mini",
+      "file": "models/es/fasttext.es.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "ce2c03127ad84c711503f6d9118bcaf5784faa0336d21998b110138f6fb51232",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "fr",
+      "tier": "fluency",
+      "file": "models/fr/fasttext.fr.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "fcb375a340b4c90cbe1550a7265fb655d0ba76f777015582ee9cc214ce360331",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        25000,
+        49999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "fr",
+      "tier": "full",
+      "file": "models/fr/fasttext.fr.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "f76468d726289f998ac2cbbd473787e07f8740bc31518bef1387c7c4c6077f06",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "fr",
+      "tier": "mini",
+      "file": "models/fr/fasttext.fr.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "8ab81dac1d85f34b423a7ef870f089f65acd937163f21a26ba83478a3fc67029",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ja",
+      "tier": "fluency",
+      "file": "models/ja/fasttext.ja.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "d8315e3a383f98fa10794c464726ff8777d138f8ca9d5ac8918b2f6128221d3c",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        25000,
+        49999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ja",
+      "tier": "full",
+      "file": "models/ja/fasttext.ja.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "ca6203ebd550dad23a2469cd39ecf2cb3a81ce65fe0a88b69932b434cfd500b9",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ja",
+      "tier": "mini",
+      "file": "models/ja/fasttext.ja.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "cea8ded8ebcb98de8b39cc29e7bf222f1172b8b28dc371c68c375041173e405b",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ko",
+      "tier": "fluency",
+      "file": "models/ko/fasttext.ko.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "b12fd692674774567aad187a0c2c092315c28be537536ab9687694d30818197c",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        25000,
+        49999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ko",
+      "tier": "full",
+      "file": "models/ko/fasttext.ko.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "e01d445ffaccc56b06c1bd5d6bfb1260c2308bfebc044149090b64c460cbf84e",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ko",
+      "tier": "mini",
+      "file": "models/ko/fasttext.ko.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "1dad86dbe8dd924054a8bb6ca24ab91781c737810f22b2b4948c2fba87067288",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "pt",
+      "tier": "fluency",
+      "file": "models/pt/fasttext.pt.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "fb8695c4be60d238e9aaa0f211defb93ea4d94fea5cb85ad282bb87dc5402494",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        25000,
+        49999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "pt",
+      "tier": "full",
+      "file": "models/pt/fasttext.pt.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "2905cfd281d5d338667525230cc348a2d720f069c318270d6436689ce0445839",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "pt",
+      "tier": "mini",
+      "file": "models/pt/fasttext.pt.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "5fb94c7a2589d8222eea4f8174bf361c038a828c80787befa9edd0d650d8674c",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ru",
+      "tier": "fluency",
+      "file": "models/ru/fasttext.ru.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "0262c415c2540d3252929180978ec9505e3305113a89a3023b7058613ddd1757",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        25000,
+        49999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ru",
+      "tier": "full",
+      "file": "models/ru/fasttext.ru.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "da4c11be5dd9a50ef7fc34304f22881de2ce4ecfde63fb11321d1a8bdb8f3e15",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "ru",
+      "tier": "mini",
+      "file": "models/ru/fasttext.ru.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "94b3533ef70202280b8268dbdce3dcddfb699382b707506c58ac1cec22890f26",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "zh",
+      "tier": "fluency",
+      "file": "models/zh/fasttext.zh.fluency.onnx",
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "93f62551246dbcff5dcdd5a9c73b9aa4ab353ff1712d96c5f0dfbb20376419a4",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        25000,
+        49999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "zh",
+      "tier": "full",
+      "file": "models/zh/fasttext.zh.onnx",
+      "dims": 300,
+      "vocab_size": 100000,
+      "quantization": null,
+      "bytes": 120000415,
+      "sha256": "5e137d691bd1170f728dad951af9c38be6430cb4738e13154065dafa5246336c",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        50000,
+        99999
+      ],
+      "spot_max_abs_diff": 0.0
+    },
+    {
+      "language": "zh",
+      "tier": "mini",
+      "file": "models/zh/fasttext.zh.mini.onnx",
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "5b1b49324325bd166c7f8449ebf83cdf82b967cbd1fca774107e6ee592a048b3",
+      "vocab_json_ok": true,
+      "ort_load_ok": true,
+      "spot_inference_ok": true,
+      "error": null,
+      "spot_indices": [
+        0,
+        5000,
+        9999
+      ],
+      "spot_max_abs_diff": 0.0
+    }
+  ]
+}
