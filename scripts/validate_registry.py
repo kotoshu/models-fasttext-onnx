@@ -19,6 +19,7 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
+MEDIA_URL = "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx"
 READ_CHUNK = 1 << 20
 
 format_checker = FormatChecker()
@@ -61,8 +62,14 @@ def check_urls(resource, resource_id, registry, errors):
     onnx_name, vocab_name = asset_stems(lang, tier_name)
     tag = registry["release_tag"]
 
-    if resource["urls"]["mirror"] != f"{REPO_URL}/raw/main/models/{lang}/{onnx_name}":
-        errors.append(f"{resource_id}: mirror URL does not match models/{lang}/{onnx_name}")
+    # Only the full tier is in git (LFS -> media host; the raw host
+    # serves pointer stubs). Tier binaries are release assets only.
+    if tier_name == "full":
+        expected_mirror = f"{MEDIA_URL}/main/models/{lang}/{onnx_name}"
+        if resource["urls"]["mirror"] != expected_mirror:
+            errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
+    elif resource["urls"]["mirror"] is not None:
+        errors.append(f"{resource_id}: tier mirror must be null (release assets only)")
 
     if tag is None:
         if resource["urls"]["primary"] is not None or resource["vocab_url"] is not None:
