@@ -16,6 +16,10 @@ from pathlib import Path
 SPEC = "kotoshu.resources/v1"
 REGISTRY_VERSION = 1
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
+# LFS-tracked binaries resolve to pointer stubs on the raw host; the
+# media host serves the real bytes. Plain-git files (vocab, manifests)
+# are fine on raw.
+MEDIA_URL = "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx"
 LICENSE = "CC-BY-SA-3.0"
 MIN_ENGINE_VERSION = "0.7"
 FULL_DIMS = 300
@@ -42,6 +46,12 @@ def full_vocab_size(lang_dir, lang):
 def build_resource(lang, tier_name, dims, vocab_size, quantization,
                    sha256, size_bytes, eval_ref, version, tag):
     stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
+    # Only the full tier lives in git (LFS); tier binaries are release
+    # assets only, so their mirror is honestly null. LFS files must use
+    # the media host - the raw host serves 134-byte pointer stubs.
+    mirror = (
+        f"{MEDIA_URL}/main/models/{lang}/{stem}.onnx" if tier_name == "full" else None
+    )
     return {
         "type": "model",
         "language": lang,
@@ -54,7 +64,7 @@ def build_resource(lang, tier_name, dims, vocab_size, quantization,
         "version": version,
         "urls": {
             "primary": f"{REPO_URL}/releases/download/{tag}/{stem}.onnx" if tag else None,
-            "mirror": f"{REPO_URL}/raw/main/models/{lang}/{stem}.onnx",
+            "mirror": mirror,
         },
         "vocab_url": f"{REPO_URL}/releases/download/{tag}/{stem}.vocab.json" if tag else None,
         "sha256": sha256,
