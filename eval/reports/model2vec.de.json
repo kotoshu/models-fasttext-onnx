@@ -1,0 +1,143 @@
+{
+  "language": "de",
+  "protocol": "identical pool construction and ranking protocol as eval/reports/corpus.{lang}.json (corpus_bench.py); pool = pairs with both words in the FULL fastText vocab, capped at the same 2000-pair seeded subsample; each model then evaluates on its own in-vocab subset",
+  "corpus": {
+    "name": "GitHub Typo Corpus",
+    "version": "1.0.0",
+    "url": "https://github-typo-corpus.s3.amazonaws.com/data/github-typo-corpus.v1.0.0.jsonl.gz",
+    "retrieved_from": "https://github-typo-corpus.s3.amazonaws.com/data/github-typo-corpus.v1.0.0.jsonl.gz",
+    "sha256": "98219d275a49ad28fca832891876c255581b890d893b6d9c974ceb454ba2909d",
+    "license": "MIT (repository license); individual texts follow their source repositories' terms",
+    "citation": "Hagiwara & Mita, 'GitHub Typo Corpus: A Large-Scale Multilingual Dataset of Misspellings and Grammatical Errors', LREC 2020 (arxiv 1911.12893)",
+    "extraction": {
+      "rule": "same token count, exactly one differing token, both sides pure letters (<=16 chars, or <=6-char diff core for sentence-like CJK tokens), lowercased, symmetric punctuation stripped",
+      "deduplicated": true
+    }
+  },
+  "pairs": {
+    "extracted_unique": 212,
+    "both_in_full_vocab": 72,
+    "sampled_for_eval": 72,
+    "sampling": "all pairs (below cap)"
+  },
+  "baselines_fasttext": {
+    "full": {
+      "vocab_size": 100000,
+      "pairs_evaluated": 72,
+      "top1": 0.16666666666666666,
+      "top5": 0.4166666666666667,
+      "top20": 0.5416666666666666
+    },
+    "fluency": {
+      "vocab_size": 50000,
+      "pairs_evaluated": 63,
+      "top1": 0.14285714285714285,
+      "top5": 0.3968253968253968,
+      "top20": 0.5396825396825397
+    },
+    "mini": {
+      "vocab_size": 10000,
+      "pairs_evaluated": 42,
+      "top1": 0.11904761904761904,
+      "top5": 0.3333333333333333,
+      "top20": 0.5238095238095238
+    }
+  },
+  "baseline_note": "full/fluency/mini numbers imported verbatim from the committed corpus report; hit rates use each model's own pairs_evaluated denominator",
+  "candidates_model2vec": {
+    "potion-base-8M": {
+      "vocab_size": 29528,
+      "dims": 256,
+      "pairs_evaluated": 15,
+      "pairs_typo_oov": 45,
+      "pairs_correction_oov": 12,
+      "coverable": false,
+      "coverage_note": "not coverable (fewer than 50 of the pool pairs are in the candidate vocab)",
+      "top1": 0.0,
+      "top5": 0.06666666666666667,
+      "top20": 0.26666666666666666,
+      "mean_rank": 4180.266666666666,
+      "median_rank": 177.0,
+      "ranking": "rank of the correction among the candidate's whole vocabulary (29528 WordPiece tokens, incl. 5 special and 5828 '##' subword tokens) by cosine to the typo, excluding the typo itself (ties counted optimistically)",
+      "hf_id": "minishlab/potion-base-8M",
+      "size_bytes": 30236760,
+      "size_mb": 30.2,
+      "within_20mb_cap": false,
+      "teacher": "BAAI/bge-base-en-v1.5",
+      "license_chain": {
+        "model": "mit (minishlab model card + HF license tag)",
+        "teacher": "BAAI/bge-base-en-v1.5 \u2014 mit (HF license tag)",
+        "training_data": "minishlab/tokenlearn-c4-en-bge-base-v1.5 \u2014 no explicit license tag on the dataset card; C4-derived. Not redistributed by us (weights only), and distillation training data does not bind the artifact, but noted for completeness.",
+        "verdict": "clean: MIT model + MIT teacher, permissively redistributable under our BSD-2 + CC-BY-SA mix"
+      },
+      "beats_fluency_top5": false
+    },
+    "potion-base-32M": {
+      "vocab_size": 63091,
+      "dims": 512,
+      "pairs_evaluated": 32,
+      "pairs_typo_oov": 34,
+      "pairs_correction_oov": 6,
+      "coverable": false,
+      "coverage_note": "not coverable (fewer than 50 of the pool pairs are in the candidate vocab)",
+      "top1": 0.09375,
+      "top5": 0.25,
+      "top20": 0.40625,
+      "mean_rank": 5731.46875,
+      "median_rank": 46.5,
+      "ranking": "rank of the correction among the candidate's whole vocabulary (63091 WordPiece tokens, incl. 5 special and 5828 '##' subword tokens) by cosine to the typo, excluding the typo itself (ties counted optimistically)",
+      "hf_id": "minishlab/potion-base-32M",
+      "size_bytes": 129210456,
+      "size_mb": 129.2,
+      "within_20mb_cap": false,
+      "teacher": "BAAI/bge-base-en-v1.5",
+      "license_chain": {
+        "model": "mit (minishlab model card + HF license tag)",
+        "teacher": "BAAI/bge-base-en-v1.5 \u2014 mit (HF license tag)",
+        "training_data": "minishlab/tokenlearn-c4-en-bge-base-v1.5 \u2014 no explicit license tag on the dataset card; C4-derived. Not redistributed by us (weights only), and distillation training data does not bind the artifact, but noted for completeness.",
+        "verdict": "clean: MIT model + MIT teacher, permissively redistributable under our BSD-2 + CC-BY-SA mix"
+      },
+      "beats_fluency_top5": false
+    },
+    "potion-mini-8M": {
+      "hf_id": "minishlab/potion-mini-8M",
+      "status": "not_found_on_hub",
+      "note": "requested candidate does not exist: no potion-mini-* repo under minishlab (author listing and hub search, 2026-09-03). Recorded as unavailable; not evaluated."
+    },
+    "potion-base-2M": {
+      "vocab_size": 29528,
+      "dims": 64,
+      "pairs_evaluated": 15,
+      "pairs_typo_oov": 45,
+      "pairs_correction_oov": 12,
+      "coverable": false,
+      "coverage_note": "not coverable (fewer than 50 of the pool pairs are in the candidate vocab)",
+      "top1": 0.0,
+      "top5": 0.0,
+      "top20": 0.0,
+      "mean_rank": 4007.9333333333334,
+      "median_rank": 410.0,
+      "ranking": "rank of the correction among the candidate's whole vocabulary (29528 WordPiece tokens, incl. 5 special and 5828 '##' subword tokens) by cosine to the typo, excluding the typo itself (ties counted optimistically)",
+      "hf_id": "minishlab/potion-base-2M",
+      "size_bytes": 7559256,
+      "size_mb": 7.6,
+      "within_20mb_cap": true,
+      "teacher": "BAAI/bge-base-en-v1.5",
+      "license_chain": {
+        "model": "mit (minishlab model card + HF license tag)",
+        "teacher": "BAAI/bge-base-en-v1.5 \u2014 mit (HF license tag)",
+        "training_data": "minishlab/tokenlearn-c4-en-bge-base-v1.5 \u2014 no explicit license tag on the dataset card; C4-derived. Not redistributed by us (weights only), and distillation training data does not bind the artifact, but noted for completeness.",
+        "verdict": "clean: MIT model + MIT teacher, permissively redistributable under our BSD-2 + CC-BY-SA mix"
+      },
+      "beats_fluency_top5": false
+    }
+  },
+  "universe_note": "ranking universes differ: fastText tiers rank within 100k/50k/10k word vocabularies; Potion candidates rank within a ~30-42k English WordPiece vocabulary (specials and '##' fragments included). Smaller universes make top-k hits structurally easier \u2014 the comparison is biased in the candidate's favour, and it still has to win under the rule.",
+  "coverage_note": "Potion models are English-centric (BERT WordPiece vocab); languages whose pool has no usable overlap are recorded as not coverable.",
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "report_only": true,
+  "generated_at": "2026-09-03T05:52:18Z"
+}

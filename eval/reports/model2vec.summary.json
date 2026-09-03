@@ -1,0 +1,436 @@
+{
+  "decision_rule": {
+    "rule": "adopt Model2Vec as a replacement/embedding tier only if SOME candidate beats the fluency tier's top-5 hit rate on >= 5 of 9 languages AND is <= 20 MB AND has a clean license chain",
+    "not_coverable_counts_as_not_beating": true,
+    "thresholds": {
+      "langs_needed": 5,
+      "langs_total": 9,
+      "size_cap_mb": 20.0
+    }
+  },
+  "verdict": "REJECT",
+  "verdict_reason": "no eligible candidate: no Potion candidate beats the fluency tier top-5 on the required number of languages within the 20 MB size cap",
+  "candidates": {
+    "potion-base-8M": {
+      "hf_id": "minishlab/potion-base-8M",
+      "size_mb": 30.2,
+      "within_20mb_cap": false,
+      "license_chain_clean": true,
+      "languages_beating_fluency_top5": 0,
+      "languages_won": [],
+      "eligible": false,
+      "per_language_coverage": {
+        "de": "not coverable",
+        "en": "coverable",
+        "es": "not coverable",
+        "fr": "not coverable",
+        "ja": "not coverable",
+        "ko": "not coverable",
+        "pt": "not coverable",
+        "ru": "not coverable",
+        "zh": "not coverable"
+      }
+    },
+    "potion-base-32M": {
+      "hf_id": "minishlab/potion-base-32M",
+      "size_mb": 129.2,
+      "within_20mb_cap": false,
+      "license_chain_clean": true,
+      "languages_beating_fluency_top5": 1,
+      "languages_won": [
+        "en"
+      ],
+      "eligible": false,
+      "per_language_coverage": {
+        "de": "not coverable",
+        "en": "coverable",
+        "es": "not coverable",
+        "fr": "coverable",
+        "ja": "not coverable",
+        "ko": "not coverable",
+        "pt": "not coverable",
+        "ru": "not coverable",
+        "zh": "not coverable"
+      }
+    },
+    "potion-mini-8M": {
+      "eligible": false,
+      "reason": "requested candidate does not exist: no potion-mini-* repo under minishlab (author listing and hub search, 2026-09-03). Recorded as unavailable; not evaluated."
+    },
+    "potion-base-2M": {
+      "hf_id": "minishlab/potion-base-2M",
+      "size_mb": 7.6,
+      "within_20mb_cap": true,
+      "license_chain_clean": true,
+      "languages_beating_fluency_top5": 0,
+      "languages_won": [],
+      "eligible": false,
+      "per_language_coverage": {
+        "de": "not coverable",
+        "en": "coverable",
+        "es": "not coverable",
+        "fr": "not coverable",
+        "ja": "not coverable",
+        "ko": "not coverable",
+        "pt": "not coverable",
+        "ru": "not coverable",
+        "zh": "not coverable"
+      }
+    }
+  },
+  "candidate_metadata": {
+    "potion-base-8M": {
+      "hf_id": "minishlab/potion-base-8M",
+      "status": "available",
+      "size_bytes": 30236760,
+      "size_mb": 30.2,
+      "params": 7559168,
+      "teacher": "BAAI/bge-base-en-v1.5",
+      "licenses": {
+        "model": "mit (minishlab model card + HF license tag)",
+        "teacher": "BAAI/bge-base-en-v1.5 \u2014 mit (HF license tag)",
+        "training_data": "minishlab/tokenlearn-c4-en-bge-base-v1.5 \u2014 no explicit license tag on the dataset card; C4-derived. Not redistributed by us (weights only), and distillation training data does not bind the artifact, but noted for completeness.",
+        "verdict": "clean: MIT model + MIT teacher, permissively redistributable under our BSD-2 + CC-BY-SA mix"
+      }
+    },
+    "potion-base-32M": {
+      "hf_id": "minishlab/potion-base-32M",
+      "status": "available",
+      "size_bytes": 129210456,
+      "size_mb": 129.2,
+      "params": 32302592,
+      "teacher": "BAAI/bge-base-en-v1.5",
+      "licenses": {
+        "model": "mit (minishlab model card + HF license tag)",
+        "teacher": "BAAI/bge-base-en-v1.5 \u2014 mit (HF license tag)",
+        "training_data": "minishlab/tokenlearn-c4-en-bge-base-v1.5 \u2014 no explicit license tag on the dataset card; C4-derived. Not redistributed by us (weights only), and distillation training data does not bind the artifact, but noted for completeness.",
+        "verdict": "clean: MIT model + MIT teacher, permissively redistributable under our BSD-2 + CC-BY-SA mix"
+      }
+    },
+    "potion-mini-8M": {
+      "hf_id": "minishlab/potion-mini-8M",
+      "status": "not_found_on_hub",
+      "note": "requested candidate does not exist: no potion-mini-* repo under minishlab (author listing and hub search, 2026-09-03). Recorded as unavailable; not evaluated."
+    },
+    "potion-base-2M": {
+      "hf_id": "minishlab/potion-base-2M",
+      "status": "available (substitute for the mini slot after potion-mini-8M was not found)",
+      "size_bytes": 7559256,
+      "size_mb": 7.6,
+      "params": 1889792,
+      "teacher": "BAAI/bge-base-en-v1.5",
+      "licenses": {
+        "model": "mit (minishlab model card + HF license tag)",
+        "teacher": "BAAI/bge-base-en-v1.5 \u2014 mit (HF license tag)",
+        "training_data": "minishlab/tokenlearn-c4-en-bge-base-v1.5 \u2014 no explicit license tag on the dataset card; C4-derived. Not redistributed by us (weights only), and distillation training data does not bind the artifact, but noted for completeness.",
+        "verdict": "clean: MIT model + MIT teacher, permissively redistributable under our BSD-2 + CC-BY-SA mix"
+      }
+    }
+  },
+  "license_provenance": {
+    "retrieved": "2026-09-03",
+    "source": "HF Hub API model metadata + model card README (license tags and teacher statements)",
+    "note": "our mix: BSD-2 (code) + CC-BY-SA (data/models as applicable)"
+  },
+  "languages": {
+    "de": {
+      "pool": 72,
+      "fluency_top5": 0.3968253968253968,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 15,
+          "top1": 0.0,
+          "top5": 0.06666666666666667,
+          "top20": 0.26666666666666666,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 32,
+          "top1": 0.09375,
+          "top5": 0.25,
+          "top20": 0.40625,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 15,
+          "top1": 0.0,
+          "top5": 0.0,
+          "top20": 0.0,
+          "coverable": false,
+          "beats_fluency_top5": false
+        }
+      }
+    },
+    "en": {
+      "pool": 2000,
+      "fluency_top5": 0.2521539345203906,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 1515,
+          "top1": 0.12739273927392739,
+          "top5": 0.2501650165016502,
+          "top20": 0.30627062706270625,
+          "coverable": true,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 1941,
+          "top1": 0.12982998454404945,
+          "top5": 0.256053580628542,
+          "top20": 0.3111798042246265,
+          "coverable": true,
+          "beats_fluency_top5": true
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 1515,
+          "top1": 0.12013201320132014,
+          "top5": 0.24092409240924093,
+          "top20": 0.2739273927392739,
+          "coverable": true,
+          "beats_fluency_top5": false
+        }
+      }
+    },
+    "es": {
+      "pool": 86,
+      "fluency_top5": 0.4931506849315068,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 14,
+          "top1": 0.2857142857142857,
+          "top5": 0.42857142857142855,
+          "top20": 0.5,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 16,
+          "top1": 0.25,
+          "top5": 0.3125,
+          "top20": 0.4375,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 14,
+          "top1": 0.14285714285714285,
+          "top5": 0.42857142857142855,
+          "top20": 0.42857142857142855,
+          "coverable": false,
+          "beats_fluency_top5": false
+        }
+      }
+    },
+    "fr": {
+      "pool": 239,
+      "fluency_top5": 0.5138888888888888,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 38,
+          "top1": 0.21052631578947367,
+          "top5": 0.34210526315789475,
+          "top20": 0.5526315789473685,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 57,
+          "top1": 0.17543859649122806,
+          "top5": 0.45614035087719296,
+          "top20": 0.5263157894736842,
+          "coverable": true,
+          "beats_fluency_top5": false
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 38,
+          "top1": 0.18421052631578946,
+          "top5": 0.3157894736842105,
+          "top20": 0.3684210526315789,
+          "coverable": false,
+          "beats_fluency_top5": false
+        }
+      }
+    },
+    "ja": {
+      "pool": 23,
+      "fluency_top5": 0.2,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 12,
+          "top1": 0.16666666666666666,
+          "top5": 0.25,
+          "top20": 0.3333333333333333,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 13,
+          "top1": 0.07692307692307693,
+          "top5": 0.23076923076923078,
+          "top20": 0.23076923076923078,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 12,
+          "top1": 0.08333333333333333,
+          "top5": 0.16666666666666666,
+          "top20": 0.25,
+          "coverable": false,
+          "beats_fluency_top5": false
+        }
+      }
+    },
+    "ko": {
+      "pool": 20,
+      "fluency_top5": 0.6875,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 0,
+          "top1": null,
+          "top5": null,
+          "top20": null,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 0,
+          "top1": null,
+          "top5": null,
+          "top20": null,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 0,
+          "top1": null,
+          "top5": null,
+          "top20": null,
+          "coverable": false,
+          "beats_fluency_top5": false
+        }
+      }
+    },
+    "pt": {
+      "pool": 83,
+      "fluency_top5": 0.4657534246575342,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 10,
+          "top1": 0.1,
+          "top5": 0.1,
+          "top20": 0.1,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 14,
+          "top1": 0.0,
+          "top5": 0.14285714285714285,
+          "top20": 0.14285714285714285,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 10,
+          "top1": 0.0,
+          "top5": 0.0,
+          "top20": 0.1,
+          "coverable": false,
+          "beats_fluency_top5": false
+        }
+      }
+    },
+    "ru": {
+      "pool": 139,
+      "fluency_top5": 0.4435483870967742,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 10,
+          "top1": 0.1,
+          "top5": 0.1,
+          "top20": 0.1,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 14,
+          "top1": 0.0,
+          "top5": 0.21428571428571427,
+          "top20": 0.21428571428571427,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 10,
+          "top1": 0.0,
+          "top5": 0.1,
+          "top20": 0.2,
+          "coverable": false,
+          "beats_fluency_top5": false
+        }
+      }
+    },
+    "zh": {
+      "pool": 22,
+      "fluency_top5": 0.05263157894736842,
+      "candidates": {
+        "potion-base-8M": {
+          "pairs_evaluated": 5,
+          "top1": 0.2,
+          "top5": 0.6,
+          "top20": 0.6,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-base-32M": {
+          "pairs_evaluated": 7,
+          "top1": 0.0,
+          "top5": 0.42857142857142855,
+          "top20": 0.42857142857142855,
+          "coverable": false,
+          "beats_fluency_top5": false
+        },
+        "potion-mini-8M": {
+          "status": "not_found_on_hub"
+        },
+        "potion-base-2M": {
+          "pairs_evaluated": 5,
+          "top1": 0.2,
+          "top5": 0.4,
+          "top20": 0.4,
+          "coverable": false,
+          "beats_fluency_top5": false
+        }
+      }
+    }
+  },
+  "c1_note": "Potion candidates are English-only WordPiece vocabularies; 8 of 9 target languages are not coverable. A monolingual English candidate cannot replace the multilingual fastText tiers. An English-only hybrid (Potion for en, fastText elsewhere) is not worth pursuing: even on English no candidate beats the fluency tier top-5, so the hybrid buys nothing.",
+  "generated_at": "2026-09-03T05:52:41Z"
+}
