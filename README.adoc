@@ -196,7 +196,7 @@ the registry via `eval_ref`.
 |===
 |Tier|Size|Recipe|Role
 |mini|~3 MB|top-10k vocab · full 300 dims · int8|slim/edge/wasm
-|fluency|~15–18 MB|top-50k vocab (60k for de) · full 300 dims · int8|default tier
+|fluency|~15 MB|top-50k vocab · full 300 dims · int8|default tier
 |full|~120 MB|current fp32 300d file, unchanged|maximum accuracy, opt-in
 |===
 
