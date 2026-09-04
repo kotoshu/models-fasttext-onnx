@@ -213,10 +213,15 @@ been built and evaluated as an experiment (plan 68 B1) but is NOT
 shipped: `scripts/build_int4.py` produces run-in-onnxruntime artifacts
 whose round-trip is exact, yet only `ru` clears the fluency
 `top1_agreement` gate (8/9 languages fail at 0.78–0.94 while
-`rank_corr` passes everywhere). Evidence lives in
+`rank_corr` passes everywhere), and the lever retry
+(`scripts/int4_retry_sweep.py`) confirmed the rejection: group sizes
+64/32 lift the worst language (`ja`) only to 0.84/0.92 and half-away
+rounding changes nothing, so int4 cannot clear 0.95 within the 20 MB
+budget (and int4-mini misses the mini gate on `de`). Evidence lives in
 `eval/reports/int4.{lang}.json` with the cross-language verdicts,
 group-scale overhead analysis and recommendation in
-`eval/reports/int4.summary.json`; adopting any such tier — including the
+`eval/reports/int4.summary.json`, the retry sweep table in
+`eval/reports/int4-retry.summary.json`; adopting any such tier — including the
 kotoshu-rs `RowFormat` extension its per-group scales would need — is
 owner-gated.
 
