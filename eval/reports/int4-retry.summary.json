@@ -1,0 +1,312 @@
+{
+  "purpose": "Retry the recorded levers from the int4-group128 rejection: group size 64/32, asymmetric half-away rounding, and (as fallback) the mixed int4-mini/int8-fluency split.",
+  "levers": {
+    "group_size": "smaller groups shrink the per-group max_abs, lowering quantization noise at the price of more fp32 scale bytes (see size_analysis)",
+    "rounding": "half-away = deterministic asymmetric round-half-away-from-zero vs the original nearest-even (np.rint, banker's)",
+    "mixed": "mini-at-int4 (10k vocab, group-128) evaluated against the MINI gates \u2014 size play only"
+  },
+  "canary_rationale": {
+    "langs": [
+      "en",
+      "ja"
+    ],
+    "original_group128_top1": {
+      "en": 0.9,
+      "ja": 0.783784
+    },
+    "reason": "en = best (0.90), ja = worst (0.78) top1_agreement of the group-128 run"
+  },
+  "gate_thresholds": {
+    "fluency": {
+      "top1_agreement_min": 0.95,
+      "rank_corr_min": 0.97
+    },
+    "mini": {
+      "top1_agreement_min": 0.85,
+      "rank_corr_min": 0.9
+    }
+  },
+  "budget_ceiling_bytes_per_model": 20000000,
+  "size_analysis": [
+    {
+      "group_size": 128,
+      "groups_per_row": 3,
+      "group_partition_of_300_dims": "128+128+44",
+      "packed_bytes_total": 15000000,
+      "fp32_scales_bytes_total": 1200000,
+      "payload_bytes_total": 16200000,
+      "fp32_overhead_fraction_of_packed": 0.08
+    },
+    {
+      "group_size": 64,
+      "groups_per_row": 5,
+      "group_partition_of_300_dims": "64+64+64+64+44",
+      "packed_bytes_total": 15000000,
+      "fp32_scales_bytes_total": 2000000,
+      "payload_bytes_total": 17000000,
+      "fp32_overhead_fraction_of_packed": 0.1333
+    },
+    {
+      "group_size": 32,
+      "groups_per_row": 10,
+      "group_partition_of_300_dims": "32+32+32+32+32+32+32+32+32+12",
+      "packed_bytes_total": 15000000,
+      "fp32_scales_bytes_total": 4000000,
+      "payload_bytes_total": 19000000,
+      "fp32_overhead_fraction_of_packed": 0.2667
+    }
+  ],
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "canary_sweep": [
+    {
+      "tag": "int4-g128-ne",
+      "group_size": 128,
+      "rounding": "nearest-even",
+      "languages": [
+        "en",
+        "ja"
+      ],
+      "artifact_bytes": 16205081,
+      "within_20mb_budget": true,
+      "per_language": {
+        "en": {
+          "top1_agreement": 0.9,
+          "rank_corr": 0.986456,
+          "bytes": 16205081,
+          "gate_passed": false,
+          "sha256": "a835d2a9f2c24cf5ce9baf1dedaa5f5c2cf58697f2a6cd54c3ec84891717b70e"
+        },
+        "ja": {
+          "top1_agreement": 0.783784,
+          "rank_corr": 0.98361,
+          "bytes": 16205081,
+          "gate_passed": false,
+          "sha256": "02cdd779d0295612427085390a60fb9dc966cd06b0cb9976ffda61e9dfa94080"
+        }
+      },
+      "cleared_canaries": false,
+      "min_canary_top1": 0.783784
+    },
+    {
+      "tag": "int4-g128-ha",
+      "group_size": 128,
+      "rounding": "half-away",
+      "languages": [
+        "en",
+        "ja"
+      ],
+      "artifact_bytes": 16205075,
+      "within_20mb_budget": true,
+      "per_language": {
+        "en": {
+          "top1_agreement": 0.9,
+          "rank_corr": 0.986456,
+          "bytes": 16205075,
+          "gate_passed": false,
+          "sha256": "e508058c78a2fe45741ce92cd63afd46ce3e4a2d8d1e5a17e61015859a27c023"
+        },
+        "ja": {
+          "top1_agreement": 0.783784,
+          "rank_corr": 0.98361,
+          "bytes": 16205075,
+          "gate_passed": false,
+          "sha256": "bef635eb6cc805b4effb3cacb91a6030eb75111e0397129b4f8ac58c335e091f"
+        }
+      },
+      "cleared_canaries": false,
+      "min_canary_top1": 0.783784
+    },
+    {
+      "tag": "int4-g64-ne",
+      "group_size": 64,
+      "rounding": "nearest-even",
+      "languages": [
+        "en",
+        "ja"
+      ],
+      "artifact_bytes": 17005072,
+      "within_20mb_budget": true,
+      "per_language": {
+        "en": {
+          "top1_agreement": 0.9,
+          "rank_corr": 0.988813,
+          "bytes": 17005072,
+          "gate_passed": false,
+          "sha256": "1ef5b0a6326c7c402fe99357e6a025594a914e7ad5f55048e6343927d6a610d2"
+        },
+        "ja": {
+          "top1_agreement": 0.837838,
+          "rank_corr": 0.987411,
+          "bytes": 17005072,
+          "gate_passed": false,
+          "sha256": "a085e45719f017eb08d87a13a626ce5f9977a22c88e5686bb0d8ba70b81a60d1"
+        }
+      },
+      "cleared_canaries": false,
+      "min_canary_top1": 0.837838
+    },
+    {
+      "tag": "int4-g64-ha",
+      "group_size": 64,
+      "rounding": "half-away",
+      "languages": [
+        "en",
+        "ja"
+      ],
+      "artifact_bytes": 17005066,
+      "within_20mb_budget": true,
+      "per_language": {
+        "en": {
+          "top1_agreement": 0.9,
+          "rank_corr": 0.988813,
+          "bytes": 17005066,
+          "gate_passed": false,
+          "sha256": "4b48fe796fcaf0cedecc44ae01776c4065cef0835a4a19dd975dea1d940feddc"
+        },
+        "ja": {
+          "top1_agreement": 0.837838,
+          "rank_corr": 0.987411,
+          "bytes": 17005066,
+          "gate_passed": false,
+          "sha256": "80ec5642587f1f44fcf6762ac27bf775b5f36435790057b64b2533f567536d24"
+        }
+      },
+      "cleared_canaries": false,
+      "min_canary_top1": 0.837838
+    }
+  ],
+  "group32_probe": {
+    "group_size": 32,
+    "languages": [
+      "ja"
+    ],
+    "per_rounding": {
+      "nearest-even": {
+        "top1_agreement": 0.918919,
+        "rank_corr": 0.990795,
+        "bytes": 19005076,
+        "gate_passed": false,
+        "sha256": "468b1c47a71c31aca1b0ec42a341b3b3af39a0cbbc70603ab56099b227a3d53e"
+      },
+      "half-away": {
+        "top1_agreement": 0.918919,
+        "rank_corr": 0.990795,
+        "bytes": 19005070,
+        "gate_passed": false,
+        "sha256": "34106224c79eb87762d6e806c7b0d9db2528f7011df7d7179646bc301c83dbe1"
+      }
+    },
+    "ja_gate_passed": {
+      "nearest-even": false,
+      "half-away": false
+    }
+  },
+  "full_run": null,
+  "mixed_lever": {
+    "tier": "mini re-quantized to int4-group128",
+    "group_size": 128,
+    "rounding": "nearest-even",
+    "rounding_selection": "best min-canary top1 from the sweep (tie -> nearest-even)",
+    "gate_thresholds": {
+      "top1_agreement_min": 0.85,
+      "rank_corr_min": 0.9
+    },
+    "per_language": {
+      "de": {
+        "bytes": 1625070,
+        "rank_corr": 0.985923,
+        "top1_agreement": 0.8,
+        "gate_passed": false,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 1.0,
+        "mini_int8_rank_corr": 0.999879
+      },
+      "en": {
+        "bytes": 1625070,
+        "rank_corr": 0.987633,
+        "top1_agreement": 1.0,
+        "gate_passed": true,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 1.0,
+        "mini_int8_rank_corr": 0.999893
+      },
+      "es": {
+        "bytes": 1625070,
+        "rank_corr": 0.988461,
+        "top1_agreement": 0.904762,
+        "gate_passed": true,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 0.952381,
+        "mini_int8_rank_corr": 0.9999
+      },
+      "fr": {
+        "bytes": 1625070,
+        "rank_corr": 0.987799,
+        "top1_agreement": 1.0,
+        "gate_passed": true,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 1.0,
+        "mini_int8_rank_corr": 0.999895
+      },
+      "ja": {
+        "bytes": 1625070,
+        "rank_corr": 0.985971,
+        "top1_agreement": 0.923077,
+        "gate_passed": true,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 1.0,
+        "mini_int8_rank_corr": 0.999874
+      },
+      "ko": {
+        "bytes": 1625070,
+        "rank_corr": 0.983597,
+        "top1_agreement": 1.0,
+        "gate_passed": true,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 1.0,
+        "mini_int8_rank_corr": 0.999849
+      },
+      "pt": {
+        "bytes": 1625070,
+        "rank_corr": 0.988897,
+        "top1_agreement": 0.941176,
+        "gate_passed": true,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 1.0,
+        "mini_int8_rank_corr": 0.999902
+      },
+      "ru": {
+        "bytes": 1625070,
+        "rank_corr": 0.985943,
+        "top1_agreement": 1.0,
+        "gate_passed": true,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 1.0,
+        "mini_int8_rank_corr": 0.999881
+      },
+      "zh": {
+        "bytes": 1625070,
+        "rank_corr": 0.983866,
+        "top1_agreement": 1.0,
+        "gate_passed": true,
+        "mini_int8_bytes": 3040752,
+        "mini_int8_top1_agreement": 1.0,
+        "mini_int8_rank_corr": 0.999861
+      }
+    },
+    "all_passed": false,
+    "max_bytes": 1625070
+  },
+  "protocol": [
+    "canary sweep [(128, 'nearest-even'), (128, 'half-away'), (64, 'nearest-even'), (64, 'half-away')] on ['en', 'ja'] (worst-case-first discipline)",
+    "no config cleared both canaries -> group-32 probe on ja only (cheapest decisive test)",
+    "sweep failed -> mixed lever: int4-mini (group-128, nearest-even) vs the MINI gates, all languages",
+    "verdict recorded; sweep complete"
+  ],
+  "final_verdict": "CONFIRMED REJECTION of int4 for full-vocab artifacts: no config in {group 128/64/32} x {nearest-even, half-away} clears the fluency top1 >= 0.95 gate (best canary config int4-g64-ne at min-canary top1 0.8378; ja stays worst at 0.7838); rank_corr passes everywhere, so the 4-bit noise floor keeps flipping 1-2 typo probes per language regardless of grouping or rounding. int8-per-row remains the shipped recipe. The decisive group-32 probe on ja (worst language) still failed (top1 0.9189 ne / 0.9189 ha) at 19005076 bytes. Mixed fallback REJECTED too: int4-mini fails the MINI gate on de.",
+  "note": "Experiment only (plan 68 B1 retry): registry.json, manifest.json, tiers.json and the release workflow unchanged; sweep artifacts are gitignored.",
+  "generated_at": "2026-09-04T08:10:21Z"
+}

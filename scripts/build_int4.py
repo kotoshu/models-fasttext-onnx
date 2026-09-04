@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
-"""Build int4 group-128 quantized full-vocab models — plan 68 B1 experiment.
+"""Build int4 group-wise quantized full-vocab models — plan 68 B1 experiment.
 
 Quantizes the FULL model (all 100k rows, all 300 dims, no vocab cut and
 no dim reduction) to int4 with group-wise scales: each 300-d row is split
-into 3 consecutive groups of 128 (128+128+44), each group carrying its own
-fp32 scale `max_abs(group) / 7.0` — the symmetric-positive divisor 7, not
-8, so `+max_abs` round-trips exactly, matching the int8 tier's
-`max_abs / 127.0` convention (kotoshu-rs rerank/dequant.rs documents the
-same recipe for int4). Target ~15-20 MB vs the 120 MB fp32 full model.
+into consecutive equal groups (128: 128+128+44 -> 3 scales/row; 64:
+64x4+44 -> 5; 32: 32x9+12 -> 10), each group carrying its own fp32 scale
+`max_abs(group) / 7.0` — the symmetric-positive divisor 7, not 8, so
+`+max_abs` round-trips exactly, matching the int8 tier's `max_abs /
+127.0` convention (kotoshu-rs rerank/dequant.rs documents the same recipe
+for int4). Target ~15-20 MB vs the 120 MB fp32 full model; smaller groups
+buy lower quantization noise at the price of more fp32 scale bytes (see
+`--group-size` and the overhead analysis in the summary).
+
+Rounding of the scaled codes is selectable: `nearest-even` (np.rint,
+banker's — the original recipe) or `half-away` (deterministic asymmetric
+round-half-away-from-zero). Dequantization is rounding-agnostic.
 
 Nibble packing matches the kotoshu-rs `int4-per-row` (RowFormat 0x04)
 contract exactly: element 2j in the HIGH nibble of byte j, element 2j+1
 in the LOW nibble, two's-complement signed nibbles in [-8, 7]. The 0x04
 format itself carries ONE fp32 scale per row, so the per-group scales
 produced here need a kotoshu-rs RowFormat contract extension before a
-native Rust reader could load them (the metadata string "int4-group128"
+native Rust reader could load them (the metadata string "int4-group{N}"
 is currently rejected by RowFormat::from_metadata by design). Nothing in
 kotoshu-rs is modified by this script.
 
@@ -22,18 +29,23 @@ Per language this writes (experiment-only, like the plan-71 nested
 artifact; registry.json, manifest.json, tiers.json and the release
 workflow are untouched):
 
-- models/{lang}/fasttext.{lang}.int4.onnx — packed artifact whose ONNX
+- models/{lang}/fasttext.{lang}.{tag}.onnx — packed artifact whose ONNX
   graph dequantizes via onnxruntime directly (nibble unpack + gathered
   group scales, same Gather/Cast/Mul shape as the int8 tier graphs).
-- models/{lang}/fasttext.{lang}.int4.vocab.json — byte copy of the full
+- models/{lang}/fasttext.{lang}.{tag}.vocab.json — byte copy of the full
   vocab (the int4 matrix keeps every row).
-- eval/reports/int4.{lang}.json — tier-report schema + a `row_format`
+- eval/reports/{tag}.{lang}.json — tier-report schema + a `row_format`
   field, gated against the fluency thresholds (top1 >= 0.95,
   rank_corr >= 0.97) via run_eval.evaluate(gates=...). Gate failures are
   recorded honestly, never tuned around.
 
-eval/reports/int4.summary.json carries the cross-language sizes, gate
-verdicts, group-scale overhead analysis and the recommendation.
+The artifact tag is `int4` for the original recipe (group 128,
+nearest-even) so default invocations regenerate the original artifacts
+byte-for-byte; any other config uses `int4-g{group}-{ne|ha}` (override
+with `--artifact-tag`) so retry-sweep artifacts never clobber the
+originals. eval/reports/{tag}.summary.json (int4.summary.json for the
+original recipe) carries the cross-language sizes, gate verdicts,
+group-scale overhead analysis and the recommendation.
 Exit status is nonzero if any language fails its gate.
 """
 
@@ -57,64 +69,93 @@ import build_tiers  # noqa: E402
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "eval"))
 import run_eval  # noqa: E402
 
-GROUP_SIZE = run_eval.INT4_GROUP_SIZE  # 128
+GROUP_SIZE = run_eval.INT4_GROUP_SIZE  # 128 (original recipe)
+GROUP_SIZES = (128, 64, 32)            # lever-retry candidates (plan 68 B1)
+ROUNDING_MODES = ("nearest-even", "half-away")
+ROUNDING_SHORT = {"nearest-even": "ne", "half-away": "ha"}
 INT4_POSITIVE_MAX = 7                  # symmetric-positive divisor (see module doc)
 INT4_NEGATIVE_MIN = -8
 ORT_ROUNDTRIP_TOL = run_eval.ORT_SPOT_CHECK_TOL  # 1e-4, same as tier spot checks
 
-ROW_FORMAT = {
-    "quantization": "int4-group128",
-    "q_packed": "uint8 [vocab_size, ceil(dims/2)]; byte j of row r holds "
-    "element 2j in the HIGH nibble and element 2j+1 in the LOW nibble, "
-    "two's-complement signed nibbles in [-8, 7] (odd dims: trailing low "
-    "nibble is padding); identical to the kotoshu-rs pack_row_int4 contract",
-    "group_scales": "fp32 [vocab_size, ceil(dims/128)]; scale[g] = "
-    "max(abs(row[:, group g])) / 7.0, zero-guarded to 1.0",
-    "dequant": "value[i] = unpacked_nibble[i] * group_scales[row, i // 128]",
-    "group_size": GROUP_SIZE,
-    "scale_dtype": "fp32",
-    "kotoshu_rs_row_format": "nibble packing matches RowFormat::Int4PerRow "
-    "(byte 0x04) but 0x04 carries ONE fp32 scale per row; per-group scales "
-    "require a kotoshu-rs contract extension (new format byte + metadata "
-    "string \"int4-group128\") before a native Rust reader can load these",
-}
 
-RUST_CONTRACT_NOTE = (
-    "kotoshu-rs rerank::dequant::RowFormat accepts metadata \"int4-per-row\" "
-    "(byte 0x04: packed signed nibbles x ONE fp32 row scale) and its test "
-    "explicitly rejects \"int4-group-128\". These artifacts use "
-    "\"int4-group128\" + per-group fp32 scales, so kotoshu-rs needs a contract "
-    "extension: a new RowFormat variant + format byte + the \"int4-group128\" "
-    "metadata string, with dequant reusing the existing nibble unpacking "
-    "(pack_row_int4/dequant_row_int4) and taking ceil(dims/128) fp32 scales "
-    "per row instead of one; onnx.rs must read the group_scales constant. "
-    "kotoshu-rs was NOT modified by this experiment."
-)
+def derive_tag(group_size: int = GROUP_SIZE, rounding: str = "nearest-even") -> str:
+    """Artifact tag: `int4` for the original recipe, else int4-g{G}-{ne|ha}."""
+    if group_size == GROUP_SIZE and rounding == "nearest-even":
+        return "int4"
+    return f"int4-g{group_size}-{ROUNDING_SHORT[rounding]}"
 
 
-def quantize_int4_group128(x: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-    """Quantize fp32 [V, d] to int4 group-128.
+def row_format(group_size: int, rounding: str) -> dict:
+    return {
+        "quantization": f"int4-group{group_size}",
+        "q_packed": "uint8 [vocab_size, ceil(dims/2)]; byte j of row r holds "
+        "element 2j in the HIGH nibble and element 2j+1 in the LOW nibble, "
+        "two's-complement signed nibbles in [-8, 7] (odd dims: trailing low "
+        "nibble is padding); identical to the kotoshu-rs pack_row_int4 contract",
+        "group_scales": f"fp32 [vocab_size, ceil(dims/{group_size})]; scale[g] = "
+        "max(abs(row[:, group g])) / 7.0, zero-guarded to 1.0",
+        "dequant": f"value[i] = unpacked_nibble[i] * group_scales[row, i // {group_size}]",
+        "group_size": group_size,
+        "rounding": rounding,
+        "rounding_detail": "nearest-even: np.rint (banker's rounding, the original "
+        "recipe); half-away: deterministic asymmetric round-half-away-from-zero",
+        "scale_dtype": "fp32",
+        "kotoshu_rs_row_format": "nibble packing matches RowFormat::Int4PerRow "
+        "(byte 0x04) but 0x04 carries ONE fp32 scale per row; per-group scales "
+        "require a kotoshu-rs contract extension (new format byte + metadata "
+        f'string "int4-group{group_size}") before a native Rust reader can load these',
+    }
 
-    Returns (packed uint8 [V, ceil(d/2)], scales fp32 [V, ceil(d/128)],
+
+def rust_contract_note(group_size: int) -> str:
+    return (
+        'kotoshu-rs rerank::dequant::RowFormat accepts metadata "int4-per-row" '
+        "(byte 0x04: packed signed nibbles x ONE fp32 row scale) and its test "
+        'explicitly rejects "int4-group-128". These artifacts use '
+        f'"int4-group{group_size}" + per-group fp32 scales, so kotoshu-rs needs a '
+        "contract extension: a new RowFormat variant + format byte + the "
+        f'"int4-group{group_size}" metadata string, with dequant reusing the existing '
+        "nibble unpacking (pack_row_int4/dequant_row_int4) and taking "
+        f"ceil(dims/{group_size}) fp32 scales per row instead of one; onnx.rs must "
+        "read the group_scales constant. kotoshu-rs was NOT modified by this "
+        "experiment."
+    )
+
+
+def round_codes(z: np.ndarray, rounding: str) -> np.ndarray:
+    """Deterministic rounding of the scaled fp32 codes to integer-valued fp32."""
+    if rounding == "nearest-even":
+        return np.rint(z)
+    if rounding == "half-away":
+        return np.floor(np.abs(z) + 0.5) * np.sign(z)
+    raise ValueError(f"unknown rounding mode {rounding!r}; expected one of {ROUNDING_MODES}")
+
+
+def quantize_int4_group(
+    x: np.ndarray, group_size: int = GROUP_SIZE, rounding: str = "nearest-even"
+) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """Quantize fp32 [V, d] to int4 with `group_size`-element groups.
+
+    Returns (packed uint8 [V, ceil(d/2)], scales fp32 [V, ceil(d/group_size)],
     dequant fp32 [V, d] recomputed from the integer codes, per-group
     max_abs [V, groups]). `dequant` is derived from the packed values via
-    run_eval.dequant_int4_group128 before being returned, so the packing
+    run_eval.dequant_int4_group before being returned, so the packing
     round-trip is asserted on every build.
     """
     vocab_size, dims = x.shape
-    n_groups = -(-dims // GROUP_SIZE)
-    padded = np.zeros((vocab_size, n_groups * GROUP_SIZE), dtype=np.float32)
+    n_groups = -(-dims // group_size)
+    padded = np.zeros((vocab_size, n_groups * group_size), dtype=np.float32)
     padded[:, :dims] = x
-    groups = padded.reshape(vocab_size, n_groups, GROUP_SIZE)
+    groups = padded.reshape(vocab_size, n_groups, group_size)
 
     scale = (np.abs(groups).max(axis=2) / float(INT4_POSITIVE_MAX)).astype(np.float32)
     scale[scale == 0.0] = 1.0
-    q = np.rint(groups / scale[:, :, None]).clip(INT4_NEGATIVE_MIN, INT4_POSITIVE_MAX).astype(np.int8)
-    q = q.reshape(vocab_size, n_groups * GROUP_SIZE)[:, :dims]
+    q = round_codes(groups / scale[:, :, None], rounding).clip(INT4_NEGATIVE_MIN, INT4_POSITIVE_MAX).astype(np.int8)
+    q = q.reshape(vocab_size, n_groups * group_size)[:, :dims]
 
     packed = pack_int4_rows(q)
-    dequant = run_eval.dequant_int4_group128(packed, scale, dims)
-    if not np.array_equal(dequant, q.astype(np.float32) * np.repeat(scale, GROUP_SIZE, axis=1)[:, :dims]):
+    dequant = run_eval.dequant_int4_group(packed, scale, dims, group_size)
+    if not np.array_equal(dequant, q.astype(np.float32) * np.repeat(scale, group_size, axis=1)[:, :dims]):
         raise AssertionError("int4 packing round-trip mismatch (pack != unpack)")
     group_max_abs = np.abs(groups).max(axis=2)
     return packed, np.ascontiguousarray(scale), dequant, group_max_abs
@@ -138,8 +179,15 @@ def pack_int4_rows(q: np.ndarray) -> np.ndarray:
     return np.ascontiguousarray((hi << 4) | lo)
 
 
-def make_int4_model(packed: np.ndarray, scales: np.ndarray, dims: int) -> onnx.ModelProto:
-    """Build the int4-group128 graph (same shape as the tier models).
+def make_int4_model(
+    packed: np.ndarray,
+    scales: np.ndarray,
+    dims: int,
+    group_size: int = GROUP_SIZE,
+    tier: str = "int4",
+    rounding: str = "nearest-even",
+) -> onnx.ModelProto:
+    """Build the int4-group{N} graph (same shape as the tier models).
 
     `word_index` int64 [1] -> `embedding` fp32 [dims]. The graph unpacks
     the packed nibble row arithmetically (Div/Floor/Sub are exact on
@@ -151,9 +199,8 @@ def make_int4_model(packed: np.ndarray, scales: np.ndarray, dims: int) -> onnx.M
     if dims % 2:
         raise ValueError(f"int4 graph path requires even dims, got {dims}")
     vocab_size, half_dims = packed.shape
-    n_groups = scales.shape[1]
 
-    group_of_dim = (np.arange(dims, dtype=np.int64) // GROUP_SIZE).astype(np.int64)
+    group_of_dim = (np.arange(dims, dtype=np.int64) // group_size).astype(np.int64)
     nodes = [
         helper.make_node("Constant", [], ["q_packed"], value=numpy_helper.from_array(packed, name="q_packed")),
         helper.make_node("Constant", [], ["group_scales"], value=numpy_helper.from_array(scales, name="group_scales")),
@@ -200,7 +247,7 @@ def make_int4_model(packed: np.ndarray, scales: np.ndarray, dims: int) -> onnx.M
     ]
     input_tensor = helper.make_tensor_value_info("word_index", TensorProto.INT64, [1])
     output_tensor = helper.make_tensor_value_info("embedding", TensorProto.FLOAT, [dims])
-    graph = helper.make_graph(nodes, "fasttext_int4_group128_embedding", [input_tensor], [output_tensor])
+    graph = helper.make_graph(nodes, f"fasttext_int4_group{group_size}_embedding", [input_tensor], [output_tensor])
     model = helper.make_model(
         graph,
         producer_name="kotoshu-fasttext-converter",
@@ -211,11 +258,12 @@ def make_int4_model(packed: np.ndarray, scales: np.ndarray, dims: int) -> onnx.M
     model.metadata_props.append(StringStringEntryProto(key="vocabulary_size", value=str(vocab_size)))
     model.metadata_props.append(StringStringEntryProto(key="embedding_dimension", value=str(dims)))
     model.metadata_props.append(StringStringEntryProto(key="model_type", value="fasttext_embedding"))
-    model.metadata_props.append(StringStringEntryProto(key="quantization", value=ROW_FORMAT["quantization"]))
-    model.metadata_props.append(StringStringEntryProto(key="tier", value="int4"))
-    model.metadata_props.append(StringStringEntryProto(key="group_size", value=str(GROUP_SIZE)))
+    model.metadata_props.append(StringStringEntryProto(key="quantization", value=f"int4-group{group_size}"))
+    model.metadata_props.append(StringStringEntryProto(key="tier", value=tier))
+    model.metadata_props.append(StringStringEntryProto(key="group_size", value=str(group_size)))
+    model.metadata_props.append(StringStringEntryProto(key="rounding", value=rounding))
     model.metadata_props.append(
-        StringStringEntryProto(key="int4_packing", value=json.dumps(ROW_FORMAT, separators=(",", ":")))
+        StringStringEntryProto(key="int4_packing", value=json.dumps(row_format(group_size, rounding), separators=(",", ":")))
     )
     return model
 
@@ -251,7 +299,17 @@ def verify_int4_onnx(onnx_path: Path, dequant: np.ndarray, x: np.ndarray) -> dic
     }
 
 
-def build_language(repo: Path, lang: str) -> dict:
+def build_language(
+    repo: Path, lang: str, group_size: int = GROUP_SIZE, rounding: str = "nearest-even", tag: str | None = None
+) -> dict:
+    if group_size not in GROUP_SIZES:
+        raise ValueError(f"group_size must be one of {GROUP_SIZES}, got {group_size}")
+    if rounding not in ROUNDING_MODES:
+        raise ValueError(f"rounding must be one of {ROUNDING_MODES}, got {rounding}")
+    if tag is None:
+        tag = derive_tag(group_size, rounding)
+    row_fmt = row_format(group_size, rounding)
+
     model_dir = repo / "models" / lang
     print(f"[{lang}] loading full model")
     full = onnx.load(str(model_dir / f"fasttext.{lang}.onnx"))
@@ -261,12 +319,12 @@ def build_language(repo: Path, lang: str) -> dict:
         raise ValueError(f"{lang}: vocab json does not match embedding matrix {x.shape}")
     source_sha = build_tiers.full_model_sha256(repo, lang)
 
-    packed, scales, dequant, _group_max_abs = quantize_int4_group128(x)
-    model = make_int4_model(packed, scales, dequant.shape[1])
+    packed, scales, dequant, _group_max_abs = quantize_int4_group(x, group_size, rounding)
+    model = make_int4_model(packed, scales, dequant.shape[1], group_size, tier=tag, rounding=rounding)
     model.metadata_props.append(StringStringEntryProto(key="source_full_sha256", value=source_sha))
 
-    onnx_path = model_dir / f"fasttext.{lang}.int4.onnx"
-    vocab_path = model_dir / f"fasttext.{lang}.int4.vocab.json"
+    onnx_path = model_dir / f"fasttext.{lang}.{tag}.onnx"
+    vocab_path = model_dir / f"fasttext.{lang}.{tag}.vocab.json"
     onnx.save(model, str(onnx_path))
     shutil.copyfile(model_dir / f"fasttext.{lang}.vocab.json", vocab_path)
 
@@ -276,24 +334,27 @@ def build_language(repo: Path, lang: str) -> dict:
     run_eval.load_tier_model(onnx_path, vocab_path)
 
     fluency_gates = run_eval.load_gates(repo)["fluency"]
-    report = run_eval.evaluate(repo, lang, "int4", build_check=check, write=False, gates=fluency_gates)
-    report["recipe"]["reduction"] = "none (full dims; int4-group128 quantization only)"
-    report["row_format"] = ROW_FORMAT
+    report = run_eval.evaluate(repo, lang, tag, build_check=check, write=False, gates=fluency_gates)
+    report["recipe"]["reduction"] = f"none (full dims; int4-group{group_size} quantization only)"
+    report["row_format"] = row_fmt
     report["experiment_note"] = (
         "Experiment only (plan 68 B1): evaluated but not shipped; registry.json, "
         "manifest.json, tiers.json and release workflow unchanged."
     )
     reports_dir = repo / "eval" / "reports"
     reports_dir.mkdir(parents=True, exist_ok=True)
-    (reports_dir / f"int4.{lang}.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    (reports_dir / f"{tag}.{lang}.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
 
     m = report["metrics"]
     print(
-        f"  {lang}/int4: rank_corr={m['rank_corr']['mean_spearman']:.4f} "
+        f"  {lang}/{tag}: rank_corr={m['rank_corr']['mean_spearman']:.4f} "
         f"top1={m['top1_agreement']['agreement']:.4f} "
         f"bytes={onnx_path.stat().st_size} {'PASS' if report['gates']['passed'] else 'fail'}"
     )
     return {
+        "tag": tag,
+        "group_size": group_size,
+        "rounding": rounding,
         "full_bytes": (model_dir / f"fasttext.{lang}.onnx").stat().st_size,
         "int4_bytes": onnx_path.stat().st_size,
         "fluency_bytes": (model_dir / f"fasttext.{lang}.fluency.onnx").stat().st_size,
@@ -305,14 +366,13 @@ def build_language(repo: Path, lang: str) -> dict:
     }
 
 
-def overhead_analysis(sizes: dict[str, dict]) -> dict:
-    first = next(iter(sizes.values()))
+def overhead_analysis(sizes: dict[str, dict], group_size: int = GROUP_SIZE) -> dict:
     vocab_size, dims = 100_000, 300  # verified per language at build time
-    n_groups = -(-dims // GROUP_SIZE)
+    n_groups = -(-dims // group_size)
     packed_total = vocab_size * (dims // 2)
     return {
         "dims": dims,
-        "group_size": GROUP_SIZE,
+        "group_size": group_size,
         "groups_per_row": n_groups,
         "vocab_size": vocab_size,
         "packed_bytes_per_row": dims // 2,
@@ -324,16 +384,17 @@ def overhead_analysis(sizes: dict[str, dict]) -> dict:
         "fp16_overhead_fraction_of_packed": round(vocab_size * n_groups * 2 / packed_total, 4),
         "scale_dtype": "fp32",
         "scale_dtype_rationale": (
-            "fp32 scales cost 12 B/row (1.20 MB per 100k-vocab model, 8.0% of "
-            "the 15.0 MB packed payload); fp16 would save 0.60 MB (3.7% of "
-            "total) at the cost of a Cast node in every graph and ~0.05% "
-            "relative scale rounding. fp32 chosen for exact parity with the "
-            "int8 tier scale dtype and zero extra graph ops."
+            f"fp32 scales cost {n_groups * 4} B/row ({vocab_size * n_groups * 4 / 1e6:.2f} MB per "
+            f"100k-vocab model, {vocab_size * n_groups * 4 / packed_total:.1%} of the "
+            "15.0 MB packed payload); fp16 would halve that at the cost of a Cast "
+            "node in every graph and ~0.05% relative scale rounding. fp32 chosen "
+            "for exact parity with the int8 tier scale dtype and zero extra graph ops."
         ),
     }
 
 
-def recommendation(sizes: dict[str, dict]) -> str:
+def recommendation(sizes: dict[str, dict], group_size: int = GROUP_SIZE, rounding: str = "nearest-even") -> str:
+    name = f"int4-group{group_size}/{rounding}"
     failed = [lang for lang, v in sizes.items() if not v["gate_passed"]]
     int4 = next(iter(sizes.values()))["int4_bytes"]
     full = next(iter(sizes.values()))["full_bytes"]
@@ -341,19 +402,18 @@ def recommendation(sizes: dict[str, dict]) -> str:
         rcs = [v["rank_corr"] for v in sizes.values()]
         passed = [lang for lang in sizes if lang not in failed]
         return (
-            f"Do NOT ship int4-group128: rank_corr clears the 0.97 gate on every "
+            f"Do NOT ship {name}: rank_corr clears the 0.97 gate on every "
             f"language ({min(rcs):.4f}-{max(rcs):.4f}) but top1_agreement fails the "
             f"0.95 gate on {len(failed)}/{len(sizes)}"
             + (f" (only {', '.join(passed)} passes)" if passed else "")
             + " — 4-bit noise flips roughly 1-2 of the ~30 scoreable typo probes per "
             "language, so the fine-grained cosine ordering that the rerank pipeline "
-            "depends on does not survive at group size 128. int8-per-row remains the "
-            "shipped recipe. If int4 is retried, the recorded (untried) levers are: "
-            "smaller groups (64/32), asymmetric unsigned [-8, 15] rounding, or a mixed "
-            "int4-mini + int8-fluency split. Evidence: eval/reports/int4.{lang}.json."
+            "depends on does not survive. int8-per-row remains the shipped recipe. "
+            "If int4 is retried, the remaining (untried) levers are recorded in "
+            "eval/reports/int4-retry.summary.json."
         )
     return (
-        f"Ship-worthy as an optional tier candidate: int4-group128 keeps the FULL "
+        f"Ship-worthy as an optional tier candidate: {name} keeps the FULL "
         f"100k vocab at ~{int4 / 1e6:.1f} MB (~{full / int4:.0f}x smaller than the "
         f"{full / 1e6:.0f} MB fp32 full model, ~{int4 / fluency_bytes(sizes):.1f}x the "
         "size of the 50k-vocab fluency tier) while meeting the fluency gates on all "
@@ -366,7 +426,8 @@ def fluency_bytes(sizes: dict[str, dict]) -> int:
     return next(iter(sizes.values()))["fluency_bytes"]
 
 
-def write_summary(repo: Path, langs: list[str], sizes: dict[str, dict]) -> None:
+def write_summary(repo: Path, langs: list[str], sizes: dict[str, dict], tag: str = "int4") -> None:
+    first = next(iter(sizes.values()))
     totals = {key: sum(v[key] for v in sizes.values()) for key in ("full_bytes", "int4_bytes", "fluency_bytes", "mini_bytes")}
     failed = [lang for lang, v in sizes.items() if not v["gate_passed"]]
     summary = {
@@ -379,26 +440,32 @@ def write_summary(repo: Path, langs: list[str], sizes: dict[str, dict]) -> None:
             "passed_languages": [lang for lang in langs if sizes[lang]["gate_passed"]],
             "failed_languages": failed,
         },
-        "group_scale_overhead": overhead_analysis(sizes),
+        "group_scale_overhead": overhead_analysis(sizes, first["group_size"]),
         "rust_contract": {
             "status": "extension required",
-            "detail": RUST_CONTRACT_NOTE,
+            "detail": rust_contract_note(first["group_size"]),
         },
-        "recommendation": recommendation(sizes),
+        "recommendation": recommendation(sizes, first["group_size"], first["rounding"]),
         "note": "Experiment only (plan 68 B1): registry.json, manifest.json, tiers.json and release workflow unchanged.",
         "determinism": {"seed": run_eval.SEED, "rng": "np.random.default_rng([seed, crc32(language)])"},
         "generated_at": build_tiers.iso_now(),
     }
-    out = repo / "eval" / "reports" / "int4.summary.json"
+    out = repo / "eval" / "reports" / f"{tag}.summary.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {out}")
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Build int4 group-128 full-vocab models (plan 68 B1 experiment)")
+    parser = argparse.ArgumentParser(description="Build int4 group-wise quantized full-vocab models (plan 68 B1 experiment)")
     parser.add_argument("--lang", nargs="+", help="language codes, e.g. en de")
     parser.add_argument("--all", action="store_true", help="build every language in manifest.json")
+    parser.add_argument("--group-size", type=int, default=GROUP_SIZE, choices=GROUP_SIZES,
+                        help="elements per scale group (default 128; 64/32 are the retry levers)")
+    parser.add_argument("--rounding", default="nearest-even", choices=ROUNDING_MODES,
+                        help="code rounding: nearest-even (np.rint, default) or half-away (asymmetric)")
+    parser.add_argument("--artifact-tag", default=None,
+                        help="artifact/report tag (default: int4 for group-128/nearest-even, else int4-g{G}-{ne|ha})")
     parser.add_argument("--repo-root", default=".", help="repo root (default: cwd)")
     args = parser.parse_args()
 
@@ -414,10 +481,11 @@ def main() -> int:
     else:
         parser.error("specify --lang or --all")
 
+    tag = args.artifact_tag or derive_tag(args.group_size, args.rounding)
     sizes: dict[str, dict] = {}
     for lang in langs:
-        sizes[lang] = build_language(repo, lang)
-    write_summary(repo, langs, sizes)
+        sizes[lang] = build_language(repo, lang, group_size=args.group_size, rounding=args.rounding, tag=tag)
+    write_summary(repo, langs, sizes, tag)
 
     failures = [lang for lang in langs if not sizes[lang]["gate_passed"]]
     if failures:

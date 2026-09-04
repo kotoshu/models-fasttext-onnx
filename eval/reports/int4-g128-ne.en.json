@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "tier": "int4-g128-ne",
+  "recipe": {
+    "dims": 300,
+    "vocab_size": 100000,
+    "quantization": "int4-group128",
+    "reduction": "none (full dims; int4-group128 quantization only)"
+  },
+  "metrics": {
+    "rank_corr": {
+      "mean_spearman": 0.9864564142038948,
+      "n_probes_scored": 2000,
+      "n_probes_skipped": 0,
+      "mean_comparisons_per_probe": 3000.0,
+      "rank_range": [
+        50,
+        30000
+      ]
+    },
+    "top1_agreement": {
+      "agreement": 0.9,
+      "n_probes_scored": 30,
+      "n_probes_skipped_typo": 370,
+      "n_probes_skipped_candidates": 0,
+      "mean_candidates_dropped_out_of_vocab": 0.0,
+      "rank_range": [
+        1000,
+        30000
+      ]
+    },
+    "coverage": {
+      "frequency_weighted_coverage": 1.0,
+      "full_vocab_size": 100000,
+      "tier_vocab_size": 100000,
+      "weighting": "1/(rank+1)"
+    }
+  },
+  "gates": {
+    "thresholds": {
+      "top1_agreement_min": 0.95,
+      "rank_corr_min": 0.97
+    },
+    "checks": {
+      "rank_corr": true,
+      "top1_agreement": false
+    },
+    "passed": false
+  },
+  "metric_note": "top1_agreement is a proxy for the gem's spelling-correction rerank pipeline, not the pipeline itself: probes are single-edit typos drawn from the keyboard-layout-aware generator in eval/noise.py (QWERTY/QWERTZ/AZERTY/JCUKEN neighbor slips for Latin/Cyrillic, curated character confusions + transposition for ja/ko/zh) that are themselves in-vocabulary, the candidate set is the true word plus the top-20 nearest neighbours of the typo under the full model over a 20000-word sample window, and each model scores candidates by cosine to the typo. It will be replaced by gem conformance vectors (kotoshu-rs M3).",
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "typo_model": {
+    "generator": "eval/noise.py::make_typo",
+    "layouts": "mirrored from kotoshu gem lib/kotoshu/keyboard/layouts (qwerty/qwertz/azerty/jcuken)",
+    "cjk": "curated visual/phonetic confusion sets + transposition (not learned)"
+  },
+  "files": {
+    "tier_onnx": {
+      "path": "models/en/fasttext.en.int4-g128-ne.onnx",
+      "bytes": 16205081,
+      "sha256": "a835d2a9f2c24cf5ce9baf1dedaa5f5c2cf58697f2a6cd54c3ec84891717b70e"
+    },
+    "tier_vocab": {
+      "path": "models/en/fasttext.en.int4-g128-ne.vocab.json",
+      "bytes": 1802666,
+      "sha256": "0f5b80cfa369c52678eafd01273799b43706e80108ea669cf5af036fabc696b4"
+    },
+    "full_onnx": {
+      "path": "models/en/fasttext.en.onnx",
+      "bytes": 120000415,
+      "sha256": "cf826747600aa353d9be18a47e63cbd3929e742088af338096edcf54aad17d36"
+    }
+  },
+  "generated_at": "2026-09-04T08:09:13Z",
+  "quantization_check": {
+    "runtime_vs_dequant_max_abs": 0.0,
+    "runtime_vs_dequant_tol": 0.0001,
+    "spot_checked_indices": [
+      0,
+      1,
+      29999,
+      50000,
+      99999
+    ],
+    "dequant_vs_projected_max_abs": 0.5525000691413879,
+    "dequant_vs_projected_rms": 0.013006188906729221,
+    "note": "dequant_vs_projected_* are informational for int4; the binding gate is the fluency eval"
+  },
+  "row_format": {
+    "quantization": "int4-group128",
+    "q_packed": "uint8 [vocab_size, ceil(dims/2)]; byte j of row r holds element 2j in the HIGH nibble and element 2j+1 in the LOW nibble, two's-complement signed nibbles in [-8, 7] (odd dims: trailing low nibble is padding); identical to the kotoshu-rs pack_row_int4 contract",
+    "group_scales": "fp32 [vocab_size, ceil(dims/128)]; scale[g] = max(abs(row[:, group g])) / 7.0, zero-guarded to 1.0",
+    "dequant": "value[i] = unpacked_nibble[i] * group_scales[row, i // 128]",
+    "group_size": 128,
+    "rounding": "nearest-even",
+    "rounding_detail": "nearest-even: np.rint (banker's rounding, the original recipe); half-away: deterministic asymmetric round-half-away-from-zero",
+    "scale_dtype": "fp32",
+    "kotoshu_rs_row_format": "nibble packing matches RowFormat::Int4PerRow (byte 0x04) but 0x04 carries ONE fp32 scale per row; per-group scales require a kotoshu-rs contract extension (new format byte + metadata string \"int4-group128\") before a native Rust reader can load these"
+  },
+  "experiment_note": "Experiment only (plan 68 B1): evaluated but not shipped; registry.json, manifest.json, tiers.json and release workflow unchanged."
+}

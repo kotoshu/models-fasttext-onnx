@@ -84,3 +84,10 @@ models/**/*.nested.onnx
 # eval/reports/int4.*.json ARE committed.
 models/**/*.int4.onnx
 models/**/*.int4.vocab.json
+
+# int4 lever-retry sweep + mixed mini-at-int4 (plan 68 B1 follow-up).
+# Same rule: binaries local-only, eval/reports/int4-*.{lang}.json committed.
+models/**/*.int4-g*.onnx
+models/**/*.int4-g*.vocab.json
+models/**/*.int4-mini.onnx
+models/**/*.int4-mini.vocab.json
