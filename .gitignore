@@ -78,3 +78,9 @@ models/**/*.fluency.vocab.json
 # The full-vocab int8 .onnx is a binary release asset — never committed.
 # The small .nested.json truncation manifest IS committed.
 models/**/*.nested.onnx
+
+# int4-group128 full-vocab experiment (plan 68 B1).
+# Binary + copied full vocab are local-only release-size artifacts;
+# eval/reports/int4.*.json ARE committed.
+models/**/*.int4.onnx
+models/**/*.int4.vocab.json

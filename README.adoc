@@ -206,6 +206,20 @@ survive SVD dim reduction (rank_corr 0.87–0.91), while int8 with full
 dims is near-lossless on the retained vocabulary (rank_corr 0.9999).
 Vocabulary loss is reported by the coverage metric in each eval report.
 
+An `int4` group-128 variant of the full tier (all 100k rows, 300 dims,
+~16.2 MB per language vs 120 MB fp32; each row packed into signed
+nibbles in three 128-element groups with one fp32 scale per group) has
+been built and evaluated as an experiment (plan 68 B1) but is NOT
+shipped: `scripts/build_int4.py` produces run-in-onnxruntime artifacts
+whose round-trip is exact, yet only `ru` clears the fluency
+`top1_agreement` gate (8/9 languages fail at 0.78–0.94 while
+`rank_corr` passes everywhere). Evidence lives in
+`eval/reports/int4.{lang}.json` with the cross-language verdicts,
+group-scale overhead analysis and recommendation in
+`eval/reports/int4.summary.json`; adopting any such tier — including the
+kotoshu-rs `RowFormat` extension its per-group scales would need — is
+owner-gated.
+
 Binaries are distributed as GitHub Release assets; the URL contract is locked
 for API v1:
 
