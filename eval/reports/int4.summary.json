@@ -1,0 +1,157 @@
+{
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "zh"
+  ],
+  "per_language": {
+    "de": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "12ec7742ae1e4933d980a0ec4f14bd4652949c0ae8f3d16bd0606001dd62b046",
+      "rank_corr": 0.985942,
+      "top1_agreement": 0.85,
+      "gate_passed": false
+    },
+    "en": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "e78132d6328fe05a1ce871fee41eaaa46770b595f4ed0908df0ec53458f306d3",
+      "rank_corr": 0.986456,
+      "top1_agreement": 0.9,
+      "gate_passed": false
+    },
+    "es": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "0e3de8794ed1e82f67db5c0c29ae3b8b87fdc7ac9d3733933a0d86179399763c",
+      "rank_corr": 0.987933,
+      "top1_agreement": 0.818182,
+      "gate_passed": false
+    },
+    "fr": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "dad5f40267709552191eb0ed1f963a9f2725ef19a77c9b4223c0090b47f109a5",
+      "rank_corr": 0.987182,
+      "top1_agreement": 0.8125,
+      "gate_passed": false
+    },
+    "ja": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "1f45edde1d41b665e01927cb645dc1c82b4ba5aa85ffc2546ef1a96eccc0acf1",
+      "rank_corr": 0.98361,
+      "top1_agreement": 0.783784,
+      "gate_passed": false
+    },
+    "ko": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "7805fa41807301a028cab054b192126b7266bc1e03ea69259e3581bac5b59749",
+      "rank_corr": 0.982334,
+      "top1_agreement": 0.9375,
+      "gate_passed": false
+    },
+    "pt": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "52b67c4ad6c3762e2f0ac4ed4a804b1285a8a0f82cb256b6cb8227593f4a5a0f",
+      "rank_corr": 0.988495,
+      "top1_agreement": 0.904762,
+      "gate_passed": false
+    },
+    "ru": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "ae5c63e33ac41e40f401fc9af1c804adf83e825ddd188fcaba84a84544038406",
+      "rank_corr": 0.985898,
+      "top1_agreement": 1.0,
+      "gate_passed": true
+    },
+    "zh": {
+      "full_bytes": 120000415,
+      "int4_bytes": 16204875,
+      "fluency_bytes": 15200760,
+      "mini_bytes": 3040752,
+      "int4_sha256": "0a316691cdb68202535fd2f11b496178270d882dc449e5809aa040c68c7eed06",
+      "rank_corr": 0.981821,
+      "top1_agreement": 0.828571,
+      "gate_passed": false
+    }
+  },
+  "totals": {
+    "full_bytes": 1080003735,
+    "int4_bytes": 145843875,
+    "fluency_bytes": 136806840,
+    "mini_bytes": 27366768
+  },
+  "gate_verdicts": {
+    "thresholds": {
+      "top1_agreement_min": 0.95,
+      "rank_corr_min": 0.97
+    },
+    "applied_to": "int4 artifacts gated against the fluency thresholds via run_eval.evaluate(gates=...)",
+    "passed_languages": [
+      "ru"
+    ],
+    "failed_languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "ja",
+      "ko",
+      "pt",
+      "zh"
+    ]
+  },
+  "group_scale_overhead": {
+    "dims": 300,
+    "group_size": 128,
+    "groups_per_row": 3,
+    "vocab_size": 100000,
+    "packed_bytes_per_row": 150,
+    "fp32_scales_bytes_per_row": 12,
+    "fp32_scales_bytes_total": 1200000,
+    "fp16_scales_bytes_per_row": 6,
+    "fp16_scales_bytes_total": 600000,
+    "fp32_overhead_fraction_of_packed": 0.08,
+    "fp16_overhead_fraction_of_packed": 0.04,
+    "scale_dtype": "fp32",
+    "scale_dtype_rationale": "fp32 scales cost 12 B/row (1.20 MB per 100k-vocab model, 8.0% of the 15.0 MB packed payload); fp16 would save 0.60 MB (3.7% of total) at the cost of a Cast node in every graph and ~0.05% relative scale rounding. fp32 chosen for exact parity with the int8 tier scale dtype and zero extra graph ops."
+  },
+  "rust_contract": {
+    "status": "extension required",
+    "detail": "kotoshu-rs rerank::dequant::RowFormat accepts metadata \"int4-per-row\" (byte 0x04: packed signed nibbles x ONE fp32 row scale) and its test explicitly rejects \"int4-group-128\". These artifacts use \"int4-group128\" + per-group fp32 scales, so kotoshu-rs needs a contract extension: a new RowFormat variant + format byte + the \"int4-group128\" metadata string, with dequant reusing the existing nibble unpacking (pack_row_int4/dequant_row_int4) and taking ceil(dims/128) fp32 scales per row instead of one; onnx.rs must read the group_scales constant. kotoshu-rs was NOT modified by this experiment."
+  },
+  "recommendation": "Do NOT ship int4-group128: rank_corr clears the 0.97 gate on every language (0.9818-0.9885) but top1_agreement fails the 0.95 gate on 8/9 (only ru passes) \u2014 4-bit noise flips roughly 1-2 of the ~30 scoreable typo probes per language, so the fine-grained cosine ordering that the rerank pipeline depends on does not survive at group size 128. int8-per-row remains the shipped recipe. If int4 is retried, the recorded (untried) levers are: smaller groups (64/32), asymmetric unsigned [-8, 15] rounding, or a mixed int4-mini + int8-fluency split. Evidence: eval/reports/int4.{lang}.json.",
+  "note": "Experiment only (plan 68 B1): registry.json, manifest.json, tiers.json and release workflow unchanged.",
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "generated_at": "2026-09-04T07:48:53Z"
+}
