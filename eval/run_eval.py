@@ -40,6 +40,10 @@ from scipy.stats import spearmanr
 
 from noise import make_typo  # keyboard-aware multilingual typo generator (eval/noise.py)
 
+QUANT_INT8_PER_ROW = "int8-per-row"
+QUANT_INT4_GROUP128 = "int4-group128"
+INT4_GROUP_SIZE = 128
+
 SEED = 42
 
 RANK_CORR_PROBES = 2000
@@ -136,8 +140,81 @@ def load_full_model(onnx_path: Path, vocab_path: Path) -> LoadedModel:
     )
 
 
+def sign_extend_nibbles(u: np.ndarray) -> np.ndarray:
+    """Two's-complement unsigned nibbles (0..15) -> signed (-8..7)."""
+    return u - 16.0 * (u > 7.5).astype(np.float32)
+
+
+def unpack_int4_packed(packed: np.ndarray) -> np.ndarray:
+    """Unpack packed int4 rows into signed nibble values.
+
+    `packed` is uint8 [V, ceil(d/2)]: byte j of a row holds element 2j in
+    the HIGH nibble and element 2j+1 in the LOW nibble, two's-complement
+    signed — the same packing contract as kotoshu-rs
+    `rerank::dequant::pack_row_int4`/`dequant_row_int4`. Returns fp32
+    [V, 2*ceil(d/2)]; the caller slices a trailing padding nibble for odd d.
+    """
+    hi = sign_extend_nibbles((packed >> 4).astype(np.float32))
+    lo = sign_extend_nibbles((packed & 0x0F).astype(np.float32))
+    out = np.empty((packed.shape[0], packed.shape[1] * 2), dtype=np.float32)
+    out[:, 0::2] = hi
+    out[:, 1::2] = lo
+    return out
+
+
+def dequant_int4_group128(packed: np.ndarray, group_scales: np.ndarray, dims: int) -> np.ndarray:
+    """Host-side dequant of an int4-group128 matrix (see build_int4.py).
+
+    `group_scales` is fp32 [V, ceil(dims/128)] with one scale per
+    consecutive 128-element group of each row; element i of row r
+    dequantizes as `nibble * group_scales[r, i // 128]`.
+    """
+    n_groups = -(-dims // INT4_GROUP_SIZE)  # ceil
+    if group_scales.shape[1] != n_groups:
+        raise ValueError(
+            f"group_scales has {group_scales.shape[1]} groups; dims {dims} need {n_groups}"
+        )
+    values = unpack_int4_packed(packed)[:, :dims]
+    per_dim_scale = np.repeat(group_scales, INT4_GROUP_SIZE, axis=1)[:, :dims]
+    return values * per_dim_scale
+
+
 def load_tier_model(onnx_path: Path, vocab_path: Path) -> LoadedModel:
+    """Row-format-aware loader: dispatches on the `quantization` metadata.
+
+    int8-per-row (or metadata absent with an int8 `q_embeddings` constant,
+    the shipped tier + nested artifacts) keeps the original path; the
+    int4-group128 experiment artifacts (build_int4.py) unpack nibbles and
+    apply per-group scales. Both paths end in the same consistency checks
+    and onnxruntime spot check.
+    """
     model = onnx.load(str(onnx_path))
+    meta = metadata_dict(model)
+    if meta.get("quantization") == QUANT_INT4_GROUP128:
+        packed = constant_array(model, "q_packed")
+        scales = constant_array(model, "group_scales")
+        if packed.dtype != np.uint8 or scales.dtype != np.float32:
+            raise ValueError(f"{onnx_path}: expected uint8 q_packed / fp32 group_scales")
+        if packed.shape[0] != scales.shape[0]:
+            raise ValueError(f"{onnx_path}: q_packed rows {packed.shape[0]} != group_scales rows {scales.shape[0]}")
+        group_size = int(meta.get("group_size", INT4_GROUP_SIZE))
+        if group_size != INT4_GROUP_SIZE:
+            raise ValueError(f"{onnx_path}: unsupported group_size {group_size}")
+        dims = packed.shape[1] * 2
+        dequant = dequant_int4_group128(packed, scales, dims)
+        vocab = json.loads(vocab_path.read_text(encoding="utf-8"))
+        _check_consistency(dequant, vocab, meta, str(onnx_path))
+        spot_check_against_runtime(onnx_path, dequant)
+        return LoadedModel(
+            tier=meta.get("tier", "unknown"),
+            embeddings=dequant,
+            normalized=_normalized(dequant),
+            word_to_idx=vocab["word_to_idx"],
+            dims=dims,
+            vocab_size=dequant.shape[0],
+            quantization=meta.get("quantization"),
+        )
+
     q = constant_array(model, "q_embeddings")
     scale = constant_array(model, "row_scale")
     if q.dtype != np.int8 or scale.dtype != np.float32:
@@ -145,7 +222,6 @@ def load_tier_model(onnx_path: Path, vocab_path: Path) -> LoadedModel:
     if q.shape[0] != scale.shape[0]:
         raise ValueError(f"{onnx_path}: q_embeddings rows {q.shape[0]} != row_scale rows {scale.shape[0]}")
     dequant = q.astype(np.float32) * scale[:, None]
-    meta = metadata_dict(model)
     vocab = json.loads(vocab_path.read_text(encoding="utf-8"))
     _check_consistency(dequant, vocab, meta, str(onnx_path))
     spot_check_against_runtime(onnx_path, dequant)
@@ -331,7 +407,15 @@ def evaluate(
     build_check: dict | None = None,
     attempts: list | None = None,
     write: bool = True,
+    gates: dict | None = None,
 ) -> dict:
+    """Evaluate one tier model against its full-model parent.
+
+    `gates` overrides the thresholds looked up in eval/gates.json for the
+    tier name (used by experiment harnesses such as build_int4.py, whose
+    `int4` artifacts are gated against the fluency thresholds without
+    registering a new tier name in gates.json).
+    """
     repo = Path(repo_root)
     model_dir = repo / "models" / lang
     full = load_full_model(model_dir / f"fasttext.{lang}.onnx", model_dir / f"fasttext.{lang}.vocab.json")
@@ -343,7 +427,7 @@ def evaluate(
         "top1_agreement": top1_agreement_metric(full, tm, rng, lang),
         "coverage": coverage_metric(full.vocab_size, tm.vocab_size),
     }
-    gates = apply_gates(metrics, load_gates(repo)[tier])
+    gates_result = apply_gates(metrics, gates if gates is not None else load_gates(repo)[tier])
 
     report = {
         "language": lang,
@@ -355,7 +439,7 @@ def evaluate(
             "reduction": "uncentered-covariance-eigendecomposition",
         },
         "metrics": metrics,
-        "gates": gates,
+        "gates": gates_result,
         "metric_note": METRIC_NOTE,
         "determinism": {"seed": SEED, "rng": "np.random.default_rng([seed, crc32(language)])"},
         "typo_model": {
