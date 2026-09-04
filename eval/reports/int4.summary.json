@@ -147,11 +147,21 @@
     "status": "extension required",
     "detail": "kotoshu-rs rerank::dequant::RowFormat accepts metadata \"int4-per-row\" (byte 0x04: packed signed nibbles x ONE fp32 row scale) and its test explicitly rejects \"int4-group-128\". These artifacts use \"int4-group128\" + per-group fp32 scales, so kotoshu-rs needs a contract extension: a new RowFormat variant + format byte + the \"int4-group128\" metadata string, with dequant reusing the existing nibble unpacking (pack_row_int4/dequant_row_int4) and taking ceil(dims/128) fp32 scales per row instead of one; onnx.rs must read the group_scales constant. kotoshu-rs was NOT modified by this experiment."
   },
-  "recommendation": "Do NOT ship int4-group128: rank_corr clears the 0.97 gate on every language (0.9818-0.9885) but top1_agreement fails the 0.95 gate on 8/9 (only ru passes) \u2014 4-bit noise flips roughly 1-2 of the ~30 scoreable typo probes per language, so the fine-grained cosine ordering that the rerank pipeline depends on does not survive at group size 128. int8-per-row remains the shipped recipe. If int4 is retried, the recorded (untried) levers are: smaller groups (64/32), asymmetric unsigned [-8, 15] rounding, or a mixed int4-mini + int8-fluency split. Evidence: eval/reports/int4.{lang}.json.",
+  "recommendation": "Do NOT ship int4-group128: rank_corr clears the 0.97 gate on every language (0.9818-0.9885) but top1_agreement fails the 0.95 gate on 8/9 (only ru passes) \u2014 4-bit noise flips roughly 1-2 of the ~30 scoreable typo probes per language, so the fine-grained cosine ordering that the rerank pipeline depends on does not survive at group size 128. int8-per-row remains the shipped recipe. If int4 is retried, the recorded (untried) levers are: smaller groups (64/32), asymmetric unsigned [-8, 15] rounding, or a mixed int4-mini + int8-fluency split. Evidence: eval/reports/int4.{lang}.json.\n\nRetry (2026-09-04): CONFIRMED REJECTION of int4 for full-vocab artifacts: no config in {group 128/64/32} x {nearest-even, half-away} clears the fluency top1 >= 0.95 gate (best canary config int4-g64-ne at min-canary top1 0.8378; ja stays worst at 0.7838); rank_corr passes everywhere, so the 4-bit noise floor keeps flipping 1-2 typo probes per language regardless of grouping or rounding. int8-per-row remains the shipped recipe. The decisive group-32 probe on ja (worst language) still failed (top1 0.9189 ne / 0.9189 ha) at 19005076 bytes. Mixed fallback REJECTED too: int4-mini fails the MINI gate on de.",
   "note": "Experiment only (plan 68 B1): registry.json, manifest.json, tiers.json and release workflow unchanged.",
   "determinism": {
     "seed": 42,
     "rng": "np.random.default_rng([seed, crc32(language)])"
   },
-  "generated_at": "2026-09-04T07:48:53Z"
+  "generated_at": "2026-09-04T07:48:53Z",
+  "retry": {
+    "date": "2026-09-04",
+    "summary_file": "eval/reports/int4-retry.summary.json",
+    "levers_tried": [
+      "group-size 64/32",
+      "half-away rounding",
+      "mixed int4-mini"
+    ],
+    "final_verdict": "CONFIRMED REJECTION of int4 for full-vocab artifacts: no config in {group 128/64/32} x {nearest-even, half-away} clears the fluency top1 >= 0.95 gate (best canary config int4-g64-ne at min-canary top1 0.8378; ja stays worst at 0.7838); rank_corr passes everywhere, so the 4-bit noise floor keeps flipping 1-2 typo probes per language regardless of grouping or rounding. int8-per-row remains the shipped recipe. The decisive group-32 probe on ja (worst language) still failed (top1 0.9189 ne / 0.9189 ha) at 19005076 bytes. Mixed fallback REJECTED too: int4-mini fails the MINI gate on de."
+  }
 }

@@ -41,8 +41,11 @@ from scipy.stats import spearmanr
 from noise import make_typo  # keyboard-aware multilingual typo generator (eval/noise.py)
 
 QUANT_INT8_PER_ROW = "int8-per-row"
-QUANT_INT4_GROUP128 = "int4-group128"
-INT4_GROUP_SIZE = 128
+# int4 artifacts carry "int4-group{N}" quantization metadata (N = 128/64/32);
+# the group count is validated against the group_scales constant shape.
+QUANT_INT4_GROUP_PREFIX = "int4-group"
+QUANT_INT4_GROUP128 = f"{QUANT_INT4_GROUP_PREFIX}128"
+INT4_GROUP_SIZE = 128  # default when the metadata omits "group_size"
 
 SEED = 42
 
@@ -162,20 +165,27 @@ def unpack_int4_packed(packed: np.ndarray) -> np.ndarray:
     return out
 
 
-def dequant_int4_group128(packed: np.ndarray, group_scales: np.ndarray, dims: int) -> np.ndarray:
-    """Host-side dequant of an int4-group128 matrix (see build_int4.py).
+def dequant_int4_group(
+    packed: np.ndarray, group_scales: np.ndarray, dims: int, group_size: int = INT4_GROUP_SIZE
+) -> np.ndarray:
+    """Host-side dequant of an int4-group{N} matrix (see build_int4.py).
 
-    `group_scales` is fp32 [V, ceil(dims/128)] with one scale per
-    consecutive 128-element group of each row; element i of row r
-    dequantizes as `nibble * group_scales[r, i // 128]`.
+    `group_scales` is fp32 [V, ceil(dims/group_size)] with one scale per
+    consecutive `group_size`-element group of each row; element i of row r
+    dequantizes as `nibble * group_scales[r, i // group_size]`. The
+    rounding mode used at quantization time is irrelevant here — dequant
+    only unpacks the stored codes.
     """
-    n_groups = -(-dims // INT4_GROUP_SIZE)  # ceil
+    if group_size <= 0:
+        raise ValueError(f"group_size must be positive, got {group_size}")
+    n_groups = -(-dims // group_size)  # ceil
     if group_scales.shape[1] != n_groups:
         raise ValueError(
-            f"group_scales has {group_scales.shape[1]} groups; dims {dims} need {n_groups}"
+            f"group_scales has {group_scales.shape[1]} groups; dims {dims} "
+            f"at group_size {group_size} need {n_groups}"
         )
     values = unpack_int4_packed(packed)[:, :dims]
-    per_dim_scale = np.repeat(group_scales, INT4_GROUP_SIZE, axis=1)[:, :dims]
+    per_dim_scale = np.repeat(group_scales, group_size, axis=1)[:, :dims]
     return values * per_dim_scale
 
 
@@ -184,13 +194,15 @@ def load_tier_model(onnx_path: Path, vocab_path: Path) -> LoadedModel:
 
     int8-per-row (or metadata absent with an int8 `q_embeddings` constant,
     the shipped tier + nested artifacts) keeps the original path; the
-    int4-group128 experiment artifacts (build_int4.py) unpack nibbles and
-    apply per-group scales. Both paths end in the same consistency checks
-    and onnxruntime spot check.
+    int4-group{N} experiment artifacts (build_int4.py, N = 128/64/32)
+    unpack nibbles and apply per-group fp32 scales, with the group count
+    taken from the artifact's `group_size` metadata and cross-checked
+    against the group_scales constant. Both paths end in the same
+    consistency checks and onnxruntime spot check.
     """
     model = onnx.load(str(onnx_path))
     meta = metadata_dict(model)
-    if meta.get("quantization") == QUANT_INT4_GROUP128:
+    if str(meta.get("quantization", "")).startswith(QUANT_INT4_GROUP_PREFIX):
         packed = constant_array(model, "q_packed")
         scales = constant_array(model, "group_scales")
         if packed.dtype != np.uint8 or scales.dtype != np.float32:
@@ -198,10 +210,14 @@ def load_tier_model(onnx_path: Path, vocab_path: Path) -> LoadedModel:
         if packed.shape[0] != scales.shape[0]:
             raise ValueError(f"{onnx_path}: q_packed rows {packed.shape[0]} != group_scales rows {scales.shape[0]}")
         group_size = int(meta.get("group_size", INT4_GROUP_SIZE))
-        if group_size != INT4_GROUP_SIZE:
-            raise ValueError(f"{onnx_path}: unsupported group_size {group_size}")
         dims = packed.shape[1] * 2
-        dequant = dequant_int4_group128(packed, scales, dims)
+        n_groups = -(-dims // group_size)  # ceil
+        if scales.shape[1] != n_groups:
+            raise ValueError(
+                f"{onnx_path}: group_scales has {scales.shape[1]} groups; dims {dims} "
+                f"at group_size {group_size} need {n_groups}"
+            )
+        dequant = dequant_int4_group(packed, scales, dims, group_size)
         vocab = json.loads(vocab_path.read_text(encoding="utf-8"))
         _check_consistency(dequant, vocab, meta, str(onnx_path))
         spot_check_against_runtime(onnx_path, dequant)
