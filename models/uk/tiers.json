@@ -1,0 +1,28 @@
+{
+  "language": "uk",
+  "tiers": {
+    "fluency": {
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "f66ada0ab5130074c0507b746acaf49c2da8b9ee7c50707b488afe8185d0f86a",
+      "vocab_sha256": "7acd20ab5cd93325ad3f6254f047e02703551a453533674ce01d47c78ea9636b",
+      "vocab_bytes": 1492562,
+      "eval_ref": "eval/reports/uk.fluency.json",
+      "source_full_sha256": "97a7c039049550f31b844065dab0a78f074af7bc285bffd5661be1f13ad88fd3"
+    },
+    "mini": {
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "297026cb42486ae8e870bd2a47e9284fbb8cf4eadb6ce2d23c24d4a2db6be4ab",
+      "vocab_sha256": "6db9bdb07c1ae7df4e592dc69ece267df85ef95ae34fd29ab9de2eb6294633ac",
+      "vocab_bytes": 278939,
+      "eval_ref": "eval/reports/uk.mini.json",
+      "source_full_sha256": "97a7c039049550f31b844065dab0a78f074af7bc285bffd5661be1f13ad88fd3"
+    }
+  },
+  "generated_at": "2026-09-05T08:31:57Z"
+}

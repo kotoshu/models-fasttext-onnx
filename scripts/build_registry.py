@@ -14,7 +14,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 SPEC = "kotoshu.resources/v1"
-REGISTRY_VERSION = 1
+# Registry data revision (the spec id above is the format version).
+# 1: v1.0.x releases, 9 languages. 2: plan 77 coverage expansion, 13 new
+# languages under release tag v1.1.0 (minor = coverage per plan 05).
+REGISTRY_VERSION = 2
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
 # media host serves the real bytes. Plain-git files (vocab, manifests)

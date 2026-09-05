@@ -1,0 +1,28 @@
+{
+  "language": "nl",
+  "tiers": {
+    "fluency": {
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "5cf2d10364b9472ce7bcbca8a2cf450cf71a2efc24495b33a2fb47f4e00ec814",
+      "vocab_sha256": "e673124b3868833519658bae28ded78e76bc67b4dc736cd3d870d8b68b5fc817",
+      "vocab_bytes": 1125348,
+      "eval_ref": "eval/reports/nl.fluency.json",
+      "source_full_sha256": "71cdce125467b49fb7029fbed9a47a344535beb6603e3d797525648c33b205ae"
+    },
+    "mini": {
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "06a4036f68463a29efdf07be48e465e0e402372a5e6eb3fbbbe8f6f33c976d84",
+      "vocab_sha256": "ada08291911bab544b64cc17431ad7bf687f92170933184031d8951add287892",
+      "vocab_bytes": 208289,
+      "eval_ref": "eval/reports/nl.mini.json",
+      "source_full_sha256": "71cdce125467b49fb7029fbed9a47a344535beb6603e3d797525648c33b205ae"
+    }
+  },
+  "generated_at": "2026-09-05T08:45:47Z"
+}
