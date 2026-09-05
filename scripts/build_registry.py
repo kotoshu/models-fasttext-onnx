@@ -17,7 +17,9 @@ SPEC = "kotoshu.resources/v1"
 # Registry data revision (the spec id above is the format version).
 # 1: v1.0.x releases, 9 languages. 2: plan 77 coverage expansion, 13 new
 # languages under release tag v1.1.0 (minor = coverage per plan 05).
-REGISTRY_VERSION = 2
+# 3: plan 83 batch 2, gem-wired RTL languages plus national-script and
+# Latin newcomers under release tag v1.2.0.
+REGISTRY_VERSION = 3
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
 # media host serves the real bytes. Plain-git files (vocab, manifests)
