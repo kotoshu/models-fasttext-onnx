@@ -1,10 +1,50 @@
 {
   "version": 1,
-  "generated_at": "2026-09-05T13:45:45Z",
+  "generated_at": "2026-09-05T17:25:54Z",
   "repo_version": "v1",
-  "resource_count": 108,
+  "resource_count": 324,
   "language_count": 54,
   "resources": {
+    "models/ar/fasttext.ar.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "966a4222d3f7d8eea642c02fbc44821ab2e456d07f26751c259abaefdd6541e4",
+      "language": "ar",
+      "type": "onnx",
+      "source": "cc.ar.300.vec",
+      "fasttext_source": "cc.ar.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ar/fasttext.ar.fluency.vocab.json": {
+      "size": 1286044,
+      "sha256": "b5a85185c8ce1e90c61a4acf358a78a6f8eb7dc46a95c4e0772949c61029ed5f",
+      "language": "ar",
+      "type": "vocab",
+      "source": "cc.ar.300.vec",
+      "fasttext_source": "cc.ar.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ar/fasttext.ar.mini.onnx": {
+      "size": 3040752,
+      "sha256": "1b76e7279768a7454e4aafb88e74ccf6fbfea5d3c839146fe66f02520cfb7ce7",
+      "language": "ar",
+      "type": "onnx",
+      "source": "cc.ar.300.vec",
+      "fasttext_source": "cc.ar.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ar/fasttext.ar.mini.vocab.json": {
+      "size": 239343,
+      "sha256": "ec2e4e939cb3b134729085d847cb731e6f327da13d225af9469dd7f9be3849e9",
+      "language": "ar",
+      "type": "vocab",
+      "source": "cc.ar.300.vec",
+      "fasttext_source": "cc.ar.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/ar/fasttext.ar.onnx": {
       "size": 120000415,
       "sha256": "2089a9b0123eea56faf21ecc807959e2cb8b1e84863034c3055fb2edb7da73af",
@@ -22,6 +62,46 @@
       "type": "vocab",
       "source": "cc.ar.300.vec",
       "fasttext_source": "cc.ar.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/bg/fasttext.bg.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "5ca7cf93ce6cdb83f94ebab500bfcb627a275644039998ae95413b02795d2406",
+      "language": "bg",
+      "type": "onnx",
+      "source": "cc.bg.300.vec",
+      "fasttext_source": "cc.bg.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/bg/fasttext.bg.fluency.vocab.json": {
+      "size": 1451353,
+      "sha256": "fddf5e1b0781a3b7a7f0368beb45e89025c7f530dfb8ba9d249b34f136114860",
+      "language": "bg",
+      "type": "vocab",
+      "source": "cc.bg.300.vec",
+      "fasttext_source": "cc.bg.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/bg/fasttext.bg.mini.onnx": {
+      "size": 3040752,
+      "sha256": "58dec7051332727d35f0f19212338e576b87f6e0d6680940d0835e5ccae1a48d",
+      "language": "bg",
+      "type": "onnx",
+      "source": "cc.bg.300.vec",
+      "fasttext_source": "cc.bg.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/bg/fasttext.bg.mini.vocab.json": {
+      "size": 274842,
+      "sha256": "e8be16a825b74b4b6c04a409899c290b05a77269a4ab06bcaba99862a79c80d6",
+      "language": "bg",
+      "type": "vocab",
+      "source": "cc.bg.300.vec",
+      "fasttext_source": "cc.bg.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -45,6 +125,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/br/fasttext.br.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "152c4df2242b94fc62e524b447d5b6503651009a955f9eabecc54550b9de3705",
+      "language": "br",
+      "type": "onnx",
+      "source": "cc.br.300.vec",
+      "fasttext_source": "cc.br.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/br/fasttext.br.fluency.vocab.json": {
+      "size": 1083406,
+      "sha256": "1d1a79864d790b2afbed6b169e78de61014ef52afef721ce5ca7249d0a65da98",
+      "language": "br",
+      "type": "vocab",
+      "source": "cc.br.300.vec",
+      "fasttext_source": "cc.br.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/br/fasttext.br.mini.onnx": {
+      "size": 3040752,
+      "sha256": "7b3eec1d4b9831fd370f72599e1b8c4a248b0f732ea5885774e2b1e77df823cd",
+      "language": "br",
+      "type": "onnx",
+      "source": "cc.br.300.vec",
+      "fasttext_source": "cc.br.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/br/fasttext.br.mini.vocab.json": {
+      "size": 198228,
+      "sha256": "65dc1869b78326f2ed696653044f39d058fe80459ada4dd8978a9b1883b3ee99",
+      "language": "br",
+      "type": "vocab",
+      "source": "cc.br.300.vec",
+      "fasttext_source": "cc.br.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/br/fasttext.br.onnx": {
       "size": 120000415,
       "sha256": "0b72e30746021f43c16c25e78c6d80f4a2279b9187c8db989cfb9b99446de3fb",
@@ -62,6 +182,46 @@
       "type": "vocab",
       "source": "cc.br.300.vec",
       "fasttext_source": "cc.br.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ca/fasttext.ca.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "0aeede5adb338c1c9966e9cbf614e0688768d5731fc360a41387d45256d118d3",
+      "language": "ca",
+      "type": "onnx",
+      "source": "cc.ca.300.vec",
+      "fasttext_source": "cc.ca.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ca/fasttext.ca.fluency.vocab.json": {
+      "size": 1104086,
+      "sha256": "d9e11de43af2030288cbc7bfe1f3cbae5bcefe416d4b56a502586a7b481ff812",
+      "language": "ca",
+      "type": "vocab",
+      "source": "cc.ca.300.vec",
+      "fasttext_source": "cc.ca.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ca/fasttext.ca.mini.onnx": {
+      "size": 3040752,
+      "sha256": "6a4b9f529ecb455d942fc4200ab4fc1e586b30161e51da62cb67b961815f6855",
+      "language": "ca",
+      "type": "onnx",
+      "source": "cc.ca.300.vec",
+      "fasttext_source": "cc.ca.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ca/fasttext.ca.mini.vocab.json": {
+      "size": 207121,
+      "sha256": "d203ce9313c2000bd25c2c5cce8c71f0d22db92e9ad660ac536272001abb9b52",
+      "language": "ca",
+      "type": "vocab",
+      "source": "cc.ca.300.vec",
+      "fasttext_source": "cc.ca.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -85,6 +245,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/cs/fasttext.cs.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "72e7ebffced56ddc7d657110aeef9187af61c453ab56baa6d4b3bb9f9d9f112f",
+      "language": "cs",
+      "type": "onnx",
+      "source": "cc.cs.300.vec",
+      "fasttext_source": "cc.cs.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/cs/fasttext.cs.fluency.vocab.json": {
+      "size": 1135689,
+      "sha256": "11af932d1e728fe60e6ade826bd3fc1bc03284ed12e6a67a525842c73305f1ec",
+      "language": "cs",
+      "type": "vocab",
+      "source": "cc.cs.300.vec",
+      "fasttext_source": "cc.cs.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/cs/fasttext.cs.mini.onnx": {
+      "size": 3040752,
+      "sha256": "0b8427c165612e68c09b774618af7468354e00cd6d70fe2edea45f114e9e73af",
+      "language": "cs",
+      "type": "onnx",
+      "source": "cc.cs.300.vec",
+      "fasttext_source": "cc.cs.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/cs/fasttext.cs.mini.vocab.json": {
+      "size": 209610,
+      "sha256": "52284873cebc1cd1182f70a7c229f1bd2b1bf0b9856124a42ba00e312838565c",
+      "language": "cs",
+      "type": "vocab",
+      "source": "cc.cs.300.vec",
+      "fasttext_source": "cc.cs.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/cs/fasttext.cs.onnx": {
       "size": 120000415,
       "sha256": "0a1bf2be175436a42c37289a45bcda7756d23b7ae852641dfc56a87506ef38f7",
@@ -102,6 +302,46 @@
       "type": "vocab",
       "source": "cc.cs.300.vec",
       "fasttext_source": "cc.cs.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/cy/fasttext.cy.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "1e4b0fd9970a09dce21c5ee7e0bb5720c3dd5a17a0b4b6b9bb1e6dd3795db6ac",
+      "language": "cy",
+      "type": "onnx",
+      "source": "cc.cy.300.vec",
+      "fasttext_source": "cc.cy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/cy/fasttext.cy.fluency.vocab.json": {
+      "size": 1085780,
+      "sha256": "8f63b0aebfae38794284c9fce8f2d030976e62a307b16943f067609346d70e8e",
+      "language": "cy",
+      "type": "vocab",
+      "source": "cc.cy.300.vec",
+      "fasttext_source": "cc.cy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/cy/fasttext.cy.mini.onnx": {
+      "size": 3040752,
+      "sha256": "b654f0fe73a41afebc6f3dffdf653c788644c4d336f51e92911dad7af62c99e2",
+      "language": "cy",
+      "type": "onnx",
+      "source": "cc.cy.300.vec",
+      "fasttext_source": "cc.cy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/cy/fasttext.cy.mini.vocab.json": {
+      "size": 202327,
+      "sha256": "6226f5445bbc3f74d14c7bfa542ad52a26da3d39bb15f471c849750fcb89cad8",
+      "language": "cy",
+      "type": "vocab",
+      "source": "cc.cy.300.vec",
+      "fasttext_source": "cc.cy.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -125,6 +365,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/da/fasttext.da.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "97565dfb842508f0a56e2c8859eef925fa580f6c183542023f45a6cd3c5d32ee",
+      "language": "da",
+      "type": "onnx",
+      "source": "cc.da.300.vec",
+      "fasttext_source": "cc.da.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/da/fasttext.da.fluency.vocab.json": {
+      "size": 1134288,
+      "sha256": "44f280d5064e76c5c4093075f7be2dcd4b5b359b436a01d1ceeebc0d6b813cd5",
+      "language": "da",
+      "type": "vocab",
+      "source": "cc.da.300.vec",
+      "fasttext_source": "cc.da.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/da/fasttext.da.mini.onnx": {
+      "size": 3040752,
+      "sha256": "d20b15626f0e15b56b8b4810d750ca07d2b5cea953bb49e8d5fc8ee12fd40481",
+      "language": "da",
+      "type": "onnx",
+      "source": "cc.da.300.vec",
+      "fasttext_source": "cc.da.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/da/fasttext.da.mini.vocab.json": {
+      "size": 207560,
+      "sha256": "d3565bcbea9b82b38b6abaf5cc67dfd6ee1a52f6e022de060614194684080753",
+      "language": "da",
+      "type": "vocab",
+      "source": "cc.da.300.vec",
+      "fasttext_source": "cc.da.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/da/fasttext.da.onnx": {
       "size": 120000415,
       "sha256": "58f291b4c8f17fcf3cca43fbf93a81d384513ef5cec9760b7055f7c35ee15e64",
@@ -142,6 +422,46 @@
       "type": "vocab",
       "source": "cc.da.300.vec",
       "fasttext_source": "cc.da.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/de/fasttext.de.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "cf0336221bf9496524291facb8690ab0fb0adbe7379b0c02fb65d06aeda817e9",
+      "language": "de",
+      "type": "onnx",
+      "source": "cc.de.300.vec",
+      "fasttext_source": "cc.de.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/de/fasttext.de.fluency.vocab.json": {
+      "size": 1163509,
+      "sha256": "05b0b16c740873679c2eed0351d7aac5d48c5dca5fcb9acbd8faa570afbdaa1c",
+      "language": "de",
+      "type": "vocab",
+      "source": "cc.de.300.vec",
+      "fasttext_source": "cc.de.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/de/fasttext.de.mini.onnx": {
+      "size": 3040752,
+      "sha256": "aa724e7eea8580d81a0e2e6c6aec3108b8b90f65381ae7bc2baeb830b1a90f69",
+      "language": "de",
+      "type": "onnx",
+      "source": "cc.de.300.vec",
+      "fasttext_source": "cc.de.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/de/fasttext.de.mini.vocab.json": {
+      "size": 210916,
+      "sha256": "534e4a48ebefa5b7a6a1be113cad707aa945c02ae4bf20c097b0a87a9ca8e40e",
+      "language": "de",
+      "type": "vocab",
+      "source": "cc.de.300.vec",
+      "fasttext_source": "cc.de.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -165,6 +485,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/el/fasttext.el.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "1f13973769f42b4576711f9f0a3f4f9bd57b3623d145cc6d6ba1d4464025d77c",
+      "language": "el",
+      "type": "onnx",
+      "source": "cc.el.300.vec",
+      "fasttext_source": "cc.el.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/el/fasttext.el.fluency.vocab.json": {
+      "size": 1468046,
+      "sha256": "8d2a75abdb311d6800e3f5c46db6a7b604a324fa19f7cacfa520221224508b7f",
+      "language": "el",
+      "type": "vocab",
+      "source": "cc.el.300.vec",
+      "fasttext_source": "cc.el.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/el/fasttext.el.mini.onnx": {
+      "size": 3040752,
+      "sha256": "b77f331dcbe817d18ccb1f479c919a1ff3221a20f9dcca48504b5528dc5f11fc",
+      "language": "el",
+      "type": "onnx",
+      "source": "cc.el.300.vec",
+      "fasttext_source": "cc.el.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/el/fasttext.el.mini.vocab.json": {
+      "size": 272999,
+      "sha256": "8f496c2791a652a9d491c0f615f2c71faddd728ed958bafcacbbd87f757269fd",
+      "language": "el",
+      "type": "vocab",
+      "source": "cc.el.300.vec",
+      "fasttext_source": "cc.el.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/el/fasttext.el.onnx": {
       "size": 120000415,
       "sha256": "bdecc0b4ea87d524eb9590b382ef759b73f3fd57884b91b643ee6c2bc88e2e61",
@@ -182,6 +542,46 @@
       "type": "vocab",
       "source": "cc.el.300.vec",
       "fasttext_source": "cc.el.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/en/fasttext.en.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "f8fc02db13a7c7878cf15c9bfe1e559c6dad82b1e5558c80e1ed4670de3f1cc6",
+      "language": "en",
+      "type": "onnx",
+      "source": "cc.en.300.vec",
+      "fasttext_source": "cc.en.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/en/fasttext.en.fluency.vocab.json": {
+      "size": 1083218,
+      "sha256": "4fb43a9d91014d2172cfc6c4e893adf012f6bc507bf14a73c344bb406a87703a",
+      "language": "en",
+      "type": "vocab",
+      "source": "cc.en.300.vec",
+      "fasttext_source": "cc.en.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/en/fasttext.en.mini.onnx": {
+      "size": 3040752,
+      "sha256": "d81f36c5e0097414db95d48406ce615161dd07c697996fe973297186279d5e2f",
+      "language": "en",
+      "type": "onnx",
+      "source": "cc.en.300.vec",
+      "fasttext_source": "cc.en.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/en/fasttext.en.mini.vocab.json": {
+      "size": 202597,
+      "sha256": "d9173eee9958f5f29a60776c1ec8d76e752ab5fc64d939fb4b22dbf6522bf0c9",
+      "language": "en",
+      "type": "vocab",
+      "source": "cc.en.300.vec",
+      "fasttext_source": "cc.en.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -205,6 +605,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/eo/fasttext.eo.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "73f51b020b96b2eb4bfe4ccdd7372f50daff3940887a727aeef2bceaf194e599",
+      "language": "eo",
+      "type": "onnx",
+      "source": "cc.eo.300.vec",
+      "fasttext_source": "cc.eo.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/eo/fasttext.eo.fluency.vocab.json": {
+      "size": 1096115,
+      "sha256": "e6214cff704b7e25dd05513e689ce40fa3e2d30cf18bd938ac3c79693d71715f",
+      "language": "eo",
+      "type": "vocab",
+      "source": "cc.eo.300.vec",
+      "fasttext_source": "cc.eo.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/eo/fasttext.eo.mini.onnx": {
+      "size": 3040752,
+      "sha256": "95e29cf6fd3f9a50838b4d2a2b600fa7b3011874770e5c212ca141a6f6b936ee",
+      "language": "eo",
+      "type": "onnx",
+      "source": "cc.eo.300.vec",
+      "fasttext_source": "cc.eo.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/eo/fasttext.eo.mini.vocab.json": {
+      "size": 204343,
+      "sha256": "5127fda73c0032fbcfd9e13dc209ba0949cfe3d1794e3ae234af6193045f21bf",
+      "language": "eo",
+      "type": "vocab",
+      "source": "cc.eo.300.vec",
+      "fasttext_source": "cc.eo.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/eo/fasttext.eo.onnx": {
       "size": 120000415,
       "sha256": "22f22d1f7f7ffd1d9f60ac95b077325dd9f272f0c14b7cd3891142d6fa5c2a0c",
@@ -222,6 +662,46 @@
       "type": "vocab",
       "source": "cc.eo.300.vec",
       "fasttext_source": "cc.eo.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/es/fasttext.es.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "7326f515d0055ebeea178760696b6dd780ef1bb58dd38e8f89acfe8fe8d5287f",
+      "language": "es",
+      "type": "onnx",
+      "source": "cc.es.300.vec",
+      "fasttext_source": "cc.es.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/es/fasttext.es.fluency.vocab.json": {
+      "size": 1120547,
+      "sha256": "99672119b375faa969239cd2e08b78a8392f939d6d3f7791f34458fe2ffba82e",
+      "language": "es",
+      "type": "vocab",
+      "source": "cc.es.300.vec",
+      "fasttext_source": "cc.es.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/es/fasttext.es.mini.onnx": {
+      "size": 3040752,
+      "sha256": "ce2c03127ad84c711503f6d9118bcaf5784faa0336d21998b110138f6fb51232",
+      "language": "es",
+      "type": "onnx",
+      "source": "cc.es.300.vec",
+      "fasttext_source": "cc.es.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/es/fasttext.es.mini.vocab.json": {
+      "size": 209815,
+      "sha256": "1a13e50b305cbb43447b15e54fa9f772d4137020c5b9f2cda7acb004fe86d579",
+      "language": "es",
+      "type": "vocab",
+      "source": "cc.es.300.vec",
+      "fasttext_source": "cc.es.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -245,6 +725,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/et/fasttext.et.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "cf4ea8ad797e74113e991580c900d463f03b31a71758b92fd74875012c2c4703",
+      "language": "et",
+      "type": "onnx",
+      "source": "cc.et.300.vec",
+      "fasttext_source": "cc.et.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/et/fasttext.et.fluency.vocab.json": {
+      "size": 1142550,
+      "sha256": "33462571f44afaf5b3ff635596cf5e665c8272b1ac4826f57c3faed93505fbe6",
+      "language": "et",
+      "type": "vocab",
+      "source": "cc.et.300.vec",
+      "fasttext_source": "cc.et.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/et/fasttext.et.mini.onnx": {
+      "size": 3040752,
+      "sha256": "0a95b7b1fd515f9486f8d85472f117baa6e94d1436530198beea8f547fb89750",
+      "language": "et",
+      "type": "onnx",
+      "source": "cc.et.300.vec",
+      "fasttext_source": "cc.et.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/et/fasttext.et.mini.vocab.json": {
+      "size": 210176,
+      "sha256": "7a3e57fe154e25ad6387824cf918541998b1642468bdc917e31780083e162584",
+      "language": "et",
+      "type": "vocab",
+      "source": "cc.et.300.vec",
+      "fasttext_source": "cc.et.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/et/fasttext.et.onnx": {
       "size": 120000415,
       "sha256": "a9a6c20fb161693e7be2ac2e085cd975d19ef3c1bd9bce30e83d7185b8fc9611",
@@ -262,6 +782,46 @@
       "type": "vocab",
       "source": "cc.et.300.vec",
       "fasttext_source": "cc.et.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/eu/fasttext.eu.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "f2530c456f70402c049ae910428bc57f85cd50830081ff99686916ab10a99ae1",
+      "language": "eu",
+      "type": "onnx",
+      "source": "cc.eu.300.vec",
+      "fasttext_source": "cc.eu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/eu/fasttext.eu.fluency.vocab.json": {
+      "size": 1115506,
+      "sha256": "60b498a5317b2bf9c6eeaea5ef0a67cb66573c7b4c76d9d482e1ae73460e8873",
+      "language": "eu",
+      "type": "vocab",
+      "source": "cc.eu.300.vec",
+      "fasttext_source": "cc.eu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/eu/fasttext.eu.mini.onnx": {
+      "size": 3040752,
+      "sha256": "0494703a1ea36ae99393225e224cf92b466914c198046317553af3a99034f9af",
+      "language": "eu",
+      "type": "onnx",
+      "source": "cc.eu.300.vec",
+      "fasttext_source": "cc.eu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/eu/fasttext.eu.mini.vocab.json": {
+      "size": 207148,
+      "sha256": "c08d2d8b43a1aa4399282e4c901bf0aa1421c833d7e8081a85b34675abd7dace",
+      "language": "eu",
+      "type": "vocab",
+      "source": "cc.eu.300.vec",
+      "fasttext_source": "cc.eu.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -285,6 +845,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/fa/fasttext.fa.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "b88a2af9f73ca8d1bf1288a3019eab572aa3c9a7e55be2d3e0f4ee05103527a4",
+      "language": "fa",
+      "type": "onnx",
+      "source": "cc.fa.300.vec",
+      "fasttext_source": "cc.fa.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fa/fasttext.fa.fluency.vocab.json": {
+      "size": 1276538,
+      "sha256": "6d6043f745ae426eeb7c62859feb300351e677f2109c8042dbe1f5762ab36211",
+      "language": "fa",
+      "type": "vocab",
+      "source": "cc.fa.300.vec",
+      "fasttext_source": "cc.fa.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fa/fasttext.fa.mini.onnx": {
+      "size": 3040752,
+      "sha256": "790c1d919a395eed35b214c7e4fea68ec87835080d13eae2a8af2938fb285825",
+      "language": "fa",
+      "type": "onnx",
+      "source": "cc.fa.300.vec",
+      "fasttext_source": "cc.fa.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fa/fasttext.fa.mini.vocab.json": {
+      "size": 236626,
+      "sha256": "3a4d230e8fc34f32ec1f04b80e1e81571e9d32d73770c5912769377a77e65d9c",
+      "language": "fa",
+      "type": "vocab",
+      "source": "cc.fa.300.vec",
+      "fasttext_source": "cc.fa.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/fa/fasttext.fa.onnx": {
       "size": 120000415,
       "sha256": "ba787edf5f1e5bef408057bc8cf594cfa2e59dd5b6f575c4c170da8d94a27533",
@@ -302,6 +902,46 @@
       "type": "vocab",
       "source": "cc.fa.300.vec",
       "fasttext_source": "cc.fa.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fr/fasttext.fr.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "fcb375a340b4c90cbe1550a7265fb655d0ba76f777015582ee9cc214ce360331",
+      "language": "fr",
+      "type": "onnx",
+      "source": "cc.fr.300.vec",
+      "fasttext_source": "cc.fr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fr/fasttext.fr.fluency.vocab.json": {
+      "size": 1117033,
+      "sha256": "d2d36ffb0fc5a4d8258b5c8f181963082b2b614daf430035c41e11dfaffca64e",
+      "language": "fr",
+      "type": "vocab",
+      "source": "cc.fr.300.vec",
+      "fasttext_source": "cc.fr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fr/fasttext.fr.mini.onnx": {
+      "size": 3040752,
+      "sha256": "8ab81dac1d85f34b423a7ef870f089f65acd937163f21a26ba83478a3fc67029",
+      "language": "fr",
+      "type": "onnx",
+      "source": "cc.fr.300.vec",
+      "fasttext_source": "cc.fr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fr/fasttext.fr.mini.vocab.json": {
+      "size": 209518,
+      "sha256": "34e4424b3baaa8f66278816cbfa1dafec0d055486efebc97ade5d32aff690a01",
+      "language": "fr",
+      "type": "vocab",
+      "source": "cc.fr.300.vec",
+      "fasttext_source": "cc.fr.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -325,6 +965,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/fy/fasttext.fy.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "4c14d70969a1e120fcf31c4e0e180435f9e2f1e88df131ecea5e7ef1a0ab1a5e",
+      "language": "fy",
+      "type": "onnx",
+      "source": "cc.fy.300.vec",
+      "fasttext_source": "cc.fy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fy/fasttext.fy.fluency.vocab.json": {
+      "size": 1122565,
+      "sha256": "6876151f6ef9c0b333f56bb41855a1e5c7d16f424ae859f85a08436e1533768b",
+      "language": "fy",
+      "type": "vocab",
+      "source": "cc.fy.300.vec",
+      "fasttext_source": "cc.fy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fy/fasttext.fy.mini.onnx": {
+      "size": 3040752,
+      "sha256": "10719f6adbe430c818156456e880600c6dcdee68dbe46be7dde0525832137416",
+      "language": "fy",
+      "type": "onnx",
+      "source": "cc.fy.300.vec",
+      "fasttext_source": "cc.fy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/fy/fasttext.fy.mini.vocab.json": {
+      "size": 206803,
+      "sha256": "6ca2588cea164a4139007087905a9b4ad6cbcfc6e2da3792c78aecfc26d88e0e",
+      "language": "fy",
+      "type": "vocab",
+      "source": "cc.fy.300.vec",
+      "fasttext_source": "cc.fy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/fy/fasttext.fy.onnx": {
       "size": 120000415,
       "sha256": "19fd0f476bbc455e85da0fc01d12a5ef73e029431db71f1933979eb9e86e5c37",
@@ -342,6 +1022,46 @@
       "type": "vocab",
       "source": "cc.fy.300.vec",
       "fasttext_source": "cc.fy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ga/fasttext.ga.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "f542503c2cd34454ad565f3c093bccdfe41a4f3335a061bf6c7bc19bfe74ab49",
+      "language": "ga",
+      "type": "onnx",
+      "source": "cc.ga.300.vec",
+      "fasttext_source": "cc.ga.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ga/fasttext.ga.fluency.vocab.json": {
+      "size": 1127473,
+      "sha256": "27f686e345247a4cdab01c6ddc12987004cbce1b544d13701c05259eb7bf8966",
+      "language": "ga",
+      "type": "vocab",
+      "source": "cc.ga.300.vec",
+      "fasttext_source": "cc.ga.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ga/fasttext.ga.mini.onnx": {
+      "size": 3040752,
+      "sha256": "8778be68dc6c0bc952a97ed3239c430448c2ec2e2d99952ebbedb6d83aaf362f",
+      "language": "ga",
+      "type": "onnx",
+      "source": "cc.ga.300.vec",
+      "fasttext_source": "cc.ga.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ga/fasttext.ga.mini.vocab.json": {
+      "size": 209584,
+      "sha256": "4a76adea7c7f0e2e02caaae21f78d852915d976965cf72cf57799318aa643351",
+      "language": "ga",
+      "type": "vocab",
+      "source": "cc.ga.300.vec",
+      "fasttext_source": "cc.ga.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -365,6 +1085,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/gd/fasttext.gd.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "1a6e68b49ec31495a6990e71f8800ddb31281fbb2826773dc223c0e8d7fce673",
+      "language": "gd",
+      "type": "onnx",
+      "source": "cc.gd.300.vec",
+      "fasttext_source": "cc.gd.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/gd/fasttext.gd.fluency.vocab.json": {
+      "size": 1115885,
+      "sha256": "5d18f5512d8eb6eaac990daa0050fdb4e9a1647c0222f5d1f2725aea64b0578a",
+      "language": "gd",
+      "type": "vocab",
+      "source": "cc.gd.300.vec",
+      "fasttext_source": "cc.gd.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/gd/fasttext.gd.mini.onnx": {
+      "size": 3040752,
+      "sha256": "ac8153d01f2bf76f66b1fe0b28ea8be39a43938aee278b54cc2dab33f26823b8",
+      "language": "gd",
+      "type": "onnx",
+      "source": "cc.gd.300.vec",
+      "fasttext_source": "cc.gd.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/gd/fasttext.gd.mini.vocab.json": {
+      "size": 206824,
+      "sha256": "0c609e85bc22dde8ea97b111e8bab1d9e57bcd49fe8ef84544e255a6c9c8c23f",
+      "language": "gd",
+      "type": "vocab",
+      "source": "cc.gd.300.vec",
+      "fasttext_source": "cc.gd.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/gd/fasttext.gd.onnx": {
       "size": 120000415,
       "sha256": "fcebfd941749cd466cf659769b5176294b7e51ecdff3eda66d94ed66e20b3e0d",
@@ -382,6 +1142,46 @@
       "type": "vocab",
       "source": "cc.gd.300.vec",
       "fasttext_source": "cc.gd.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/gl/fasttext.gl.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "1b9d24b8b57aa9cd3d105e5856792b1b4d8432bdd7c9639b8f44dbc677b78d59",
+      "language": "gl",
+      "type": "onnx",
+      "source": "cc.gl.300.vec",
+      "fasttext_source": "cc.gl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/gl/fasttext.gl.fluency.vocab.json": {
+      "size": 1114976,
+      "sha256": "13522a6018e4df5afa4216ea6bb577ffe33cb5d3ca503e355338df587a03f920",
+      "language": "gl",
+      "type": "vocab",
+      "source": "cc.gl.300.vec",
+      "fasttext_source": "cc.gl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/gl/fasttext.gl.mini.onnx": {
+      "size": 3040752,
+      "sha256": "4d2e17199fb54114a7ca89ee7bf931d47473cde85a731fb59d8c8cb88e060342",
+      "language": "gl",
+      "type": "onnx",
+      "source": "cc.gl.300.vec",
+      "fasttext_source": "cc.gl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/gl/fasttext.gl.mini.vocab.json": {
+      "size": 209346,
+      "sha256": "279560b91e910cb5f00b7b5f00734402638dadc1ab4d7a9d5b09006404599286",
+      "language": "gl",
+      "type": "vocab",
+      "source": "cc.gl.300.vec",
+      "fasttext_source": "cc.gl.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -405,6 +1205,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/he/fasttext.he.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "dd16fe610052edaf2de787f172cab2ecb4769076c2c5b68773c513387898f440",
+      "language": "he",
+      "type": "onnx",
+      "source": "cc.he.300.vec",
+      "fasttext_source": "cc.he.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/he/fasttext.he.fluency.vocab.json": {
+      "size": 1266314,
+      "sha256": "692b7e67d5377b45abcb7d91c75dad8a721385ac5b083cb8c26e1a4ce832d3cc",
+      "language": "he",
+      "type": "vocab",
+      "source": "cc.he.300.vec",
+      "fasttext_source": "cc.he.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/he/fasttext.he.mini.onnx": {
+      "size": 3040752,
+      "sha256": "25677cc415080cab7cc8e346cdb96b08ee13d78cb8a37403ef757962803312da",
+      "language": "he",
+      "type": "onnx",
+      "source": "cc.he.300.vec",
+      "fasttext_source": "cc.he.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/he/fasttext.he.mini.vocab.json": {
+      "size": 232539,
+      "sha256": "bda52698f2f0b96d7b2e09f46e57a3d178287fe5e061012ebe2a2d0e9cc2faf6",
+      "language": "he",
+      "type": "vocab",
+      "source": "cc.he.300.vec",
+      "fasttext_source": "cc.he.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/he/fasttext.he.onnx": {
       "size": 120000415,
       "sha256": "88f8dd8651fce4a0c44513ed6407475745f77780cb3acee59e71ff51b76a4701",
@@ -422,6 +1262,46 @@
       "type": "vocab",
       "source": "cc.he.300.vec",
       "fasttext_source": "cc.he.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hr/fasttext.hr.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "b23acdf9fdac4687c949c04a796cec775ee20309b1821ac52be794c785ff21d4",
+      "language": "hr",
+      "type": "onnx",
+      "source": "cc.hr.300.vec",
+      "fasttext_source": "cc.hr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hr/fasttext.hr.fluency.vocab.json": {
+      "size": 1111818,
+      "sha256": "b6ae7978d84f7b1f247928127cd142beb7b46c230c0606b23dfb78652a34d48d",
+      "language": "hr",
+      "type": "vocab",
+      "source": "cc.hr.300.vec",
+      "fasttext_source": "cc.hr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hr/fasttext.hr.mini.onnx": {
+      "size": 3040752,
+      "sha256": "172846ae04f0e29d4dfb8664b52e1a0cfd23356be4cd6b671f89990ca6f8e971",
+      "language": "hr",
+      "type": "onnx",
+      "source": "cc.hr.300.vec",
+      "fasttext_source": "cc.hr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hr/fasttext.hr.mini.vocab.json": {
+      "size": 205695,
+      "sha256": "69747aaf14601faa2071a0bf061eecdcb6443ca3a3c743da41cc7fb266b35974",
+      "language": "hr",
+      "type": "vocab",
+      "source": "cc.hr.300.vec",
+      "fasttext_source": "cc.hr.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -445,6 +1325,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/hu/fasttext.hu.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "c54df11f4a3a5ea76731039324f62b3c304126c15b272c933514a4dda9112e59",
+      "language": "hu",
+      "type": "onnx",
+      "source": "cc.hu.300.vec",
+      "fasttext_source": "cc.hu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hu/fasttext.hu.fluency.vocab.json": {
+      "size": 1182701,
+      "sha256": "e097571b6d41e520890c0e4f272494901b3a44066b4bc4d9254698ebeed1278e",
+      "language": "hu",
+      "type": "vocab",
+      "source": "cc.hu.300.vec",
+      "fasttext_source": "cc.hu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hu/fasttext.hu.mini.onnx": {
+      "size": 3040752,
+      "sha256": "ca73f3095990e5f99659c965e1a3190af2980a03e9a7969550ffb13efa26f132",
+      "language": "hu",
+      "type": "onnx",
+      "source": "cc.hu.300.vec",
+      "fasttext_source": "cc.hu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hu/fasttext.hu.mini.vocab.json": {
+      "size": 216696,
+      "sha256": "c90cdf6f232465246f1f97e0b52db91947761dfc07876e8a9fbc22f74cf53d15",
+      "language": "hu",
+      "type": "vocab",
+      "source": "cc.hu.300.vec",
+      "fasttext_source": "cc.hu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/hu/fasttext.hu.onnx": {
       "size": 120000415,
       "sha256": "480f59bb127d8cc147a3ba896dbd63a72b7e7821abdf64f04c67651055f7668a",
@@ -462,6 +1382,46 @@
       "type": "vocab",
       "source": "cc.hu.300.vec",
       "fasttext_source": "cc.hu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hy/fasttext.hy.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "521905db4a6dc6ca1515b482f6c8a9e498228f4bcd5379aeebb15ded15576d73",
+      "language": "hy",
+      "type": "onnx",
+      "source": "cc.hy.300.vec",
+      "fasttext_source": "cc.hy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hy/fasttext.hy.fluency.vocab.json": {
+      "size": 1505973,
+      "sha256": "df27bc2bca1900f84f1365db478ea9aa67f4a0299d4c9e7c08ea551e2fbb52f9",
+      "language": "hy",
+      "type": "vocab",
+      "source": "cc.hy.300.vec",
+      "fasttext_source": "cc.hy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hy/fasttext.hy.mini.onnx": {
+      "size": 3040752,
+      "sha256": "9a56a1b7378b857d97cf9812256292893f181a567e6467e7f57acdcc857b7a58",
+      "language": "hy",
+      "type": "onnx",
+      "source": "cc.hy.300.vec",
+      "fasttext_source": "cc.hy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hy/fasttext.hy.mini.vocab.json": {
+      "size": 281585,
+      "sha256": "22456110c878350379461d1ce66afab72aa19d4319ad95cd2ee622d73d2194c6",
+      "language": "hy",
+      "type": "vocab",
+      "source": "cc.hy.300.vec",
+      "fasttext_source": "cc.hy.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -485,6 +1445,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/ia/fasttext.ia.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "7576222c7c0885e5927329053cb223bd402ebcaeee2434ce78448b14d8e5267e",
+      "language": "ia",
+      "type": "onnx",
+      "source": "cc.ia.300.vec",
+      "fasttext_source": "cc.ia.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ia/fasttext.ia.fluency.vocab.json": {
+      "size": 1113666,
+      "sha256": "32651d2713919f2aed10fd31a7a316e94d3d2a6197adbcd018eda8c9c79f0366",
+      "language": "ia",
+      "type": "vocab",
+      "source": "cc.ia.300.vec",
+      "fasttext_source": "cc.ia.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ia/fasttext.ia.mini.onnx": {
+      "size": 3040752,
+      "sha256": "256951bfa120eb807dc0cf1fa70de2c1ffeed5e153f896628a80e434144f8c44",
+      "language": "ia",
+      "type": "onnx",
+      "source": "cc.ia.300.vec",
+      "fasttext_source": "cc.ia.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ia/fasttext.ia.mini.vocab.json": {
+      "size": 208451,
+      "sha256": "995c75dd9e372b2cf6d4610370480842879ab0ba30ff76bf0975ad5ffc8b9e81",
+      "language": "ia",
+      "type": "vocab",
+      "source": "cc.ia.300.vec",
+      "fasttext_source": "cc.ia.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/ia/fasttext.ia.onnx": {
       "size": 120000415,
       "sha256": "33589f5f774fcd72fb4d57a29da0a9f4d79ef7b39bc86c69501a4afcd3634b5b",
@@ -502,6 +1502,46 @@
       "type": "vocab",
       "source": "cc.ia.300.vec",
       "fasttext_source": "cc.ia.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/id/fasttext.id.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "ef61cf6fe2e1b1276f3663ada0860d0ccb5ff4d801f82951aac1c30c0bd79eb9",
+      "language": "id",
+      "type": "onnx",
+      "source": "cc.id.300.vec",
+      "fasttext_source": "cc.id.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/id/fasttext.id.fluency.vocab.json": {
+      "size": 1084903,
+      "sha256": "93ec4878d3f563517bef036a648fff24e2f9d167cdc3a28b5f398725c9390284",
+      "language": "id",
+      "type": "vocab",
+      "source": "cc.id.300.vec",
+      "fasttext_source": "cc.id.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/id/fasttext.id.mini.onnx": {
+      "size": 3040752,
+      "sha256": "02f413cfaa4de7de8a1e71108595f1899cbbb0282177f8c8f55d55d4c0492122",
+      "language": "id",
+      "type": "onnx",
+      "source": "cc.id.300.vec",
+      "fasttext_source": "cc.id.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/id/fasttext.id.mini.vocab.json": {
+      "size": 205058,
+      "sha256": "3de7c874e8dd88bdec56a9859ea2c51242ff0a84efe99b6176f7e5c11e4ee392",
+      "language": "id",
+      "type": "vocab",
+      "source": "cc.id.300.vec",
+      "fasttext_source": "cc.id.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -525,6 +1565,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/is/fasttext.is.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "2309b2f8a8f40e2f697ae9eb3eeb999e76bf83175c9212d02c8c6087c434be72",
+      "language": "is",
+      "type": "onnx",
+      "source": "cc.is.300.vec",
+      "fasttext_source": "cc.is.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/is/fasttext.is.fluency.vocab.json": {
+      "size": 1186588,
+      "sha256": "10014834468fbd6d39c9434754ddbca679bd86b431c83ef959fbfb2d7bf2b0b5",
+      "language": "is",
+      "type": "vocab",
+      "source": "cc.is.300.vec",
+      "fasttext_source": "cc.is.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/is/fasttext.is.mini.onnx": {
+      "size": 3040752,
+      "sha256": "60be5c8cc504e4ac7548f6539f916eefbe45af7ec2dc036d34886764692d89f7",
+      "language": "is",
+      "type": "onnx",
+      "source": "cc.is.300.vec",
+      "fasttext_source": "cc.is.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/is/fasttext.is.mini.vocab.json": {
+      "size": 210038,
+      "sha256": "3dece8cb3fe7143194eb88b21b44ac7a4fa733269801160810e6cc90dc266139",
+      "language": "is",
+      "type": "vocab",
+      "source": "cc.is.300.vec",
+      "fasttext_source": "cc.is.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/is/fasttext.is.onnx": {
       "size": 120000415,
       "sha256": "0683006ad311bfa6c8fb00ec4c9837e770d0bb786ee8d30757e1aa9ae17c1b8b",
@@ -542,6 +1622,46 @@
       "type": "vocab",
       "source": "cc.is.300.vec",
       "fasttext_source": "cc.is.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/it/fasttext.it.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "2917ae0ac6aa3f34f93ca857032d0ec4b7229cf3887d4744685d2d4cc8760935",
+      "language": "it",
+      "type": "onnx",
+      "source": "cc.it.300.vec",
+      "fasttext_source": "cc.it.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/it/fasttext.it.fluency.vocab.json": {
+      "size": 1113156,
+      "sha256": "4ec8d1ca71a1249820043ff17575d6ce5951aa88d04026d9c62408f698bf781d",
+      "language": "it",
+      "type": "vocab",
+      "source": "cc.it.300.vec",
+      "fasttext_source": "cc.it.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/it/fasttext.it.mini.onnx": {
+      "size": 3040752,
+      "sha256": "061816ed0d5cce283fa5a5db71833658eb08120fceade095656e60a53c5b3188",
+      "language": "it",
+      "type": "onnx",
+      "source": "cc.it.300.vec",
+      "fasttext_source": "cc.it.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/it/fasttext.it.mini.vocab.json": {
+      "size": 208241,
+      "sha256": "e9fbcfbbab31b0c86b0f111800673dbbc6c5e37e6f708ed7adb535a5a3b6145d",
+      "language": "it",
+      "type": "vocab",
+      "source": "cc.it.300.vec",
+      "fasttext_source": "cc.it.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -565,6 +1685,34 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/ja/fasttext.ja.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "d8315e3a383f98fa10794c464726ff8777d138f8ca9d5ac8918b2f6128221d3c",
+      "language": "ja",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/ja/fasttext.ja.fluency.vocab.json": {
+      "size": 1121847,
+      "sha256": "1e3448e7c09c46bbdecf118b84954a64d50d86ee4c265f416dd2fce9248db98f",
+      "language": "ja",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
+    },
+    "models/ja/fasttext.ja.mini.onnx": {
+      "size": 3040752,
+      "sha256": "cea8ded8ebcb98de8b39cc29e7bf222f1172b8b28dc371c68c375041173e405b",
+      "language": "ja",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/ja/fasttext.ja.mini.vocab.json": {
+      "size": 204601,
+      "sha256": "37efb7cdbccfab078bb75aaf4b17e651f64f85f28f88475e69f8d18c842cc29b",
+      "language": "ja",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
+    },
     "models/ja/fasttext.ja.onnx": {
       "size": 120000415,
       "sha256": "ca6203ebd550dad23a2469cd39ecf2cb3a81ce65fe0a88b69932b434cfd500b9",
@@ -578,6 +1726,46 @@
       "language": "ja",
       "type": "vocab",
       "source": "FastText Common Crawl"
+    },
+    "models/ka/fasttext.ka.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "f36238d439a4883757847f3d33fe6a1f4c45d2fe5338c15b8ebe7adbdd9ab583",
+      "language": "ka",
+      "type": "onnx",
+      "source": "cc.ka.300.vec",
+      "fasttext_source": "cc.ka.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ka/fasttext.ka.fluency.vocab.json": {
+      "size": 1790571,
+      "sha256": "f0f4d8de1a48da21c8a30d679b4890e6ab8a9ea28a2e31e051203c46efd5e314",
+      "language": "ka",
+      "type": "vocab",
+      "source": "cc.ka.300.vec",
+      "fasttext_source": "cc.ka.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ka/fasttext.ka.mini.onnx": {
+      "size": 3040752,
+      "sha256": "02d4fabd1da8773fbca6a0664a141b33d58f3b3a6ad793719325b98d6ba8114b",
+      "language": "ka",
+      "type": "onnx",
+      "source": "cc.ka.300.vec",
+      "fasttext_source": "cc.ka.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ka/fasttext.ka.mini.vocab.json": {
+      "size": 339730,
+      "sha256": "7a35cf59dedbc2d3eeca2713e7567e3e3adb3520c6d23d466997644817a0f9b6",
+      "language": "ka",
+      "type": "vocab",
+      "source": "cc.ka.300.vec",
+      "fasttext_source": "cc.ka.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
     },
     "models/ka/fasttext.ka.onnx": {
       "size": 120000415,
@@ -599,6 +1787,34 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/ko/fasttext.ko.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "b12fd692674774567aad187a0c2c092315c28be537536ab9687694d30818197c",
+      "language": "ko",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/ko/fasttext.ko.fluency.vocab.json": {
+      "size": 1188814,
+      "sha256": "577bb99bf002d8d6629e4fc776bf1db0915f56f9675485d54ecd875bf3947d6f",
+      "language": "ko",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
+    },
+    "models/ko/fasttext.ko.mini.onnx": {
+      "size": 3040752,
+      "sha256": "1dad86dbe8dd924054a8bb6ca24ab91781c737810f22b2b4948c2fba87067288",
+      "language": "ko",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/ko/fasttext.ko.mini.vocab.json": {
+      "size": 218427,
+      "sha256": "a42a149b56a663b0a02b53be468f78ff5a1485d28fd631beb31259ef45ce7618",
+      "language": "ko",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
+    },
     "models/ko/fasttext.ko.onnx": {
       "size": 120000415,
       "sha256": "e01d445ffaccc56b06c1bd5d6bfb1260c2308bfebc044149090b64c460cbf84e",
@@ -612,6 +1828,46 @@
       "language": "ko",
       "type": "vocab",
       "source": "FastText Common Crawl"
+    },
+    "models/la/fasttext.la.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "1b179ed1abac5256e0e6197d2a79ab79daf84393fea649f3bfe1169e3fd38e9d",
+      "language": "la",
+      "type": "onnx",
+      "source": "cc.la.300.vec",
+      "fasttext_source": "cc.la.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/la/fasttext.la.fluency.vocab.json": {
+      "size": 1103572,
+      "sha256": "8656b0e130fff9ae2bd08e224b6a691423658b762d7a94ee0b75b070390e515c",
+      "language": "la",
+      "type": "vocab",
+      "source": "cc.la.300.vec",
+      "fasttext_source": "cc.la.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/la/fasttext.la.mini.onnx": {
+      "size": 3040752,
+      "sha256": "9a7322f67d6b03d25b5e270a8afb7f7573c3296e30d1ab71f358f525d741e18b",
+      "language": "la",
+      "type": "onnx",
+      "source": "cc.la.300.vec",
+      "fasttext_source": "cc.la.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/la/fasttext.la.mini.vocab.json": {
+      "size": 204510,
+      "sha256": "0e1d477f17cc294a2e858e16e5d32b02402bc15d78f232569d833661b789c7e2",
+      "language": "la",
+      "type": "vocab",
+      "source": "cc.la.300.vec",
+      "fasttext_source": "cc.la.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
     },
     "models/la/fasttext.la.onnx": {
       "size": 120000415,
@@ -630,6 +1886,46 @@
       "type": "vocab",
       "source": "cc.la.300.vec",
       "fasttext_source": "cc.la.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lb/fasttext.lb.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "a452dfdcdfba014ea41b89ce80c0a901f6d6811d323e989cbb42552b8d6f9fbf",
+      "language": "lb",
+      "type": "onnx",
+      "source": "cc.lb.300.vec",
+      "fasttext_source": "cc.lb.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lb/fasttext.lb.fluency.vocab.json": {
+      "size": 1121066,
+      "sha256": "5a790c1a6e31ccf7c3f25e1d0088b70a2979981ad4af7032dd8cfd0e7e02ec91",
+      "language": "lb",
+      "type": "vocab",
+      "source": "cc.lb.300.vec",
+      "fasttext_source": "cc.lb.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lb/fasttext.lb.mini.onnx": {
+      "size": 3040752,
+      "sha256": "5a8cc6028d96eb69460a1e0b86124692dc7a2af81bdce2a50f3dba943091bbfb",
+      "language": "lb",
+      "type": "onnx",
+      "source": "cc.lb.300.vec",
+      "fasttext_source": "cc.lb.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lb/fasttext.lb.mini.vocab.json": {
+      "size": 205872,
+      "sha256": "921684d35f225c6cc18a50ba995be088a10c5559183a9537acc7f068b409a3b6",
+      "language": "lb",
+      "type": "vocab",
+      "source": "cc.lb.300.vec",
+      "fasttext_source": "cc.lb.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -653,6 +1949,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/lt/fasttext.lt.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "49545973d119e41543f8d892a1e12fe7bbb9dd5285e5f1828502b7aa356ff988",
+      "language": "lt",
+      "type": "onnx",
+      "source": "cc.lt.300.vec",
+      "fasttext_source": "cc.lt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lt/fasttext.lt.fluency.vocab.json": {
+      "size": 1157302,
+      "sha256": "b4755593d54bebec1339e0d6d6fc17bc01f514c4d25af847ca56cd66985182a7",
+      "language": "lt",
+      "type": "vocab",
+      "source": "cc.lt.300.vec",
+      "fasttext_source": "cc.lt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lt/fasttext.lt.mini.onnx": {
+      "size": 3040752,
+      "sha256": "0e7e92da68fa1b2d3d879a829b92b6d019302aac0b693a9021e07ea7c1f1eb1d",
+      "language": "lt",
+      "type": "onnx",
+      "source": "cc.lt.300.vec",
+      "fasttext_source": "cc.lt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lt/fasttext.lt.mini.vocab.json": {
+      "size": 215286,
+      "sha256": "9a5c97e6ef12ddb1f43785ab988a6404fc846fde9dc0d44cc725789540799aee",
+      "language": "lt",
+      "type": "vocab",
+      "source": "cc.lt.300.vec",
+      "fasttext_source": "cc.lt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/lt/fasttext.lt.onnx": {
       "size": 120000415,
       "sha256": "8bf81a5f95c03eaf89f69f7dd37371f8ae55172879f0f19a5315f687b4c1e0a0",
@@ -670,6 +2006,46 @@
       "type": "vocab",
       "source": "cc.lt.300.vec",
       "fasttext_source": "cc.lt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lv/fasttext.lv.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "01d07d538b4d24bd60c6c9e920284d7e9efa4a6165a691f0c8aaa5f6e1d38b55",
+      "language": "lv",
+      "type": "onnx",
+      "source": "cc.lv.300.vec",
+      "fasttext_source": "cc.lv.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lv/fasttext.lv.fluency.vocab.json": {
+      "size": 1170973,
+      "sha256": "af63ed1c8332ec042c3214384e9fc34f7bb2732e3fda2325e782d7809a6ea59e",
+      "language": "lv",
+      "type": "vocab",
+      "source": "cc.lv.300.vec",
+      "fasttext_source": "cc.lv.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lv/fasttext.lv.mini.onnx": {
+      "size": 3040752,
+      "sha256": "64580b276bbd1f61de79ad6c82b5d168f156ae672e2e32ca0c3f94592843bcf4",
+      "language": "lv",
+      "type": "onnx",
+      "source": "cc.lv.300.vec",
+      "fasttext_source": "cc.lv.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lv/fasttext.lv.mini.vocab.json": {
+      "size": 216948,
+      "sha256": "af460f15330b7ed710ed43b2b1d79e3c92a64a426470de1b801f39a75700b96b",
+      "language": "lv",
+      "type": "vocab",
+      "source": "cc.lv.300.vec",
+      "fasttext_source": "cc.lv.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -693,6 +2069,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/mk/fasttext.mk.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "c38e97543d39757b94ce5a20f661ffa23ba3d2ca78368f98309614ec87412cf0",
+      "language": "mk",
+      "type": "onnx",
+      "source": "cc.mk.300.vec",
+      "fasttext_source": "cc.mk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/mk/fasttext.mk.fluency.vocab.json": {
+      "size": 1441610,
+      "sha256": "7f6df1b9318a0205c3bf6a4238229c29a1e105cf43e4a72b8b56e8d3963edee9",
+      "language": "mk",
+      "type": "vocab",
+      "source": "cc.mk.300.vec",
+      "fasttext_source": "cc.mk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/mk/fasttext.mk.mini.onnx": {
+      "size": 3040752,
+      "sha256": "cdbf35a35c085a06db3c9fb78d93670f630b484f0f87e81fc3f65bfc95f41f20",
+      "language": "mk",
+      "type": "onnx",
+      "source": "cc.mk.300.vec",
+      "fasttext_source": "cc.mk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/mk/fasttext.mk.mini.vocab.json": {
+      "size": 271315,
+      "sha256": "7c1529fd160540ab8d4e6e9b5d237cd87e4983efd3892e921f2c61ba25d995e6",
+      "language": "mk",
+      "type": "vocab",
+      "source": "cc.mk.300.vec",
+      "fasttext_source": "cc.mk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/mk/fasttext.mk.onnx": {
       "size": 120000415,
       "sha256": "4d50ab2b4d2373803ec698ea6d3415ca4d8bd9a2514382e16c6a0675f3c70e9e",
@@ -710,6 +2126,46 @@
       "type": "vocab",
       "source": "cc.mk.300.vec",
       "fasttext_source": "cc.mk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/mn/fasttext.mn.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "5640659348025237a84783f5f540a9d98d4eb5887d9f339f26f8d21f32b9890d",
+      "language": "mn",
+      "type": "onnx",
+      "source": "cc.mn.300.vec",
+      "fasttext_source": "cc.mn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/mn/fasttext.mn.fluency.vocab.json": {
+      "size": 1392257,
+      "sha256": "89cbd17e01f890c350e799672b70558840607ef53f326eb0c9bd57863aa98e65",
+      "language": "mn",
+      "type": "vocab",
+      "source": "cc.mn.300.vec",
+      "fasttext_source": "cc.mn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/mn/fasttext.mn.mini.onnx": {
+      "size": 3040752,
+      "sha256": "05eb36d2143560f89031415d71bcfecf3bb7dd4eee9dc46af495d6f59a9147a2",
+      "language": "mn",
+      "type": "onnx",
+      "source": "cc.mn.300.vec",
+      "fasttext_source": "cc.mn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/mn/fasttext.mn.mini.vocab.json": {
+      "size": 260499,
+      "sha256": "995ddd7cad0fc3283aa120fb5d07956d3508aef7f5abffd64057f1537d558750",
+      "language": "mn",
+      "type": "vocab",
+      "source": "cc.mn.300.vec",
+      "fasttext_source": "cc.mn.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -733,6 +2189,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/ne/fasttext.ne.fluency.onnx": {
+      "size": 18240760,
+      "sha256": "6d03ae70d2283032178dc21db9d8ca6549d1d9fe49202e90607b35afa46ccdd5",
+      "language": "ne",
+      "type": "onnx",
+      "source": "cc.ne.300.vec",
+      "fasttext_source": "cc.ne.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ne/fasttext.ne.fluency.vocab.json": {
+      "size": 1971565,
+      "sha256": "91a3d1b9a12b8516f55760aee8b0dadb444f42d4fe4082d26100efb6850efbe0",
+      "language": "ne",
+      "type": "vocab",
+      "source": "cc.ne.300.vec",
+      "fasttext_source": "cc.ne.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ne/fasttext.ne.mini.onnx": {
+      "size": 3040752,
+      "sha256": "4835c34c0f6ce50c7e45275fb3b7e5ffb703edd218f7d96524fb5a1774963c66",
+      "language": "ne",
+      "type": "onnx",
+      "source": "cc.ne.300.vec",
+      "fasttext_source": "cc.ne.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ne/fasttext.ne.mini.vocab.json": {
+      "size": 320454,
+      "sha256": "808bae6cf10d075744ce031c6b041a2f0f95f78f515dc0925b02e054507effbd",
+      "language": "ne",
+      "type": "vocab",
+      "source": "cc.ne.300.vec",
+      "fasttext_source": "cc.ne.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/ne/fasttext.ne.onnx": {
       "size": 120000415,
       "sha256": "1fcfd0afa2d377e0671f86f3252b9f23ba8dd4068a4458eb201c5efd0a4d72d5",
@@ -750,6 +2246,46 @@
       "type": "vocab",
       "source": "cc.ne.300.vec",
       "fasttext_source": "cc.ne.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/nl/fasttext.nl.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "5cf2d10364b9472ce7bcbca8a2cf450cf71a2efc24495b33a2fb47f4e00ec814",
+      "language": "nl",
+      "type": "onnx",
+      "source": "cc.nl.300.vec",
+      "fasttext_source": "cc.nl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/nl/fasttext.nl.fluency.vocab.json": {
+      "size": 1125348,
+      "sha256": "e673124b3868833519658bae28ded78e76bc67b4dc736cd3d870d8b68b5fc817",
+      "language": "nl",
+      "type": "vocab",
+      "source": "cc.nl.300.vec",
+      "fasttext_source": "cc.nl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/nl/fasttext.nl.mini.onnx": {
+      "size": 3040752,
+      "sha256": "06a4036f68463a29efdf07be48e465e0e402372a5e6eb3fbbbe8f6f33c976d84",
+      "language": "nl",
+      "type": "onnx",
+      "source": "cc.nl.300.vec",
+      "fasttext_source": "cc.nl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/nl/fasttext.nl.mini.vocab.json": {
+      "size": 208289,
+      "sha256": "ada08291911bab544b64cc17431ad7bf687f92170933184031d8951add287892",
+      "language": "nl",
+      "type": "vocab",
+      "source": "cc.nl.300.vec",
+      "fasttext_source": "cc.nl.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -773,6 +2309,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/nn/fasttext.nn.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "361122853a1127f31a20c3af85b0f11c0ef353413100f36b12aa3e7c650988bc",
+      "language": "nn",
+      "type": "onnx",
+      "source": "cc.nn.300.vec",
+      "fasttext_source": "cc.nn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/nn/fasttext.nn.fluency.vocab.json": {
+      "size": 1109393,
+      "sha256": "3f86bf8d7c9154a3b58746bc1c0d0bc08cb62e4b6c306aca698ff4f14d9818b8",
+      "language": "nn",
+      "type": "vocab",
+      "source": "cc.nn.300.vec",
+      "fasttext_source": "cc.nn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/nn/fasttext.nn.mini.onnx": {
+      "size": 3040752,
+      "sha256": "84cb18b592e2651950a22ad1143966c90f16124273edbb991138357b1ac6e450",
+      "language": "nn",
+      "type": "onnx",
+      "source": "cc.nn.300.vec",
+      "fasttext_source": "cc.nn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/nn/fasttext.nn.mini.vocab.json": {
+      "size": 202622,
+      "sha256": "5e462e22445c5258b2124d7d5ff17cfd301a2d672b7dc0022be8b4cad93e58b8",
+      "language": "nn",
+      "type": "vocab",
+      "source": "cc.nn.300.vec",
+      "fasttext_source": "cc.nn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/nn/fasttext.nn.onnx": {
       "size": 120000415,
       "sha256": "c8ad1d04460a03645c9a9011add82dd697da95621400e6fbd9259cbef5bb4987",
@@ -790,6 +2366,46 @@
       "type": "vocab",
       "source": "cc.nn.300.vec",
       "fasttext_source": "cc.nn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/oc/fasttext.oc.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "e7cc59d328bfa3a492f94beb94274eda20a278170c9abfc0508194a853c35e3f",
+      "language": "oc",
+      "type": "onnx",
+      "source": "cc.oc.300.vec",
+      "fasttext_source": "cc.oc.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/oc/fasttext.oc.fluency.vocab.json": {
+      "size": 1084674,
+      "sha256": "fee9b42e703e03c4d2ebdccbfad5c70f89e40f6219cee9389f2f36d9786c7b29",
+      "language": "oc",
+      "type": "vocab",
+      "source": "cc.oc.300.vec",
+      "fasttext_source": "cc.oc.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/oc/fasttext.oc.mini.onnx": {
+      "size": 3040752,
+      "sha256": "dafefa870187406a3f89b30b9677760c03616324252b932abf67fa697faf4d2a",
+      "language": "oc",
+      "type": "onnx",
+      "source": "cc.oc.300.vec",
+      "fasttext_source": "cc.oc.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/oc/fasttext.oc.mini.vocab.json": {
+      "size": 200022,
+      "sha256": "88a500e0085123a1090687a09f9a9375a8553d6670d37281ec42b4a20dbfdffd",
+      "language": "oc",
+      "type": "vocab",
+      "source": "cc.oc.300.vec",
+      "fasttext_source": "cc.oc.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -813,6 +2429,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/pl/fasttext.pl.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "a912ad7c33b8ea975e57bdb01df046905f17e6e67b40906f109ab0d769d174f3",
+      "language": "pl",
+      "type": "onnx",
+      "source": "cc.pl.300.vec",
+      "fasttext_source": "cc.pl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/pl/fasttext.pl.fluency.vocab.json": {
+      "size": 1153636,
+      "sha256": "7f3b901d0721f405026ac9b5c7d07d256deec361a493c6cc16ee88ba2d51bf95",
+      "language": "pl",
+      "type": "vocab",
+      "source": "cc.pl.300.vec",
+      "fasttext_source": "cc.pl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/pl/fasttext.pl.mini.onnx": {
+      "size": 3040752,
+      "sha256": "4373c5296008406e8a36d972cdd5475388db6789df3d081810cc6025fc940aeb",
+      "language": "pl",
+      "type": "onnx",
+      "source": "cc.pl.300.vec",
+      "fasttext_source": "cc.pl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/pl/fasttext.pl.mini.vocab.json": {
+      "size": 212432,
+      "sha256": "071bbe829d3e4639a6fbb234c8aafe7812c854c63f4f8642b401899b848c661b",
+      "language": "pl",
+      "type": "vocab",
+      "source": "cc.pl.300.vec",
+      "fasttext_source": "cc.pl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/pl/fasttext.pl.onnx": {
       "size": 120000415,
       "sha256": "f8726ec5711747dde1d0e7031917b399a732598469e53a565b42a309cf837574",
@@ -830,6 +2486,46 @@
       "type": "vocab",
       "source": "cc.pl.300.vec",
       "fasttext_source": "cc.pl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/pt/fasttext.pt.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "fb8695c4be60d238e9aaa0f211defb93ea4d94fea5cb85ad282bb87dc5402494",
+      "language": "pt",
+      "type": "onnx",
+      "source": "cc.pt.300.vec",
+      "fasttext_source": "cc.pt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/pt/fasttext.pt.fluency.vocab.json": {
+      "size": 1119386,
+      "sha256": "fc6d7dfeeb9baacc07e1706d5dfbd2b393b895308c62449ed867cb74cc05f5de",
+      "language": "pt",
+      "type": "vocab",
+      "source": "cc.pt.300.vec",
+      "fasttext_source": "cc.pt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/pt/fasttext.pt.mini.onnx": {
+      "size": 3040752,
+      "sha256": "5fb94c7a2589d8222eea4f8174bf361c038a828c80787befa9edd0d650d8674c",
+      "language": "pt",
+      "type": "onnx",
+      "source": "cc.pt.300.vec",
+      "fasttext_source": "cc.pt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/pt/fasttext.pt.mini.vocab.json": {
+      "size": 208629,
+      "sha256": "52ef5d165e4a88a96832fcd1597c35c84ea597f2121b02477df01db7b197bc47",
+      "language": "pt",
+      "type": "vocab",
+      "source": "cc.pt.300.vec",
+      "fasttext_source": "cc.pt.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -853,6 +2549,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/ro/fasttext.ro.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "20fd6e5165d53d7ecd267473360efaa56e2688534c92e1c932aebde0d59094a9",
+      "language": "ro",
+      "type": "onnx",
+      "source": "cc.ro.300.vec",
+      "fasttext_source": "cc.ro.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ro/fasttext.ro.fluency.vocab.json": {
+      "size": 1127707,
+      "sha256": "f78e0f142ad3c96a5913e8593ff9b318e58a172bd0ce213b52e2d838420e031b",
+      "language": "ro",
+      "type": "vocab",
+      "source": "cc.ro.300.vec",
+      "fasttext_source": "cc.ro.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ro/fasttext.ro.mini.onnx": {
+      "size": 3040752,
+      "sha256": "f53e42def75da3140ab129a92caae4059e3cf5b31a709fc3dd1f272b7d48f297",
+      "language": "ro",
+      "type": "onnx",
+      "source": "cc.ro.300.vec",
+      "fasttext_source": "cc.ro.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ro/fasttext.ro.mini.vocab.json": {
+      "size": 208273,
+      "sha256": "084a40a6f529e371d53aff5462e453bb148832687d08111b53919c4cbdfa28c3",
+      "language": "ro",
+      "type": "vocab",
+      "source": "cc.ro.300.vec",
+      "fasttext_source": "cc.ro.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/ro/fasttext.ro.onnx": {
       "size": 120000415,
       "sha256": "3a1d000b5bcaed1b90e510d4437c16d183c18d3851346177941dbdc5373fc63b",
@@ -870,6 +2606,46 @@
       "type": "vocab",
       "source": "cc.ro.300.vec",
       "fasttext_source": "cc.ro.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ru/fasttext.ru.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "0262c415c2540d3252929180978ec9505e3305113a89a3023b7058613ddd1757",
+      "language": "ru",
+      "type": "onnx",
+      "source": "cc.ru.300.vec",
+      "fasttext_source": "cc.ru.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ru/fasttext.ru.fluency.vocab.json": {
+      "size": 1495648,
+      "sha256": "17d2b81849d1a8256dd1ba61fdb4c6ecdc85638772e7d5e701060e42e740039c",
+      "language": "ru",
+      "type": "vocab",
+      "source": "cc.ru.300.vec",
+      "fasttext_source": "cc.ru.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ru/fasttext.ru.mini.onnx": {
+      "size": 3040752,
+      "sha256": "94b3533ef70202280b8268dbdce3dcddfb699382b707506c58ac1cec22890f26",
+      "language": "ru",
+      "type": "onnx",
+      "source": "cc.ru.300.vec",
+      "fasttext_source": "cc.ru.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ru/fasttext.ru.mini.vocab.json": {
+      "size": 274443,
+      "sha256": "f3fd5d5118b5ce657931a0d2e0e40b17064d511d9e6d5a7bec0170e989cf348c",
+      "language": "ru",
+      "type": "vocab",
+      "source": "cc.ru.300.vec",
+      "fasttext_source": "cc.ru.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -893,6 +2669,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/sk/fasttext.sk.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "85450c89fdd450b3ff7679d2708714f1456fa0a4f27a3e1b057a9c3748655a15",
+      "language": "sk",
+      "type": "onnx",
+      "source": "cc.sk.300.vec",
+      "fasttext_source": "cc.sk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sk/fasttext.sk.fluency.vocab.json": {
+      "size": 1136074,
+      "sha256": "512bc816561091417aad101d5ef0f46de678504933fea4241ede35dfb611487b",
+      "language": "sk",
+      "type": "vocab",
+      "source": "cc.sk.300.vec",
+      "fasttext_source": "cc.sk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sk/fasttext.sk.mini.onnx": {
+      "size": 3040752,
+      "sha256": "ae52077c8fe00c143754b82aa317c7e5987ebd76719b90c0ff7cf9fa773d992c",
+      "language": "sk",
+      "type": "onnx",
+      "source": "cc.sk.300.vec",
+      "fasttext_source": "cc.sk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sk/fasttext.sk.mini.vocab.json": {
+      "size": 212643,
+      "sha256": "a1e3e2303b21261d5fc8f06b70038e6b59b3a160e6543ad6a5e4b2728b8e8448",
+      "language": "sk",
+      "type": "vocab",
+      "source": "cc.sk.300.vec",
+      "fasttext_source": "cc.sk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/sk/fasttext.sk.onnx": {
       "size": 120000415,
       "sha256": "b0b66d045c552a095a46040b47e8338f89e6fbc5c1a66dde7b344f9eb7cd2ece",
@@ -910,6 +2726,46 @@
       "type": "vocab",
       "source": "cc.sk.300.vec",
       "fasttext_source": "cc.sk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sl/fasttext.sl.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "5ab4060b58ec0b3b4b4507c8e2e4cf3508ed8256857250045f5363a600cae3a8",
+      "language": "sl",
+      "type": "onnx",
+      "source": "cc.sl.300.vec",
+      "fasttext_source": "cc.sl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sl/fasttext.sl.fluency.vocab.json": {
+      "size": 1098968,
+      "sha256": "193e9ef3f8341b854706283b38553e2653a301fd2141d5a038cfc8684c153209",
+      "language": "sl",
+      "type": "vocab",
+      "source": "cc.sl.300.vec",
+      "fasttext_source": "cc.sl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sl/fasttext.sl.mini.onnx": {
+      "size": 3040752,
+      "sha256": "d35ce9996ba601dfaf2fca815bae27c76b188199e79ed169471c934015db8ed0",
+      "language": "sl",
+      "type": "onnx",
+      "source": "cc.sl.300.vec",
+      "fasttext_source": "cc.sl.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sl/fasttext.sl.mini.vocab.json": {
+      "size": 205004,
+      "sha256": "846dfb131ed9b1b61d21bb737140edaefd2d0f6a8b9c7011608e72f15e36fb84",
+      "language": "sl",
+      "type": "vocab",
+      "source": "cc.sl.300.vec",
+      "fasttext_source": "cc.sl.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -933,6 +2789,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/sr/fasttext.sr.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "71ef72a2def45754455f0b4cb1a3fb02319f839673db4011dc0f4de3c39782fb",
+      "language": "sr",
+      "type": "onnx",
+      "source": "cc.sr.300.vec",
+      "fasttext_source": "cc.sr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sr/fasttext.sr.fluency.vocab.json": {
+      "size": 1374192,
+      "sha256": "d65b015de2b3bb15fd8ec1f621192583c22116f30f128beb721bed578efdba47",
+      "language": "sr",
+      "type": "vocab",
+      "source": "cc.sr.300.vec",
+      "fasttext_source": "cc.sr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sr/fasttext.sr.mini.onnx": {
+      "size": 3040752,
+      "sha256": "41e6a80e3ba1c7f44df666051d535b23018f0043171f637e159eba97b3409a8f",
+      "language": "sr",
+      "type": "onnx",
+      "source": "cc.sr.300.vec",
+      "fasttext_source": "cc.sr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sr/fasttext.sr.mini.vocab.json": {
+      "size": 256184,
+      "sha256": "2be6c94a89da98a8c893d8a47da259449d5412381723368864a257fe44589b77",
+      "language": "sr",
+      "type": "vocab",
+      "source": "cc.sr.300.vec",
+      "fasttext_source": "cc.sr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/sr/fasttext.sr.onnx": {
       "size": 120000415,
       "sha256": "74d0852aa2bc0ab38a9d82eba42e49d6d791fffac3bc5487d1b1ff452371f8fe",
@@ -950,6 +2846,46 @@
       "type": "vocab",
       "source": "cc.sr.300.vec",
       "fasttext_source": "cc.sr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sv/fasttext.sv.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "01f1a81ed9067835214217688a6fcfbea4607b311a7be076f49bc9af8f9215af",
+      "language": "sv",
+      "type": "onnx",
+      "source": "cc.sv.300.vec",
+      "fasttext_source": "cc.sv.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sv/fasttext.sv.fluency.vocab.json": {
+      "size": 1131396,
+      "sha256": "b5d0cd5ac993050160f7191815d6f4fddf468f10801818e3878a6d095e3f00a8",
+      "language": "sv",
+      "type": "vocab",
+      "source": "cc.sv.300.vec",
+      "fasttext_source": "cc.sv.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sv/fasttext.sv.mini.onnx": {
+      "size": 3040752,
+      "sha256": "73cc375249028a3a6f084bfb8a57515d1f95f8aff52ae433cb7c342bacec2e79",
+      "language": "sv",
+      "type": "onnx",
+      "source": "cc.sv.300.vec",
+      "fasttext_source": "cc.sv.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sv/fasttext.sv.mini.vocab.json": {
+      "size": 207520,
+      "sha256": "6b46a54ace9d68b15c35376974db2052503f601bdfc492cb50eb1af20764fd86",
+      "language": "sv",
+      "type": "vocab",
+      "source": "cc.sv.300.vec",
+      "fasttext_source": "cc.sv.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -973,6 +2909,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/tk/fasttext.tk.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "c6f361e82a930a83068424352083afed5b191ef42b713a058b05ccfb00fce89a",
+      "language": "tk",
+      "type": "onnx",
+      "source": "cc.tk.300.vec",
+      "fasttext_source": "cc.tk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/tk/fasttext.tk.fluency.vocab.json": {
+      "size": 1178544,
+      "sha256": "65dc4cb7ebaa0ff34c14dc7fdecc0077e82969f510678e6d843b54be42905e42",
+      "language": "tk",
+      "type": "vocab",
+      "source": "cc.tk.300.vec",
+      "fasttext_source": "cc.tk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/tk/fasttext.tk.mini.onnx": {
+      "size": 3040752,
+      "sha256": "708da16486e3408b22287cc3f44c958615abfdaf9aefb9f722d628c3eddfa3e9",
+      "language": "tk",
+      "type": "onnx",
+      "source": "cc.tk.300.vec",
+      "fasttext_source": "cc.tk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/tk/fasttext.tk.mini.vocab.json": {
+      "size": 218176,
+      "sha256": "3ceb70c1322d2c7103c64064bd6a8c2e859eaff1679076306333bc139aa736e6",
+      "language": "tk",
+      "type": "vocab",
+      "source": "cc.tk.300.vec",
+      "fasttext_source": "cc.tk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/tk/fasttext.tk.onnx": {
       "size": 120000415,
       "sha256": "c084e37ef01f63c19f42da3f86c634a1198f0ece02a162f13c35959b31ab895a",
@@ -990,6 +2966,46 @@
       "type": "vocab",
       "source": "cc.tk.300.vec",
       "fasttext_source": "cc.tk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/tr/fasttext.tr.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "b061bde6edee0712bb6b7d49deee3f7f14c3bc6ffc5c8c5fecc229371b1faac8",
+      "language": "tr",
+      "type": "onnx",
+      "source": "cc.tr.300.vec",
+      "fasttext_source": "cc.tr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/tr/fasttext.tr.fluency.vocab.json": {
+      "size": 1164995,
+      "sha256": "f89ff0fdf65a502df5722da46ee2b4b7b916ba9ab41fb3f347bc18b78686c59e",
+      "language": "tr",
+      "type": "vocab",
+      "source": "cc.tr.300.vec",
+      "fasttext_source": "cc.tr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/tr/fasttext.tr.mini.onnx": {
+      "size": 3040752,
+      "sha256": "83238a0df3b2b6b1b6708e1f04a7ca5b721a1011fbac49a44902a970ce700ff5",
+      "language": "tr",
+      "type": "onnx",
+      "source": "cc.tr.300.vec",
+      "fasttext_source": "cc.tr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/tr/fasttext.tr.mini.vocab.json": {
+      "size": 210604,
+      "sha256": "e29d648cf692eccd98106043b3f066b4e71800ab18e1a2f0bc5650e0cad5c995",
+      "language": "tr",
+      "type": "vocab",
+      "source": "cc.tr.300.vec",
+      "fasttext_source": "cc.tr.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -1013,6 +3029,46 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/uk/fasttext.uk.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "f66ada0ab5130074c0507b746acaf49c2da8b9ee7c50707b488afe8185d0f86a",
+      "language": "uk",
+      "type": "onnx",
+      "source": "cc.uk.300.vec",
+      "fasttext_source": "cc.uk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/uk/fasttext.uk.fluency.vocab.json": {
+      "size": 1492562,
+      "sha256": "7acd20ab5cd93325ad3f6254f047e02703551a453533674ce01d47c78ea9636b",
+      "language": "uk",
+      "type": "vocab",
+      "source": "cc.uk.300.vec",
+      "fasttext_source": "cc.uk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/uk/fasttext.uk.mini.onnx": {
+      "size": 3040752,
+      "sha256": "297026cb42486ae8e870bd2a47e9284fbb8cf4eadb6ce2d23c24d4a2db6be4ab",
+      "language": "uk",
+      "type": "onnx",
+      "source": "cc.uk.300.vec",
+      "fasttext_source": "cc.uk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/uk/fasttext.uk.mini.vocab.json": {
+      "size": 278939,
+      "sha256": "6db9bdb07c1ae7df4e592dc69ece267df85ef95ae34fd29ab9de2eb6294633ac",
+      "language": "uk",
+      "type": "vocab",
+      "source": "cc.uk.300.vec",
+      "fasttext_source": "cc.uk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/uk/fasttext.uk.onnx": {
       "size": 120000415,
       "sha256": "97a7c039049550f31b844065dab0a78f074af7bc285bffd5661be1f13ad88fd3",
@@ -1030,6 +3086,46 @@
       "type": "vocab",
       "source": "cc.uk.300.vec",
       "fasttext_source": "cc.uk.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/vi/fasttext.vi.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "60bece189ed85adbf0252eaf464a99456f04a70011f4b7b31a143d4714aa4536",
+      "language": "vi",
+      "type": "onnx",
+      "source": "cc.vi.300.vec",
+      "fasttext_source": "cc.vi.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/vi/fasttext.vi.fluency.vocab.json": {
+      "size": 1031220,
+      "sha256": "982cf11f6c3c2e2c780a734e342481320648444a99fe3c070776afb58a0b55bb",
+      "language": "vi",
+      "type": "vocab",
+      "source": "cc.vi.300.vec",
+      "fasttext_source": "cc.vi.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/vi/fasttext.vi.mini.onnx": {
+      "size": 3040752,
+      "sha256": "b0b590672014b28364995a2db74cdaef5c7a77b89617522d8e64cc547ffc8ea8",
+      "language": "vi",
+      "type": "onnx",
+      "source": "cc.vi.300.vec",
+      "fasttext_source": "cc.vi.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/vi/fasttext.vi.mini.vocab.json": {
+      "size": 188108,
+      "sha256": "50d82019d206bf9129d352cd56e71ca3e680ff2cf8a3ad8ca70c55b6ac960820",
+      "language": "vi",
+      "type": "vocab",
+      "source": "cc.vi.300.vec",
+      "fasttext_source": "cc.vi.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -1052,6 +3148,34 @@
       "fasttext_source": "cc.vi.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
+    },
+    "models/zh/fasttext.zh.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "93f62551246dbcff5dcdd5a9c73b9aa4ab353ff1712d96c5f0dfbb20376419a4",
+      "language": "zh",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/zh/fasttext.zh.fluency.vocab.json": {
+      "size": 1048776,
+      "sha256": "7602f06f861fac1d50de062c85b5778d454ed6a8a6137b8881fdbdbe4fa25e27",
+      "language": "zh",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
+    },
+    "models/zh/fasttext.zh.mini.onnx": {
+      "size": 3040752,
+      "sha256": "5b1b49324325bd166c7f8449ebf83cdf82b967cbd1fca774107e6ee592a048b3",
+      "language": "zh",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/zh/fasttext.zh.mini.vocab.json": {
+      "size": 193747,
+      "sha256": "beb96c765cb13cdc6a382a4b8a88a243fc7155406c0f7c1d5d059356015e5d27",
+      "language": "zh",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
     },
     "models/zh/fasttext.zh.onnx": {
       "size": 120000415,

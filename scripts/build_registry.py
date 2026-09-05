@@ -19,7 +19,7 @@ SPEC = "kotoshu.resources/v1"
 # languages under release tag v1.1.0 (minor = coverage per plan 05).
 # 3: plan 83 batch 2, gem-wired RTL languages plus national-script and
 # Latin newcomers under release tag v1.2.0.
-REGISTRY_VERSION = 3
+REGISTRY_VERSION = 4
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
 # media host serves the real bytes. Plain-git files (vocab, manifests)
@@ -51,12 +51,10 @@ def full_vocab_size(lang_dir, lang):
 def build_resource(lang, tier_name, dims, vocab_size, quantization,
                    sha256, size_bytes, eval_ref, version, tag):
     stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
-    # Only the full tier lives in git (LFS); tier binaries are release
-    # assets only, so their mirror is honestly null. LFS files must use
-    # the media host - the raw host serves 134-byte pointer stubs.
-    mirror = (
-        f"{MEDIA_URL}/main/models/{lang}/{stem}.onnx" if tier_name == "full" else None
-    )
+    # Every tier binary lives in git as an LFS object (plan 92) so the
+    # media host serves CORS-fetchable bytes for browsers; the raw host
+    # would serve 134-byte pointer stubs, hence the media URL.
+    mirror = f"{MEDIA_URL}/main/models/{lang}/{stem}.onnx"
     return {
         "type": "model",
         "language": lang,
