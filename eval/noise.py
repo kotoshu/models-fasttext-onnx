@@ -18,6 +18,18 @@ Layout model (MULTYPO-style, arxiv 2005.01158) for de/en/es/fr/pt/ru:
   base letter from the accented side). German umlaut keys ä/ö/ü/ß are real
   QWERTZ keys and get physical neighbors in addition.
 
+Plan 77 coverage expansion (it nl pl uk tr cs sv el hu ro da vi ca):
+- Latin-script languages reuse the gem's QWERTY/QWERTZ physical grids with
+  a per-language diacritic supplement, exactly the es/pt/fr pattern above.
+- Three languages cannot reuse a gem grid and get curated national grids
+  here (the gem has no tr/uk/el layout files yet — when it grows them,
+  mirror the coordinates from there and delete the local copies):
+  Turkish-Q (tr: ı ğ ü ş i ö ç are real keys), Ukrainian ЙЦУКЕН (uk:
+  і ї є ґ replace the Russian-only keys), Greek phonetic (el: the standard
+  EL layout is phonetically equivalent; positions simplified, accents via
+  the diacritic supplement). Curated, not gem-mirrored — same honesty
+  rule as the CJK confusion sets.
+
 Character-confusion model for ja/ko/zh (no key adjacency applies):
 - Small curated visual/phonetic confusion pairs per language (see
   _JA_PAIRS / _KO_PAIRS / _ZH_PAIRS below): kanji/kana lookalikes for ja,
@@ -107,11 +119,51 @@ _JCUKEN = {
     "ь": (3, 6), "б": (3, 7), "ю": (3, 8), ".": (3, 9),
 }
 
+# Turkish-Q (standard Turkish layout; ı ğ ü ş i ö ç are real keys).
+_TR_Q = {
+    "\"": (0, 0), "1": (0, 1), "2": (0, 2), "3": (0, 3), "4": (0, 4), "5": (0, 5),
+    "6": (0, 6), "7": (0, 7), "8": (0, 8), "9": (0, 9), "0": (0, 10), "*": (0, 11), "-": (0, 12),
+    "q": (1, 0), "w": (1, 1), "e": (1, 2), "r": (1, 3), "t": (1, 4), "y": (1, 5),
+    "u": (1, 6), "ı": (1, 7), "o": (1, 8), "p": (1, 9), "ğ": (1, 10), "ü": (1, 11),
+    "a": (2, 0), "s": (2, 1), "d": (2, 2), "f": (2, 3), "g": (2, 4), "h": (2, 5),
+    "j": (2, 6), "k": (2, 7), "l": (2, 8), "ş": (2, 9), "i": (2, 10),
+    "z": (3, 0), "x": (3, 1), "c": (3, 2), "v": (3, 3), "b": (3, 4), "n": (3, 5),
+    "m": (3, 6), "ö": (3, 7), "ç": (3, 8), ".": (3, 9),
+}
+
+# Ukrainian ЙЦУКЕН (standard Ukrainian layout; і ї є ґ replace the
+# Russian-only ы ъ э ё keys at the same positions).
+_UK_JCUKEN = {
+    "'": (0, 0), "1": (0, 1), "2": (0, 2), "3": (0, 3), "4": (0, 4), "5": (0, 5),
+    "6": (0, 6), "7": (0, 7), "8": (0, 8), "9": (0, 9), "0": (0, 10), "-": (0, 11), "=": (0, 12),
+    "й": (1, 0), "ц": (1, 1), "у": (1, 2), "к": (1, 3), "е": (1, 4), "н": (1, 5),
+    "г": (1, 6), "ш": (1, 7), "щ": (1, 8), "з": (1, 9), "х": (1, 10), "ї": (1, 11), "ґ": (1, 12),
+    "ф": (2, 0), "і": (2, 1), "в": (2, 2), "а": (2, 3), "п": (2, 4), "р": (2, 5),
+    "о": (2, 6), "л": (2, 7), "д": (2, 8), "ж": (2, 9), "є": (2, 10),
+    "я": (3, 0), "ч": (3, 1), "с": (3, 2), "м": (3, 3), "и": (3, 4), "т": (3, 5),
+    "ь": (3, 6), "б": (3, 7), "ю": (3, 8), ".": (3, 9),
+}
+
+# Greek phonetic mnemonic grid (standard EL layout is phonetically
+# equivalent; accents are dead-key typed and handled by the supplement).
+_EL_PHONETIC = {
+    "`": (0, 0), "1": (0, 1), "2": (0, 2), "3": (0, 3), "4": (0, 4), "5": (0, 5),
+    "6": (0, 6), "7": (0, 7), "8": (0, 8), "9": (0, 9), "0": (0, 10), "-": (0, 11), "=": (0, 12),
+    ";": (1, 0), "σ": (1, 1), "ε": (1, 2), "ρ": (1, 3), "τ": (1, 4), "υ": (1, 5),
+    "θ": (1, 6), "ι": (1, 7), "ο": (1, 8), "π": (1, 9),
+    "α": (2, 0), "δ": (2, 1), "φ": (2, 2), "γ": (2, 3), "η": (2, 4), "ξ": (2, 5),
+    "κ": (2, 6), "λ": (2, 7),
+    "ζ": (3, 0), "χ": (3, 1), "ψ": (3, 2), "ω": (3, 3), "β": (3, 4), "ν": (3, 5), "μ": (3, 6),
+}
+
 _LAYOUTS = {
     "qwerty": _QWERTY,
     "qwertz": _QWERTZ,
     "azerty": _AZERTY,
     "jcuken": _JCUKEN,
+    "trq": _TR_Q,
+    "uk_jcuken": _UK_JCUKEN,
+    "el_phonetic": _EL_PHONETIC,
 }
 
 LANG_LAYOUT = {
@@ -121,6 +173,21 @@ LANG_LAYOUT = {
     "de": "qwertz",
     "fr": "azerty",
     "ru": "jcuken",
+    # Plan 77 coverage expansion: Latin-script newcomers reuse the gem's
+    # qwerty/qwertz grids; tr/uk/el use the curated national grids above.
+    "it": "qwerty",
+    "nl": "qwerty",
+    "pl": "qwerty",
+    "sv": "qwerty",
+    "da": "qwerty",
+    "ca": "qwerty",
+    "ro": "qwerty",
+    "vi": "qwerty",
+    "cs": "qwertz",
+    "hu": "qwertz",
+    "tr": "trq",
+    "uk": "uk_jcuken",
+    "el": "el_phonetic",
 }
 
 # Dead-key / diacritic slips per language. Keys of the inner dict are base
@@ -135,6 +202,35 @@ _LANG_ALTERNATES = {
     "fr": {"e": ["é", "è", "ê", "ë"], "a": ["à", "â"], "u": ["û"], "i": ["î", "ï"], "o": ["ô"], "c": ["ç"]},
     "pt": {"a": ["á", "â", "ã"], "e": ["é", "ê"], "i": ["í"], "o": ["ó", "ô", "õ"], "u": ["ú", "ü"], "c": ["ç"]},
     "ru": {"е": ["ё"]},
+    # Plan 77 coverage expansion. Accented letters typed via dead keys or
+    # AltGr on the underlying qwerty/qwertz physical layout: they inherit
+    # the base letter's neighbors plus the dropped-diacritic slip.
+    "it": {"a": ["à"], "e": ["è", "é"], "i": ["ì"], "o": ["ò"], "u": ["ù"]},
+    "nl": {"e": ["é"], "i": ["ï"], "o": ["ö"], "u": ["ü"]},
+    "pl": {"a": ["ą"], "c": ["ć"], "e": ["ę"], "l": ["ł"], "n": ["ń"], "o": ["ó"], "s": ["ś"], "z": ["ż", "ź"]},
+    "cs": {"a": ["á"], "e": ["ě", "é"], "i": ["í"], "o": ["ó"], "u": ["ú", "ů"], "y": ["ý"], "c": ["č"], "s": ["š"], "r": ["ř"], "z": ["ž"], "d": ["ď"], "t": ["ť"], "n": ["ň"]},
+    "hu": {"a": ["á"], "e": ["é"], "i": ["í"], "o": ["ó", "ö", "ő"], "u": ["ú", "ü", "ű"]},
+    "ro": {"a": ["ă", "â"], "i": ["î"], "s": ["ș"], "t": ["ț"]},
+    "sv": {"a": ["å", "ä"], "o": ["ö"], "e": ["é"]},
+    "da": {"a": ["å", "æ"], "o": ["ø"], "e": ["æ", "é"]},
+    "ca": {"a": ["à"], "e": ["é"], "i": ["í"], "o": ["ó"], "u": ["ú"], "c": ["ç"]},
+    "vi": {
+        "a": ["ă", "â", "à", "á", "ả", "ã", "ạ"],
+        "e": ["ê", "è", "é", "ẻ", "ẽ", "ẹ"],
+        "i": ["ì", "í", "ỉ", "ĩ", "ị"],
+        "o": ["ô", "ơ", "ò", "ó", "ỏ", "õ", "ọ"],
+        "u": ["ư", "ù", "ú", "ủ", "ũ", "ụ"],
+        "y": ["ỳ", "ý", "ỷ", "ỹ", "ỵ"],
+        "d": ["đ"],
+    },
+    # tr/uk/el letters are real keys on their curated national grids, so
+    # only the cross-script spelling slips get supplement entries.
+    "tr": {"i": ["ı"], "o": ["ô"], "u": ["û"]},
+    "uk": {},
+    "el": {
+        "α": ["ά"], "ε": ["έ"], "η": ["ή"], "ι": ["ί"], "ο": ["ό"], "υ": ["ύ"], "ω": ["ώ"],
+        "σ": ["ς"],
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -446,6 +542,19 @@ def main() -> int:
         "ja": ["今日は", "先生", "日本語"],
         "ko": ["안녕하세요", "개발자", "학교"],
         "zh": ["你好", "我们", "电脑"],
+        "it": ["città", "perché", "morire"],
+        "nl": ["volgende", "moeilijk", "zachte"],
+        "pl": ["szkoła", "wszystkie", "ćwiczenie"],
+        "uk": ["привіт", "Україна", "будь"],
+        "tr": ["ışık", "ağaç", "gözlük"],
+        "cs": ["člověk", "velký", "malíř"],
+        "sv": ["träna", "svenska", "första"],
+        "el": ["καλημέρα", "καληνύχτα", "ερώτηση"],
+        "hu": ["magyar", "körül", "kicsi"],
+        "ro": ["română", "mâine", "școală"],
+        "da": ["hvordan", "små", "søge"],
+        "vi": ["việt", "người", "học"],
+        "ca": ["català", "cert", "més"],
     }
     for lang, words in samples.items():
         rng = np.random.default_rng([42, zlib.crc32(lang.encode("utf-8"))])
