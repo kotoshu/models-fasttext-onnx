@@ -228,6 +228,32 @@ git lfs pull
 wget https://github.com/kotoshu/models-fasttext-onnx/raw/main/models/en/fasttext.en.onnx
 ```
 
+### Browser and wasm (CORS)
+
+GitHub release assets send no `Access-Control-Allow-Origin` header, so
+browsers cannot fetch them. The registry mirror URLs
+(`https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/...`,
+where every tier binary and tier vocab lives as an LFS object) do send
+`Access-Control-Allow-Origin: *`, as does `raw.githubusercontent.com` for
+the plain-git `registry.json`. With `@kotoshu/wasm` 0.2.0:
+
+```js
+import { loadModel, rerank } from "@kotoshu/wasm";
+
+const registry = await (await fetch(
+  "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/v1.2.1/registry.json"
+)).json();
+const entry = registry.resources["kotoshu://models/en/mini"];
+const modelBytes = new Uint8Array(await (await fetch(entry.urls.mirror)).arrayBuffer());
+const vocabBytes = new Uint8Array(await (await fetch(
+  entry.urls.mirror.replace(/\.onnx$/, ".vocab.json")
+)).arrayBuffer());
+
+const model = loadModel(modelBytes, vocabBytes); // KotoshuModel
+rerank(model, "puppy", "the dog and the cat");   // f32 in [-1, 1]
+model.free();
+```
+
 ## Building from Source
 
 If you want to convert the models yourself from FastText `.vec` files:
