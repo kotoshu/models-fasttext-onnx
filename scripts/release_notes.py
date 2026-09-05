@@ -70,8 +70,13 @@ def main():
             key=lambda r: TIER_ORDER[r["tier"]["name"]],
         )
         for r in rows:
-            asset = r["urls"]["mirror"].rsplit("/", 1)[-1]
-            print(f"| {r['tier']['name']} | `{asset}` | {human_size(r['size_bytes'])} | {r['eval_ref'] or '—'} |")
+            # Asset name comes from the stem (same rule as
+            # build_registry/validate_registry), NOT from a URL: tier
+            # models have mirror=None, and the dev flavor has no URLs.
+            lang = r["language"]
+            tier_name = r["tier"]["name"]
+            stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
+            print(f"| {tier_name} | `{stem}.onnx` | {human_size(r['size_bytes'])} | {r['eval_ref'] or '—'} |")
         print()
 
 
