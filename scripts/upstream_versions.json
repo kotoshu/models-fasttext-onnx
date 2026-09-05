@@ -1,5 +1,5 @@
 {
-  "comment": "Pins for the upstream fastText Common Crawl archives the 9 active models were converted from (per manifest.json). sha256_vec_gz/etag/size_bytes start as null because no .vec files remain locally; the weekly poll (.github/workflows/upstream-poll.yml) records first observations in its job summary only, and reports drift against pinned values. Filling a pin is a deliberate human step; the poll never commits, downloads, or converts.",
+  "comment": "Pins for the upstream fastText Common Crawl archives the active models were converted from (per manifest.json). The 9 legacy languages were converted before any pin file existed, so their sha256_vec_gz/etag/size start null - the weekly poll (.github/workflows/upstream-poll.yml) reports drift against pinned values only. The plan-77 languages were pinned from the freshly downloaded archives. Filling a null pin is a deliberate human step; the poll never commits, downloads, or converts.",
   "sources": {
     "de": {
       "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.de.300.vec.gz",
@@ -81,6 +81,123 @@
       "pinned_at": "2026-09-02",
       "converted_manifest_sha256": "5e137d691bd1170f728dad951af9c38be6430cb4738e13154065dafa5246336c",
       "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+    },
+    "ca": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ca.300.vec.gz",
+      "sha256_vec_gz": "e6311851795f70dc94aeeec899b9af6d8d2db25f42232d23a44c0354bf9c28b5",
+      "etag": "68758399d1d376568cfa5764caa6bb5c-146",
+      "size_bytes": 1223165996,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "c5b71c491311ff5451eaacf42f05534d87d28229726ddd658cad6bf55a7cd1c5",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "cs": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.cs.300.vec.gz",
+      "sha256_vec_gz": "ece00d92af11dd5204f376371430697d8830a7e856c059aab6afc81af999415b",
+      "etag": "6d6495f2cfea18dea7c8f9696ef617cb-151",
+      "size_bytes": 1262989069,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "0a1bf2be175436a42c37289a45bcda7756d23b7ae852641dfc56a87506ef38f7",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "da": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.da.300.vec.gz",
+      "sha256_vec_gz": "f49ce666eee2d91462c431adf5df2be75f06dcc47a7dd76b4de8c2ee36bb9144",
+      "etag": "8f8a9017b2e2b2d5f6ec90b1b0113b12-146",
+      "size_bytes": 1221429539,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "58f291b4c8f17fcf3cca43fbf93a81d384513ef5cec9760b7055f7c35ee15e64",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "el": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.el.300.vec.gz",
+      "sha256_vec_gz": "1c8b8033a970f66ffdc653ad277c9c6e51381dd82e6bccd1a716641fba8068bb",
+      "etag": "a188896dd56c0698543e41ce58cb66bd-150",
+      "size_bytes": 1256281783,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "bdecc0b4ea87d524eb9590b382ef759b73f3fd57884b91b643ee6c2bc88e2e61",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "hu": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.hu.300.vec.gz",
+      "sha256_vec_gz": "cb6dce97d2afe69b35e5c50907dedabde83ec395a93fc14426d6c08635f65d23",
+      "etag": "a2a44c7d03413ea9472bd4d6ca0edc54-150",
+      "size_bytes": 1257313518,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "480f59bb127d8cc147a3ba896dbd63a72b7e7821abdf64f04c67651055f7668a",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "it": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.it.300.vec.gz",
+      "sha256_vec_gz": "dfbd3034b461cbfd70a9acae8006b76b7a140bb5960c6afcb30bda9913fb1a7d",
+      "etag": "a7ef466f88cbaefdb47592e5b6b1be9b-152",
+      "size_bytes": 1272825284,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "f86bf198167869066541610ee78f0d6cb72bab6d79173f3cb231271caea9b8cf",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "nl": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.nl.300.vec.gz",
+      "sha256_vec_gz": "151c0ad2b5d01f3bd9bd9657cc907b74b5d559703cb15149ef20c261c69a30fc",
+      "etag": "59b4390964841f3281c56cda8f746f53-150",
+      "size_bytes": 1255218462,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "71cdce125467b49fb7029fbed9a47a344535beb6603e3d797525648c33b205ae",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "pl": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.pl.300.vec.gz",
+      "sha256_vec_gz": "8c07325809f838ac60eb6fcb2ee5911e98b70683a8ff7c5a5985569bd507e085",
+      "etag": "b40806706bd5cab5fcf36d762a382565-152",
+      "size_bytes": 1272639217,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "f8726ec5711747dde1d0e7031917b399a732598469e53a565b42a309cf837574",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "ro": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ro.300.vec.gz",
+      "sha256_vec_gz": "2616839d4afeedd855c923f061d894c47311b48b989e3a69c2d8240433dd1691",
+      "etag": "49f610c683e5064eb97d00381b93ac35-148",
+      "size_bytes": 1233659733,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "3a1d000b5bcaed1b90e510d4437c16d183c18d3851346177941dbdc5373fc63b",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "sv": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.sv.300.vec.gz",
+      "sha256_vec_gz": "5039613ff3a15ad306d1150edbc9938a966ee6ab850c4537fbca06bf610cc51f",
+      "etag": "49c05cea5f841a6ac5bca378cac39c40-150",
+      "size_bytes": 1254468631,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "db134b7756aa3ec5da7cdfb26592c97ee621d89c1a9ef446fbed246ca399bf0a",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "tr": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.tr.300.vec.gz",
+      "sha256_vec_gz": "b0c1a9ca6da5e2bc5285f3a1be4a1755b1721e3192e7698a25f2c39bb28c5fea",
+      "etag": "4338ca983fb1e4b9464616337778be1d-151",
+      "size_bytes": 1261500728,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "31efe1e736bf7b4c18f958e08ce5e5731af89d0d0e0d64519a802cab1c6ec923",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "uk": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.uk.300.vec.gz",
+      "sha256_vec_gz": "142d1b560e074507d0ac0b07d18ff66e8b55f922b94531fc5f3db01bbaa60380",
+      "etag": "6f44307db6b7cfb1de977100edc7289d-150",
+      "size_bytes": 1257595219,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "97a7c039049550f31b844065dab0a78f074af7bc285bffd5661be1f13ad88fd3",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "vi": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.vi.300.vec.gz",
+      "sha256_vec_gz": "56383350ebb279872540feef5bc7cd868d6d14e19989938d79fbcc4b4dea9458",
+      "etag": "eb8fc1944d73912678e0dca9c5903347-148",
+      "size_bytes": 1235219084,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "61ade9043848052f3bd8ebeac656ec03f0873ca4c563a9c2cef1ab88f67462b9",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
     }
   }
 }

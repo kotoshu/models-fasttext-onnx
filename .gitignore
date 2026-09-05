@@ -57,14 +57,27 @@ test_output/
 # To promote a language: validate it end-to-end with Kotoshu.correct?,
 # then remove its line from the negation block below and `git add`.
 models/*/
+!models/ca/
+!models/cs/
+!models/da/
 !models/de/
+!models/el/
 !models/en/
 !models/es/
 !models/fr/
+!models/hu/
+!models/it/
 !models/ja/
 !models/ko/
+!models/nl/
+!models/pl/
 !models/pt/
+!models/ro/
 !models/ru/
+!models/sv/
+!models/tr/
+!models/uk/
+!models/vi/
 !models/zh/
 
 # Generated tier binaries/vocabs — release assets only, never committed.
