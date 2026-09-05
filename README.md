@@ -10,17 +10,30 @@ This repository contains FastText word embedding models that have been converted
 
 | Language | Code | Vocab Size | Embedding Dim | Model Size | Source |
 |----------|------|------------|---------------|------------|--------|
+| Catalan | ca | 100,000 | 300D | 114.44 MB | [FastText CC.ca.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Czech | cs | 100,000 | 300D | 114.44 MB | [FastText CC.cs.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Danish | da | 100,000 | 300D | 114.44 MB | [FastText CC.da.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | German | de | 100,000 | 300D | 114.44 MB | [FastText CC.de.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Greek | el | 100,000 | 300D | 114.44 MB | [FastText CC.el.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | English | en | 100,000 | 300D | 114.44 MB | [FastText CC.en.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Spanish | es | 100,000 | 300D | 114.44 MB | [FastText CC.es.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | French | fr | 100,000 | 300D | 114.44 MB | [FastText CC.fr.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Hungarian | hu | 100,000 | 300D | 114.44 MB | [FastText CC.hu.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Italian | it | 100,000 | 300D | 114.44 MB | [FastText CC.it.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Japanese | ja | 100,000 | 300D | 114.44 MB | [FastText CC.ja.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Korean | ko | 100,000 | 300D | 114.44 MB | [FastText CC.ko.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Dutch | nl | 100,000 | 300D | 114.44 MB | [FastText CC.nl.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Polish | pl | 100,000 | 300D | 114.44 MB | [FastText CC.pl.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Portuguese | pt | 100,000 | 300D | 114.44 MB | [FastText CC.pt.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Romanian | ro | 100,000 | 300D | 114.44 MB | [FastText CC.ro.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Russian | ru | 100,000 | 300D | 114.44 MB | [FastText CC.ru.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Swedish | sv | 100,000 | 300D | 114.44 MB | [FastText CC.sv.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Turkish | tr | 100,000 | 300D | 114.44 MB | [FastText CC.tr.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Ukrainian | uk | 100,000 | 300D | 114.44 MB | [FastText CC.uk.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Vietnamese | vi | 100,000 | 300D | 114.44 MB | [FastText CC.vi.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Chinese | zh | 100,000 | 300D | 114.44 MB | [FastText CC.zh.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 
-Sizes above are the `full` (fp32) tier: 27 models total across 9 languages, each in three tiers — `mini` (~3 MB, 10K vocab, int8), `fluency` (~15–18 MB, 50K vocab / 60K for de, int8), and `full` (~114 MB, 100K vocab, fp32). `registry.json` at the repo root is the canonical catalog (sha256, size, license, download URLs) of every model.
+Sizes above are the `full` (fp32) tier: 66 models total across 22 languages, each in three tiers — `mini` (~3 MB, 10K vocab, int8), `fluency` (~15 MB, 50K vocab / 60K for de, int8), and `full` (~114 MB, 100K vocab, fp32). `registry.json` at the repo root is the canonical catalog (sha256, size, license, download URLs) of every model.
 
 ### Compression Ratio
 
@@ -101,7 +114,7 @@ kotoshu cache list
 
 ## Model Metadata
 
-Each model embeds its metadata as ONNX `metadata_props` (`vocabulary_size`, `embedding_dimension`, `model_type`, and for tiers also `quantization` and `tier`) and ships a sibling `vocab.json` (word to row index). Every language directory carries a `tiers.json`; the six original languages (de en es fr pt ru) also carry `models/{lang}/metadata.json`:
+Each model embeds its metadata as ONNX `metadata_props` (`vocabulary_size`, `embedding_dimension`, `model_type`, and for tiers also `quantization` and `tier`) and ships a sibling `vocab.json` (word to row index). Every language directory carries a `tiers.json`; every language except the legacy ja/ko/zh trio (converted before the provenance pipeline existed) also carries `models/{lang}/metadata.json`:
 
 ```json
 {
@@ -128,7 +141,7 @@ ruby scripts/verify_all_models.rb
 # Test individual model
 python3 scripts/test_onnx.py en
 
-# Load-verify all 27 models (tiers included), writes docs/inventory.json
+# Load-verify all models (tiers included), writes docs/inventory.json
 python3 scripts/inventory.py
 ```
 

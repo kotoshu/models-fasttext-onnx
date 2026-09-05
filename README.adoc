@@ -4,8 +4,8 @@
 // with Kotoshu spell checker.
 
 image:https://img.shields.io/badge/ONNX-IR%20v11-blue[ONNX IR Version]
-image:https://img.shields.io/badge/Models-27-green[Total Models]
-image:https://img.shields.io/badge/Size-1.25%20GB-orange[Total Size]
+image:https://img.shields.io/badge/Models-66-green[Total Models]
+image:https://img.shields.io/badge/Size-2.9%20GB-orange[Total Size]
 
 == Overview
 
@@ -28,7 +28,7 @@ spell checker. They enable:
 
 === Features
 
-* **Multi-language Support**: Models for 9 languages (de, en, es, fr, ja, ko, pt, ru, zh), each in three tiers (mini, fluency, full)
+* **Multi-language Support**: Models for 22 languages (ca, cs, da, de, el, en, es, fr, hu, it, ja, ko, nl, pl, pt, ro, ru, sv, tr, uk, vi, zh), each in three tiers (mini, fluency, full)
 * **Optimized Format**: 37x compression from original FastText vectors for the full tier
 * **ONNX Compatible**: Works with onnxruntime 1.23.2+
 * **High Quality**: 300-dimensional embeddings in every tier; vocabulary 10K mini, 50K fluency (60K for de), 100K full
@@ -39,14 +39,27 @@ spell checker. They enable:
 [options="header"]
 |===
 |Language|Code|Vocab Size|Embedding Dim|Model Size|Source
+|Catalan|ca|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ca.300]
+|Czech|cs|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.cs.300]
+|Danish|da|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.da.300]
 |German|de|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.de.300]
+|Greek|el|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.el.300]
 |English|en|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.en.300]
 |Spanish|es|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.es.300]
 |French|fr|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.fr.300]
+|Hungarian|hu|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.hu.300]
+|Italian|it|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.it.300]
 |Japanese|ja|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ja.300]
 |Korean|ko|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ko.300]
+|Dutch|nl|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.nl.300]
+|Polish|pl|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.pl.300]
 |Portuguese|pt|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.pt.300]
+|Romanian|ro|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ro.300]
 |Russian|ru|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ru.300]
+|Swedish|sv|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.sv.300]
+|Turkish|tr|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.tr.300]
+|Ukrainian|uk|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.uk.300]
+|Vietnamese|vi|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.vi.300]
 |Chinese|zh|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.zh.300]
 |===
 
@@ -143,8 +156,8 @@ Each model embeds its metadata as ONNX `metadata_props`
 (`vocabulary_size`, `embedding_dimension`, `model_type`, and for tiers
 also `quantization` and `tier`) and ships a sibling `vocab.json`
 (word to row index). Every language directory carries a `tiers.json`;
-the six original languages (de en es fr pt ru) also carry
-`models/{lang}/metadata.json`:
+every language except the legacy ja/ko/zh trio (converted before the
+provenance pipeline existed) also carries `models/{lang}/metadata.json`:
 
 [source,json]
 ----
@@ -173,7 +186,7 @@ ruby scripts/verify_all_models.rb
 # Test individual model
 python3 scripts/test_onnx.py en
 
-# Load-verify all 27 models (tiers included), writes docs/inventory.json
+# Load-verify all models (tiers included), writes docs/inventory.json
 python3 scripts/inventory.py
 ----
 

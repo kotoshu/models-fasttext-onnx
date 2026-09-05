@@ -26,6 +26,17 @@ the quota pressure that made Git LFS the bottleneck.
   outputs of `scripts/build_tiers.py`, gitignored, and published only as
   release assets. The LFS footprint therefore stops growing at its
   current size.
+- **Addendum (2026-09-05, plan 77):** the "frozen" wording above
+  described the tier-quantization work. Plan 77's coverage expansion
+  (9 → 22 languages) deliberately grows LFS again: each promoted
+  language's full `.onnx` (~120 MB) enters LFS exactly as the original
+  nine did, because the registry's full-tier mirror URL is the media
+  host and the whole promotion flow (`.gitignore` negation block →
+  `generate_manifest.rb` → `build_tiers.py`) is built around the full
+  model living in the git tree. Tier artifacts remain LFS-free. Public
+  repositories get LFS storage/bandwidth free of charge, so the
+  previous quota pressure does not return; footprint after plan 77 is
+  ~2.6 GB (22 full models) instead of ~1.1 GB.
 
 ## Bandwidth
 
