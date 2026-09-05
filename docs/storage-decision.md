@@ -38,6 +38,14 @@ the quota pressure that made Git LFS the bottleneck.
   previous quota pressure does not return; footprint after plan 77 is
   ~2.6 GB (22 full models) instead of ~1.1 GB.
 
+- **Addendum (2026-09-05, plan 83):** batch 2 grows coverage from 22 to
+  55 languages — every dictionaries-repo language fastText Common Crawl
+  vectors can serve. Same promotion flow and rationale as plan 77: each
+  promoted language's full `.onnx` (~120 MB) enters LFS, tier artifacts
+  stay LFS-free. Footprint is now ~6.5 GB (55 full models, ~3.9 GB of
+  them added by this batch). The registry full-tier mirror continues to
+  point at the media host.
+
 ## Bandwidth
 
 - Primary downloads hit release assets: unmetered on public repos.

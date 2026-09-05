@@ -1,5 +1,5 @@
 {
-  "comment": "Pins for the upstream fastText Common Crawl archives the active models were converted from (per manifest.json). The 9 legacy languages were converted before any pin file existed, so their sha256_vec_gz/etag/size start null - the weekly poll (.github/workflows/upstream-poll.yml) reports drift against pinned values only. The plan-77 languages were pinned from the freshly downloaded archives. Filling a null pin is a deliberate human step; the poll never commits, downloads, or converts.",
+  "comment": "Pins for the upstream fastText Common Crawl archives the active models were converted from (per manifest.json). The 9 legacy languages were converted before any pin file existed, so their sha256_vec_gz/etag/size start null - the weekly poll (.github/workflows/upstream-poll.yml) reports drift against pinned values only. The plan-77 (batch 1) and plan-83 (batch 2) languages were pinned from freshly downloaded archives. Filling a null pin is a deliberate human step; the poll never commits, downloads, or converts.",
   "sources": {
     "de": {
       "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.de.300.vec.gz",
@@ -198,6 +198,294 @@
       "pinned_at": "2026-09-05",
       "converted_manifest_sha256": "61ade9043848052f3bd8ebeac656ec03f0873ca4c563a9c2cef1ab88f67462b9",
       "notes": "sha256/etag/size recorded from the downloaded archive at plan-77 conversion time"
+    },
+    "ar": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ar.300.vec.gz",
+      "sha256_vec_gz": "cac26616895d84737f69975b0026c6083dfda71f1ec99d6b90cd069e0a851a85",
+      "etag": "1e80903482b9843a57dd061a4ba995e9-152",
+      "size_bytes": 1272365870,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "2089a9b0123eea56faf21ecc807959e2cb8b1e84863034c3055fb2edb7da73af",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "bg": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.bg.300.vec.gz",
+      "sha256_vec_gz": "354f687ee7009d1c9e91d76c558f2d2c5fd21fc191219c39ce226930445da0bd",
+      "etag": "77561cb30b025742ba1a7b6f4d14500a-146",
+      "size_bytes": 1216996308,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "b5a207860452f27f11c64dbe86765491c39f13e89f0f7f27b0e2d0d3cc211618",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "br": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.br.300.vec.gz",
+      "sha256_vec_gz": "ebb07900845a8d46deac4d7ab98f4da17da12785b5093c50a6f8cb1e090ef8db",
+      "etag": "283a5bd6df52ac41a5fa8e0d8a02650f-43",
+      "size_bytes": 356279571,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "0b72e30746021f43c16c25e78c6d80f4a2279b9187c8db989cfb9b99446de3fb",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "cy": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.cy.300.vec.gz",
+      "sha256_vec_gz": "7614a1d47efaa1f842d771c360da507e11a0cd6a50f6be467627a6340bf7fcd0",
+      "etag": "1873924f7852a9549457018bb7762850-36",
+      "size_bytes": 296162853,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "c8e756c2a009fe66aca9810fbf3898544509358f8d075c24c720fb8aebf0944e",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "eo": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.eo.300.vec.gz",
+      "sha256_vec_gz": "f06aa868df3e094f4c2d7ad75d53156fc0aa0f3a40eb097333c44496ec868d19",
+      "etag": "117e34682fbf26cd133ad2d9c6857d59-143",
+      "size_bytes": 1198165728,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "22f22d1f7f7ffd1d9f60ac95b077325dd9f272f0c14b7cd3891142d6fa5c2a0c",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "et": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.et.300.vec.gz",
+      "sha256_vec_gz": "0e931d892ae640bc29b5505669f6f7b2542f12ea9313c0e0e8b460fdd04ffbf7",
+      "etag": "9992d69cfe92b989c3bf1bd54ac67ad7-145",
+      "size_bytes": 1209204423,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "a9a6c20fb161693e7be2ac2e085cd975d19ef3c1bd9bce30e83d7185b8fc9611",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "eu": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.eu.300.vec.gz",
+      "sha256_vec_gz": "57ec8d7c84739520e04fc7751f97ba267113e8d3c1178f21f74e5e054a85a2c1",
+      "etag": "b227ca528597af252a9c939c262a246e-130",
+      "size_bytes": 1083439793,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "81de41306ee6532486770945ede97a5e2c4b817bbd48b45523f6fcfbf5426559",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "fa": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.fa.300.vec.gz",
+      "sha256_vec_gz": "f8e98fc27d9f723b8da766ee8cbc27e37106554c42eb2ba2de5f48e7b2b233d2",
+      "etag": "0bb6d009bfcefae8f1c631df9c1bf9fc-150",
+      "size_bytes": 1258183862,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "ba787edf5f1e5bef408057bc8cf594cfa2e59dd5b6f575c4c170da8d94a27533",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "fy": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.fy.300.vec.gz",
+      "sha256_vec_gz": "1747d90c56feb1356d24f55fb4b2fc26e409e78543ae2fe75c9afb3bb8510997",
+      "etag": "248619714acd243883c7d1875d04bb88-38",
+      "size_bytes": 311771356,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "19fd0f476bbc455e85da0fc01d12a5ef73e029431db71f1933979eb9e86e5c37",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "ga": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ga.300.vec.gz",
+      "sha256_vec_gz": "902af279e2bbb0e90a44e19bd576cbbadf24548bb93eeb4d63034ed4224629dd",
+      "etag": "f4541b5a4e1383721597c0580129808a-22",
+      "size_bytes": 184422000,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "307f8366df2523ea315f17e75bb8fb243c83483ac6b5a7a08d6ec38b7519ed22",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "gd": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.gd.300.vec.gz",
+      "sha256_vec_gz": "58268a91714e28e700776947f3fb69ac277f2dae02e495557385b1bb2021565f",
+      "etag": "7ca71553cdc0b9084a6b479a39d50f5d-10",
+      "size_bytes": 83542901,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "fcebfd941749cd466cf659769b5176294b7e51ecdff3eda66d94ed66e20b3e0d",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "gl": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.gl.300.vec.gz",
+      "sha256_vec_gz": "13497d6ea096e542f7c204ea7a42c2efe1ced9d04dbbb909e7c05d22b3c64206",
+      "etag": "62dbe66323e6acb3d118cc43ca7f2086-95",
+      "size_bytes": 793531261,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "66f6aac6f221f59d2fddf4b30bb24d520e34b71133030ad67c37d76ab232d859",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "he": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.he.300.vec.gz",
+      "sha256_vec_gz": "51e53321710099a2b19c7a4274a849b92d0930f59c49b1df92777fc4e10010e6",
+      "etag": "d8e72ae7fee3245ba8b07c7767214d9c-147",
+      "size_bytes": 1228982843,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "88f8dd8651fce4a0c44513ed6407475745f77780cb3acee59e71ff51b76a4701",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "hr": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.hr.300.vec.gz",
+      "sha256_vec_gz": "50d0b4408d392dc64820c22273d352ce4005e476cd0003653bd3df49b1f62a1b",
+      "etag": "ef02bb2781be2e7ef26cd31d5ec7234b-144",
+      "size_bytes": 1205442912,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "8b7900814a092888b08e6199b40bd458eda19ed94837afa6c7b541617c11619d",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "hy": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.hy.300.vec.gz",
+      "sha256_vec_gz": "a1a8977ce3c851b4ec0977a1fabfd3fae4f6291b4e0239b8f7b6cc6a1dda4cf7",
+      "etag": "228f977fc099deb928d175ef9329078f-144",
+      "size_bytes": 1204871364,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "d7bccae6e7d269e7726f6368d99d577ca0cba64009d48a96cfeecd7deddc09bd",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "ia": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ia.300.vec.gz",
+      "sha256_vec_gz": "c597d04cfcfd8d530de552ebf46fbd51c9ca050923c08b1bda1addfa670a883d",
+      "etag": "f75567b1281d1d8884600448d53b4bd7-10",
+      "size_bytes": 80707807,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "33589f5f774fcd72fb4d57a29da0a9f4d79ef7b39bc86c69501a4afcd3634b5b",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "id": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.id.300.vec.gz",
+      "sha256_vec_gz": "797c0691be8c4fa7269da558e53f455b86c2bbe6faa2af0944c7b55a3e1bc53d",
+      "etag": "6cf22a40c0e26a46e173491c006d1dde-147",
+      "size_bytes": 1227018698,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "36e97f991281b5cfcedc540a7a81f085d3e5bbb4a61bf3615cc7384578c7fc09",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "is": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.is.300.vec.gz",
+      "sha256_vec_gz": "a66a30acdbbe0ff9ce872e7995838907143a61787b28b39c5e4c6cf31fcca97b",
+      "etag": "e8a32e8dc4ab4f2f2fe0c40ca49ce455-67",
+      "size_bytes": 560020728,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "0683006ad311bfa6c8fb00ec4c9837e770d0bb786ee8d30757e1aa9ae17c1b8b",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "ka": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ka.300.vec.gz",
+      "sha256_vec_gz": "132355ed07ded96627e91d865a71f143405c84b831e9dfd1e937d9ab68ae8c1a",
+      "etag": "a3f8352e676ce5d45e1de93ec1208595-112",
+      "size_bytes": 931269967,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "31267166a2be94c0b6b90a6cfc92e32ebef9ae58f3fe006372a35df0d560093b",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "la": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.la.300.vec.gz",
+      "sha256_vec_gz": "02b7f7d3147605d620180347d4dbc459f6739a11ed65aba337fbcca9a6b71fad",
+      "etag": "4f2e4cb4dc73bfad07d78bd6a0769d14-77",
+      "size_bytes": 645095217,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "cb3dfdb79fe1fa5194fdfc8491657123f05c2f8637c615071c5f7148c57264f3",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "lb": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.lb.300.vec.gz",
+      "sha256_vec_gz": "73baf4c7c04de1be061487e37ad87a9e85f3f2979f737d9a3b4127dc5b7021e1",
+      "etag": "1775486fdf3b555efa9448301ed98147-45",
+      "size_bytes": 376057287,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "8fc7a1aac8f0b6c46974003082807deed6bed9b4d63ca12d7d8ac5705232220f",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "lt": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.lt.300.vec.gz",
+      "sha256_vec_gz": "4db21b6db192f95609eaee56eb6e9470abf8e6886af4cf5f8bded84f3d953e53",
+      "etag": "e6fe9f6fa5333398d2f064896241d978-146",
+      "size_bytes": 1221306618,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "8bf81a5f95c03eaf89f69f7dd37371f8ae55172879f0f19a5315f687b4c1e0a0",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "lv": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.lv.300.vec.gz",
+      "sha256_vec_gz": "cfc6163ddd0a524db231bb74ff9c1fe3b56dbbf7ecd16fda5dbd6fca60908b85",
+      "etag": "21f7633daf3e5d700266504767c44f1c-119",
+      "size_bytes": 991324449,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "fb407947404815ffc64cb8db72af5eb7b2ce9479168ba6a7360fd87a60d24a73",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "mk": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.mk.300.vec.gz",
+      "sha256_vec_gz": "13999a35ebbbf11c5b513d2c17cbcd35fd744a5e81e73787e51abdd049b8d248",
+      "etag": "777082dd8e7bf1cab30cb7330de77508-96",
+      "size_bytes": 804559346,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "4d50ab2b4d2373803ec698ea6d3415ca4d8bd9a2514382e16c6a0675f3c70e9e",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "mn": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.mn.300.vec.gz",
+      "sha256_vec_gz": "0ba64cbfc2502c71574418c2d3b9dbbd3664156ea808379ab31770e654594d5b",
+      "etag": "7ee6625f98c5c62123de784bfcce1444-43",
+      "size_bytes": 359465045,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "04ff1ab0a8f589dbc0ac756f08af90b088bc2d2982f073aed7f1c76d80850be9",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "ne": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ne.300.vec.gz",
+      "sha256_vec_gz": "889632cb4c3c6c0f60efb4dcd1c94589918873ebb7eb5f58bf571936d7b08bdf",
+      "etag": "4a39bb844023557dacf9baa0c8271eb7-41",
+      "size_bytes": 340305101,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "1fcfd0afa2d377e0671f86f3252b9f23ba8dd4068a4458eb201c5efd0a4d72d5",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "nn": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.nn.300.vec.gz",
+      "sha256_vec_gz": "bc76d8325c0c688d46d91ad517497316d8753a712e71ed3ee46acc23ec4f386e",
+      "etag": "b4aedbf8a198c544632c309a615b5e1a-92",
+      "size_bytes": 765880823,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "c8ad1d04460a03645c9a9011add82dd697da95621400e6fbd9259cbef5bb4987",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "oc": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.oc.300.vec.gz",
+      "sha256_vec_gz": "eb2cdbe6b2287710840d580138c9ba047e602cc9f11f2741419626d71877c0f1",
+      "etag": "8287a6fbded0a45db17ecd458da516d2-56",
+      "size_bytes": 468207169,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "b68a7bdbf6c06136effee74e462b2f145b3a455966c697b89eb86237081e6fe4",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "sk": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.sk.300.vec.gz",
+      "sha256_vec_gz": "8bdc452b6e43701a2375202305a6dac571b5d68f843aa5a7449e4a3702faae70",
+      "etag": "69b6028f0aa0cafa7a3b921bdce718a7-146",
+      "size_bytes": 1222185806,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "b0b66d045c552a095a46040b47e8338f89e6fbc5c1a66dde7b344f9eb7cd2ece",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "sl": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.sl.300.vec.gz",
+      "sha256_vec_gz": "ca19bee6df540cf178f1b5f330286e1feb26265208e72b98e26260937a410663",
+      "etag": "a2d0a08e6bfde8dd5f1d7880c4474ebd-141",
+      "size_bytes": 1182535420,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "8461122476c18b133a6d465802c57868b4d37039a612ee57a1066b4c562aafb0",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "sr": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.sr.300.vec.gz",
+      "sha256_vec_gz": "95a8f050abd4e9c58abd9cb71064fdcbdd48a69a40e6dda8d5a3b29e4ee8b2e6",
+      "etag": "6e2b25897e7e8d6940ca31c4a1b940cc-146",
+      "size_bytes": 1217576232,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "74d0852aa2bc0ab38a9d82eba42e49d6d791fffac3bc5487d1b1ff452371f8fe",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "tk": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.tk.300.vec.gz",
+      "sha256_vec_gz": "d735bb1d73afdf5860896a5723198f2b3c7b359ef2becf78e4e7d9a783dca9bd",
+      "etag": "6a9d781865b52fe2ee17ded78aa136d7-14",
+      "size_bytes": 116952899,
+      "pinned_at": "2026-09-05",
+      "converted_manifest_sha256": "c084e37ef01f63c19f42da3f86c634a1198f0ece02a162f13c35959b31ab895a",
+      "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "language": "la",
+  "tiers": {
+    "fluency": {
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "1b179ed1abac5256e0e6197d2a79ab79daf84393fea649f3bfe1169e3fd38e9d",
+      "vocab_sha256": "8656b0e130fff9ae2bd08e224b6a691423658b762d7a94ee0b75b070390e515c",
+      "vocab_bytes": 1103572,
+      "eval_ref": "eval/reports/la.fluency.json",
+      "source_full_sha256": "cb3dfdb79fe1fa5194fdfc8491657123f05c2f8637c615071c5f7148c57264f3"
+    },
+    "mini": {
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "9a7322f67d6b03d25b5e270a8afb7f7573c3296e30d1ab71f358f525d741e18b",
+      "vocab_sha256": "0e1d477f17cc294a2e858e16e5d32b02402bc15d78f232569d833661b789c7e2",
+      "vocab_bytes": 204510,
+      "eval_ref": "eval/reports/la.mini.json",
+      "source_full_sha256": "cb3dfdb79fe1fa5194fdfc8491657123f05c2f8637c615071c5f7148c57264f3"
+    }
+  },
+  "generated_at": "2026-09-05T12:50:51Z"
+}

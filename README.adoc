@@ -4,8 +4,8 @@
 // with Kotoshu spell checker.
 
 image:https://img.shields.io/badge/ONNX-IR%20v11-blue[ONNX IR Version]
-image:https://img.shields.io/badge/Models-66-green[Total Models]
-image:https://img.shields.io/badge/Size-2.9%20GB-orange[Total Size]
+image:https://img.shields.io/badge/Models-162-green[Total Models]
+image:https://img.shields.io/badge/Size-6.2%20GB-orange[Total Size]
 
 == Overview
 
@@ -28,7 +28,7 @@ spell checker. They enable:
 
 === Features
 
-* **Multi-language Support**: Models for 22 languages (ca, cs, da, de, el, en, es, fr, hu, it, ja, ko, nl, pl, pt, ro, ru, sv, tr, uk, vi, zh), each in three tiers (mini, fluency, full)
+* **Multi-language Support**: Models for 54 languages (ar, bg, br, ca, cs, cy, da, de, el, en, eo, es, et, eu, fa, fr, fy, ga, gd, gl, he, hr, hu, hy, ia, id, is, it, ja, ka, ko, la, lb, lt, lv, mk, mn, ne, nl, nn, oc, pl, pt, ro, ru, sk, sl, sr, sv, tk, tr, uk, vi, zh), each in three tiers (mini, fluency, full)
 * **Optimized Format**: 37x compression from original FastText vectors for the full tier
 * **ONNX Compatible**: Works with onnxruntime 1.23.2+
 * **High Quality**: 300-dimensional embeddings in every tier; vocabulary 10K mini, 50K fluency (60K for de), 100K full
@@ -39,29 +39,84 @@ spell checker. They enable:
 [options="header"]
 |===
 |Language|Code|Vocab Size|Embedding Dim|Model Size|Source
+|Arabic|ar|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ar.300]
+|Bulgarian|bg|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.bg.300]
+|Breton|br|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.br.300]
 |Catalan|ca|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ca.300]
 |Czech|cs|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.cs.300]
+|Welsh|cy|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.cy.300]
 |Danish|da|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.da.300]
 |German|de|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.de.300]
 |Greek|el|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.el.300]
 |English|en|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.en.300]
+|Esperanto|eo|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.eo.300]
 |Spanish|es|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.es.300]
+|Estonian|et|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.et.300]
+|Basque|eu|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.eu.300]
+|Persian|fa|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.fa.300]
 |French|fr|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.fr.300]
+|Western Frisian|fy|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.fy.300]
+|Irish|ga|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ga.300]
+|Scottish Gaelic|gd|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.gd.300]
+|Galician|gl|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.gl.300]
+|Hebrew|he|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.he.300]
+|Croatian|hr|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.hr.300]
 |Hungarian|hu|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.hu.300]
+|Armenian|hy|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.hy.300]
+|Interlingua|ia|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ia.300]
+|Indonesian|id|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.id.300]
+|Icelandic|is|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.is.300]
 |Italian|it|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.it.300]
 |Japanese|ja|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ja.300]
+|Georgian|ka|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ka.300]
 |Korean|ko|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ko.300]
+|Latin|la|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.la.300]
+|Luxembourgish|lb|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.lb.300]
+|Lithuanian|lt|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.lt.300]
+|Latvian|lv|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.lv.300]
+|Macedonian|mk|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.mk.300]
+|Mongolian|mn|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.mn.300]
+|Nepali|ne|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ne.300]
 |Dutch|nl|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.nl.300]
+|Norwegian Nynorsk|nn|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.nn.300]
+|Occitan|oc|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.oc.300]
 |Polish|pl|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.pl.300]
 |Portuguese|pt|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.pt.300]
 |Romanian|ro|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ro.300]
 |Russian|ru|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ru.300]
+|Slovak|sk|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.sk.300]
+|Slovenian|sl|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.sl.300]
+|Serbian|sr|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.sr.300]
 |Swedish|sv|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.sv.300]
+|Turkmen|tk|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.tk.300]
 |Turkish|tr|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.tr.300]
 |Ukrainian|uk|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.uk.300]
 |Vietnamese|vi|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.vi.300]
 |Chinese|zh|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.zh.300]
 |===
+
+== Coverage status and backlog
+
+The candidate pool is dictionaries-repo languages intersected with the
+fastText Common Crawl vectors. After v1.2.0 (55 languages) the pool is
+exhausted except for:
+
+* `nb` (Norwegian Bokmal) - fastText publishes `cc.no` but no `cc.nb`;
+  converting `cc.no` as `nb` is blocked on the `no`->nb/nn alias decision,
+  which is an owner decision (proposal delivered with plan 83, not
+  implemented).
+* `fi` (Finnish) - no license-clear hunspell source exists upstream;
+  dropped at the license hard gate. LibreOffice ships no fi dictionary and
+  the only maintained best-effort one carries no license at all. Sourcing
+  one upstream is the prerequisite (see kotoshu/dictionaries).
+* `nds` (Low German) - ISO 639-2 only; the registry language contract is two-letter codes, so shipping it needs a Resource Spec decision by the owner. It was converted and passed both gates but ships nothing this release.
+* `fo` (Faroese), `rw` (Kinyarwanda), `ie` (Interlingue), `fur`
+  (Friulian), `tlh` (Klingon) - dictionaries exist in the dictionaries
+  repo but fastText publishes no CC vectors for them.
+
+Regional dictionary variants (ca-valencia, de-AT/CH, en-*, es-*, hyw, ltg,
+pt-BR/PT, sr-Latn, sv-FI, el-polyton, tlh-Latn) resolve to their base
+language models.
 
 Sizes above are the `full` (fp32) tier. Every language also ships `fluency`
 and `mini` int8 tiers — see the tier table under _Registry and
