@@ -12,9 +12,9 @@ the quota pressure that made Git LFS the bottleneck.
 
 | Location | Contents |
 |---|---|
-| git (plain) | `registry.json`, `manifest.json`, per-tag `manifest-v{TAG}.json` copies, `models/**/metadata.json`, `models/**/tiers.json`, vocab files (`*.vocab.json`), `eval/reports/**`, scripts, schemas, docs |
+| git (plain) | `registry.json`, `manifest.json`, per-tag `manifest-v{TAG}.json` copies, `models/**/metadata.json`, `models/**/tiers.json`, full-tier vocab files, `eval/reports/**`, scripts, schemas, docs |
+| Git LFS | every `.onnx` binary (full + tier) and every tier vocab JSON — served CORS-fetchable by the media host |
 | GitHub Releases (per tag) | every `models/**/fasttext.*.onnx` (all tiers), every `models/**/fasttext.*.vocab.json`, `registry.json`, `manifest-v{TAG}.json` |
-| Git LFS (frozen) | the existing full models, exactly as they are today |
 
 ## Git LFS
 
@@ -46,6 +46,20 @@ the quota pressure that made Git LFS the bottleneck.
   them added by this batch). The registry full-tier mirror continues to
   point at the media host.
 
+- **Addendum (2026-09-05, plan 92):** the mini and fluency tier
+  artifacts enter LFS as well — ~0.64 GB of `.onnx` plus ~0.07 GB of
+  tier vocab JSONs across 54 languages. Reason: the wasm model API
+  (kotoshu-rs `loadModel`/`rerank`, on `@kotoshu/wasm`) needs
+  CORS-fetchable model bytes in the browser, and GitHub release assets
+  send no `Access-Control-Allow-Origin` while the media host sends
+  `Access-Control-Allow-Origin: *`. Tier vocab JSONs are therefore
+  LFS-tracked too (the raw host would serve plain files fine, but the
+  media host 404s anything that is not an LFS object, and keeping both
+  halves of a tier behind one URL scheme avoids a special case). The
+  registry `urls.mirror` for tier entries now points at the media host;
+  primary remains the release asset. Rejected alternative: plain git
+  blobs would have bloated every clone by ~1 GB.
+
 ## Bandwidth
 
 - Primary downloads hit release assets: unmetered on public repos.
@@ -55,10 +69,13 @@ the quota pressure that made Git LFS the bottleneck.
 - LFS bandwidth is frozen at current usage and keeps shrinking as a
   share of total traffic.
 - Fallback order for consumers: release asset (primary) → mirror URL in
-  the registry (`/raw/main/...`, meaningful for full models and vocab)
-  → retry. The mirror is fallback-only, never the default. Note that
-  tier artifacts have no git mirror until the LFS question is revisited;
-  their only durable copy is the release asset.
+  the registry (media host, real bytes for every tier since plan 92) →
+  retry. The mirror is fallback-only, never the default for the gem and
+  CLI. For BROWSERS the order inverts: the mirror is the only legal
+  source because release assets send no ACAO header; the registry itself
+  is fetched from `raw.githubusercontent.com`, which sends ACAO:* and
+  serves the real JSON (registry.json is plain git, never an LFS
+  pointer).
 - If raw traffic ever grows beyond comfort, a CDN mirror in front of the
   release assets is the planned escape hatch (plan 02 fallback).
 
