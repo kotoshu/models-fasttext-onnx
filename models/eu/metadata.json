@@ -1,0 +1,24 @@
+{
+  "version": "2026-09-05T13:04:22Z",
+  "url": "file:///Users/mulgogi/src/kotoshu/models-fasttext-onnx/.claude/worktrees/batch2/downloads/cc.eu.300.vec",
+  "language": "eu",
+  "type": "onnx",
+  "file": "fasttext.eu.onnx",
+  "checksum": "81de41306ee6532486770945ede97a5e2c4b817bbd48b45523f6fcfbf5426559",
+  "cached_at": "2026-09-05T13:04:22Z",
+  "source_model": "cc.eu.300.vec",
+  "conversion_method": "fasttext_to_onnx.py",
+  "opset_version": 11,
+  "provenance": {
+    "source_url": "file:///Users/mulgogi/src/kotoshu/models-fasttext-onnx/.claude/worktrees/batch2/downloads/cc.eu.300.vec",
+    "source_sha256": "cb1e611222cb852cfa56f156617fd6947053f59d7b22573cfba7f1715a4e2a16",
+    "command": "scripts/convert_one.py --language eu --vec downloads/cc.eu.300.vec --repo-root .",
+    "tool_versions": {
+      "python": "3.10.5",
+      "numpy": "2.2.6",
+      "onnx": "1.22.0",
+      "onnxruntime": "1.23.2",
+      "converter": "scripts/fasttext_to_onnx.py"
+    }
+  }
+}

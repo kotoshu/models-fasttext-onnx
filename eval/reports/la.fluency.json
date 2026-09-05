@@ -1,0 +1,103 @@
+{
+  "language": "la",
+  "tier": "fluency",
+  "recipe": {
+    "dims": 300,
+    "vocab_size": 50000,
+    "quantization": "int8-per-row",
+    "reduction": "uncentered-covariance-eigendecomposition"
+  },
+  "metrics": {
+    "rank_corr": {
+      "mean_spearman": 0.9999374222691236,
+      "n_probes_scored": 2000,
+      "n_probes_skipped": 0,
+      "mean_comparisons_per_probe": 1499.8125,
+      "rank_range": [
+        50,
+        30000
+      ]
+    },
+    "top1_agreement": {
+      "agreement": 0.967741935483871,
+      "n_probes_scored": 31,
+      "n_probes_skipped_typo": 369,
+      "n_probes_skipped_candidates": 0,
+      "mean_candidates_dropped_out_of_vocab": 0.57,
+      "rank_range": [
+        1000,
+        30000
+      ]
+    },
+    "coverage": {
+      "frequency_weighted_coverage": 0.942668833516177,
+      "full_vocab_size": 100000,
+      "tier_vocab_size": 50000,
+      "weighting": "1/(rank+1)"
+    }
+  },
+  "gates": {
+    "thresholds": {
+      "top1_agreement_min": 0.95,
+      "rank_corr_min": 0.97
+    },
+    "checks": {
+      "rank_corr": true,
+      "top1_agreement": true
+    },
+    "passed": true
+  },
+  "metric_note": "top1_agreement is a proxy for the gem's spelling-correction rerank pipeline, not the pipeline itself: probes are single-edit typos drawn from the keyboard-layout-aware generator in eval/noise.py (QWERTY/QWERTZ/AZERTY/JCUKEN neighbor slips for Latin/Cyrillic, curated character confusions + transposition for ja/ko/zh) that are themselves in-vocabulary, the candidate set is the true word plus the top-20 nearest neighbours of the typo under the full model over a 20000-word sample window, and each model scores candidates by cosine to the typo. It will be replaced by gem conformance vectors (kotoshu-rs M3).",
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "typo_model": {
+    "generator": "eval/noise.py::make_typo",
+    "layouts": "mirrored from kotoshu gem lib/kotoshu/keyboard/layouts (qwerty/qwertz/azerty/jcuken)",
+    "cjk": "curated visual/phonetic confusion sets + transposition (not learned)"
+  },
+  "files": {
+    "tier_onnx": {
+      "path": "models/la/fasttext.la.fluency.onnx",
+      "bytes": 15200760,
+      "sha256": "1b179ed1abac5256e0e6197d2a79ab79daf84393fea649f3bfe1169e3fd38e9d"
+    },
+    "tier_vocab": {
+      "path": "models/la/fasttext.la.fluency.vocab.json",
+      "bytes": 1103572,
+      "sha256": "8656b0e130fff9ae2bd08e224b6a691423658b762d7a94ee0b75b070390e515c"
+    },
+    "full_onnx": {
+      "path": "models/la/fasttext.la.onnx",
+      "bytes": 120000415,
+      "sha256": "cb3dfdb79fe1fa5194fdfc8491657123f05c2f8637c615071c5f7148c57264f3"
+    }
+  },
+  "generated_at": "2026-09-05T12:50:50Z",
+  "quantization_check": {
+    "runtime_vs_dequant_max_abs": 0.0,
+    "dequant_vs_projected_max_abs": 0.004070870578289032,
+    "dequant_vs_projected_tol": 0.05,
+    "passed": true
+  },
+  "attempts": [
+    {
+      "recipe": {
+        "dims": 300,
+        "vocab_size": 50000
+      },
+      "passed": true,
+      "metrics": {
+        "rank_corr": 0.999937,
+        "top1_agreement": 0.967742,
+        "recipe": {
+          "dims": 300,
+          "vocab_size": 50000,
+          "quantization": "int8-per-row",
+          "reduction": "uncentered-covariance-eigendecomposition"
+        }
+      }
+    }
+  ]
+}
