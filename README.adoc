@@ -307,6 +307,43 @@ releases are cut manually by the owner — the release workflow
 creates one. What lives in git versus on Releases, and the LFS freeze, is
 recorded in link:docs/storage-decision.md[docs/storage-decision.md].
 
+=== Browser and wasm (CORS)
+
+Every registry entry also carries `urls.mirror`, the media-host URL of the
+same bytes:
+
+....
+https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/{lang}/fasttext.{lang}[.{tier}].onnx
+....
+
+GitHub release assets send no `Access-Control-Allow-Origin` header, but the
+media host (the LFS content host, where every tier binary and tier vocab
+lives since plan 92) sends `Access-Control-Allow-Origin: *` — as does
+`raw.githubusercontent.com` for the plain-git `registry.json`. A browser can
+therefore fetch the whole stack with no proxy:
+
+[source,javascript]
+----
+import { loadModel, rerank } from "@kotoshu/wasm"; // 0.2.0+
+
+const registry = await (await fetch(
+  "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/v1.2.1/registry.json"
+)).json();
+const entry = registry.resources["kotoshu://models/en/mini"];
+
+const modelBytes = new Uint8Array(await (await fetch(entry.urls.mirror)).arrayBuffer());
+const vocabBytes = new Uint8Array(await (await fetch(
+  entry.urls.mirror.replace(/\.onnx$/, ".vocab.json")
+)).arrayBuffer());
+
+const model = loadModel(modelBytes, vocabBytes);  // KotoshuModel
+rerank(model, "puppy", "the dog and the cat");    // f32 in [-1, 1]
+model.free();
+----
+
+For servers and CLIs the mirror stays the fallback, never the default; for
+browsers it is the only legal source of binaries.
+
 == Download
 
 === Direct Download

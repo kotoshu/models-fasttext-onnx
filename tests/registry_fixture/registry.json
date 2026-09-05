@@ -37,7 +37,7 @@
       "version": "0.0.0-dev",
       "urls": {
         "primary": null,
-        "mirror": null
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/en/fasttext.en.fluency.onnx"
       },
       "vocab_url": null,
       "sha256": "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111",

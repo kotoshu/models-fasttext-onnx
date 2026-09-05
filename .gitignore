@@ -112,12 +112,10 @@ models/*/
 !models/vi/
 !models/zh/
 
-# Generated tier binaries/vocabs — release assets only, never committed.
-# tiers.json and eval/reports ARE committed.
-models/**/*.mini.onnx
-models/**/*.fluency.onnx
-models/**/*.mini.vocab.json
-models/**/*.fluency.vocab.json
+# Tier binaries/vocabs ARE committed (LFS objects) since plan 92 — they
+# mirror to media.githubusercontent.com, the CORS-fetchable host browsers
+# use — and remain release assets as well. tiers.json and eval/reports
+# are committed as before.
 
 # Nested (2D-Matryoshka) single-artifact experiment (plan 71).
 # The full-vocab int8 .onnx is a binary release asset — never committed.
