@@ -4,7 +4,7 @@
 // with Kotoshu spell checker.
 
 image:https://img.shields.io/badge/ONNX-IR%20v11-blue[ONNX IR Version]
-image:https://img.shields.io/badge/Models-162-green[Total Models]
+image:https://img.shields.io/badge/Models-165-green[Total Models]
 image:https://img.shields.io/badge/Size-6.2%20GB-orange[Total Size]
 
 == Overview
@@ -28,7 +28,7 @@ spell checker. They enable:
 
 === Features
 
-* **Multi-language Support**: Models for 54 languages (ar, bg, br, ca, cs, cy, da, de, el, en, eo, es, et, eu, fa, fr, fy, ga, gd, gl, he, hr, hu, hy, ia, id, is, it, ja, ka, ko, la, lb, lt, lv, mk, mn, ne, nl, nn, oc, pl, pt, ro, ru, sk, sl, sr, sv, tk, tr, uk, vi, zh), each in three tiers (mini, fluency, full)
+* **Multi-language Support**: Models for 55 languages (ar, bg, br, ca, cs, cy, da, de, el, en, eo, es, et, eu, fa, fr, fy, ga, gd, gl, he, hr, hu, hy, ia, id, is, it, ja, ka, ko, la, lb, lt, lv, mk, mn, nb, ne, nl, nn, oc, pl, pt, ro, ru, sk, sl, sr, sv, tk, tr, uk, vi, zh), each in three tiers (mini, fluency, full)
 * **Optimized Format**: 37x compression from original FastText vectors for the full tier
 * **ONNX Compatible**: Works with onnxruntime 1.23.2+
 * **High Quality**: 300-dimensional embeddings in every tier; vocabulary 10K mini, 50K fluency (60K for de), 100K full
@@ -78,6 +78,7 @@ spell checker. They enable:
 |Mongolian|mn|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.mn.300]
 |Nepali|ne|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.ne.300]
 |Dutch|nl|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.nl.300]
+|Norwegian Bokmal|nb|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.no.300]
 |Norwegian Nynorsk|nn|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.nn.300]
 |Occitan|oc|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.oc.300]
 |Polish|pl|100,000|300D|114.44 MB|https://fasttext.cc/docs/en/crawl-vectors.html[FastText CC.pl.300]
@@ -98,13 +99,15 @@ spell checker. They enable:
 == Coverage status and backlog
 
 The candidate pool is dictionaries-repo languages intersected with the
-fastText Common Crawl vectors. After v1.2.0 (55 languages) the pool is
+fastText Common Crawl vectors. After v1.3.0 (55 languages) the pool is
 exhausted except for:
 
-* `nb` (Norwegian Bokmal) - fastText publishes `cc.no` but no `cc.nb`;
-  converting `cc.no` as `nb` is blocked on the `no`->nb/nn alias decision,
-  which is an owner decision (proposal delivered with plan 83, not
-  implemented).
+* `nb` (Norwegian Bokmal) - shipped in v1.3.0. fastText publishes no
+  `cc.nb`; the nb models are converted from `cc.no` and carry Bokmal
+  provenance in `models/nb/metadata.json` (source URL and sha256 of
+  `cc.no.300.vec`). `nn` ships separately from `cc.nn`. The gem
+  resolves the ISO macro-language code `no` to `nb`; the registry
+  itself carries no `no` entries.
 * `fi` (Finnish) - no license-clear hunspell source exists upstream;
   dropped at the license hard gate. LibreOffice ships no fi dictionary and
   the only maintained best-effort one carries no license at all. Sourcing

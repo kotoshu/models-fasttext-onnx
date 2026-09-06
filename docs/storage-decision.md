@@ -42,13 +42,14 @@ the quota pressure that made Git LFS the bottleneck.
   55 languages — every dictionaries-repo language fastText Common Crawl
   vectors can serve. Same promotion flow and rationale as plan 77: each
   promoted language's full `.onnx` (~120 MB) enters LFS, tier artifacts
-  stay LFS-free. Footprint is now ~6.5 GB (55 full models, ~3.9 GB of
+  stay LFS-free. Footprint is now ~6.6 GB (55 full models, ~3.9 GB of
   them added by this batch). The registry full-tier mirror continues to
   point at the media host.
 
 - **Addendum (2026-09-05, plan 92):** the mini and fluency tier
   artifacts enter LFS as well — ~0.64 GB of `.onnx` plus ~0.07 GB of
-  tier vocab JSONs across 54 languages. Reason: the wasm model API
+  tier vocab JSONs across 55 languages (54 at plan-92 time plus nb in
+  v1.3.0). Reason: the wasm model API
   (kotoshu-rs `loadModel`/`rerank`, on `@kotoshu/wasm`) needs
   CORS-fetchable model bytes in the browser, and GitHub release assets
   send no `Access-Control-Allow-Origin` while the media host sends
