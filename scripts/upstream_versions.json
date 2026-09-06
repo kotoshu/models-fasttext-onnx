@@ -486,6 +486,15 @@
       "pinned_at": "2026-09-05",
       "converted_manifest_sha256": "c084e37ef01f63c19f42da3f86c634a1198f0ece02a162f13c35959b31ab895a",
       "notes": "sha256/etag/size recorded from the downloaded archive at plan-83 conversion time"
+    },
+    "nb": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.no.300.vec.gz",
+      "sha256_vec_gz": "99477da86d9a8bd19a4a2745a551dbf1a93aed807db55c554a4c9a4c45f116e4",
+      "etag": "1dec2a8c84cfaf1f3f3230d9038ba0e1-146",
+      "size_bytes": 1220507782,
+      "pinned_at": "2026-09-06",
+      "converted_manifest_sha256": "5b4f58b1df6c63cc17ef8a6061c3481d4578838b350e2e65e15f5582d5dc6c3e",
+      "notes": "Norwegian Bokmal has no cc.nb archive; converted from cc.no per the owner-approved no->nb mapping (plan 83 proposal, registry v1.3.0). sha256/etag/size recorded from the downloaded archive at conversion time."
     }
   }
 }

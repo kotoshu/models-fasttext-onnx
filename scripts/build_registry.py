@@ -19,7 +19,10 @@ SPEC = "kotoshu.resources/v1"
 # languages under release tag v1.1.0 (minor = coverage per plan 05).
 # 3: plan 83 batch 2, gem-wired RTL languages plus national-script and
 # Latin newcomers under release tag v1.2.0.
-REGISTRY_VERSION = 4
+# 4: plan 92 tier mirrors on the media host, release tag v1.2.1.
+# 5: no->nb mapping - cc.no converted as Bokmal-labeled nb, one new
+# language under release tag v1.3.0.
+REGISTRY_VERSION = 5
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
 # media host serves the real bytes. Plain-git files (vocab, manifests)
