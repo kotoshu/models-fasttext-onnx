@@ -49,6 +49,7 @@ This repository contains FastText word embedding models that have been converted
 | Mongolian | mn | 100,000 | 300D | 114.44 MB | [FastText CC.mn.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Nepali | ne | 100,000 | 300D | 114.44 MB | [FastText CC.ne.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Dutch | nl | 100,000 | 300D | 114.44 MB | [FastText CC.nl.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
+| Norwegian Bokmål | nb | 100,000 | 300D | 114.44 MB | [FastText CC.no.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Norwegian Nynorsk | nn | 100,000 | 300D | 114.44 MB | [FastText CC.nn.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Occitan | oc | 100,000 | 300D | 114.44 MB | [FastText CC.oc.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
 | Polish | pl | 100,000 | 300D | 114.44 MB | [FastText CC.pl.300](https://fasttext.cc/docs/en/crawl-vectors.html) |
@@ -68,13 +69,15 @@ This repository contains FastText word embedding models that have been converted
 ## Coverage status and backlog
 
 The candidate pool is dictionaries-repo languages intersected with the
-fastText Common Crawl vectors. After v1.2.0 (55 languages) the pool is
+fastText Common Crawl vectors. After v1.3.0 (55 languages) the pool is
 exhausted except for:
 
-- `nb` (Norwegian Bokmål) — fastText publishes `cc.no` but no `cc.nb`;
-  converting `cc.no` as `nb` is blocked on the `no`→nb/nn alias decision,
-  which is an owner decision (proposal delivered with plan 83, not
-  implemented).
+- `nb` (Norwegian Bokmål) — shipped in v1.3.0. fastText publishes no
+  `cc.nb`; the `nb` models are converted from `cc.no` and carry
+  Bokmål provenance in `models/nb/metadata.json` (source URL and
+  sha256 of `cc.no.300.vec`). `nn` ships separately from `cc.nn`.
+  The gem resolves the ISO macro-language code `no` to `nb`; the
+  registry itself carries no `no` entries.
 - `fi` (Finnish) — no license-clear hunspell source exists upstream;
   dropped at the license hard gate. LibreOffice ships no fi dictionary and
   the only maintained best-effort one carries no license at all. Sourcing
