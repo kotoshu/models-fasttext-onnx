@@ -1,0 +1,24 @@
+{
+  "version": "2026-09-06T08:05:23Z",
+  "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.no.300.vec.gz",
+  "language": "nb",
+  "type": "onnx",
+  "file": "fasttext.nb.onnx",
+  "checksum": "5b4f58b1df6c63cc17ef8a6061c3481d4578838b350e2e65e15f5582d5dc6c3e",
+  "cached_at": "2026-09-06T08:05:23Z",
+  "source_model": "cc.no.300.vec",
+  "conversion_method": "fasttext_to_onnx.py",
+  "opset_version": 11,
+  "provenance": {
+    "source_url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.no.300.vec.gz",
+    "source_sha256": "99dc7dfea9182449afa84091add3a6bdeb12206e91cbc093f7fcdbb5c9ca9cf0",
+    "command": "scripts/convert_one.py --language nb --vec downloads/cc.no.300.vec --repo-root .",
+    "tool_versions": {
+      "python": "3.10.5",
+      "numpy": "2.2.6",
+      "onnx": "1.22.0",
+      "onnxruntime": "1.23.2",
+      "converter": "scripts/fasttext_to_onnx.py"
+    }
+  }
+}
