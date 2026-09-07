@@ -1,0 +1,179 @@
+{
+  "language": "es",
+  "generated_at": "2026-09-07T14:47:01Z",
+  "source": {
+    "bin": "cc.es.300.bin.gz",
+    "bin_sha256": "41ced94c4125356df8e97a13320d4907ebd7cb547151e4dfdee2f2ddb737859c",
+    "args": {
+      "dim": 300,
+      "ws": 5,
+      "epoch": 1,
+      "minCount": 5,
+      "neg": 10,
+      "wordNgrams": 1,
+      "loss": 2,
+      "model": 1,
+      "bucket": 2000000,
+      "minn": 5,
+      "maxn": 5,
+      "lrUpdateRate": 100,
+      "t": 9.999999747378752e-06
+    },
+    "nwords": 2000000,
+    "bucket_count": 2000000,
+    "ntokens": 72493240645
+  },
+  "size_audit": {
+    "full_bucket_table_bytes_int8": 624000000,
+    "full_bucket_table_bytes_fp32": 2400000000,
+    "buckets_with_nonzero_usage": 1293855,
+    "rows_outside_init_envelope": 1964243,
+    "tier_vocab_size": 10000,
+    "tier_bytes": 3040752,
+    "usage_only_note": "usage-only gating measurements (no demand union): K=32768 cos 0.7531 top1 0.6750; K=65536 cos 0.7934 top1 0.7200; K=131072 cos 0.8362 top1 0.7825; K=262144 cos 0.9224 top1 0.8725 rank 0.9215 (en, corpus probes) \u2014 mini-parity would need ~262k rows / 82 MB as a mini sibling"
+  },
+  "demand": {
+    "pairs_used": 81,
+    "buckets": 443
+  },
+  "gate_probes_overlaps_demand": true,
+  "attempts": [
+    {
+      "k_usage": 32768,
+      "rows_total": 32916,
+      "artifact_bytes_estimate": 10269792,
+      "gate_metrics": {
+        "probes_used": 81,
+        "queries_resolved": 1.0,
+        "intended_top1": 0.2345679012345679,
+        "intended_top5": 0.41975308641975306,
+        "top1_agreement_vs_reference": 1.0,
+        "mean_query_cosine_vs_reference": 1.0000000294343925,
+        "mean_rank_corr_vs_reference": 1.0,
+        "ngram_occurrence_resolution": 1.0
+      },
+      "gate_metrics_usage_only": {
+        "probes_used": 81,
+        "queries_resolved": 0.9629629629629629,
+        "intended_top1": 0.14814814814814814,
+        "intended_top5": 0.2962962962962963,
+        "top1_agreement_vs_reference": 0.7407407407407407,
+        "mean_query_cosine_vs_reference": 0.8499341526149232,
+        "mean_rank_corr_vs_reference": 0.8720287870781112,
+        "ngram_occurrence_resolution": 0.7461669505962522
+      },
+      "report_metrics_uniform_synth": {
+        "probes_used": 400,
+        "queries_resolved": 0.755,
+        "intended_top1": 0.115,
+        "intended_top5": 0.225,
+        "top1_agreement_vs_reference": 0.535,
+        "mean_query_cosine_vs_reference": 0.654427518248558,
+        "mean_rank_corr_vs_reference": 0.6636197803991221,
+        "ngram_occurrence_resolution": 0.5076530612244898
+      },
+      "passed": true
+    },
+    {
+      "k_usage": 49152,
+      "rows_total": 49281,
+      "artifact_bytes_estimate": 15375672,
+      "gate_metrics": {
+        "probes_used": 81,
+        "queries_resolved": 1.0,
+        "intended_top1": 0.2345679012345679,
+        "intended_top5": 0.41975308641975306,
+        "top1_agreement_vs_reference": 1.0,
+        "mean_query_cosine_vs_reference": 1.0000000294343925,
+        "mean_rank_corr_vs_reference": 1.0,
+        "ngram_occurrence_resolution": 1.0
+      },
+      "gate_metrics_usage_only": {
+        "probes_used": 81,
+        "queries_resolved": 0.9629629629629629,
+        "intended_top1": 0.1728395061728395,
+        "intended_top5": 0.30864197530864196,
+        "top1_agreement_vs_reference": 0.7654320987654321,
+        "mean_query_cosine_vs_reference": 0.8710779827318074,
+        "mean_rank_corr_vs_reference": 0.8908181683097101,
+        "ngram_occurrence_resolution": 0.7802385008517888
+      },
+      "report_metrics_uniform_synth": {
+        "probes_used": 400,
+        "queries_resolved": 0.78,
+        "intended_top1": 0.1125,
+        "intended_top5": 0.225,
+        "top1_agreement_vs_reference": 0.54,
+        "mean_query_cosine_vs_reference": 0.6817142848670482,
+        "mean_rank_corr_vs_reference": 0.6897001752007015,
+        "ngram_occurrence_resolution": 0.5255102040816326
+      },
+      "passed": true
+    },
+    {
+      "k_usage": 65536,
+      "rows_total": 65656,
+      "artifact_bytes_estimate": 20484672,
+      "gate_metrics": {
+        "probes_used": 81,
+        "queries_resolved": 1.0,
+        "intended_top1": 0.2345679012345679,
+        "intended_top5": 0.41975308641975306,
+        "top1_agreement_vs_reference": 1.0,
+        "mean_query_cosine_vs_reference": 1.0000000294343925,
+        "mean_rank_corr_vs_reference": 1.0,
+        "ngram_occurrence_resolution": 1.0
+      },
+      "gate_metrics_usage_only": {
+        "probes_used": 81,
+        "queries_resolved": 0.9629629629629629,
+        "intended_top1": 0.16049382716049382,
+        "intended_top5": 0.30864197530864196,
+        "top1_agreement_vs_reference": 0.7901234567901234,
+        "mean_query_cosine_vs_reference": 0.8857422809541962,
+        "mean_rank_corr_vs_reference": 0.9030352162890132,
+        "ngram_occurrence_resolution": 0.7955706984667802
+      },
+      "report_metrics_uniform_synth": {
+        "probes_used": 400,
+        "queries_resolved": 0.8,
+        "intended_top1": 0.1125,
+        "intended_top5": 0.2275,
+        "top1_agreement_vs_reference": 0.56,
+        "mean_query_cosine_vs_reference": 0.7034942054748535,
+        "mean_rank_corr_vs_reference": 0.7115586096744392,
+        "ngram_occurrence_resolution": 0.5369897959183674
+      },
+      "passed": true
+    }
+  ],
+  "spotlight": [],
+  "baseline_substring_only": {
+    "probes_used": 81,
+    "queries_resolved": 0.6666666666666666,
+    "intended_top1": 0.012345679012345678,
+    "intended_top5": 0.04938271604938271,
+    "top1_agreement_vs_reference": 1.0,
+    "mean_query_cosine_vs_reference": 1.0000000419440094,
+    "mean_rank_corr_vs_reference": 1.0,
+    "ngram_occurrence_resolution": 1.0
+  },
+  "reference_full_table": {
+    "probes_used": 81,
+    "queries_resolved": 1.0,
+    "intended_top1": 0.2345679012345679,
+    "intended_top5": 0.41975308641975306,
+    "top1_agreement_vs_reference": 1.0,
+    "mean_query_cosine_vs_reference": 1.0000000294343925,
+    "mean_rank_corr_vs_reference": 1.0,
+    "ngram_occurrence_resolution": 1.0
+  },
+  "chosen_k_usage": 32768,
+  "artifact": {
+    "path": "models/es/fasttext.es.buckets.onnx",
+    "bytes": 10270655,
+    "sha256": "9fa30f7cf037b7336722adef600a678b58c8f5e44f0cc80fe442e7c31089a11a",
+    "rows": 32916,
+    "parity_max_abs": 0.011455714702606201
+  }
+}
