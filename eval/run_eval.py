@@ -46,6 +46,9 @@ QUANT_INT8_PER_ROW = "int8-per-row"
 QUANT_INT4_GROUP_PREFIX = "int4-group"
 QUANT_INT4_GROUP128 = f"{QUANT_INT4_GROUP_PREFIX}128"
 INT4_GROUP_SIZE = 128  # default when the metadata omits "group_size"
+# per-row int4 artifacts (plan 101: build_int4_per_row.py) carry one
+# fp16 scale per row (kotoshu-rs RowFormat 0x04 nibble-packing shape).
+QUANT_INT4_PER_ROW = "int4-per-row"
 
 SEED = 42
 
@@ -197,8 +200,10 @@ def load_tier_model(onnx_path: Path, vocab_path: Path) -> LoadedModel:
     int4-group{N} experiment artifacts (build_int4.py, N = 128/64/32)
     unpack nibbles and apply per-group fp32 scales, with the group count
     taken from the artifact's `group_size` metadata and cross-checked
-    against the group_scales constant. Both paths end in the same
-    consistency checks and onnxruntime spot check.
+    against the group_scales constant; the int4-per-row experiment
+    artifacts (build_int4_per_row.py, plan 101) unpack nibbles and apply
+    ONE fp16 scale per row. All paths end in the same consistency checks
+    and onnxruntime spot check.
     """
     model = onnx.load(str(onnx_path))
     meta = metadata_dict(model)
@@ -218,6 +223,28 @@ def load_tier_model(onnx_path: Path, vocab_path: Path) -> LoadedModel:
                 f"at group_size {group_size} need {n_groups}"
             )
         dequant = dequant_int4_group(packed, scales, dims, group_size)
+        vocab = json.loads(vocab_path.read_text(encoding="utf-8"))
+        _check_consistency(dequant, vocab, meta, str(onnx_path))
+        spot_check_against_runtime(onnx_path, dequant)
+        return LoadedModel(
+            tier=meta.get("tier", "unknown"),
+            embeddings=dequant,
+            normalized=_normalized(dequant),
+            word_to_idx=vocab["word_to_idx"],
+            dims=dims,
+            vocab_size=dequant.shape[0],
+            quantization=meta.get("quantization"),
+        )
+
+    if str(meta.get("quantization", "")) == QUANT_INT4_PER_ROW:
+        packed = constant_array(model, "q_packed")
+        scales = constant_array(model, "row_scales")
+        if packed.dtype != np.uint8 or scales.dtype not in (np.float16, np.float32):
+            raise ValueError(f"{onnx_path}: expected uint8 q_packed / fp16 row_scales")
+        if packed.shape[0] != scales.shape[0]:
+            raise ValueError(f"{onnx_path}: q_packed rows {packed.shape[0]} != row_scales rows {scales.shape[0]}")
+        dims = packed.shape[1] * 2
+        dequant = unpack_int4_packed(packed)[:, :dims] * scales.astype(np.float32).reshape(scales.shape[0], -1)
         vocab = json.loads(vocab_path.read_text(encoding="utf-8"))
         _check_consistency(dequant, vocab, meta, str(onnx_path))
         spot_check_against_runtime(onnx_path, dequant)
