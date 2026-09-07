@@ -145,5 +145,3 @@ models/**/*.mini4.onnx
 models/**/*.mini4.vocab.json
 models/**/*.fluency4.onnx
 models/**/*.fluency4.vocab.json
-# Plan 103 — bucket-table sibling artifact (release asset only, binary).
-models/**/*.buckets.onnx
