@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-09-07T16:16:59Z",
+  "generated_at": "2026-09-07T19:23:02Z",
   "repo_version": "v1",
-  "resource_count": 342,
+  "resource_count": 350,
   "language_count": 56,
   "resources": {
     "models/ar/fasttext.ar.fluency.onnx": {
@@ -1025,6 +1025,16 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/fy/fasttext.fy.buckets.onnx": {
+      "size": 11852495,
+      "sha256": "cb642e4d6b5560defed63765f1fc31b3c5ed25fd7d4833812c5c7fdc54f9a7e8",
+      "language": "fy",
+      "type": "onnx",
+      "source": "cc.fy.300.vec",
+      "fasttext_source": "cc.fy.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/fy/fasttext.fy.fluency.onnx": {
       "size": 15200760,
       "sha256": "4c14d70969a1e120fcf31c4e0e180435f9e2f1e88df131ecea5e7ef1a0ab1a5e",
@@ -1222,6 +1232,16 @@
       "type": "vocab",
       "source": "cc.gd.300.vec",
       "fasttext_source": "cc.gd.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/gl/fasttext.gl.buckets.onnx": {
+      "size": 11846879,
+      "sha256": "a8971ab973470ec09d8002915641361838088cc8c90bb1af2cac1b8fdc6b27ce",
+      "language": "gl",
+      "type": "onnx",
+      "source": "cc.gl.300.vec",
+      "fasttext_source": "cc.gl.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -1919,6 +1939,16 @@
       "type": "vocab",
       "source": "FastText Common Crawl"
     },
+    "models/la/fasttext.la.buckets.onnx": {
+      "size": 11793215,
+      "sha256": "f83756f451f5f1851f824dcfd6a0b98e744e8c316b52a3f57d2466743f9451ea",
+      "language": "la",
+      "type": "onnx",
+      "source": "cc.la.300.vec",
+      "fasttext_source": "cc.la.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/la/fasttext.la.fluency.onnx": {
       "size": 15200760,
       "sha256": "1b179ed1abac5256e0e6197d2a79ab79daf84393fea649f3bfe1169e3fd38e9d",
@@ -1976,6 +2006,16 @@
       "type": "vocab",
       "source": "cc.la.300.vec",
       "fasttext_source": "cc.la.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lb/fasttext.lb.buckets.onnx": {
+      "size": 11817863,
+      "sha256": "224987e4f395c382a5c9c29aff57824edd23e10bf79210d055037bb526623840",
+      "language": "lb",
+      "type": "onnx",
+      "source": "cc.lb.300.vec",
+      "fasttext_source": "cc.lb.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -2116,6 +2156,16 @@
       "type": "vocab",
       "source": "cc.lt.300.vec",
       "fasttext_source": "cc.lt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/lv/fasttext.lv.buckets.onnx": {
+      "size": 11911775,
+      "sha256": "cdd43384d43e9f2440fa4366886b6d62c319ba76527ef62ee37b12aeaf9d2fb0",
+      "language": "lv",
+      "type": "onnx",
+      "source": "cc.lv.300.vec",
+      "fasttext_source": "cc.lv.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -2549,6 +2599,16 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/oc/fasttext.oc.buckets.onnx": {
+      "size": 11820359,
+      "sha256": "eb2a4e496a84f1728f8be445fd798597817f2156a309e98de35fb6eb215dc6d5",
+      "language": "oc",
+      "type": "onnx",
+      "source": "cc.oc.300.vec",
+      "fasttext_source": "cc.oc.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/oc/fasttext.oc.fluency.onnx": {
       "size": 15200760,
       "sha256": "e7cc59d328bfa3a492f94beb94274eda20a278170c9abfc0508194a853c35e3f",
@@ -2786,6 +2846,16 @@
       "type": "vocab",
       "source": "cc.ro.300.vec",
       "fasttext_source": "cc.ro.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ru/fasttext.ru.buckets.onnx": {
+      "size": 10358015,
+      "sha256": "6b0622a7df933c21d4444bc7747bf80c835aa43e0bed1284cf9b22b831a07581",
+      "language": "ru",
+      "type": "onnx",
+      "source": "cc.ru.300.vec",
+      "fasttext_source": "cc.ru.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -3086,6 +3156,16 @@
       "type": "vocab",
       "source": "cc.sv.300.vec",
       "fasttext_source": "cc.sv.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/tk/fasttext.tk.buckets.onnx": {
+      "size": 11868719,
+      "sha256": "7fa9f76164c6f4f3f8dd8d6f5fb6dd1986c538d2a7b24453d6843bc91a8c0110",
+      "language": "tk",
+      "type": "onnx",
+      "source": "cc.tk.300.vec",
+      "fasttext_source": "cc.tk.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
