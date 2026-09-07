@@ -1,0 +1,306 @@
+{
+  "language": "de",
+  "generated_at": "2026-09-07T08:38:16Z",
+  "source": {
+    "bin": "cc.de.300.bin.gz",
+    "bin_sha256": "05174bb3881664f8e1634397e741eb1867f96df14be81408aade432d8e666101",
+    "args": {
+      "dim": 300,
+      "ws": 5,
+      "epoch": 1,
+      "minCount": 5,
+      "neg": 10,
+      "wordNgrams": 1,
+      "loss": 2,
+      "model": 1,
+      "bucket": 2000000,
+      "minn": 5,
+      "maxn": 5,
+      "lrUpdateRate": 100,
+      "t": 9.999999747378752e-06
+    },
+    "nwords": 2000000,
+    "bucket_count": 2000000,
+    "ntokens": 65648657780
+  },
+  "size_audit": {
+    "full_bucket_table_bytes_int8": 624000000,
+    "full_bucket_table_bytes_fp32": 2400000000,
+    "buckets_with_nonzero_usage": 1213093,
+    "rows_outside_init_envelope": 1982077,
+    "tier_vocab_size": 10000,
+    "tier_bytes": 3040752,
+    "usage_only_note": "usage-only gating measurements (no demand union): K=32768 cos 0.7531 top1 0.6750; K=65536 cos 0.7934 top1 0.7200; K=131072 cos 0.8362 top1 0.7825; K=262144 cos 0.9224 top1 0.8725 rank 0.9215 (en, corpus probes) \u2014 mini-parity would need ~262k rows / 82 MB as a mini sibling"
+  },
+  "demand": {
+    "pairs_used": 63,
+    "buckets": 303
+  },
+  "attempts": [
+    {
+      "k_usage": 32768,
+      "rows_total": 32878,
+      "artifact_bytes_estimate": 10257936,
+      "gate_metrics": {
+        "probes_used": 63,
+        "queries_resolved": 1.0,
+        "intended_top1": 0.19047619047619047,
+        "intended_top5": 0.4126984126984127,
+        "top1_agreement_vs_reference": 1.0,
+        "mean_query_cosine_vs_reference": 1.0000000435208518,
+        "mean_rank_corr_vs_reference": 1.0,
+        "ngram_occurrence_resolution": 1.0
+      },
+      "gate_metrics_usage_only": {
+        "probes_used": 63,
+        "queries_resolved": 0.8412698412698413,
+        "intended_top1": 0.12698412698412698,
+        "intended_top5": 0.30158730158730157,
+        "top1_agreement_vs_reference": 0.6349206349206349,
+        "mean_query_cosine_vs_reference": 0.7606508211484031,
+        "mean_rank_corr_vs_reference": 0.7869832378377134,
+        "ngram_occurrence_resolution": 0.725
+      },
+      "report_metrics_uniform_synth": {
+        "probes_used": 400,
+        "queries_resolved": 0.7425,
+        "intended_top1": 0.1025,
+        "intended_top5": 0.1975,
+        "top1_agreement_vs_reference": 0.5425,
+        "mean_query_cosine_vs_reference": 0.6289077635854483,
+        "mean_rank_corr_vs_reference": 0.6422360966243869,
+        "ngram_occurrence_resolution": 0.5302252074278941
+      },
+      "passed": true
+    },
+    {
+      "k_usage": 49152,
+      "rows_total": 49255,
+      "artifact_bytes_estimate": 15367560,
+      "gate_metrics": {
+        "probes_used": 63,
+        "queries_resolved": 1.0,
+        "intended_top1": 0.19047619047619047,
+        "intended_top5": 0.4126984126984127,
+        "top1_agreement_vs_reference": 1.0,
+        "mean_query_cosine_vs_reference": 1.0000000435208518,
+        "mean_rank_corr_vs_reference": 1.0,
+        "ngram_occurrence_resolution": 1.0
+      },
+      "gate_metrics_usage_only": {
+        "probes_used": 63,
+        "queries_resolved": 0.8412698412698413,
+        "intended_top1": 0.12698412698412698,
+        "intended_top5": 0.30158730158730157,
+        "top1_agreement_vs_reference": 0.6349206349206349,
+        "mean_query_cosine_vs_reference": 0.7726239533651442,
+        "mean_rank_corr_vs_reference": 0.7956524458478788,
+        "ngram_occurrence_resolution": 0.7425
+      },
+      "report_metrics_uniform_synth": {
+        "probes_used": 400,
+        "queries_resolved": 0.76,
+        "intended_top1": 0.0975,
+        "intended_top5": 0.2,
+        "top1_agreement_vs_reference": 0.5625,
+        "mean_query_cosine_vs_reference": 0.6523716110736132,
+        "mean_rank_corr_vs_reference": 0.6660823944895787,
+        "ngram_occurrence_resolution": 0.5480047412090083
+      },
+      "passed": true
+    },
+    {
+      "k_usage": 65536,
+      "rows_total": 65633,
+      "artifact_bytes_estimate": 20477496,
+      "gate_metrics": {
+        "probes_used": 63,
+        "queries_resolved": 1.0,
+        "intended_top1": 0.19047619047619047,
+        "intended_top5": 0.4126984126984127,
+        "top1_agreement_vs_reference": 1.0,
+        "mean_query_cosine_vs_reference": 1.0000000435208518,
+        "mean_rank_corr_vs_reference": 1.0,
+        "ngram_occurrence_resolution": 1.0
+      },
+      "gate_metrics_usage_only": {
+        "probes_used": 63,
+        "queries_resolved": 0.873015873015873,
+        "intended_top1": 0.1111111111111111,
+        "intended_top5": 0.31746031746031744,
+        "top1_agreement_vs_reference": 0.6984126984126984,
+        "mean_query_cosine_vs_reference": 0.8046105437808566,
+        "mean_rank_corr_vs_reference": 0.8271526267057451,
+        "ngram_occurrence_resolution": 0.7575
+      },
+      "report_metrics_uniform_synth": {
+        "probes_used": 400,
+        "queries_resolved": 0.7625,
+        "intended_top1": 0.0975,
+        "intended_top5": 0.2,
+        "top1_agreement_vs_reference": 0.57,
+        "mean_query_cosine_vs_reference": 0.6618827246874571,
+        "mean_rank_corr_vs_reference": 0.6744389202356819,
+        "ngram_occurrence_resolution": 0.5614381667325168
+      },
+      "passed": true
+    }
+  ],
+  "spotlight": [
+    {
+      "word": "wiederrum",
+      "resolved_vocab_ngrams": 4,
+      "resolved_bucket_ngrams": 5,
+      "reference_nonzero": true,
+      "gated_nonzero": true,
+      "query_cosine": 0.9422367811203003,
+      "neighbors": [
+        [
+          "auch",
+          0.7423
+        ],
+        [
+          "immer",
+          0.706
+        ],
+        [
+          "eben",
+          0.6977
+        ],
+        [
+          "noch",
+          0.6941
+        ],
+        [
+          "schon",
+          0.6899
+        ],
+        [
+          "aber",
+          0.6887
+        ],
+        [
+          "dann",
+          0.6819
+        ],
+        [
+          "doch",
+          0.6816
+        ]
+      ]
+    },
+    {
+      "word": "standart",
+      "resolved_vocab_ngrams": 4,
+      "resolved_bucket_ngrams": 5,
+      "reference_nonzero": true,
+      "gated_nonzero": true,
+      "query_cosine": 0.9677867293357849,
+      "neighbors": [
+        [
+          "stellt",
+          0.6166
+        ],
+        [
+          "and",
+          0.609
+        ],
+        [
+          "stellte",
+          0.5956
+        ],
+        [
+          "dar",
+          0.5895
+        ],
+        [
+          "stand",
+          0.586
+        ],
+        [
+          "stelle",
+          0.5662
+        ],
+        [
+          "steht",
+          0.5661
+        ],
+        [
+          "stellen",
+          0.555
+        ]
+      ]
+    },
+    {
+      "word": "ihrt",
+      "resolved_vocab_ngrams": 1,
+      "resolved_bucket_ngrams": 2,
+      "reference_nonzero": true,
+      "gated_nonzero": true,
+      "query_cosine": 0.9999998211860657,
+      "neighbors": [
+        [
+          "ihr",
+          0.9361
+        ],
+        [
+          "Ihr",
+          0.7119
+        ],
+        [
+          "euch",
+          0.6911
+        ],
+        [
+          "sie",
+          0.6866
+        ],
+        [
+          "euer",
+          0.6792
+        ],
+        [
+          "wollt",
+          0.6547
+        ],
+        [
+          "habt",
+          0.6408
+        ],
+        [
+          "k\u00f6nnt",
+          0.6259
+        ]
+      ]
+    }
+  ],
+  "baseline_substring_only": {
+    "probes_used": 63,
+    "queries_resolved": 0.6507936507936508,
+    "intended_top1": 0.031746031746031744,
+    "intended_top5": 0.06349206349206349,
+    "top1_agreement_vs_reference": 1.0,
+    "mean_query_cosine_vs_reference": 1.0000000290754365,
+    "mean_rank_corr_vs_reference": 1.0,
+    "ngram_occurrence_resolution": 1.0
+  },
+  "reference_full_table": {
+    "probes_used": 63,
+    "queries_resolved": 1.0,
+    "intended_top1": 0.19047619047619047,
+    "intended_top5": 0.4126984126984127,
+    "top1_agreement_vs_reference": 1.0,
+    "mean_query_cosine_vs_reference": 1.0000000435208518,
+    "mean_rank_corr_vs_reference": 1.0,
+    "ngram_occurrence_resolution": 1.0
+  },
+  "chosen_k_usage": 32768,
+  "artifact": {
+    "path": "models/de/fasttext.de.buckets.onnx",
+    "bytes": 10258799,
+    "sha256": "a11de192e0c31d331deeb1b47a3c4086e91801edaadb0a807731faf3826f072d",
+    "rows": 32878,
+    "parity_max_abs": 0.014943540096282959
+  },
+  "gate_probes_overlaps_demand": true
+}

@@ -445,6 +445,27 @@
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/da.mini.json"
     },
+    "kotoshu://models/de/buckets": {
+      "type": "model",
+      "language": "de",
+      "tier": {
+        "name": "buckets",
+        "dims": 300,
+        "vocab_size": 32878,
+        "quantization": "int8-per-row"
+      },
+      "version": "0.0.0-dev",
+      "urls": {
+        "primary": null,
+        "mirror": null
+      },
+      "vocab_url": null,
+      "sha256": "a11de192e0c31d331deeb1b47a3c4086e91801edaadb0a807731faf3826f072d",
+      "size_bytes": 10258799,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/de.buckets.json"
+    },
     "kotoshu://models/de/fluency": {
       "type": "model",
       "language": "de",
@@ -570,6 +591,27 @@
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/el.mini.json"
+    },
+    "kotoshu://models/en/buckets": {
+      "type": "model",
+      "language": "en",
+      "tier": {
+        "name": "buckets",
+        "dims": 300,
+        "vocab_size": 36456,
+        "quantization": "int8-per-row"
+      },
+      "version": "0.0.0-dev",
+      "urls": {
+        "primary": null,
+        "mirror": null
+      },
+      "vocab_url": null,
+      "sha256": "1bd7825b8eb92b47701e483fb4804f09ae2064b147fe34be63ebfc7272570ff7",
+      "size_bytes": 11375135,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/en.buckets.json"
     },
     "kotoshu://models/en/fluency": {
       "type": "model",
