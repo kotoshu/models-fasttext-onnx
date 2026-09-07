@@ -52,6 +52,8 @@ def file_sha256_and_size(path):
 
 
 def asset_stems(lang, tier_name):
+    if tier_name == "lid-176":  # plan 102: the LID pair mirrors upstream lid.176 naming
+        return "lid.176.onnx", "lid.176.vocab.json"
     stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
     return f"{stem}.onnx", f"{stem}.vocab.json"
 
@@ -83,6 +85,16 @@ def check_urls(resource, resource_id, registry, errors):
 def check_ground_truth(resource, resource_id, root, manifest, errors):
     lang = resource["language"]
     tier_name = resource["tier"]["name"]
+
+    if tier_name == "lid-176":  # plan 102: models/lid/lid.json is the ground truth
+        try:
+            d = load_json(root / "models" / "lid" / "lid.json")
+        except (OSError, json.JSONDecodeError) as exc:
+            errors.append(f"{resource_id}: cannot read models/lid/lid.json: {exc}")
+            return None
+        if resource["sha256"] != d["sha256"] or resource["size_bytes"] != d["bytes"]:
+            errors.append(f"{resource_id}: sha256/size drift vs models/lid/lid.json")
+        return (d["vocab_sha256"], d["vocab_bytes"])
 
     if tier_name == "full":
         entry = manifest["resources"].get(f"models/{lang}/fasttext.{lang}.onnx")

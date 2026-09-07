@@ -112,6 +112,8 @@ models/*/
 !models/uk/
 !models/vi/
 !models/zh/
+# plan 102: the LID model pair (pseudo-language dir)
+!models/lid/
 
 # Tier binaries/vocabs ARE committed (LFS objects) since plan 92 — they
 # mirror to media.githubusercontent.com, the CORS-fetchable host browsers

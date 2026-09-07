@@ -1,0 +1,19 @@
+{
+  "language": "lid",
+  "tier": "lid-176",
+  "dims": 16,
+  "input_rows": 50000,
+  "words": 7235,
+  "labels": 176,
+  "quantization": "int8-per-row",
+  "bytes": 1012025,
+  "sha256": "8f0c0ea57b100c8467c62a20365df9d895f9d00ad90fc3ba7da49df85db4eaeb",
+  "vocab_sha256": "4e37eafc4950faab99e15537928c55681bd6e0c8661a5b839328d79840355b2c",
+  "vocab_bytes": 1778607,
+  "eval_ref": "eval/reports/lid.176.json",
+  "source_url": "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz",
+  "source_sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+  "license": "MIT",
+  "generated_at": "2026-09-07T07:29:14Z",
+  "min_engine_version": "0.3"
+}
