@@ -55,6 +55,9 @@ def asset_stems(lang, tier_name):
     if tier_name == "lid-176":  # plan 102: the LID pair mirrors upstream lid.176 naming
         return "lid.176.onnx", "lid.176.vocab.json"
     stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
+    # Buckets (plan 103) have no vocab sibling - the bucket_ids tensor is inside.
+    if tier_name == "buckets":
+        return f"{stem}.onnx", None
     return f"{stem}.onnx", f"{stem}.vocab.json"
 
 
@@ -66,7 +69,11 @@ def check_urls(resource, resource_id, registry, errors):
 
     # Every tier binary is an LFS object in git -> the media host mirror
     # (the raw host serves pointer stubs). All tiers follow one rule.
-    expected_mirror = f"{MEDIA_URL}/main/models/{lang}/{onnx_name}"
+    # LID lives under models/lid/, not models/{lang}/.
+    if tier_name == "lid-176":
+        expected_mirror = f"{MEDIA_URL}/main/models/lid/{onnx_name}"
+    else:
+        expected_mirror = f"{MEDIA_URL}/main/models/{lang}/{onnx_name}"
     if resource["urls"]["mirror"] != expected_mirror:
         errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
 
@@ -75,16 +82,34 @@ def check_urls(resource, resource_id, registry, errors):
             errors.append(f"{resource_id}: primary/vocab URLs set but release_tag is null")
     else:
         expected_primary = f"{REPO_URL}/releases/download/{tag}/{onnx_name}"
-        expected_vocab = f"{REPO_URL}/releases/download/{tag}/{vocab_name}"
         if resource["urls"]["primary"] != expected_primary:
             errors.append(f"{resource_id}: primary URL expected {expected_primary}")
-        if resource["vocab_url"] != expected_vocab:
-            errors.append(f"{resource_id}: vocab_url expected {expected_vocab}")
+        # Buckets carry no vocab sibling (plan 103).
+        if vocab_name is None:
+            if resource.get("vocab_url") is not None:
+                errors.append(f"{resource_id}: vocab_url must be null for buckets")
+        else:
+            expected_vocab = f"{REPO_URL}/releases/download/{tag}/{vocab_name}"
+            if resource["vocab_url"] != expected_vocab:
+                errors.append(f"{resource_id}: vocab_url expected {expected_vocab}")
 
 
 def check_ground_truth(resource, resource_id, root, manifest, errors):
     lang = resource["language"]
     tier_name = resource["tier"]["name"]
+
+    if tier_name == "buckets":
+        # Ground truth is models/<lang>/tiers.json buckets entry; no vocab.
+        tiers_path = root / "models" / lang / "tiers.json"
+        try:
+            tiers = load_json(tiers_path)
+            t = tiers["tiers"]["buckets"]
+        except (OSError, KeyError, json.JSONDecodeError) as exc:
+            errors.append(f"{resource_id}: cannot read buckets ground truth: {exc}")
+            return None
+        if resource["sha256"] != t["sha256"] or resource["size_bytes"] != t["bytes"]:
+            errors.append(f"{resource_id}: sha256/size drift vs models/{lang}/tiers.json")
+        return None
 
     if tier_name == "lid-176":  # plan 102: models/lid/lid.json is the ground truth
         try:
@@ -180,6 +205,8 @@ def main():
         else:
             warnings.append(f"{resource_id}: {onnx_path} absent locally, file check skipped")
 
+        if vocab_name is None:
+            continue
         vocab_path = root / "models" / lang / vocab_name
         if vocab_path.exists():
             if vocab_truth is None:
