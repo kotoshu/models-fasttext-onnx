@@ -22,7 +22,11 @@ SPEC = "kotoshu.resources/v1"
 # 4: plan 92 tier mirrors on the media host, release tag v1.2.1.
 # 5: no->nb mapping - cc.no converted as Bokmal-labeled nb, one new
 # language under release tag v1.3.0.
-REGISTRY_VERSION = 5
+# 6: plan 102 LID model - the fastText language-identification model as
+# a new resource kind under the pseudo-language "lid" (release tag
+# v1.4.0; the slot plan 101 reserved for int4 tiers went unused - the
+# int4 experiment failed its gates, see eval/reports/ and 7b486d4).
+REGISTRY_VERSION = 6
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
 # media host serves the real bytes. Plain-git files (vocab, manifests)
@@ -78,6 +82,37 @@ def build_resource(lang, tier_name, dims, vocab_size, quantization,
         "license": LICENSE,
         "min_engine_version": MIN_ENGINE_VERSION,
         "eval_ref": eval_ref,
+    }
+
+
+LID_DESCRIPTOR = "models/lid/lid.json"
+
+
+def build_lid_resource(descriptor, version, tag):
+    """The plan-102 language-identification model (a pseudo-language
+    resource: language "lid", tier "lid-176"). Written by
+    scripts/build_lid.py from the upstream lid.176.ftz; the artifact
+    pair is lid.176.onnx + lid.176.vocab.json under models/lid/."""
+    return {
+        "type": "model",
+        "language": "lid",
+        "tier": {
+            "name": "lid-176",
+            "dims": descriptor["dims"],
+            "vocab_size": descriptor["input_rows"],
+            "quantization": descriptor["quantization"],
+        },
+        "version": version,
+        "urls": {
+            "primary": f"{REPO_URL}/releases/download/{tag}/lid.176.onnx" if tag else None,
+            "mirror": f"{MEDIA_URL}/main/models/lid/lid.176.onnx",
+        },
+        "vocab_url": f"{REPO_URL}/releases/download/{tag}/lid.176.vocab.json" if tag else None,
+        "sha256": descriptor["sha256"],
+        "size_bytes": descriptor["bytes"],
+        "license": descriptor["license"],
+        "min_engine_version": descriptor["min_engine_version"],
+        "eval_ref": descriptor["eval_ref"],
     }
 
 
@@ -148,6 +183,13 @@ def main():
                     t["sha256"], t["bytes"], t.get("eval_ref"), version, args.tag)
             except KeyError as exc:
                 sys.exit(f"error: models/{lang}/tiers.json tier {tier_name!r} missing field {exc}")
+
+    # Plan 102: the LID model rides the same registry when its
+    # descriptor exists (scripts/build_lid.py writes it).
+    lid_descriptor_path = root / LID_DESCRIPTOR
+    if lid_descriptor_path.exists():
+        resources["kotoshu://models/lid/lid-176"] = build_lid_resource(
+            load_json(lid_descriptor_path), version, args.tag)
 
     registry = {
         "spec": SPEC,

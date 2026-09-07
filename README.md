@@ -91,7 +91,21 @@ Regional dictionary variants (ca-valencia, de-AT/CH, en-*, es-*, hyw, ltg,
 pt-BR/PT, sr-Latn, sv-FI, el-polyton, tlh-Latn) resolve to their base
 language models.
 
-Sizes above are the `full` (fp32) tier: 165 models total across 55 languages, each in three tiers — `mini` (~3 MB, 10K vocab, int8), `fluency` (~15 MB, 50K vocab / 60K for de, int8), and `full` (~114 MB, 100K vocab, fp32). `registry.json` at the repo root is the canonical catalog (sha256, size, license, download URLs) of every model.
+Sizes above are the `full` (fp32) tier: 165 embedding models total across 55 languages, each in three tiers — `mini` (~3 MB, 10K vocab, int8), `fluency` (~15 MB, 50K vocab / 60K for de, int8), and `full` (~114 MB, 100K vocab, fp32). `registry.json` at the repo root is the canonical catalog (sha256, size, license, download URLs) of every resource.
+
+### Language identification model (lid.176)
+
+Besides the per-language embeddings, the registry carries the fastText
+language-identification model the gem detects document language with:
+`kotoshu://models/lid/lid-176` — upstream [lid.176.ftz](https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz)
+(176 labels, dim 16, char 2–4 grams, hierarchical softmax) converted by
+`scripts/build_lid.py` into an int8-per-row ONNX container (~1 MB, gates:
+100% top-1 agreement with the float32 reconstruction on
+`eval/corpora/lid_probe.jsonl`, max score drift 4.8e-4) plus a
+`lid.176.vocab.json` sidecar (labels, tree counts, word dictionary,
+pruned-ngram map). The gem keeps using the raw `.ftz` via the fasttext
+bindings; the wasm engine (`@kotoshu/wasm` `detectLanguage`) reads the
+converted pair.
 
 ### Compression Ratio
 
@@ -276,6 +290,8 @@ python3 scripts/fasttext_to_onnx.py cc.en.300.vec models/en/fasttext.en.onnx --v
 ## License
 
 These models are derived from the [FastText pretrained vectors](https://fasttext.cc/docs/en/crawl-vectors.html), which are licensed under the [Creative Commons Attribution-Share-Alike License 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+
+The language-identification model (`kotoshu://models/lid/lid-176`) is derived from the fastText project's [lid.176.ftz](https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz), distributed under the fastText [MIT license](https://github.com/facebookresearch/fastText/blob/main/LICENSE).
 
 ## Citation
 

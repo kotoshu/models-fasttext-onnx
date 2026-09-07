@@ -16,3 +16,7 @@ models/**/fasttext.*.fluency.vocab.json filter=lfs diff=lfs merge=lfs -text
 
 # Registry fixture fakes stay plain git (1-byte .onnx stand-ins)
 tests/registry_fixture/** -filter=lfs
+
+# LID vocab sidecar (plan 102) — LFS so the media host serves it
+# alongside the .onnx mirror (ACAO:*).
+models/lid/*.vocab.json filter=lfs diff=lfs merge=lfs -text
