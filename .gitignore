@@ -135,3 +135,11 @@ models/**/*.int4-g*.onnx
 models/**/*.int4-g*.vocab.json
 models/**/*.int4-mini.onnx
 models/**/*.int4-mini.vocab.json
+
+# int4-per-row tier candidates (plan 101: mini4/fluency4).
+# Same rule as the int4-group experiments: binaries local-only,
+# eval/reports/{lang}.{mini4,fluency4}.json committed.
+models/**/*.mini4.onnx
+models/**/*.mini4.vocab.json
+models/**/*.fluency4.onnx
+models/**/*.fluency4.vocab.json

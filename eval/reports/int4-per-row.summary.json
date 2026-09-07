@@ -1,0 +1,441 @@
+{
+  "purpose": "Plan 101: per-row int4 (packed nibbles) + fp16 row scale over the same vocab cuts as fluency/mini, gated against the unchanged eval and the int8 tier measurements.",
+  "row_format": {
+    "quantization": "int4-per-row",
+    "q_packed": "uint8 [vocab_size, ceil(dims/2)]; byte j of row r holds element 2j in the HIGH nibble and element 2j+1 in the LOW nibble, two's-complement signed nibbles in [-8, 7] (odd dims: trailing low nibble is padding); identical to the kotoshu-rs pack_row_int4 contract",
+    "row_scales": "fp16 [vocab_size]; scale = max(abs(row)) / 7.0 rounded to fp16, zero-guarded to 1.0",
+    "dequant": "value[i] = unpacked_nibble[i] * row_scales[row]",
+    "rounding": "nearest-even",
+    "scale_dtype": "fp16",
+    "kotoshu_rs_row_format": "nibble packing and one-scale-per-row match RowFormat::Int4PerRow (byte 0x04, metadata int4-per-row) but that contract carries ONE fp32 scale per row; fp16 scales need a scale-dtype flag (or fp32 scales) on the Rust reader side before a native load - plan 101 step 4, gated on this experiment passing"
+  },
+  "acceptance_rule": {
+    "rank_corr_within_of_int8": 0.001,
+    "top1": "gate check must hold (mini >= 0.85, fluency >= 0.95, thresholds unchanged)",
+    "comparability": "same seeded probe stream and identical vocab as the int8 tier runs, so deltas are apples-to-apples"
+  },
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ru",
+    "pt",
+    "it",
+    "pl"
+  ],
+  "per_language": {
+    "en": {
+      "mini4": {
+        "tier": "mini4",
+        "vocab_size": 10000,
+        "int4_bytes": 1522500,
+        "int8_bytes": 3040752,
+        "vocab_bytes": 202597,
+        "sha256": "6f48440808186cce083b348d4649d6e63cc69040f7bd193b7a8c44a1a115b425",
+        "rank_corr": 0.983611,
+        "int8_rank_corr": 0.999893,
+        "rank_corr_delta": -0.016282,
+        "top1_agreement": 1.0,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": 0.0,
+        "top1_n_probes_scored": 12,
+        "gate_passed": true,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      },
+      "fluency4": {
+        "tier": "fluency4",
+        "vocab_size": 50000,
+        "int4_bytes": 7602510,
+        "int8_bytes": 15200760,
+        "vocab_bytes": 1083218,
+        "sha256": "5888b10db0e0ff71d13fd28dfcb92c7ea42725880811afa3b88e89c5ffdfa8d4",
+        "rank_corr": 0.982742,
+        "int8_rank_corr": 0.999935,
+        "rank_corr_delta": -0.017193,
+        "top1_agreement": 0.846154,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.153846,
+        "top1_n_probes_scored": 26,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      }
+    },
+    "de": {
+      "mini4": {
+        "tier": "mini4",
+        "vocab_size": 10000,
+        "int4_bytes": 1522500,
+        "int8_bytes": 3040752,
+        "vocab_bytes": 210916,
+        "sha256": "825882a07f05fffe8610a42c0aa02d93e387c34eac0e6389051f35266240707a",
+        "rank_corr": 0.98044,
+        "int8_rank_corr": 0.999879,
+        "rank_corr_delta": -0.019439,
+        "top1_agreement": 0.8,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.2,
+        "top1_n_probes_scored": 15,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      },
+      "fluency4": {
+        "tier": "fluency4",
+        "vocab_size": 50000,
+        "int4_bytes": 7602510,
+        "int8_bytes": 15200760,
+        "vocab_bytes": 1163509,
+        "sha256": "012541241de7581c00567e9f59fdfb1f91c5ec46f4c6aaf362921ba6290d085e",
+        "rank_corr": 0.980017,
+        "int8_rank_corr": 0.999925,
+        "rank_corr_delta": -0.019908,
+        "top1_agreement": 0.8,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.2,
+        "top1_n_probes_scored": 25,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      }
+    },
+    "es": {
+      "mini4": {
+        "tier": "mini4",
+        "vocab_size": 10000,
+        "int4_bytes": 1522500,
+        "int8_bytes": 3040752,
+        "vocab_bytes": 209815,
+        "sha256": "6d7745778ab89614579f1c8fcc07e70cbdc8a7e1faa065fce822ece01d636dd5",
+        "rank_corr": 0.984994,
+        "int8_rank_corr": 0.9999,
+        "rank_corr_delta": -0.014906,
+        "top1_agreement": 0.809524,
+        "int8_top1_agreement": 0.952381,
+        "top1_delta": -0.142857,
+        "top1_n_probes_scored": 21,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      },
+      "fluency4": {
+        "tier": "fluency4",
+        "vocab_size": 50000,
+        "int4_bytes": 7602510,
+        "int8_bytes": 15200760,
+        "vocab_bytes": 1120547,
+        "sha256": "5f307ff0da5a903a952ad3323fbca1c4a0df899c4804e3c6862006f9f6458bc2",
+        "rank_corr": 0.984397,
+        "int8_rank_corr": 0.99994,
+        "rank_corr_delta": -0.015543,
+        "top1_agreement": 0.866667,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.133333,
+        "top1_n_probes_scored": 15,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      }
+    },
+    "fr": {
+      "mini4": {
+        "tier": "mini4",
+        "vocab_size": 10000,
+        "int4_bytes": 1522500,
+        "int8_bytes": 3040752,
+        "vocab_bytes": 209518,
+        "sha256": "6c5b31d1e372d67bb4f14c5cfec1b739409e2a4e3bbfd99dd37cd5789fee49ae",
+        "rank_corr": 0.983961,
+        "int8_rank_corr": 0.999895,
+        "rank_corr_delta": -0.015934,
+        "top1_agreement": 0.857143,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.142857,
+        "top1_n_probes_scored": 14,
+        "gate_passed": true,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      },
+      "fluency4": {
+        "tier": "fluency4",
+        "vocab_size": 50000,
+        "int4_bytes": 7602510,
+        "int8_bytes": 15200760,
+        "vocab_bytes": 1117033,
+        "sha256": "0d8abf3af7a32a70abb295d3d3b61f2784e7e9494ae1d73e8d64f57632f3445b",
+        "rank_corr": 0.983269,
+        "int8_rank_corr": 0.999937,
+        "rank_corr_delta": -0.016668,
+        "top1_agreement": 0.708333,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.291667,
+        "top1_n_probes_scored": 24,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      }
+    },
+    "ru": {
+      "mini4": {
+        "tier": "mini4",
+        "vocab_size": 10000,
+        "int4_bytes": 1522500,
+        "int8_bytes": 3040752,
+        "vocab_bytes": 274443,
+        "sha256": "0dfc0ff26cfba9c43cc72cf3d0e799fd121222ab7909d6457cb5972515c4e7d0",
+        "rank_corr": 0.980981,
+        "int8_rank_corr": 0.999881,
+        "rank_corr_delta": -0.018901,
+        "top1_agreement": 1.0,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": 0.0,
+        "top1_n_probes_scored": 8,
+        "gate_passed": true,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      },
+      "fluency4": {
+        "tier": "fluency4",
+        "vocab_size": 50000,
+        "int4_bytes": 7602510,
+        "int8_bytes": 15200760,
+        "vocab_bytes": 1495648,
+        "sha256": "3eaa2a93b176bcbfb7d7e41e66ec7a5cf9a2b141dbcb4fe0f8a0f57a23f3d027",
+        "rank_corr": 0.981051,
+        "int8_rank_corr": 0.999929,
+        "rank_corr_delta": -0.018878,
+        "top1_agreement": 0.823529,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.176471,
+        "top1_n_probes_scored": 17,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      }
+    },
+    "pt": {
+      "mini4": {
+        "tier": "mini4",
+        "vocab_size": 10000,
+        "int4_bytes": 1522500,
+        "int8_bytes": 3040752,
+        "vocab_bytes": 208629,
+        "sha256": "c6e74270e2c79b47fd4fcb4adc0748a9f9e5c9d3733d9857116a4f02e4f0b50e",
+        "rank_corr": 0.985299,
+        "int8_rank_corr": 0.999902,
+        "rank_corr_delta": -0.014603,
+        "top1_agreement": 0.882353,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.117647,
+        "top1_n_probes_scored": 17,
+        "gate_passed": true,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      },
+      "fluency4": {
+        "tier": "fluency4",
+        "vocab_size": 50000,
+        "int4_bytes": 7602510,
+        "int8_bytes": 15200760,
+        "vocab_bytes": 1119386,
+        "sha256": "ac84994fc63a8dd2bbdfb4817a8e776c72f3d6f81279519a9f285379b11648d6",
+        "rank_corr": 0.985024,
+        "int8_rank_corr": 0.999943,
+        "rank_corr_delta": -0.014919,
+        "top1_agreement": 0.809524,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.190476,
+        "top1_n_probes_scored": 21,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      }
+    },
+    "it": {
+      "mini4": {
+        "tier": "mini4",
+        "vocab_size": 10000,
+        "int4_bytes": 1522500,
+        "int8_bytes": 3040752,
+        "vocab_bytes": 208241,
+        "sha256": "a6f784802c9269cb805b669cf4495b2f35eb80b20e34d39ded5fcf31121e32c7",
+        "rank_corr": 0.983785,
+        "int8_rank_corr": 0.999895,
+        "rank_corr_delta": -0.01611,
+        "top1_agreement": 1.0,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": 0.0,
+        "top1_n_probes_scored": 9,
+        "gate_passed": true,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      },
+      "fluency4": {
+        "tier": "fluency4",
+        "vocab_size": 50000,
+        "int4_bytes": 7602510,
+        "int8_bytes": 15200760,
+        "vocab_bytes": 1113156,
+        "sha256": "bbed59b3849d7b952824f748679011d53a25c9d274a4ced7de47141b7c0fa928",
+        "rank_corr": 0.983981,
+        "int8_rank_corr": 0.999939,
+        "rank_corr_delta": -0.015958,
+        "top1_agreement": 0.8125,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.1875,
+        "top1_n_probes_scored": 16,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      }
+    },
+    "pl": {
+      "mini4": {
+        "tier": "mini4",
+        "vocab_size": 10000,
+        "int4_bytes": 1522500,
+        "int8_bytes": 3040752,
+        "vocab_bytes": 212432,
+        "sha256": "e7717378d75cdb274f9e93d498899f06adca42d8f3c559815d378051020dd4ef",
+        "rank_corr": 0.98188,
+        "int8_rank_corr": 0.999885,
+        "rank_corr_delta": -0.018005,
+        "top1_agreement": 0.916667,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.083333,
+        "top1_n_probes_scored": 12,
+        "gate_passed": true,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      },
+      "fluency4": {
+        "tier": "fluency4",
+        "vocab_size": 50000,
+        "int4_bytes": 7602510,
+        "int8_bytes": 15200760,
+        "vocab_bytes": 1153636,
+        "sha256": "302b52ec9a279c674c477210c94b2e03f574c204b669c1e0ffda47294431484e",
+        "rank_corr": 0.981826,
+        "int8_rank_corr": 0.999931,
+        "rank_corr_delta": -0.018106,
+        "top1_agreement": 0.923077,
+        "int8_top1_agreement": 1.0,
+        "top1_delta": -0.076923,
+        "top1_n_probes_scored": 13,
+        "gate_passed": false,
+        "within_0.001_of_int8": false,
+        "accepted": false
+      }
+    }
+  },
+  "size_audit_mb": {
+    "en": {
+      "mini4": {
+        "int4_onnx": 1.52,
+        "int8_onnx": 3.04,
+        "vocab_json": 0.2
+      },
+      "fluency4": {
+        "int4_onnx": 7.6,
+        "int8_onnx": 15.2,
+        "vocab_json": 1.08
+      }
+    },
+    "de": {
+      "mini4": {
+        "int4_onnx": 1.52,
+        "int8_onnx": 3.04,
+        "vocab_json": 0.21
+      },
+      "fluency4": {
+        "int4_onnx": 7.6,
+        "int8_onnx": 15.2,
+        "vocab_json": 1.16
+      }
+    },
+    "es": {
+      "mini4": {
+        "int4_onnx": 1.52,
+        "int8_onnx": 3.04,
+        "vocab_json": 0.21
+      },
+      "fluency4": {
+        "int4_onnx": 7.6,
+        "int8_onnx": 15.2,
+        "vocab_json": 1.12
+      }
+    },
+    "fr": {
+      "mini4": {
+        "int4_onnx": 1.52,
+        "int8_onnx": 3.04,
+        "vocab_json": 0.21
+      },
+      "fluency4": {
+        "int4_onnx": 7.6,
+        "int8_onnx": 15.2,
+        "vocab_json": 1.12
+      }
+    },
+    "ru": {
+      "mini4": {
+        "int4_onnx": 1.52,
+        "int8_onnx": 3.04,
+        "vocab_json": 0.27
+      },
+      "fluency4": {
+        "int4_onnx": 7.6,
+        "int8_onnx": 15.2,
+        "vocab_json": 1.5
+      }
+    },
+    "pt": {
+      "mini4": {
+        "int4_onnx": 1.52,
+        "int8_onnx": 3.04,
+        "vocab_json": 0.21
+      },
+      "fluency4": {
+        "int4_onnx": 7.6,
+        "int8_onnx": 15.2,
+        "vocab_json": 1.12
+      }
+    },
+    "it": {
+      "mini4": {
+        "int4_onnx": 1.52,
+        "int8_onnx": 3.04,
+        "vocab_json": 0.21
+      },
+      "fluency4": {
+        "int4_onnx": 7.6,
+        "int8_onnx": 15.2,
+        "vocab_json": 1.11
+      }
+    },
+    "pl": {
+      "mini4": {
+        "int4_onnx": 1.52,
+        "int8_onnx": 3.04,
+        "vocab_json": 0.21
+      },
+      "fluency4": {
+        "int4_onnx": 7.6,
+        "int8_onnx": 15.2,
+        "vocab_json": 1.15
+      }
+    }
+  },
+  "verdict": {
+    "accepted": false,
+    "text": "REJECT int4-per-row as a shipping tier: 16 of 16 language/tier candidates miss the plan 101 acceptance (rank_corr within 0.001 of the int8 tier on the identical probe stream; worst delta -0.019908). int8-per-row remains the shipped recipe. Measured, not assumed - same discipline as the SVD rejection."
+  },
+  "note": "Experiment only (plan 101): registry.json, manifest.json, tiers.json and the release workflow unchanged.",
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "generated_at": "2026-09-07T07:07:04Z"
+}

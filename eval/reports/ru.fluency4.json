@@ -1,0 +1,116 @@
+{
+  "language": "ru",
+  "tier": "fluency4",
+  "recipe": {
+    "dims": 300,
+    "vocab_size": 50000,
+    "quantization": "int4-per-row",
+    "reduction": "none (full 300 dims; int4-per-row quantization only)"
+  },
+  "metrics": {
+    "rank_corr": {
+      "mean_spearman": 0.9810505688602911,
+      "n_probes_scored": 2000,
+      "n_probes_skipped": 0,
+      "mean_comparisons_per_probe": 1499.7915,
+      "rank_range": [
+        50,
+        30000
+      ]
+    },
+    "top1_agreement": {
+      "agreement": 0.8235294117647058,
+      "n_probes_scored": 17,
+      "n_probes_skipped_typo": 383,
+      "n_probes_skipped_candidates": 0,
+      "mean_candidates_dropped_out_of_vocab": 0.2075,
+      "rank_range": [
+        1000,
+        30000
+      ]
+    },
+    "coverage": {
+      "frequency_weighted_coverage": 0.942668833516177,
+      "full_vocab_size": 100000,
+      "tier_vocab_size": 50000,
+      "weighting": "1/(rank+1)"
+    }
+  },
+  "gates": {
+    "thresholds": {
+      "top1_agreement_min": 0.95,
+      "rank_corr_min": 0.97
+    },
+    "checks": {
+      "rank_corr": true,
+      "top1_agreement": false
+    },
+    "passed": false
+  },
+  "metric_note": "top1_agreement is a proxy for the gem's spelling-correction rerank pipeline, not the pipeline itself: probes are single-edit typos drawn from the keyboard-layout-aware generator in eval/noise.py (QWERTY/QWERTZ/AZERTY/JCUKEN neighbor slips for Latin/Cyrillic, curated character confusions + transposition for ja/ko/zh) that are themselves in-vocabulary, the candidate set is the true word plus the top-20 nearest neighbours of the typo under the full model over a 20000-word sample window, and each model scores candidates by cosine to the typo. It will be replaced by gem conformance vectors (kotoshu-rs M3).",
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, crc32(language)])"
+  },
+  "typo_model": {
+    "generator": "eval/noise.py::make_typo",
+    "layouts": "mirrored from kotoshu gem lib/kotoshu/keyboard/layouts (qwerty/qwertz/azerty/jcuken)",
+    "cjk": "curated visual/phonetic confusion sets + transposition (not learned)"
+  },
+  "files": {
+    "tier_onnx": {
+      "path": "models/ru/fasttext.ru.fluency4.onnx",
+      "bytes": 7602510,
+      "sha256": "3eaa2a93b176bcbfb7d7e41e66ec7a5cf9a2b141dbcb4fe0f8a0f57a23f3d027"
+    },
+    "tier_vocab": {
+      "path": "models/ru/fasttext.ru.fluency4.vocab.json",
+      "bytes": 1495648,
+      "sha256": "17d2b81849d1a8256dd1ba61fdb4c6ecdc85638772e7d5e701060e42e740039c"
+    },
+    "full_onnx": {
+      "path": "models/ru/fasttext.ru.onnx",
+      "bytes": 120000415,
+      "sha256": "da4c11be5dd9a50ef7fc34304f22881de2ce4ecfde63fb11321d1a8bdb8f3e15"
+    }
+  },
+  "generated_at": "2026-09-07T07:06:48Z",
+  "quantization_check": {
+    "runtime_vs_dequant_max_abs": 0.0,
+    "runtime_vs_dequant_tol": 0.0001,
+    "spot_checked_indices": [
+      0,
+      1,
+      25000,
+      29999,
+      49999
+    ],
+    "dequant_vs_projected_max_abs": 0.3148242235183716,
+    "dequant_vs_projected_rms": 0.013334108516573906,
+    "note": "dequant_vs_projected_* are informational for int4; the binding gate is the fluency eval"
+  },
+  "row_format": {
+    "quantization": "int4-per-row",
+    "q_packed": "uint8 [vocab_size, ceil(dims/2)]; byte j of row r holds element 2j in the HIGH nibble and element 2j+1 in the LOW nibble, two's-complement signed nibbles in [-8, 7] (odd dims: trailing low nibble is padding); identical to the kotoshu-rs pack_row_int4 contract",
+    "row_scales": "fp16 [vocab_size]; scale = max(abs(row)) / 7.0 rounded to fp16, zero-guarded to 1.0",
+    "dequant": "value[i] = unpacked_nibble[i] * row_scales[row]",
+    "rounding": "nearest-even",
+    "scale_dtype": "fp16",
+    "kotoshu_rs_row_format": "nibble packing and one-scale-per-row match RowFormat::Int4PerRow (byte 0x04, metadata int4-per-row) but that contract carries ONE fp32 scale per row; fp16 scales need a scale-dtype flag (or fp32 scales) on the Rust reader side before a native load - plan 101 step 4, gated on this experiment passing"
+  },
+  "experiment_note": "Experiment only (plan 101): evaluated against the shipped int8 tier thresholds and its measured numbers; registry.json, manifest.json, tiers.json and release workflow unchanged.",
+  "int8_baseline": {
+    "tier": "fluency",
+    "report": "eval/reports/ru.fluency.json",
+    "rank_corr": 0.9999285809562064,
+    "top1_agreement": 1.0,
+    "top1_n_probes_scored": 17
+  },
+  "plan101_acceptance": {
+    "rank_corr_within_0.001_of_int8": false,
+    "rank_corr_delta": -0.01887801209591533,
+    "top1_gate_holds": false,
+    "top1_delta": -0.17647058823529416,
+    "accepted": false
+  }
+}
