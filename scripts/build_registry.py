@@ -35,7 +35,7 @@ MEDIA_URL = "https://media.githubusercontent.com/media/kotoshu/models-fasttext-o
 LICENSE = "CC-BY-SA-3.0"
 MIN_ENGINE_VERSION = "0.7"
 FULL_DIMS = 300
-KNOWN_TIERS = ("fluency", "mini")
+KNOWN_TIERS = ("fluency", "mini", "buckets")
 DEV_VERSION = "0.0.0-dev"
 
 
@@ -62,6 +62,30 @@ def build_resource(lang, tier_name, dims, vocab_size, quantization,
     # media host serves CORS-fetchable bytes for browsers; the raw host
     # would serve 134-byte pointer stubs, hence the media URL.
     mirror = f"{MEDIA_URL}/main/models/{lang}/{stem}.onnx"
+    # The buckets sibling (plan 103) carries its bucket-id map inside the
+    # artifact itself (the bucket_ids tensor) - no vocab.json sibling.
+    if tier_name == "buckets":
+        return {
+            "type": "model",
+            "language": lang,
+            "tier": {
+                "name": tier_name,
+                "dims": dims,
+                "vocab_size": vocab_size,
+                "quantization": quantization,
+            },
+            "version": version,
+            "urls": {
+                "primary": f"{REPO_URL}/releases/download/{tag}/{stem}.onnx" if tag else None,
+                "mirror": mirror if tag else None,
+            },
+            "vocab_url": None,
+            "sha256": sha256,
+            "size_bytes": size_bytes,
+            "license": LICENSE,
+            "min_engine_version": MIN_ENGINE_VERSION,
+            "eval_ref": eval_ref,
+        }
     return {
         "type": "model",
         "language": lang,

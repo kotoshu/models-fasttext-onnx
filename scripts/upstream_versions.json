@@ -8,7 +8,11 @@
       "size_bytes": null,
       "pinned_at": "2026-09-02",
       "converted_manifest_sha256": "ec110016475e4760f043e18ec409d406332ad71f5028619020512a40c64b0196",
-      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml",
+      "bin_url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.de.300.bin.gz",
+      "bin_sha256": "05174bb3881664f8e1634397e741eb1867f96df14be81408aade432d8e666101",
+      "bin_size_bytes": 4496980947,
+      "bin_pinned_at": "2026-09-07"
     },
     "en": {
       "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.vec.gz",
@@ -17,7 +21,11 @@
       "size_bytes": null,
       "pinned_at": "2026-09-02",
       "converted_manifest_sha256": "cf826747600aa353d9be18a47e63cbd3929e742088af338096edcf54aad17d36",
-      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml"
+      "notes": "sha256/etag/size filled on first verification run; see .github/workflows/upstream-poll.yml",
+      "bin_url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.bin.gz",
+      "bin_sha256": "cac6b2d4301055c539bf90f938beb3a1cb017bf7ee36760d9c9835de357e5a1a",
+      "bin_size_bytes": 4503593528,
+      "bin_pinned_at": "2026-09-07"
     },
     "es": {
       "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.es.300.vec.gz",

@@ -32,7 +32,7 @@
     "resources": {
       "type": "object",
       "propertyNames": {
-        "pattern": "^kotoshu://models/(lid/lid-176|[a-z]{2}/(full|fluency|mini))$"
+        "pattern": "^kotoshu://models/(lid/lid-176|[a-z]{2}/(full|fluency|mini|buckets))$"
       },
       "additionalProperties": {
         "$ref": "#/$defs/resource"
@@ -78,7 +78,8 @@
                 "full",
                 "fluency",
                 "mini",
-                "lid-176"
+                "lid-176",
+                "buckets"
               ]
             },
             "dims": {
