@@ -32,7 +32,7 @@
     "resources": {
       "type": "object",
       "propertyNames": {
-        "pattern": "^kotoshu://models/[a-z]{2}/(full|fluency|mini)$"
+        "pattern": "^kotoshu://models/(lid/lid-176|[a-z]{2}/(full|fluency|mini))$"
       },
       "additionalProperties": {
         "$ref": "#/$defs/resource"
@@ -62,7 +62,7 @@
         },
         "language": {
           "type": "string",
-          "pattern": "^[a-z]{2}$"
+          "pattern": "^(lid|[a-z]{2})$"
         },
         "tier": {
           "type": "object",
@@ -77,7 +77,8 @@
               "enum": [
                 "full",
                 "fluency",
-                "mini"
+                "mini",
+                "lid-176"
               ]
             },
             "dims": {
@@ -144,7 +145,11 @@
           "minimum": 0
         },
         "license": {
-          "const": "CC-BY-SA-3.0"
+          "enum": [
+            "CC-BY-SA-3.0",
+            "MIT"
+          ],
+          "description": "CC-BY-SA-3.0 for the crawl-vector embeddings; MIT for fastText-made models (lid.176)"
         },
         "min_engine_version": {
           "type": "string"

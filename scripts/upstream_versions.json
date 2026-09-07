@@ -1,5 +1,5 @@
 {
-  "comment": "Pins for the upstream fastText Common Crawl archives the active models were converted from (per manifest.json). The 9 legacy languages were converted before any pin file existed, so their sha256_vec_gz/etag/size start null - the weekly poll (.github/workflows/upstream-poll.yml) reports drift against pinned values only. The plan-77 (batch 1) and plan-83 (batch 2) languages were pinned from freshly downloaded archives. Filling a null pin is a deliberate human step; the poll never commits, downloads, or converts.",
+  "comment": "Pins for the upstream fastText sources the active models were converted from (Common Crawl vectors per language, plus the lid.176 language-identification model) (per manifest.json). The 9 legacy languages were converted before any pin file existed, so their sha256_vec_gz/etag/size start null - the weekly poll (.github/workflows/upstream-poll.yml) reports drift against pinned values only. The plan-77 (batch 1) and plan-83 (batch 2) languages were pinned from freshly downloaded archives. Filling a null pin is a deliberate human step; the poll never commits, downloads, or converts.",
   "sources": {
     "de": {
       "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.de.300.vec.gz",
@@ -495,6 +495,15 @@
       "pinned_at": "2026-09-06",
       "converted_manifest_sha256": "5b4f58b1df6c63cc17ef8a6061c3481d4578838b350e2e65e15f5582d5dc6c3e",
       "notes": "Norwegian Bokmal has no cc.nb archive; converted from cc.no per the owner-approved no->nb mapping (plan 83 proposal, registry v1.3.0). sha256/etag/size recorded from the downloaded archive at conversion time."
+    },
+    "lid": {
+      "url": "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz",
+      "sha256_vec_gz": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+      "etag": null,
+      "size_bytes": 938013,
+      "pinned_at": "2026-09-07",
+      "converted_manifest_sha256": null,
+      "notes": "sha256 is of the raw lid.176.ftz (not .vec.gz like the cc pins); converted by scripts/build_lid.py per plan 102."
     }
   }
 }

@@ -1,0 +1,316 @@
+{
+  "generated_at": "2026-09-07T07:29:14Z",
+  "source": {
+    "url": "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz",
+    "sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+    "size_bytes": 938013,
+    "labels": 176,
+    "dim": 16,
+    "nwords": 7235,
+    "pruneidx_size": 42765,
+    "input_rows": 50000,
+    "loss": "hs",
+    "license": "MIT (fastText)"
+  },
+  "artifact": {
+    "onnx": "models/lid/lid.176.onnx",
+    "vocab": "models/lid/lid.176.vocab.json",
+    "quantization": "int8-per-row",
+    "onnx_bytes": 1012025,
+    "vocab_bytes": 1778607,
+    "sha256": "8f0c0ea57b100c8467c62a20365df9d895f9d00ad90fc3ba7da49df85db4eaeb",
+    "vocab_sha256": "4e37eafc4950faab99e15537928c55681bd6e0c8661a5b839328d79840355b2c"
+  },
+  "gates": {
+    "top1_agreement_min": 1.0,
+    "int8_top1_agreement": 1.0,
+    "int8_max_score_drift": 0.000482,
+    "mirror_budget_bytes": 20971520,
+    "int8_payload_bytes": 1011264,
+    "chosen": "int8-per-row",
+    "passed": true
+  },
+  "runtime_check": {
+    "runtime_vs_reference_max_abs": 2.384185791015625e-07,
+    "tolerance": 0.005
+  },
+  "corpus": "lid_probe.jsonl",
+  "samples": 55,
+  "baseline": [
+    {
+      "id": "en-1",
+      "code": "en",
+      "score": 0.8699199557304382
+    },
+    {
+      "id": "en-2",
+      "code": "en",
+      "score": 0.8849636912345886
+    },
+    {
+      "id": "en-3",
+      "code": "en",
+      "score": 0.9171319007873535
+    },
+    {
+      "id": "en-4",
+      "code": "en",
+      "score": 0.991026759147644
+    },
+    {
+      "id": "de-1",
+      "code": "de",
+      "score": 0.9932846426963806
+    },
+    {
+      "id": "de-2",
+      "code": "de",
+      "score": 0.999974250793457
+    },
+    {
+      "id": "de-3",
+      "code": "de",
+      "score": 0.7957926392555237
+    },
+    {
+      "id": "de-4",
+      "code": "de",
+      "score": 0.9999004006385803
+    },
+    {
+      "id": "es-1",
+      "code": "es",
+      "score": 0.8806792497634888
+    },
+    {
+      "id": "es-2",
+      "code": "es",
+      "score": 0.9802184104919434
+    },
+    {
+      "id": "es-3",
+      "code": "es",
+      "score": 0.9262376427650452
+    },
+    {
+      "id": "es-4",
+      "code": "es",
+      "score": 0.9948879480361938
+    },
+    {
+      "id": "fr-1",
+      "code": "fr",
+      "score": 0.9125719666481018
+    },
+    {
+      "id": "fr-2",
+      "code": "fr",
+      "score": 0.9966675043106079
+    },
+    {
+      "id": "fr-3",
+      "code": "fr",
+      "score": 0.9722260236740112
+    },
+    {
+      "id": "fr-4",
+      "code": "fr",
+      "score": 0.9583625793457031
+    },
+    {
+      "id": "it-1",
+      "code": "it",
+      "score": 0.9617017507553101
+    },
+    {
+      "id": "it-2",
+      "code": "it",
+      "score": 0.9975452423095703
+    },
+    {
+      "id": "it-3",
+      "code": "it",
+      "score": 0.9609604477882385
+    },
+    {
+      "id": "it-4",
+      "code": "it",
+      "score": 0.992184579372406
+    },
+    {
+      "id": "pt-1",
+      "code": "pt",
+      "score": 0.4962669014930725
+    },
+    {
+      "id": "pt-2",
+      "code": "pt",
+      "score": 0.9937304854393005
+    },
+    {
+      "id": "pt-3",
+      "code": "pt",
+      "score": 0.8673223853111267
+    },
+    {
+      "id": "pt-4",
+      "code": "pt",
+      "score": 0.9896423816680908
+    },
+    {
+      "id": "ru-1",
+      "code": "ru",
+      "score": 0.9564744234085083
+    },
+    {
+      "id": "ru-2",
+      "code": "ru",
+      "score": 0.9604091048240662
+    },
+    {
+      "id": "ru-3",
+      "code": "ru",
+      "score": 0.9911524057388306
+    },
+    {
+      "id": "ru-4",
+      "code": "ru",
+      "score": 0.9559134840965271
+    },
+    {
+      "id": "ja-1",
+      "code": "ja",
+      "score": 0.9868075251579285
+    },
+    {
+      "id": "ja-2",
+      "code": "ja",
+      "score": 1.0000498294830322
+    },
+    {
+      "id": "ja-3",
+      "code": "ja",
+      "score": 1.0000009536743164
+    },
+    {
+      "id": "ja-4",
+      "code": "ja",
+      "score": 1.0000449419021606
+    },
+    {
+      "id": "zh-1",
+      "code": "zh",
+      "score": 0.9925511479377747
+    },
+    {
+      "id": "zh-2",
+      "code": "zh",
+      "score": 0.9998976588249207
+    },
+    {
+      "id": "zh-3",
+      "code": "zh",
+      "score": 0.9968137741088867
+    },
+    {
+      "id": "zh-4",
+      "code": "zh",
+      "score": 0.9998914003372192
+    },
+    {
+      "id": "ko-1",
+      "code": "ko",
+      "score": 0.9999266266822815
+    },
+    {
+      "id": "ko-2",
+      "code": "ko",
+      "score": 1.000067949295044
+    },
+    {
+      "id": "ko-3",
+      "code": "ko",
+      "score": 1.0000697374343872
+    },
+    {
+      "id": "ko-4",
+      "code": "ko",
+      "score": 1.0000425577163696
+    },
+    {
+      "id": "ar-1",
+      "code": "ar",
+      "score": 0.9768632054328918
+    },
+    {
+      "id": "ar-2",
+      "code": "ar",
+      "score": 0.9789490103721619
+    },
+    {
+      "id": "ar-3",
+      "code": "ar",
+      "score": 0.9900879263877869
+    },
+    {
+      "id": "ar-4",
+      "code": "ar",
+      "score": 0.9938318729400635
+    },
+    {
+      "id": "he-1",
+      "code": "he",
+      "score": 0.9998320937156677
+    },
+    {
+      "id": "he-2",
+      "code": "he",
+      "score": 0.9999692440032959
+    },
+    {
+      "id": "he-3",
+      "code": "he",
+      "score": 0.9998297095298767
+    },
+    {
+      "id": "he-4",
+      "code": "he",
+      "score": 0.9989098906517029
+    },
+    {
+      "id": "hi-1",
+      "code": "hi",
+      "score": 0.9796487092971802
+    },
+    {
+      "id": "hi-2",
+      "code": "hi",
+      "score": 0.9908807277679443
+    },
+    {
+      "id": "hi-3",
+      "code": "hi",
+      "score": 0.9912513494491577
+    },
+    {
+      "id": "hi-4",
+      "code": "hi",
+      "score": 0.9459125399589539
+    },
+    {
+      "id": "edge-empty",
+      "code": "en",
+      "score": 0.12450417876243591
+    },
+    {
+      "id": "edge-digits",
+      "code": "en",
+      "score": 0.12450417876243591
+    },
+    {
+      "id": "edge-mixed",
+      "code": "en",
+      "score": 0.9266639947891235
+    }
+  ]
+}
