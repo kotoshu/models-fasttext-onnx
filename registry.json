@@ -1,7 +1,7 @@
 {
   "spec": "kotoshu.resources/v1",
   "registry_version": 6,
-  "generated_at": "2026-09-07T07:31:06Z",
+  "generated_at": "2026-09-07T08:21:54Z",
   "release_tag": "v1.4.0",
   "resources": {
     "kotoshu://models/ar/fluency": {

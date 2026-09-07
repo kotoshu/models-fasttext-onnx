@@ -150,10 +150,13 @@ def main():
     # flavor ("0.0.0-dev") and the plan's v1.0.0 -> 1.0.0 example.
     version = (args.tag[1:] if args.tag.startswith("v") else args.tag) if args.tag else DEV_VERSION
 
+    # "lid" is the language-identification pseudo-language (plan 102):
+    # its registry entry comes from models/lid/lid.json below, not the
+    # per-language full/tier loop.
     languages = sorted({
         path.split("/")[1]
         for path, entry in manifest["resources"].items()
-        if entry.get("type") == "onnx"
+        if entry.get("type") == "onnx" and not path.startswith("models/lid/")
     })
 
     resources = {}

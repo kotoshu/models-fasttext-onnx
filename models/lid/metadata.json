@@ -1,0 +1,12 @@
+{
+  "version": "2026-09-07T09:29:14Z",
+  "language": "lid",
+  "type": "onnx",
+  "file": "lid.176.onnx",
+  "source_model": "lid.176.ftz (fastText supervised language identification, 176 labels)",
+  "conversion_method": "build_lid.py",
+  "opset_version": 11,
+  "upstream": "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz",
+  "upstream_sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+  "license": "MIT"
+}
