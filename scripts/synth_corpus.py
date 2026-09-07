@@ -41,7 +41,7 @@ from noise import make_typo  # noqa: E402
 # synthetic corpus. ja/ko/zh ride their real corpora; en/de already
 # shipped buckets in v1.4.0.
 SYNTH_LANGS = (
-    "ar", "bg", "br", "ca", "cs", "cy", "el", "eo", "et", "eu", "fa",
+    "ar", "bg", "br", "ca", "cs", "cy", "da", "el", "eo", "et", "eu", "fa",
     "fy", "ga", "gd", "gl", "he", "hr", "hu", "hy", "ia", "id", "is",
     "it", "ka", "la", "lb", "lt", "lv", "mk", "mn", "nb", "ne", "nl",
     "nn", "oc", "pl", "ro", "sk", "sl", "sr", "sv", "tk", "tr", "uk",
