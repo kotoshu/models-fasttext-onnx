@@ -25,4 +25,11 @@ assets all 200; eval probe on 3 sampled languages shows the OOV-resolved
 fraction improving as en did.
 
 ## Status
-Pending
+Executed 2026-09-08 (PR pending). 45 of the 53 languages shipped a
+buckets sibling (47 with en/de); 8 rejected on measurement (ar cs fa
+he ja pl vi zh) - all fail the plan 103 fidelity gates at every K in
+and far beyond the row budget, with full ladders in
+eval/reports/{lang}.buckets.json. sr sv exceed the 15MB target (21.9MB
+each, smallest gate-passing K); recorded in their tiers.json. Eval
+spot-check (real-corpus probes, overlap-disclosed): fr 0.696 to 1.000,
+es 0.667 to 1.000, ru 0.623 to 1.000 OOV-resolved.
