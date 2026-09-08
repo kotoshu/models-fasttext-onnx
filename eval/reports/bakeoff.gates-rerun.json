@@ -1,0 +1,70 @@
+{
+  "purpose": "plan 111 baseline A: current tiers through the existing gates, re-run fresh on this branch (branch of origin/main 84193e8) 2026-09-08; the committed {lang}.{tier}.json ladder reports are untouched history",
+  "reruns": [
+    {
+      "language": "en",
+      "tier": "fluency",
+      "rank_corr": 0.9999,
+      "top1_agreement": 1.0,
+      "coverage": 0.9427,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "tier": "mini",
+      "rank_corr": 0.9999,
+      "top1_agreement": 1.0,
+      "coverage": 0.8096,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "tier": "fluency",
+      "rank_corr": 0.9999,
+      "top1_agreement": 1.0,
+      "coverage": 0.9427,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "tier": "mini",
+      "rank_corr": 0.9999,
+      "top1_agreement": 1.0,
+      "coverage": 0.8096,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "tier": "fluency",
+      "rank_corr": 0.9999,
+      "top1_agreement": 1.0,
+      "coverage": 0.9427,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "tier": "mini",
+      "rank_corr": 0.9999,
+      "top1_agreement": 0.9524,
+      "coverage": 0.8096,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "tier": "fluency",
+      "rank_corr": 0.9999,
+      "top1_agreement": 1.0,
+      "coverage": 0.9427,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "tier": "mini",
+      "rank_corr": 0.9999,
+      "top1_agreement": 1.0,
+      "coverage": 0.8096,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}
