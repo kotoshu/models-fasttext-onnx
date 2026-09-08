@@ -1,0 +1,100 @@
+{
+  "plan": "111 embedding bakeoff",
+  "decision_rule": {
+    "rule": "a candidate SHIPs only if it beats the fluency tier corpus top-5 on >= 3 of 4 languages (en de ru es) AND adds <= 30 MB int8 AND keeps median per-suggest latency <= 100 ms on the bench hardware",
+    "reject_on_data_is_complete": "a data-backed rejection closes the candidate, like the int4 ladder"
+  },
+  "candidates": {
+    "b_rerank": {
+      "int8_mb": 23.03,
+      "within_size_cap": true
+    },
+    "c_typo_biencoder": {
+      "int8_mb": 0.481,
+      "within_size_cap": true
+    },
+    "d_modernbert_base": {
+      "int8_mb": 149.91,
+      "within_size_cap": false
+    },
+    "d_modernbert_small": {
+      "status": "not_found_on_hub"
+    }
+  },
+  "languages": {
+    "en": {
+      "pool": 2000,
+      "fluency_top5": 0.2521539345203906,
+      "b_top5_ctx": 0.1945,
+      "b_top5_noctx": 0.1985,
+      "b_slate_recall": 0.4285,
+      "c_top5": 0.2140077821011673,
+      "c_full_baseline_on_same_subset_top5": 0.14396887159533073,
+      "c_n": 257,
+      "c_excluded": 1743,
+      "d_top5": 0.0395,
+      "latency_median_ms": {
+        "a_full": 7.3273335001431406,
+        "b_rerank": 818.6226249963511,
+        "c_biencoder": 5.24870801018551,
+        "d_modernbert": 41.7902295012027
+      }
+    },
+    "de": {
+      "pool": 72,
+      "fluency_top5": 0.3968253968253968,
+      "b_top5_ctx": 0.2361111111111111,
+      "b_top5_noctx": 0.3472222222222222,
+      "b_slate_recall": 0.6805555555555556,
+      "c_top5": 0.625,
+      "c_full_baseline_on_same_subset_top5": 0.375,
+      "c_n": 8,
+      "c_excluded": 64,
+      "d_top5": 0.1111111111111111,
+      "latency_median_ms": {
+        "a_full": 7.873833004850894,
+        "b_rerank": 808.6931665020529,
+        "c_biencoder": 3.729667019797489,
+        "d_modernbert": 38.792666484368965
+      }
+    },
+    "ru": {
+      "pool": 139,
+      "fluency_top5": 0.4435483870967742,
+      "b_top5_ctx": 0.06474820143884892,
+      "b_top5_noctx": 0.16546762589928057,
+      "b_slate_recall": 0.697841726618705,
+      "c_top5": 0.4444444444444444,
+      "c_full_baseline_on_same_subset_top5": 0.4444444444444444,
+      "c_n": 9,
+      "c_excluded": 130,
+      "d_top5": 0.23741007194244604,
+      "latency_median_ms": {
+        "a_full": 9.09624999621883,
+        "b_rerank": 805.0007079727948,
+        "c_biencoder": 4.461708012968302,
+        "d_modernbert": 37.81658300431445
+      }
+    },
+    "es": {
+      "pool": 86,
+      "fluency_top5": 0.4931506849315068,
+      "b_top5_ctx": 0.43023255813953487,
+      "b_top5_noctx": 0.4883720930232558,
+      "b_slate_recall": 0.7093023255813954,
+      "c_top5": 0.3076923076923077,
+      "c_full_baseline_on_same_subset_top5": 0.38461538461538464,
+      "c_n": 13,
+      "c_excluded": 73,
+      "d_top5": 0.03488372093023256,
+      "latency_median_ms": {
+        "a_full": 6.890770484460518,
+        "b_rerank": 807.4610415205825,
+        "c_biencoder": 4.636666504666209,
+        "d_modernbert": 35.645499505335465
+      }
+    }
+  },
+  "hardware": "Apple M1 Max (arm64), CPUExecutionProvider, onnxruntime 1.23.2",
+  "generated_at": "2026-09-08T23:50:38Z"
+}
