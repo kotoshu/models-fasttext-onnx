@@ -22,7 +22,25 @@
       "vocab_bytes": 281585,
       "eval_ref": "eval/reports/hy.mini.json",
       "source_full_sha256": "d7bccae6e7d269e7726f6368d99d577ca0cba64009d48a96cfeecd7deddc09bd"
+    },
+    "buckets": {
+      "dims": 300,
+      "vocab_size": 38233,
+      "quantization": "int8-per-row",
+      "bytes": 11929559,
+      "sha256": "e53a9ae3b585b435d1523f0fa9f6f6452b1bd587d8a731ea7614268ddabc5877",
+      "vocab_sha256": null,
+      "vocab_bytes": null,
+      "eval_ref": "eval/reports/hy.buckets.json",
+      "source_bin_sha256": "1524ad566e84d165913ebaf3d15e96485d318cbf016231d08bd4a28769aabb7a",
+      "bucket_count": 2000000,
+      "buckets": 38233,
+      "usage_top_k": 32768,
+      "demand_rows": 8589,
+      "minn": 5,
+      "maxn": 5,
+      "parity_max_abs": 0.014186017215251923
     }
   },
-  "generated_at": "2026-09-05T11:36:49Z"
+  "generated_at": "2026-09-08T08:59:42Z"
 }
