@@ -26,7 +26,11 @@ SPEC = "kotoshu.resources/v1"
 # a new resource kind under the pseudo-language "lid" (release tag
 # v1.4.0; the slot plan 101 reserved for int4 tiers went unused - the
 # int4 experiment failed its gates, see eval/reports/ and 7b486d4).
-REGISTRY_VERSION = 6
+# 7: plan 09 bucket-table expansion - buckets siblings for 45 more
+# languages under release tag v1.5.0 (en/de shipped in v1.4.0). Eight
+# languages (ar cs fa he ja pl vi zh) failed the plan 103 fidelity
+# gates at every K and ship no artifact; reports in eval/reports/.
+REGISTRY_VERSION = 7
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
 # media host serves the real bytes. Plain-git files (vocab, manifests)
