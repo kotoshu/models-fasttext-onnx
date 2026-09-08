@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-09-08T08:12:25Z",
+  "generated_at": "2026-09-08T09:01:50Z",
   "repo_version": "v1",
-  "resource_count": 372,
+  "resource_count": 376,
   "language_count": 56,
   "resources": {
     "models/ar/fasttext.ar.fluency.onnx": {
@@ -825,6 +825,16 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/et/fasttext.et.buckets.onnx": {
+      "size": 11832527,
+      "sha256": "db785be8eb0052b3b2425853a7b85861cf1e4efbe45b3bbdcd4cf0bce8595931",
+      "language": "et",
+      "type": "onnx",
+      "source": "cc.et.300.vec",
+      "fasttext_source": "cc.et.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/et/fasttext.et.fluency.onnx": {
       "size": 15200760,
       "sha256": "cf4ea8ad797e74113e991580c900d463f03b31a71758b92fd74875012c2c4703",
@@ -1562,6 +1572,16 @@
       "type": "vocab",
       "source": "cc.hu.300.vec",
       "fasttext_source": "cc.hu.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/hy/fasttext.hy.buckets.onnx": {
+      "size": 11929559,
+      "sha256": "e53a9ae3b585b435d1523f0fa9f6f6452b1bd587d8a731ea7614268ddabc5877",
+      "language": "hy",
+      "type": "onnx",
+      "source": "cc.hy.300.vec",
+      "fasttext_source": "cc.hy.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -2506,6 +2526,16 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/nb/fasttext.nb.buckets.onnx": {
+      "size": 11807255,
+      "sha256": "0d9ec862b785f839f5d32059a0608d5b2e90c4806990e9e272bb164eff228126",
+      "language": "nb",
+      "type": "onnx",
+      "source": "cc.no.300.vec",
+      "fasttext_source": "cc.no.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/nb/fasttext.nb.fluency.onnx": {
       "size": 15200760,
       "sha256": "13feee1424c447b02ca90cbd5d6dc3ed63b70202e18fca7d6eeff7c1e5885abf",
@@ -3083,6 +3113,16 @@
       "type": "vocab",
       "source": "cc.ru.300.vec",
       "fasttext_source": "cc.ru.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/sk/fasttext.sk.buckets.onnx": {
+      "size": 22003103,
+      "sha256": "1095441b0ae8c64971bc04b1a982c4bb26d37cdff4f9997ec6d5cbb20789fce3",
+      "language": "sk",
+      "type": "onnx",
+      "source": "cc.sk.300.vec",
+      "fasttext_source": "cc.sk.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
