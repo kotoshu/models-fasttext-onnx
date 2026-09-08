@@ -12,7 +12,7 @@ from pathlib import Path
 # ja/ko/zh manifest entries predate opset recording; the conversion
 # pipeline is uniform, so they fall back to this value.
 DEFAULT_OPSET = 11
-TIER_ORDER = {"mini": 0, "fluency": 1, "full": 2}
+TIER_ORDER = {"mini": 0, "fluency": 1, "full": 2, "buckets": 3, "lid-176": 0}
 LICENSE_LINE = "CC-BY-SA-3.0 (derived from FastText pretrained vectors)"
 
 
