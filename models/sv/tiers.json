@@ -39,7 +39,8 @@
       "demand_rows": 7696,
       "minn": 5,
       "maxn": 5,
-      "parity_max_abs": 0.012690186500549316
+      "parity_max_abs": 0.012690186500549316,
+      "size_note": "Plan 09 size discipline deviation, recorded per plan: the 15MB target is unreachable - K=32768 agree=0.682 cos=0.765; K=49152 agree=0.693 cos=0.775; K=65536 agree=0.710 cos=0.781 - so K=65536 (the smallest gate-passing rung, 21.9MB) ships instead of a lower K."
     }
   },
   "generated_at": "2026-09-07T22:08:09Z"
