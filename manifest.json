@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-09-08T09:01:50Z",
+  "generated_at": "2026-09-08T11:20:53Z",
   "repo_version": "v1",
-  "resource_count": 376,
+  "resource_count": 379,
   "language_count": 56,
   "resources": {
     "models/ar/fasttext.ar.fluency.onnx": {
@@ -2736,6 +2736,16 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/nn/fasttext.nn.buckets.onnx": {
+      "size": 11764199,
+      "sha256": "cb378c77dbd04b55c0992aa0a4d21a23df9c80794c09c24aea085c23f22199f8",
+      "language": "nn",
+      "type": "onnx",
+      "source": "cc.nn.300.vec",
+      "fasttext_source": "cc.nn.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/nn/fasttext.nn.fluency.onnx": {
       "size": 15200760,
       "sha256": "361122853a1127f31a20c3af85b0f11c0ef353413100f36b12aa3e7c650988bc",
@@ -2926,6 +2936,16 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/pt/fasttext.pt.buckets.onnx": {
+      "size": 10282823,
+      "sha256": "118d831e3af91ea43047446b7e1de59221f5b0a3bc3f45ac93ba3d6f0bf40691",
+      "language": "pt",
+      "type": "onnx",
+      "source": "cc.pt.300.vec",
+      "fasttext_source": "cc.pt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/pt/fasttext.pt.fluency.onnx": {
       "size": 15200760,
       "sha256": "fb8695c4be60d238e9aaa0f211defb93ea4d94fea5cb85ad282bb87dc5402494",
@@ -2983,6 +3003,16 @@
       "type": "vocab",
       "source": "cc.pt.300.vec",
       "fasttext_source": "cc.pt.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ro/fasttext.ro.buckets.onnx": {
+      "size": 11799767,
+      "sha256": "29b05cd18be1566c7ac146487f73876af3b0ff444c14510a1dc82a88a85fffa4",
+      "language": "ro",
+      "type": "onnx",
+      "source": "cc.ro.300.vec",
+      "fasttext_source": "cc.ro.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
