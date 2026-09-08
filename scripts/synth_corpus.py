@@ -38,14 +38,17 @@ from noise import make_typo  # noqa: E402
 
 # Languages with a real GitHub-corpus file ({lang}.json) are excluded;
 # everything else the registry serves that noise.py can corrupt gets a
-# synthetic corpus. ja/ko/zh ride their real corpora; en/de already
-# shipped buckets in v1.4.0.
+# synthetic corpus. ja/ko/zh HAVE real corpus files, but their typo
+# corrections (short CJK cores) are almost never in the mini vocab, so
+# the exporter filters them down to a handful of degenerate probes -
+# they synth-generate like everyone else. en/de already shipped
+# buckets in v1.4.0.
 SYNTH_LANGS = (
     "ar", "bg", "br", "ca", "cs", "cy", "da", "el", "eo", "et", "eu", "fa",
     "fy", "ga", "gd", "gl", "he", "hr", "hu", "hy", "ia", "id", "is",
-    "it", "ka", "la", "lb", "lt", "lv", "mk", "mn", "nb", "ne", "nl",
-    "nn", "oc", "pl", "ro", "sk", "sl", "sr", "sv", "tk", "tr", "uk",
-    "vi",
+    "it", "ja", "ka", "ko", "la", "lb", "lt", "lv", "mk", "mn", "nb",
+    "ne", "nl", "nn", "oc", "pl", "ro", "sk", "sl", "sr", "sv", "tk",
+    "tr", "uk", "vi", "zh",
 )
 
 # Demand/gate probe budget of the exporter: DEMAND_PAIRS=2000 top pairs
