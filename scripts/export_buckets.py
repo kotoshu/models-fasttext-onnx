@@ -132,7 +132,7 @@ def fasttext_hash(ngram: str) -> int:
     """FNV-1a 32 over the UTF-8 bytes, sign-extended per byte — the exact
     hash fastText's Dictionary::hash applies (bytes >= 0x80 sign-extend)."""
     h = FNV_BASIS
-    for byte in ngram.encode("utf-8"):
+    for byte in ngram.encode("utf-8", "surrogateescape"):
         if byte >= 0x80:
             byte -= 256  # int8_t(b) zero-extended to uint32
         h = ((h ^ (byte & 0xFFFFFFFF)) * FNV_PRIME) & 0xFFFFFFFF
@@ -232,7 +232,7 @@ def parse_bin_header(handle) -> tuple[BinHeader, list[tuple[str, int]]]:
         entry_type = read_exact(handle, 1)[0]
         if entry_type != 0:  # entry_type::word
             raise ValueError("label entry in dictionary")
-        words.append((chars.decode("utf-8"), count))
+        words.append((chars.decode("utf-8", "surrogateescape"), count))
 
     header = BinHeader(args, nwords, args["bucket"], ntokens)
     if size_ != nwords:
