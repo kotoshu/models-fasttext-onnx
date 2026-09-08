@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-09-08T04:04:58Z",
+  "generated_at": "2026-09-08T07:47:31Z",
   "repo_version": "v1",
-  "resource_count": 367,
+  "resource_count": 370,
   "language_count": 56,
   "resources": {
     "models/ar/fasttext.ar.fluency.onnx": {
@@ -192,6 +192,16 @@
       "type": "vocab",
       "source": "cc.br.300.vec",
       "fasttext_source": "cc.br.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/ca/fasttext.ca.buckets.onnx": {
+      "size": 11855303,
+      "sha256": "97895b51cf9521fa59d404919599150ae71ce7059afa8b4ac7a5e07b0f639ae1",
+      "language": "ca",
+      "type": "onnx",
+      "source": "cc.ca.300.vec",
+      "fasttext_source": "cc.ca.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
@@ -1987,6 +1997,13 @@
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
+    "models/ko/fasttext.ko.buckets.onnx": {
+      "size": 10237583,
+      "sha256": "1b27f78136a6b98c813db67898e3dddb65f2d34054947535da95cd40e587a113",
+      "language": "ko",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
     "models/ko/fasttext.ko.fluency.onnx": {
       "size": 15200760,
       "sha256": "b12fd692674774567aad187a0c2c092315c28be537536ab9687694d30818197c",
@@ -3456,6 +3473,16 @@
       "type": "vocab",
       "source": "cc.tr.300.vec",
       "fasttext_source": "cc.tr.300.vec",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/uk/fasttext.uk.buckets.onnx": {
+      "size": 11901791,
+      "sha256": "4a5eb5eff95752ca782e2f4ec27a5372092b9d93a2b641dd8bc7ca621d97d3fb",
+      "language": "uk",
+      "type": "onnx",
+      "source": "cc.uk.300.vec",
+      "fasttext_source": "cc.uk.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
     },
