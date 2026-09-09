@@ -34,6 +34,11 @@ SPEC = "kotoshu.resources/v1"
 # the v1.5.0 registry on the branch WITHOUT a bump or a release - the
 # owner cuts the pack release (plan 113: v1.6.0) and bumps this
 # revision together with release_tag when the packs are validated.
+#     Plan 115 typo bi-encoder (kotoshu://models/typo/typo-biencoder,
+# additive, opt-in): the hybrid-retrieval survivor of plans 111/114
+# that cleared every plan-114 clause on real pairs. Same additive
+# template as the packs - primary stays null until the owner cuts a
+# release carrying the typo assets.
 REGISTRY_VERSION = 7
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
@@ -154,6 +159,43 @@ def build_lid_resource(descriptor, version, tag):
 PACKS_DESCRIPTOR = "packs/packs.json"
 
 
+# Plan 115: the typo bi-encoder (opt-in hybrid-retrieval half), promoted
+# from the plan-114 candidate by scripts/promote_typo_biencoder.py.
+TYPO_DESCRIPTOR = "models/typo/typo.json"
+
+
+def build_typo_resource(descriptor, version):
+    """The plan-115 typo bi-encoder (pseudo-language "typo", tier
+    "typo-biencoder"): the 0.481 MB int8 char-BiGRU whose top-20 slate,
+    rescored by the fastText FULL tier, is the hybrid that cleared every
+    plan-114 clause on real pairs (eval/reports/hybrid-pricing.json).
+    The per-language 100k x 256 retrieval matrix is derived at load
+    (~5 s per language), never shipped as a download. `primary` and
+    `vocab_url` stay null until a release carries the assets (the
+    plan-113 additive template); the mirror serves the bytes."""
+    return {
+        "type": "model",
+        "language": "typo",
+        "tier": {
+            "name": "typo-biencoder",
+            "dims": descriptor["dims"],
+            "vocab_size": descriptor["char_vocab_size"],
+            "quantization": descriptor["quantization"],
+        },
+        "version": version,
+        "urls": {
+            "primary": None,
+            "mirror": f"{MEDIA_URL}/main/models/typo/typo.biencoder.onnx",
+        },
+        "vocab_url": None,
+        "sha256": descriptor["sha256"],
+        "size_bytes": descriptor["bytes"],
+        "license": descriptor["license"],
+        "min_engine_version": descriptor["min_engine_version"],
+        "eval_ref": descriptor["eval_ref"],
+    }
+
+
 def build_pack_resource(pack):
     """The plan-113 language pack: one length-prefixed section stream
     (dict aff+dic + tier model/vocab + buckets sibling) under
@@ -214,13 +256,16 @@ def main():
     # flavor ("0.0.0-dev") and the plan's v1.0.0 -> 1.0.0 example.
     version = (args.tag[1:] if args.tag.startswith("v") else args.tag) if args.tag else DEV_VERSION
 
-    # "lid" is the language-identification pseudo-language (plan 102):
-    # its registry entry comes from models/lid/lid.json below, not the
-    # per-language full/tier loop.
+    # "lid" is the language-identification pseudo-language (plan 102)
+    # and "typo" the typo-bi-encoder pseudo-language (plan 115): their
+    # registry entries come from models/lid/lid.json and
+    # models/typo/typo.json below, not the per-language full/tier loop.
     languages = sorted({
         path.split("/")[1]
         for path, entry in manifest["resources"].items()
-        if entry.get("type") == "onnx" and not path.startswith("models/lid/")
+        if entry.get("type") == "onnx"
+        and not path.startswith("models/lid/")
+        and not path.startswith("models/typo/")
     })
 
     resources = {}
@@ -257,6 +302,13 @@ def main():
     if lid_descriptor_path.exists():
         resources["kotoshu://models/lid/lid-176"] = build_lid_resource(
             load_json(lid_descriptor_path), version, args.tag)
+
+    # Plan 115: the typo bi-encoder rides the same registry when its
+    # descriptor exists (scripts/promote_typo_biencoder.py writes it).
+    typo_descriptor_path = root / TYPO_DESCRIPTOR
+    if typo_descriptor_path.exists():
+        resources["kotoshu://models/typo/typo-biencoder"] = build_typo_resource(
+            load_json(typo_descriptor_path), version)
 
     # Plan 113: language packs ride the same registry when the pack
     # descriptor exists (scripts/build_packs.py writes it).

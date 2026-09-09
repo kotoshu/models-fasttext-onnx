@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "generated_at": "2026-09-08T11:20:53Z",
+  "generated_at": "2026-09-09T21:48:56Z",
   "repo_version": "v1",
-  "resource_count": 379,
-  "language_count": 56,
+  "resource_count": 381,
+  "language_count": 57,
   "resources": {
     "models/ar/fasttext.ar.fluency.onnx": {
       "size": 15200760,
@@ -3565,6 +3565,26 @@
       "fasttext_source": "cc.tr.300.vec",
       "conversion_method": "fasttext_to_onnx.py",
       "opset_version": 11
+    },
+    "models/typo/typo.biencoder.onnx": {
+      "size": 480786,
+      "sha256": "9fc0f58da83367637d10d7ccba3bb9c020c5d4d1020d98b4f5bdff27643e7580",
+      "language": "typo",
+      "type": "onnx",
+      "source": "char-BiGRU typo bi-encoder trained in-repo on the GitHub Typo Corpus (plan 114)",
+      "fasttext_source": "char-BiGRU typo bi-encoder trained in-repo on the GitHub Typo Corpus (plan 114)",
+      "conversion_method": "promote_typo_biencoder.py (from scripts/train_typo_biencoder_v2.py)",
+      "opset_version": 17
+    },
+    "models/typo/typo.biencoder.vocab.json": {
+      "size": 22081,
+      "sha256": "b02ac6228087fa6687ae2a7c828aa40a22bf792100bf429730d9a154030d7da1",
+      "language": "typo",
+      "type": "vocab",
+      "source": "char-BiGRU typo bi-encoder trained in-repo on the GitHub Typo Corpus (plan 114)",
+      "fasttext_source": "char-BiGRU typo bi-encoder trained in-repo on the GitHub Typo Corpus (plan 114)",
+      "conversion_method": "promote_typo_biencoder.py (from scripts/train_typo_biencoder_v2.py)",
+      "opset_version": 17
     },
     "models/uk/fasttext.uk.buckets.onnx": {
       "size": 11901791,

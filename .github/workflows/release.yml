@@ -41,5 +41,9 @@ jobs:
           files: |
             models/**/fasttext.*.onnx
             models/**/fasttext.*.vocab.json
+            models/lid/lid.176.onnx
+            models/lid/lid.176.vocab.json
+            models/typo/typo.biencoder.onnx
+            models/typo/typo.biencoder.vocab.json
             registry.json
             manifest-*.json

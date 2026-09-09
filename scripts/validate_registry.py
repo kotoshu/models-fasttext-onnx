@@ -68,6 +68,8 @@ def file_sha256_and_size(path):
 def asset_stems(lang, tier_name):
     if tier_name == "lid-176":  # plan 102: the LID pair mirrors upstream lid.176 naming
         return "lid.176.onnx", "lid.176.vocab.json"
+    if tier_name == "typo-biencoder":  # plan 115: the typo pair lives under models/typo/
+        return "typo.biencoder.onnx", "typo.biencoder.vocab.json"
     stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
     # Buckets (plan 103) have no vocab sibling - the bucket_ids tensor is inside.
     if tier_name == "buckets":
@@ -95,6 +97,18 @@ def check_urls(resource, resource_id, registry, errors):
 
     tier_name = resource["tier"]["name"]
     onnx_name, vocab_name = asset_stems(lang, tier_name)
+
+    if tier_name == "typo-biencoder":
+        # Plan 115: opt-in typo bi-encoder under models/typo/. Same rule
+        # as the packs (plan 113): media-host only until the owner cuts a
+        # release carrying the typo assets, so primary/vocab_url stay null.
+        expected_mirror = f"{MEDIA_URL}/main/models/typo/{onnx_name}"
+        if resource["urls"]["mirror"] != expected_mirror:
+            errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
+        if resource["urls"]["primary"] is not None or resource["vocab_url"] is not None:
+            errors.append(f"{resource_id}: typo primary/vocab URLs set but no typo release "
+                          f"exists (plan 115 keeps the typo bi-encoder media-host only)")
+        return
 
     # Every tier binary is an LFS object in git -> the media host mirror
     # (the raw host serves pointer stubs). All tiers follow one rule.
@@ -142,6 +156,16 @@ def check_ground_truth(resource, resource_id, root, manifest, errors):
         if resource["sha256"] != t["sha256"] or resource["size_bytes"] != t["bytes"]:
             errors.append(f"{resource_id}: sha256/size drift vs models/{lang}/tiers.json")
         return None
+
+    if tier_name == "typo-biencoder":  # plan 115: models/typo/typo.json is the ground truth
+        try:
+            d = load_json(root / "models" / "typo" / "typo.json")
+        except (OSError, json.JSONDecodeError) as exc:
+            errors.append(f"{resource_id}: cannot read models/typo/typo.json: {exc}")
+            return None
+        if resource["sha256"] != d["sha256"] or resource["size_bytes"] != d["bytes"]:
+            errors.append(f"{resource_id}: sha256/size drift vs models/typo/typo.json")
+        return (d["vocab_sha256"], d["vocab_bytes"])
 
     if tier_name == "lid-176":  # plan 102: models/lid/lid.json is the ground truth
         try:

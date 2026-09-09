@@ -32,7 +32,7 @@
     "resources": {
       "type": "object",
       "propertyNames": {
-        "pattern": "^kotoshu://(models/(lid/lid-176|[a-z]{2}/(full|fluency|mini|buckets))|packs/[a-z]{2})$"
+        "pattern": "^kotoshu://(models/(lid/lid-176|typo/typo-biencoder|[a-z]{2}/(full|fluency|mini|buckets))|packs/[a-z]{2})$"
       },
       "additionalProperties": {
         "anyOf": [
@@ -69,7 +69,7 @@
         },
         "language": {
           "type": "string",
-          "pattern": "^(lid|[a-z]{2})$"
+          "pattern": "^(lid|typo|[a-z]{2})$"
         },
         "tier": {
           "type": "object",
@@ -86,7 +86,8 @@
                 "fluency",
                 "mini",
                 "lid-176",
-                "buckets"
+                "buckets",
+                "typo-biencoder"
               ]
             },
             "dims": {

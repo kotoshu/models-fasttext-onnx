@@ -67,6 +67,27 @@
       "min_engine_version": "0.7",
       "eval_ref": null
     },
+    "kotoshu://models/typo/typo-biencoder": {
+      "type": "model",
+      "language": "typo",
+      "tier": {
+        "name": "typo-biencoder",
+        "dims": 256,
+        "vocab_size": 2,
+        "quantization": "int8-dynamic"
+      },
+      "version": "0.0.0-dev",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/typo/typo.biencoder.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "e632b7095b0bf32c260fa4c539e9fd7b852d0de454e9be26f24d0d6f91d069d3",
+      "size_bytes": 1,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/hybrid-pricing.json"
+    },
     "kotoshu://packs/en": {
       "type": "pack",
       "language": "en",
