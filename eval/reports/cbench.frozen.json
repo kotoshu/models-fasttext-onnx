@@ -1,0 +1,121 @@
+{
+  "plan": "114 C-benchmark (frozen)",
+  "purpose": "the repo-clean real-typo bench for the typo bi-encoder ship decision; real = held-out-repo-clean corpus pairs (no sampling cap), synth = noise.py generator pairs (labeled; generator-domain evidence only)",
+  "split": {
+    "rule": "repos shuffled with default_rng([42]), first 70% train, rest held-out; no repo in both; a bench pair must occur in no train repo under any language label",
+    "n_repos_total": 19972,
+    "n_repos_train": 13980,
+    "n_repos_heldout": 5992,
+    "pairs_unique_total": 52549,
+    "real_train_unique": 41329,
+    "real_train_weighted": 104734,
+    "pairs_heldout_clean_lang_tagged": 11220,
+    "clean_str_pairs": 11205,
+    "edits_used": 146699,
+    "per_lang_edits": {
+      "en": 143956,
+      "ru": 824,
+      "fr": 490,
+      "zh": 339,
+      "pt": 292,
+      "de": 270,
+      "es": 254,
+      "ko": 146,
+      "ja": 128
+    }
+  },
+  "synth": {
+    "generator": "eval/noise.py make_typo (keyboard-aware, repo tier-gate model)",
+    "rank_window": 30000,
+    "attempt_cap": 50,
+    "train_seed_rule": "default_rng([42, crc32(lang), 1140])",
+    "bench_seed_rule": "default_rng([42, crc32(lang), 1141])",
+    "train_per_lang_target": {
+      "de": 8000,
+      "ru": 8000,
+      "es": 8000
+    },
+    "train_actual": {
+      "de": 8000,
+      "ru": 8000,
+      "es": 8000
+    },
+    "train_meta": {
+      "de": {
+        "words_tried": 21200,
+        "words_no_in_vocab_typo_after_50_attempts": 11813,
+        "pairs_skipped_excluded_or_duplicate": 1387
+      },
+      "ru": {
+        "words_tried": 23062,
+        "words_no_in_vocab_typo_after_50_attempts": 13542,
+        "pairs_skipped_excluded_or_duplicate": 1520
+      },
+      "es": {
+        "words_tried": 19164,
+        "words_no_in_vocab_typo_after_50_attempts": 9872,
+        "pairs_skipped_excluded_or_duplicate": 1292
+      }
+    },
+    "bench_per_lang_target": {
+      "de": 2000,
+      "ru": 2000,
+      "es": 2000
+    },
+    "bench_actual": {
+      "de": 2000,
+      "ru": 2000,
+      "es": 2000
+    },
+    "bench_meta": {
+      "de": {
+        "words_tried": 6665,
+        "words_no_in_vocab_typo_after_50_attempts": 3632,
+        "pairs_skipped_excluded_or_duplicate": 1033
+      },
+      "ru": {
+        "words_tried": 7482,
+        "words_no_in_vocab_typo_after_50_attempts": 4355,
+        "pairs_skipped_excluded_or_duplicate": 1127
+      },
+      "es": {
+        "words_tried": 6263,
+        "words_no_in_vocab_typo_after_50_attempts": 3191,
+        "pairs_skipped_excluded_or_duplicate": 1072
+      }
+    },
+    "bench_exclusion_rule": "a synth bench pair matches no real train pair, no synth train pair (string-level, any language label) and no held-out-clean pair"
+  },
+  "corpus_sha256": "98219d275a49ad28fca832891876c255581b890d893b6d9c974ceb454ba2909d",
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng with the per-purpose seeds recorded above"
+  },
+  "languages": {
+    "en": {
+      "real_pairs": 2509,
+      "synth_pairs": 0,
+      "file": "eval/cbench/cbench.en.json",
+      "sha256": "d22afe24c9fa63b9722852e8b40c92678e41facc8a18f28ec7e5759ae971efa2"
+    },
+    "de": {
+      "real_pairs": 14,
+      "synth_pairs": 2000,
+      "file": "eval/cbench/cbench.de.json",
+      "sha256": "93037cede004e8cedcaecca79d7373f0943293a5593cb19e54fea887f7339d81"
+    },
+    "ru": {
+      "real_pairs": 27,
+      "synth_pairs": 2000,
+      "file": "eval/cbench/cbench.ru.json",
+      "sha256": "5bbd249e6c2189639ebef07ec7aa4e0c858b17bff54df3140e946f38b45a31a7"
+    },
+    "es": {
+      "real_pairs": 20,
+      "synth_pairs": 2000,
+      "file": "eval/cbench/cbench.es.json",
+      "sha256": "21a27b2cfe58fca7f1708cd9f33c81fdead48b9b4badf0528c810a9d63c29f89"
+    }
+  },
+  "generated_at": "2026-09-09T20:40:08Z"
+}

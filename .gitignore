@@ -155,3 +155,7 @@ eval/candidates/*
 # extraction) and the context cache written by eval/bakeoff_bench.py
 eval/corpora/*.json
 eval/corpora/*.jsonl.gz
+# plan 114: C-benchmark pair lists rebuilt deterministically by
+# scripts/build_cbench.py; only the freeze receipt
+# (eval/reports/cbench.frozen.json) and the bench reports are committed.
+eval/cbench/
