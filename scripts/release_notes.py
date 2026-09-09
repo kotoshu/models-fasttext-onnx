@@ -58,7 +58,8 @@ def main():
     print(f"# Kotoshu ONNX models {tag or '(dev)'}")
     print()
     print(f"- Languages: {len(languages)} ({', '.join(languages)})")
-    print(f"- Resources: {len(resources)} models")
+    packs = [r for r in resources.values() if r.get("type") == "pack"]
+    print(f"- Resources: {len(resources) - len(packs)} models, {len(packs)} language packs")
     print(f"- Total size: {human_size(total_bytes)}")
     print(f"- ONNX opset: {', '.join(str(o) for o in opsets)}")
     print(f"- Upstream: {', '.join(sources)}")
@@ -72,7 +73,11 @@ def main():
         print("| Tier | Asset | Size | Eval |")
         print("|---|---|---|---|")
         rows = sorted(
-            (r for r in resources.values() if r["language"] == lang),
+            (
+                r
+                for r in resources.values()
+                if r["language"] == lang and r.get("type") == "model"
+            ),
             key=lambda r: TIER_ORDER[r["tier"]["name"]],
         )
         for r in rows:
