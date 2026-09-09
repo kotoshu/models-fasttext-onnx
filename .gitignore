@@ -145,3 +145,8 @@ models/**/*.mini4.onnx
 models/**/*.mini4.vocab.json
 models/**/*.fluency4.onnx
 models/**/*.fluency4.vocab.json
+
+# plan 111 bakeoff candidate weights (B cross-encoder rerank, D ModernBERT
+# bi-encoders; C trains its own). HF downloads + ONNX exports are local-only;
+# sizes/sha256 receipts land in the committed eval/reports/bakeoff.*.json.
+eval/candidates/
