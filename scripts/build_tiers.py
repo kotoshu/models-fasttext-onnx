@@ -73,9 +73,18 @@ def constant_array(model: onnx.ModelProto, name: str) -> np.ndarray:
 
 def manifest_languages(repo: Path) -> list[str]:
     manifest = json.loads((repo / "manifest.json").read_text(encoding="utf-8"))
-    # "lid" (the language-identification pseudo-language, plan 102) has
-    # no full-tier embedding parent; it is never a tier candidate.
-    langs = sorted({entry["language"] for entry in manifest["resources"].values() if entry.get("type") == "onnx" and entry["language"] != "lid"})
+    # Tier candidates are exactly the languages with a full-tier fastText
+    # parent (models/{lang}/fasttext.{lang}.onnx). Pseudo-languages (the
+    # lid-176 identifier, plan 102; the typo bi-encoder, plan 115) carry
+    # their own artifacts and are never tier candidates - structurally
+    # excluded rather than named, so the next pseudo-language cannot
+    # crash the release gate again.
+    langs = sorted({
+        entry["language"]
+        for rel, entry in manifest["resources"].items()
+        if rel.startswith("models/")
+        and rel.endswith(f"/fasttext.{entry.get('language', '')}.onnx")
+    })
     return langs
 
 
