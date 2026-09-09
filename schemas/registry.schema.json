@@ -32,10 +32,17 @@
     "resources": {
       "type": "object",
       "propertyNames": {
-        "pattern": "^kotoshu://models/(lid/lid-176|[a-z]{2}/(full|fluency|mini|buckets))$"
+        "pattern": "^kotoshu://(models/(lid/lid-176|[a-z]{2}/(full|fluency|mini|buckets))|packs/[a-z]{2})$"
       },
       "additionalProperties": {
-        "$ref": "#/$defs/resource"
+        "anyOf": [
+          {
+            "$ref": "#/$defs/resource"
+          },
+          {
+            "$ref": "#/$defs/pack"
+          }
+        ]
       }
     }
   },
@@ -160,6 +167,174 @@
             "string",
             "null"
           ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "pack": {
+      "type": "object",
+      "description": "Language pack (plan 113): one length-prefixed section stream (KPK1) carrying the dictionary aff+dic, the packed tier model/vocab and the buckets sibling, so a language cold-loads with one fetch. Cut by scripts/build_packs.py; the pack versions with its parts (registry release + dictionary_pin).",
+      "required": [
+        "type",
+        "language",
+        "version",
+        "tier",
+        "dictionary_pin",
+        "urls",
+        "contents",
+        "sha256",
+        "size_bytes",
+        "licenses",
+        "min_engine_version",
+        "eval_ref"
+      ],
+      "properties": {
+        "type": {
+          "const": "pack"
+        },
+        "language": {
+          "type": "string",
+          "pattern": "^[a-z]{2}$"
+        },
+        "version": {
+          "type": "string"
+        },
+        "tier": {
+          "type": "string",
+          "enum": [
+            "mini",
+            "fluency"
+          ],
+          "description": "The embedding tier the pack carries (its model + vocab sections)"
+        },
+        "dictionary_pin": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "The kotoshu/dictionaries commit the aff/dic sections were cut from"
+        },
+        "urls": {
+          "type": "object",
+          "required": [
+            "primary",
+            "mirror"
+          ],
+          "properties": {
+            "primary": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "uri",
+              "description": "null until a release uploads pack assets (owner decision, plan 113)"
+            },
+            "mirror": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "uri"
+            }
+          },
+          "additionalProperties": false
+        },
+        "contents": {
+          "type": "object",
+          "required": [
+            "aff",
+            "dic",
+            "model",
+            "vocab"
+          ],
+          "properties": {
+            "aff": {
+              "$ref": "#/$defs/pack_section"
+            },
+            "dic": {
+              "$ref": "#/$defs/pack_section"
+            },
+            "model": {
+              "$ref": "#/$defs/pack_section"
+            },
+            "vocab": {
+              "$ref": "#/$defs/pack_section"
+            },
+            "buckets": {
+              "$ref": "#/$defs/pack_section"
+            }
+          },
+          "additionalProperties": false
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "sha256 of the whole pack file"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "licenses": {
+          "type": "object",
+          "required": [
+            "embeddings",
+            "dictionary"
+          ],
+          "properties": {
+            "embeddings": {
+              "const": "CC-BY-SA-3.0"
+            },
+            "dictionary": {
+              "type": "string",
+              "format": "uri",
+              "description": "The bundled dictionary license text (per-language file in kotoshu/dictionaries at dictionary_pin)"
+            }
+          },
+          "additionalProperties": false
+        },
+        "min_engine_version": {
+          "type": "string"
+        },
+        "eval_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "pack_section": {
+      "type": "object",
+      "required": [
+        "tag",
+        "offset",
+        "length",
+        "sha256"
+      ],
+      "properties": {
+        "tag": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "description": "1 aff, 2 dic, 3 model, 4 vocab, 5 buckets"
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": 8
+        },
+        "length": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "sha256 of the section payload - identical to the per-section footer in the pack and, for model/vocab/buckets, to the models/<lang>/tiers.json sha256"
         }
       },
       "additionalProperties": false

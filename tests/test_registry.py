@@ -13,19 +13,30 @@ FIXTURE = REPO_ROOT / "tests" / "registry_fixture"
 SCHEMA = REPO_ROOT / "schemas" / "registry.schema.json"
 
 
-def run_validator(repo_root):
+def run_validator(repo_root, check_files=False):
     cmd = [
         sys.executable, str(VALIDATOR),
         "--repo-root", str(repo_root),
         "--schema", str(SCHEMA),
         "--registry", str(Path(repo_root) / "registry.json"),
     ]
+    if check_files:
+        cmd.append("--check-files")
     return subprocess.run(cmd, capture_output=True, text=True)
 
 
 class ValidateRegistryTest(unittest.TestCase):
     def test_fixture_passes(self):
         result = run_validator(FIXTURE)
+        self.assertEqual(
+            result.returncode, 0,
+            f"validator failed:\n{result.stdout}\n{result.stderr}",
+        )
+
+    def test_fixture_pack_passes_file_checks(self):
+        # The fixture pack (plan 113) is structurally verified end to
+        # end: framing walk, per-section footers, declared offsets.
+        result = run_validator(FIXTURE, check_files=True)
         self.assertEqual(
             result.returncode, 0,
             f"validator failed:\n{result.stdout}\n{result.stderr}",
@@ -46,6 +57,32 @@ class ValidateRegistryTest(unittest.TestCase):
             result = run_validator(copy)
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("sha256", result.stdout + result.stderr)
+
+    def test_pack_descriptor_drift_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            descriptor_path = copy / "packs" / "packs.json"
+            descriptor = json.loads(descriptor_path.read_text(encoding="utf-8"))
+            descriptor["packs"]["en"]["dictionary_pin"] = "f" * 40
+            descriptor_path.write_text(json.dumps(descriptor, indent=2), encoding="utf-8")
+            result = run_validator(copy)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("dictionary_pin", result.stdout + result.stderr)
+
+    def test_tampered_pack_file_fails_file_checks(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            pack_path = copy / "packs" / "en-0.0.0-dev.bin"
+            data = bytearray(pack_path.read_bytes())
+            data[64] ^= 0xFF  # inside a section payload
+            pack_path.write_bytes(bytes(data))
+            result = run_validator(copy, check_files=True)
+            self.assertNotEqual(result.returncode, 0)
+            # The tamper trips either the whole-file sha256 gate or the
+            # framing walk (both are pack checks).
+            self.assertIn("pack", result.stdout + result.stderr)
 
 
 if __name__ == "__main__":

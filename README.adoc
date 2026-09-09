@@ -347,6 +347,43 @@ model.free();
 For servers and CLIs the mirror stays the fallback, never the default; for
 browsers it is the only legal source of binaries.
 
+=== Language packs (one fetch per language)
+
+A language load is normally five transfers from two repos (`.aff` + `.dic` from
+kotoshu/dictionaries; mini model + vocab + buckets from here). A _language
+pack_ (plan 113) concatenates those five artifacts into ONE file so a cold
+load pays one round trip and one progress stream. Packs are additive
+`kotoshu://packs/{lang}` registry entries (`type: "pack"`, versioned with
+their parts: the registry release plus `dictionary_pin`, the dictionaries
+commit the aff/dic sections were cut from).
+
+The `KPK1` framing is a length-prefixed section stream:
+
+....
+magic "KPK1" | u32 LE section_count
+then per section (fixed order aff, dic, model, vocab, buckets):
+  u32 LE payload_length | tag byte (1..5) | payload | sha256(payload)
+....
+
+Sections are the EXACT bytes of their parts - no compression, no
+transformation - so a pack verifies by checksum alone: each footer is the
+sha256 of its payload, and the model/vocab/buckets footers equal the
+`models/{lang}/tiers.json` values (the builder refuses to cut a pack from
+drifted artifacts). `scripts/build_packs.py` builds them:
+
+[source,bash]
+----
+python3 scripts/build_packs.py --lang en de pt --dict-repo /path/to/dictionaries
+----
+
+Packs land in `packs/{lang}-{version}.bin` (LFS-committed, so the media host
+serves them CORS-fetchable like the tiers) plus the `packs/packs.json`
+descriptor that `scripts/build_registry.py` merges into `registry.json`.
+Status: the pack entries ride the v1.5.0 registry on the branch WITHOUT a
+release or a registry data-revision bump - the owner cuts the pack release
+(plan 113: v1.6.0 when validated), which is also when `urls.primary` gains
+a release-asset URL.
+
 == Download
 
 === Direct Download
