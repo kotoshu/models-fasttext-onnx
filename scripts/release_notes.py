@@ -12,7 +12,13 @@ from pathlib import Path
 # ja/ko/zh manifest entries predate opset recording; the conversion
 # pipeline is uniform, so they fall back to this value.
 DEFAULT_OPSET = 11
-TIER_ORDER = {"mini": 0, "fluency": 1, "full": 2, "buckets": 3, "lid-176": 0}
+TIER_ORDER = {"mini": 0, "fluency": 1, "full": 2, "buckets": 3, "lid-176": 0, "typo-biencoder": 0}
+# Non-fastText pairs name their assets directly (same rule as
+# validate_registry.asset_stems), not fasttext.{lang}.{tier}.
+TIER_STEMS = {
+    "lid-176": "lid.176",
+    "typo-biencoder": "typo.biencoder",
+}
 LICENSE_LINE = "CC-BY-SA-3.0 (derived from FastText pretrained vectors)"
 
 
@@ -75,7 +81,10 @@ def main():
             # models have mirror=None, and the dev flavor has no URLs.
             lang = r["language"]
             tier_name = r["tier"]["name"]
-            stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
+            if tier_name in TIER_STEMS:  # lid-176, typo-biencoder (plan 115)
+                stem = TIER_STEMS[tier_name]
+            else:
+                stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
             print(f"| {tier_name} | `{stem}.onnx` | {human_size(r['size_bytes'])} | {r['eval_ref'] or '—'} |")
         print()
 
