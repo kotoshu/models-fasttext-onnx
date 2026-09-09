@@ -1,0 +1,423 @@
+{
+  "plan": "114 typo bi-encoder v2",
+  "decision_rule": {
+    "rule": "ship C v2 as an OPT-IN registry resource only if it beats the fastText FULL tier top-5 by >= 5 pp (paired net, CI excluding 0) on en AND de, and degrades nowhere by more than 2 pp top-5 on any language/component with n >= 20 real pairs (synth components: generator-domain evidence, labeled); AND size <= 30 MB int8 AND median per-suggest latency <= 100 ms. An honest reject is a complete outcome (int4 precedent); no registry change, no tag on a reject"
+  },
+  "bench": {
+    "en": {
+      "real_pairs": 2509,
+      "synth_pairs": 0,
+      "file": "eval/cbench/cbench.en.json",
+      "sha256": "d22afe24c9fa63b9722852e8b40c92678e41facc8a18f28ec7e5759ae971efa2"
+    },
+    "de": {
+      "real_pairs": 14,
+      "synth_pairs": 2000,
+      "file": "eval/cbench/cbench.de.json",
+      "sha256": "93037cede004e8cedcaecca79d7373f0943293a5593cb19e54fea887f7339d81"
+    },
+    "ru": {
+      "real_pairs": 27,
+      "synth_pairs": 2000,
+      "file": "eval/cbench/cbench.ru.json",
+      "sha256": "5bbd249e6c2189639ebef07ec7aa4e0c858b17bff54df3140e946f38b45a31a7"
+    },
+    "es": {
+      "real_pairs": 20,
+      "synth_pairs": 2000,
+      "file": "eval/cbench/cbench.es.json",
+      "sha256": "21a27b2cfe58fca7f1708cd9f33c81fdead48b9b4badf0528c810a9d63c29f89"
+    }
+  },
+  "languages": {
+    "en": {
+      "real_pairs": 2509,
+      "synth_pairs": 0,
+      "real": {
+        "full": {
+          "top1": 0.10282981267437226,
+          "top5": 0.20725388601036268,
+          "top20": 0.2877640494220805,
+          "pairs_evaluated": 2509
+        },
+        "fluency": {
+          "top1": 0.10969503868912153,
+          "top5": 0.21483841602184797,
+          "top20": 0.298133818843878,
+          "pairs_evaluated": 2197
+        },
+        "mini": {
+          "top1": 0.09932785660941,
+          "top5": 0.19790888722927558,
+          "top20": 0.29424943988050783,
+          "pairs_evaluated": 1339
+        },
+        "c_v1": {
+          "top1": 0.10643564356435643,
+          "top5": 0.25804455445544555,
+          "top20": 0.37314356435643564,
+          "pairs_evaluated": 1616
+        },
+        "c_v2": {
+          "top1": 0.12833798326026305,
+          "top5": 0.2825827022718214,
+          "top20": 0.4057393383818254,
+          "pairs_evaluated": 2509
+        },
+        "hybrid_c2_top20_ft_rescore": {
+          "top1": 0.11917098445595854,
+          "top5": 0.2702271821442806,
+          "top20": 0.4057393383818254,
+          "pairs_evaluated": 2509
+        }
+      },
+      "c_v2_vs_full_paired_top5": {
+        "real": {
+          "c_only_wins": 321,
+          "ft_only_wins": 132,
+          "both_hit": 388,
+          "neither": 1668,
+          "net_pp": 7.532881626145875,
+          "ci95_pp": [
+            5.938620865345001,
+            9.12813870236277
+          ]
+        }
+      },
+      "latency_median_ms": {
+        "c_v2": 4.053083510370925,
+        "hybrid": 4.255520994774997
+      }
+    },
+    "de": {
+      "real_pairs": 14,
+      "synth_pairs": 2000,
+      "real": {
+        "full": {
+          "top1": 0.21428571428571427,
+          "top5": 0.42857142857142855,
+          "top20": 0.7142857142857143,
+          "pairs_evaluated": 14
+        },
+        "fluency": {
+          "top1": 0.1,
+          "top5": 0.3,
+          "top20": 0.6,
+          "pairs_evaluated": 10
+        },
+        "mini": {
+          "top1": 0.125,
+          "top5": 0.125,
+          "top20": 0.5,
+          "pairs_evaluated": 8
+        },
+        "c_v1": {
+          "top1": 0.5,
+          "top5": 0.625,
+          "top20": 0.75,
+          "pairs_evaluated": 8
+        },
+        "c_v2": {
+          "top1": 0.42857142857142855,
+          "top5": 0.6428571428571429,
+          "top20": 0.7857142857142857,
+          "pairs_evaluated": 14
+        },
+        "hybrid_c2_top20_ft_rescore": {
+          "top1": 0.2857142857142857,
+          "top5": 0.7142857142857143,
+          "top20": 0.7857142857142857,
+          "pairs_evaluated": 14
+        }
+      },
+      "synth": {
+        "full": {
+          "top1": 0.1125,
+          "top5": 0.28,
+          "top20": 0.378,
+          "pairs_evaluated": 2000
+        },
+        "fluency": {
+          "top1": 0.13777490297542044,
+          "top5": 0.32147477360931437,
+          "top20": 0.4269081500646831,
+          "pairs_evaluated": 1546
+        },
+        "mini": {
+          "top1": 0.17956656346749225,
+          "top5": 0.39009287925696595,
+          "top20": 0.5201238390092879,
+          "pairs_evaluated": 323
+        },
+        "c_v1": {
+          "top1": 0.2957957957957958,
+          "top5": 0.6086086086086087,
+          "top20": 0.7947947947947948,
+          "pairs_evaluated": 1998
+        },
+        "c_v2": {
+          "top1": 0.3275,
+          "top5": 0.699,
+          "top20": 0.893,
+          "pairs_evaluated": 2000
+        },
+        "hybrid_c2_top20_ft_rescore": {
+          "top1": 0.214,
+          "top5": 0.5445,
+          "top20": 0.893,
+          "pairs_evaluated": 2000
+        }
+      },
+      "c_v2_vs_full_paired_top5": {
+        "real": {
+          "c_only_wins": 3,
+          "ft_only_wins": 0,
+          "both_hit": 6,
+          "neither": 5,
+          "net_pp": 21.428571428571427,
+          "ci95_pp": [
+            0.0,
+            42.85714328289032
+          ]
+        },
+        "synth": {
+          "c_only_wins": 894,
+          "ft_only_wins": 56,
+          "both_hit": 504,
+          "neither": 546,
+          "net_pp": 41.9,
+          "ci95_pp": [
+            39.5487504452467,
+            44.29999887943268
+          ]
+        }
+      },
+      "latency_median_ms": {
+        "c_v2": 4.645375011023134,
+        "hybrid": 5.822354491101578
+      }
+    },
+    "ru": {
+      "real_pairs": 27,
+      "synth_pairs": 2000,
+      "real": {
+        "full": {
+          "top1": 0.07407407407407407,
+          "top5": 0.37037037037037035,
+          "top20": 0.5185185185185185,
+          "pairs_evaluated": 27
+        },
+        "fluency": {
+          "top1": 0.07692307692307693,
+          "top5": 0.38461538461538464,
+          "top20": 0.5,
+          "pairs_evaluated": 26
+        },
+        "mini": {
+          "top1": 0.2222222222222222,
+          "top5": 0.5,
+          "top20": 0.6666666666666666,
+          "pairs_evaluated": 18
+        },
+        "c_v1": {
+          "top1": 0.0,
+          "top5": 0.5555555555555556,
+          "top20": 0.7777777777777778,
+          "pairs_evaluated": 9
+        },
+        "c_v2": {
+          "top1": 0.2222222222222222,
+          "top5": 0.5555555555555556,
+          "top20": 0.7037037037037037,
+          "pairs_evaluated": 27
+        },
+        "hybrid_c2_top20_ft_rescore": {
+          "top1": 0.1111111111111111,
+          "top5": 0.48148148148148145,
+          "top20": 0.7037037037037037,
+          "pairs_evaluated": 27
+        }
+      },
+      "synth": {
+        "full": {
+          "top1": 0.0695,
+          "top5": 0.2655,
+          "top20": 0.421,
+          "pairs_evaluated": 2000
+        },
+        "fluency": {
+          "top1": 0.0779874213836478,
+          "top5": 0.3081761006289308,
+          "top20": 0.4641509433962264,
+          "pairs_evaluated": 1590
+        },
+        "mini": {
+          "top1": 0.10051546391752578,
+          "top5": 0.32989690721649484,
+          "top20": 0.5103092783505154,
+          "pairs_evaluated": 388
+        },
+        "c_v1": {
+          "top1": 0.2576288144072036,
+          "top5": 0.616808404202101,
+          "top20": 0.806903451725863,
+          "pairs_evaluated": 1999
+        },
+        "c_v2": {
+          "top1": 0.2945,
+          "top5": 0.7465,
+          "top20": 0.9155,
+          "pairs_evaluated": 2000
+        },
+        "hybrid_c2_top20_ft_rescore": {
+          "top1": 0.162,
+          "top5": 0.5685,
+          "top20": 0.9155,
+          "pairs_evaluated": 2000
+        }
+      },
+      "c_v2_vs_full_paired_top5": {
+        "real": {
+          "c_only_wins": 10,
+          "ft_only_wins": 5,
+          "both_hit": 5,
+          "neither": 7,
+          "net_pp": 18.51851851851852,
+          "ci95_pp": [
+            -11.11111119389534,
+            44.44444477558136
+          ]
+        },
+        "synth": {
+          "c_only_wins": 1020,
+          "ft_only_wins": 58,
+          "both_hit": 473,
+          "neither": 449,
+          "net_pp": 48.1,
+          "ci95_pp": [
+            45.69999873638153,
+            50.40000081062317
+          ]
+        }
+      },
+      "latency_median_ms": {
+        "c_v2": 4.088832996785641,
+        "hybrid": 3.962834016419947
+      }
+    },
+    "es": {
+      "real_pairs": 20,
+      "synth_pairs": 2000,
+      "real": {
+        "full": {
+          "top1": 0.2,
+          "top5": 0.35,
+          "top20": 0.4,
+          "pairs_evaluated": 20
+        },
+        "fluency": {
+          "top1": 0.23529411764705882,
+          "top5": 0.29411764705882354,
+          "top20": 0.35294117647058826,
+          "pairs_evaluated": 17
+        },
+        "mini": {
+          "top1": 0.09090909090909091,
+          "top5": 0.18181818181818182,
+          "top20": 0.2727272727272727,
+          "pairs_evaluated": 11
+        },
+        "c_v1": {
+          "top1": 0.3076923076923077,
+          "top5": 0.3076923076923077,
+          "top20": 0.38461538461538464,
+          "pairs_evaluated": 13
+        },
+        "c_v2": {
+          "top1": 0.15,
+          "top5": 0.25,
+          "top20": 0.5,
+          "pairs_evaluated": 20
+        },
+        "hybrid_c2_top20_ft_rescore": {
+          "top1": 0.35,
+          "top5": 0.45,
+          "top20": 0.5,
+          "pairs_evaluated": 20
+        }
+      },
+      "synth": {
+        "full": {
+          "top1": 0.1315,
+          "top5": 0.326,
+          "top20": 0.4375,
+          "pairs_evaluated": 2000
+        },
+        "fluency": {
+          "top1": 0.14334239130434784,
+          "top5": 0.37160326086956524,
+          "top20": 0.4857336956521739,
+          "pairs_evaluated": 1472
+        },
+        "mini": {
+          "top1": 0.18971061093247588,
+          "top5": 0.4437299035369775,
+          "top20": 0.617363344051447,
+          "pairs_evaluated": 311
+        },
+        "c_v1": {
+          "top1": 0.289,
+          "top5": 0.65,
+          "top20": 0.8295,
+          "pairs_evaluated": 2000
+        },
+        "c_v2": {
+          "top1": 0.367,
+          "top5": 0.7265,
+          "top20": 0.8985,
+          "pairs_evaluated": 2000
+        },
+        "hybrid_c2_top20_ft_rescore": {
+          "top1": 0.24,
+          "top5": 0.566,
+          "top20": 0.8985,
+          "pairs_evaluated": 2000
+        }
+      },
+      "c_v2_vs_full_paired_top5": {
+        "real": {
+          "c_only_wins": 1,
+          "ft_only_wins": 3,
+          "both_hit": 4,
+          "neither": 12,
+          "net_pp": -10.0,
+          "ci95_pp": [
+            -30.000001192092896,
+            10.000000149011612
+          ]
+        },
+        "synth": {
+          "c_only_wins": 827,
+          "ft_only_wins": 26,
+          "both_hit": 626,
+          "neither": 521,
+          "net_pp": 40.050000000000004,
+          "ci95_pp": [
+            37.700000405311584,
+            42.250001430511475
+          ]
+        }
+      },
+      "latency_median_ms": {
+        "c_v2": 3.5236459807492793,
+        "hybrid": 3.560083481715992
+      }
+    }
+  },
+  "models": {
+    "c_v1_int8_mb": 0.481,
+    "c_v2_int8_mb": 0.481
+  },
+  "hardware": "Apple M1 Max (arm64), CPUExecutionProvider",
+  "generated_at": "2026-09-09T21:05:51Z"
+}

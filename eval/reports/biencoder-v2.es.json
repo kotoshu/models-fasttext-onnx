@@ -1,0 +1,286 @@
+{
+  "language": "es",
+  "protocol": "frozen plan-114 C-benchmark; tiers scored with the exact corpus_bench rule; C v1/v2 rank the correction among the full 100k vocabulary under the char encoder; synth = noise.py generator domain (v2 trains on the same generator \u2014 carries a train-distribution advantage for C; real is the decision evidence)",
+  "frozen": {
+    "languages": {
+      "real_pairs": 20,
+      "synth_pairs": 2000,
+      "file": "eval/cbench/cbench.es.json",
+      "sha256": "21a27b2cfe58fca7f1708cd9f33c81fdead48b9b4badf0528c810a9d63c29f89"
+    },
+    "corpus_sha256": "98219d275a49ad28fca832891876c255581b890d893b6d9c974ceb454ba2909d"
+  },
+  "components": {
+    "real": {
+      "pairs": 20,
+      "full": {
+        "pairs_evaluated": 20,
+        "pairs_typo_oov": 0,
+        "pairs_correction_oov": 0,
+        "top1": 0.2,
+        "top5": 0.35,
+        "top20": 0.4,
+        "mean_rank": 7127.35,
+        "median_rank": 247.5,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule"
+      },
+      "fluency": {
+        "pairs_evaluated": 17,
+        "pairs_typo_oov": 1,
+        "pairs_correction_oov": 2,
+        "top1": 0.23529411764705882,
+        "top5": 0.29411764705882354,
+        "top20": 0.35294117647058826,
+        "mean_rank": 4326.176470588235,
+        "median_rank": 259.0,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule"
+      },
+      "mini": {
+        "pairs_evaluated": 11,
+        "pairs_typo_oov": 7,
+        "pairs_correction_oov": 2,
+        "top1": 0.09090909090909091,
+        "top5": 0.18181818181818182,
+        "top20": 0.2727272727272727,
+        "mean_rank": 1185.090909090909,
+        "median_rank": 151.0,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule"
+      },
+      "c_v1": {
+        "pairs_evaluated": 13,
+        "pairs_typo_oov": 0,
+        "pairs_correction_oov": 0,
+        "top1": 0.3076923076923077,
+        "top5": 0.3076923076923077,
+        "top20": 0.38461538461538464,
+        "mean_rank": 2933.4615384615386,
+        "median_rank": 28.0,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule",
+        "pairs_excluded_v1_train_tainted": 7
+      },
+      "c_v2": {
+        "pairs_evaluated": 20,
+        "pairs_typo_oov": 0,
+        "pairs_correction_oov": 0,
+        "top1": 0.15,
+        "top5": 0.25,
+        "top20": 0.5,
+        "mean_rank": 6299.8,
+        "median_rank": 33.0,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule"
+      },
+      "hybrid_c2_top20_ft_rescore": {
+        "pairs_evaluated": 20,
+        "slate": "C top-20 rescored by fastText full cosine to the typo",
+        "top1": 0.35,
+        "top5": 0.45,
+        "top20": 0.5,
+        "mean_rank": 12.0,
+        "median_rank": 18.5
+      },
+      "c_v2_vs_full_paired_top5": {
+        "c_only_wins": 1,
+        "ft_only_wins": 3,
+        "both_hit": 4,
+        "neither": 12,
+        "net_pp": -10.0,
+        "ci95_pp": [
+          -30.000001192092896,
+          10.000000149011612
+        ]
+      }
+    },
+    "synth": {
+      "pairs": 2000,
+      "full": {
+        "pairs_evaluated": 2000,
+        "pairs_typo_oov": 0,
+        "pairs_correction_oov": 0,
+        "top1": 0.1315,
+        "top5": 0.326,
+        "top20": 0.4375,
+        "mean_rank": 6250.8865,
+        "median_rank": 63.5,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule"
+      },
+      "fluency": {
+        "pairs_evaluated": 1472,
+        "pairs_typo_oov": 528,
+        "pairs_correction_oov": 0,
+        "top1": 0.14334239130434784,
+        "top5": 0.37160326086956524,
+        "top20": 0.4857336956521739,
+        "mean_rank": 3237.8077445652175,
+        "median_rank": 24.0,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule"
+      },
+      "mini": {
+        "pairs_evaluated": 311,
+        "pairs_typo_oov": 1319,
+        "pairs_correction_oov": 370,
+        "top1": 0.18971061093247588,
+        "top5": 0.4437299035369775,
+        "top20": 0.617363344051447,
+        "mean_rank": 601.2218649517685,
+        "median_rank": 9.0,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule"
+      },
+      "c_v1": {
+        "pairs_evaluated": 2000,
+        "pairs_typo_oov": 0,
+        "pairs_correction_oov": 0,
+        "top1": 0.289,
+        "top5": 0.65,
+        "top20": 0.8295,
+        "mean_rank": 35.5825,
+        "median_rank": 3.0,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule",
+        "pairs_excluded_v1_train_tainted": 0
+      },
+      "c_v2": {
+        "pairs_evaluated": 2000,
+        "pairs_typo_oov": 0,
+        "pairs_correction_oov": 0,
+        "top1": 0.367,
+        "top5": 0.7265,
+        "top20": 0.8985,
+        "mean_rank": 10.609,
+        "median_rank": 2.0,
+        "ranking": "rank of the correction among the whole vocabulary by cosine to the typo, excluding the typo itself (ties counted optimistically) \u2014 corpus_bench rule"
+      },
+      "hybrid_c2_top20_ft_rescore": {
+        "pairs_evaluated": 2000,
+        "slate": "C top-20 rescored by fastText full cosine to the typo",
+        "top1": 0.24,
+        "top5": 0.566,
+        "top20": 0.8985,
+        "mean_rank": 7.2145,
+        "median_rank": 4.0
+      },
+      "c_v2_vs_full_paired_top5": {
+        "c_only_wins": 827,
+        "ft_only_wins": 26,
+        "both_hit": 626,
+        "neither": 521,
+        "net_pp": 40.050000000000004,
+        "ci95_pp": [
+          37.700000405311584,
+          42.250001430511475
+        ]
+      }
+    }
+  },
+  "latency_ms_per_suggest": {
+    "c_v2_query_plus_matvec": {
+      "n": 20,
+      "median_ms": 3.5236459807492793,
+      "p90_ms": 5.253374425228685
+    },
+    "hybrid_c2_top20_ft_rescore": {
+      "n": 20,
+      "median_ms": 3.560083481715992,
+      "p90_ms": 4.062266717664898
+    },
+    "note": "amortized per-language vocab embedding matrix; incremental per-suggest cost"
+  },
+  "models": {
+    "c_v1": {
+      "name": "c_typo",
+      "kind": "biencoder",
+      "architecture": "char-BiGRU (48d chars, 96d GRU, 256d out, shared encoder)",
+      "n_params": 221008,
+      "training": {
+        "objective": "symmetric InfoNCE, temperature 0.05, in-batch negatives",
+        "batch": 512,
+        "epochs": 8,
+        "lr": 0.003,
+        "weight_cap_per_pair": 8,
+        "best_epoch": 4,
+        "best_probe_hit5": 0.799
+      },
+      "split": {
+        "rule": "repos shuffled with default_rng([42]), first 80% train, rest held-out; no repo in both; eval pairs must occur only in held-out repos",
+        "n_repos_total": 19972,
+        "n_repos_train": 15977,
+        "n_repos_heldout": 3995,
+        "pairs_unique_total": 52549,
+        "pairs_train_unique": 45281,
+        "pairs_train_weighted_rows": 88638,
+        "pairs_heldout_clean": 7268,
+        "pairs_heldout_dirty_excluded_from_eval": 45281,
+        "edits_used": 146699,
+        "per_lang_edits": {
+          "en": 143956,
+          "ru": 824,
+          "fr": 490,
+          "zh": 339,
+          "pt": 292,
+          "de": 270,
+          "es": 254,
+          "ko": 146,
+          "ja": 128
+        }
+      },
+      "char_vocab": {
+        "size_incl_pad_unk": 1823,
+        "max_word_len": 24
+      },
+      "fp32_bytes": 887738,
+      "int8_bytes": 480786,
+      "int8_mb": 0.481,
+      "int8_sha256": "aaf04e52d6ea3cb4bf66855052e541b7f7c11a7e228b9ab4ebd505f30362bcd5",
+      "spot_check_max_abs_int8_vs_torch": 0.0031843893229961395,
+      "corpus_sha256": "98219d275a49ad28fca832891876c255581b890d893b6d9c974ceb454ba2909d",
+      "determinism": {
+        "seed": 42,
+        "rng": "np.random.default_rng([seed]) for repo split, [seed, epoch] for shuffling",
+        "torch_seed": 42
+      },
+      "generated_at": "2026-09-09T20:50:39Z"
+    },
+    "c_v2": {
+      "name": "c_typo_v2",
+      "kind": "biencoder",
+      "architecture": "char-BiGRU (48d chars, 96d GRU, 256d out, shared encoder)",
+      "n_params": 221008,
+      "training": {
+        "objective": "symmetric InfoNCE, temperature 0.05, in-batch negatives",
+        "batch": 512,
+        "epochs": 8,
+        "lr": 0.003,
+        "weight_cap_per_pair": 8,
+        "best_epoch": 4,
+        "best_probe_hit5": 0.41,
+        "probe_note": "hit@5 of the correction among a 10k en vocab universe for the first 1000 sorted REAL en C-benchmark pairs (the probe is the bench)"
+      },
+      "data": {
+        "real_train_unique": 41329,
+        "real_train_weighted_rows": 79630,
+        "synth_train": {
+          "de": 8000,
+          "es": 8000,
+          "ru": 8000
+        },
+        "synth_source": "eval/noise.py make_typo, corrections from the 30k most frequent vocab words, typo rejection-sampled into the full vocab",
+        "clean_rule": "synth training excludes every held-out-clean string pair (build_cbench exclusion rule)"
+      },
+      "char_vocab": {
+        "size_incl_pad_unk": 1823,
+        "max_word_len": 24
+      },
+      "fp32_bytes": 887738,
+      "int8_bytes": 480786,
+      "int8_mb": 0.481,
+      "int8_sha256": "9fc0f58da83367637d10d7ccba3bb9c020c5d4d1020d98b4f5bdff27643e7580",
+      "spot_check_max_abs_int8_vs_torch": 0.0032428205013275146,
+      "determinism": {
+        "seed": 42,
+        "rng": "np.random.default_rng([seed, epoch]) for shuffling, [seed, 7] for the probe universe",
+        "torch_seed": 42
+      },
+      "generated_at": "2026-09-09T21:01:36Z"
+    }
+  },
+  "report_only": true,
+  "generated_at": "2026-09-09T21:05:51Z"
+}
