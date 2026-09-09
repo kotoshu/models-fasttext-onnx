@@ -1,7 +1,7 @@
 {
   "spec": "kotoshu.resources/v1",
   "registry_version": 7,
-  "generated_at": "2026-09-08T11:46:48Z",
+  "generated_at": "2026-09-09T16:41:19Z",
   "release_tag": "v1.5.0",
   "resources": {
     "kotoshu://models/ar/fluency": {
@@ -4476,6 +4476,159 @@
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/zh.mini.json"
+    },
+    "kotoshu://packs/de": {
+      "type": "pack",
+      "language": "de",
+      "version": "1.5.0",
+      "tier": "mini",
+      "dictionary_pin": "1829a3e2e67dc7ffb38f8dcd2d3d2294b6a8580d",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/packs/de-1.5.0.bin"
+      },
+      "contents": {
+        "aff": {
+          "tag": 1,
+          "offset": 13,
+          "length": 19199,
+          "sha256": "57fdd1b16aac2131003c91e0cf2a488becb970382a402a9ce089307301cb3ef0"
+        },
+        "dic": {
+          "tag": 2,
+          "offset": 19249,
+          "length": 1118194,
+          "sha256": "b5c781a0cf6f285fb6b9b8ab02fbea104b987104a1efdda8a835837e89e3ec77"
+        },
+        "model": {
+          "tag": 3,
+          "offset": 1137480,
+          "length": 3040752,
+          "sha256": "aa724e7eea8580d81a0e2e6c6aec3108b8b90f65381ae7bc2baeb830b1a90f69"
+        },
+        "vocab": {
+          "tag": 4,
+          "offset": 4178269,
+          "length": 210916,
+          "sha256": "534e4a48ebefa5b7a6a1be113cad707aa945c02ae4bf20c097b0a87a9ca8e40e"
+        },
+        "buckets": {
+          "tag": 5,
+          "offset": 4389222,
+          "length": 10258799,
+          "sha256": "a11de192e0c31d331deeb1b47a3c4086e91801edaadb0a807731faf3826f072d"
+        }
+      },
+      "sha256": "d7e68dd5839056226e843c943c43c452731366752c1d3c4dce832876e57343ab",
+      "size_bytes": 14648053,
+      "licenses": {
+        "embeddings": "CC-BY-SA-3.0",
+        "dictionary": "https://cdn.jsdelivr.net/gh/kotoshu/dictionaries@1829a3e2e67dc7ffb38f8dcd2d3d2294b6a8580d/de/spelling/license"
+      },
+      "min_engine_version": "0.5",
+      "eval_ref": null
+    },
+    "kotoshu://packs/en": {
+      "type": "pack",
+      "language": "en",
+      "version": "1.5.0",
+      "tier": "mini",
+      "dictionary_pin": "1829a3e2e67dc7ffb38f8dcd2d3d2294b6a8580d",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/packs/en-1.5.0.bin"
+      },
+      "contents": {
+        "aff": {
+          "tag": 1,
+          "offset": 13,
+          "length": 3086,
+          "sha256": "8ae1f19d4840d957728ad90555d5a8dff6cc5c046279c95ff0c00fc0a0136c7b"
+        },
+        "dic": {
+          "tag": 2,
+          "offset": 3136,
+          "length": 551762,
+          "sha256": "f0b1a234bd178bdd01875b2a392a9647f888b8fe879f79c52aae62c2759b3647"
+        },
+        "model": {
+          "tag": 3,
+          "offset": 554935,
+          "length": 3040752,
+          "sha256": "d81f36c5e0097414db95d48406ce615161dd07c697996fe973297186279d5e2f"
+        },
+        "vocab": {
+          "tag": 4,
+          "offset": 3595724,
+          "length": 202597,
+          "sha256": "d9173eee9958f5f29a60776c1ec8d76e752ab5fc64d939fb4b22dbf6522bf0c9"
+        },
+        "buckets": {
+          "tag": 5,
+          "offset": 3798358,
+          "length": 11375135,
+          "sha256": "1bd7825b8eb92b47701e483fb4804f09ae2064b147fe34be63ebfc7272570ff7"
+        }
+      },
+      "sha256": "322333c66dbc4a41e456ebb1c2e79b72d27cca9cf3bb6f2c6b4bde5e193900df",
+      "size_bytes": 15173525,
+      "licenses": {
+        "embeddings": "CC-BY-SA-3.0",
+        "dictionary": "https://cdn.jsdelivr.net/gh/kotoshu/dictionaries@1829a3e2e67dc7ffb38f8dcd2d3d2294b6a8580d/en/spelling/license"
+      },
+      "min_engine_version": "0.5",
+      "eval_ref": null
+    },
+    "kotoshu://packs/pt": {
+      "type": "pack",
+      "language": "pt",
+      "version": "1.5.0",
+      "tier": "mini",
+      "dictionary_pin": "1829a3e2e67dc7ffb38f8dcd2d3d2294b6a8580d",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/packs/pt-1.5.0.bin"
+      },
+      "contents": {
+        "aff": {
+          "tag": 1,
+          "offset": 13,
+          "length": 979789,
+          "sha256": "a9f3621b94eb4d6838474bf9982027758e77dcb248815f49409b1a4a477dbd27"
+        },
+        "dic": {
+          "tag": 2,
+          "offset": 979839,
+          "length": 4477692,
+          "sha256": "32e2edd83541d58613bcc83ef731a79aadf85ed57e977a16c6b5f711a7a36cee"
+        },
+        "model": {
+          "tag": 3,
+          "offset": 5457568,
+          "length": 3040752,
+          "sha256": "5fb94c7a2589d8222eea4f8174bf361c038a828c80787befa9edd0d650d8674c"
+        },
+        "vocab": {
+          "tag": 4,
+          "offset": 8498357,
+          "length": 208629,
+          "sha256": "52ef5d165e4a88a96832fcd1597c35c84ea597f2121b02477df01db7b197bc47"
+        },
+        "buckets": {
+          "tag": 5,
+          "offset": 8707023,
+          "length": 10282823,
+          "sha256": "118d831e3af91ea43047446b7e1de59221f5b0a3bc3f45ac93ba3d6f0bf40691"
+        }
+      },
+      "sha256": "3a3ec2874c8573b7f025b298975237660fdb8b72e73cdfef9da8dc2665335843",
+      "size_bytes": 18989878,
+      "licenses": {
+        "embeddings": "CC-BY-SA-3.0",
+        "dictionary": "https://cdn.jsdelivr.net/gh/kotoshu/dictionaries@1829a3e2e67dc7ffb38f8dcd2d3d2294b6a8580d/pt/spelling/license"
+      },
+      "min_engine_version": "0.5",
+      "eval_ref": null
     }
   }
 }
