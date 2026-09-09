@@ -30,6 +30,10 @@ SPEC = "kotoshu.resources/v1"
 # languages under release tag v1.5.0 (en/de shipped in v1.4.0). Eight
 # languages (ar cs fa he ja pl vi zh) failed the plan 103 fidelity
 # gates at every K and ship no artifact; reports in eval/reports/.
+#     Plan 113 language packs (kotoshu://packs/{lang}, additive) ride
+# the v1.5.0 registry on the branch WITHOUT a bump or a release - the
+# owner cuts the pack release (plan 113: v1.6.0) and bumps this
+# revision together with release_tag when the packs are validated.
 REGISTRY_VERSION = 7
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
@@ -144,6 +148,38 @@ def build_lid_resource(descriptor, version, tag):
     }
 
 
+# Plan 113: language packs (one fetch for dict aff+dic + mini tier +
+# buckets) cut by scripts/build_packs.py. Additive kotoshu://packs/{lang}
+# entries; merged when the descriptor exists.
+PACKS_DESCRIPTOR = "packs/packs.json"
+
+
+def build_pack_resource(pack):
+    """The plan-113 language pack: one length-prefixed section stream
+    (dict aff+dic + tier model/vocab + buckets sibling) under
+    packs/{lang}-{version}.bin, an LFS-committed media-host artifact.
+    `primary` stays null until a release uploads pack assets (the owner
+    decision plan 113 gates); the mirror serves the browser bytes."""
+    name = f"{pack['language']}-{pack['version']}.bin"
+    return {
+        "type": "pack",
+        "language": pack["language"],
+        "version": pack["version"],
+        "tier": pack["tier"],
+        "dictionary_pin": pack["dictionary_pin"],
+        "urls": {
+            "primary": None,
+            "mirror": f"{MEDIA_URL}/main/packs/{name}",
+        },
+        "contents": pack["contents"],
+        "sha256": pack["sha256"],
+        "size_bytes": pack["size_bytes"],
+        "licenses": pack["licenses"],
+        "min_engine_version": pack["min_engine_version"],
+        "eval_ref": None,
+    }
+
+
 def load_tiers(root, lang, strict):
     path = root / "models" / lang / "tiers.json"
     if not path.exists():
@@ -222,6 +258,19 @@ def main():
         resources["kotoshu://models/lid/lid-176"] = build_lid_resource(
             load_json(lid_descriptor_path), version, args.tag)
 
+    # Plan 113: language packs ride the same registry when the pack
+    # descriptor exists (scripts/build_packs.py writes it).
+    packs_descriptor_path = root / PACKS_DESCRIPTOR
+    if packs_descriptor_path.exists():
+        packs = load_json(packs_descriptor_path)
+        if packs.get("spec") != "kotoshu.packs/v1":
+            sys.exit(f"error: {packs_descriptor_path} declares spec {packs.get('spec')!r}")
+        for lang, pack in packs.get("packs", {}).items():
+            if pack.get("language") != lang:
+                sys.exit(f"error: {packs_descriptor_path} pack {lang!r} declares "
+                         f"language {pack.get('language')!r}")
+            resources[f"kotoshu://packs/{lang}"] = build_pack_resource(pack)
+
     registry = {
         "spec": SPEC,
         "registry_version": REGISTRY_VERSION,
@@ -232,9 +281,15 @@ def main():
     out = root / "registry.json"
     out.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    tier_count = len({r["tier"]["name"] for r in registry["resources"].values()})
+    # Pack resources carry the packed tier as a plain string ("mini").
+    tier_count = len({
+        r["tier"]["name"] if isinstance(r["tier"], dict) else r["tier"]
+        for r in registry["resources"].values()
+    })
+    pack_count = sum(1 for r in registry["resources"].values() if r["type"] == "pack")
     print(f"Wrote {out}: {len(registry['resources'])} resources, "
-          f"{len(languages)} languages, {tier_count} tier kinds, tag={args.tag or 'dev'}")
+          f"{len(languages)} languages, {tier_count} tier kinds, {pack_count} packs, "
+          f"tag={args.tag or 'dev'}")
 
 
 if __name__ == "__main__":

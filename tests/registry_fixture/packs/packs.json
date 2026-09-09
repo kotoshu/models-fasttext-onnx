@@ -1,0 +1,45 @@
+{
+  "spec": "kotoshu.packs/v1",
+  "generated_at": "2026-09-09T00:00:00Z",
+  "packs": {
+    "en": {
+      "language": "en",
+      "version": "0.0.0-dev",
+      "tier": "fluency",
+      "dictionary_pin": "0123456789abcdef0123456789abcdef01234567",
+      "contents": {
+        "aff": {
+          "tag": 1,
+          "offset": 13,
+          "length": 10,
+          "sha256": "7f6d7c55043d4b09d0a4380720847457b7954048bf1dac70512593006bae8c37"
+        },
+        "dic": {
+          "tag": 2,
+          "offset": 60,
+          "length": 14,
+          "sha256": "02ae2811fa0b3674213fe6fe4121f4f77a41a56142c503c17667113b2d292fe1"
+        },
+        "model": {
+          "tag": 3,
+          "offset": 111,
+          "length": 1,
+          "sha256": "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111"
+        },
+        "vocab": {
+          "tag": 4,
+          "offset": 149,
+          "length": 43,
+          "sha256": "e8031828ccf12164b09ffd1ecfddab271e75f6c7659e1aff1e46df5dec7609f0"
+        }
+      },
+      "sha256": "9e066b659becb8cc9ea3f2ac08b28bf60ba787eaf372c5edbffe820728e10e7b",
+      "size_bytes": 224,
+      "licenses": {
+        "embeddings": "CC-BY-SA-3.0",
+        "dictionary": "https://cdn.jsdelivr.net/gh/kotoshu/dictionaries@0123456789abcdef0123456789abcdef01234567/en/spelling/license"
+      },
+      "min_engine_version": "0.5"
+    }
+  }
+}

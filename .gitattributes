@@ -20,3 +20,9 @@ tests/registry_fixture/** -filter=lfs
 # LID vocab sidecar (plan 102) — LFS so the media host serves it
 # alongside the .onnx mirror (ACAO:*).
 models/lid/*.vocab.json filter=lfs diff=lfs merge=lfs -text
+
+# Language packs (plan 113) — one concatenated section stream per
+# language, LFS-committed like the tiers so the media host serves the
+# browser-usable bytes (ACAO:*). The registry fixture fake stays plain
+# git via the tests/registry_fixture/** rule above.
+packs/*.bin filter=lfs diff=lfs merge=lfs -text

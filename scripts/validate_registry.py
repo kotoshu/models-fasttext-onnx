@@ -4,9 +4,10 @@
 Always checks schema conformance (schemas/registry.schema.json), id
 uniqueness, URL construction, and consistency with the ground-truth
 sources (manifest.json for the full tier, models/<lang>/tiers.json for
-derived tiers). --check-files additionally hashes local model and vocab
-files when present; absent files are warnings (e.g. CI before a tier
-build), mismatches are failures. Exits nonzero on any failure.
+derived tiers, packs/packs.json + tiers.json for language packs).
+--check-files additionally hashes local model and vocab files when
+present; absent files are warnings (e.g. CI before a tier build),
+mismatches are failures. Exits nonzero on any failure.
 """
 
 import argparse
@@ -18,9 +19,22 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
 
+# Pack framing shared with scripts/build_packs.py (plan 113).
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_packs import (  # noqa: E402
+    TAG_AFF, TAG_BUCKETS, TAG_DIC, TAG_MODEL, TAG_VOCAB, parse_pack, section_offsets,
+)
+
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 MEDIA_URL = "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx"
 READ_CHUNK = 1 << 20
+
+PACKS_DESCRIPTOR = "packs/packs.json"
+PACK_SECTION_TIER = {  # contents name -> (tiers.json tier, field pair)
+    "model": ("tier", "sha256", "bytes"),
+    "vocab": ("tier", "vocab_sha256", "vocab_bytes"),
+    "buckets": ("buckets", "sha256", "bytes"),
+}
 
 format_checker = FormatChecker()
 
@@ -63,9 +77,24 @@ def asset_stems(lang, tier_name):
 
 def check_urls(resource, resource_id, registry, errors):
     lang = resource["language"]
+    tag = registry["release_tag"]
+
+    if resource["type"] == "pack":
+        # Plan 113: one LFS-committed section stream under packs/. The
+        # mirror is the browser-usable artifact; packs ship as release
+        # assets only when the owner cuts the pack release (plan 113),
+        # so primary must stay null until then.
+        name = f"{lang}-{resource['version']}.bin"
+        expected_mirror = f"{MEDIA_URL}/main/packs/{name}"
+        if resource["urls"]["mirror"] != expected_mirror:
+            errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
+        if resource["urls"]["primary"] is not None:
+            errors.append(f"{resource_id}: pack primary URL set but no pack release "
+                          f"exists (plan 113 keeps packs media-host only)")
+        return
+
     tier_name = resource["tier"]["name"]
     onnx_name, vocab_name = asset_stems(lang, tier_name)
-    tag = registry["release_tag"]
 
     # Every tier binary is an LFS object in git -> the media host mirror
     # (the raw host serves pointer stubs). All tiers follow one rule.
@@ -97,6 +126,9 @@ def check_urls(resource, resource_id, registry, errors):
 def check_ground_truth(resource, resource_id, root, manifest, errors):
     lang = resource["language"]
     tier_name = resource["tier"]["name"]
+
+    if resource["type"] == "pack":
+        return check_pack_ground_truth(resource, resource_id, root, errors)
 
     if tier_name == "buckets":
         # Ground truth is models/<lang>/tiers.json buckets entry; no vocab.
@@ -143,6 +175,81 @@ def check_ground_truth(resource, resource_id, root, manifest, errors):
     return (t["vocab_sha256"], t["vocab_bytes"])
 
 
+def check_pack_ground_truth(resource, resource_id, root, errors):
+    """Plan 113 pack entries: the descriptor (packs/packs.json) is the
+    ground truth for the whole entry, and models/<lang>/tiers.json is
+    the ground truth for the model/vocab/buckets section checksums -
+    the pack must embed exactly the artifacts the registry serves."""
+    descriptor_path = root / PACKS_DESCRIPTOR
+    try:
+        descriptor = load_json(descriptor_path)
+        pack = descriptor["packs"][resource["language"]]
+    except (OSError, KeyError, json.JSONDecodeError) as exc:
+        errors.append(f"{resource_id}: cannot read pack descriptor {descriptor_path}: {exc}")
+        return
+    for field in ("version", "tier", "dictionary_pin", "sha256", "size_bytes",
+                  "contents", "min_engine_version"):
+        if resource.get(field) != pack.get(field):
+            errors.append(f"{resource_id}: {field} drift vs {PACKS_DESCRIPTOR}")
+
+    tiers_path = root / "models" / resource["language"] / "tiers.json"
+    try:
+        tiers = load_json(tiers_path)["tiers"]
+    except (OSError, KeyError, json.JSONDecodeError) as exc:
+        errors.append(f"{resource_id}: cannot read {tiers_path}: {exc}")
+        return
+    contents = resource["contents"]
+    for name, (tier_key, sha_field, size_field) in PACK_SECTION_TIER.items():
+        if name not in contents:
+            continue  # buckets is optional in the pack
+        try:
+            truth = tiers[tier_key] if tier_key == "buckets" else tiers[resource["tier"]]
+        except KeyError:
+            errors.append(f"{resource_id}: no {tier_key!r} tier in {tiers_path} "
+                          f"for pack section {name!r}")
+            continue
+        section = contents[name]
+        if section["sha256"] != truth[sha_field] or section["length"] != truth[size_field]:
+            errors.append(f"{resource_id}: section {name!r} sha256/size drift vs "
+                          f"{tiers_path} {tier_key!r}")
+
+
+def check_pack_file(resource, resource_id, root, errors, warnings):
+    """--check-files for packs: hash the local pack file AND walk its
+    framing - magic, count, per-section sha256 footers, and the
+    offsets/lengths/sha256 the registry entry declares. Absent file is
+    a warning, like the tier files."""
+    name = f"{resource['language']}-{resource['version']}.bin"
+    path = root / "packs" / name
+    if not path.exists():
+        warnings.append(f"{resource_id}: {path} absent locally, file check skipped")
+        return
+    data = path.read_bytes()
+    sha, size = hashlib.sha256(data).hexdigest(), len(data)
+    if sha != resource["sha256"] or size != resource["size_bytes"]:
+        errors.append(f"{resource_id}: local pack {path} does not match registry sha256/size")
+        return
+    try:
+        parsed = parse_pack(data)  # verifies every section footer
+        offsets = section_offsets(data)
+    except ValueError as exc:
+        errors.append(f"{resource_id}: pack {path} framing invalid: {exc}")
+        return
+    tag_of = {TAG_AFF: "aff", TAG_DIC: "dic", TAG_MODEL: "model",
+              TAG_VOCAB: "vocab", TAG_BUCKETS: "buckets"}
+    seen = {tag_of[tag] for tag in parsed}
+    for section_name, section in resource["contents"].items():
+        if section_name not in seen:
+            errors.append(f"{resource_id}: declared section {section_name!r} missing "
+                          f"from {path}")
+            continue
+        offset, length = offsets[section["tag"]]
+        if (offset, length) != (section["offset"], section["length"]):
+            errors.append(f"{resource_id}: section {section_name!r} offset/length "
+                          f"{(offset, length)} != declared "
+                          f"{(section['offset'], section['length'])}")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--registry", help="path to registry.json (default: <repo-root>/registry.json)")
@@ -186,6 +293,13 @@ def main():
     # Deep checks assume the schema shape; skip them when it already failed.
     for resource_id, resource in (resources.items() if not errors else []):
         check_urls(resource, resource_id, registry, errors)
+        if resource["type"] == "pack":
+            # The manifest has nothing to say about packs (their parts are
+            # dictionaries-repo + tiers); the pack descriptor does.
+            check_pack_ground_truth(resource, resource_id, root, errors)
+            if args.check_files:
+                check_pack_file(resource, resource_id, root, errors, warnings)
+            continue
         if manifest is not None:
             vocab_truth = check_ground_truth(resource, resource_id, root, manifest, errors)
         else:
