@@ -36,18 +36,18 @@
     "loader_note": "weights loaded via safetensors load_file into a config-built model (from_pretrained lazy-load path SIGBUSes/NaNs on transformers 5.14 + torch 2.12 arm64; see load_model docstring)",
     "reference_note": "torch references captured before export: the legacy tracer mutates the transformers 5.x attention-mask cache, so post-export torch forwards are untrustworthy"
   },
-  "generated_at": "2026-09-08T22:22:52Z",
+  "generated_at": "2026-09-09T21:01:36Z",
   "d_modernbert_small": {
     "name": "d_modernbert_small",
     "hf_id": "answerdotai/ModernBERT-small",
     "status": "not_found_on_hub",
-    "note": "requested in-budget ModernBERT-small (~30M params, ~30 MB int8) does not exist: answerdotai publishes only base/large (HF API author listing + search, 2026-09-08). Recorded as unavailable, not evaluated \u2014 same discipline as the model2vec potion-mini slot."
+    "note": "requested in-budget ModernBERT-small (~30M params, ~30 MB int8) does not exist: answerdotai publishes only base/large (HF API author listing + search, 2026-09-08). Recorded as unavailable, not evaluated — same discipline as the model2vec potion-mini slot."
   },
   "d_modernbert_base": {
     "name": "d_modernbert_base",
     "hf_id": "answerdotai/ModernBERT-base",
     "kind": "biencoder",
-    "note": "D candidate (only released encoder size under large; 149M params, int8 ~149 MB > 30 MB cap \u2014 over budget, measured anyway to price the class)",
+    "note": "D candidate (only released encoder size under large; 149M params, int8 ~149 MB > 30 MB cap — over budget, measured anyway to price the class)",
     "n_params": 149014272,
     "fp32_bytes": 596526782,
     "int8_bytes": 149914399,
@@ -358,8 +358,8 @@
       "epochs": 8,
       "lr": 0.003,
       "weight_cap_per_pair": 8,
-      "best_epoch": 6,
-      "best_probe_hit5": 0.806
+      "best_epoch": 4,
+      "best_probe_hit5": 0.799
     },
     "split": {
       "rule": "repos shuffled with default_rng([42]), first 80% train, rest held-out; no repo in both; eval pairs must occur only in held-out repos",
@@ -391,14 +391,57 @@
     "fp32_bytes": 887738,
     "int8_bytes": 480786,
     "int8_mb": 0.481,
-    "int8_sha256": "8e1777b87cbc9b27619af843b58e068a091d96dbf6da48fa6309b4b90e9455c6",
-    "spot_check_max_abs_int8_vs_torch": 0.0033962763845920563,
+    "int8_sha256": "aaf04e52d6ea3cb4bf66855052e541b7f7c11a7e228b9ab4ebd505f30362bcd5",
+    "spot_check_max_abs_int8_vs_torch": 0.0031843893229961395,
     "corpus_sha256": "98219d275a49ad28fca832891876c255581b890d893b6d9c974ceb454ba2909d",
     "determinism": {
       "seed": 42,
       "rng": "np.random.default_rng([seed]) for repo split, [seed, epoch] for shuffling",
       "torch_seed": 42
     },
-    "generated_at": "2026-09-08T22:22:52Z"
+    "generated_at": "2026-09-09T20:50:39Z",
+    "provenance": "regenerated on the plan-114 branch as the v1 comparator for eval/cbench_bench.py; differs from the bakeoff artifact (int8_sha256 8e1777b87cbc9b27619af843b58e068a091d96dbf6da48fa6309b4b90e9455c6) only via best-epoch probe selection: the v1 trainer slices its probe pairs from an unsorted Python set, whose order varies per process (PYTHONHASHSEED), shifting best epoch 6->4; corpus, split, data and training order are byte-identical (split counts 45281/7268 match the bakeoff receipt)"
+  },
+  "c_typo_v2": {
+    "name": "c_typo_v2",
+    "kind": "biencoder",
+    "architecture": "char-BiGRU (48d chars, 96d GRU, 256d out, shared encoder)",
+    "n_params": 221008,
+    "training": {
+      "objective": "symmetric InfoNCE, temperature 0.05, in-batch negatives",
+      "batch": 512,
+      "epochs": 8,
+      "lr": 0.003,
+      "weight_cap_per_pair": 8,
+      "best_epoch": 4,
+      "best_probe_hit5": 0.41,
+      "probe_note": "hit@5 of the correction among a 10k en vocab universe for the first 1000 sorted REAL en C-benchmark pairs (the probe is the bench)"
+    },
+    "data": {
+      "real_train_unique": 41329,
+      "real_train_weighted_rows": 79630,
+      "synth_train": {
+        "de": 8000,
+        "es": 8000,
+        "ru": 8000
+      },
+      "synth_source": "eval/noise.py make_typo, corrections from the 30k most frequent vocab words, typo rejection-sampled into the full vocab",
+      "clean_rule": "synth training excludes every held-out-clean string pair (build_cbench exclusion rule)"
+    },
+    "char_vocab": {
+      "size_incl_pad_unk": 1823,
+      "max_word_len": 24
+    },
+    "fp32_bytes": 887738,
+    "int8_bytes": 480786,
+    "int8_mb": 0.481,
+    "int8_sha256": "9fc0f58da83367637d10d7ccba3bb9c020c5d4d1020d98b4f5bdff27643e7580",
+    "spot_check_max_abs_int8_vs_torch": 0.0032428205013275146,
+    "determinism": {
+      "seed": 42,
+      "rng": "np.random.default_rng([seed, epoch]) for shuffling, [seed, 7] for the probe universe",
+      "torch_seed": 42
+    },
+    "generated_at": "2026-09-09T21:01:36Z"
   }
 }
