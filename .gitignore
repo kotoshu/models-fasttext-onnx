@@ -114,6 +114,8 @@ models/*/
 !models/zh/
 # plan 102: the LID model pair (pseudo-language dir)
 !models/lid/
+# plan 115: the typo bi-encoder pair (pseudo-language dir, opt-in hybrid)
+!models/typo/
 
 # Tier binaries/vocabs ARE committed (LFS objects) since plan 92 — they
 # mirror to media.githubusercontent.com, the CORS-fetchable host browsers

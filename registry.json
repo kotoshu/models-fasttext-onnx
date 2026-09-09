@@ -1,7 +1,7 @@
 {
   "spec": "kotoshu.resources/v1",
   "registry_version": 7,
-  "generated_at": "2026-09-09T16:41:19Z",
+  "generated_at": "2026-09-09T21:48:58Z",
   "release_tag": "v1.5.0",
   "resources": {
     "kotoshu://models/ar/fluency": {
@@ -4266,6 +4266,27 @@
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/tr.mini.json"
+    },
+    "kotoshu://models/typo/typo-biencoder": {
+      "type": "model",
+      "language": "typo",
+      "tier": {
+        "name": "typo-biencoder",
+        "dims": 256,
+        "vocab_size": 1821,
+        "quantization": "int8-dynamic"
+      },
+      "version": "1.5.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/typo/typo.biencoder.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "9fc0f58da83367637d10d7ccba3bb9c020c5d4d1020d98b4f5bdff27643e7580",
+      "size_bytes": 480786,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/hybrid-pricing.json"
     },
     "kotoshu://models/uk/buckets": {
       "type": "model",

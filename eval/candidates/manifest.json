@@ -41,13 +41,13 @@
     "name": "d_modernbert_small",
     "hf_id": "answerdotai/ModernBERT-small",
     "status": "not_found_on_hub",
-    "note": "requested in-budget ModernBERT-small (~30M params, ~30 MB int8) does not exist: answerdotai publishes only base/large (HF API author listing + search, 2026-09-08). Recorded as unavailable, not evaluated — same discipline as the model2vec potion-mini slot."
+    "note": "requested in-budget ModernBERT-small (~30M params, ~30 MB int8) does not exist: answerdotai publishes only base/large (HF API author listing + search, 2026-09-08). Recorded as unavailable, not evaluated \u2014 same discipline as the model2vec potion-mini slot."
   },
   "d_modernbert_base": {
     "name": "d_modernbert_base",
     "hf_id": "answerdotai/ModernBERT-base",
     "kind": "biencoder",
-    "note": "D candidate (only released encoder size under large; 149M params, int8 ~149 MB > 30 MB cap — over budget, measured anyway to price the class)",
+    "note": "D candidate (only released encoder size under large; 149M params, int8 ~149 MB > 30 MB cap \u2014 over budget, measured anyway to price the class)",
     "n_params": 149014272,
     "fp32_bytes": 596526782,
     "int8_bytes": 149914399,
@@ -442,6 +442,13 @@
       "rng": "np.random.default_rng([seed, epoch]) for shuffling, [seed, 7] for the probe universe",
       "torch_seed": 42
     },
-    "generated_at": "2026-09-09T21:01:36Z"
+    "generated_at": "2026-09-09T21:01:36Z",
+    "promoted_to": {
+      "resource": "kotoshu://models/typo/typo-biencoder",
+      "descriptor": "models/typo/typo.json",
+      "plan": "115",
+      "sha256": "9fc0f58da83367637d10d7ccba3bb9c020c5d4d1020d98b4f5bdff27643e7580",
+      "vocab_sha256": "b02ac6228087fa6687ae2a7c828aa40a22bf792100bf429730d9a154030d7da1"
+    }
   }
 }

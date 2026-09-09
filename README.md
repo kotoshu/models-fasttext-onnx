@@ -107,6 +107,19 @@ pruned-ngram map). The gem keeps using the raw `.ftz` via the fasttext
 bindings; the wasm engine (`@kotoshu/wasm` `detectLanguage`) reads the
 converted pair.
 
+### Typo bi-encoder (typo-biencoder, opt-in)
+
+`kotoshu://models/typo/typo-biencoder` — a 0.481 MB int8 char-BiGRU
+bi-encoder (dim 256, 221k params, opset 17) trained in-repo on the
+GitHub Typo Corpus (plan 114). Its top-20 slate, rescored by the
+fastText `full` tier, is the hybrid retrieval thread that cleared every
+plan-114 decision clause on real typo pairs (plan 115,
+`eval/reports/hybrid-pricing.md`): +6.3 pp top-5 on 2509 unseen English
+pairs (CI +4.9 to +7.7), wins on de/ru/es with no regression anywhere.
+Opt-in: nothing fetches it by default. The per-language 100k x 256
+retrieval matrix is derived at load (~5 s per language; 25.8 MB stored
+int8, ranking-identical to the fp32 sweep), never downloaded.
+
 ### Compression Ratio
 
 - Original FastText `.vec` files: ~4.3 GB per language

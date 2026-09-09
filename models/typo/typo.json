@@ -1,0 +1,64 @@
+{
+  "plan": "114 trained it, 115 priced and shipped it (opt-in)",
+  "resource": "kotoshu://models/typo/typo-biencoder",
+  "kind": "typo bi-encoder (hybrid retrieval half)",
+  "architecture": "char-BiGRU (48d chars, 96d GRU, 256d out, shared encoder)",
+  "dims": 256,
+  "char_vocab_size": 1821,
+  "quantization": "int8-dynamic",
+  "bytes": 480786,
+  "sha256": "9fc0f58da83367637d10d7ccba3bb9c020c5d4d1020d98b4f5bdff27643e7580",
+  "vocab_sha256": "b02ac6228087fa6687ae2a7c828aa40a22bf792100bf429730d9a154030d7da1",
+  "vocab_bytes": 22081,
+  "training": {
+    "objective": "symmetric InfoNCE, temperature 0.05, in-batch negatives",
+    "batch": 512,
+    "epochs": 8,
+    "lr": 0.003,
+    "weight_cap_per_pair": 8,
+    "best_epoch": 4,
+    "best_probe_hit5": 0.41,
+    "probe_note": "hit@5 of the correction among a 10k en vocab universe for the first 1000 sorted REAL en C-benchmark pairs (the probe is the bench)"
+  },
+  "data": {
+    "real_train_unique": 41329,
+    "real_train_weighted_rows": 79630,
+    "synth_train": {
+      "de": 8000,
+      "es": 8000,
+      "ru": 8000
+    },
+    "synth_source": "eval/noise.py make_typo, corrections from the 30k most frequent vocab words, typo rejection-sampled into the full vocab",
+    "clean_rule": "synth training excludes every held-out-clean string pair (build_cbench exclusion rule)"
+  },
+  "determinism": {
+    "seed": 42,
+    "rng": "np.random.default_rng([seed, epoch]) for shuffling, [seed, 7] for the probe universe",
+    "torch_seed": 42
+  },
+  "retrieval": {
+    "note": "derived at load, never downloaded: encode the language vocab through this model",
+    "matrix": "per-language 100k x 256, row-L2-normalized",
+    "variants_bytes": {
+      "fp32": 102400000,
+      "fp16": 51200000,
+      "int8_incl_fp16_scales": 25800000
+    },
+    "build_s_per_100k_words": "4.8-5.7 (Apple M1 Max)",
+    "int8_ranking": "identical hit@1/5/20 to the fp32 brute-force sweep on every frozen C-benchmark real component (plan 115)",
+    "usage": "top-20 slate by cosine to the typo, rescored by the fastText FULL tier (the plan-114/115 hybrid)"
+  },
+  "verdict": "plan-115 pre-declared rule, all clauses pass on real-pair components only: en +6.3 pp top-5 (CI +4.9/+7.7), de +28.6 pp (+7.1/+50.0, n=14), ru +11.1 pp (n=27), es +10.0 pp (n=20); no component regresses; 0.481 MB artifact; 3.3-4.3 ms median per-suggest (int8 amortized)",
+  "release_tag": null,
+  "release_note": "media-host mirror only (plan-113 additive template); primary stays null until the owner cuts a release carrying the typo assets, then this field and the registry entry flip together",
+  "eval_ref": "eval/reports/hybrid-pricing.json",
+  "source": {
+    "trained_in_repo": "scripts/train_typo_biencoder_v2.py",
+    "corpus": "https://github-typo-corpus.s3.amazonaws.com/data/github-typo-corpus.v1.0.0.jsonl.gz",
+    "corpus_sha256": "98219d275a49ad28fca832891876c255581b890d893b6d9c974ceb454ba2909d",
+    "vocab_conditioning": "fastText Common Crawl vocabularies (models/<lang>/fasttext.<lang>.vocab.json)"
+  },
+  "license": "CC-BY-SA-3.0",
+  "min_engine_version": "0.7",
+  "generated_at": "2026-09-09T21:44:50Z"
+}
