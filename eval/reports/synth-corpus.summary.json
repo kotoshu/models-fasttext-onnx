@@ -1,0 +1,106 @@
+{
+ "plan": "123 synthetic-corpus tier baseline",
+ "rule": "corpus_bench ranking rule",
+ "de": {
+  "n_pairs": 5000,
+  "provenance": {
+   "name": "Synthetic keyboard-noise typo corpus",
+   "version": "1.0.0",
+   "synthetic": true,
+   "generator": "eval/synthesize_corpora.py",
+   "generator_seed": [
+    42,
+    1230,
+    2106599819
+   ],
+   "noise_model": "eval/noise.py make_typo_traced (the tier-gate generator)",
+   "dictionary": {
+    "path_layout": "{lang}/spelling/index.dic",
+    "sha256": "b5c781a0cf6f285fb6b9b8ab02fbea104b987104a1efdda8a835837e89e3ec77"
+   },
+   "vocab_cut": {
+    "source": "models/de/fasttext.de.vocab.json",
+    "rule": "corrections sampled from the rank-ordered dictionary-vocab intersection",
+    "intersection_size": 9180
+   },
+   "admission_rule": "correction is an un-flagged pure-letter dictionary stem inside the model vocabulary; typo is not a dictionary word and is reachable by the declared noise ops",
+   "caveat": "generator-domain evidence: the plan-114 bi-encoder trained on the same noise model, so this corpus never replaces the frozen real components",
+   "license": "generated data; dictionary licenses per the dictionaries repository"
+  },
+  "full": {
+   "pairs_evaluated": 76,
+   "pairs_typo_oov": 4924,
+   "pairs_correction_oov": 0,
+   "top1": 0.0526,
+   "top5": 0.1184,
+   "top20": 0.1711
+  },
+  "fluency": {
+   "pairs_evaluated": 34,
+   "pairs_typo_oov": 3145,
+   "pairs_correction_oov": 1821,
+   "top1": 0.0588,
+   "top5": 0.1471,
+   "top20": 0.2353
+  },
+  "mini": {
+   "pairs_evaluated": 12,
+   "pairs_typo_oov": 1021,
+   "pairs_correction_oov": 3967,
+   "top1": 0.0,
+   "top5": 0.0,
+   "top20": 0.1667
+  }
+ },
+ "es": {
+  "n_pairs": 5000,
+  "provenance": {
+   "name": "Synthetic keyboard-noise typo corpus",
+   "version": "1.0.0",
+   "synthetic": true,
+   "generator": "eval/synthesize_corpora.py",
+   "generator_seed": [
+    42,
+    1230,
+    2422189467
+   ],
+   "noise_model": "eval/noise.py make_typo_traced (the tier-gate generator)",
+   "dictionary": {
+    "path_layout": "{lang}/spelling/index.dic",
+    "sha256": "907f786a8ceb3456722b20ad91dd4dbe99c5c16e45015ea63155e36f26b06d2c"
+   },
+   "vocab_cut": {
+    "source": "models/es/fasttext.es.vocab.json",
+    "rule": "corrections sampled from the rank-ordered dictionary-vocab intersection",
+    "intersection_size": 17109
+   },
+   "admission_rule": "correction is an un-flagged pure-letter dictionary stem inside the model vocabulary; typo is not a dictionary word and is reachable by the declared noise ops",
+   "caveat": "generator-domain evidence: the plan-114 bi-encoder trained on the same noise model, so this corpus never replaces the frozen real components",
+   "license": "generated data; dictionary licenses per the dictionaries repository"
+  },
+  "full": {
+   "pairs_evaluated": 69,
+   "pairs_typo_oov": 4931,
+   "pairs_correction_oov": 0,
+   "top1": 0.0435,
+   "top5": 0.0725,
+   "top20": 0.1449
+  },
+  "fluency": {
+   "pairs_evaluated": 34,
+   "pairs_typo_oov": 3363,
+   "pairs_correction_oov": 1603,
+   "top1": 0.0294,
+   "top5": 0.0882,
+   "top20": 0.1471
+  },
+  "mini": {
+   "pairs_evaluated": 10,
+   "pairs_typo_oov": 1138,
+   "pairs_correction_oov": 3852,
+   "top1": 0.0,
+   "top5": 0.1,
+   "top20": 0.1
+  }
+ }
+}

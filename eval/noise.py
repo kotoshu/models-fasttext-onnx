@@ -714,13 +714,12 @@ def _pick(rng: np.random.Generator, weighted_ops: tuple) -> object:
     return weighted_ops[-1][0]
 
 
-def make_typo(rng: np.random.Generator, word: str, lang: str) -> str | None:
-    """Return one deterministic corrupted variant of ``word``.
+def make_typo_traced(rng: np.random.Generator, word: str, lang: str) -> tuple[str, str] | None:
+    """One deterministic corrupted variant of ``word`` plus the applied op.
 
-    Tries up to TYPO_ATTEMPTS single-edit corruptions and returns the first
-    that changes the word; returns None if the word resists corruption
-    (e.g. no mappable character and nothing to delete/transpose). The
-    caller is responsible for vocabulary membership, as in run_eval.
+    Same corruption logic as {make_typo}; the return carries the operation
+    name so corpus synthesis (plan 123) can stamp per-pair provenance.
+    Returns ``(typo, op)`` or None when the word resists corruption.
     """
     if not word:
         return None
@@ -732,7 +731,7 @@ def make_typo(rng: np.random.Generator, word: str, lang: str) -> str | None:
             op = _pick(rng, ops)
             typo = _op_confuse(rng, word, lang) if op == "substitute" else _op_transpose(rng, word)
             if typo is not None and typo != word:
-                return typo
+                return typo, op
         return None
 
     table = _TABLES[lang]
@@ -753,8 +752,20 @@ def make_typo(rng: np.random.Generator, word: str, lang: str) -> str | None:
         else:
             typo = _op_transpose(rng, word)
         if typo is not None and typo != word:
-            return typo
+            return typo, op
     return None
+
+
+def make_typo(rng: np.random.Generator, word: str, lang: str) -> str | None:
+    """Return one deterministic corrupted variant of ``word``.
+
+    Tries up to TYPO_ATTEMPTS single-edit corruptions and returns the first
+    that changes the word; returns None if the word resists corruption
+    (e.g. no mappable character and nothing to delete/transpose). The
+    caller is responsible for vocabulary membership, as in run_eval.
+    """
+    traced = make_typo_traced(rng, word, lang)
+    return traced[0] if traced is not None else None
 
 
 def _has_confusable(word: str, lang: str) -> bool:
