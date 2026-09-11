@@ -10,12 +10,10 @@ does not vendor it.
 from __future__ import annotations
 
 import json
-import sys
-from pathlib import Path
-
-import pytest
-
 import os
+import sys
+import unittest
+from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 CORPORA = REPO / "eval" / "corpora" / "synth"
@@ -28,6 +26,7 @@ from synthesize_corpora import (  # noqa: E402
     _is_pure_letters,
     _levenshtein,
     load_dictionary_words,
+    synthesize,
 )
 
 
@@ -35,65 +34,74 @@ def _load(lang: str) -> dict:
     return json.loads((CORPORA / f"{lang}.json").read_text(encoding="utf-8"))
 
 
-@pytest.mark.parametrize("lang", ["de", "es"])
-def test_size_and_provenance(lang: str) -> None:
-    corpus = _load(lang)
-    assert corpus["n_pairs_unique"] >= 5000
-    assert len(corpus["pairs"]) == corpus["n_pairs_unique"]
-    meta = corpus["corpus"]
-    assert meta["synthetic"] is True
-    assert meta["generator"] == "eval/synthesize_corpora.py"
-    assert meta["generator_seed"]
-    assert len(meta["dictionary"]["sha256"]) == 64
-    assert meta["vocab_cut"]["intersection_size"] >= 5000
-    assert "caveat" in meta  # generator-domain honesty is part of the schema
+class SyntheticCorporaTest(unittest.TestCase):
+    LANGS = ("de", "es")
+
+    def test_size_and_provenance(self) -> None:
+        for lang in self.LANGS:
+            with self.subTest(lang=lang):
+                corpus = _load(lang)
+                self.assertGreaterEqual(corpus["n_pairs_unique"], 5000)
+                self.assertEqual(len(corpus["pairs"]), corpus["n_pairs_unique"])
+                meta = corpus["corpus"]
+                self.assertIs(meta["synthetic"], True)
+                self.assertEqual(meta["generator"], "eval/synthesize_corpora.py")
+                self.assertTrue(meta["generator_seed"])
+                self.assertEqual(len(meta["dictionary"]["sha256"]), 64)
+                self.assertGreaterEqual(meta["vocab_cut"]["intersection_size"], 5000)
+                self.assertIn("caveat", meta)  # generator-domain honesty is part of the schema
+
+    def test_pairs_are_unique(self) -> None:
+        for lang in self.LANGS:
+            with self.subTest(lang=lang):
+                pairs = _load(lang)["pairs"]
+                keys = {(t, c) for t, c, _ in pairs}
+                self.assertEqual(len(keys), len(pairs))
+
+    def test_admission_shape(self) -> None:
+        for lang in self.LANGS:
+            with self.subTest(lang=lang):
+                for typo, correction, count in _load(lang)["pairs"]:
+                    self.assertEqual(count, 1)
+                    self.assertNotEqual(typo, correction)
+                    self.assertTrue(MIN_WORD_LEN <= len(correction) <= MAX_WORD_LEN)
+                    self.assertTrue(_is_pure_letters(correction))
+                    self.assertTrue(_is_pure_letters(typo))
+                    self.assertLessEqual(len(typo), MAX_WORD_LEN + 1)
+                    d = _levenshtein(typo, correction)
+                    self.assertTrue(1 <= d <= 2)
+
+    def test_histograms_match_pairs(self) -> None:
+        for lang in self.LANGS:
+            with self.subTest(lang=lang):
+                corpus = _load(lang)
+                dists = {str(d): 0 for d in (1, 2)}
+                for typo, correction, _ in corpus["pairs"]:
+                    dists[str(_levenshtein(typo, correction))] += 1
+                self.assertEqual(corpus["extraction_stats"]["distance_histogram"], dists)
+                self.assertEqual(
+                    sum(corpus["extraction_stats"]["ops_histogram"].values()),
+                    len(corpus["pairs"]),
+                )
+
+    @unittest.skipIf(not DICT_ROOT.exists(), "dictionaries checkout not present")
+    def test_dictionary_admission(self) -> None:
+        for lang in self.LANGS:
+            with self.subTest(lang=lang):
+                dictionary, _ = load_dictionary_words(DICT_ROOT, lang)
+                for typo, correction, _ in _load(lang)["pairs"]:
+                    self.assertIn(correction, dictionary)
+                    self.assertNotIn(typo, dictionary)
+
+    @unittest.skipIf(not DICT_ROOT.exists(), "dictionaries checkout not present")
+    def test_deterministic_rebuild(self) -> None:
+        for lang in self.LANGS:
+            with self.subTest(lang=lang):
+                rebuilt = synthesize(lang, 5000, DICT_ROOT, REPO)
+                original = _load(lang)
+                self.assertEqual(rebuilt["pairs"], original["pairs"])
+                self.assertEqual(rebuilt["extraction_stats"], original["extraction_stats"])
 
 
-@pytest.mark.parametrize("lang", ["de", "es"])
-def test_pairs_are_unique(lang: str) -> None:
-    pairs = _load(lang)["pairs"]
-    keys = {(t, c) for t, c, _ in pairs}
-    assert len(keys) == len(pairs)
-
-
-@pytest.mark.parametrize("lang", ["de", "es"])
-def test_admission_shape(lang: str) -> None:
-    for typo, correction, count in _load(lang)["pairs"]:
-        assert count == 1
-        assert typo != correction
-        assert MIN_WORD_LEN <= len(correction) <= MAX_WORD_LEN
-        assert _is_pure_letters(correction)
-        assert _is_pure_letters(typo)
-        assert len(typo) <= MAX_WORD_LEN + 1
-        d = _levenshtein(typo, correction)
-        assert 1 <= d <= 2
-
-
-@pytest.mark.parametrize("lang", ["de", "es"])
-def test_histograms_match_pairs(lang: str) -> None:
-    corpus = _load(lang)
-    dists = {str(d): 0 for d in (1, 2)}
-    for typo, correction, _ in corpus["pairs"]:
-        dists[str(_levenshtein(typo, correction))] += 1
-    assert corpus["extraction_stats"]["distance_histogram"] == dists
-    assert sum(corpus["extraction_stats"]["ops_histogram"].values()) == len(corpus["pairs"])
-
-
-@pytest.mark.skipif(not DICT_ROOT.exists(), reason="dictionaries checkout not present")
-@pytest.mark.parametrize("lang", ["de", "es"])
-def test_dictionary_admission(lang: str) -> None:
-    dictionary, _ = load_dictionary_words(DICT_ROOT, lang)
-    for typo, correction, _ in _load(lang)["pairs"]:
-        assert correction in dictionary
-        assert typo not in dictionary
-
-
-@pytest.mark.skipif(not DICT_ROOT.exists(), reason="dictionaries checkout not present")
-@pytest.mark.parametrize("lang", ["de", "es"])
-def test_deterministic_rebuild(lang: str, tmp_path: None = None) -> None:
-    from synthesize_corpora import synthesize
-
-    rebuilt = synthesize(lang, 5000, DICT_ROOT, REPO)
-    original = _load(lang)
-    assert rebuilt["pairs"] == original["pairs"]
-    assert rebuilt["extraction_stats"] == original["extraction_stats"]
+if __name__ == "__main__":
+    unittest.main()
