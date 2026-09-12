@@ -36,7 +36,7 @@
     "loader_note": "weights loaded via safetensors load_file into a config-built model (from_pretrained lazy-load path SIGBUSes/NaNs on transformers 5.14 + torch 2.12 arm64; see load_model docstring)",
     "reference_note": "torch references captured before export: the legacy tracer mutates the transformers 5.x attention-mask cache, so post-export torch forwards are untrustworthy"
   },
-  "generated_at": "2026-09-09T21:01:36Z",
+  "generated_at": "2026-09-12T02:20:57Z",
   "d_modernbert_small": {
     "name": "d_modernbert_small",
     "hf_id": "answerdotai/ModernBERT-small",
@@ -442,13 +442,6 @@
       "rng": "np.random.default_rng([seed, epoch]) for shuffling, [seed, 7] for the probe universe",
       "torch_seed": 42
     },
-    "generated_at": "2026-09-09T21:01:36Z",
-    "promoted_to": {
-      "resource": "kotoshu://models/typo/typo-biencoder",
-      "descriptor": "models/typo/typo.json",
-      "plan": "115",
-      "sha256": "9fc0f58da83367637d10d7ccba3bb9c020c5d4d1020d98b4f5bdff27643e7580",
-      "vocab_sha256": "b02ac6228087fa6687ae2a7c828aa40a22bf792100bf429730d9a154030d7da1"
-    }
+    "generated_at": "2026-09-12T02:20:57Z"
   }
 }
