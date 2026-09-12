@@ -35,7 +35,7 @@ def _load(lang: str) -> dict:
 
 
 class SyntheticCorporaTest(unittest.TestCase):
-    LANGS = ("de", "es")
+    LANGS = ("de", "es", "pt", "fr")
 
     def test_size_and_provenance(self) -> None:
         for lang in self.LANGS:
