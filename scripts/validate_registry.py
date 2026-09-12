@@ -99,15 +99,30 @@ def check_urls(resource, resource_id, registry, errors):
     onnx_name, vocab_name = asset_stems(lang, tier_name)
 
     if tier_name == "typo-biencoder":
-        # Plan 115: opt-in typo bi-encoder under models/typo/. Same rule
-        # as the packs (plan 113): media-host only until the owner cuts a
-        # release carrying the typo assets, so primary/vocab_url stay null.
+        # Plan 115/131: the typo bi-encoder under models/typo/ rides the
+        # descriptor's release_tag (the owner's knob). Unset: mirror-only,
+        # primary/vocab null (the plan-113 additive template). Set: BOTH
+        # URLs must follow the release-tag convention exactly — a primary
+        # without its vocab sibling is a dead half-pair.
         expected_mirror = f"{MEDIA_URL}/main/models/typo/{onnx_name}"
         if resource["urls"]["mirror"] != expected_mirror:
             errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
-        if resource["urls"]["primary"] is not None or resource["vocab_url"] is not None:
-            errors.append(f"{resource_id}: typo primary/vocab URLs set but no typo release "
-                          f"exists (plan 115 keeps the typo bi-encoder media-host only)")
+        primary = resource["urls"]["primary"]
+        vocab_url = resource["vocab_url"]
+        if primary is None and vocab_url is None:
+            return
+        release_tag = (registry.get("release_tag") or "").strip()
+        expected_primary = (
+            f"https://github.com/kotoshu/models-fasttext-onnx/releases/download/"
+            f"{release_tag}/{onnx_name}"
+        )
+        expected_vocab = expected_primary.rsplit("/", 1)[0] + f"/{vocab_name}"
+        if release_tag and primary == expected_primary and vocab_url == expected_vocab:
+            return
+        errors.append(f"{resource_id}: typo primary/vocab must either both be null "
+                      f"(pre-release, mirror serves) or both follow the release-tag "
+                      f"convention ({expected_primary} / {expected_vocab}); got "
+                      f"primary={primary!r} vocab={vocab_url!r}")
         return
 
     # Every tier binary is an LFS object in git -> the media host mirror
