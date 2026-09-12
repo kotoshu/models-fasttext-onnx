@@ -171,8 +171,12 @@ def build_typo_resource(descriptor, version):
     plan-114 clause on real pairs (eval/reports/hybrid-pricing.json).
     The per-language 100k x 256 retrieval matrix is derived at load
     (~5 s per language), never shipped as a download. `primary` and
-    `vocab_url` stay null until a release carries the assets (the
-    plan-113 additive template); the mirror serves the bytes."""
+    `vocab_url` fill from the descriptor's own `release_tag` — the
+    owner sets it when cutting a release that carries the assets (the
+    version choice stays theirs); until then both stay null and the
+    mirror serves the bytes (the plan-113 additive template).
+    """
+    release_tag = descriptor.get("release_tag")
     return {
         "type": "model",
         "language": "typo",
@@ -184,10 +188,18 @@ def build_typo_resource(descriptor, version):
         },
         "version": version,
         "urls": {
-            "primary": None,
+            "primary": (
+                f"{REPO_URL}/releases/download/{release_tag}/typo.biencoder.onnx"
+                if release_tag
+                else None
+            ),
             "mirror": f"{MEDIA_URL}/main/models/typo/typo.biencoder.onnx",
         },
-        "vocab_url": None,
+        "vocab_url": (
+            f"{REPO_URL}/releases/download/{release_tag}/typo.biencoder.vocab.json"
+            if release_tag
+            else None
+        ),
         "sha256": descriptor["sha256"],
         "size_bytes": descriptor["bytes"],
         "license": descriptor["license"],

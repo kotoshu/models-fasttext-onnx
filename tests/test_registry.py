@@ -103,6 +103,89 @@ class ValidateRegistryTest(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("typo primary", result.stdout + result.stderr)
 
+    def run_generator(self, repo_root, tag=None):
+        cmd = [sys.executable, str(Path(__file__).resolve().parents[1] / "scripts" / "build_registry.py"),
+               "--repo-root", str(repo_root)]
+        if tag:
+            cmd += ["--tag", tag]
+        return subprocess.run(cmd, capture_output=True, text=True)
+
+    def test_typo_released_pair_generates_and_validates(self):
+        # Plan 131: with the descriptor's release_tag set, the generator
+        # emits BOTH the primary and the vocab URL at the release-tag
+        # convention, and the validator accepts the full released state.
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            descriptor_path = copy / "models" / "typo" / "typo.json"
+            descriptor = json.loads(descriptor_path.read_text(encoding="utf-8"))
+            descriptor["release_tag"] = "v1.6.1"
+            descriptor_path.write_text(json.dumps(descriptor, indent=2), encoding="utf-8")
+
+            result = self.run_generator(copy, tag="v1.6.1")
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+            registry = json.loads((copy / "registry.json").read_text(encoding="utf-8"))
+            typo = registry["resources"]["kotoshu://models/typo/typo-biencoder"]
+            base = "https://github.com/kotoshu/models-fasttext-onnx/releases/download/v1.6.1"
+            self.assertEqual(typo["urls"]["primary"], f"{base}/typo.biencoder.onnx")
+            self.assertEqual(typo["vocab_url"], f"{base}/typo.biencoder.vocab.json")
+
+            validation = run_validator(copy)
+            self.assertEqual(validation.returncode, 0, validation.stdout + validation.stderr)
+
+    def test_typo_prerelease_state_generates_nulls(self):
+        # Pre-release (descriptor release_tag null): both URLs stay null
+        # — the frozen v1.6.0 state regenerates unchanged.
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            result = self.run_generator(copy)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            registry = json.loads((copy / "registry.json").read_text(encoding="utf-8"))
+            typo = registry["resources"]["kotoshu://models/typo/typo-biencoder"]
+            self.assertIsNone(typo["urls"]["primary"])
+            self.assertIsNone(typo["vocab_url"])
+            validation = run_validator(copy)
+            self.assertEqual(validation.returncode, 0, validation.stdout + validation.stderr)
+
+    def test_typo_primary_without_vocab_fails(self):
+        # The pair travels together: a released primary without its
+        # vocab sibling is a dead half-pair.
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            registry_path = copy / "registry.json"
+            data = json.loads(registry_path.read_text(encoding="utf-8"))
+            tag = data.get("release_tag") or "v1.6.0"
+            data["release_tag"] = tag
+            typo = data["resources"]["kotoshu://models/typo/typo-biencoder"]
+            base = f"https://github.com/kotoshu/models-fasttext-onnx/releases/download/{tag}"
+            typo["urls"]["primary"] = f"{base}/typo.biencoder.onnx"
+            typo["vocab_url"] = None
+            registry_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+            result = run_validator(copy)
+            self.assertIn("must either both be null",
+                          result.stdout + result.stderr)
+
+    def test_typo_primary_off_convention_fails(self):
+        # A primary that does not match the registry's release tag is
+        # the dead-URL failure mode the validator has always rejected.
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            registry_path = copy / "registry.json"
+            data = json.loads(registry_path.read_text(encoding="utf-8"))
+            data["release_tag"] = "v1.6.0"
+            typo = data["resources"]["kotoshu://models/typo/typo-biencoder"]
+            base = "https://github.com/kotoshu/models-fasttext-onnx/releases/download/v0.0.1-other"
+            typo["urls"]["primary"] = f"{base}/typo.biencoder.onnx"
+            typo["vocab_url"] = f"{base}/typo.biencoder.vocab.json"
+            registry_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+            result = run_validator(copy)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("release-tag convention", result.stdout + result.stderr)
+
     def test_tampered_pack_file_fails_file_checks(self):
         with tempfile.TemporaryDirectory() as tmp:
             copy = Path(tmp) / "registry_fixture"
