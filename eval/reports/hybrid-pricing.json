@@ -52,7 +52,7 @@
       },
       "size_pass_en_only": true,
       "size_pass_all_four": false,
-      "latency_median_ms": 3.98,
+      "latency_median_ms": 3.36,
       "latency_pass": true
     },
     "ship": true
@@ -78,15 +78,15 @@
         "mb_fp32": 102.4,
         "mb_fp16": 51.2,
         "mb_int8": 25.8,
-        "build_time_s_encode_100k": 4.77,
-        "build_words_per_s": 20961,
+        "build_time_s_encode_100k": 3.78,
+        "build_words_per_s": 26426,
         "quant_time_s": {
-          "fp16": 0.063,
-          "int8": 0.056
+          "fp16": 0.061,
+          "int8": 0.052
         },
         "load_dequant_time_s": {
           "fp16": 0.072,
-          "int8": 0.06
+          "int8": 0.055
         },
         "roundtrip_vs_fp32": {
           "fp16": {
@@ -249,23 +249,23 @@
       "latency_ms_per_suggest": {
         "retrieval_fp32_amortized": {
           "n": 200,
-          "median_ms": 3.87,
-          "p90_ms": 5.02
+          "median_ms": 3.46,
+          "p90_ms": 4.08
         },
         "hybrid_fp32_amortized": {
           "n": 200,
-          "median_ms": 3.89,
-          "p90_ms": 5.63
+          "median_ms": 3.39,
+          "p90_ms": 3.95
         },
         "hybrid_int8_amortized": {
           "n": 200,
-          "median_ms": 3.98,
-          "p90_ms": 5.79
+          "median_ms": 3.36,
+          "p90_ms": 3.91
         },
         "hybrid_int8_lean": {
           "n": 200,
-          "median_ms": 27.31,
-          "p90_ms": 31.76
+          "median_ms": 24.46,
+          "p90_ms": 26.12
         },
         "note": "batch-1 per-suggest on real bench queries; amortized = matrix dequantized once at load (repo tier precedent); lean = int8 dequantized per query in 8k-row chunks, no fp32 matrix in RAM"
       },
@@ -293,15 +293,15 @@
         "mb_fp32": 102.4,
         "mb_fp16": 51.2,
         "mb_int8": 25.8,
-        "build_time_s_encode_100k": 5.53,
-        "build_words_per_s": 18085,
+        "build_time_s_encode_100k": 3.66,
+        "build_words_per_s": 27308,
         "quant_time_s": {
-          "fp16": 0.065,
-          "int8": 0.052
+          "fp16": 0.058,
+          "int8": 0.048
         },
         "load_dequant_time_s": {
-          "fp16": 0.072,
-          "int8": 0.067
+          "fp16": 0.067,
+          "int8": 0.056
         },
         "roundtrip_vs_fp32": {
           "fp16": {
@@ -464,23 +464,23 @@
       "latency_ms_per_suggest": {
         "retrieval_fp32_amortized": {
           "n": 14,
-          "median_ms": 3.87,
-          "p90_ms": 4.49
+          "median_ms": 3.47,
+          "p90_ms": 4.46
         },
         "hybrid_fp32_amortized": {
           "n": 14,
-          "median_ms": 3.97,
-          "p90_ms": 6.75
+          "median_ms": 3.66,
+          "p90_ms": 3.87
         },
         "hybrid_int8_amortized": {
           "n": 14,
-          "median_ms": 4.28,
-          "p90_ms": 5.17
+          "median_ms": 3.82,
+          "p90_ms": 4.36
         },
         "hybrid_int8_lean": {
           "n": 14,
-          "median_ms": 27.63,
-          "p90_ms": 31.27
+          "median_ms": 24.6,
+          "p90_ms": 25.28
         },
         "note": "batch-1 per-suggest on real bench queries; amortized = matrix dequantized once at load (repo tier precedent); lean = int8 dequantized per query in 8k-row chunks, no fp32 matrix in RAM"
       },
@@ -508,15 +508,15 @@
         "mb_fp32": 102.4,
         "mb_fp16": 51.2,
         "mb_int8": 25.8,
-        "build_time_s_encode_100k": 5.74,
-        "build_words_per_s": 17407,
+        "build_time_s_encode_100k": 3.74,
+        "build_words_per_s": 26729,
         "quant_time_s": {
-          "fp16": 0.064,
+          "fp16": 0.059,
           "int8": 0.051
         },
         "load_dequant_time_s": {
-          "fp16": 0.068,
-          "int8": 0.061
+          "fp16": 0.072,
+          "int8": 0.056
         },
         "roundtrip_vs_fp32": {
           "fp16": {
@@ -679,23 +679,23 @@
       "latency_ms_per_suggest": {
         "retrieval_fp32_amortized": {
           "n": 27,
-          "median_ms": 3.91,
-          "p90_ms": 6.56
+          "median_ms": 3.57,
+          "p90_ms": 4.12
         },
         "hybrid_fp32_amortized": {
           "n": 27,
-          "median_ms": 3.68,
-          "p90_ms": 7.1
+          "median_ms": 3.56,
+          "p90_ms": 4.39
         },
         "hybrid_int8_amortized": {
           "n": 27,
-          "median_ms": 3.35,
-          "p90_ms": 4.51
+          "median_ms": 3.47,
+          "p90_ms": 3.89
         },
         "hybrid_int8_lean": {
           "n": 27,
-          "median_ms": 27.62,
-          "p90_ms": 30.53
+          "median_ms": 25.15,
+          "p90_ms": 26.99
         },
         "note": "batch-1 per-suggest on real bench queries; amortized = matrix dequantized once at load (repo tier precedent); lean = int8 dequantized per query in 8k-row chunks, no fp32 matrix in RAM"
       },
@@ -723,15 +723,15 @@
         "mb_fp32": 102.4,
         "mb_fp16": 51.2,
         "mb_int8": 25.8,
-        "build_time_s_encode_100k": 5.46,
-        "build_words_per_s": 18313,
+        "build_time_s_encode_100k": 3.61,
+        "build_words_per_s": 27679,
         "quant_time_s": {
-          "fp16": 0.063,
-          "int8": 0.049
+          "fp16": 0.059,
+          "int8": 0.05
         },
         "load_dequant_time_s": {
           "fp16": 0.069,
-          "int8": 0.06
+          "int8": 0.058
         },
         "roundtrip_vs_fp32": {
           "fp16": {
@@ -894,23 +894,23 @@
       "latency_ms_per_suggest": {
         "retrieval_fp32_amortized": {
           "n": 20,
-          "median_ms": 3.5,
-          "p90_ms": 5.06
+          "median_ms": 3.26,
+          "p90_ms": 3.84
         },
         "hybrid_fp32_amortized": {
           "n": 20,
-          "median_ms": 3.64,
-          "p90_ms": 4.42
+          "median_ms": 3.16,
+          "p90_ms": 3.61
         },
         "hybrid_int8_amortized": {
           "n": 20,
-          "median_ms": 3.48,
-          "p90_ms": 4.35
+          "median_ms": 2.98,
+          "p90_ms": 3.52
         },
         "hybrid_int8_lean": {
           "n": 20,
-          "median_ms": 25.82,
-          "p90_ms": 30.66
+          "median_ms": 24.12,
+          "p90_ms": 25.59
         },
         "note": "batch-1 per-suggest on real bench queries; amortized = matrix dequantized once at load (repo tier precedent); lean = int8 dequantized per query in 8k-row chunks, no fp32 matrix in RAM"
       },
@@ -961,10 +961,10 @@
         "rng": "np.random.default_rng([seed, epoch]) for shuffling, [seed, 7] for the probe universe",
         "torch_seed": 42
       },
-      "generated_at": "2026-09-09T21:01:36Z"
+      "generated_at": "2026-09-12T02:20:57Z"
     }
   },
   "hardware": "Apple M1 Max (arm64), CPUExecutionProvider",
   "report_only": true,
-  "generated_at": "2026-09-09T21:38:32Z"
+  "generated_at": "2026-09-12T02:23:06Z"
 }

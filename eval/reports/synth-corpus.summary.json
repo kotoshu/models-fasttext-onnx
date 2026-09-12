@@ -50,6 +50,14 @@
    "top1": 0.0,
    "top5": 0.0,
    "top20": 0.1667
+  },
+  "hybrid": {
+   "pairs_evaluated": 4754,
+   "pairs_correction_oov": 0,
+   "pairs_typo_oov_rescore": 4700,
+   "top1": 0.1111,
+   "top5": 0.4668,
+   "top20": 1.0
   }
  },
  "es": {
@@ -101,6 +109,132 @@
    "top1": 0.0,
    "top5": 0.1,
    "top20": 0.1
+  },
+  "hybrid": {
+   "pairs_evaluated": 4695,
+   "pairs_correction_oov": 0,
+   "pairs_typo_oov_rescore": 4651,
+   "top1": 0.1114,
+   "top5": 0.4777,
+   "top20": 1.0
+  }
+ },
+ "pt": {
+  "n_pairs": 5000,
+  "provenance": {
+   "name": "Synthetic keyboard-noise typo corpus",
+   "version": "1.0.0",
+   "synthetic": true,
+   "generator": "eval/synthesize_corpora.py",
+   "generator_seed": [
+    42,
+    1230,
+    965664300
+   ],
+   "noise_model": "eval/noise.py make_typo_traced (the tier-gate generator)",
+   "dictionary": {
+    "path_layout": "{lang}/spelling/index.dic",
+    "sha256": "32e2edd83541d58613bcc83ef731a79aadf85ed57e977a16c6b5f711a7a36cee"
+   },
+   "vocab_cut": {
+    "source": "models/pt/fasttext.pt.vocab.json",
+    "rule": "corrections sampled from the rank-ordered dictionary-vocab intersection",
+    "intersection_size": 11865
+   },
+   "admission_rule": "correction is an un-flagged pure-letter dictionary stem inside the model vocabulary; typo is not a dictionary word and is reachable by the declared noise ops",
+   "caveat": "generator-domain evidence: the plan-114 bi-encoder trained on the same noise model, so this corpus never replaces the frozen real components",
+   "license": "generated data; dictionary licenses per the dictionaries repository"
+  },
+  "full": {
+   "pairs_evaluated": 85,
+   "pairs_typo_oov": 4915,
+   "pairs_correction_oov": 0,
+   "top1": 0.0588,
+   "top5": 0.2118,
+   "top20": 0.2824
+  },
+  "fluency": {
+   "pairs_evaluated": 49,
+   "pairs_typo_oov": 3203,
+   "pairs_correction_oov": 1748,
+   "top1": 0.0816,
+   "top5": 0.3061,
+   "top20": 0.3673
+  },
+  "mini": {
+   "pairs_evaluated": 11,
+   "pairs_typo_oov": 1031,
+   "pairs_correction_oov": 3958,
+   "top1": 0.1818,
+   "top5": 0.4545,
+   "top20": 0.4545
+  },
+  "hybrid": {
+   "pairs_evaluated": 4712,
+   "pairs_correction_oov": 0,
+   "pairs_typo_oov_rescore": 4648,
+   "top1": 0.1121,
+   "top5": 0.4697,
+   "top20": 1.0
+  }
+ },
+ "fr": {
+  "n_pairs": 5000,
+  "provenance": {
+   "name": "Synthetic keyboard-noise typo corpus",
+   "version": "1.0.0",
+   "synthetic": true,
+   "generator": "eval/synthesize_corpora.py",
+   "generator_seed": [
+    42,
+    1230,
+    3430272718
+   ],
+   "noise_model": "eval/noise.py make_typo_traced (the tier-gate generator)",
+   "dictionary": {
+    "path_layout": "{lang}/spelling/index.dic",
+    "sha256": "984e933237bc1224a48f42828233be9b03228260ef67aa8e2bdddcd03a26230d"
+   },
+   "vocab_cut": {
+    "source": "models/fr/fasttext.fr.vocab.json",
+    "rule": "corrections sampled from the rank-ordered dictionary-vocab intersection",
+    "intersection_size": 18882
+   },
+   "admission_rule": "correction is an un-flagged pure-letter dictionary stem inside the model vocabulary; typo is not a dictionary word and is reachable by the declared noise ops",
+   "caveat": "generator-domain evidence: the plan-114 bi-encoder trained on the same noise model, so this corpus never replaces the frozen real components",
+   "license": "generated data; dictionary licenses per the dictionaries repository"
+  },
+  "full": {
+   "pairs_evaluated": 70,
+   "pairs_typo_oov": 4930,
+   "pairs_correction_oov": 0,
+   "top1": 0.0571,
+   "top5": 0.1143,
+   "top20": 0.1714
+  },
+  "fluency": {
+   "pairs_evaluated": 40,
+   "pairs_typo_oov": 3254,
+   "pairs_correction_oov": 1706,
+   "top1": 0.05,
+   "top5": 0.125,
+   "top20": 0.2
+  },
+  "mini": {
+   "pairs_evaluated": 11,
+   "pairs_typo_oov": 1097,
+   "pairs_correction_oov": 3892,
+   "top1": 0.0,
+   "top5": 0.0909,
+   "top20": 0.1818
+  },
+  "hybrid": {
+   "pairs_evaluated": 4707,
+   "pairs_correction_oov": 0,
+   "pairs_typo_oov_rescore": 4662,
+   "top1": 0.1086,
+   "top5": 0.478,
+   "top20": 1.0
   }
  }
 }

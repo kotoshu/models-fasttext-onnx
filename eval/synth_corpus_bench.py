@@ -29,6 +29,7 @@ from pathlib import Path
 import numpy as np
 
 HIT_KS = (1, 5, 20)
+HYBRID_TOPK = 20  # the plan-115 hybrid: C-retrieve top-20, fastText-rescore
 
 
 def rank_one(normalized: np.ndarray, typo_idx: int, corr_idx: int) -> int | None:
@@ -67,10 +68,60 @@ def score_tier(model, pairs: list) -> dict:
     return out
 
 
+def score_hybrid(full, enc_matrix: np.ndarray, enc, pairs: list) -> dict:
+    """The plan-115 hybrid rule on synth pairs: the char bi-encoder
+    retrieves the top-20 candidates over the WHOLE vocabulary (it
+    embeds every string — the typo-OOV barrier does not apply), then
+    the full fastText tier rescores those candidates by cosine to the
+    typo. The correction outside the top-20 is a miss for every k; a
+    typo outside the fastText vocabulary ranks by the C score alone
+    (counted as typo_oov_rescore — the honest boundary of the design).
+    """
+    w2i = full.word_to_idx
+    words = [None] * full.vocab_size
+    for w, i in w2i.items():
+        words[i] = w
+    hits = {k: 0 for k in HIT_KS}
+    n = corr_oov = typo_oov_rescore = 0
+    for typo, corr, _count in pairs:
+        c = w2i.get(corr)
+        if c is None:
+            corr_oov += 1
+            continue
+        query = enc.encode([typo])[0]
+        sims = query @ enc_matrix.T
+        top = np.argpartition(-sims, HYBRID_TOPK)[:HYBRID_TOPK]
+        cand_idx = [int(i) for i in top if words[int(i)] != typo][:HYBRID_TOPK]
+        if c not in cand_idx:
+            continue  # miss for every k (rank 21)
+        t = w2i.get(typo)
+        if t is None:
+            typo_oov_rescore += 1
+            order = cand_idx
+        else:
+            rescore = full.normalized[np.asarray(cand_idx)] @ full.normalized[t]
+            order = [cand_idx[int(i)] for i in np.argsort(-rescore, kind="stable")]
+        rank = order.index(c) + 1
+        n += 1
+        for k in HIT_KS:
+            if rank <= k:
+                hits[k] += 1
+    out = {
+        "pairs_evaluated": n,
+        "pairs_correction_oov": corr_oov,
+        "pairs_typo_oov_rescore": typo_oov_rescore,
+    }
+    for k in HIT_KS:
+        out[f"top{k}"] = round(hits[k] / n, 4) if n else None
+    return out
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Plan 123 tier baseline on synthetic corpora")
     parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--lang", nargs="+", default=["de", "es"])
+    parser.add_argument("--lang", nargs="+", default=["de", "es", "pt", "fr"])
+    parser.add_argument("--hybrid", action="store_true",
+                        help="also score the plan-115 hybrid (needs eval/candidates/c_typo_v2)")
     args = parser.parse_args()
 
     repo = Path(args.repo_root).resolve()
@@ -94,6 +145,17 @@ def main() -> int:
             )
             result[tier] = score_tier(tier_model, corpus["pairs"])
             print(f"{lang} {tier}: {result[tier]}")
+
+        if args.hybrid:
+            from hybrid_pricing_bench import CharEncoder, _normalized  # noqa: E402
+
+            words = [None] * full.vocab_size
+            for w, i in full.word_to_idx.items():
+                words[i] = w
+            enc = CharEncoder(repo / "eval" / "candidates" / "c_typo_v2")
+            enc_matrix = _normalized(enc.encode(words))
+            result["hybrid"] = score_hybrid(full, enc_matrix, enc, corpus["pairs"])
+            print(f"{lang} hybrid: {result['hybrid']}")
 
         out[lang] = result
 
