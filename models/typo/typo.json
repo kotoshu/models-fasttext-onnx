@@ -49,7 +49,7 @@
     "usage": "top-20 slate by cosine to the typo, rescored by the fastText FULL tier (the plan-114/115 hybrid)"
   },
   "verdict": "plan-115 pre-declared rule, all clauses pass on real-pair components only: en +6.3 pp top-5 (CI +4.9/+7.7), de +28.6 pp (+7.1/+50.0, n=14), ru +11.1 pp (n=27), es +10.0 pp (n=20); no component regresses; 0.481 MB artifact; 3.3-4.3 ms median per-suggest (int8 amortized)",
-  "release_tag": null,
+  "release_tag": "v1.7.0",
   "release_note": "media-host mirror only (plan-113 additive template); primary stays null until the owner cuts a release carrying the typo assets, then this field and the registry entry flip together",
   "eval_ref": "eval/reports/hybrid-pricing.json",
   "source": {
