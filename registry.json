@@ -1,7 +1,7 @@
 {
   "spec": "kotoshu.resources/v1",
   "registry_version": 7,
-  "generated_at": "2026-09-14T03:44:56Z",
+  "generated_at": "2026-09-14T05:44:37Z",
   "release_tag": "v1.7.0",
   "resources": {
     "kotoshu://models/ar/fluency": {
@@ -634,6 +634,27 @@
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/de.mini.json"
     },
+    "kotoshu://models/de/typo-matrix": {
+      "type": "model",
+      "language": "de",
+      "tier": {
+        "name": "typo-matrix",
+        "dims": 256,
+        "vocab_size": 100000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/de/typo.matrix.de.ktm1"
+      },
+      "vocab_url": null,
+      "sha256": "ab787c8837993e06cdc2cdb74dbd4bd53b49edde3aac7bd648458c99fbb33056",
+      "size_bytes": 26000016,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "1.1",
+      "eval_ref": "eval/reports/hybrid-pricing.json"
+    },
     "kotoshu://models/el/buckets": {
       "type": "model",
       "language": "el",
@@ -991,6 +1012,27 @@
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/es.mini.json"
     },
+    "kotoshu://models/es/typo-matrix": {
+      "type": "model",
+      "language": "es",
+      "tier": {
+        "name": "typo-matrix",
+        "dims": 256,
+        "vocab_size": 100000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/es/typo.matrix.es.ktm1"
+      },
+      "vocab_url": null,
+      "sha256": "707aa54000beb1efda47f5954f82122a111df950555424be04781920e386a445",
+      "size_bytes": 26000016,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "1.1",
+      "eval_ref": "eval/reports/hybrid-pricing.json"
+    },
     "kotoshu://models/et/buckets": {
       "type": "model",
       "language": "et",
@@ -1305,6 +1347,27 @@
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/fr.mini.json"
+    },
+    "kotoshu://models/fr/typo-matrix": {
+      "type": "model",
+      "language": "fr",
+      "tier": {
+        "name": "typo-matrix",
+        "dims": 256,
+        "vocab_size": 100000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/fr/typo.matrix.fr.ktm1"
+      },
+      "vocab_url": null,
+      "sha256": "8cb08703d572d592a42df522458a929c1606724d3a03fafd20ceef5041a43580",
+      "size_bytes": 26000016,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "1.1",
+      "eval_ref": "eval/reports/hybrid-pricing.json"
     },
     "kotoshu://models/fy/buckets": {
       "type": "model",
@@ -3616,6 +3679,27 @@
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/pt.mini.json"
     },
+    "kotoshu://models/pt/typo-matrix": {
+      "type": "model",
+      "language": "pt",
+      "tier": {
+        "name": "typo-matrix",
+        "dims": 256,
+        "vocab_size": 100000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/pt/typo.matrix.pt.ktm1"
+      },
+      "vocab_url": null,
+      "sha256": "9ddc4178c13dd75e0d770da36e0bf380c10e8980d5a0ca61ceff09de932cf18a",
+      "size_bytes": 26000016,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "1.1",
+      "eval_ref": "eval/reports/hybrid-pricing.json"
+    },
     "kotoshu://models/ro/buckets": {
       "type": "model",
       "language": "ro",
@@ -3783,6 +3867,27 @@
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/ru.mini.json"
+    },
+    "kotoshu://models/ru/typo-matrix": {
+      "type": "model",
+      "language": "ru",
+      "tier": {
+        "name": "typo-matrix",
+        "dims": 256,
+        "vocab_size": 100000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/ru/typo.matrix.ru.ktm1"
+      },
+      "vocab_url": null,
+      "sha256": "b9cbe74320c219274641aff335420014eb3be3654310a4fdafb7e040c002de3d",
+      "size_bytes": 26000016,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "1.1",
+      "eval_ref": "eval/reports/hybrid-pricing.json"
     },
     "kotoshu://models/sk/buckets": {
       "type": "model",
