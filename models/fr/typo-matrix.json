@@ -1,0 +1,14 @@
+{
+  "plan": "12 prebuilt typo-retrieval matrix (KTM1 v1)",
+  "kind": "typo-retrieval matrix; rows index-parallel to the fr full-tier vocabulary",
+  "vocab_size": 100000,
+  "dims": 256,
+  "bytes": 26000016,
+  "sha256": "8cb08703d572d592a42df522458a929c1606724d3a03fafd20ceef5041a43580",
+  "paired_vocab": "kotoshu://models/fr/full @ sha256 f76468d726289f998ac2cbbd473787e07f8740bc31518bef1387c7c4c6077f06",
+  "built_with": "kotoshu-rs examples/matrix_export (TypoIndex::write_rows)",
+  "license": "CC-BY-SA-3.0",
+  "min_engine_version": "1.1",
+  "release_tag": null,
+  "eval_ref": "eval/reports/hybrid-pricing.json"
+}
