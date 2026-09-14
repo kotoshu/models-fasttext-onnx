@@ -13,7 +13,11 @@ mismatches are failures. Exits nonzero on any failure.
 import argparse
 import hashlib
 import json
+import re
 import sys
+import urllib.error
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from pathlib import Path
 
@@ -50,9 +54,74 @@ def _is_iso8601(value):
     return True
 
 
+CONTENT_RANGE_TOTAL = re.compile(r"bytes\s+\d+-\d+/(\d+)")
+URL_TIMEOUT_S = 30
+URL_PROBE_WORKERS = 8
+
+
 def load_json(path):
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def probe_url(url):
+    """Ranged GET (1 byte) so the media host's HEAD quirks never matter.
+
+    Returns ("ok", total_bytes) or (reason, None). total_bytes comes from
+    Content-Range (206) or Content-Length (200) and is None when unknown.
+    4xx is immediately fatal; 5xx/network errors get one retry.
+    """
+    last_reason = "unknown error"
+    for _ in range(2):
+        request = urllib.request.Request(url, headers={"Range": "bytes=0-0"})
+        try:
+            with urllib.request.urlopen(request, timeout=URL_TIMEOUT_S) as response:
+                total = None
+                content_range = response.headers.get("Content-Range")
+                if content_range:
+                    match = CONTENT_RANGE_TOTAL.match(content_range)
+                    total = int(match.group(1)) if match else None
+                elif response.status == 200:
+                    length = response.headers.get("Content-Length")
+                    total = int(length) if length else None
+                return "ok", total
+        except urllib.error.HTTPError as exc:
+            last_reason = f"HTTP {exc.code}"
+            if exc.code < 500:
+                break
+        except (urllib.error.URLError, OSError, TimeoutError) as exc:
+            last_reason = str(exc) or exc.__class__.__name__
+    return last_reason, None
+
+
+def check_urls_live(resources, errors):
+    """Probe every non-null primary/mirror/vocab URL (plan 10).
+
+    The mirror convention assumes LFS-tracked artifacts: the media host
+    only serves LFS objects, so a plain-git blob yields a silent 404 that
+    construction-only URL checks cannot see. Vocab sidecars are probed for
+    reachability only — their authoritative sizes live in ground truth.
+    """
+    probes = []
+    for resource_id, resource in resources.items():
+        urls = resource.get("urls") or {}
+        for kind in ("primary", "mirror"):
+            if urls.get(kind):
+                probes.append((resource_id, kind, urls[kind], resource.get("size_bytes")))
+        if resource.get("vocab_url"):
+            probes.append((resource_id, "vocab", resource["vocab_url"], None))
+
+    with ThreadPoolExecutor(max_workers=URL_PROBE_WORKERS) as pool:
+        results = list(pool.map(lambda p: (p, probe_url(p[2])), probes))
+
+    for (resource_id, kind, url, expected_size), (status, total) in sorted(results):
+        if status != "ok":
+            errors.append(f"{resource_id}: {kind} URL unreachable ({status}): {url}")
+        elif expected_size is not None and total is not None and total != expected_size:
+            errors.append(
+                f"{resource_id}: {kind} URL serves {total} bytes, registry declares {expected_size}"
+            )
+    return len(probes)
 
 
 def file_sha256_and_size(path):
@@ -319,6 +388,9 @@ def main():
     ap.add_argument("--schema", help="path to registry.schema.json (default: <repo-root>/schemas/registry.schema.json)")
     ap.add_argument("--check-files", action="store_true",
                     help="hash local model/vocab files present on disk (absent files are warnings)")
+    ap.add_argument("--check-urls", action="store_true",
+                    help="probe registry URLs with ranged GETs (network); "
+                         "unreachable URLs and size mismatches are failures")
     args = ap.parse_args()
 
     root = Path(args.repo_root).resolve()
@@ -394,6 +466,10 @@ def main():
         else:
             warnings.append(f"{resource_id}: {vocab_path} absent locally, file check skipped")
 
+    probed = 0
+    if args.check_urls and not errors:
+        probed = check_urls_live(resources, errors)
+
     for warning in warnings:
         print(f"[warn] {warning}")
     if errors:
@@ -404,6 +480,8 @@ def main():
     n_langs = len({r["language"] for r in resources.values()})
     print(f"registry OK: {len(resources)} resources, {n_langs} languages, "
           f"{len(warnings)} warning(s) ({registry_path})")
+    if probed:
+        print(f"URLs OK: {probed} URL(s) reachable")
 
 
 if __name__ == "__main__":
