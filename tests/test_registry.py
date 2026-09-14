@@ -1,11 +1,17 @@
 """Registry validator tests against the self-contained fixture."""
+import functools
+import http.server
 import json
 import shutil
 import subprocess
 import sys
 import tempfile
+import threading
 import unittest
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import validate_registry as vr  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 VALIDATOR = REPO_ROOT / "scripts" / "validate_registry.py"
@@ -199,6 +205,79 @@ class ValidateRegistryTest(unittest.TestCase):
             # The tamper trips either the whole-file sha256 gate or the
             # framing walk (both are pack checks).
             self.assertIn("pack", result.stdout + result.stderr)
+
+
+class CheckUrlsLiveTest(unittest.TestCase):
+    """Plan 10: live URL probing against a real local HTTP server.
+
+    The registry's mirror convention assumes LFS-tracked artifacts; a
+    plain-git blob 404s on the media host and construction-only checks
+    cannot see it. These tests exercise probe_url/check_urls_live with
+    real bytes over real HTTP — hermetic, no internet.
+    """
+
+    def serve(self, files):
+        root = Path(tempfile.mkdtemp())
+        for name, blob in files.items():
+            (root / name).write_bytes(blob)
+        handler = functools.partial(
+            http.server.SimpleHTTPRequestHandler, directory=str(root))
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        self.addCleanup(thread.join, 5)
+        self.addCleanup(server.shutdown)
+        self.addCleanup(shutil.rmtree, root, ignore_errors=True)
+        return f"http://127.0.0.1:{server.server_address[1]}"
+
+    def resource(self, mirror=None, primary=None, vocab_url=None, size_bytes=None):
+        return {
+            "type": "model", "language": "en",
+            "urls": {"primary": primary, "mirror": mirror},
+            "vocab_url": vocab_url, "size_bytes": size_bytes,
+        }
+
+    def test_reachable_url_with_matching_size_passes(self):
+        base = self.serve({"a.onnx": b"x"})
+        resources = {"kotoshu://models/en/full":
+                     self.resource(mirror=f"{base}/a.onnx", size_bytes=1)}
+        errors = []
+        self.assertEqual(vr.check_urls_live(resources, errors), 1)
+        self.assertEqual(errors, [])
+
+    def test_null_urls_are_not_probed(self):
+        resources = {"kotoshu://models/en/full": self.resource(size_bytes=1)}
+        self.assertEqual(vr.check_urls_live(resources, []), 0)
+
+    def test_unreachable_mirror_fails(self):
+        base = self.serve({"a.onnx": b"x"})
+        resources = {"kotoshu://models/en/full":
+                     self.resource(mirror=f"{base}/missing.onnx", size_bytes=1)}
+        errors = []
+        vr.check_urls_live(resources, errors)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("unreachable (HTTP 404)", errors[0])
+        self.assertIn("mirror", errors[0])
+
+    def test_served_size_mismatching_declaration_fails(self):
+        base = self.serve({"a.onnx": b"xy"})
+        resources = {"kotoshu://models/en/full":
+                     self.resource(mirror=f"{base}/a.onnx", size_bytes=1)}
+        errors = []
+        vr.check_urls_live(resources, errors)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("serves 2 bytes, registry declares 1", errors[0])
+
+    def test_vocab_url_is_reachability_only(self):
+        base = self.serve({"a.onnx": b"x", "a.vocab.json": b'{"w":1}'})
+        resources = {"kotoshu://models/en/full":
+                     self.resource(mirror=f"{base}/a.onnx",
+                                   vocab_url=f"{base}/a.vocab.json", size_bytes=1)}
+        errors = []
+        # 2 probes (mirror + vocab); the 3-byte vocab body never trips the
+        # size gate — its authoritative size lives in ground truth.
+        self.assertEqual(vr.check_urls_live(resources, errors), 2)
+        self.assertEqual(errors, [])
 
 
 if __name__ == "__main__":
