@@ -15,6 +15,7 @@ import hashlib
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -69,10 +70,11 @@ def probe_url(url):
 
     Returns ("ok", total_bytes) or (reason, None). total_bytes comes from
     Content-Range (206) or Content-Length (200) and is None when unknown.
-    4xx is immediately fatal; 5xx/network errors get one retry.
+    4xx is immediately fatal; 5xx/network errors retry with backoff
+    (GitHub release downloads occasionally 500 under load).
     """
     last_reason = "unknown error"
-    for _ in range(2):
+    for attempt in range(3):
         request = urllib.request.Request(url, headers={"Range": "bytes=0-0"})
         try:
             with urllib.request.urlopen(request, timeout=URL_TIMEOUT_S) as response:
@@ -91,6 +93,8 @@ def probe_url(url):
                 break
         except (urllib.error.URLError, OSError, TimeoutError) as exc:
             last_reason = str(exc) or exc.__class__.__name__
+        if attempt < 2:
+            time.sleep(1.5 * (attempt + 1))
     return last_reason, None
 
 
