@@ -29,3 +29,7 @@ models/typo/*.vocab.json filter=lfs diff=lfs merge=lfs -text
 # browser-usable bytes (ACAO:*). The registry fixture fake stays plain
 # git via the tests/registry_fixture/** rule above.
 packs/*.bin filter=lfs diff=lfs merge=lfs -text
+
+# Prebuilt KTM1 typo matrices (plan 136) — same rule as the tiers: LFS so
+# the media host serves the bytes CORS-fetchable (ACAO:*).
+*.ktm1 filter=lfs diff=lfs merge=lfs -text
