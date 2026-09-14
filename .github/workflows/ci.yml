@@ -36,4 +36,8 @@ jobs:
       - name: Validate registry (schema and ground truth only)
         run: python3 scripts/validate_registry.py --registry registry.json
       - name: Validate registry URLs (plan 10 fetchability)
-        run: python3 scripts/validate_registry.py --registry registry.json --check-urls
+        env:
+          # pull_request ref_name is the synthetic N/merge ref, which the
+          # media host does not serve - probe the real head sha instead.
+          URLS_REF: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python3 scripts/validate_registry.py --registry registry.json --check-urls --urls-ref "$URLS_REF"
