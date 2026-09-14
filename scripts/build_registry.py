@@ -322,6 +322,41 @@ def main():
         resources["kotoshu://models/typo/typo-biencoder"] = build_typo_resource(
             load_json(typo_descriptor_path), version)
 
+    # Plan 136: prebuilt typo-retrieval matrices (KTM1 artifacts) —
+    # derived-once from the bi-encoder + the language's full-tier
+    # vocabulary, shipped so first arming is a download instead of a
+    # ~25 s derivation. A matrix pairs with EXACTLY the tier vocab it
+    # was built from; the descriptor (models/{lang}/typo-matrix.json,
+    # written by the exporter) records that pairing's sha for the
+    # validator. Mirror-served from day one (the additive template):
+    # primary fills at the next registry release.
+    for lang in sorted(languages):
+        descriptor_path = root / "models" / lang / "typo-matrix.json"
+        if not descriptor_path.exists():
+            continue
+        d = load_json(descriptor_path)
+        release_tag = d.get("release_tag")
+        resources[f"kotoshu://models/{lang}/typo-matrix"] = {
+            "type": "model",
+            "language": lang,
+            "tier": {"name": "typo-matrix", "dims": 256,
+                     "vocab_size": d["vocab_size"], "quantization": "int8-per-row"},
+            "version": version,
+            "urls": {
+                "primary": (
+                    f"{REPO_URL}/releases/download/{release_tag}/typo.matrix.{lang}.ktm1"
+                    if release_tag else None
+                ),
+                "mirror": f"{MEDIA_URL}/main/models/{lang}/typo.matrix.{lang}.ktm1",
+            },
+            "vocab_url": None,
+            "sha256": d["sha256"],
+            "size_bytes": d["bytes"],
+            "license": "CC-BY-SA-3.0",
+            "min_engine_version": d.get("min_engine_version", "1.1"),
+            "eval_ref": d.get("eval_ref"),
+        }
+
     # Plan 113: language packs ride the same registry when the pack
     # descriptor exists (scripts/build_packs.py writes it).
     packs_descriptor_path = root / PACKS_DESCRIPTOR

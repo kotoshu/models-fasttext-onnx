@@ -184,7 +184,7 @@ class ValidateRegistryTest(unittest.TestCase):
             registry_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
             result = run_validator(copy)
             self.assertNotEqual(result.returncode, 0)
-            self.assertIn("release-tag convention", result.stdout + result.stderr)
+            self.assertIn("SAME semver release tag", result.stdout + result.stderr)
 
     def test_tampered_pack_file_fails_file_checks(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -1,7 +1,7 @@
 {
   "spec": "kotoshu.resources/v1",
   "registry_version": 7,
-  "generated_at": "2026-09-13T22:38:12Z",
+  "generated_at": "2026-09-14T03:44:56Z",
   "release_tag": "v1.7.0",
   "resources": {
     "kotoshu://models/ar/fluency": {
@@ -801,6 +801,27 @@
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/en.mini.json"
+    },
+    "kotoshu://models/en/typo-matrix": {
+      "type": "model",
+      "language": "en",
+      "tier": {
+        "name": "typo-matrix",
+        "dims": 256,
+        "vocab_size": 100000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/en/typo.matrix.en.ktm1"
+      },
+      "vocab_url": null,
+      "sha256": "df1a7b2cd55015efcd9639794c2c9cdd34ce2e2f42c764d3e0c40a873ad89321",
+      "size_bytes": 26000016,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "1.1",
+      "eval_ref": "eval/reports/hybrid-pricing.json"
     },
     "kotoshu://models/eo/buckets": {
       "type": "model",
