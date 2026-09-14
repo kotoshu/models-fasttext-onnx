@@ -36,4 +36,4 @@ jobs:
       - name: Validate registry (schema and ground truth only)
         run: python3 scripts/validate_registry.py --registry registry.json
       - name: Validate registry URLs (plan 10 fetchability)
-        run: python3 scripts/validate_registry.py --registry registry.json --check-urls
+        run: python3 scripts/validate_registry.py --registry registry.json --check-urls --urls-ref "${{ github.ref_name }}"

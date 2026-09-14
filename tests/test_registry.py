@@ -279,6 +279,47 @@ class CheckUrlsLiveTest(unittest.TestCase):
         self.assertEqual(vr.check_urls_live(resources, errors), 2)
         self.assertEqual(errors, [])
 
+    def test_mirror_probe_url_rewrites_main_to_the_validating_ref(self):
+        mirror = f"{vr.MEDIA_URL}/main/models/en/typo.matrix.en.ktm1"
+        self.assertEqual(vr.mirror_probe_url(mirror, "main"), mirror)
+        self.assertEqual(vr.mirror_probe_url(mirror, "plan-12-matrices"),
+                         f"{vr.MEDIA_URL}/plan-12-matrices/models/en/typo.matrix.en.ktm1")
+        self.assertEqual(vr.mirror_probe_url(mirror, None), mirror)
+        release = "https://github.com/kotoshu/models-fasttext-onnx/releases/download/v1.7.0/x.onnx"
+        self.assertEqual(vr.mirror_probe_url(release, "plan-12-matrices"), release)
+
+    def test_check_urls_live_probes_the_ref_rewritten_url(self):
+        # The rewrite decides WHICH host path gets probed: a branch-added
+        # artifact 404s on main until merge. The local server stands in
+        # for the media host by serving the same path shape, reachable
+        # only under the branch segment — proving the probe followed the
+        # ref, not the /main/ the registry names.
+        branch = "plan-12-matrices"
+        root = Path(tempfile.mkdtemp())
+        (root / branch / "models" / "de").mkdir(parents=True)
+        (root / branch / "models" / "de" / "typo.matrix.de.ktm1").write_bytes(b"x")
+        handler = functools.partial(
+            http.server.SimpleHTTPRequestHandler, directory=str(root))
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        self.addCleanup(thread.join, 5)
+        self.addCleanup(server.shutdown)
+        self.addCleanup(shutil.rmtree, root, ignore_errors=True)
+        self.base_url = f"http://127.0.0.1:{server.server_address[1]}"
+
+        resources = {"kotoshu://models/de/typo-matrix":
+                     self.resource(mirror=f"{self.base_url}/main/models/de/typo.matrix.de.ktm1",
+                                   size_bytes=1)}
+        real_media_url = vr.MEDIA_URL
+        vr.MEDIA_URL = self.base_url
+        try:
+            errors = []
+            vr.check_urls_live(resources, errors, ref=branch)
+        finally:
+            vr.MEDIA_URL = real_media_url
+        self.assertEqual(errors, [])
+
 
 if __name__ == "__main__":
     unittest.main()

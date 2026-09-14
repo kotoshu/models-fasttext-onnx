@@ -28,7 +28,7 @@ jobs:
       - name: Validate registry
         run: python scripts/validate_registry.py --registry registry.json --check-files
       - name: Validate registry URLs (plan 10 fetchability)
-        run: python scripts/validate_registry.py --registry registry.json --check-urls
+        run: python scripts/validate_registry.py --registry registry.json --check-urls --urls-ref "${{ github.ref_name }}"
       # Byte-stable snapshot of the committed manifest; regenerating would
       # only churn generated_at.
       - name: Snapshot per-tag manifest

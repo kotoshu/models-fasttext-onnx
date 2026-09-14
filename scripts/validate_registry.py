@@ -94,7 +94,19 @@ def probe_url(url):
     return last_reason, None
 
 
-def check_urls_live(resources, errors):
+def mirror_probe_url(url, ref):
+    """Probe a mirror URL at the validating ref, not the /main/ it names.
+
+    LFS objects are content-addressed and exist at every ref carrying
+    them, while an artifact added on a PR branch 404s on main until the
+    merge — so branch validation must probe the branch's copy.
+    """
+    if ref and ref != "main":
+        return url.replace(f"{MEDIA_URL}/main/", f"{MEDIA_URL}/{ref}/")
+    return url
+
+
+def check_urls_live(resources, errors, ref="main"):
     """Probe every non-null primary/mirror/vocab URL (plan 10).
 
     The mirror convention assumes LFS-tracked artifacts: the media host
@@ -107,9 +119,10 @@ def check_urls_live(resources, errors):
         urls = resource.get("urls") or {}
         for kind in ("primary", "mirror"):
             if urls.get(kind):
-                probes.append((resource_id, kind, urls[kind], resource.get("size_bytes")))
+                probes.append((resource_id, kind, mirror_probe_url(urls[kind], ref),
+                               resource.get("size_bytes")))
         if resource.get("vocab_url"):
-            probes.append((resource_id, "vocab", resource["vocab_url"], None))
+            probes.append((resource_id, "vocab", mirror_probe_url(resource["vocab_url"], ref), None))
 
     with ThreadPoolExecutor(max_workers=URL_PROBE_WORKERS) as pool:
         results = list(pool.map(lambda p: (p, probe_url(p[2])), probes))
@@ -391,6 +404,9 @@ def main():
     ap.add_argument("--check-urls", action="store_true",
                     help="probe registry URLs with ranged GETs (network); "
                          "unreachable URLs and size mismatches are failures")
+    ap.add_argument("--urls-ref", default="main",
+                    help="git ref to probe mirror URLs against (pass the branch "
+                         "on PRs: artifacts added there do not exist on main yet)")
     args = ap.parse_args()
 
     root = Path(args.repo_root).resolve()
@@ -468,7 +484,7 @@ def main():
 
     probed = 0
     if args.check_urls and not errors:
-        probed = check_urls_live(resources, errors)
+        probed = check_urls_live(resources, errors, ref=args.urls_ref)
 
     for warning in warnings:
         print(f"[warn] {warning}")
