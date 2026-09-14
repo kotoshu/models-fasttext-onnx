@@ -33,8 +33,13 @@ slowest arming was paid by the best customers.
   CI gate proves the five mirrors serve from the branch; plan 10's
   pre-merge gate could not have done this.
 
-## Post-merge live check
+## Post-merge live check (2026-09-14, PR #43 merged)
 
-`kotoshu setup <lang> --typo` must report `typo: downloaded` (the
-plan-137 backfill) and `KOTOSHU_TYPO_RETRIEVAL=1` must arm each
-language in well under a second.
+- `kotoshu setup de --typo` on a wiped registry: `typo: downloaded`,
+  matrix cached at 26 000 016 bytes, 24.5 s total for spelling + pair +
+  full tier + matrix.
+- de arming: **511 ms** via the matrix vs **44 917 ms** derived (88x);
+  both engines answer identically on probe words (artifact==derived
+  parity holds, the property the rs round-trip test freezes).
+- es/fr/pt/ru matrices fetched live through `download_typo_matrix`:
+  KTM1 magic, 26 000 016 bytes, sha-verified, 2.2-6.6 s each.
