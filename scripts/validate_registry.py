@@ -98,6 +98,18 @@ def check_urls(resource, resource_id, registry, errors):
     tier_name = resource["tier"]["name"]
     onnx_name, vocab_name = asset_stems(lang, tier_name)
 
+    if tier_name == "typo-matrix":
+        # Plan 136: the prebuilt KTM1 retrieval matrix. Mirror-only
+        # until a release carries it (the additive template); no vocab
+        # sibling (rows pair with the language's full-tier vocab).
+        expected = f"{MEDIA_URL}/main/models/{lang}/typo.matrix.{lang}.ktm1"
+        if resource["urls"]["mirror"] != expected:
+            errors.append(f"{resource_id}: mirror URL expected {expected}")
+        if resource["urls"]["primary"] is not None or resource["vocab_url"] is not None:
+            errors.append(f"{resource_id}: typo-matrix rides mirror-only until a "
+                          f"release carries the artifact")
+        return
+
     if tier_name == "typo-biencoder":
         # Plan 115/131: the typo bi-encoder under models/typo/ rides the
         # descriptor's release_tag (the owner's knob). Unset: mirror-only,
@@ -111,18 +123,21 @@ def check_urls(resource, resource_id, registry, errors):
         vocab_url = resource["vocab_url"]
         if primary is None and vocab_url is None:
             return
-        release_tag = (registry.get("release_tag") or "").strip()
-        expected_primary = (
-            f"https://github.com/kotoshu/models-fasttext-onnx/releases/download/"
-            f"{release_tag}/{onnx_name}"
-        )
-        expected_vocab = expected_primary.rsplit("/", 1)[0] + f"/{vocab_name}"
-        if release_tag and primary == expected_primary and vocab_url == expected_vocab:
+        # Plan 136: the pair pins to ITS OWN release tag (the cut that
+        # carried the assets), which can be older than this registry's
+        # release_tag - only the pairing must hold: both URLs at the
+        # SAME semver tag under the release download path.
+        import re as _re
+        pair = _re.fullmatch(
+            r"https://github\.com/kotoshu/models-fasttext-onnx/releases/download/"
+            r"(v\d+\.\d+\.\d+)/typo\.biencoder\.onnx", primary or "")
+        if (pair and vocab_url ==
+                f"https://github.com/kotoshu/models-fasttext-onnx/releases/download/"
+                f"{pair.group(1)}/typo.biencoder.vocab.json"):
             return
         errors.append(f"{resource_id}: typo primary/vocab must either both be null "
-                      f"(pre-release, mirror serves) or both follow the release-tag "
-                      f"convention ({expected_primary} / {expected_vocab}); got "
-                      f"primary={primary!r} vocab={vocab_url!r}")
+                      f"(pre-release, mirror serves) or both sit at the SAME semver "
+                      f"release tag; got primary={primary!r} vocab={vocab_url!r}")
         return
 
     # Every tier binary is an LFS object in git -> the media host mirror
@@ -201,6 +216,14 @@ def check_ground_truth(resource, resource_id, root, manifest, errors):
             errors.append(f"{resource_id}: sha256/size drift vs manifest.json")
         vocab_entry = manifest["resources"].get(f"models/{lang}/fasttext.{lang}.vocab.json")
         return None if vocab_entry is None else (vocab_entry["sha256"], vocab_entry["size"])
+
+    # Plan 136: the prebuilt matrix is descriptor-driven
+    # (models/{lang}/typo-matrix.json), not a tiers.json tier.
+    if tier_name == "typo-matrix":
+        desc = load_json(root / "models" / lang / "typo-matrix.json")
+        if resource["sha256"] != desc["sha256"] or resource["size_bytes"] != desc["bytes"]:
+            errors.append(f"{resource_id}: sha256/size drift vs models/{lang}/typo-matrix.json")
+        return None
 
     tiers_path = root / "models" / lang / "tiers.json"
     try:

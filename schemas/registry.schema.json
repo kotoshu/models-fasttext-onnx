@@ -32,7 +32,7 @@
     "resources": {
       "type": "object",
       "propertyNames": {
-        "pattern": "^kotoshu://(models/(lid/lid-176|typo/typo-biencoder|[a-z]{2}/(full|fluency|mini|buckets))|packs/[a-z]{2})$"
+        "pattern": "^kotoshu://(models/(lid/lid-176|typo/typo-biencoder|[a-z]{2}/(full|fluency|mini|buckets|typo-matrix))|packs/[a-z]{2})$"
       },
       "additionalProperties": {
         "anyOf": [
@@ -87,7 +87,8 @@
                 "mini",
                 "lid-176",
                 "buckets",
-                "typo-biencoder"
+                "typo-biencoder",
+                "typo-matrix"
               ]
             },
             "dims": {
