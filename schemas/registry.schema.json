@@ -169,6 +169,14 @@
             "string",
             "null"
           ]
+        },
+        "paired_vocab_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "typo-matrix only (plan 14): sha256 of the FULL-tier onnx whose vocab the matrix rows are index-parallel to; consumers reject a matrix paired with any other tier"
         }
       },
       "additionalProperties": false
