@@ -194,6 +194,14 @@ def check_urls(resource, resource_id, registry, errors):
         if resource["urls"]["primary"] is not None or resource["vocab_url"] is not None:
             errors.append(f"{resource_id}: typo-matrix rides mirror-only until a "
                           f"release carries the artifact")
+        # Plan 14: the rows are index-parallel to EXACTLY the tier vocab
+        # they were derived over; a rebuilt full tier silently
+        # mismatches every row. The entry must carry the pairing sha,
+        # and check_urls' ground truth compares it to the live tier.
+        import re as _re
+        paired = resource.get("paired_vocab_sha256")
+        if not (isinstance(paired, str) and _re.fullmatch(r"[0-9a-f]{64}", paired)):
+            errors.append(f"{resource_id}: paired_vocab_sha256 missing or malformed")
         return
 
     if tier_name == "typo-biencoder":
@@ -309,6 +317,16 @@ def check_ground_truth(resource, resource_id, root, manifest, errors):
         desc = load_json(root / "models" / lang / "typo-matrix.json")
         if resource["sha256"] != desc["sha256"] or resource["size_bytes"] != desc["bytes"]:
             errors.append(f"{resource_id}: sha256/size drift vs models/{lang}/typo-matrix.json")
+        # Plan 14: cross-check the pairing against the full tier's
+        # ground truth (the manifest) - a rebuilt tier without a
+        # rebuilt matrix ships silently-wrong rows.
+        if manifest is not None:
+            full = (manifest.get("resources") or {}).get(f"models/{lang}/fasttext.{lang}.onnx")
+            if full and resource.get("paired_vocab_sha256") != full["sha256"]:
+                errors.append(
+                    f"{resource_id}: pairs with tier {str(resource.get('paired_vocab_sha256'))[:12]} "
+                    f"but the full tier on disk is {full['sha256'][:12]} - rebuild the matrix "
+                    f"(scripts/build_typo_matrices.py)")
         return None
 
     tiers_path = root / "models" / lang / "tiers.json"

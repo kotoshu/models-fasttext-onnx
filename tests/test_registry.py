@@ -140,6 +140,63 @@ class ValidateRegistryTest(unittest.TestCase):
             validation = run_validator(copy)
             self.assertEqual(validation.returncode, 0, validation.stdout + validation.stderr)
 
+    def seed_matrix_descriptor(self, copy, paired_sha=None):
+        manifest = json.loads((copy / "manifest.json").read_text(encoding="utf-8"))
+        full_sha = manifest["resources"]["models/de/fasttext.de.onnx"]["sha256"]
+        paired = paired_sha or full_sha
+        (copy / "models" / "de" / "typo-matrix.json").write_text(json.dumps({
+            "plan": "14 test", "kind": "matrix", "vocab_size": 10, "dims": 256,
+            "bytes": 2616, "sha256": "f" * 64,
+            "paired_vocab": f"kotoshu://models/de/full @ sha256 {paired}",
+            "release_tag": None,
+        }, indent=2), encoding="utf-8")
+        return full_sha
+
+    def test_matrix_pairing_travels_and_cross_checks(self):
+        # Plan 14: the pairing sha rides the entry, and the validator
+        # compares it against the full tier's ground truth — a rebuilt
+        # tier without a rebuilt matrix fails loudly.
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            full_sha = self.seed_matrix_descriptor(copy)
+
+            result = self.run_generator(copy)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            registry = json.loads((copy / "registry.json").read_text(encoding="utf-8"))
+            entry = registry["resources"]["kotoshu://models/de/typo-matrix"]
+            self.assertEqual(entry["paired_vocab_sha256"], full_sha)
+
+            validation = run_validator(copy)
+            self.assertEqual(validation.returncode, 0, validation.stdout + validation.stderr)
+
+    def test_matrix_pairing_mismatch_fails_with_rebuild_recipe(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            self.seed_matrix_descriptor(copy, paired_sha="e" * 64)
+
+            result = self.run_generator(copy)
+            self.assertEqual(result.returncode, 0)
+            validation = run_validator(copy)
+            self.assertNotEqual(validation.returncode, 0)
+            self.assertIn("rebuild the matrix", validation.stdout + validation.stderr)
+
+    def test_matrix_pairing_field_missing_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "registry_fixture"
+            shutil.copytree(FIXTURE, copy)
+            self.seed_matrix_descriptor(copy)
+            self.run_generator(copy)
+            registry_path = copy / "registry.json"
+            data = json.loads(registry_path.read_text(encoding="utf-8"))
+            del data["resources"]["kotoshu://models/de/typo-matrix"]["paired_vocab_sha256"]
+            registry_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+            result = run_validator(copy)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("paired_vocab_sha256 missing or malformed",
+                          result.stdout + result.stderr)
+
     def test_typo_prerelease_state_generates_nulls(self):
         # Pre-release (descriptor release_tag null): both URLs stay null
         # — the frozen v1.6.0 state regenerates unchanged.
