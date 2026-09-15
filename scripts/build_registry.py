@@ -336,6 +336,12 @@ def main():
             continue
         d = load_json(descriptor_path)
         release_tag = d.get("release_tag")
+        # Plan 14: the pairing sha travels in the entry so consumers can
+        # reject a matrix that pairs with anything but the exact tier
+        # vocab it was derived over. Descriptor format:
+        # "kotoshu://models/{lang}/full @ sha256 <hex>".
+        import re as _re
+        paired = _re.search(r"@ sha256 ([0-9a-f]{64})", d.get("paired_vocab", ""))
         resources[f"kotoshu://models/{lang}/typo-matrix"] = {
             "type": "model",
             "language": lang,
@@ -352,6 +358,7 @@ def main():
             "vocab_url": None,
             "sha256": d["sha256"],
             "size_bytes": d["bytes"],
+            "paired_vocab_sha256": paired.group(1) if paired else None,
             "license": "CC-BY-SA-3.0",
             "min_engine_version": d.get("min_engine_version", "1.1"),
             "eval_ref": d.get("eval_ref"),
