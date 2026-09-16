@@ -23,6 +23,20 @@ scripts/train_char_sibling.py — reproduces every number below):
    of scorer. The 8 bucket rejections were never only a subword-range
    problem.
 
+UPDATE 2026-09-16 (owner: route (a) — same-space, "fully clean"):
+corpus research executed (docs/cjk-typo-corpus-research.md). The
+gate-starvation blocker is SOLVED for zh-Hans by twnlp/csc_data
+(MIT; 19,213 unique pairs vs GitHub's 22; top classes are exactly
+the homophone real-word targets). NEW OWNER DIRECTIVE mid-research:
+SEPARATE Traditional (TW/HK) and Simplified models — measured 22.2%
+Traditional-only lines in the Wikipedia source (the shipped zh tiers
+are script-mixed); zh-Hant has no dedicated upstream corpus, so the
+pipeline = Wikipedia trad-only filtering + OpenCC s2twp conversion +
+native SIGHAN Traditional originals. Open owner items before the cut:
+registry language-code fork (recommend BCP-47 zh-Hans/zh-Hant) and
+Lang-8 licensing review. Same-space training proceeds per variant
+after the code decision.
+
 NEXT RUNGS (owner fork): (a) same-space route — a jieba-segmented zh
 model serving BOTH tier rows and bucket rows (a zh model replacement
 arc through the existing tier gates; heaviest but clean); (b)
