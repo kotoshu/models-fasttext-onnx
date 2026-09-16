@@ -137,12 +137,29 @@ margins are positive for ~70% of CORRECT words (some plausible
 neighbor always edges out the true word under sparse MLE), the same
 magnitude the error class produces.
 
-**Ladder conclusion (trigram would share the failure mode — same
+**Separation exhausted (post-verdict experiments, same frozen
+split):** two further margin families were tested before accepting
+the FAIL — conjunctive aggregation (the candidate must beat the
+observed word on BOTH adjacent bigrams, not their sum) and absolute
+discount smoothing (d=0.75) — four variants total:
+
+| Variant | tau=0 true-top | tau=0 FP | @FP 1% true-top |
+|---|---|---|---|
+| sum / MLE | 66% | 69% | 5.8% |
+| conj / MLE | 55% | 55% | 4.8% |
+| sum / disc | 66% | 69% | 5.6% |
+| conj / disc | 55% | 57% | 4.4% |
+
+At tau=0 the error and clean margin distributions are the same
+distribution (FP ≈ true-top in every variant) — no monotone
+threshold on these margins can separate them. The failure is
+distributional, not a calibration artifact.
+
+**Ladder conclusion (trigram shares the failure mode — same
 sparse-MLE noise class): the next viable rung is a neural context
-scorer (small masked-LM / bi-encoder over word-in-context), which is
-a genuinely different model class and training arc. That decision is
-the owner's.** The gate stands unweakened; gem plan 146 and rs plan
-07 remain blocked.
+scorer (small masked-LM over word-in-context), a genuinely different
+model class and training arc — plan 17, an owner decision. The gate
+stands unweakened; gem plan 146 and rs plan 07 remain blocked.**
 
 Reproduce: `scripts/build_confusion_tables.py --lang en --band 30000`,
 `scripts/train_ctx_lm.py --lang en --corpus <shard> --source ...`,
