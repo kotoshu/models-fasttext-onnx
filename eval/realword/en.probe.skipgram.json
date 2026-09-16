@@ -1,0 +1,142 @@
+{
+ "language": "en",
+ "scorer": "skipgram",
+ "generated_at": "2026-09-16T06:21:09Z",
+ "coverage": {
+  "n_instances": 20517,
+  "table_covered_instances": 3209,
+  "table_coverage": 0.1564,
+  "scoreable_instances": 19565,
+  "clean_eligible_tokens": 46812
+ },
+ "operating_points_fp_anchored": [
+  {
+   "tau": 0.0,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.0,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.0,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.0,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.0,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  }
+ ],
+ "grid": [
+  {
+   "tau": 0.0,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.02,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.04,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.06,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.08,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.1,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.12,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.14,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.16,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.18,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.2,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.22,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.24,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.26,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.28,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  },
+  {
+   "tau": 0.3,
+   "flag_rate_scoreable": 0.0,
+   "recall_true_correction_top": 0.0,
+   "fp_rate": 0.0
+  }
+ ]
+}
