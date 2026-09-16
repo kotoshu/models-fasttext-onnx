@@ -1,6 +1,35 @@
 # Plan 18: CJK char-level bucket feasibility (real-word detection, CJK angle)
 
-## Status: proposed - a feasibility probe is cheap and worth running before owner sequencing
+## Status: feasibility probe EXECUTED (zh) — retraining solves row starvation, but the sibling-artifact architecture fails structurally; verdict recorded, owner fork
+
+Findings (evidence: eval/reports/zh.buckets.char-probe.json, harness:
+scripts/train_char_sibling.py — reproduces every number below):
+
+1. ROW STARVATION SOLVED. A sibling fastText (jieba-segmented
+   Wikipedia shard, minn=1/maxn=3, bucket=200k, 102 s train) yields
+   79,085/200,000 trained bucket rows where the Common Crawl binary
+   starves short-token rows. The plan's core hypothesis is confirmed.
+2. CROSS-SPACE COMPOSITION IS THE REAL BLOCKER. The bucket exporter
+   composes sibling bucket rows against CRAWL tier rows and ranks
+   against the crawl vocab — two different embedding spaces. Even the
+   full-table reference scores intended_top1 = 0.0000. A Procrustes
+   alignment over 7,765 shared-vocab anchors transfers weakly
+   (relative residual 0.785) and post-alignment signal is thin
+   (intended_top5 16.7% on 18 usable demand probes). A "sibling OOV
+   artifact" bolted onto crawl tiers cannot work as specced.
+3. THE zh GATE IS CORPUS-STARVED. The zh typo corpus supports 3
+   non-overlapping gate probes (en: 400) and 18 in-tier demand probes
+   — no statistically meaningful pass is possible for zh regardless
+   of scorer. The 8 bucket rejections were never only a subword-range
+   problem.
+
+NEXT RUNGS (owner fork): (a) same-space route — a jieba-segmented zh
+model serving BOTH tier rows and bucket rows (a zh model replacement
+arc through the existing tier gates; heaviest but clean); (b)
+alignment route — research-grade cross-space alignment (CCA, more
+anchors, mixed-script handling) keeping the sibling as OOV-row
+source; (c) close plan 18 as infeasible-as-specced. All three need a
+larger CJK typo corpus first (the shared blocker with the KTM1 arc).
 
 ## Problem
 
