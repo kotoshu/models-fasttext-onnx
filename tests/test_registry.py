@@ -32,6 +32,58 @@ def run_validator(repo_root, check_files=False):
 
 
 class ValidateRegistryTest(unittest.TestCase):
+    def _bcp47_fixture_root(self, lang: str):
+        """A temp fixture whose first model entry carries `lang` - the
+        minimal probe for the plan-19 BCP-47 widening. Returns the temp
+        repo root for run_validator."""
+        import shutil, tempfile
+        reg = json.loads((FIXTURE / "registry.json").read_text(encoding="utf-8"))
+        for rid, entry in list(reg["resources"].items()):
+            if entry.get("type") == "model":
+                old = entry["language"]
+                entry["language"] = lang
+                rid_new = rid.replace(f"/{old}/", f"/{lang}/")
+                entry["urls"]["mirror"] = (
+                    "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx"
+                    f"/main/models/{lang}/fasttext.{lang}.onnx"
+                )
+                reg["resources"][rid_new] = reg["resources"].pop(rid)
+                manifest = json.loads((FIXTURE / "manifest.json").read_text(encoding="utf-8"))
+                mres = manifest["resources"]
+                mkey = next((k for k in mres if k.startswith(f"models/{old}/") and k.endswith(".onnx")), None)
+                if mkey is None:
+                    self.fail("fixture manifest lacks the model artifact")
+                new_mkey = f"models/{lang}/fasttext.{lang}.onnx"
+                entry_copy = dict(mres[mkey]); entry_copy["language"] = lang
+                mres[new_mkey] = entry_copy
+                break
+        else:
+            self.fail("fixture has no model entry")
+        tmp = Path(tempfile.mkdtemp(prefix="bcp47-fixture-"))
+        shutil.copytree(FIXTURE, tmp, dirs_exist_ok=True)
+        (tmp / "registry.json").write_text(json.dumps(reg, ensure_ascii=False, indent=1))
+        (tmp / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
+        self.addCleanup(shutil.rmtree, tmp, ignore_errors=True)
+        return tmp
+
+    def test_bcp47_variant_codes_accepted(self):
+        # plan 19: zh-Hans-CN / zh-Hant-TW / zh-Hant-HK are the owner-approved
+        # variant codes; 3-letter ISO bases (the old nds rejection) pass too.
+        for lang in ("zh-Hans-CN", "zh-Hant-TW", "zh-Hant-HK", "nds"):
+            root = self._bcp47_fixture_root(lang)
+            result = run_validator(root)
+            self.assertEqual(
+                result.returncode, 0,
+                f"validator rejected BCP-47 language {lang}:\n{result.stdout}\n{result.stderr}",
+            )
+
+    def test_bcp47_canonical_casing_enforced(self):
+        # Non-canonical casing (zh-hans-cn) is REJECTED - the registry
+        # carries exactly one spelling per variant.
+        root = self._bcp47_fixture_root("zh-hans-cn")
+        result = run_validator(root)
+        self.assertNotEqual(result.returncode, 0, "validator accepted lowercase subtags")
+
     def test_fixture_passes(self):
         result = run_validator(FIXTURE)
         self.assertEqual(
