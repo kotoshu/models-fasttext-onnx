@@ -171,3 +171,10 @@ eval/realword/*.json
 eval/realword/*.clean.jsonl
 eval/confusion/
 eval/cache/
+
+# Plan 16 ctx-LM training: the parquet corpus lives locally; the npz
+# artifact stays local until the unblock PRs repackage it to the
+# design doc's ONNX shape. Frozen probe JSONs ARE committed.
+eval/corpus/*
+models/*/fasttext.*.ctx.npz
+!eval/corpus/*.LICENSE.json

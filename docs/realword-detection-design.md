@@ -98,6 +98,56 @@ with stupid-backoff, over a web-scale corpus (Wikipedia per language):
 to bless): eligible-token FP ≤ 1% AND covered-instance true-top
 recall ≥ 60% on this same eval split, with the table-v2 coverage.
 
+## Phase 1 evidence (en, bigram ctx-LM — GATE FAILED, ladder escalated)
+
+Table v2 (the Phase-0 "coverage" half of the gate): with the
+identity-variant deletion-index fix (v1 silently missed EVERY
+insert/delete pair between len>=2 words — you/your and
+occured/occurred are distance 1, not 2; the Phase-0 "distance-2
+dominates" reading was partly that bug) plus bounded DL<=2
+(one side in the top-30k band) plus a lowercase-alpha gate (cased
+vocab entries can never be observed), coverage rises
+**15.6% -> 62.2%** at 1,031,283 pairs / mean degree 54. The table is
+a keeper regardless of scorer outcome.
+
+The scorer half: a bigram LM over one Wikipedia shard
+(wikimedia/wikipedia 20231101.en, 94.3M in-vocab tokens, 10.5M
+bigram types, stupid backoff a=0.4, additive unigram smoothing,
+min-support 100 on context words, adjacent-neighbor context only).
+Three scorer bugs were found and fixed on the way, each recorded
+because they change how to read any future rerun: conditioning on the
+target instead of the context word; inverted margin polarity; and
+zero-count candidates scoring a vacuous 0.0 "perfect fit".
+
+Verdict (frozen in eval/realword/en.probe.ctxlm.json):
+
+| Point | flag (errors) | true-top (covered) | FP (clean) |
+|---|---|---|---|
+| tau=0 (argmax) | 86.8% | **65.5%** | 70.5% |
+| FP-anchored 1% | 8.3% | 5.1% | 1.0% |
+
+The ranking capability is there — the true correction wins argmax
+65.5% of covered instances, ABOVE the gate's 60% bar — but the
+margin distributions on clean and error text overlap almost
+completely: at the operating point where the FP budget (1%) is met,
+recall collapses to 5.1%. A candidate-frequency proximity filter
+(1x-1000x sweeps) and the min-support gate do not separate them.
+This is structural for n-gram scoring: max-over-~50-candidates
+margins are positive for ~70% of CORRECT words (some plausible
+neighbor always edges out the true word under sparse MLE), the same
+magnitude the error class produces.
+
+**Ladder conclusion (trigram would share the failure mode — same
+sparse-MLE noise class): the next viable rung is a neural context
+scorer (small masked-LM / bi-encoder over word-in-context), which is
+a genuinely different model class and training arc. That decision is
+the owner's.** The gate stands unweakened; gem plan 146 and rs plan
+07 remain blocked.
+
+Reproduce: `scripts/build_confusion_tables.py --lang en --band 30000`,
+`scripts/train_ctx_lm.py --lang en --corpus <shard> --source ...`,
+`scripts/eval_realword_detection.py --lang en --scorer ctxlm`.
+
 ## Confusion table v2
 
 - Add bounded distance-2 (the dominant real-word class): d=2 only

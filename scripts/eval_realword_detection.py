@@ -55,6 +55,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 TAUS = [round(t, 3) for t in np.arange(0.00, 0.31, 0.02)]
 FP_ANCHORS = [0.995, 0.99, 0.98, 0.95, 0.90]  # clean-margin quantiles -> operating points
 WINDOW = 5  # context tokens each side, the reranker's operating scale
+MIN_CONTEXT_SUPPORT = 100  # min unigram count for a context word's MLE to be trusted
 
 
 def load_tier(lang: str) -> tuple[dict[str, int], np.ndarray, np.ndarray]:
@@ -104,6 +105,58 @@ class FreqScorer:
 
 SCORERS = {"cosine": CosineScorer, "skipgram": SkipgramScorer, "freq": FreqScorer}
 
+class _CtxLMScorer:
+    """Loads the trainer's .npz and exposes margins(observed, cands, ctx)."""
+    def __init__(self, npz_path, vocab_size, alpha=0.4):
+        from ctxlm_scorer import load_ctx
+        self.uni, self.bg_dict, self.log_p_uni, self.alpha = load_ctx(npz_path, vocab_size, alpha)
+    def margins(self, word_idx, cand_idxs, ctx):
+        from ctxlm_scorer import _bigram_count
+        total = max(int(self.uni.sum()), 1)
+        denom = total + len(self.uni)
+
+        def score(t):
+            import math
+            p_smooth = (int(self.uni[t]) + 1) / denom
+            s = 0.0
+            for c in ctx:
+                if c == t:
+                    continue
+                c_count = int(self.uni[c])
+                cnt = _bigram_count(self.bg_dict, None, c, t)
+                # min-support gate: an MLE conditional off a rare context
+                # word (c(c)=2, cnt=2 -> P=1.0) is noise, not evidence;
+                # fall back to the smoothed unigram below MIN_SUPPORT
+                if cnt > 0 and c_count >= MIN_CONTEXT_SUPPORT:
+                    p = cnt / c_count
+                else:
+                    p = self.alpha * p_smooth
+                s += math.log(p)
+            return s
+        # candidate-minus-observed, the polarity every other scorer uses:
+        # positive margin = the candidate fits the context BETTER
+        base = score(word_idx)
+        return np.array([score(w) - base for w in cand_idxs], dtype=np.float64)
+
+
+SCORERS["ctxlm"] = None  # resolved lazily in main()
+
+
+
+
+def adjacent_ids(sentence: str, idx: int, vocab: dict[str, int]) -> list[int]:
+    """The immediately adjacent in-vocab tokens — the context a BIGRAM
+    can actually score. Window-summing non-adjacent pairs mostly
+    measures backoff fallback, not fit."""
+    toks = sentence.split()
+    ids = []
+    for i in (idx - 1, idx + 1):
+        if 0 <= i < len(toks):
+            tok = _clean_token(toks[i])
+            if tok and tok in vocab:
+                ids.append(vocab[tok])
+    return ids
+
 
 def context_ids(sentence: str, idx: int, vocab: dict[str, int], exclude: str) -> list[int]:
     toks = sentence.split()
@@ -128,6 +181,10 @@ def main() -> int:
     if args.scorer == "skipgram":
         output = np.load(REPO_ROOT / f"eval/cache/{args.lang}.output.npy")
         scorer = SkipgramScorer(output, raw)
+    elif args.scorer == "ctxlm":
+        from ctxlm_scorer import load_ctx
+        scorer = _CtxLMScorer(REPO_ROOT / f"models/{args.lang}/fasttext.{args.lang}.ctx.npz",
+                              vocab_size=max(vocab.values()) + 1, alpha=0.4)
     else:
         scorer = SCORERS[args.scorer](None, normalized)
 
@@ -146,7 +203,9 @@ def main() -> int:
         candidates = [w for w in confusion.get(typo, {}) if w in vocab and w != typo]
         true_pos = candidates.index(correction) if correction in candidates else None
         for ctx_info in pair["contexts"]:
-            ctx = context_ids(ctx_info["sentence"], ctx_info["idx"], vocab, typo)
+            ctx = (adjacent_ids(ctx_info["sentence"], ctx_info["idx"], vocab)
+                   if args.scorer == "ctxlm"
+                   else context_ids(ctx_info["sentence"], ctx_info["idx"], vocab, typo))
             if not ctx:
                 continue
             n_instances += 1
@@ -170,7 +229,9 @@ def main() -> int:
             if not tok or tok not in vocab or tok not in confusion:
                 continue
             candidates = [w for w in confusion[tok] if w in vocab and w != tok]
-            ctx = context_ids(sentence, idx, vocab, tok)
+            ctx = (adjacent_ids(sentence, idx, vocab)
+                   if args.scorer == "ctxlm"
+                   else context_ids(sentence, idx, vocab, tok))
             if not candidates or not ctx:
                 continue
             marg = scorer.margins(vocab[tok], [vocab[c] for c in candidates], ctx)

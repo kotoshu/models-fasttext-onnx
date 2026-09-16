@@ -1,0 +1,13 @@
+{
+ "language": "en",
+ "source": "wikimedia/wikipedia 20231101.en shard 0 (HuggingFace mirror)",
+ "license": "CC-BY-SA-4.0",
+ "corpus_path": "eval/corpus/en-wiki-train-00000-of-00041.parquet",
+ "generated_at": "2026-09-16T15:51:00Z",
+ "vocab_size": 100000,
+ "tokens": 94262775,
+ "bigram_types": 10537807,
+ "backoff_alpha": 0.4,
+ "quantization": "fp32 (gate run); int8-per-row ONNX repackaging on unblock",
+ "artifact_format": "npz: {unigram_counts uint32[vocab_size], bigram_keys uint32[n_types], bigram_counts uint32[n_types]}"
+}

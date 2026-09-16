@@ -1,0 +1,10 @@
+{
+ "language": "en",
+ "source": "HuggingFace mirror of wikimedia/wikipedia (20231101.en)",
+ "license": "CC-BY-SA-4.0",
+ "retrieved_at": "2026-09-16T15:46:00Z",
+ "shards": [
+  "en-wiki-train-00000-of-00041.parquet (420 MB)"
+ ],
+ "note": "Wikimedia text content under CC-BY-SA-4.0; attribution and share-alike apply to derived artifacts. The trained ctx-LM counts are statistical, not textual, but the manifest cites this provenance for downstream licensing review."
+}

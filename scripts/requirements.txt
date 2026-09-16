@@ -8,3 +8,6 @@ jsonschema==4.23.0
 # unittest discovery imports the existing tests/test_onnx_model.py
 # framework, which imports yaml at module level.
 pyyaml==6.0.2
+# Plan 16 ctx-LM trainer reads the Wikipedia parquet shard
+# (scripts/train_ctx_lm.py); pyarrow provides the column reader.
+pyarrow==25.0.0
