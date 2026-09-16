@@ -161,3 +161,13 @@ eval/corpora/*.jsonl.gz
 # scripts/build_cbench.py; only the freeze receipt
 # (eval/reports/cbench.frozen.json) and the bench reports are committed.
 eval/cbench/
+
+# Plan 15 real-word detection: extraction data + confusion tables are
+# local-only generated artifacts (scripts/ are the source of truth);
+# frozen probe evidence (eval/realword/*.probe.*.json) IS committed,
+# as is the design doc + reports convention everywhere else.
+eval/realword/*.json
+!eval/realword/*.probe.*.json
+eval/realword/*.clean.jsonl
+eval/confusion/
+eval/cache/
