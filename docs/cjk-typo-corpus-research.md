@@ -105,13 +105,83 @@ Findings and design consequences:
    touches the validator, the gem's resolver, and pack keys — a
    small but real cross-repo arc.
 
+## Three variants, not two scripts (owner: "HK and TW and CN use different concepts/vocabs!")
+
+The separation requirement is REGIONAL, not merely graphical: HK writes
+Traditional but shares MAINLAND vocabulary (HK 軟件 vs TW 軟體; HK
+巴士/的士/冷氣/雪櫃/質素 vs TW 公車[actually TW also uses 巴士
+regionally]/計程車/空調/冰箱/素質). OpenCC ships s2twp AND s2hk
+separately for exactly this reason. Therefore THREE models:
+
+| Variant | Script | Vocabulary | Corpus state |
+|---|---|---|---|
+| zh-Hans-CN | Simplified | mainland | CLEAN today (csc_data 85% simp; Wikipedia simp-only lines; lang8 simp lines) |
+| zh-Hant-TW | Traditional | Taiwan | GOOD: CC-100 zh-Hant / Traditional C4 (`jed351/Traditional-Chinese-Common-Crawl-Filtered`, 898 shards 2013-2025, no explicit license tag - Common Crawl basis) + Wikipedia trad-only lines; TW share separable via TW-vocab markers |
+| zh-Hant-HK | Traditional | Hong Kong | NO ready open corpus with a clean license tag on HF today (verified 2026-09-16) |
+
+### Hong Kong Chinese corpus (verified findings)
+
+- `Swithord/hong-kong-legco-hansard` (813,034 speech records,
+  1985-2025) is the **ENGLISH** record — the scrape pipeline
+  (github.com/Swithord/hong-kong-legco-transcript) parses the same
+  LegCo source that carries the **Traditional Chinese original**
+  (官方紀錄): re-run the scraper against the Chinese side = the
+  large, license-clean (HK government open data) formal HK written
+  corpus. The single best HK lead.
+- `zetavg/CC-100-zh-Hant-merged` (36 shards) and
+  `jed351/Traditional-Chinese-Common-Crawl-Filtered` (898 shards):
+  large Traditional web text, MIXED TW+HK — the HK share is
+  isolatable downstream via HK-vocabulary markers (巴士/的士/冷氣/
+  雪櫃/質素/立法會/行政長官 density), which the variant split needs
+  anyway.
+- HKSAR press releases (news.gov.hk) + RTHK archives: open HK
+  government Traditional text, scrapeable.
+- Written CANTONESE (yue: 嘅/係/唔) is a DIFFERENT written language,
+  not the zh-Hant-HK spellchecker target: resources exist
+  (`nanyang-technological-university-singapore/hkcancor` CC-BY-4.0
+  spoken; `jed351/cantonese-wikipedia`; `ziyou-li/cantonese_daily`)
+  and are OUT OF SCOPE for this arc unless a yue product is wanted.
+- Typo/eval data for HK: no HK-specific CSC set found; nearest real
+  data = native SIGHAN 2013/2014 Traditional originals + Lang-8
+  trad lines (0.1%, thin) + OpenCC s2hk conversion of csc_data for
+  TRAINING signal only. A real HK learner corpus is an open gap —
+  flagged as an acquisition item (HK student essay corpora exist
+  academically, e.g. through CUHK, but are not openly downloadable).
+
+### arXiv 2025/2026: the Hong Kong / Cantonese data papers (second pass)
+
+- **arXiv 2503.03702** (2025-03): large-scale Cantonese corpus — 2B
+  tokens mined from open corpora, HK-specific forums, Wikipedia,
+  Common Crawl, with the filtering/dedup pipeline published. Written
+  CANTANESE (yue) — out of scope for formal zh-Hant-HK, but the
+  HK-source mining recipe is reusable.
+- **arXiv 2507.11502** (2025-07, HKGAI-V1): HK sovereign LLM for the
+  Cantonese/Mandarin/English environment — the region's data
+  curation reference; not an open corpus itself.
+- **arXiv 2606.06679** (2026-06, HKJudge): ~290k sentences / 6.5M
+  tokens of HK court judgments, expert-annotated — REAL formal
+  Traditional HK written Chinese (legal domain); a strong
+  formal-register eval slice once released, license to verify.
+- **arXiv 2509.20557** (2025-09, SiniticMTError): error-span/type
+  annotations for MT into Mandarin + Cantonese — variant-confusion
+  signal, MT domain.
+- No Cantonese/CSC spelling-correction corpus paper exists (the
+  "Cantonese spelling" query returned nothing) — the HK learner
+  typo-eval gap is confirmed by absence, not just by my HF search.
+
+PERMANENT RULE (owner, 2026-09-16): never ship script-mixed or
+region-mixed CJK models again — the shipped script-mixed zh tiers
+(22.2% Traditional training lines) are the violation this rule
+forecloses; the variant models REPLACE them when plan 18a lands.
+
 ## Recommendation
 
 Adopt twnlp/csc_data (MIT) as the zh-Hans typo corpus — gates
 unblocked at 19k unique pairs; keep Wang271k lines for training
-signal only; hold out SIGHAN15 + real subsets for eval. Build zh-Hans
-first (fully clean sources), zh-Hant second (filter + OpenCC + native
-SIGHAN originals). The registry-code fork (recommend (i) BCP-47) and
+signal only; hold out SIGHAN15 + real subsets for eval. Build zh-Hans-CN first (fully clean sources), zh-Hant-TW second
+(CC-100 zh-Hant / Traditional C4 + TW-vocab separation + native SIGHAN
+originals), zh-Hant-HK third (LegCo Chinese Hansard scrape +
+CC-Traditional HK-share filtering). The registry-code fork (recommend (i) BCP-47) and
 any Lang-8 licensing review (upstream Lang-8 terms vs the aggregate's
 MIT marker — we ship statistics, not text) are owner calls before the
 zh-Hant cut. The same-space model route (plan 18a) proceeds per
