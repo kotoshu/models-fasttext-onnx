@@ -37,6 +37,12 @@ registry language-code fork (recommend BCP-47 zh-Hans/zh-Hant) and
 Lang-8 licensing review. Same-space training proceeds per variant
 after the code decision.
 
+UPDATE 2 (third confirmation): cc.zh.300 re-gated with the REAL CSC corpus
+(19,212 pairs) - demand rows: 1. The crawl-model bucket route for CJK is
+CLOSED (eval/reports/zh.buckets.csc-corpus.json); only the per-variant
+same-space models remain. This simplifies the owner fork to: WHEN to run
+18a per variant (after the registry-code + license calls), not WHETHER.
+
 NEXT RUNGS (owner fork): (a) same-space route — a jieba-segmented zh
 model serving BOTH tier rows and bucket rows (a zh model replacement
 arc through the existing tier gates; heaviest but clean); (b)

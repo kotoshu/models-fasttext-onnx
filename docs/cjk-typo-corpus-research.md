@@ -174,6 +174,19 @@ region-mixed CJK models again — the shipped script-mixed zh tiers
 (22.2% Traditional training lines) are the violation this rule
 forecloses; the variant models REPLACE them when plan 18a lands.
 
+## The crawl-model zh bucket route is CLOSED (third confirmation)
+
+The cc.zh.300 binary was re-gated with the REAL CSC corpus
+(eval/corpora/zh-csc.json, 19,212 unique pairs) on 2026-09-16: the
+demand computation found **1** usable marked-5-gram row and 1 gate
+probe — because the CSC error class is single-character (那/哪, 在/再)
+and `<char>` produces no 5-grams at minn=maxn=5. Evidence:
+eval/reports/zh.buckets.csc-corpus.json. Three independent proofs now
+agree (Phase-0 intended_top1 0.01; the cross-space sibling probe; the
+real-corpus demand starvation): **no corpus can fix a model that
+stores no rows the CJK error class can hit. The per-variant
+same-space models are the only route to CJK buckets.**
+
 ## Recommendation
 
 Adopt twnlp/csc_data (MIT) as the zh-Hans typo corpus — gates
