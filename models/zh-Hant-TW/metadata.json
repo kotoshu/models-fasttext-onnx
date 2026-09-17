@@ -1,0 +1,12 @@
+{
+  "version": "2026-09-17T16:20:11Z",
+  "url": "trained:CC-100 zh-Hant + regional anchor + OpenCC-converted quality Hans corpus",
+  "language": "zh-Hant-TW",
+  "type": "onnx",
+  "file": "fasttext.zh-Hant-TW.onnx",
+  "source_model": "zh-hant-tw.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, Modal 16-core)",
+  "license": "CC-BY-SA-4.0 (wiki/Hansard) + CC-100-derived",
+  "conversion_method": "fasttext_to_onnx.py",
+  "opset_version": 11,
+  "generated_at": "2026-09-17T16:20:11Z"
+}

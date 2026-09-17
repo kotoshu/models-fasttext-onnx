@@ -1,7 +1,7 @@
 {
   "spec": "kotoshu.resources/v1",
   "registry_version": 7,
-  "generated_at": "2026-09-17T13:31:19Z",
+  "generated_at": "2026-09-17T16:22:46Z",
   "release_tag": "v1.7.0",
   "resources": {
     "kotoshu://models/ar/fluency": {
@@ -4650,6 +4650,174 @@
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
       "eval_ref": "eval/reports/zh-Hans-CN.mini.json"
+    },
+    "kotoshu://models/zh-Hant-HK/buckets": {
+      "type": "model",
+      "language": "zh-Hant-HK",
+      "tier": {
+        "name": "buckets",
+        "dims": 300,
+        "vocab_size": 32771,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hant-HK/fasttext.zh-Hant-HK.buckets.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "e5b4d404ead2719a3e9454907d56ddd73742974820cb93d9f6ca207a3614f5ca",
+      "size_bytes": 10225415,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/zh-Hant-HK.buckets.json"
+    },
+    "kotoshu://models/zh-Hant-HK/fluency": {
+      "type": "model",
+      "language": "zh-Hant-HK",
+      "tier": {
+        "name": "fluency",
+        "dims": 300,
+        "vocab_size": 50000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hant-HK/fasttext.zh-Hant-HK.fluency.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "636d25f4d5590465141cc7a28d34b7587cab81c66e98afb87c2114560c812a54",
+      "size_bytes": 15200760,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/zh-Hant-HK.fluency.json"
+    },
+    "kotoshu://models/zh-Hant-HK/full": {
+      "type": "model",
+      "language": "zh-Hant-HK",
+      "tier": {
+        "name": "full",
+        "dims": 300,
+        "vocab_size": 100000,
+        "quantization": null
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hant-HK/fasttext.zh-Hant-HK.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "4bf8b1feb407b3de3c262689a32e1f82f5085efbafc86b5a04b401e5751feee8",
+      "size_bytes": 120000415,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": null
+    },
+    "kotoshu://models/zh-Hant-HK/mini": {
+      "type": "model",
+      "language": "zh-Hant-HK",
+      "tier": {
+        "name": "mini",
+        "dims": 300,
+        "vocab_size": 10000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hant-HK/fasttext.zh-Hant-HK.mini.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "6291ecbad9e3538146b92da18ddfadebba1f8d6d7ea069b1cb923c609fba3a77",
+      "size_bytes": 3040752,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/zh-Hant-HK.mini.json"
+    },
+    "kotoshu://models/zh-Hant-TW/buckets": {
+      "type": "model",
+      "language": "zh-Hant-TW",
+      "tier": {
+        "name": "buckets",
+        "dims": 300,
+        "vocab_size": 32777,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hant-TW/fasttext.zh-Hant-TW.buckets.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "d5778a3e4d09efd291ec0b1c84d52cc7ff0a0bbaf3c86b1bdebfc102cf49b7de",
+      "size_bytes": 10227287,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/zh-Hant-TW.buckets.json"
+    },
+    "kotoshu://models/zh-Hant-TW/fluency": {
+      "type": "model",
+      "language": "zh-Hant-TW",
+      "tier": {
+        "name": "fluency",
+        "dims": 300,
+        "vocab_size": 50000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hant-TW/fasttext.zh-Hant-TW.fluency.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "c06efc4af59fa2f45e2cd612304dceff8a2f3b5564ee0def58328adc060a1912",
+      "size_bytes": 15200760,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/zh-Hant-TW.fluency.json"
+    },
+    "kotoshu://models/zh-Hant-TW/full": {
+      "type": "model",
+      "language": "zh-Hant-TW",
+      "tier": {
+        "name": "full",
+        "dims": 300,
+        "vocab_size": 100000,
+        "quantization": null
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hant-TW/fasttext.zh-Hant-TW.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "3e0bcbee805507750558b3d8d8cb6ac1f2212b33deff53f0e6a5279e4c554e36",
+      "size_bytes": 120000415,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": null
+    },
+    "kotoshu://models/zh-Hant-TW/mini": {
+      "type": "model",
+      "language": "zh-Hant-TW",
+      "tier": {
+        "name": "mini",
+        "dims": 300,
+        "vocab_size": 10000,
+        "quantization": "int8-per-row"
+      },
+      "version": "1.7.0",
+      "urls": {
+        "primary": null,
+        "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hant-TW/fasttext.zh-Hant-TW.mini.onnx"
+      },
+      "vocab_url": null,
+      "sha256": "25bd1f9c8befb5d12ec7ba502d9eaac30b2bc2791f5fa456bec08712b61a8568",
+      "size_bytes": 3040752,
+      "license": "CC-BY-SA-3.0",
+      "min_engine_version": "0.7",
+      "eval_ref": "eval/reports/zh-Hant-TW.mini.json"
     },
     "kotoshu://models/zh/fluency": {
       "type": "model",
