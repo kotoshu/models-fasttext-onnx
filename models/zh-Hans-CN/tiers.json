@@ -6,41 +6,41 @@
       "vocab_size": 50000,
       "quantization": "int8-per-row",
       "bytes": 15200760,
-      "sha256": "4af2873dd82fdbc7be6e6ae1abbb17090415c5ec1e5910b0a8348016a6f8d5ec",
-      "vocab_sha256": "271a1fa79dbfad08faf882132904f7fd82b7381458a04e9b5347b201d661f916",
-      "vocab_bytes": 1084895,
+      "sha256": "f3cadd9235eaf7864952daf7bdd5b071d8c93686c0a2199f64fbfd82d68fb3eb",
+      "vocab_sha256": "da6217b8b61311faeed1bc42e3a1a497d6366d55355610d3c580900b8e36c9ae",
+      "vocab_bytes": 1083001,
       "eval_ref": "eval/reports/zh-Hans-CN.fluency.json",
-      "source_full_sha256": "d4ad4d5981e35b2bd30473c6ea3cbb5a22489fdcd16f12b42e956ced662532ef"
+      "source_full_sha256": "1e552c59e7a041a2d8cab00402f6c2bbf45dc8ad2d3393162bba4ff18b5173e4"
     },
     "mini": {
       "dims": 300,
       "vocab_size": 10000,
       "quantization": "int8-per-row",
       "bytes": 3040752,
-      "sha256": "2efd7c69d034c0b9028a9e7e543968a67e95080b528c19305923181c5e3acd8c",
-      "vocab_sha256": "e92c00a495d273717ea71909809dfab818be118dc0dafa5ae3144d95f45d8e35",
-      "vocab_bytes": 200418,
+      "sha256": "1bcc87f438ad12f7c7f54ce9bd26e4ae124970bc8575932b4de8300421c64b02",
+      "vocab_sha256": "1497c08258e34305be9885d920c42f884dd1e61f9e69605e271b4666324f52b2",
+      "vocab_bytes": 198795,
       "eval_ref": "eval/reports/zh-Hans-CN.mini.json",
-      "source_full_sha256": "d4ad4d5981e35b2bd30473c6ea3cbb5a22489fdcd16f12b42e956ced662532ef"
+      "source_full_sha256": "1e552c59e7a041a2d8cab00402f6c2bbf45dc8ad2d3393162bba4ff18b5173e4"
     },
     "buckets": {
       "dims": 300,
       "vocab_size": 32778,
       "quantization": "int8-per-row",
       "bytes": 10227599,
-      "sha256": "d5fb308ee7a09c589c3fc170d59ea1f783529dd9bf78601c012af06550e52737",
+      "sha256": "da63e73fe13cbf45680889d08c16ad85129884d1242155998d0b043d390a38ba",
       "vocab_sha256": null,
       "vocab_bytes": null,
       "eval_ref": "eval/reports/zh-Hans-CN.buckets.json",
-      "source_bin_sha256": "861caec10438ec115f1010a2319ae81e74a5773a87602739ac6c212e16986301",
+      "source_bin_sha256": "297a57f32fcbe64c38950e062db2ead589ddbe63ae4a7e2853b59859d7d48a36",
       "bucket_count": 2000000,
       "buckets": 32778,
       "usage_top_k": 32768,
       "demand_rows": 25,
       "minn": 1,
       "maxn": 3,
-      "parity_max_abs": 0.019775107502937317
+      "parity_max_abs": 0.023428678512573242
     }
   },
-  "generated_at": "2026-09-17T04:09:37Z"
+  "generated_at": "2026-09-17T13:31:01Z"
 }

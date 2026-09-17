@@ -1,7 +1,7 @@
 {
   "spec": "kotoshu.resources/v1",
   "registry_version": 7,
-  "generated_at": "2026-09-17T04:33:04Z",
+  "generated_at": "2026-09-17T13:31:19Z",
   "release_tag": "v1.7.0",
   "resources": {
     "kotoshu://models/ar/fluency": {
@@ -4582,7 +4582,7 @@
         "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hans-CN/fasttext.zh-Hans-CN.buckets.onnx"
       },
       "vocab_url": null,
-      "sha256": "d5fb308ee7a09c589c3fc170d59ea1f783529dd9bf78601c012af06550e52737",
+      "sha256": "da63e73fe13cbf45680889d08c16ad85129884d1242155998d0b043d390a38ba",
       "size_bytes": 10227599,
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
@@ -4603,7 +4603,7 @@
         "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hans-CN/fasttext.zh-Hans-CN.fluency.onnx"
       },
       "vocab_url": null,
-      "sha256": "4af2873dd82fdbc7be6e6ae1abbb17090415c5ec1e5910b0a8348016a6f8d5ec",
+      "sha256": "f3cadd9235eaf7864952daf7bdd5b071d8c93686c0a2199f64fbfd82d68fb3eb",
       "size_bytes": 15200760,
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
@@ -4624,7 +4624,7 @@
         "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hans-CN/fasttext.zh-Hans-CN.onnx"
       },
       "vocab_url": null,
-      "sha256": "d4ad4d5981e35b2bd30473c6ea3cbb5a22489fdcd16f12b42e956ced662532ef",
+      "sha256": "1e552c59e7a041a2d8cab00402f6c2bbf45dc8ad2d3393162bba4ff18b5173e4",
       "size_bytes": 120000415,
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
@@ -4645,7 +4645,7 @@
         "mirror": "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/zh-Hans-CN/fasttext.zh-Hans-CN.mini.onnx"
       },
       "vocab_url": null,
-      "sha256": "2efd7c69d034c0b9028a9e7e543968a67e95080b528c19305923181c5e3acd8c",
+      "sha256": "1bcc87f438ad12f7c7f54ce9bd26e4ae124970bc8575932b4de8300421c64b02",
       "size_bytes": 3040752,
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
