@@ -1,0 +1,46 @@
+{
+  "language": "zh-Hans-CN",
+  "tiers": {
+    "fluency": {
+      "dims": 300,
+      "vocab_size": 50000,
+      "quantization": "int8-per-row",
+      "bytes": 15200760,
+      "sha256": "4af2873dd82fdbc7be6e6ae1abbb17090415c5ec1e5910b0a8348016a6f8d5ec",
+      "vocab_sha256": "271a1fa79dbfad08faf882132904f7fd82b7381458a04e9b5347b201d661f916",
+      "vocab_bytes": 1084895,
+      "eval_ref": "eval/reports/zh-Hans-CN.fluency.json",
+      "source_full_sha256": "d4ad4d5981e35b2bd30473c6ea3cbb5a22489fdcd16f12b42e956ced662532ef"
+    },
+    "mini": {
+      "dims": 300,
+      "vocab_size": 10000,
+      "quantization": "int8-per-row",
+      "bytes": 3040752,
+      "sha256": "2efd7c69d034c0b9028a9e7e543968a67e95080b528c19305923181c5e3acd8c",
+      "vocab_sha256": "e92c00a495d273717ea71909809dfab818be118dc0dafa5ae3144d95f45d8e35",
+      "vocab_bytes": 200418,
+      "eval_ref": "eval/reports/zh-Hans-CN.mini.json",
+      "source_full_sha256": "d4ad4d5981e35b2bd30473c6ea3cbb5a22489fdcd16f12b42e956ced662532ef"
+    },
+    "buckets": {
+      "dims": 300,
+      "vocab_size": 32778,
+      "quantization": "int8-per-row",
+      "bytes": 10227599,
+      "sha256": "d5fb308ee7a09c589c3fc170d59ea1f783529dd9bf78601c012af06550e52737",
+      "vocab_sha256": null,
+      "vocab_bytes": null,
+      "eval_ref": "eval/reports/zh-Hans-CN.buckets.json",
+      "source_bin_sha256": "861caec10438ec115f1010a2319ae81e74a5773a87602739ac6c212e16986301",
+      "bucket_count": 2000000,
+      "buckets": 32778,
+      "usage_top_k": 32768,
+      "demand_rows": 25,
+      "minn": 1,
+      "maxn": 3,
+      "parity_max_abs": 0.019775107502937317
+    }
+  },
+  "generated_at": "2026-09-17T04:09:37Z"
+}

@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "generated_at": "2026-09-09T21:48:56Z",
+  "generated_at": "2026-09-17T04:00:18Z",
   "repo_version": "v1",
-  "resource_count": 381,
-  "language_count": 57,
+  "resource_count": 383,
+  "language_count": 58,
   "resources": {
     "models/ar/fasttext.ar.fluency.onnx": {
       "size": 15200760,
@@ -3755,6 +3755,20 @@
       "size": 1740489,
       "sha256": "beec2932deb2f487329de5d3a0226c745f6158de82d9946bbe0ee94ca00b2491",
       "language": "zh",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
+    },
+    "models/zh-Hans-CN/fasttext.zh-Hans-CN.onnx": {
+      "size": 120000415,
+      "sha256": "d4ad4d5981e35b2bd30473c6ea3cbb5a22489fdcd16f12b42e956ced662532ef",
+      "language": "zh-Hans-CN",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/zh-Hans-CN/fasttext.zh-Hans-CN.vocab.json": {
+      "size": 2205716,
+      "sha256": "204467538b6c752a68191746bfa49428f0d52e46d66a8fd9bc36249cb0a4d6c9",
+      "language": "zh-Hans-CN",
       "type": "vocab",
       "source": "FastText Common Crawl"
     }

@@ -533,10 +533,16 @@ def _pair_map(pairs):
 _CONFUSION = {
     "ja": _pair_map(_JA_PAIRS),
     "zh": _pair_map(_ZH_PAIRS),
+    # plan 19/20 BCP-47 variants: zh-Hans-CN shares the simplified
+    # confusion pairs today; the Hant variants get their own
+    # Traditional pairs when their models are built.
+    "zh-Hans-CN": _pair_map(_ZH_PAIRS),
+    "zh-Hant-TW": _pair_map(_ZH_PAIRS),
+    "zh-Hant-HK": _pair_map(_ZH_PAIRS),
 }
 _CONFUSION_KO = _pair_map(_KO_PAIRS)
 
-CJK_LANGS = ("ja", "ko", "zh")
+CJK_LANGS = ("ja", "ko", "zh", "zh-Hans-CN", "zh-Hant-TW", "zh-Hant-HK")
 
 
 def _hangul_decompose(ch: str):
@@ -796,6 +802,7 @@ def main() -> int:
         "ja": ["今日は", "先生", "日本語"],
         "ko": ["안녕하세요", "개발자", "학교"],
         "zh": ["你好", "我们", "电脑"],
+        "zh-Hans-CN": ["你好", "我们", "电脑"],
         "it": ["città", "perché", "morire"],
         "nl": ["volgende", "moeilijk", "zachte"],
         "pl": ["szkoła", "wszystkie", "ćwiczenie"],

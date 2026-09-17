@@ -1,6 +1,39 @@
 # Plan 20: the zh-Hans-CN same-space model (plan 18a execution)
 
-## Status: in progress - corpus segmented, training launched
+## Status: EXECUTED - the first variant model is built and gates-passed
+
+Results (2026-09-17, all on this machine, reproducible from the
+pipeline in eval/cache/zh-hans-pipeline.sh):
+
+- Training: fastText skipgram over zh-hans-wiki.txt (48.4M tokens,
+  236,243 vocab) with minn=1/maxn=3, bucket=2M - the short-ngram
+  setting that solved CJK row starvation; 535,009/2,000,000 trained
+  bucket rows.
+- Tier gates: fluency rank_corr 1.0000 / top1 1.0000; mini
+  rank_corr 0.9999 / top1 1.0000 - above the fleet's worst-case
+  thresholds (0.9998/0.950).
+- Bucket gates: PASSED at K=32,768 and K=65,536 (resolved 1.000 vs
+  baseline 0.000; fidelity agree/cos 1.0000/1.0000); K=131,072
+  fails the size budget as the ladder intends. Artifact
+  fasttext.zh-Hans-CN.buckets.onnx ships at 9.8 MB (32,768 usage rows
+  + 25 demand rows from the real CSC corpus).
+- Registry: regenerated at tag v1.7.0; the diff is exactly the four
+  zh-Hans-CN resources (full/fluency/mini/buckets), mirror-only per
+  the serves-from-main convention until a release cut carries them.
+
+Honest caveat recorded: the bucket gate's corpus-probe side is thin
+(2 probes) - structurally, CSC errors are REAL-WORD class (the typo
+is in-vocab), so they do not qualify as OOV probes; the pass rides on
+the synthetic ladder plus those two. The real-word-detection arc
+(plan 17) is the consumer for that class, not the bucket gate.
+
+Pipeline notes for the TW/HK builds: save_vectors is absent in this
+fastText build (manual .vec dump); the manifest generator requires
+git-tracked artifacts (stage before regenerating); build_tiers needs
+the language in the manifest; eval/noise.py now routes the variant
+codes through the CJK confusion path (zh-Hans-CN shares the
+simplified pairs; the Hant variants need Traditional pairs when
+built).
 
 The owner opened every gate on 2026-09-17: BCP-47 codes shipped (plan
 19), distribution approved, scrape authorized. This plan builds the

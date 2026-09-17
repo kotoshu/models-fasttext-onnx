@@ -64,6 +64,7 @@ models/*/
 !models/cs/
 !models/cy/
 !models/da/
+!models/zh-Hans-CN/
 !models/de/
 !models/el/
 !models/en/
