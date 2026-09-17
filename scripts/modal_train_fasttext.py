@@ -99,7 +99,8 @@ def main(corpus: str, name: str, minn: int = 1, maxn: int = 3,
     print(f"uploading {corpus_path.name} "
           f"({corpus_path.stat().st_size / 2**20:.0f} MB) to Modal...")
     import time
-    remote_corpus = f"{name}/corpus-{int(corpus_path.stat().st_size)}.txt"
+    import time as _t
+    remote_corpus = f"{name}/corpus-{int(corpus_path.stat().st_size)}-{int(_t.time())}.txt"
     with VOLUME.batch_upload() as batch:
         batch.put_file(corpus_path, remote_corpus)
     print(f"corpus uploaded to volume as {remote_corpus}")
