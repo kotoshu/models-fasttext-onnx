@@ -65,6 +65,8 @@ models/*/
 !models/cy/
 !models/da/
 !models/zh-Hans-CN/
+!models/zh-Hant-TW/
+!models/zh-Hant-HK/
 !models/de/
 !models/el/
 !models/en/

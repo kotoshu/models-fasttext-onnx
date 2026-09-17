@@ -534,12 +534,29 @@ _CONFUSION = {
     "ja": _pair_map(_JA_PAIRS),
     "zh": _pair_map(_ZH_PAIRS),
     # plan 19/20 BCP-47 variants: zh-Hans-CN shares the simplified
-    # confusion pairs today; the Hant variants get their own
-    # Traditional pairs when their models are built.
+    # pairs; the Hant variants carry OPENCC-CONVERTED pairs so the
+    # noise ops produce Traditional characters in the variant's own
+    # regional profile (s2twp/s2hk - homophone/shape classes carry).
     "zh-Hans-CN": _pair_map(_ZH_PAIRS),
-    "zh-Hant-TW": _pair_map(_ZH_PAIRS),
-    "zh-Hant-HK": _pair_map(_ZH_PAIRS),
 }
+
+
+def _hant_pairs(profile: str):
+    """The zh confusion pairs converted regionally via OpenCC; pairs
+    whose sides collapse to the same form after conversion drop out
+    (e.g. pairs distinguished only by simplified forms)."""
+    from opencc import OpenCC
+    conv = OpenCC(profile).convert
+    out = []
+    for a, b in _ZH_PAIRS:
+        ca, cb = conv(a), conv(b)
+        if ca != cb:
+            out.append((ca, cb))
+    return _pair_map(out)
+
+
+_CONFUSION["zh-Hant-TW"] = _hant_pairs("s2twp")
+_CONFUSION["zh-Hant-HK"] = _hant_pairs("s2hk")
 _CONFUSION_KO = _pair_map(_KO_PAIRS)
 
 CJK_LANGS = ("ja", "ko", "zh", "zh-Hans-CN", "zh-Hant-TW", "zh-Hant-HK")
