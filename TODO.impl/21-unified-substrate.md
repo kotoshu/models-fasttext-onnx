@@ -64,6 +64,32 @@ the quality bar. "Crawl scale" alone is no longer the target;
    legacy (raw 2018 Common Crawl) is tolerated until the audit
    measures whether a quality-first retrain beats it on output evals.
 
+## CORRECTION (owner 2026-09-17): the probe-filtered mixed-wiki extract is NOT the TW/HK corpus
+
+zh-hant-wiki.txt (Traditional lines probe-filtered from the MIXED zh
+Wikipedia shard) is REJECTED as the TW/HK substrate: the zh Wikipedia
+is regionally UNCONTROLLED (TW, HK and mainland vocabulary mixed
+across and within articles), and the line-level probe filter is crude.
+Training the TW/HK models on it would be the same pollution the
+three-variant split exists to fix.
+
+The TW/HK substrate corpora (quality-first, region-correct):
+
+- **Base (both)**: CC-100 zh-Hant (zetavg mirror, 37 shards, verified)
+  - script-correct crawl scale; TW+HK mixed at vocabulary level, and
+    the TW/HK vocabulary separation is a downstream, measurable step.
+- **TW register**: HowardHsuuu/taiwan-corpus-zhtw (CC-BY-4.0, genuine
+  TW web text) + IMA-Taiwan/ima-corpus-zhtw (CC, TW literary register)
+  + OpenCC s2twp conversion of quality Simplified sources (converts
+  vocabulary: 软件→軟體).
+- **HK register**: the LegCo Chinese Hansard (1,343 meetings, 503M
+  chars, COMMITTED on hk-hansard main - genuinely HK-authored formal
+  text) + OpenCC s2hk conversions where a Hans register supplement is
+  needed.
+- **EXCLUDED everywhere**: zh-hant-wiki.txt (probe-filtered mixed-wiki
+  extract), raw mixed-crawl without the quality pass, and any corpus
+  whose regional vocabulary is uncontrolled.
+
 ## Regional variants (owner 2026-09-17: "clearly US english and UK
 english are different as well")
 
