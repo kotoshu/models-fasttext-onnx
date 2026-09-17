@@ -9,7 +9,7 @@
   },
   "metrics": {
     "rank_corr": {
-      "mean_spearman": 0.9998760668175021,
+      "mean_spearman": 0.9999368147484045,
       "n_probes_scored": 2000,
       "n_probes_skipped": 0,
       "mean_comparisons_per_probe": 299.9245,
@@ -20,10 +20,10 @@
     },
     "top1_agreement": {
       "agreement": 1.0,
-      "n_probes_scored": 60,
-      "n_probes_skipped_typo": 339,
-      "n_probes_skipped_candidates": 1,
-      "mean_candidates_dropped_out_of_vocab": 1.645,
+      "n_probes_scored": 30,
+      "n_probes_skipped_typo": 370,
+      "n_probes_skipped_candidates": 0,
+      "mean_candidates_dropped_out_of_vocab": 1.0,
       "rank_range": [
         1000,
         10000
@@ -61,23 +61,23 @@
     "tier_onnx": {
       "path": "models/vi/fasttext.vi.mini.onnx",
       "bytes": 3040752,
-      "sha256": "b0b590672014b28364995a2db74cdaef5c7a77b89617522d8e64cc547ffc8ea8"
+      "sha256": "33bca8fcb7f2146b63ecc053148ae891ffd24b8ee80a172859269d9eddbff2d5"
     },
     "tier_vocab": {
       "path": "models/vi/fasttext.vi.mini.vocab.json",
-      "bytes": 188108,
-      "sha256": "50d82019d206bf9129d352cd56e71ca3e680ff2cf8a3ad8ca70c55b6ac960820"
+      "bytes": 193048,
+      "sha256": "147b8882b9d4122e887248a1d31f2dcaff99d6274b6bd864538f7eca589e2a0d"
     },
     "full_onnx": {
       "path": "models/vi/fasttext.vi.onnx",
       "bytes": 120000415,
-      "sha256": "61ade9043848052f3bd8ebeac656ec03f0873ca4c563a9c2cef1ab88f67462b9"
+      "sha256": "393cc5a6f39c1ecff99f7b8c5f7aa18d43f74bad7d2701367416f3c97cf6380d"
     }
   },
-  "generated_at": "2026-09-05T08:17:10Z",
+  "generated_at": "2026-09-17T18:29:30Z",
   "quantization_check": {
     "runtime_vs_dequant_max_abs": 0.0,
-    "dequant_vs_projected_max_abs": 0.01971733570098877,
+    "dequant_vs_projected_max_abs": 0.00823056697845459,
     "dequant_vs_projected_tol": 0.05,
     "passed": true
   },
@@ -89,7 +89,7 @@
       },
       "passed": true,
       "metrics": {
-        "rank_corr": 0.999876,
+        "rank_corr": 0.999937,
         "top1_agreement": 1.0,
         "recipe": {
           "dims": 300,

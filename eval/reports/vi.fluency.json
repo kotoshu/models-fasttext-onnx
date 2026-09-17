@@ -9,7 +9,7 @@
   },
   "metrics": {
     "rank_corr": {
-      "mean_spearman": 0.9999147101946794,
+      "mean_spearman": 0.9999711882969173,
       "n_probes_scored": 2000,
       "n_probes_skipped": 0,
       "mean_comparisons_per_probe": 1499.378,
@@ -20,10 +20,10 @@
     },
     "top1_agreement": {
       "agreement": 1.0,
-      "n_probes_scored": 63,
-      "n_probes_skipped_typo": 337,
+      "n_probes_scored": 43,
+      "n_probes_skipped_typo": 357,
       "n_probes_skipped_candidates": 0,
-      "mean_candidates_dropped_out_of_vocab": 1.07,
+      "mean_candidates_dropped_out_of_vocab": 0.75,
       "rank_range": [
         1000,
         30000
@@ -61,23 +61,23 @@
     "tier_onnx": {
       "path": "models/vi/fasttext.vi.fluency.onnx",
       "bytes": 15200760,
-      "sha256": "60bece189ed85adbf0252eaf464a99456f04a70011f4b7b31a143d4714aa4536"
+      "sha256": "f054f939100770db138c62c0d1e6596bf4db5a40590194976ec2304d4e8702a2"
     },
     "tier_vocab": {
       "path": "models/vi/fasttext.vi.fluency.vocab.json",
-      "bytes": 1031220,
-      "sha256": "982cf11f6c3c2e2c780a734e342481320648444a99fe3c070776afb58a0b55bb"
+      "bytes": 1043500,
+      "sha256": "70d48cc7770d0b51b95c6a10fd31d9c7ee556f8a73ba087f0d330777abced8f7"
     },
     "full_onnx": {
       "path": "models/vi/fasttext.vi.onnx",
       "bytes": 120000415,
-      "sha256": "61ade9043848052f3bd8ebeac656ec03f0873ca4c563a9c2cef1ab88f67462b9"
+      "sha256": "393cc5a6f39c1ecff99f7b8c5f7aa18d43f74bad7d2701367416f3c97cf6380d"
     }
   },
-  "generated_at": "2026-09-05T08:17:08Z",
+  "generated_at": "2026-09-17T18:29:29Z",
   "quantization_check": {
     "runtime_vs_dequant_max_abs": 0.0,
-    "dequant_vs_projected_max_abs": 0.01971733570098877,
+    "dequant_vs_projected_max_abs": 0.00823056697845459,
     "dequant_vs_projected_tol": 0.05,
     "passed": true
   },
@@ -89,7 +89,7 @@
       },
       "passed": true,
       "metrics": {
-        "rank_corr": 0.999915,
+        "rank_corr": 0.999971,
         "top1_agreement": 1.0,
         "recipe": {
           "dims": 300,

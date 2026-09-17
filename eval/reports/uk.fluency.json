@@ -3,16 +3,16 @@
   "tier": "fluency",
   "recipe": {
     "dims": 300,
-    "vocab_size": 50000,
+    "vocab_size": 60000,
     "quantization": "int8-per-row",
     "reduction": "uncentered-covariance-eigendecomposition"
   },
   "metrics": {
     "rank_corr": {
-      "mean_spearman": 0.9999263767980492,
+      "mean_spearman": 0.9999721422036396,
       "n_probes_scored": 2000,
       "n_probes_skipped": 0,
-      "mean_comparisons_per_probe": 1500.5775,
+      "mean_comparisons_per_probe": 1800.214,
       "rank_range": [
         50,
         30000
@@ -20,19 +20,19 @@
     },
     "top1_agreement": {
       "agreement": 1.0,
-      "n_probes_scored": 11,
-      "n_probes_skipped_typo": 389,
+      "n_probes_scored": 13,
+      "n_probes_skipped_typo": 387,
       "n_probes_skipped_candidates": 0,
-      "mean_candidates_dropped_out_of_vocab": 0.125,
+      "mean_candidates_dropped_out_of_vocab": 0.145,
       "rank_range": [
         1000,
         30000
       ]
     },
     "coverage": {
-      "frequency_weighted_coverage": 0.942668833516177,
+      "frequency_weighted_coverage": 0.9577488737554868,
       "full_vocab_size": 100000,
-      "tier_vocab_size": 50000,
+      "tier_vocab_size": 60000,
       "weighting": "1/(rank+1)"
     }
   },
@@ -60,24 +60,24 @@
   "files": {
     "tier_onnx": {
       "path": "models/uk/fasttext.uk.fluency.onnx",
-      "bytes": 15200760,
-      "sha256": "f66ada0ab5130074c0507b746acaf49c2da8b9ee7c50707b488afe8185d0f86a"
+      "bytes": 18240760,
+      "sha256": "f1904b1220ef6c231425b1f0901942a06202e9810c26d70773ff4581ab75df3c"
     },
     "tier_vocab": {
       "path": "models/uk/fasttext.uk.fluency.vocab.json",
-      "bytes": 1492562,
-      "sha256": "7acd20ab5cd93325ad3f6254f047e02703551a453533674ce01d47c78ea9636b"
+      "bytes": 1822416,
+      "sha256": "3673fbd7e0109f623676413421ddb9dcf7e5f11eabd08fd829023eab5f19b532"
     },
     "full_onnx": {
       "path": "models/uk/fasttext.uk.onnx",
       "bytes": 120000415,
-      "sha256": "97a7c039049550f31b844065dab0a78f074af7bc285bffd5661be1f13ad88fd3"
+      "sha256": "6b0ecc3f0dd9331160b3b9c5981f8700db1876e19a1f4176dc3a931563f128d3"
     }
   },
-  "generated_at": "2026-09-05T08:31:57Z",
+  "generated_at": "2026-09-17T18:29:17Z",
   "quantization_check": {
     "runtime_vs_dequant_max_abs": 0.0,
-    "dequant_vs_projected_max_abs": 0.026019692420959473,
+    "dequant_vs_projected_max_abs": 0.011366963386535645,
     "dequant_vs_projected_tol": 0.05,
     "passed": true
   },
@@ -87,13 +87,30 @@
         "dims": 300,
         "vocab_size": 50000
       },
-      "passed": true,
+      "passed": false,
       "metrics": {
-        "rank_corr": 0.999926,
-        "top1_agreement": 1.0,
+        "rank_corr": 0.999971,
+        "top1_agreement": 0.923077,
         "recipe": {
           "dims": 300,
           "vocab_size": 50000,
+          "quantization": "int8-per-row",
+          "reduction": "uncentered-covariance-eigendecomposition"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "dims": 300,
+        "vocab_size": 60000
+      },
+      "passed": true,
+      "metrics": {
+        "rank_corr": 0.999972,
+        "top1_agreement": 1.0,
+        "recipe": {
+          "dims": 300,
+          "vocab_size": 60000,
           "quantization": "int8-per-row",
           "reduction": "uncentered-covariance-eigendecomposition"
         }
