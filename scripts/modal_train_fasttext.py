@@ -99,10 +99,11 @@ def main(corpus: str, name: str, minn: int = 1, maxn: int = 3,
     print(f"uploading {corpus_path.name} "
           f"({corpus_path.stat().st_size / 2**20:.0f} MB) to Modal...")
     import time
+    remote_corpus = f"{name}/corpus-{int(corpus_path.stat().st_size)}.txt"
     with VOLUME.batch_upload() as batch:
-        batch.put_file(corpus_path, f"{name}/corpus-{int(corpus_path.stat().st_size)}.txt")
-    print(f"corpus uploaded to volume as {name}/corpus.txt")
+        batch.put_file(corpus_path, remote_corpus)
+    print(f"corpus uploaded to volume as {remote_corpus}")
     t0 = time.time()
-    result = train.remote(f"/root/artifacts/{name}/corpus.txt", name,
+    result = train.remote(f"/root/artifacts/{remote_corpus}", name,
                           minn, maxn, bucket, epoch, dim)
     print(result, f"(wall {(time.time() - t0) / 60:.1f} min incl. upload)")
