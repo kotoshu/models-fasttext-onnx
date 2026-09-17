@@ -1,0 +1,12 @@
+{
+  "version": "2026-09-17T12:00:00Z",
+  "url": "trained:wikimedia/wikipedia 20231101.zh shard 0 (simp-only lines)",
+  "language": "zh-Hans-CN",
+  "type": "onnx",
+  "file": "fasttext.zh-Hans-CN.onnx",
+  "source_model": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+  "license": "CC-BY-SA-4.0 (training text: wikimedia/wikipedia)",
+  "conversion_method": "fasttext_to_onnx.py",
+  "opset_version": 11,
+  "generated_at": "2026-09-17T04:25:12Z"
+}

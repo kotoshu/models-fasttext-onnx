@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-09-17T04:00:18Z",
+  "generated_at": "2026-09-17T04:26:05Z",
   "repo_version": "v1",
-  "resource_count": 383,
+  "resource_count": 388,
   "language_count": 58,
   "resources": {
     "models/ar/fasttext.ar.fluency.onnx": {
@@ -3758,19 +3758,75 @@
       "type": "vocab",
       "source": "FastText Common Crawl"
     },
+    "models/zh-Hans-CN/fasttext.zh-Hans-CN.buckets.onnx": {
+      "size": 10227599,
+      "sha256": "d5fb308ee7a09c589c3fc170d59ea1f783529dd9bf78601c012af06550e52737",
+      "language": "zh-Hans-CN",
+      "type": "onnx",
+      "source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "fasttext_source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/zh-Hans-CN/fasttext.zh-Hans-CN.fluency.onnx": {
+      "size": 15200760,
+      "sha256": "4af2873dd82fdbc7be6e6ae1abbb17090415c5ec1e5910b0a8348016a6f8d5ec",
+      "language": "zh-Hans-CN",
+      "type": "onnx",
+      "source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "fasttext_source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/zh-Hans-CN/fasttext.zh-Hans-CN.fluency.vocab.json": {
+      "size": 1084895,
+      "sha256": "271a1fa79dbfad08faf882132904f7fd82b7381458a04e9b5347b201d661f916",
+      "language": "zh-Hans-CN",
+      "type": "vocab",
+      "source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "fasttext_source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/zh-Hans-CN/fasttext.zh-Hans-CN.mini.onnx": {
+      "size": 3040752,
+      "sha256": "2efd7c69d034c0b9028a9e7e543968a67e95080b528c19305923181c5e3acd8c",
+      "language": "zh-Hans-CN",
+      "type": "onnx",
+      "source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "fasttext_source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
+    "models/zh-Hans-CN/fasttext.zh-Hans-CN.mini.vocab.json": {
+      "size": 200418,
+      "sha256": "e92c00a495d273717ea71909809dfab818be118dc0dafa5ae3144d95f45d8e35",
+      "language": "zh-Hans-CN",
+      "type": "vocab",
+      "source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "fasttext_source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
+    },
     "models/zh-Hans-CN/fasttext.zh-Hans-CN.onnx": {
       "size": 120000415,
       "sha256": "d4ad4d5981e35b2bd30473c6ea3cbb5a22489fdcd16f12b42e956ced662532ef",
       "language": "zh-Hans-CN",
       "type": "onnx",
-      "source": "FastText Common Crawl"
+      "source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "fasttext_source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
     },
     "models/zh-Hans-CN/fasttext.zh-Hans-CN.vocab.json": {
       "size": 2205716,
       "sha256": "204467538b6c752a68191746bfa49428f0d52e46d66a8fd9bc36249cb0a4d6c9",
       "language": "zh-Hans-CN",
       "type": "vocab",
-      "source": "FastText Common Crawl"
+      "source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "fasttext_source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
+      "conversion_method": "fasttext_to_onnx.py",
+      "opset_version": 11
     }
   }
 }
