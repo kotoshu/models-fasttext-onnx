@@ -40,6 +40,11 @@ SPEC = "kotoshu.resources/v1"
 # template as the packs - primary stays null until the owner cuts a
 # release carrying the typo assets.
 REGISTRY_VERSION = 7
+# Languages whose artifacts exist in-repo but not yet in a release: they
+# serve MIRROR-ONLY from main (the plan-136 typo-matrix convention) until
+# the owner's next cut carries the assets and promotes their primaries.
+UNRELEASED = set()
+
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
 # media host serves the real bytes. Plain-git files (vocab, manifests)
@@ -89,8 +94,9 @@ def build_resource(lang, tier_name, dims, vocab_size, quantization,
             },
             "version": version,
             "urls": {
-                "primary": f"{REPO_URL}/releases/download/{tag}/{stem}.onnx" if tag else None,
-                "mirror": mirror if tag else None,
+                "primary": (None if lang in UNRELEASED else
+                            (f"{REPO_URL}/releases/download/{tag}/{stem}.onnx" if tag else None)),
+                "mirror": mirror,
             },
             "vocab_url": None,
             "sha256": sha256,
@@ -110,10 +116,12 @@ def build_resource(lang, tier_name, dims, vocab_size, quantization,
         },
         "version": version,
         "urls": {
-            "primary": f"{REPO_URL}/releases/download/{tag}/{stem}.onnx" if tag else None,
+            "primary": (None if lang in UNRELEASED else
+                        (f"{REPO_URL}/releases/download/{tag}/{stem}.onnx" if tag else None)),
             "mirror": mirror,
         },
-        "vocab_url": f"{REPO_URL}/releases/download/{tag}/{stem}.vocab.json" if tag else None,
+        "vocab_url": (None if lang in UNRELEASED else
+                      (f"{REPO_URL}/releases/download/{tag}/{stem}.vocab.json" if tag else None)),
         "sha256": sha256,
         "size_bytes": size_bytes,
         "license": LICENSE,
@@ -253,6 +261,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo-root", default=".", help="repository root (default: current directory)")
     ap.add_argument("--tag", help="release tag; without it a dev registry (no release URLs) is produced")
+    ap.add_argument("--unreleased", default="",
+                help="comma-separated languages serving mirror-only until the next cut (plan-136 convention)")
     ap.add_argument("--strict", action="store_true",
                     help="treat missing tiers.json as an error instead of skipping the language")
     args = ap.parse_args()
@@ -267,6 +277,7 @@ def main():
     # Registry versions drop the leading "v" of the tag to match the dev
     # flavor ("0.0.0-dev") and the plan's v1.0.0 -> 1.0.0 example.
     version = (args.tag[1:] if args.tag.startswith("v") else args.tag) if args.tag else DEV_VERSION
+    UNRELEASED.update(x for x in args.unreleased.split(",") if x)
 
     # "lid" is the language-identification pseudo-language (plan 102)
     # and "typo" the typo-bi-encoder pseudo-language (plan 115): their

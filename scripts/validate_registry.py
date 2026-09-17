@@ -244,12 +244,21 @@ def check_urls(resource, resource_id, registry, errors):
     if resource["urls"]["mirror"] != expected_mirror:
         errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
 
+    # Pre-release mirror-only state (the plan-136 typo convention, extended
+    # to model resources by plan 20): the artifact exists in-repo but no
+    # release carries it yet - primary AND vocab_url are null, the mirror
+    # serves from main, and the owner's next cut promotes both. Derived
+    # from the entry alone: any language whose primary is set must sit at
+    # the registry's release tag (off-tag primary = the dead-URL failure).
+    primary, vocab_url = resource["urls"]["primary"], resource["vocab_url"]
+    if primary is None and vocab_url is None:
+        return  # mirror-only pre-release; the mirror check above already ran
     if tag is None:
-        if resource["urls"]["primary"] is not None or resource["vocab_url"] is not None:
+        if primary is not None or vocab_url is not None:
             errors.append(f"{resource_id}: primary/vocab URLs set but release_tag is null")
     else:
         expected_primary = f"{REPO_URL}/releases/download/{tag}/{onnx_name}"
-        if resource["urls"]["primary"] != expected_primary:
+        if primary != expected_primary:
             errors.append(f"{resource_id}: primary URL expected {expected_primary}")
         # Buckets carry no vocab sibling (plan 103).
         if vocab_name is None:
