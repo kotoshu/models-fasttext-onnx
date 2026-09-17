@@ -73,9 +73,12 @@ def train(corpus_path: str, name: str, minn: int, maxn: int,
     train_min = (time.time() - t0) / 60
     model.save_model(str(bin_path))
     words = model.get_words()
+    # NBSP-bearing tokens would corrupt the whitespace-delimited .vec
+    # format (fastText's C++ tokenizer does not split U+00A0): skip them.
+    clean = [w for w in words if not any(c.isspace() for c in w)]
     with vec_path.open("w", encoding="utf-8") as fh:
-        fh.write(f"{len(words)} {dim}\n")
-        for w in words:
+        fh.write(f"{len(clean)} {dim}\n")
+        for w in clean:
             v = model.get_word_vector(w)
             fh.write(w + " " + " ".join(f"{x:.5f}" for x in v) + "\n")
     VOLUME.commit()

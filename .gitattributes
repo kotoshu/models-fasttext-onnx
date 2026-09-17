@@ -4,32 +4,33 @@
 *.onnx filter=lfs diff=lfs merge=lfs -text
 *.vec filter=lfs diff=lfs merge=lfs -text
 *.vec.gz filter=lfs diff=lfs merge=lfs -text
-
 # Tier vocab JSONs are mirrored as LFS objects so the media host serves
 # them CORS-fetchable alongside the tier .onnx files (plan 92).
 models/**/fasttext.*.mini.vocab.json filter=lfs diff=lfs merge=lfs -text
 models/**/fasttext.*.fluency.vocab.json filter=lfs diff=lfs merge=lfs -text
-
 # Lock files (prevent concurrent modifications)
 *.onnx lock
 *.vec lock
-
 # Registry fixture fakes stay plain git (1-byte .onnx stand-ins)
 tests/registry_fixture/** -filter=lfs
-
 # LID vocab sidecar (plan 102) — LFS so the media host serves it
 # alongside the .onnx mirror (ACAO:*).
 models/lid/*.vocab.json filter=lfs diff=lfs merge=lfs -text
-
 # Typo bi-encoder char-vocab sidecar (plan 115) — same rule as LID.
 models/typo/*.vocab.json filter=lfs diff=lfs merge=lfs -text
-
 # Language packs (plan 113) — one concatenated section stream per
 # language, LFS-committed like the tiers so the media host serves the
 # browser-usable bytes (ACAO:*). The registry fixture fake stays plain
 # git via the tests/registry_fixture/** rule above.
 packs/*.bin filter=lfs diff=lfs merge=lfs -text
-
 # Prebuilt KTM1 typo matrices (plan 136) — same rule as the tiers: LFS so
 # the media host serves the bytes CORS-fetchable (ACAO:*).
 *.ktm1 filter=lfs diff=lfs merge=lfs -text
+models/*/fasttext.*.mini.onnx !text !filter !merge !diff
+models/*/fasttext.*.mini.vocab.json !text !filter !merge !diff
+models/lid/lid.176.onnx !text !filter !merge !diff
+models/lid/lid.176.vocab.json !text !filter !merge !diff
+models/typo/typo.biencoder.onnx !text !filter !merge !diff
+models/typo/typo.biencoder.vocab.json !text !filter !merge !diff
+packs/*.bin !text !filter !merge !diff
+models/en/fasttext.en.buckets.onnx !text !filter !merge !diff
