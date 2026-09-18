@@ -83,3 +83,28 @@ git costs the browser nothing.
 - **Next registry cut (v1.8.0, owner's call)**: ca/hu/uk/vi + zh variants
   promote from mirror-only to release primaries; full tiers stay
   release-only forever after.
+
+## Amendment: repository deleted and recreated (2026-09-18, owner-directed)
+
+The quota block never lifted — GitHub's batch API rejected even the
+zero-new-object main push, and the counter ignored the history strip. The
+owner chose the only self-serve fix: delete and recreate the repo (same
+name, so every registry URL is identical).
+
+1. Pre-delete snapshot: 62 PRs, 10 releases' metadata + notes, 10
+   collaborators, repo description → `~/src/kotoshu/models-backup-20260918/repo-snapshot/`.
+2. All 383 v1.7.0 assets staged and digest-verified against local copies
+   (369 byte-identical + 14 deliberate corrections: the old release's 12
+   fleet vocab assets were STALE — round-1 vocabs under round-2 onnx —
+   plus outdated manifest/registry; the new release carries the
+   gate-consistent set).
+3. Recreated; rewritten main pushed (all commits retained minus the 55
+   stripped paths); release recreated with the original notes; all 383
+   assets re-uploaded (4 parallel shard workers, 8.40 GB, spot-checked
+   digests byte-identical); collaborators re-added (incl. kotoshu-ci).
+4. LFS re-upload (314 objects: 298 browser-tier mirrors + 16 fleet) is
+   BLOCKED by a stale org quota counter — the deletion purged the objects
+   (fresh-clone fetch 404s) but the budget check still returns the
+   pre-deletion number. Retry loop every 5 min; support ticket filed by
+   the owner 2026-09-18. The watcher pushes fleet-retrains + probes
+   mirrors automatically when an upload gets through.
