@@ -76,10 +76,15 @@ def full_vocab_size(lang_dir, lang):
 def build_resource(lang, tier_name, dims, vocab_size, quantization,
                    sha256, size_bytes, eval_ref, version, tag):
     stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
-    # Every tier binary lives in git as an LFS object (plan 92) so the
-    # media host serves CORS-fetchable bytes for browsers; the raw host
-    # would serve 134-byte pointer stubs, hence the media URL.
+    # Browser tiers (mini/fluency/buckets) live in git as LFS objects
+    # (plan 92) so the media host serves CORS-fetchable bytes; the raw
+    # host would serve 134-byte pointer stubs, hence the media URL.
+    # A released full tier is release-only (plan 22 stripped the
+    # binaries out of LFS history): no LFS object, no mirror. Languages
+    # waiting for the owner's cut keep every tier mirror-only.
     mirror = f"{MEDIA_URL}/main/models/{lang}/{stem}.onnx"
+    if tier_name == "full" and lang not in UNRELEASED and tag:
+        mirror = None
     # The buckets sibling (plan 103) carries its bucket-id map inside the
     # artifact itself (the bucket_ids tensor) - no vocab.json sibling.
     if tier_name == "buckets":

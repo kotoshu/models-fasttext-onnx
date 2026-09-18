@@ -234,15 +234,24 @@ def check_urls(resource, resource_id, registry, errors):
                       f"release tag; got primary={primary!r} vocab={vocab_url!r}")
         return
 
-    # Every tier binary is an LFS object in git -> the media host mirror
-    # (the raw host serves pointer stubs). All tiers follow one rule.
-    # LID lives under models/lid/, not models/{lang}/.
-    if tier_name == "lid-176":
-        expected_mirror = f"{MEDIA_URL}/main/models/lid/{onnx_name}"
+    # A released full tier is release-only (plan 22 stripped the
+    # binaries out of LFS history) - no LFS object, no media mirror;
+    # the primary release URL is the artifact. Every other tier binary
+    # is an LFS object in git -> the media host mirror (the raw host
+    # serves pointer stubs). LID lives under models/lid/, not
+    # models/{lang}/.
+    primary, vocab_url = resource["urls"]["primary"], resource["vocab_url"]
+    if tier_name == "full" and primary is not None:
+        if resource["urls"]["mirror"] is not None:
+            errors.append(f"{resource_id}: released full tier is release-only "
+                          f"(plan 22), mirror must be null")
     else:
-        expected_mirror = f"{MEDIA_URL}/main/models/{lang}/{onnx_name}"
-    if resource["urls"]["mirror"] != expected_mirror:
-        errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
+        if tier_name == "lid-176":
+            expected_mirror = f"{MEDIA_URL}/main/models/lid/{onnx_name}"
+        else:
+            expected_mirror = f"{MEDIA_URL}/main/models/{lang}/{onnx_name}"
+        if resource["urls"]["mirror"] != expected_mirror:
+            errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
 
     # Pre-release mirror-only state (the plan-136 typo convention, extended
     # to model resources by plan 20): the artifact exists in-repo but no
@@ -250,7 +259,6 @@ def check_urls(resource, resource_id, registry, errors):
     # serves from main, and the owner's next cut promotes both. Derived
     # from the entry alone: any language whose primary is set must sit at
     # the registry's release tag (off-tag primary = the dead-URL failure).
-    primary, vocab_url = resource["urls"]["primary"], resource["vocab_url"]
     if primary is None and vocab_url is None:
         return  # mirror-only pre-release; the mirror check above already ran
     if tag is None:
