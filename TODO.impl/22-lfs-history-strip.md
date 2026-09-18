@@ -2,13 +2,24 @@
 
 ## Status
 
-executed (2026-09-18) — 55 full-tier `.onnx` paths stripped from `main` and
-`fleet-retrains` history via `git filter-repo`; both branches force-pushed
+executed for `main` (2026-09-18) — 55 full-tier `.onnx` paths stripped from
+history via `git filter-repo`; `main` force-pushed 147cb4e → b3d5590
 (owner authorized "A! DO IT NOW!" 2026-09-17, "OK do it!" 2026-09-18).
 Pre-flight gate: all 55 files verified byte-identical (sha256) to their
-v1.7.0 release assets BEFORE any history rewrite. Builder + validator carry
-the release-only mirror rule. Evidence in `eval/reports/` and the push
-outputs recorded in this file.
+v1.7.0 release assets BEFORE any history rewrite. Post-push probes:
+release primary 200, small-tier media mirror 200, zh-variant mirror 200,
+stripped full-tier path 404 (expected). Tip LFS 353 → 298 files.
+
+`fleet-retrains` (10df34a, holding this plan + the fleet metadata +
+round-2 mini/fluency tiers) is BLOCKED: GitHub's LFS batch API rejects
+every push while the repository is over its LFS budget — even the
+zero-new-object `main` push needed `GIT_LFS_SKIP_PUSH=1` (safe there:
+every tip object was already server-side). The fleet branch carries 16
+genuinely new small objects (8 round-2 mini/fluency onnx + 8 round-2
+LFS vocab jsons, ~78 MB); pushing it with the hook skipped would leave
+dangling pointers, so it waits locally. Unblock levers (owner): raise
+the data pack, or ask GitHub support to GC the LFS storage the strip
+just orphaned (~7 GB at tip, more across history).
 
 ## Problem
 
