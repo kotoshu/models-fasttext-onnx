@@ -43,10 +43,7 @@ class ValidateRegistryTest(unittest.TestCase):
                 old = entry["language"]
                 entry["language"] = lang
                 rid_new = rid.replace(f"/{old}/", f"/{lang}/")
-                entry["urls"]["mirror"] = (
-                    "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx"
-                    f"/main/models/{lang}/fasttext.{lang}.onnx"
-                )
+                entry["urls"]["mirror"] = None  # full tiers are release-only (TODO.deploy/2)
                 reg["resources"][rid_new] = reg["resources"].pop(rid)
                 manifest = json.loads((FIXTURE / "manifest.json").read_text(encoding="utf-8"))
                 mres = manifest["resources"]
@@ -200,7 +197,7 @@ class ValidateRegistryTest(unittest.TestCase):
             "plan": "14 test", "kind": "matrix", "vocab_size": 10, "dims": 256,
             "bytes": 2616, "sha256": "f" * 64,
             "paired_vocab": f"kotoshu://models/de/full @ sha256 {paired}",
-            "release_tag": None,
+            "release_tag": "v9.9.9",
         }, indent=2), encoding="utf-8")
         return full_sha
 
@@ -389,10 +386,10 @@ class CheckUrlsLiveTest(unittest.TestCase):
         self.assertEqual(errors, [])
 
     def test_mirror_probe_url_rewrites_main_to_the_validating_ref(self):
-        mirror = f"{vr.MEDIA_URL}/main/models/en/typo.matrix.en.ktm1"
+        mirror = f"{vr.RAW_URL}/main/models/en/fasttext.en.mini.onnx"
         self.assertEqual(vr.mirror_probe_url(mirror, "main"), mirror)
         self.assertEqual(vr.mirror_probe_url(mirror, "plan-12-matrices"),
-                         f"{vr.MEDIA_URL}/plan-12-matrices/models/en/typo.matrix.en.ktm1")
+                         f"{vr.RAW_URL}/plan-12-matrices/models/en/fasttext.en.mini.onnx")
         self.assertEqual(vr.mirror_probe_url(mirror, None), mirror)
         release = "https://github.com/kotoshu/models-fasttext-onnx/releases/download/v1.7.0/x.onnx"
         self.assertEqual(vr.mirror_probe_url(release, "plan-12-matrices"), release)
@@ -420,13 +417,13 @@ class CheckUrlsLiveTest(unittest.TestCase):
         resources = {"kotoshu://models/de/typo-matrix":
                      self.resource(mirror=f"{self.base_url}/main/models/de/typo.matrix.de.ktm1",
                                    size_bytes=1)}
-        real_media_url = vr.MEDIA_URL
-        vr.MEDIA_URL = self.base_url
+        real_raw_url = vr.RAW_URL
+        vr.RAW_URL = self.base_url
         try:
             errors = []
             vr.check_urls_live(resources, errors, ref=branch)
         finally:
-            vr.MEDIA_URL = real_media_url
+            vr.RAW_URL = real_raw_url
         self.assertEqual(errors, [])
 
 

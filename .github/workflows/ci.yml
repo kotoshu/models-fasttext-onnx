@@ -21,18 +21,13 @@ jobs:
   manifest-drift:
     runs-on: ubuntu-latest
     steps:
-      # generate_manifest.rb hashes on-disk .onnx files; they are
-      # LFS-tracked, so the checkout needs real bytes, not pointers.
+      # Since TODO.deploy/2 the manifest is surgical (full tiers are
+      # release-only and never in the tree), so regeneration alone
+      # would drop entries. The invariant is tree parity: every
+      # tree-present artifact must hash-match the committed manifest.
       - uses: actions/checkout@v4
-        with:
-          lfs: true
-      - name: Manifest drift check
-        run: |
-          cp manifest.json /tmp/manifest.committed.json
-          ruby scripts/generate_manifest.rb
-          diff -u <(grep -v '"generated_at"' /tmp/manifest.committed.json) \
-                  <(grep -v '"generated_at"' manifest.json)
-          cp /tmp/manifest.committed.json manifest.json
+      - name: Manifest tree-parity check
+        run: python3 scripts/check_manifest_tree_parity.py
       - name: Validate registry (schema and ground truth only)
         run: python3 scripts/validate_registry.py --registry registry.json
       - name: Validate registry URLs (plan 10 fetchability)

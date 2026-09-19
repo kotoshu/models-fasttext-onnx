@@ -29,7 +29,7 @@
       "fasttext_source": "cc.ar.300.vec",
       "language": "ar",
       "opset_version": 11,
-      "sha256": "1b76e7279768a7454e4aafb88e74ccf6fbfea5d3c839146fe66f02520cfb7ce7",
+      "sha256": "22c6dcfb5095c847109fc9ebd7c821048b039c9d1fae3fc302904945718260e1",
       "size": 3040752,
       "source": "cc.ar.300.vec",
       "type": "onnx"
@@ -99,7 +99,7 @@
       "fasttext_source": "cc.bg.300.vec",
       "language": "bg",
       "opset_version": 11,
-      "sha256": "58dec7051332727d35f0f19212338e576b87f6e0d6680940d0835e5ccae1a48d",
+      "sha256": "5dadc9c6566a3f2f83e16b72534e5d76372ce603df54676b411931829c425847",
       "size": 3040752,
       "source": "cc.bg.300.vec",
       "type": "onnx"
@@ -169,7 +169,7 @@
       "fasttext_source": "cc.br.300.vec",
       "language": "br",
       "opset_version": 11,
-      "sha256": "7b3eec1d4b9831fd370f72599e1b8c4a248b0f732ea5885774e2b1e77df823cd",
+      "sha256": "52c967b313fb39702ff1ac2f0258b07e586f36a4fb7a59e277d1109ffddfd8f1",
       "size": 3040752,
       "source": "cc.br.300.vec",
       "type": "onnx"
@@ -239,7 +239,7 @@
       "fasttext_source": "cc.ca.300.vec",
       "language": "ca",
       "opset_version": 11,
-      "sha256": "29307921da08b528ca452266a9df8318ed9371ee7ba6af4270a6af827fb6c737",
+      "sha256": "da187d3db24a086d4179b11575b5b83106fcedba246939f6bf080f4cd7b9d3cb",
       "size": 3040752,
       "source": "cc.ca.300.vec",
       "type": "onnx"
@@ -299,7 +299,7 @@
       "fasttext_source": "cc.cs.300.vec",
       "language": "cs",
       "opset_version": 11,
-      "sha256": "0b8427c165612e68c09b774618af7468354e00cd6d70fe2edea45f114e9e73af",
+      "sha256": "e36cc237b3abd56c2f00d3dd77a8d694590f1276a3c232fe743d299c69dd9ee9",
       "size": 3040752,
       "source": "cc.cs.300.vec",
       "type": "onnx"
@@ -369,7 +369,7 @@
       "fasttext_source": "cc.cy.300.vec",
       "language": "cy",
       "opset_version": 11,
-      "sha256": "b654f0fe73a41afebc6f3dffdf653c788644c4d336f51e92911dad7af62c99e2",
+      "sha256": "aa5ea2c000565a950130099d5ce5de29a9363ecbfe7b32378bb6bed87d5401d4",
       "size": 3040752,
       "source": "cc.cy.300.vec",
       "type": "onnx"
@@ -439,7 +439,7 @@
       "fasttext_source": "cc.da.300.vec",
       "language": "da",
       "opset_version": 11,
-      "sha256": "d20b15626f0e15b56b8b4810d750ca07d2b5cea953bb49e8d5fc8ee12fd40481",
+      "sha256": "00823858ecd3ec82795eb600edc49f8e40108838b2221d520f23616480c7f1b9",
       "size": 3040752,
       "source": "cc.da.300.vec",
       "type": "onnx"
@@ -509,7 +509,7 @@
       "fasttext_source": "cc.de.300.vec",
       "language": "de",
       "opset_version": 11,
-      "sha256": "aa724e7eea8580d81a0e2e6c6aec3108b8b90f65381ae7bc2baeb830b1a90f69",
+      "sha256": "4ce3197de1d77d22a889f24d42c930a27bafe3c2c5cf9b62cea45fc443736941",
       "size": 3040752,
       "source": "cc.de.300.vec",
       "type": "onnx"
@@ -579,7 +579,7 @@
       "fasttext_source": "cc.el.300.vec",
       "language": "el",
       "opset_version": 11,
-      "sha256": "b77f331dcbe817d18ccb1f479c919a1ff3221a20f9dcca48504b5528dc5f11fc",
+      "sha256": "cd6cd30817402677cf70ee45fd6b6d7e6d20762a94909ced433159e27fa75e30",
       "size": 3040752,
       "source": "cc.el.300.vec",
       "type": "onnx"
@@ -619,7 +619,7 @@
       "fasttext_source": "cc.en.300.vec",
       "language": "en",
       "opset_version": 11,
-      "sha256": "1bd7825b8eb92b47701e483fb4804f09ae2064b147fe34be63ebfc7272570ff7",
+      "sha256": "88256852406a1f39b5b879f02b87149ca6ce26a57e3c32fb7eff1160073b776a",
       "size": 11375135,
       "source": "cc.en.300.vec",
       "type": "onnx"
@@ -649,7 +649,7 @@
       "fasttext_source": "cc.en.300.vec",
       "language": "en",
       "opset_version": 11,
-      "sha256": "d81f36c5e0097414db95d48406ce615161dd07c697996fe973297186279d5e2f",
+      "sha256": "a51ed7d8b8d7f25044569d50748261e01e5d95ab166e7dcef6cecf7a8bc62100",
       "size": 3040752,
       "source": "cc.en.300.vec",
       "type": "onnx"
@@ -719,7 +719,7 @@
       "fasttext_source": "cc.eo.300.vec",
       "language": "eo",
       "opset_version": 11,
-      "sha256": "95e29cf6fd3f9a50838b4d2a2b600fa7b3011874770e5c212ca141a6f6b936ee",
+      "sha256": "fb920dd55bce105b6b380cba3888fa9e13217fd3d68ac6cbe6c471ed3474a906",
       "size": 3040752,
       "source": "cc.eo.300.vec",
       "type": "onnx"
@@ -789,7 +789,7 @@
       "fasttext_source": "cc.es.300.vec",
       "language": "es",
       "opset_version": 11,
-      "sha256": "ce2c03127ad84c711503f6d9118bcaf5784faa0336d21998b110138f6fb51232",
+      "sha256": "d84f7b5ab585ff06ca60b2203de8bb717ac00aa449bce3b8efbe3e0c3e1b7c42",
       "size": 3040752,
       "source": "cc.es.300.vec",
       "type": "onnx"
@@ -859,7 +859,7 @@
       "fasttext_source": "cc.et.300.vec",
       "language": "et",
       "opset_version": 11,
-      "sha256": "0a95b7b1fd515f9486f8d85472f117baa6e94d1436530198beea8f547fb89750",
+      "sha256": "c2b86cf059de6df12a8eb3062fc65520a571b27f27fef2cf2380b795e9cb4612",
       "size": 3040752,
       "source": "cc.et.300.vec",
       "type": "onnx"
@@ -929,7 +929,7 @@
       "fasttext_source": "cc.eu.300.vec",
       "language": "eu",
       "opset_version": 11,
-      "sha256": "0494703a1ea36ae99393225e224cf92b466914c198046317553af3a99034f9af",
+      "sha256": "a87a1943711d67fa13713cada59b14cdc16dad761bf378568adab17d1b9c22a0",
       "size": 3040752,
       "source": "cc.eu.300.vec",
       "type": "onnx"
@@ -989,7 +989,7 @@
       "fasttext_source": "cc.fa.300.vec",
       "language": "fa",
       "opset_version": 11,
-      "sha256": "790c1d919a395eed35b214c7e4fea68ec87835080d13eae2a8af2938fb285825",
+      "sha256": "dba367b001820d91d859e1b437946f9cbdef71de17568b3442f0e17c91033190",
       "size": 3040752,
       "source": "cc.fa.300.vec",
       "type": "onnx"
@@ -1059,7 +1059,7 @@
       "fasttext_source": "cc.fr.300.vec",
       "language": "fr",
       "opset_version": 11,
-      "sha256": "8ab81dac1d85f34b423a7ef870f089f65acd937163f21a26ba83478a3fc67029",
+      "sha256": "f2f2e8bad9d710a15a2abf93b996f04442c105ad8ad4e16200e3064809470d79",
       "size": 3040752,
       "source": "cc.fr.300.vec",
       "type": "onnx"
@@ -1129,7 +1129,7 @@
       "fasttext_source": "cc.fy.300.vec",
       "language": "fy",
       "opset_version": 11,
-      "sha256": "10719f6adbe430c818156456e880600c6dcdee68dbe46be7dde0525832137416",
+      "sha256": "9c5c91fc03c8149092e86e4d08b523b37bfe018fc33bb4234cb5b5fc9c838cdf",
       "size": 3040752,
       "source": "cc.fy.300.vec",
       "type": "onnx"
@@ -1199,7 +1199,7 @@
       "fasttext_source": "cc.ga.300.vec",
       "language": "ga",
       "opset_version": 11,
-      "sha256": "8778be68dc6c0bc952a97ed3239c430448c2ec2e2d99952ebbedb6d83aaf362f",
+      "sha256": "21455a22b466ae6e05fa8a167a6fc95b93d7023e9029e189ad6261284fe4b26c",
       "size": 3040752,
       "source": "cc.ga.300.vec",
       "type": "onnx"
@@ -1269,7 +1269,7 @@
       "fasttext_source": "cc.gd.300.vec",
       "language": "gd",
       "opset_version": 11,
-      "sha256": "ac8153d01f2bf76f66b1fe0b28ea8be39a43938aee278b54cc2dab33f26823b8",
+      "sha256": "11db80f3643f0062fced9d39513a8ca7842322a9c7e6a0a4c5a04784efbadedf",
       "size": 3040752,
       "source": "cc.gd.300.vec",
       "type": "onnx"
@@ -1339,7 +1339,7 @@
       "fasttext_source": "cc.gl.300.vec",
       "language": "gl",
       "opset_version": 11,
-      "sha256": "4d2e17199fb54114a7ca89ee7bf931d47473cde85a731fb59d8c8cb88e060342",
+      "sha256": "2f64901e18acfac889a12a120b51eb2174f094624db92f11996b8ce2353ea778",
       "size": 3040752,
       "source": "cc.gl.300.vec",
       "type": "onnx"
@@ -1399,7 +1399,7 @@
       "fasttext_source": "cc.he.300.vec",
       "language": "he",
       "opset_version": 11,
-      "sha256": "25677cc415080cab7cc8e346cdb96b08ee13d78cb8a37403ef757962803312da",
+      "sha256": "f97351cc3fac2d7cecd7d7ad2814ffc129b0fa38c4ce60affad8b0803b5fa29d",
       "size": 3040752,
       "source": "cc.he.300.vec",
       "type": "onnx"
@@ -1469,7 +1469,7 @@
       "fasttext_source": "cc.hr.300.vec",
       "language": "hr",
       "opset_version": 11,
-      "sha256": "172846ae04f0e29d4dfb8664b52e1a0cfd23356be4cd6b671f89990ca6f8e971",
+      "sha256": "6dece08ceae3f36d09bd969f7a23c6e324f6045d79ec321ff380719c1c79abd8",
       "size": 3040752,
       "source": "cc.hr.300.vec",
       "type": "onnx"
@@ -1539,7 +1539,7 @@
       "fasttext_source": "cc.hu.300.vec",
       "language": "hu",
       "opset_version": 11,
-      "sha256": "c235cd699b7f6593afa7273fbda28df2fb0a69641b47574bf5386bdd42597bef",
+      "sha256": "6ab84ada9fcb73307c4979a36f58e95066b9096b4e97a8bc5357d8e5b50f9cdb",
       "size": 3040752,
       "source": "cc.hu.300.vec",
       "type": "onnx"
@@ -1609,7 +1609,7 @@
       "fasttext_source": "cc.hy.300.vec",
       "language": "hy",
       "opset_version": 11,
-      "sha256": "9a56a1b7378b857d97cf9812256292893f181a567e6467e7f57acdcc857b7a58",
+      "sha256": "33cbf62a8e93a90b3cec4e84ebdbdc7a8fe0c259473df735e77f5ffecf877a26",
       "size": 3040752,
       "source": "cc.hy.300.vec",
       "type": "onnx"
@@ -1679,7 +1679,7 @@
       "fasttext_source": "cc.ia.300.vec",
       "language": "ia",
       "opset_version": 11,
-      "sha256": "256951bfa120eb807dc0cf1fa70de2c1ffeed5e153f896628a80e434144f8c44",
+      "sha256": "f6d96fdd41e8530d3e28596435d3ff1ce415042475dbba8635c96ea0718008d4",
       "size": 3040752,
       "source": "cc.ia.300.vec",
       "type": "onnx"
@@ -1749,7 +1749,7 @@
       "fasttext_source": "cc.id.300.vec",
       "language": "id",
       "opset_version": 11,
-      "sha256": "02f413cfaa4de7de8a1e71108595f1899cbbb0282177f8c8f55d55d4c0492122",
+      "sha256": "9888528b76176c7e0cfc74d90b241decd037be88fdb4da9f380bb4247b51e781",
       "size": 3040752,
       "source": "cc.id.300.vec",
       "type": "onnx"
@@ -1819,7 +1819,7 @@
       "fasttext_source": "cc.is.300.vec",
       "language": "is",
       "opset_version": 11,
-      "sha256": "60be5c8cc504e4ac7548f6539f916eefbe45af7ec2dc036d34886764692d89f7",
+      "sha256": "9c999ae50b6c1a9ab96bd42153a6434eaa7f092c6e48f2a1970d0fc46c315436",
       "size": 3040752,
       "source": "cc.is.300.vec",
       "type": "onnx"
@@ -1889,7 +1889,7 @@
       "fasttext_source": "cc.it.300.vec",
       "language": "it",
       "opset_version": 11,
-      "sha256": "061816ed0d5cce283fa5a5db71833658eb08120fceade095656e60a53c5b3188",
+      "sha256": "fc8756612e30d9566ce8d10f40173a17317efa86db20524969753bbc415cf321",
       "size": 3040752,
       "source": "cc.it.300.vec",
       "type": "onnx"
@@ -1940,7 +1940,7 @@
     },
     "models/ja/fasttext.ja.mini.onnx": {
       "language": "ja",
-      "sha256": "cea8ded8ebcb98de8b39cc29e7bf222f1172b8b28dc371c68c375041173e405b",
+      "sha256": "3c5cfcf9f4e12c83ede294e41d5de8fff32ea7e7a2abf75ee8787bea71f54daf",
       "size": 3040752,
       "source": "FastText Common Crawl",
       "type": "onnx"
@@ -2001,7 +2001,7 @@
       "fasttext_source": "cc.ka.300.vec",
       "language": "ka",
       "opset_version": 11,
-      "sha256": "02d4fabd1da8773fbca6a0664a141b33d58f3b3a6ad793719325b98d6ba8114b",
+      "sha256": "9874c3b9f9e2278f152a19e3e63431baa2fe06fdda54f4fc31005e34c26c048f",
       "size": 3040752,
       "source": "cc.ka.300.vec",
       "type": "onnx"
@@ -2059,7 +2059,7 @@
     },
     "models/ko/fasttext.ko.mini.onnx": {
       "language": "ko",
-      "sha256": "1dad86dbe8dd924054a8bb6ca24ab91781c737810f22b2b4948c2fba87067288",
+      "sha256": "f1aad2d5807939782f087502650ae186acd7fb351a70ee5107e1c03f2e61d04c",
       "size": 3040752,
       "source": "FastText Common Crawl",
       "type": "onnx"
@@ -2120,7 +2120,7 @@
       "fasttext_source": "cc.la.300.vec",
       "language": "la",
       "opset_version": 11,
-      "sha256": "9a7322f67d6b03d25b5e270a8afb7f7573c3296e30d1ab71f358f525d741e18b",
+      "sha256": "c55904430f652866aeaf8f00c445b9e85ab4b914fc1663dfbebc114efb220782",
       "size": 3040752,
       "source": "cc.la.300.vec",
       "type": "onnx"
@@ -2190,7 +2190,7 @@
       "fasttext_source": "cc.lb.300.vec",
       "language": "lb",
       "opset_version": 11,
-      "sha256": "5a8cc6028d96eb69460a1e0b86124692dc7a2af81bdce2a50f3dba943091bbfb",
+      "sha256": "cc50b50221e20c8c0b7851bd4cd9950281c3da6be28bd8b5ca6dbfe74bfe3014",
       "size": 3040752,
       "source": "cc.lb.300.vec",
       "type": "onnx"
@@ -2230,7 +2230,7 @@
       "fasttext_source": "lid.176.ftz (fastText supervised language identification, 176 labels)",
       "language": "lid",
       "opset_version": 11,
-      "sha256": "8f0c0ea57b100c8467c62a20365df9d895f9d00ad90fc3ba7da49df85db4eaeb",
+      "sha256": "6f77b89d29d2591c305eca294f85acff9b1d8ace5c50a119dccb3b31a6f62ed0",
       "size": 1012025,
       "source": "lid.176.ftz (fastText supervised language identification, 176 labels)",
       "type": "onnx"
@@ -2280,7 +2280,7 @@
       "fasttext_source": "cc.lt.300.vec",
       "language": "lt",
       "opset_version": 11,
-      "sha256": "0e7e92da68fa1b2d3d879a829b92b6d019302aac0b693a9021e07ea7c1f1eb1d",
+      "sha256": "609d6a403dae1197cf94cb11d5ffc1df6a3186ae9a7e3992e485284747065a9d",
       "size": 3040752,
       "source": "cc.lt.300.vec",
       "type": "onnx"
@@ -2350,7 +2350,7 @@
       "fasttext_source": "cc.lv.300.vec",
       "language": "lv",
       "opset_version": 11,
-      "sha256": "64580b276bbd1f61de79ad6c82b5d168f156ae672e2e32ca0c3f94592843bcf4",
+      "sha256": "4678a8cfb53fa4a3b236454238fe18eb095dcd64cb4074fbf249bc5b86c794e9",
       "size": 3040752,
       "source": "cc.lv.300.vec",
       "type": "onnx"
@@ -2420,7 +2420,7 @@
       "fasttext_source": "cc.mk.300.vec",
       "language": "mk",
       "opset_version": 11,
-      "sha256": "cdbf35a35c085a06db3c9fb78d93670f630b484f0f87e81fc3f65bfc95f41f20",
+      "sha256": "a4bf710e5ee638e56f8e7ee0c51945e7a41fe9e04b8c8b088247008e5d7cea2e",
       "size": 3040752,
       "source": "cc.mk.300.vec",
       "type": "onnx"
@@ -2490,7 +2490,7 @@
       "fasttext_source": "cc.mn.300.vec",
       "language": "mn",
       "opset_version": 11,
-      "sha256": "05eb36d2143560f89031415d71bcfecf3bb7dd4eee9dc46af495d6f59a9147a2",
+      "sha256": "42c9b6db3c54b71e5c46ce12520912a9d1e5605b4c1e836be0a44f499de54777",
       "size": 3040752,
       "source": "cc.mn.300.vec",
       "type": "onnx"
@@ -2560,7 +2560,7 @@
       "fasttext_source": "cc.no.300.vec",
       "language": "nb",
       "opset_version": 11,
-      "sha256": "940eeaa55cafc373a103298db0002e8e1e07103d6dbd35ca7bdc30cc0e2c4701",
+      "sha256": "9ad8feef5f247795b55ebcc28cdb746680a7f4024c049ac2ef6ac803fbf04681",
       "size": 3040752,
       "source": "cc.no.300.vec",
       "type": "onnx"
@@ -2630,7 +2630,7 @@
       "fasttext_source": "cc.ne.300.vec",
       "language": "ne",
       "opset_version": 11,
-      "sha256": "4835c34c0f6ce50c7e45275fb3b7e5ffb703edd218f7d96524fb5a1774963c66",
+      "sha256": "a3898d952a79961820286a7ac8a7cde84619e7206f31a70db84ad0c7676520d9",
       "size": 3040752,
       "source": "cc.ne.300.vec",
       "type": "onnx"
@@ -2700,7 +2700,7 @@
       "fasttext_source": "cc.nl.300.vec",
       "language": "nl",
       "opset_version": 11,
-      "sha256": "06a4036f68463a29efdf07be48e465e0e402372a5e6eb3fbbbe8f6f33c976d84",
+      "sha256": "e98e396d0b50ff59134b5822f1f0774f253f78589bcbed554356cb6d81d8bd1b",
       "size": 3040752,
       "source": "cc.nl.300.vec",
       "type": "onnx"
@@ -2770,7 +2770,7 @@
       "fasttext_source": "cc.nn.300.vec",
       "language": "nn",
       "opset_version": 11,
-      "sha256": "84cb18b592e2651950a22ad1143966c90f16124273edbb991138357b1ac6e450",
+      "sha256": "377943eed8e8818a992787cab0cee7d49d20a19976ae57c9f3698acb99e2b447",
       "size": 3040752,
       "source": "cc.nn.300.vec",
       "type": "onnx"
@@ -2840,7 +2840,7 @@
       "fasttext_source": "cc.oc.300.vec",
       "language": "oc",
       "opset_version": 11,
-      "sha256": "dafefa870187406a3f89b30b9677760c03616324252b932abf67fa697faf4d2a",
+      "sha256": "66d77261f93785b1ff8865a323b1d0f181a1fe6e8b4ce6c9a351e10dffb6d253",
       "size": 3040752,
       "source": "cc.oc.300.vec",
       "type": "onnx"
@@ -2900,7 +2900,7 @@
       "fasttext_source": "cc.pl.300.vec",
       "language": "pl",
       "opset_version": 11,
-      "sha256": "4373c5296008406e8a36d972cdd5475388db6789df3d081810cc6025fc940aeb",
+      "sha256": "79c7792c9727c9da6c88ff48e8c5aa6e175bee505f8a469ea7e957a185e48dd3",
       "size": 3040752,
       "source": "cc.pl.300.vec",
       "type": "onnx"
@@ -2970,7 +2970,7 @@
       "fasttext_source": "cc.pt.300.vec",
       "language": "pt",
       "opset_version": 11,
-      "sha256": "5fb94c7a2589d8222eea4f8174bf361c038a828c80787befa9edd0d650d8674c",
+      "sha256": "f0e0251e082d9fe83606351c3048be621400761cb9686baaa4989123d4105795",
       "size": 3040752,
       "source": "cc.pt.300.vec",
       "type": "onnx"
@@ -3040,7 +3040,7 @@
       "fasttext_source": "cc.ro.300.vec",
       "language": "ro",
       "opset_version": 11,
-      "sha256": "f53e42def75da3140ab129a92caae4059e3cf5b31a709fc3dd1f272b7d48f297",
+      "sha256": "37653767b4453425ae0a66c6bdbfdbf749524292af497a26f4112f065c361839",
       "size": 3040752,
       "source": "cc.ro.300.vec",
       "type": "onnx"
@@ -3110,7 +3110,7 @@
       "fasttext_source": "cc.ru.300.vec",
       "language": "ru",
       "opset_version": 11,
-      "sha256": "94b3533ef70202280b8268dbdce3dcddfb699382b707506c58ac1cec22890f26",
+      "sha256": "c93c0f1b7efaf4991a667d0510b0f2e2f7b1c2b82ef0f043df820dfd27d977e3",
       "size": 3040752,
       "source": "cc.ru.300.vec",
       "type": "onnx"
@@ -3180,7 +3180,7 @@
       "fasttext_source": "cc.sk.300.vec",
       "language": "sk",
       "opset_version": 11,
-      "sha256": "ae52077c8fe00c143754b82aa317c7e5987ebd76719b90c0ff7cf9fa773d992c",
+      "sha256": "5067c2652b4c3d677cc39bf22bed18ff945a8d03390b76d02412985868d3e03f",
       "size": 3040752,
       "source": "cc.sk.300.vec",
       "type": "onnx"
@@ -3250,7 +3250,7 @@
       "fasttext_source": "cc.sl.300.vec",
       "language": "sl",
       "opset_version": 11,
-      "sha256": "d35ce9996ba601dfaf2fca815bae27c76b188199e79ed169471c934015db8ed0",
+      "sha256": "91bc8f5cd50d352bce9a285aa578c252537fdb70eb72a792f3b445051d790908",
       "size": 3040752,
       "source": "cc.sl.300.vec",
       "type": "onnx"
@@ -3320,7 +3320,7 @@
       "fasttext_source": "cc.sr.300.vec",
       "language": "sr",
       "opset_version": 11,
-      "sha256": "41e6a80e3ba1c7f44df666051d535b23018f0043171f637e159eba97b3409a8f",
+      "sha256": "79b4e4dea938356a54ff8019045aeabcf630cd9e40fbb281b661ccfb1f6fb717",
       "size": 3040752,
       "source": "cc.sr.300.vec",
       "type": "onnx"
@@ -3390,7 +3390,7 @@
       "fasttext_source": "cc.sv.300.vec",
       "language": "sv",
       "opset_version": 11,
-      "sha256": "73cc375249028a3a6f084bfb8a57515d1f95f8aff52ae433cb7c342bacec2e79",
+      "sha256": "e7c9fd0f4a1474157a98562e02acc13fd5915212e6814d3bc76463ebec133aec",
       "size": 3040752,
       "source": "cc.sv.300.vec",
       "type": "onnx"
@@ -3460,7 +3460,7 @@
       "fasttext_source": "cc.tk.300.vec",
       "language": "tk",
       "opset_version": 11,
-      "sha256": "708da16486e3408b22287cc3f44c958615abfdaf9aefb9f722d628c3eddfa3e9",
+      "sha256": "a4b06c81d483aed28de28c6d8952dcfbbd476b649369e4d676b4b8fdc6c99ff9",
       "size": 3040752,
       "source": "cc.tk.300.vec",
       "type": "onnx"
@@ -3530,7 +3530,7 @@
       "fasttext_source": "cc.tr.300.vec",
       "language": "tr",
       "opset_version": 11,
-      "sha256": "83238a0df3b2b6b1b6708e1f04a7ca5b721a1011fbac49a44902a970ce700ff5",
+      "sha256": "1ee533157420a4eaa7b9cfb02e253c2b046e23f5fd301d67b9b508f677db9392",
       "size": 3040752,
       "source": "cc.tr.300.vec",
       "type": "onnx"
@@ -3620,7 +3620,7 @@
       "fasttext_source": "cc.uk.300.vec",
       "language": "uk",
       "opset_version": 11,
-      "sha256": "cce118eaf0a446f82de0b77faa8573e1cfea86abc089a28fe41d33fc6aef788d",
+      "sha256": "2369fd0b31e521b83ddeec92e73882492ced8cbb74dbdd2403f39555ffffb8ee",
       "size": 3040752,
       "source": "cc.uk.300.vec",
       "type": "onnx"
@@ -3680,7 +3680,7 @@
       "fasttext_source": "cc.vi.300.vec",
       "language": "vi",
       "opset_version": 11,
-      "sha256": "33bca8fcb7f2146b63ecc053148ae891ffd24b8ee80a172859269d9eddbff2d5",
+      "sha256": "02d6841a5254254499a443228c5aab75a0c3ea7a46324a42cfa0608ba154eeb3",
       "size": 3040752,
       "source": "cc.vi.300.vec",
       "type": "onnx"
@@ -3750,7 +3750,7 @@
       "fasttext_source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
       "language": "zh-Hans-CN",
       "opset_version": 11,
-      "sha256": "1bcc87f438ad12f7c7f54ce9bd26e4ae124970bc8575932b4de8300421c64b02",
+      "sha256": "bf75f40a17fdf746b6a01b877b6e722b8dad5cf5450f287a5d8ad47756585972",
       "size": 3040752,
       "source": "zh-hans-cn-shard0.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, trained in-repo per plan 20)",
       "type": "onnx"
@@ -3820,7 +3820,7 @@
       "fasttext_source": "zh-hant-hk.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, Modal 16-core)",
       "language": "zh-Hant-HK",
       "opset_version": 11,
-      "sha256": "6291ecbad9e3538146b92da18ddfadebba1f8d6d7ea069b1cb923c609fba3a77",
+      "sha256": "dd474cb45ad38789eb4120d93ee029998d12d8ecb34dfc729150d0f06e0e6eb4",
       "size": 3040752,
       "source": "zh-hant-hk.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, Modal 16-core)",
       "type": "onnx"
@@ -3890,7 +3890,7 @@
       "fasttext_source": "zh-hant-tw.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, Modal 16-core)",
       "language": "zh-Hant-TW",
       "opset_version": 11,
-      "sha256": "25bd1f9c8befb5d12ec7ba502d9eaac30b2bc2791f5fa456bec08712b61a8568",
+      "sha256": "22b03853fb7d273164636eb84b6b1ce8a59056a680698af1ff340d2caa398f00",
       "size": 3040752,
       "source": "zh-hant-tw.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, Modal 16-core)",
       "type": "onnx"
