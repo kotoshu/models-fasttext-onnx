@@ -170,7 +170,7 @@ def create_onnx_model(embeddings_matrix, word_to_idx, model_name="fasttext"):
         producer_name='kotoshu-fasttext-converter',
         producer_version='1.0.0',
         opset_imports=[helper.make_operatorsetid('', 11)],  # ONNX opset 11 for compatibility
-        ir_version=11  # Set IR version to match opset
+        ir_version=10,  # IR 11 loads in NO onnxruntime-web build (D7); 10 is the browser floor
     )
 
     # Add metadata

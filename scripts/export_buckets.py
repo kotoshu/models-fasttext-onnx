@@ -327,7 +327,7 @@ def make_buckets_model(q: np.ndarray, scale: np.ndarray, bucket_ids: np.ndarray,
         producer_name="kotoshu-fasttext-converter",
         producer_version="1.0.0",
         opset_imports=[helper.make_operatorsetid("", 11)],
-        ir_version=11,
+        ir_version=10,  # IR 10: the onnxruntime-web floor (D7)
     )
     for key, value in (
         ("model_type", "fasttext_buckets"),

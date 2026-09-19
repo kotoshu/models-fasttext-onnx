@@ -362,7 +362,7 @@ def make_lid_onnx(q: np.ndarray, scale: np.ndarray, wo: np.ndarray) -> onnx.Mode
         producer_name="kotoshu-fasttext-converter",
         producer_version="1.0.0",
         opset_imports=[helper.make_operatorsetid("", 11)],
-        ir_version=11,
+        ir_version=10,  # IR 10: the onnxruntime-web compatibility floor (D7)
     )
     for key, value in (
         ("model_type", "fasttext_lid"),

@@ -146,7 +146,7 @@ def make_tier_model(q: np.ndarray, scale: np.ndarray, tier: str) -> onnx.ModelPr
         producer_name="kotoshu-fasttext-converter",
         producer_version="1.0.0",
         opset_imports=[helper.make_operatorsetid("", 11)],
-        ir_version=11,
+        ir_version=10,  # IR 10: the onnxruntime-web floor (D7)
     )
     from onnx import StringStringEntryProto
 

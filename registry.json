@@ -1,7 +1,7 @@
 {
   "spec": "kotoshu.resources/v1",
   "registry_version": 7,
-  "generated_at": "2026-09-19T10:04:20Z",
+  "generated_at": "2026-09-19T10:22:29Z",
   "release_tag": "v1.8.0",
   "resources": {
     "kotoshu://models/ar/fluency": {
@@ -755,7 +755,7 @@
         "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/en/fasttext.en.buckets.onnx"
       },
       "vocab_url": null,
-      "sha256": "1bd7825b8eb92b47701e483fb4804f09ae2064b147fe34be63ebfc7272570ff7",
+      "sha256": "88256852406a1f39b5b879f02b87149ca6ce26a57e3c32fb7eff1160073b776a",
       "size_bytes": 11375135,
       "license": "CC-BY-SA-3.0",
       "min_engine_version": "0.7",
@@ -2774,7 +2774,7 @@
         "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/lid/lid.176.onnx"
       },
       "vocab_url": "https://github.com/kotoshu/models-fasttext-onnx/releases/download/v1.8.0/lid.176.vocab.json",
-      "sha256": "8f0c0ea57b100c8467c62a20365df9d895f9d00ad90fc3ba7da49df85db4eaeb",
+      "sha256": "6f77b89d29d2591c305eca294f85acff9b1d8ace5c50a119dccb3b31a6f62ed0",
       "size_bytes": 1012025,
       "license": "MIT",
       "min_engine_version": "0.3",
@@ -4909,10 +4909,10 @@
           "tag": 5,
           "offset": 3798358,
           "length": 11375135,
-          "sha256": "1bd7825b8eb92b47701e483fb4804f09ae2064b147fe34be63ebfc7272570ff7"
+          "sha256": "88256852406a1f39b5b879f02b87149ca6ce26a57e3c32fb7eff1160073b776a"
         }
       },
-      "sha256": "7f853b5cde154af013a7c7ccffd1df4ed1e0f28cad71b2ab270e5629dbf4c4ed",
+      "sha256": "5907b3573cb107a57473cbe8f15ba0c8f19b97e0f20168dd805e2a2d484547eb",
       "size_bytes": 15173525,
       "licenses": {
         "embeddings": "CC-BY-SA-3.0",

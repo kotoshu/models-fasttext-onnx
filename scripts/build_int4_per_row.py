@@ -181,7 +181,7 @@ def make_int4_per_row_model(
         producer_name="kotoshu-fasttext-converter",
         producer_version="1.0.0",
         opset_imports=[helper.make_operatorsetid("", 11)],
-        ir_version=11,
+        ir_version=10,  # IR 10: the onnxruntime-web floor (D7)
     )
     model.metadata_props.append(StringStringEntryProto(key="vocabulary_size", value=str(vocab_size)))
     model.metadata_props.append(StringStringEntryProto(key="embedding_dimension", value=str(dims)))

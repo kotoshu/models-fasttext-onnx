@@ -13,7 +13,7 @@
       "minn": 5,
       "parity_max_abs": 0.014623522758483887,
       "quantization": "int8-per-row",
-      "sha256": "1bd7825b8eb92b47701e483fb4804f09ae2064b147fe34be63ebfc7272570ff7",
+      "sha256": "88256852406a1f39b5b879f02b87149ca6ce26a57e3c32fb7eff1160073b776a",
       "source_bin_sha256": "cac6b2d4301055c539bf90f938beb3a1cb017bf7ee36760d9c9835de357e5a1a",
       "usage_top_k": 32768,
       "vocab_bytes": null,
