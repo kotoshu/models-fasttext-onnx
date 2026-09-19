@@ -21,8 +21,11 @@ jobs:
           python-version: "3.12"
       - name: Install Python dependencies
         run: python -m pip install onnx==1.22.0 onnxruntime==1.23.2 numpy scipy jsonschema
-      - name: Build tiers (release gate)
-        run: python scripts/build_tiers.py --all
+      # Tiers are release-only since the LFS-zero storage model
+      # (TODO.deploy/1-2): their training binaries are not in the tree,
+      # so the gate validates the CUT instead of rebuilding - registry
+      # build at the tag, structural + file validation, and every
+      # primary/mirror URL probed at the tag ref.
       - name: Build registry
         run: python scripts/build_registry.py --tag "${{ github.ref_name }}" --strict
       - name: Validate registry
