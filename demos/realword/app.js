@@ -15,7 +15,7 @@ const specs = (line) => {
   li.textContent = line;
   $("load-specs").appendChild(li);
 };
-const progress = (frac) => { $("bar-fill").style.width = `${Math.round(frac * 100)}%`; };
+const progress = (frac) => { $("bar-fill").style.width = `${Math.min(100, Math.round(frac * 100))}%`; };
 
 async function fetchProgress(url, label) {
   const response = await fetch(url);

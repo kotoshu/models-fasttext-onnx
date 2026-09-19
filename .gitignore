@@ -175,9 +175,9 @@ eval/realword/*.clean.jsonl
 eval/confusion/
 eval/cache/
 
-# Plan 16 ctx-LM training: the parquet corpus lives locally; the npz
-# artifact stays local until the unblock PRs repackage it to the
-# design doc's ONNX shape. Frozen probe JSONs ARE committed.
+# Plan 16 ctx-LM training: the parquet corpus lives locally; frozen
+# probe JSONs ARE committed. The ctx.npz artifact became a PUBLISHED
+# browser artifact (TODO.deploy/4: the real-word demo serves it from
+# the raw host; 84.7 MB < the 100 MiB git limit) and is committed.
 eval/corpus/*
-models/*/fasttext.*.ctx.npz
 !eval/corpus/*.LICENSE.json
