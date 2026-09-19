@@ -115,6 +115,9 @@ async function load() {
   specs(`bigrams: ${npz.bigram_keys.length.toLocaleString()} types, binary search`);
 
   const miniBytes = await fetchProgress(`${DIR}/fasttext.${LANG}.mini.onnx`, "mini model");
+  // Pages serves no COOP/COEP, so the threaded wasm build cannot use
+  // SharedArrayBuffer - single-threaded inference is instant at this size.
+  ort.env.wasm.numThreads = 1;
   state.session = await ort.InferenceSession.create(miniBytes.buffer,
     { executionProviders: ["wasm"] });
   const miniVocabBytes = await fetchProgress(`${DIR}/fasttext.${LANG}.mini.vocab.json`, "mini vocab");
@@ -363,6 +366,8 @@ $("check").addEventListener("click", async () => {
 });
 
 load().catch((err) => {
-  $("load-msg").textContent = `failed: ${err.message}`;
+  $("load-msg").textContent =
+    `failed: ${err && err.message ? err.message : String(err)}` +
+    (err && err.stack ? ` — ${String(err.stack).split("\n")[0]}` : "");
   throw err;
 });
