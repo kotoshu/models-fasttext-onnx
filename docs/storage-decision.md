@@ -6,6 +6,25 @@ the decision record and the v1 URL contract.
 
 ## Decision
 
+> **SUPERSEDED IN PART — 2026-09-19, TODO.deploy/1-5.** Git LFS is now
+> ZERO in this repository. The current law:
+>
+> | Location | Contents |
+> |---|---|
+> | git (plain, raw-host served, CORS-open) | mini tiers + their vocab JSONs, `packs/*.bin`, `models/lid/*`, `models/typo/*`, demo-language bucket tables (`en`), plus all text/metadata |
+> | GitHub Releases | full/fluency/buckets onnx, `*.ktm1` matrices, per-tag vocab assets, `registry.json`, `manifest-v{TAG}.json` |
+> | Git LFS | **nothing — never again** |
+>
+> Rationale and evidence: the free-account LFS quota blocked all pushes,
+> deleting the repository did not reset the accounting, and a
+> support-triggered rebuild did not propagate for 18+ hours; meanwhile the
+> raw host serves plain-git blobs with `access-control-allow-origin: *`
+> (verified), which the media-host convention no longer needs to provide.
+> Hard limits: plain git files must stay under 100 MiB; release assets up
+> to 2 GiB each. The historical record below is retained for context.
+
+## Decision
+
 Small text lives in git; every `.onnx` binary lives as a GitHub Release
 asset. Release assets on public repositories are unmetered, which removes
 the quota pressure that made Git LFS the bottleneck.
