@@ -2,7 +2,7 @@
 
 ## Status
 
-executed (2026-09-19) — URL sweep: 465/465 reachable; per-language audit: 57/57 PASS (byte-exact mirrors, onnxruntime load, deterministic+distinct+self-retrieval); aux artifacts PASS (lid-176, typo bi-encoder, en buckets, 3 packs); the demo language explorer is live at www.kotoshu.org/models-fasttext-onnx/realword/. Evidence: eval/reports/audit-v1.8.0.json.
+executed (2026-09-19) — URL sweep: 465/465 reachable; per-language audit: 57/57 PASS (byte-exact mirrors, onnxruntime load, deterministic+distinct+self-retrieval); aux artifacts PASS (lid-176, typo bi-encoder, en buckets, 3 packs); the demo language explorer is live at www.kotoshu.org/models-fasttext-onnx/realword/. Evidence: eval/reports/audit-v1.8.0.json. The headless-browser E2E PASSed on the live page only after the audit forced four real fixes (gitignored ctx.npz, dead blakejs CDN path, threaded-wasm without cross-origin isolation, and IR version 11 — no onnxruntime-web build accepts it; the browser set re-exported at IR 10 with every sha refreshed and the release re-uploaded). Screenshot: eval/reports/demo-e2e.png.
 
 ## Problem
 

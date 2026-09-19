@@ -63,6 +63,45 @@
    "verdict": "PASS"
   }
  },
+ "e2e_browser": {
+  "console_errors": 0,
+  "date": "2026-09-19",
+  "explorer_de": {
+   "ms": 745,
+   "top": [
+    "Th\u00fcringen",
+    "Eric",
+    "Waren",
+    "Kuchen"
+   ],
+   "word": "Haus"
+  },
+  "explorer_zh_Hant_TW": {
+   "ms": 728,
+   "top": [
+    "\u8f49\u578b",
+    "\u4e00\u628a",
+    "\u5275\u9020"
+   ],
+   "word": "\u5b78\u6821"
+  },
+  "fixes_required_first": [
+   "ctx.npz was gitignored - never published; now committed (84.7 MB)",
+   "blakejs CDN path 404 - vendored bundle wired in",
+   "onnxruntime-web threaded wasm without COOP/COEP - numThreads=1",
+   "IR version 11 rejected by every onnxruntime-web - browser set re-exported at IR 10 (57 minis, 3 packs, registry re-cut)"
+  ],
+  "model_chain_load_seconds": 5.7,
+  "realword": {
+   "fixture": "He read the hole book in one day. Its been a long time.",
+   "flags": [
+    "hole -> one (semantic +0.24, bigram x7.1)"
+   ],
+   "latency_ms": 22
+  },
+  "tool": "headless chromium 131 (playwright) against the live page",
+  "verdict": "PASS"
+ },
  "n_fail": 0,
  "n_pass": 57,
  "results": {
