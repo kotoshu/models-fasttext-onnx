@@ -31,7 +31,11 @@ from build_packs import (  # noqa: E402
 )
 
 REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
-MEDIA_URL = "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx"
+# The CORS surface is the raw host (TODO.deploy/1: zero Git LFS).
+RAW_URL = "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx"
+# Bucket tables served to browsers (the demo languages, plan D4); every
+# other buckets tier is release-only. Mirrors build_registry.py.
+BROWSER_BUCKET_LANGS = frozenset({"en"})
 READ_CHUNK = 1 << 20
 
 PACKS_DESCRIPTOR = "packs/packs.json"
@@ -106,7 +110,7 @@ def mirror_probe_url(url, ref):
     merge — so branch validation must probe the branch's copy.
     """
     if ref and ref != "main":
-        return url.replace(f"{MEDIA_URL}/main/", f"{MEDIA_URL}/{ref}/")
+        return url.replace(f"{RAW_URL}/main/", f"{RAW_URL}/{ref}/")
     return url
 
 
@@ -173,7 +177,7 @@ def check_urls(resource, resource_id, registry, errors):
         # assets only when the owner cuts the pack release (plan 113),
         # so primary must stay null until then.
         name = f"{lang}-{resource['version']}.bin"
-        expected_mirror = f"{MEDIA_URL}/main/packs/{name}"
+        expected_mirror = f"{RAW_URL}/main/packs/{name}"
         if resource["urls"]["mirror"] != expected_mirror:
             errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
         if resource["urls"]["primary"] is not None:
@@ -185,15 +189,20 @@ def check_urls(resource, resource_id, registry, errors):
     onnx_name, vocab_name = asset_stems(lang, tier_name)
 
     if tier_name == "typo-matrix":
-        # Plan 136: the prebuilt KTM1 retrieval matrix. Mirror-only
-        # until a release carries it (the additive template); no vocab
-        # sibling (rows pair with the language's full-tier vocab).
-        expected = f"{MEDIA_URL}/main/models/{lang}/typo.matrix.{lang}.ktm1"
-        if resource["urls"]["mirror"] != expected:
-            errors.append(f"{resource_id}: mirror URL expected {expected}")
-        if resource["urls"]["primary"] is not None or resource["vocab_url"] is not None:
-            errors.append(f"{resource_id}: typo-matrix rides mirror-only until a "
-                          f"release carries the artifact")
+        # Release-only since TODO.deploy/2: the matrix ships as a release
+        # asset at the descriptor's release_tag; no vocab sibling (rows
+        # pair with the language's full-tier vocab).
+        if resource["urls"]["mirror"] is not None or resource["vocab_url"] is not None:
+            errors.append(f"{resource_id}: typo-matrix is release-only, "
+                          f"mirror and vocab_url must be null")
+        primary = resource["urls"]["primary"]
+        import re as _re
+        if not primary or not _re.fullmatch(
+                rf"https://github\.com/kotoshu/models-fasttext-onnx/releases/"
+                rf"download/v\d+\.\d+\.\d+/typo\.matrix\.{_re.escape(lang)}\.ktm1",
+                primary):
+            errors.append(f"{resource_id}: typo-matrix primary must be a "
+                          f"release-asset URL at a semver tag; got {primary!r}")
         # Plan 14: the rows are index-parallel to EXACTLY the tier vocab
         # they were derived over; a rebuilt full tier silently
         # mismatches every row. The entry must carry the pairing sha,
@@ -210,7 +219,7 @@ def check_urls(resource, resource_id, registry, errors):
         # primary/vocab null (the plan-113 additive template). Set: BOTH
         # URLs must follow the release-tag convention exactly — a primary
         # without its vocab sibling is a dead half-pair.
-        expected_mirror = f"{MEDIA_URL}/main/models/typo/{onnx_name}"
+        expected_mirror = f"{RAW_URL}/main/models/typo/{onnx_name}"
         if resource["urls"]["mirror"] != expected_mirror:
             errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
         primary = resource["urls"]["primary"]
@@ -234,24 +243,25 @@ def check_urls(resource, resource_id, registry, errors):
                       f"release tag; got primary={primary!r} vocab={vocab_url!r}")
         return
 
-    # A released full tier is release-only (plan 22 stripped the
-    # binaries out of LFS history) - no LFS object, no media mirror;
-    # the primary release URL is the artifact. Every other tier binary
-    # is an LFS object in git -> the media host mirror (the raw host
-    # serves pointer stubs). LID lives under models/lid/, not
-    # models/{lang}/.
+    # Browser-served tiers carry the raw-host mirror (the CORS surface,
+    # TODO.deploy/2); every other tier is release-only - mirror null.
+    # Mini bytes live in plain git; full/fluency/non-demo-buckets
+    # binaries are release assets only. LID lives under models/lid/.
     primary, vocab_url = resource["urls"]["primary"], resource["vocab_url"]
-    if tier_name == "full" and primary is not None:
-        if resource["urls"]["mirror"] is not None:
-            errors.append(f"{resource_id}: released full tier is release-only "
-                          f"(plan 22), mirror must be null")
-    else:
-        if tier_name == "lid-176":
-            expected_mirror = f"{MEDIA_URL}/main/models/lid/{onnx_name}"
-        else:
-            expected_mirror = f"{MEDIA_URL}/main/models/{lang}/{onnx_name}"
+    browser_served = (
+        tier_name == "mini"
+        or (tier_name == "buckets" and lang in BROWSER_BUCKET_LANGS)
+    )
+    if browser_served or tier_name == "lid-176":
+        expected_mirror = (
+            f"{RAW_URL}/main/models/lid/{onnx_name}" if tier_name == "lid-176"
+            else f"{RAW_URL}/main/models/{lang}/{onnx_name}"
+        )
         if resource["urls"]["mirror"] != expected_mirror:
             errors.append(f"{resource_id}: mirror URL expected {expected_mirror}")
+    elif resource["urls"]["mirror"] is not None:
+        errors.append(f"{resource_id}: {tier_name} tier is release-only "
+                      f"(TODO.deploy/2), mirror must be null")
 
     # Pre-release mirror-only state (the plan-136 typo convention, extended
     # to model resources by plan 20): the artifact exists in-repo but no

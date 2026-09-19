@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-19)
+executed (2026-09-19) — 232 resources, 0 errors/0 warnings; mini/packs/lid/typo/en-buckets carry raw-host mirrors, 169 release-only entries have null mirrors, ktm1 primaries at v1.8.0
 
 ## Problem
 

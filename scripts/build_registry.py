@@ -49,7 +49,12 @@ REPO_URL = "https://github.com/kotoshu/models-fasttext-onnx"
 # LFS-tracked binaries resolve to pointer stubs on the raw host; the
 # media host serves the real bytes. Plain-git files (vocab, manifests)
 # are fine on raw.
-MEDIA_URL = "https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx"
+# The CORS surface is the raw host (verified: access-control-allow-origin:
+# *). The LFS media host is retired - zero Git LFS anywhere (TODO.deploy/1).
+RAW_URL = "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx"
+# Bucket tables served to browsers (the demo languages, plan D4); every
+# other buckets tier is release-only.
+BROWSER_BUCKET_LANGS = frozenset({"en"})
 LICENSE = "CC-BY-SA-3.0"
 MIN_ENGINE_VERSION = "0.7"
 FULL_DIMS = 300
@@ -76,15 +81,18 @@ def full_vocab_size(lang_dir, lang):
 def build_resource(lang, tier_name, dims, vocab_size, quantization,
                    sha256, size_bytes, eval_ref, version, tag):
     stem = f"fasttext.{lang}" if tier_name == "full" else f"fasttext.{lang}.{tier_name}"
-    # Browser tiers (mini/fluency/buckets) live in git as LFS objects
-    # (plan 92) so the media host serves CORS-fetchable bytes; the raw
-    # host would serve 134-byte pointer stubs, hence the media URL.
-    # A released full tier is release-only (plan 22 stripped the
-    # binaries out of LFS history): no LFS object, no mirror. Languages
-    # waiting for the owner's cut keep every tier mirror-only.
-    mirror = f"{MEDIA_URL}/main/models/{lang}/{stem}.onnx"
-    if tier_name == "full" and lang not in UNRELEASED and tag:
-        mirror = None
+    # Browser-served tiers carry the raw-host mirror (the CORS surface);
+    # every other tier is release-only - no mirror, the primary release
+    # URL is the artifact (TODO.deploy/2). Mini bytes live in plain git,
+    # so a pre-release language's mini serves from the raw mirror before
+    # any cut; full/fluency/buckets binaries are never in git at all.
+    browser_served = (
+        tier_name == "mini"
+        or (tier_name == "buckets" and lang in BROWSER_BUCKET_LANGS)
+    )
+    mirror = (
+        f"{RAW_URL}/main/models/{lang}/{stem}.onnx" if browser_served else None
+    )
     # The buckets sibling (plan 103) carries its bucket-id map inside the
     # artifact itself (the bucket_ids tensor) - no vocab.json sibling.
     if tier_name == "buckets":
@@ -155,7 +163,7 @@ def build_lid_resource(descriptor, version, tag):
         "version": version,
         "urls": {
             "primary": f"{REPO_URL}/releases/download/{tag}/lid.176.onnx" if tag else None,
-            "mirror": f"{MEDIA_URL}/main/models/lid/lid.176.onnx",
+            "mirror": f"{RAW_URL}/main/models/lid/lid.176.onnx",
         },
         "vocab_url": f"{REPO_URL}/releases/download/{tag}/lid.176.vocab.json" if tag else None,
         "sha256": descriptor["sha256"],
@@ -206,7 +214,7 @@ def build_typo_resource(descriptor, version):
                 if release_tag
                 else None
             ),
-            "mirror": f"{MEDIA_URL}/main/models/typo/typo.biencoder.onnx",
+            "mirror": f"{RAW_URL}/main/models/typo/typo.biencoder.onnx",
         },
         "vocab_url": (
             f"{REPO_URL}/releases/download/{release_tag}/typo.biencoder.vocab.json"
@@ -236,7 +244,7 @@ def build_pack_resource(pack):
         "dictionary_pin": pack["dictionary_pin"],
         "urls": {
             "primary": None,
-            "mirror": f"{MEDIA_URL}/main/packs/{name}",
+            "mirror": f"{RAW_URL}/main/packs/{name}",
         },
         "contents": pack["contents"],
         "sha256": pack["sha256"],
@@ -369,7 +377,9 @@ def main():
                     f"{REPO_URL}/releases/download/{release_tag}/typo.matrix.{lang}.ktm1"
                     if release_tag else None
                 ),
-                "mirror": f"{MEDIA_URL}/main/models/{lang}/typo.matrix.{lang}.ktm1",
+                # Release-only since TODO.deploy/2: server-side consumers
+                # read the primary; no browser loads a matrix.
+                "mirror": None,
             },
             "vocab_url": None,
             "sha256": d["sha256"],

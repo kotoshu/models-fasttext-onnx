@@ -9,6 +9,6 @@
   "built_with": "kotoshu-rs examples/matrix_export (TypoIndex::write_rows)",
   "license": "CC-BY-SA-3.0",
   "min_engine_version": "1.1",
-  "release_tag": null,
+  "release_tag": "v1.8.0",
   "eval_ref": "eval/reports/hybrid-pricing.json"
 }
