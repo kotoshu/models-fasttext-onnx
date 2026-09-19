@@ -28,7 +28,7 @@
   </section>
 
   <section id="demo" class="hidden">
-    <h2>Try a sentence</h2>
+    <h2>Try a sentence <span class="muted">(English — the only language with calibrated context tables today)</span></h2>
     <textarea id="input" rows="3" spellcheck="false">He read the hole book in one day. Its been a long time.</textarea>
     <div class="controls">
       <label>strictness
@@ -39,6 +39,20 @@
     </div>
     <div id="result" class="result"></div>
     <div id="telemetry" class="telemetry"></div>
+  </section>
+
+  <section id="explorer" class="hidden">
+    <h2>Every language, in the browser</h2>
+    <p class="muted">Each of the 57 supported languages serves its mini
+    embedding model through the same chain. Pick one, type one of its
+    words, and read its nearest neighbours — straight from the registry
+    mirror, no server.</p>
+    <div class="controls">
+      <label>language <select id="lang"></select></label>
+      <input type="text" id="word" placeholder="a word from that language" spellcheck="false">
+      <button id="neighbors">Neighbours</button>
+    </div>
+    <div id="word-result" class="result"></div>
   </section>
 
   <section class="panel notes">
