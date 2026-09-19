@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real-word detection — kotoshu models</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blakejs@1.2.1/blake.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">kotoshu · models-fasttext-onnx · research preview</p>
+    <h1>Real-word detection</h1>
+    <p class="lede">Misspellings are easy — <em>real-word</em> errors are the
+    interesting ones: <em>Its</em> been a long time, the <em>weather</em> whether
+    report, the <em>hole</em> book. Every word below is a correctly spelled
+    dictionary word; the model decides from context whether it belongs.</p>
+  </header>
+
+  <section id="loader" class="panel">
+    <h2>Loading the language model</h2>
+    <p id="load-msg">fetching registry…</p>
+    <div class="bar"><div id="bar-fill"></div></div>
+    <ul class="specs" id="load-specs"></ul>
+  </section>
+
+  <section id="demo" class="hidden">
+    <h2>Try a sentence</h2>
+    <textarea id="input" rows="3" spellcheck="false">He read the hole book in one day. Its been a long time.</textarea>
+    <div class="controls">
+      <label>strictness
+        <input type="range" id="tau" min="2" max="10" step="0.5" value="6">
+        <span id="tau-val">6.0</span>
+      </label>
+      <button id="check">Check</button>
+    </div>
+    <div id="result" class="result"></div>
+    <div id="telemetry" class="telemetry"></div>
+  </section>
+
+  <section class="panel notes">
+    <h2>What this is</h2>
+    <p>A research preview of real-word (confusion-set) detection. Every byte
+    comes from the public artifact chain: <code>registry.json</code> for
+    discovery, then the English bucket-table language model (85 MB bigram
+    counts), the mini-tier embedding model, and a pruned confusion table —
+    all served CORS-open from
+    <code>raw.githubusercontent.com</code>. No server, no bundler.</p>
+    <p>Conservative by design: a word is flagged only when a confusion
+    candidate beats it on <em>both</em> semantic-context similarity and
+    collocational evidence. The calibrated, budget-frozen scorer ships with
+    the Phase-1 gate; this page is the serving proof, not the production
+    detector.</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
