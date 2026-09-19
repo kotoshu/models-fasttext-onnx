@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-19, owner: "Do it now to prove this ecosystem works")
+executed (2026-09-19) — demos/realword ships the full page; component parity proven in node against the Python implementations (blake2b hash 2692745670, npz arrays identical to numpy, binary-search lookups identical to bisect: get(5,100)=2118 both sides); scoring validated on fixtures in Python (dual gate: conservative, clean sentences stay clean). The in-browser click-through remains for the owner to open.
 
 ## Problem
 
