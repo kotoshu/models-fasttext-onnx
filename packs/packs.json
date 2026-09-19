@@ -1,6 +1,6 @@
 {
   "spec": "kotoshu.packs/v1",
-  "generated_at": "2026-09-09T16:41:13Z",
+  "generated_at": "2026-09-19T10:01:00Z",
   "packs": {
     "en": {
       "language": "en",
@@ -24,7 +24,7 @@
           "tag": 3,
           "offset": 554935,
           "length": 3040752,
-          "sha256": "d81f36c5e0097414db95d48406ce615161dd07c697996fe973297186279d5e2f"
+          "sha256": "a51ed7d8b8d7f25044569d50748261e01e5d95ab166e7dcef6cecf7a8bc62100"
         },
         "vocab": {
           "tag": 4,
@@ -39,7 +39,7 @@
           "sha256": "1bd7825b8eb92b47701e483fb4804f09ae2064b147fe34be63ebfc7272570ff7"
         }
       },
-      "sha256": "322333c66dbc4a41e456ebb1c2e79b72d27cca9cf3bb6f2c6b4bde5e193900df",
+      "sha256": "7f853b5cde154af013a7c7ccffd1df4ed1e0f28cad71b2ab270e5629dbf4c4ed",
       "size_bytes": 15173525,
       "licenses": {
         "embeddings": "CC-BY-SA-3.0",
@@ -69,7 +69,7 @@
           "tag": 3,
           "offset": 1137480,
           "length": 3040752,
-          "sha256": "aa724e7eea8580d81a0e2e6c6aec3108b8b90f65381ae7bc2baeb830b1a90f69"
+          "sha256": "4ce3197de1d77d22a889f24d42c930a27bafe3c2c5cf9b62cea45fc443736941"
         },
         "vocab": {
           "tag": 4,
@@ -84,7 +84,7 @@
           "sha256": "a11de192e0c31d331deeb1b47a3c4086e91801edaadb0a807731faf3826f072d"
         }
       },
-      "sha256": "d7e68dd5839056226e843c943c43c452731366752c1d3c4dce832876e57343ab",
+      "sha256": "93b86652d9cf87259fbd674d4c95bbb2a98f42e49710c1410453023619ef41d9",
       "size_bytes": 14648053,
       "licenses": {
         "embeddings": "CC-BY-SA-3.0",
@@ -114,7 +114,7 @@
           "tag": 3,
           "offset": 5457568,
           "length": 3040752,
-          "sha256": "5fb94c7a2589d8222eea4f8174bf361c038a828c80787befa9edd0d650d8674c"
+          "sha256": "f0e0251e082d9fe83606351c3048be621400761cb9686baaa4989123d4105795"
         },
         "vocab": {
           "tag": 4,
@@ -129,7 +129,7 @@
           "sha256": "118d831e3af91ea43047446b7e1de59221f5b0a3bc3f45ac93ba3d6f0bf40691"
         }
       },
-      "sha256": "3a3ec2874c8573b7f025b298975237660fdb8b72e73cdfef9da8dc2665335843",
+      "sha256": "b50cb81f3293d448cb9f69e5c508435d1a6b63a3548b6f5de0166be9549057b1",
       "size_bytes": 18989878,
       "licenses": {
         "embeddings": "CC-BY-SA-3.0",

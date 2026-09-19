@@ -1,46 +1,46 @@
 {
+  "generated_at": "2026-09-07T15:40:11Z",
   "language": "mn",
   "tiers": {
-    "fluency": {
-      "dims": 300,
-      "vocab_size": 50000,
-      "quantization": "int8-per-row",
-      "bytes": 15200760,
-      "sha256": "5640659348025237a84783f5f540a9d98d4eb5887d9f339f26f8d21f32b9890d",
-      "vocab_sha256": "89cbd17e01f890c350e799672b70558840607ef53f326eb0c9bd57863aa98e65",
-      "vocab_bytes": 1392257,
-      "eval_ref": "eval/reports/mn.fluency.json",
-      "source_full_sha256": "04ff1ab0a8f589dbc0ac756f08af90b088bc2d2982f073aed7f1c76d80850be9"
-    },
-    "mini": {
-      "dims": 300,
-      "vocab_size": 10000,
-      "quantization": "int8-per-row",
-      "bytes": 3040752,
-      "sha256": "05eb36d2143560f89031415d71bcfecf3bb7dd4eee9dc46af495d6f59a9147a2",
-      "vocab_sha256": "995ddd7cad0fc3283aa120fb5d07956d3508aef7f5abffd64057f1537d558750",
-      "vocab_bytes": 260499,
-      "eval_ref": "eval/reports/mn.mini.json",
-      "source_full_sha256": "04ff1ab0a8f589dbc0ac756f08af90b088bc2d2982f073aed7f1c76d80850be9"
-    },
     "buckets": {
-      "dims": 300,
-      "vocab_size": 37675,
-      "quantization": "int8-per-row",
-      "bytes": 11755463,
-      "sha256": "b3bcf36f13b056f5a1e2f214ffa1b146e48452de96beb3b17fbd9a61f89b5827",
-      "vocab_sha256": null,
-      "vocab_bytes": null,
-      "eval_ref": "eval/reports/mn.buckets.json",
-      "source_bin_sha256": "9be189868fa866ef2035dc0a062daed1d0123cbdc49106638a255cf6da173887",
       "bucket_count": 2000000,
       "buckets": 37675,
-      "usage_top_k": 32768,
+      "bytes": 11755463,
       "demand_rows": 7450,
-      "minn": 5,
+      "dims": 300,
+      "eval_ref": "eval/reports/mn.buckets.json",
       "maxn": 5,
-      "parity_max_abs": 0.004898771643638611
+      "minn": 5,
+      "parity_max_abs": 0.004898771643638611,
+      "quantization": "int8-per-row",
+      "sha256": "b3bcf36f13b056f5a1e2f214ffa1b146e48452de96beb3b17fbd9a61f89b5827",
+      "source_bin_sha256": "9be189868fa866ef2035dc0a062daed1d0123cbdc49106638a255cf6da173887",
+      "usage_top_k": 32768,
+      "vocab_bytes": null,
+      "vocab_sha256": null,
+      "vocab_size": 37675
+    },
+    "fluency": {
+      "bytes": 15200760,
+      "dims": 300,
+      "eval_ref": "eval/reports/mn.fluency.json",
+      "quantization": "int8-per-row",
+      "sha256": "5640659348025237a84783f5f540a9d98d4eb5887d9f339f26f8d21f32b9890d",
+      "source_full_sha256": "04ff1ab0a8f589dbc0ac756f08af90b088bc2d2982f073aed7f1c76d80850be9",
+      "vocab_bytes": 1392257,
+      "vocab_sha256": "89cbd17e01f890c350e799672b70558840607ef53f326eb0c9bd57863aa98e65",
+      "vocab_size": 50000
+    },
+    "mini": {
+      "bytes": 3040752,
+      "dims": 300,
+      "eval_ref": "eval/reports/mn.mini.json",
+      "quantization": "int8-per-row",
+      "sha256": "42c9b6db3c54b71e5c46ce12520912a9d1e5605b4c1e836be0a44f499de54777",
+      "source_full_sha256": "04ff1ab0a8f589dbc0ac756f08af90b088bc2d2982f073aed7f1c76d80850be9",
+      "vocab_bytes": 260499,
+      "vocab_sha256": "995ddd7cad0fc3283aa120fb5d07956d3508aef7f5abffd64057f1537d558750",
+      "vocab_size": 10000
     }
-  },
-  "generated_at": "2026-09-07T15:40:11Z"
+  }
 }
