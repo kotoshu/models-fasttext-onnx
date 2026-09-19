@@ -2,9 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-19, owner: "Audit again to validate that all things
-work and our website usage directly works for all the languages we
-support")
+executed (2026-09-19) — URL sweep: 465/465 reachable; per-language audit: 57/57 PASS (byte-exact mirrors, onnxruntime load, deterministic+distinct+self-retrieval); aux artifacts PASS (lid-176, typo bi-encoder, en buckets, 3 packs); the demo language explorer is live at www.kotoshu.org/models-fasttext-onnx/realword/. Evidence: eval/reports/audit-v1.8.0.json.
 
 ## Problem
 
