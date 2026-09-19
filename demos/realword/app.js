@@ -125,10 +125,107 @@ async function load() {
   progress(1);
   $("load-msg").textContent = `ready in ${((performance.now() - t0) / 1000).toFixed(1)} s`;
   state.ready = true;
+  state.registry = registry;
+  state.confusion = confusion;
+  populateLanguages(registry);
   $("loader").classList.add("hidden");
   $("demo").classList.remove("hidden");
+  $("explorer").classList.remove("hidden");
   $("check").disabled = false;
 }
+
+/* Language explorer: every language's mini model through its registry
+ * mirror, nearest neighbours over a deterministic vocabulary sample. */
+const langSessions = new Map();
+
+function populateLanguages(registry) {
+  const select = $("lang");
+  const langs = Object.keys(registry.resources)
+    .filter((id) => id.startsWith("kotoshu://models/") && id.endsWith("/mini"))
+    .map((id) => id.split("/")[3])
+    .sort();
+  for (const lang of langs) {
+    const option = document.createElement("option");
+    option.value = lang;
+    option.textContent = lang;
+    select.appendChild(option);
+  }
+  select.value = "en";
+}
+
+async function sessionFor(lang) {
+  if (langSessions.has(lang)) return langSessions.get(lang);
+  const entry = state.registry.resources[`kotoshu://models/${lang}/mini`];
+  const onnxBytes = await fetchProgress(entry.urls.mirror, `${lang} mini`);
+  const session = await ort.InferenceSession.create(onnxBytes.buffer,
+    { executionProviders: ["wasm"] });
+  const vocabRaw = await fetchProgress(
+    entry.urls.mirror.replace(/[^/]+$/, `fasttext.${lang}.mini.vocab.json`),
+    `${lang} vocab`);
+  const vocab = JSON.parse(new TextDecoder().decode(vocabRaw));
+  const wordToIdx = vocab.word_to_idx || vocab;
+  const idxToWord = Object.keys(wordToIdx);
+  // deterministic sample: every k-th entry up to 400
+  const step = Math.max(1, Math.floor(idxToWord.length / 400));
+  const sample = [];
+  for (let i = 0; i < idxToWord.length && sample.length < 400; i += step) sample.push(i);
+  const rec = { session, wordToIdx, idxToWord, sample, cache: new Map() };
+  langSessions.set(lang, rec);
+  return rec;
+}
+
+async function explorerVec(rec, idx) {
+  if (!rec.cache.has(idx)) {
+    const input = new ort.Tensor("int64", BigInt64Array.from([BigInt(idx)]), [1]);
+    const v = await rec.session.run({ word_index: input }).then((o) => {
+      const d = o.embedding.data;
+      let norm = 0;
+      for (let i = 0; i < d.length; i += 1) norm += d[i] * d[i];
+      norm = Math.sqrt(norm) || 1;
+      const out = new Float32Array(d.length);
+      for (let i = 0; i < d.length; i += 1) out[i] = d[i] / norm;
+      return out;
+    });
+    rec.cache.set(idx, v);
+  }
+  return rec.cache.get(idx);
+}
+
+$("neighbors").addEventListener("click", async () => {
+  const lang = $("lang").value;
+  const word = $("word").value.trim();
+  const out = $("word-result");
+  if (!word) { out.textContent = "Type a word first."; return; }
+  $("neighbors").disabled = true;
+  out.textContent = `loading ${lang}…`;
+  try {
+    const t0 = performance.now();
+    const rec = await sessionFor(lang);
+    const idx = rec.wordToIdx[word];
+    if (idx === undefined) {
+      out.textContent = `"${word}" is not in the ${lang} mini vocabulary (10k most frequent words). Try another.`;
+      return;
+    }
+    const target = await explorerVec(rec, idx);
+    const scored = [];
+    for (const i of rec.sample) {
+      if (i === idx) continue;
+      const v = await explorerVec(rec, i);
+      let s = 0;
+      for (let k = 0; k < v.length; k += 1) s += v[k] * target[k];
+      scored.push([s, rec.idxToWord[i]]);
+    }
+    scored.sort((a, b) => b[0] - a[0]);
+    const ms = (performance.now() - t0).toFixed(0);
+    out.innerHTML = `<strong>${lang}</strong> · nearest to <em>${escapeHtml(word)}</em>:` +
+      `<ol>${scored.slice(0, 5).map(([s, w]) =>
+        `<li>${escapeHtml(w)} <span class="muted">${s.toFixed(3)}</span></li>`).join("")}</ol>` +
+      `<p class="verdict">sampled ${rec.sample.length} of ${rec.idxToWord.length} vocabulary entries · ${ms} ms</p>`;
+  } catch (err) {
+    out.textContent = `error: ${err.message}`;
+  }
+  $("neighbors").disabled = false;
+});
 
 function embedding(word) {
   const cache = state.embCache;

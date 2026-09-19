@@ -1,0 +1,699 @@
+{
+ "aux": {
+  "en-buckets": {
+   "inputs": [
+    [
+     "bucket_row",
+     [
+      1
+     ]
+    ]
+   ],
+   "out_shapes": [
+    [
+     300
+    ]
+   ],
+   "verdict": "PASS"
+  },
+  "lid-176": {
+   "inputs": [
+    [
+     "features",
+     [
+      "N"
+     ]
+    ]
+   ],
+   "out_shapes": [
+    [
+     16
+    ]
+   ],
+   "verdict": "PASS"
+  },
+  "pack-de": {
+   "sha_ok": true,
+   "verdict": "PASS"
+  },
+  "pack-en": {
+   "sha_ok": true,
+   "verdict": "PASS"
+  },
+  "pack-pt": {
+   "sha_ok": true,
+   "verdict": "PASS"
+  },
+  "typo-biencoder": {
+   "inputs": [
+    [
+     "char_ids",
+     [
+      "batch",
+      "seq"
+     ]
+    ]
+   ],
+   "out_shapes": [
+    [
+     1,
+     256
+    ]
+   ],
+   "verdict": "PASS"
+  }
+ },
+ "n_fail": 0,
+ "n_pass": 57,
+ "results": {
+  "ar": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ar/fasttext.ar.mini.onnx",
+   "seconds": 1.2,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "bg": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/bg/fasttext.bg.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "br": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/br/fasttext.br.mini.onnx",
+   "seconds": 1.1,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ca": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ca/fasttext.ca.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "cs": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/cs/fasttext.cs.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "cy": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/cy/fasttext.cy.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "da": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/da/fasttext.da.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "de": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/de/fasttext.de.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "el": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/el/fasttext.el.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "en": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/en/fasttext.en.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "eo": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/eo/fasttext.eo.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "es": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/es/fasttext.es.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "et": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/et/fasttext.et.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "eu": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/eu/fasttext.eu.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "fa": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/fa/fasttext.fa.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "fr": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/fr/fasttext.fr.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "fy": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/fy/fasttext.fy.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ga": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ga/fasttext.ga.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "gd": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/gd/fasttext.gd.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "gl": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/gl/fasttext.gl.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "he": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/he/fasttext.he.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "hr": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/hr/fasttext.hr.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "hu": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/hu/fasttext.hu.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "hy": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/hy/fasttext.hy.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ia": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ia/fasttext.ia.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "id": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/id/fasttext.id.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "is": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/is/fasttext.is.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "it": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/it/fasttext.it.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ja": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ja/fasttext.ja.mini.onnx",
+   "seconds": 2.1,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ka": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ka/fasttext.ka.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ko": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ko/fasttext.ko.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "la": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/la/fasttext.la.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "lb": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/lb/fasttext.lb.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "lt": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/lt/fasttext.lt.mini.onnx",
+   "seconds": 2.4,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "lv": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/lv/fasttext.lv.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "mk": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/mk/fasttext.mk.mini.onnx",
+   "seconds": 1.1,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "mn": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/mn/fasttext.mn.mini.onnx",
+   "seconds": 1.5,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "nb": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/nb/fasttext.nb.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ne": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ne/fasttext.ne.mini.onnx",
+   "seconds": 1.1,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "nl": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/nl/fasttext.nl.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "nn": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/nn/fasttext.nn.mini.onnx",
+   "seconds": 1.1,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "oc": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/oc/fasttext.oc.mini.onnx",
+   "seconds": 1.2,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "pl": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/pl/fasttext.pl.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "pt": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/pt/fasttext.pt.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ro": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ro/fasttext.ro.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "ru": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/ru/fasttext.ru.mini.onnx",
+   "seconds": 1.1,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "sk": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/sk/fasttext.sk.mini.onnx",
+   "seconds": 1.5,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "sl": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/sl/fasttext.sl.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "sr": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/sr/fasttext.sr.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "sv": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/sv/fasttext.sv.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "tk": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/tk/fasttext.tk.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "tr": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/tr/fasttext.tr.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "uk": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/uk/fasttext.uk.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "vi": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/vi/fasttext.vi.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "zh-Hans-CN": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/zh-Hans-CN/fasttext.zh-Hans-CN.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "zh-Hant-HK": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/zh-Hant-HK/fasttext.zh-Hant-HK.mini.onnx",
+   "seconds": 0.9,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  },
+  "zh-Hant-TW": {
+   "bytes": 3040752,
+   "deterministic": true,
+   "distinct": true,
+   "mirror": "https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/zh-Hant-TW/fasttext.zh-Hant-TW.mini.onnx",
+   "seconds": 1.0,
+   "self_retrieval": true,
+   "sha_ok": true,
+   "verdict": "PASS",
+   "vocab_size": 10000
+  }
+ },
+ "scope": "mini mirrors, all languages, v1.8.0",
+ "spec": "kotoshu.audit/v1"
+}
