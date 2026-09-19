@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-19)
+executed (2026-09-19) — AGENT-PROMPT rule added; docs/storage-decision.md supersession amendment; .gitattributes storage law (D1); auto-memory round #40. Growth path on record: per-path Pages repos if browser traffic demands it.
 
 ## Problem
 
