@@ -71,6 +71,18 @@
   "page_errors": 0,
   "tool": "headless chromium via the live explorer"
  },
+ "d9_consumer_null_safety": {
+  "ci": "red on every commit since the repo recreation (fixture asserted dead media-host conventions; manifest-drift job regenerated a deliberately non-tree-derivable manifest) - fixed; CI green as of 52c4814. The new tree-parity check caught the committed manifest carrying pre-IR-10 hashes for 57 minis + en buckets + lid.",
+  "cross_browser": {
+   "chromium": "PASS (prior rounds)",
+   "firefox": "PASS",
+   "webkit": "PASS"
+  },
+  "gem": "null-safe ([primary, mirror].compact.uniq) - verified earlier",
+  "js/site": "no mirror reads - clean",
+  "py": "no mirror reads (registry primary-driven) - clean",
+  "rs": "LIVE DEFECT found and fixed: Urls.mirror was a non-optional String; serde rejected the whole live registry. Fixed to Option<String> + regression test; kotoshu-rs PR #50 (100 tests pass)."
+ },
  "e2e_browser": {
   "console_errors": 0,
   "date": "2026-09-19",

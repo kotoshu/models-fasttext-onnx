@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-19, fifth issuance of the standing directive)
+executed (2026-09-19) — rs LIVE DEFECT fixed via kotoshu-rs PR #50 (mirror: Option<String>; whole-registry serde rejection until then); py/js clean; CI was red on every commit since the recreation and is green (fixtures on the D2 rules; manifest-drift became tree-parity, which caught the manifest's stale IR-era hashes — merged + release asset refreshed); cross-browser E2E PASS on WebKit and Firefox (Chromium already green). Evidence: audit-v1.8.0.json d9 section.
 
 ## Problem
 
