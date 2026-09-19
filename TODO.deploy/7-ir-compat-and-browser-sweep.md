@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-19, third issuance of the standing directive)
+executed (2026-09-19) — IR census: minis 57x IR10, lid migrated 11->10, en buckets RESTORED (a regression: the pack rebuild had deleted the tracked file and the deletion rode along in the IR commit - the mirror 404d until now) and migrated, typo already IR 8; every ONNX emitter pins ir_version=10; the 57-language headless browser sweep PASSed 57/57 with zero page errors; URL sweep green 465/465; README.adoc rewritten to the raw-host model; the IR floor is an AGENT-PROMPT rule. Server-set (full/fluency/buckets release assets) stays IR 11 - release-only consumers run onnxruntime >= 1.23; recorded as a follow-up, not a live defect.
 
 ## Problem
 

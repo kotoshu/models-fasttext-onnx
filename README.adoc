@@ -312,18 +312,22 @@ recorded in link:docs/storage-decision.md[docs/storage-decision.md].
 
 === Browser and wasm (CORS)
 
-Every registry entry also carries `urls.mirror`, the media-host URL of the
-same bytes:
+Browser-served entries (the mini tiers with their vocabularies, the
+language packs, the LID and typo models, and the demo languages' bucket
+tables) carry `urls.mirror`, a `raw.githubusercontent.com` URL of the same
+plain-git bytes:
 
 ....
-https://media.githubusercontent.com/media/kotoshu/models-fasttext-onnx/main/models/{lang}/fasttext.{lang}[.{tier}].onnx
+https://raw.githubusercontent.com/kotoshu/models-fasttext-onnx/main/models/{lang}/fasttext.{lang}.mini.onnx
 ....
 
-GitHub release assets send no `Access-Control-Allow-Origin` header, but the
-media host (the LFS content host, where every tier binary and tier vocab
-lives since plan 92) sends `Access-Control-Allow-Origin: *` — as does
-`raw.githubusercontent.com` for the plain-git `registry.json`. A browser can
-therefore fetch the whole stack with no proxy:
+Release assets send no `Access-Control-Allow-Origin` header; the raw host
+sends `Access-Control-Allow-Origin: *` (verified). Everything a browser
+does not need — full/fluency/bucket binaries and the KTM1 matrices — is
+release-only with `urls.mirror: null`, because its consumers (editors,
+LSP, servers, CI) fetch from non-CORS contexts. There is no Git LFS
+anywhere in this repository (TODO.deploy/1). A browser can therefore
+fetch the whole stack with no proxy:
 
 [source,javascript]
 ----
@@ -376,8 +380,8 @@ drifted artifacts). `scripts/build_packs.py` builds them:
 python3 scripts/build_packs.py --lang en de pt --dict-repo /path/to/dictionaries
 ----
 
-Packs land in `packs/{lang}-{version}.bin` (LFS-committed, so the media host
-serves them CORS-fetchable like the tiers) plus the `packs/packs.json`
+Packs land in `packs/{lang}-{version}.bin` (plain git, served
+CORS-fetchable from the raw host) plus the `packs/packs.json`
 descriptor that `scripts/build_registry.py` merges into `registry.json`.
 Status: the pack entries ride the v1.5.0 registry on the branch WITHOUT a
 release or a registry data-revision bump - the owner cuts the pack release
@@ -401,17 +405,16 @@ cache = Kotoshu::Cache::ModelCache.new
 onnx_path = cache.get_onnx_model('de')
 ----
 
-=== Manual Download with Git LFS
+=== Manual Download
+
+No Git LFS is involved anywhere. Server-side binaries come from the
+releases; the browser set is plain git:
 
 [source,bash]
 ----
-# Clone repository with Git LFS
 git clone https://github.com/kotoshu/models-fasttext-onnx.git
-cd models-fasttext-onnx
-git lfs pull
-
-# Download specific model
-wget https://github.com/kotoshu/models-fasttext-onnx/raw/main/models/en/fasttext.en.onnx
+# browser set is right there in the tree; server tiers:
+wget https://github.com/kotoshu/models-fasttext-onnx/releases/download/v1.8.0/fasttext.en.onnx
 ----
 
 == Building from Source

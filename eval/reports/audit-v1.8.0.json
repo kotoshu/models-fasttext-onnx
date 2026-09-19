@@ -63,6 +63,14 @@
    "verdict": "PASS"
   }
  },
+ "browser_sweep_57": {
+  "date": "2026-09-19",
+  "n_fail": 0,
+  "n_pass": 57,
+  "note": "every language: registry mirror fetch + vocab + ort-web wasm neighbours query",
+  "page_errors": 0,
+  "tool": "headless chromium via the live explorer"
+ },
  "e2e_browser": {
   "console_errors": 0,
   "date": "2026-09-19",
@@ -101,6 +109,14 @@
   },
   "tool": "headless chromium 131 (playwright) against the live page",
   "verdict": "PASS"
+ },
+ "ir_floor": {
+  "en_buckets": 1,
+  "lid": 1,
+  "minis": 57,
+  "policy": "ir_version 10 for every emitted onnx",
+  "server_set": "release-only artifacts remain IR 11 - load in onnxruntime >= 1.23 (release-only consumers); full-set migration is a recorded follow-up, not a live defect",
+  "typo": "IR 8 (untouched)"
  },
  "n_fail": 0,
  "n_pass": 57,
