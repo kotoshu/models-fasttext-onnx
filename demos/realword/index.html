@@ -65,9 +65,15 @@
     <code>raw.githubusercontent.com</code>. No server, no bundler.</p>
     <p>Conservative by design: a word is flagged only when a confusion
     candidate beats it on <em>both</em> semantic-context similarity and
-    collocational evidence. The calibrated, budget-frozen scorer ships with
-    the Phase-1 gate; this page is the serving proof, not the production
-    detector.</p>
+    collocational evidence — it catches the high-confidence slab
+    (strong collocations like <em>whole book</em>) and deliberately
+    misses the rest. The frozen evidence is blunt about why: the
+    n-gram context gate ran on English and failed distributionally
+    (clean and error margins are the same distribution; see
+    docs/realword-detection-design.md). Production-grade real-word
+    detection awaits the neural context scorer — the arc's one
+    owner-gated rung. This page is the serving proof, not the
+    production detector.</p>
   </section>
 </main>
 <script src="app.js"></script>
