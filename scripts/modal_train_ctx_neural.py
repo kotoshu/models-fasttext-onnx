@@ -144,6 +144,10 @@ def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
                   f"({(time.time() - t0) / 60:.1f} min, {n_params / 1e6:.1f}M params)",
                   flush=True)
 
+    # checkpoint first: an export bug must never cost the training run
+    torch.save({"sd": model.state_dict(), "vocab_size": V}, f"/corpus/{lang}.ctx-neural.pt")
+    volume.commit()
+
     # ---- export: ONNX opset 17, IR 10 --------------------------------
     model.eval()
     model.to("cpu")  # export and parity run on CPU tensors
@@ -155,15 +159,15 @@ def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
     example_x = torch.full((1, CTX_LEN), PAD, dtype=torch.long)
     example_p = torch.cat([torch.arange(WINDOW),
                            torch.arange(WINDOW + 1, CTX_LEN + 1)]).unsqueeze(0)
-    # int8 dynamic quantization: the 100k x 256 tied embedding is the
-    # mass (fp32 = 100+ MiB, over the git limit); int8 lands ~28 MB and
-    # runs on every runtime including wasm.
-    qmodel = torch.ao.quantization.quantize_dynamic(
-        model, {nn.Embedding, nn.Linear}, dtype=torch.qint8)
+    # fp16 export: fp32 is 109 MB (over the 100 MiB git limit), and
+    # dynamic int8 on nn.Embedding asserts without a special qconfig;
+    # fp16 halves to ~55 MB and runs everywhere including wasm.
+    model.half()
+    example_x = example_x.to(torch.int64)
     out_path = f"/corpus/{lang}.ctx-neural.onnx"
     with torch.no_grad():
         torch.onnx.export(
-            qmodel, (example_x, example_p), out_path,
+            model, (example_x, example_p), out_path,
             input_names=["context_ids", "pos_ids"], output_names=["logits"],
             dynamic_axes={"context_ids": {0: "batch"},
                           "pos_ids": {0: "batch"}, "logits": {0: "batch"}},
@@ -173,11 +177,10 @@ def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
     onnx.save(m, out_path)
 
     with torch.no_grad():
-        ref = qmodel(example_x, example_p).numpy()
+        ref = model(example_x, example_p).numpy()
     got = ort.InferenceSession(out_path, providers=["CPUExecutionProvider"]).run(
         None, {"context_ids": example_x.numpy(), "pos_ids": example_p.numpy()})[0]
-    parity_err = float(np.abs(ref - got).max())  # fp32-vs-int8 differs; the
-    # torch-vs-onnx parity uses the SAME quantized module on both sides
+    parity_err = float(np.abs(ref.astype(np.float32) - got.astype(np.float32)).max())
 
     volume.commit()
     return {"params_m": round(n_params / 1e6, 1),

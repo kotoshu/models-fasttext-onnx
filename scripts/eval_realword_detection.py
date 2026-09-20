@@ -59,10 +59,15 @@ MIN_CONTEXT_SUPPORT = 100  # min unigram count for a context word's MLE to be tr
 
 
 def load_tier(lang: str) -> tuple[dict[str, int], np.ndarray, np.ndarray]:
-    """Vocab, raw tier vectors, L2-normalized tier vectors."""
-    model = onnx.load(REPO_ROOT / f"models/{lang}/fasttext.{lang}.onnx")
-    raw = numpy_helper.to_array(model.graph.node[0].attribute[0].t).astype(np.float32)
+    """Vocab, raw tier vectors, L2-normalized tier vectors. The full-tier
+    onnx is release-only since TODO.deploy/1 - embeddings load only for
+    the cosine scorer; the other scorers never touch them."""
     vocab = json.loads((REPO_ROOT / f"models/{lang}/fasttext.{lang}.vocab.json").read_text())["word_to_idx"]
+    onnx_path = REPO_ROOT / f"models/{lang}/fasttext.{lang}.onnx"
+    if not onnx_path.exists():
+        return vocab, np.zeros((0, 0), np.float32), np.zeros((0, 0), np.float32)
+    model = onnx.load(onnx_path)
+    raw = numpy_helper.to_array(model.graph.node[0].attribute[0].t).astype(np.float32)
     return vocab, raw, raw / np.linalg.norm(raw, axis=1, keepdims=True)
 
 

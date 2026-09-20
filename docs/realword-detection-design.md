@@ -188,3 +188,37 @@ decision, remaining languages.
 The FP budget is a product contract: wrong flags are the worst UX a
 checker delivers, so real-word detection ships opt-in and earns
 default-on only through the gate above.
+
+
+## Phase 1 evidence (en, neural context scorer v1 — GATE FAILED, cause diagnosed as trainable, not distributional)
+
+Plan 17 authorized (owner, 2026-09-20). A 27.3M-parameter word-level
+cloze transformer (d=256, 2 layers, tied embeddings, gap-position
+encoding over the same 100k vocabulary, +/-8 window) trained 150k steps
+on the en wiki shard (final loss 0.014; Modal A10G, 78 min; artifact
+fasttext.en.ctx-neural.onnx, 52 MB fp16, IR 10).
+
+Verdict (frozen in eval/realword/en.probe.neural.json):
+
+| Point | flag (errors) | true-top (covered) | FP (clean) |
+|---|---|---|---|
+| FP-anchored 1% | 3.7% | 0.1% | 1.0% |
+| FP-anchored 5% | 12.2% | 0.8% | 5.0% |
+
+GATE FAILED — but the failure mode differs fundamentally from the
+n-gram verdict. The margins live on a 40-80 NAT scale dominated by
+padding artifacts: training used FULL 16-token windows only, so the PAD
+embedding is untrained random noise, and every short eval context
+(sentence edges — the majority of typo-corpus sentences) is
+out-of-distribution. Probes confirm both halves: real errors score
++53.8 (eat over each in "want to each rice") while CLEAN short-window
+text also scores +33.8 — the signal is present and strong; the padding
+noise swamps it at the operating points. Unlike the n-gram's identical
+clean/error distributions, this is a CONCRETE, fixable defect:
+
+  v2 = pad-aware training (emit padded windows at sentence edges so the
+  PAD embedding is trained, or add an attention mask input), same gate.
+
+The ladder stands unweakened; plans 146/07 remain blocked pending v2.
+Reproduce: scripts/modal_train_ctx_neural.py (see --steps),
+scripts/eval_realword_detection.py --lang en --scorer neural.
