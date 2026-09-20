@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-20)
+executed (2026-09-20) — the daily watch now digest-verifies every registry-pinned v1.8.0 release asset; first dispatch green (465/465 URLs + tree parity + full digests).
 
 ## Problem
 
