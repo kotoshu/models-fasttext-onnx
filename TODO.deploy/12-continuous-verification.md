@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-20, seventh issuance of the standing directive)
+executed (2026-09-20) — workflow .github/workflows/daily-verify.yml live (cron 06:23 UTC + manual dispatch); first dispatch GREEN: manifest tree-parity OK (176 match, 220 exempt), URL sweep 465/465 reachable, release digest spot check matches the registry. TODO.deploy closes with this plan.
 
 ## Problem
 
