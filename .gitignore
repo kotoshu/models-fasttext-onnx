@@ -172,7 +172,16 @@ eval/cbench/
 eval/realword/*.json
 !eval/realword/*.probe.*.json
 eval/realword/*.clean.jsonl
-eval/confusion/
+# Confusion tables are small frozen evidence (plan 15 Phase-0) and are
+# committed; giants that would dwarf them (ja/ko until the
+# segmentation-aware derivation exists) stay local by not being listed.
+eval/confusion/*
+!eval/confusion/en.json
+!eval/confusion/de.json
+!eval/confusion/es.json
+!eval/confusion/fr.json
+!eval/confusion/pt.json
+!eval/confusion/ru.json
 eval/cache/
 
 # Plan 16 ctx-LM training: the parquet corpus lives locally; frozen

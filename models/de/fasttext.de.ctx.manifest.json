@@ -1,0 +1,13 @@
+{
+ "language": "de",
+ "source": "wikimedia/wikipedia 20231101.de shard 0",
+ "license": "CC-BY-SA-4.0",
+ "corpus_path": "eval/corpus/train-00000-of-00020.parquet",
+ "generated_at": "2026-09-20T04:37:29Z",
+ "vocab_size": 100000,
+ "tokens": 102341093,
+ "bigram_types": 6948854,
+ "backoff_alpha": 0.4,
+ "quantization": "fp32 (gate run); int8-per-row ONNX repackaging on unblock",
+ "artifact_format": "npz: {unigram_counts uint32[vocab_size], bigram_keys uint32[n_types], bigram_counts uint32[n_types]}"
+}

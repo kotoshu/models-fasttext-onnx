@@ -42,11 +42,13 @@ def list_shards(lang: str, config_date: str) -> list[dict]:
     req = urllib.request.Request(url, headers={"User-Agent": "kotoshu-models/1.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         data = json.loads(resp.read())
-    return [
-        {"path": f"{config_date}.{lang}/{x['path']}", "size": x.get("size", 0)}
-        for x in data
-        if x["type"] == "file" and x["path"].startswith("train-") and x["path"].endswith(".parquet")
-    ]
+    shards = []
+    for x in data:
+        name = x["path"].rsplit("/", 1)[-1]
+        if x["type"] == "file" and name.startswith("train-") and name.endswith(".parquet"):
+            # the tree API returns repo-rooted paths already
+            shards.append({"path": x["path"], "size": x.get("size", 0)})
+    return shards
 
 
 def download(url: str, dest: Path) -> None:
