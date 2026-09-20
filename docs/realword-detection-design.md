@@ -251,3 +251,31 @@ PROPERLY SCALED cloze model (10-100x parameters or training scale) -
 a materially larger owner spend, or the conservative dual-gate demo
 remains the product ceiling. The gate stands unweakened; plans 146/07
 remain blocked.
+
+
+## Phase 1 evidence (en, neural v3 sentence-constructed — GATE FAILED; three-run series complete)
+
+v3 (TODO.perfection, third issuance) split training into sentences so
+sentence-edge PAD-heavy centers dominate exactly as in eval (~90% vs
+v2's ~2% paragraph-boundary rate). 150k steps, loss 0.0141, 98 min.
+Verdict frozen in eval/realword/en.probe.neural-v3.json (v1/v2
+preserved alongside):
+
+| Point | flag (errors) | true-top (covered) | FP (clean) |
+|---|---|---|---|
+| FP-anchored 1% | 5.8% | 1.4% | 1.0% |
+| FP-anchored 10% | 28.7% | 9.9% | 10.0% |
+
+GATE FAILED — statistically indistinguishable from v2 (1.6% at FP 1%).
+The padding hypothesis is DISPROVEN as the dominant factor: training
+the padding at the eval's own rate moved nothing. Three consecutive
+same-scale runs (v1 untrained-PAD, v2 paragraph-rate PAD, v3
+sentence-rate PAD) land in the same place, with clean/error margins
+overlapping on a 25-50 nat scale in every variant. The series
+establishes: at 27M parameters over one Wikipedia shard, this model
+class cannot separate - the failure is capacity/data-scale, not
+construction. THE LADDER TERMINATES at an owner decision: a properly
+scaled cloze model (10-100x parameters or multi-shard training) at
+materially higher spend, or the conservative dual-gate demo as the
+product ceiling. The gate stands unweakened; plans 146/07 remain
+blocked.

@@ -31,3 +31,15 @@ nats on real errors). v2 trains the padding.
 ## Consumers
 
 gem plan 146, rs plan 07, the demo's detection mode.
+
+
+## Amendment: v3 (sentence-constructed) — the series' final run
+
+The padding-rate hypothesis was tested to its conclusion: v3 trained
+sentences (the eval's own unit, ~90% PAD-heavy centers vs v2's ~2%) and
+the gate numbers did not move (true-top at FP 1%: v1 0.1%, v2 1.6%,
+v3 1.4% — noise). Three same-scale runs with three different
+constructions fail identically: the limit is capacity/data-scale, not
+construction. Evidence: en.probe.neural-v{1,2,3}.json. No further GPU
+spend on this rung without an explicit owner decision on the scaled
+model.
