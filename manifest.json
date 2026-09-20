@@ -629,7 +629,7 @@
       "fasttext_source": "cc.en.300.vec",
       "language": "en",
       "opset_version": 11,
-      "sha256": "ab2fca7a52930ad7ebb08b8c1c7bb35b15d29d260f5b1e0df4af61af8f8cb50c",
+      "sha256": "44c019e7b56ee69fd3278b6d3fe65355eda05efe898c6d56f790d159a9b2f1bf",
       "size": 54618033,
       "source": "cc.en.300.vec",
       "type": "onnx"
