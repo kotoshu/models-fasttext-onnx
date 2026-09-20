@@ -26,7 +26,7 @@ jobs:
         run: python3 scripts/check_manifest_tree_parity.py
       - name: Registry URL sweep at main (primaries + raw mirrors)
         run: python3 scripts/validate_registry.py --registry registry.json --check-urls --urls-ref main
-      - name: Release asset digest spot check (v1.8.0)
+      - name: Release digest verification (every v1.8.0 asset, TODO.perfection/2)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -34,25 +34,26 @@ jobs:
           import json, subprocess, sys, urllib.request
 
           registry = json.load(open("registry.json"))
-          expected = {
-              "kotoshu://models/en/mini": "fasttext.en.mini.onnx",
-              "kotoshu://models/de/fluency": "fasttext.de.fluency.onnx",
-              "kotoshu://models/en/typo-matrix": "typo.matrix.en.ktm1",
-          }
           out = subprocess.run(
               ["gh", "api", "repos/kotoshu/models-fasttext-onnx/releases/tags/v1.8.0"],
               capture_output=True, text=True, check=True).stdout
           assets = {a["name"]: (a.get("digest") or "").removeprefix("sha256:")
                     for a in json.loads(out)["assets"]}
           failures = []
-          for rid, asset in expected.items():
-              want = registry["resources"][rid]["sha256"]
+          checked = 0
+          for rid, resource in registry["resources"].items():
+              onnx = resource["urls"]["primary"]
+              if not onnx:
+                  continue
+              asset = onnx.rsplit("/", 1)[-1]
+              want = resource["sha256"]
               got = assets.get(asset)
+              checked += 1
               if got != want:
-                  failures.append(f"{asset}: release digest {got} != registry {want}")
+                  failures.append(f"{rid}: {asset} digest {got} != registry {want}")
           if failures:
               for f in failures:
                   print(f"[FAIL] {f}")
               sys.exit(1)
-          print(f"digest spot check OK: {len(expected)} assets match the registry")
+          print(f"full digest verification OK: {checked} registry-pinned assets match")
           EOF
