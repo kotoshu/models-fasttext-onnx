@@ -222,3 +222,32 @@ clean/error distributions, this is a CONCRETE, fixable defect:
 The ladder stands unweakened; plans 146/07 remain blocked pending v2.
 Reproduce: scripts/modal_train_ctx_neural.py (see --steps),
 scripts/eval_realword_detection.py --lang en --scorer neural.
+
+
+## Phase 1 evidence (en, neural v2 pad-aware — GATE FAILED; the tiny-cloze rung is exhausted at this scale)
+
+v2 (TODO.perfection/1) trained the padding exactly as diagnosed: every
+in-vocab center, eval-identical padded windows, same architecture/data/
+steps (150k, loss 0.0143, 99 min). Verdict frozen in
+eval/realword/en.probe.neural.json (v1 preserved as
+en.probe.neural-v1.json):
+
+| Point | flag (errors) | true-top (covered) | FP (clean) |
+|---|---|---|---|
+| FP-anchored 1% | 6.5% | 1.6% | 1.0% |
+| FP-anchored 10% | 28.5% | 9.6% | 10.0% |
+
+GATE FAILED — improved over v1 (true-top 0.1% -> 1.6% at FP 1%) but
+nowhere near the 60% bar, and the margin scale remains 25-48 nats with
+clean/error overlap. Two consecutive tiny-cloze failures with frozen
+protocol establish: at 27M params / one wiki shard / 150k steps this
+model class does not separate. The canonical probe even flipped
+checkpoints (eat +53.8 in v1, eat -6.5 in v2) - high variance across
+runs at this scale.
+
+Ladder status: cosine, frequency, bigram (4 variants), tiny-cloze v1
+and v2 have all failed the same frozen gate. The next rung is a
+PROPERLY SCALED cloze model (10-100x parameters or training scale) -
+a materially larger owner spend, or the conservative dual-gate demo
+remains the product ceiling. The gate stands unweakened; plans 146/07
+remain blocked.

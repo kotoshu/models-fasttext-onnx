@@ -95,11 +95,16 @@ def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
                            if t in vocab]
                     if len(ids) < 5:
                         continue
-                    for i in range(WINDOW, len(ids) - WINDOW):
+                    # v2 (P1): EVERY in-vocab center, padded to the
+                    # window - the eval scorer's exact construction, so
+                    # the PAD embedding trains and short contexts stay
+                    # in distribution (v1's untrained PAD dominated).
+                    for i in range(len(ids)):
                         if ids[i] == 0:
                             continue
-                        ctx = ids[i - WINDOW:i] + ids[i + 1:i + 1 + WINDOW]
-                        buf.append((ctx, ids[i]))
+                        left = ids[max(0, i - WINDOW):i]
+                        right = ids[i + 1:i + 1 + WINDOW]
+                        buf.append((left, right, ids[i]))
                         if len(buf) >= need:
                             return
 
@@ -123,8 +128,9 @@ def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
         xs = torch.full((256, CTX_LEN), PAD, dtype=torch.long, device=device)
         ys = torch.zeros(256, dtype=torch.long, device=device)
         for b in range(256):
-            ctx, target = buf.pop()
-            xs[b, :len(ctx)] = torch.tensor(ctx[:CTX_LEN], device=device)
+            left, right, target = buf.pop()
+            xs[b, :len(left)] = torch.tensor(left, device=device)
+            xs[b, WINDOW:WINDOW + len(right)] = torch.tensor(right, device=device)
             ys[b] = target
         # gap-aware positions: left 0..W-1, right W+1..2W (truncated ctx
         # is left-aligned here; eval pads the same way, so the
