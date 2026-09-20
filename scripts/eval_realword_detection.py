@@ -105,6 +105,42 @@ class FreqScorer:
 
 SCORERS = {"cosine": CosineScorer, "skipgram": SkipgramScorer, "freq": FreqScorer}
 
+NEURAL_WINDOW = 8  # matches scripts/modal_train_ctx_neural.py
+
+
+class _NeuralScorer:
+    """The plan-17 cloze transformer: S(c, ctx) = log P(c | +/-8 window,
+    gap-position encoding). Ordered context is required, so the harness
+    passes the sentence and target index through `margins_ctx`."""
+
+    def __init__(self, onnx_path, vocab):
+        import onnxruntime as ort
+        self.sess = ort.InferenceSession(str(onnx_path), providers=["CPUExecutionProvider"])
+        self.vocab = vocab
+        self.pad = max(vocab.values()) + 1
+        ctx_len = 2 * NEURAL_WINDOW
+        self.pos = np.concatenate([np.arange(NEURAL_WINDOW),
+                                   np.arange(NEURAL_WINDOW + 1, ctx_len + 1)])
+        self.ctx_len = ctx_len
+
+    def _window(self, sentence: str, idx: int, exclude: str):
+        toks = [_clean_token(t) for t in sentence.split()]
+        left = [self.vocab[t] for t in toks[max(0, idx - NEURAL_WINDOW):idx]
+                if t in self.vocab and t != exclude][-NEURAL_WINDOW:]
+        right = [self.vocab[t] for t in toks[idx + 1:idx + 1 + NEURAL_WINDOW]
+                 if t in self.vocab and t != exclude][:NEURAL_WINDOW]
+        ids = np.full(self.ctx_len, self.pad, dtype=np.int64)
+        ids[:len(left)] = left
+        ids[NEURAL_WINDOW:NEURAL_WINDOW + len(right)] = right
+        return ids
+
+    def margins_ctx(self, word_idx, cand_idxs, sentence, idx, exclude):
+        ids = self._window(sentence, idx, exclude)
+        logits = self.sess.run(None, {"context_ids": ids[None, :],
+                                      "pos_ids": self.pos[None, :]})[0][0]
+        logp = logits - np.logaddexp.reduce(logits)
+        return np.array([logp[c] for c in cand_idxs]) - logp[word_idx]
+
 class _CtxLMScorer:
     """Loads the trainer's .npz and exposes margins(observed, cands, ctx)."""
     def __init__(self, npz_path, vocab_size, alpha=0.4):
@@ -173,7 +209,7 @@ def context_ids(sentence: str, idx: int, vocab: dict[str, int], exclude: str) ->
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--lang", required=True)
-    parser.add_argument("--scorer", choices=sorted(SCORERS), default="cosine")
+    parser.add_argument("--scorer", choices=sorted(SCORERS) + ["ctxlm", "neural"], default="cosine")
     parser.add_argument("--clean-sample", type=int, default=4000)
     args = parser.parse_args()
 
@@ -185,6 +221,8 @@ def main() -> int:
         from ctxlm_scorer import load_ctx
         scorer = _CtxLMScorer(REPO_ROOT / f"models/{args.lang}/fasttext.{args.lang}.ctx.npz",
                               vocab_size=max(vocab.values()) + 1, alpha=0.4)
+    elif args.scorer == "neural":
+        scorer = _NeuralScorer(REPO_ROOT / f"models/{args.lang}/fasttext.{args.lang}.ctx-neural.onnx", vocab)
     else:
         scorer = SCORERS[args.scorer](None, normalized)
 
@@ -213,7 +251,11 @@ def main() -> int:
                 covered += 1
             if not candidates:
                 continue
-            marg = scorer.margins(vocab[typo], [vocab[c] for c in candidates], ctx)
+            if hasattr(scorer, "margins_ctx"):
+                marg = scorer.margins_ctx(vocab[typo], [vocab[c] for c in candidates],
+                                          ctx_info["sentence"], ctx_info["idx"], typo)
+            else:
+                marg = scorer.margins(vocab[typo], [vocab[c] for c in candidates], ctx)
             margins_all.append(float(marg.max()))
             if true_pos is not None:
                 margins_true.append(float(marg[true_pos]))
@@ -234,7 +276,11 @@ def main() -> int:
                    else context_ids(sentence, idx, vocab, tok))
             if not candidates or not ctx:
                 continue
-            marg = scorer.margins(vocab[tok], [vocab[c] for c in candidates], ctx)
+            if hasattr(scorer, "margins_ctx"):
+                marg = scorer.margins_ctx(vocab[tok], [vocab[c] for c in candidates],
+                                          sentence, idx, tok)
+            else:
+                marg = scorer.margins(vocab[tok], [vocab[c] for c in candidates], ctx)
             fp_margins.append(float(marg.max()))
 
     ma, mt, mf = (np.array(x) if x else np.zeros(0) for x in (margins_all, margins_true, fp_margins))
