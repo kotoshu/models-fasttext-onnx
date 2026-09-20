@@ -624,6 +624,16 @@
       "source": "cc.en.300.vec",
       "type": "onnx"
     },
+    "models/en/fasttext.en.ctx-neural.onnx": {
+      "conversion_method": "fasttext_to_onnx.py",
+      "fasttext_source": "cc.en.300.vec",
+      "language": "en",
+      "opset_version": 11,
+      "sha256": "ab2fca7a52930ad7ebb08b8c1c7bb35b15d29d260f5b1e0df4af61af8f8cb50c",
+      "size": 54618033,
+      "source": "cc.en.300.vec",
+      "type": "onnx"
+    },
     "models/en/fasttext.en.fluency.onnx": {
       "conversion_method": "fasttext_to_onnx.py",
       "fasttext_source": "cc.en.300.vec",
