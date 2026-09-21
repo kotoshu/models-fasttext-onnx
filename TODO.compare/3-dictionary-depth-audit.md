@@ -2,7 +2,18 @@
 
 ## Status
 
-executed (2026-09-21) — the gap is EXACTLY the CJK set: 53/57 model languages have full dictionary coverage (many with regional variants); the only four with NO dictionary of any variant are ja, zh-Hans-CN, zh-Hant-HK, zh-Hant-TW — the known CJK problem (kana/kanji and Chinese spelling are not Hunspell-shaped; they need per-variant open wordlists, e.g. MOE/edu.tw-derived for zh-Hant). Reverse set: 9 dictionary-only languages with no model (fo fur hyw ie ltg nds rw tlh tlh-Latn — Klingon included; small/regional, candidates for the mini-tier fleet later). Evidence: eval/reports/dictionary-coverage.json. FOLLOW-UP: the zh dictionary acquisition arc (wordlist sourcing + conversion) is the single highest-impact dictionary task.
+acquisition executed (2026-09-21) — the CJK gap is CLOSED for
+suggestions. frequency-list-kelly#3 (merged) ships variant-pure CJK
+frequency lists: zh-Hans-CN 90,389 (CC-CEDICT-validated), zh-Hant
+55,144 (script-generic), zh-Hant-TW 61,239 (moedict/Taiwan-MOE
+validated), ja 84,770 (wordfreq). dictionaries PR kotoshu/dictionaries#4
+ships the matching spelling wordlists. The gem (PR #226) indexes them —
+SymSpell suggests for CJK with zero new code ("我扪"→"我们", "日今語"→
+"日本語" verified live). zh-Hant-HK remains an explicit gap (no HK
+frequency source; documented, not faked). Remaining follow-up: plain-
+text spelling resolution in the gem (CJK wordlists are words.txt, not
+Hunspell aff+dic — ResourceManager resolves Hunspell only today), and
+the C8 fleet evals for CJK once detection is wired.
 
 ## Problem
 
