@@ -1,0 +1,603 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "fr",
+ "klass": "nonword",
+ "n": 119,
+ "pairs": [
+  {
+   "typo": "renvoit",
+   "correction": "renvoie",
+   "weight": 8
+  },
+  {
+   "typo": "poru",
+   "correction": "pour",
+   "weight": 3
+  },
+  {
+   "typo": "trouvrz",
+   "correction": "trouvez",
+   "weight": 2
+  },
+  {
+   "typo": "répértoire",
+   "correction": "répertoire",
+   "weight": 2
+  },
+  {
+   "typo": "evoyez",
+   "correction": "envoyez",
+   "weight": 2
+  },
+  {
+   "typo": "momen",
+   "correction": "moment",
+   "weight": 2
+  },
+  {
+   "typo": "branch",
+   "correction": "branche",
+   "weight": 2
+  },
+  {
+   "typo": "founit",
+   "correction": "fournit",
+   "weight": 2
+  },
+  {
+   "typo": "cont",
+   "correction": "sont",
+   "weight": 2
+  },
+  {
+   "typo": "spécifit",
+   "correction": "spécifie",
+   "weight": 2
+  },
+  {
+   "typo": "substituion",
+   "correction": "substitution",
+   "weight": 2
+  },
+  {
+   "typo": "dialgoue",
+   "correction": "dialogue",
+   "weight": 2
+  },
+  {
+   "typo": "intéractions",
+   "correction": "interactions",
+   "weight": 2
+  },
+  {
+   "typo": "queus",
+   "correction": "queues",
+   "weight": 2
+  },
+  {
+   "typo": "reinitialiser",
+   "correction": "réinitialiser",
+   "weight": 2
+  },
+  {
+   "typo": "panthères",
+   "correction": "panthère",
+   "weight": 2
+  },
+  {
+   "typo": "completly",
+   "correction": "completely",
+   "weight": 1
+  },
+  {
+   "typo": "necessité",
+   "correction": "nécessité",
+   "weight": 1
+  },
+  {
+   "typo": "definis",
+   "correction": "définis",
+   "weight": 1
+  },
+  {
+   "typo": "prpopos",
+   "correction": "propos",
+   "weight": 1
+  },
+  {
+   "typo": "dêpot",
+   "correction": "dépôt",
+   "weight": 1
+  },
+  {
+   "typo": "génére",
+   "correction": "génère",
+   "weight": 1
+  },
+  {
+   "typo": "froi",
+   "correction": "froid",
+   "weight": 1
+  },
+  {
+   "typo": "dera",
+   "correction": "sera",
+   "weight": 1
+  },
+  {
+   "typo": "offertent",
+   "correction": "offertes",
+   "weight": 1
+  },
+  {
+   "typo": "cecie",
+   "correction": "ceci",
+   "weight": 1
+  },
+  {
+   "typo": "advancé",
+   "correction": "avancé",
+   "weight": 1
+  },
+  {
+   "typo": "utilsiés",
+   "correction": "utilisés",
+   "weight": 1
+  },
+  {
+   "typo": "validationc",
+   "correction": "validation",
+   "weight": 1
+  },
+  {
+   "typo": "traçé",
+   "correction": "tracé",
+   "weight": 1
+  },
+  {
+   "typo": "déclage",
+   "correction": "décalage",
+   "weight": 1
+  },
+  {
+   "typo": "opérrations",
+   "correction": "opérations",
+   "weight": 1
+  },
+  {
+   "typo": "animmations",
+   "correction": "animations",
+   "weight": 1
+  },
+  {
+   "typo": "identifant",
+   "correction": "identifiant",
+   "weight": 1
+  },
+  {
+   "typo": "imporant",
+   "correction": "important",
+   "weight": 1
+  },
+  {
+   "typo": "adress",
+   "correction": "adresse",
+   "weight": 1
+  },
+  {
+   "typo": "temaplates",
+   "correction": "templates",
+   "weight": 1
+  },
+  {
+   "typo": "ètes",
+   "correction": "êtes",
+   "weight": 1
+  },
+  {
+   "typo": "adapatés",
+   "correction": "adaptés",
+   "weight": 1
+  },
+  {
+   "typo": "entrepot",
+   "correction": "entrepôt",
+   "weight": 1
+  },
+  {
+   "typo": "nomber",
+   "correction": "nombre",
+   "weight": 1
+  },
+  {
+   "typo": "régluière",
+   "correction": "régulière",
+   "weight": 1
+  },
+  {
+   "typo": "clutser",
+   "correction": "cluster",
+   "weight": 1
+  },
+  {
+   "typo": "dévérouiller",
+   "correction": "déverrouiller",
+   "weight": 1
+  },
+  {
+   "typo": "enoyer",
+   "correction": "envoyer",
+   "weight": 1
+  },
+  {
+   "typo": "minude",
+   "correction": "minute",
+   "weight": 1
+  },
+  {
+   "typo": "conceptes",
+   "correction": "concepts",
+   "weight": 1
+  },
+  {
+   "typo": "fournissur",
+   "correction": "fournisseur",
+   "weight": 1
+  },
+  {
+   "typo": "oou",
+   "correction": "ou",
+   "weight": 1
+  },
+  {
+   "typo": "téélcharger",
+   "correction": "télécharger",
+   "weight": 1
+  },
+  {
+   "typo": "fichir",
+   "correction": "fichier",
+   "weight": 1
+  },
+  {
+   "typo": "premièe",
+   "correction": "première",
+   "weight": 1
+  },
+  {
+   "typo": "retrannscription",
+   "correction": "retranscription",
+   "weight": 1
+  },
+  {
+   "typo": "transciption",
+   "correction": "transcription",
+   "weight": 1
+  },
+  {
+   "typo": "selectionne",
+   "correction": "sélectionne",
+   "weight": 1
+  },
+  {
+   "typo": "simplementer",
+   "correction": "simplement",
+   "weight": 1
+  },
+  {
+   "typo": "xur",
+   "correction": "sur",
+   "weight": 1
+  },
+  {
+   "typo": "occurences",
+   "correction": "occurrences",
+   "weight": 1
+  },
+  {
+   "typo": "événéments",
+   "correction": "événements",
+   "weight": 1
+  },
+  {
+   "typo": "mâture",
+   "correction": "mature",
+   "weight": 1
+  },
+  {
+   "typo": "apis",
+   "correction": "api",
+   "weight": 1
+  },
+  {
+   "typo": "finals",
+   "correction": "finaux",
+   "weight": 1
+  },
+  {
+   "typo": "prennons",
+   "correction": "prenons",
+   "weight": 1
+  },
+  {
+   "typo": "brance",
+   "correction": "branche",
+   "weight": 1
+  },
+  {
+   "typo": "commen",
+   "correction": "comme",
+   "weight": 1
+  },
+  {
+   "typo": "avaiable",
+   "correction": "available",
+   "weight": 1
+  },
+  {
+   "typo": "vérouillé",
+   "correction": "verrouillé",
+   "weight": 1
+  },
+  {
+   "typo": "ajotué",
+   "correction": "ajouté",
+   "weight": 1
+  },
+  {
+   "typo": "capabilité",
+   "correction": "capacité",
+   "weight": 1
+  },
+  {
+   "typo": "trovuer",
+   "correction": "trouver",
+   "weight": 1
+  },
+  {
+   "typo": "dispotion",
+   "correction": "disposition",
+   "weight": 1
+  },
+  {
+   "typo": "wrappant",
+   "correction": "englobant",
+   "weight": 1
+  },
+  {
+   "typo": "asyncrhone",
+   "correction": "asynchrone",
+   "weight": 1
+  },
+  {
+   "typo": "constuire",
+   "correction": "construire",
+   "weight": 1
+  },
+  {
+   "typo": "mèle",
+   "correction": "mêle",
+   "weight": 1
+  },
+  {
+   "typo": "regressions",
+   "correction": "régressions",
+   "weight": 1
+  },
+  {
+   "typo": "balot",
+   "correction": "ballot",
+   "weight": 1
+  },
+  {
+   "typo": "exempls",
+   "correction": "exemples",
+   "weight": 1
+  },
+  {
+   "typo": "propriétées",
+   "correction": "propriétés",
+   "weight": 1
+  },
+  {
+   "typo": "prouvez",
+   "correction": "prouver",
+   "weight": 1
+  },
+  {
+   "typo": "valeus",
+   "correction": "valeurs",
+   "weight": 1
+  },
+  {
+   "typo": "proposont",
+   "correction": "proposons",
+   "weight": 1
+  },
+  {
+   "typo": "récement",
+   "correction": "récemment",
+   "weight": 1
+  },
+  {
+   "typo": "précentes",
+   "correction": "précédentes",
+   "weight": 1
+  },
+  {
+   "typo": "étudirons",
+   "correction": "étudierons",
+   "weight": 1
+  },
+  {
+   "typo": "verticalament",
+   "correction": "verticalement",
+   "weight": 1
+  },
+  {
+   "typo": "pévoit",
+   "correction": "prévoit",
+   "weight": 1
+  },
+  {
+   "typo": "compléxité",
+   "correction": "complexité",
+   "weight": 1
+  },
+  {
+   "typo": "possent",
+   "correction": "possèdent",
+   "weight": 1
+  },
+  {
+   "typo": "déveloper",
+   "correction": "développeur",
+   "weight": 1
+  },
+  {
+   "typo": "passioné",
+   "correction": "passionné",
+   "weight": 1
+  },
+  {
+   "typo": "fôret",
+   "correction": "forêt",
+   "weight": 1
+  },
+  {
+   "typo": "applicatoins",
+   "correction": "applications",
+   "weight": 1
+  },
+  {
+   "typo": "smilaire",
+   "correction": "similaire",
+   "weight": 1
+  },
+  {
+   "typo": "mnanière",
+   "correction": "manière",
+   "weight": 1
+  },
+  {
+   "typo": "partiton",
+   "correction": "partition",
+   "weight": 1
+  },
+  {
+   "typo": "charactère",
+   "correction": "caractère",
+   "weight": 1
+  },
+  {
+   "typo": "éditable",
+   "correction": "modifiable",
+   "weight": 1
+  },
+  {
+   "typo": "segmentations",
+   "correction": "segmentation",
+   "weight": 1
+  },
+  {
+   "typo": "instuctions",
+   "correction": "instructions",
+   "weight": 1
+  },
+  {
+   "typo": "éxiste",
+   "correction": "existe",
+   "weight": 1
+  },
+  {
+   "typo": "patientier",
+   "correction": "patienter",
+   "weight": 1
+  },
+  {
+   "typo": "optimsé",
+   "correction": "optimisé",
+   "weight": 1
+  },
+  {
+   "typo": "utilision",
+   "correction": "utilisions",
+   "weight": 1
+  },
+  {
+   "typo": "peuveunt",
+   "correction": "peuvent",
+   "weight": 1
+  },
+  {
+   "typo": "souciés",
+   "correction": "soucier",
+   "weight": 1
+  },
+  {
+   "typo": "inverssement",
+   "correction": "inversement",
+   "weight": 1
+  },
+  {
+   "typo": "pilotant",
+   "correction": "pilote",
+   "weight": 1
+  },
+  {
+   "typo": "maintennat",
+   "correction": "maintenant",
+   "weight": 1
+  },
+  {
+   "typo": "debez",
+   "correction": "devez",
+   "weight": 1
+  },
+  {
+   "typo": "confirurer",
+   "correction": "configurer",
+   "weight": 1
+  },
+  {
+   "typo": "packets",
+   "correction": "paquets",
+   "weight": 1
+  },
+  {
+   "typo": "excécuter",
+   "correction": "exécuter",
+   "weight": 1
+  },
+  {
+   "typo": "caracteres",
+   "correction": "caractères",
+   "weight": 1
+  },
+  {
+   "typo": "variabel",
+   "correction": "variable",
+   "weight": 1
+  },
+  {
+   "typo": "nomém",
+   "correction": "nommé",
+   "weight": 1
+  },
+  {
+   "typo": "entourrée",
+   "correction": "entourée",
+   "weight": 1
+  },
+  {
+   "typo": "longuer",
+   "correction": "longueur",
+   "weight": 1
+  },
+  {
+   "typo": "dirigié",
+   "correction": "dirigé",
+   "weight": 1
+  }
+ ]
+}

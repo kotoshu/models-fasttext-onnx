@@ -1,0 +1,363 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "es",
+ "klass": "nonword",
+ "n": 71,
+ "pairs": [
+  {
+   "typo": "objecto",
+   "correction": "objeto",
+   "weight": 3
+  },
+  {
+   "typo": "packetes",
+   "correction": "paquetes",
+   "weight": 2
+  },
+  {
+   "typo": "númericos",
+   "correction": "numéricos",
+   "weight": 2
+  },
+  {
+   "typo": "achivos",
+   "correction": "archivos",
+   "weight": 2
+  },
+  {
+   "typo": "solamnte",
+   "correction": "solamente",
+   "weight": 2
+  },
+  {
+   "typo": "direccione",
+   "correction": "direcciones",
+   "weight": 2
+  },
+  {
+   "typo": "gennerar",
+   "correction": "generar",
+   "weight": 2
+  },
+  {
+   "typo": "métoido",
+   "correction": "método",
+   "weight": 2
+  },
+  {
+   "typo": "supermerado",
+   "correction": "supermercado",
+   "weight": 2
+  },
+  {
+   "typo": "contribuiciones",
+   "correction": "contribuciones",
+   "weight": 1
+  },
+  {
+   "typo": "únique",
+   "correction": "único",
+   "weight": 1
+  },
+  {
+   "typo": "canbio",
+   "correction": "cambio",
+   "weight": 1
+  },
+  {
+   "typo": "constrcutor",
+   "correction": "constructor",
+   "weight": 1
+  },
+  {
+   "typo": "páginapágina",
+   "correction": "página",
+   "weight": 1
+  },
+  {
+   "typo": "esiones",
+   "correction": "sesiones",
+   "weight": 1
+  },
+  {
+   "typo": "aarriba",
+   "correction": "arriba",
+   "weight": 1
+  },
+  {
+   "typo": "abró",
+   "correction": "abrió",
+   "weight": 1
+  },
+  {
+   "typo": "conteienne",
+   "correction": "contiene",
+   "weight": 1
+  },
+  {
+   "typo": "alamacenamiento",
+   "correction": "almacenamiento",
+   "weight": 1
+  },
+  {
+   "typo": "brower",
+   "correction": "browser",
+   "weight": 1
+  },
+  {
+   "typo": "llamdas",
+   "correction": "llamadas",
+   "weight": 1
+  },
+  {
+   "typo": "characters",
+   "correction": "caracteres",
+   "weight": 1
+  },
+  {
+   "typo": "markdown",
+   "correction": "reduccion",
+   "weight": 1
+  },
+  {
+   "typo": "carla",
+   "correction": "charla",
+   "weight": 1
+  },
+  {
+   "typo": "línnea",
+   "correction": "línea",
+   "weight": 1
+  },
+  {
+   "typo": "creaar",
+   "correction": "crear",
+   "weight": 1
+  },
+  {
+   "typo": "íncide",
+   "correction": "índice",
+   "weight": 1
+  },
+  {
+   "typo": "infomación",
+   "correction": "información",
+   "weight": 1
+  },
+  {
+   "typo": "cambiso",
+   "correction": "cambios",
+   "weight": 1
+  },
+  {
+   "typo": "bifucación",
+   "correction": "bifurcación",
+   "weight": 1
+  },
+  {
+   "typo": "ordenadir",
+   "correction": "ordenador",
+   "weight": 1
+  },
+  {
+   "typo": "infaestructura",
+   "correction": "infraestructura",
+   "weight": 1
+  },
+  {
+   "typo": "parametro",
+   "correction": "parámetro",
+   "weight": 1
+  },
+  {
+   "typo": "comodin",
+   "correction": "comodín",
+   "weight": 1
+  },
+  {
+   "typo": "environement",
+   "correction": "environment",
+   "weight": 1
+  },
+  {
+   "typo": "adicionalemnte",
+   "correction": "adicionalmente",
+   "weight": 1
+  },
+  {
+   "typo": "ejeucción",
+   "correction": "ejecución",
+   "weight": 1
+  },
+  {
+   "typo": "stripts",
+   "correction": "stripes",
+   "weight": 1
+  },
+  {
+   "typo": "comnenzar",
+   "correction": "comenzar",
+   "weight": 1
+  },
+  {
+   "typo": "dependenciasde",
+   "correction": "dependencias",
+   "weight": 1
+  },
+  {
+   "typo": "lenguage",
+   "correction": "lenguaje",
+   "weight": 1
+  },
+  {
+   "typo": "androud",
+   "correction": "android",
+   "weight": 1
+  },
+  {
+   "typo": "escositema",
+   "correction": "ecosistema",
+   "weight": 1
+  },
+  {
+   "typo": "acerda",
+   "correction": "acerca",
+   "weight": 1
+  },
+  {
+   "typo": "antartica",
+   "correction": "antártica",
+   "weight": 1
+  },
+  {
+   "typo": "vistaso",
+   "correction": "vistazo",
+   "weight": 1
+  },
+  {
+   "typo": "ambiugas",
+   "correction": "ambiguas",
+   "weight": 1
+  },
+  {
+   "typo": "pacakge",
+   "correction": "package",
+   "weight": 1
+  },
+  {
+   "typo": "llear",
+   "correction": "llevar",
+   "weight": 1
+  },
+  {
+   "typo": "sestema",
+   "correction": "sistema",
+   "weight": 1
+  },
+  {
+   "typo": "obserlet",
+   "correction": "observar",
+   "weight": 1
+  },
+  {
+   "typo": "línas",
+   "correction": "líneas",
+   "weight": 1
+  },
+  {
+   "typo": "profundiad",
+   "correction": "profundidad",
+   "weight": 1
+  },
+  {
+   "typo": "compoente",
+   "correction": "componente",
+   "weight": 1
+  },
+  {
+   "typo": "moficiar",
+   "correction": "modificar",
+   "weight": 1
+  },
+  {
+   "typo": "támpoco",
+   "correction": "tampoco",
+   "weight": 1
+  },
+  {
+   "typo": "funcionalida",
+   "correction": "funcionalidad",
+   "weight": 1
+  },
+  {
+   "typo": "publíca",
+   "correction": "publica",
+   "weight": 1
+  },
+  {
+   "typo": "direcciónd",
+   "correction": "dirección",
+   "weight": 1
+  },
+  {
+   "typo": "esistente",
+   "correction": "existente",
+   "weight": 1
+  },
+  {
+   "typo": "apñlicación",
+   "correction": "aplicación",
+   "weight": 1
+  },
+  {
+   "typo": "dódigo",
+   "correction": "código",
+   "weight": 1
+  },
+  {
+   "typo": "poreque",
+   "correction": "porque",
+   "weight": 1
+  },
+  {
+   "typo": "alcanazamos",
+   "correction": "alcanzamos",
+   "weight": 1
+  },
+  {
+   "typo": "characteres",
+   "correction": "caracteres",
+   "weight": 1
+  },
+  {
+   "typo": "eletrónico",
+   "correction": "electrónico",
+   "weight": 1
+  },
+  {
+   "typo": "estarmos",
+   "correction": "estaremos",
+   "weight": 1
+  },
+  {
+   "typo": "functión",
+   "correction": "función",
+   "weight": 1
+  },
+  {
+   "typo": "enterios",
+   "correction": "enteros",
+   "weight": 1
+  },
+  {
+   "typo": "parentesis",
+   "correction": "paréntesis",
+   "weight": 1
+  },
+  {
+   "typo": "abitual",
+   "correction": "habitual",
+   "weight": 1
+  }
+ ]
+}

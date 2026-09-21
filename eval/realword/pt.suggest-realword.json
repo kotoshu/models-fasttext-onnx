@@ -1,0 +1,423 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "pt",
+ "klass": "realword",
+ "n": 83,
+ "pairs": [
+  {
+   "typo": "porque",
+   "correction": "porquê",
+   "weight": 5
+  },
+  {
+   "typo": "gerada",
+   "correction": "gerado",
+   "weight": 4
+  },
+  {
+   "typo": "o",
+   "correction": "os",
+   "weight": 3
+  },
+  {
+   "typo": "da",
+   "correction": "do",
+   "weight": 3
+  },
+  {
+   "typo": "actual",
+   "correction": "atual",
+   "weight": 3
+  },
+  {
+   "typo": "reconhecer",
+   "correction": "entender",
+   "weight": 3
+  },
+  {
+   "typo": "info",
+   "correction": "informação",
+   "weight": 3
+  },
+  {
+   "typo": "instalou",
+   "correction": "usou",
+   "weight": 3
+  },
+  {
+   "typo": "se",
+   "correction": "caso",
+   "weight": 2
+  },
+  {
+   "typo": "defini",
+   "correction": "define",
+   "weight": 2
+  },
+  {
+   "typo": "adicionado",
+   "correction": "adicionando",
+   "weight": 2
+  },
+  {
+   "typo": "método",
+   "correction": "métodos",
+   "weight": 2
+  },
+  {
+   "typo": "sócias",
+   "correction": "sociais",
+   "weight": 2
+  },
+  {
+   "typo": "pode",
+   "correction": "pôde",
+   "weight": 2
+  },
+  {
+   "typo": "gostariamos",
+   "correction": "gostaríamos",
+   "weight": 2
+  },
+  {
+   "typo": "rode",
+   "correction": "execute",
+   "weight": 2
+  },
+  {
+   "typo": "tira",
+   "correction": "tire",
+   "weight": 1
+  },
+  {
+   "typo": "total",
+   "correction": "totalmente",
+   "weight": 1
+  },
+  {
+   "typo": "mandar",
+   "correction": "mudar",
+   "weight": 1
+  },
+  {
+   "typo": "especificar",
+   "correction": "definir",
+   "weight": 1
+  },
+  {
+   "typo": "mas",
+   "correction": "e",
+   "weight": 1
+  },
+  {
+   "typo": "atendo",
+   "correction": "atendendo",
+   "weight": 1
+  },
+  {
+   "typo": "inicio",
+   "correction": "início",
+   "weight": 1
+  },
+  {
+   "typo": "registado",
+   "correction": "registrado",
+   "weight": 1
+  },
+  {
+   "typo": "connosco",
+   "correction": "conosco",
+   "weight": 1
+  },
+  {
+   "typo": "codigo",
+   "correction": "código",
+   "weight": 1
+  },
+  {
+   "typo": "evitar",
+   "correction": "evita",
+   "weight": 1
+  },
+  {
+   "typo": "util",
+   "correction": "útil",
+   "weight": 1
+  },
+  {
+   "typo": "dessa",
+   "correction": "desta",
+   "weight": 1
+  },
+  {
+   "typo": "nessa",
+   "correction": "nesta",
+   "weight": 1
+  },
+  {
+   "typo": "enviada",
+   "correction": "enviadas",
+   "weight": 1
+  },
+  {
+   "typo": "suite",
+   "correction": "suíte",
+   "weight": 1
+  },
+  {
+   "typo": "excessão",
+   "correction": "exceção",
+   "weight": 1
+  },
+  {
+   "typo": "serie",
+   "correction": "série",
+   "weight": 1
+  },
+  {
+   "typo": "extensiva",
+   "correction": "extensa",
+   "weight": 1
+  },
+  {
+   "typo": "ultimas",
+   "correction": "últimas",
+   "weight": 1
+  },
+  {
+   "typo": "sí",
+   "correction": "si",
+   "weight": 1
+  },
+  {
+   "typo": "uma",
+   "correction": "um",
+   "weight": 1
+  },
+  {
+   "typo": "da",
+   "correction": "na",
+   "weight": 1
+  },
+  {
+   "typo": "prover",
+   "correction": "provê",
+   "weight": 1
+  },
+  {
+   "typo": "os",
+   "correction": "quaisquer",
+   "weight": 1
+  },
+  {
+   "typo": "parêntesis",
+   "correction": "parênteses",
+   "weight": 1
+  },
+  {
+   "typo": "construído",
+   "correction": "construída",
+   "weight": 1
+  },
+  {
+   "typo": "ultima",
+   "correction": "última",
+   "weight": 1
+  },
+  {
+   "typo": "os",
+   "correction": "nos",
+   "weight": 1
+  },
+  {
+   "typo": "long",
+   "correction": "longo",
+   "weight": 1
+  },
+  {
+   "typo": "fazem",
+   "correction": "faz",
+   "weight": 1
+  },
+  {
+   "typo": "font",
+   "correction": "fonte",
+   "weight": 1
+  },
+  {
+   "typo": "deficiências",
+   "correction": "deficiência",
+   "weight": 1
+  },
+  {
+   "typo": "aplicativos",
+   "correction": "aplicações",
+   "weight": 1
+  },
+  {
+   "typo": "selector",
+   "correction": "seletor",
+   "weight": 1
+  },
+  {
+   "typo": "important",
+   "correction": "importante",
+   "weight": 1
+  },
+  {
+   "typo": "actualizado",
+   "correction": "atualizado",
+   "weight": 1
+  },
+  {
+   "typo": "directamente",
+   "correction": "diretamente",
+   "weight": 1
+  },
+  {
+   "typo": "actualizada",
+   "correction": "atualizada",
+   "weight": 1
+  },
+  {
+   "typo": "correctamente",
+   "correction": "corretamente",
+   "weight": 1
+  },
+  {
+   "typo": "geral",
+   "correction": "geram",
+   "weight": 1
+  },
+  {
+   "typo": "escada",
+   "correction": "escala",
+   "weight": 1
+  },
+  {
+   "typo": "estão",
+   "correction": "estiverem",
+   "weight": 1
+  },
+  {
+   "typo": "vários",
+   "correction": "várias",
+   "weight": 1
+  },
+  {
+   "typo": "de",
+   "correction": "do",
+   "weight": 1
+  },
+  {
+   "typo": "dica",
+   "correction": "dicas",
+   "weight": 1
+  },
+  {
+   "typo": "dias",
+   "correction": "dicas",
+   "weight": 1
+  },
+  {
+   "typo": "vá",
+   "correction": "vai",
+   "weight": 1
+  },
+  {
+   "typo": "à",
+   "correction": "a",
+   "weight": 1
+  },
+  {
+   "typo": "de",
+   "correction": "te",
+   "weight": 1
+  },
+  {
+   "typo": "voce",
+   "correction": "você",
+   "weight": 1
+  },
+  {
+   "typo": "todo",
+   "correction": "toda",
+   "weight": 1
+  },
+  {
+   "typo": "side",
+   "correction": "size",
+   "weight": 1
+  },
+  {
+   "typo": "inicio",
+   "correction": "fim",
+   "weight": 1
+  },
+  {
+   "typo": "pro",
+   "correction": "por",
+   "weight": 1
+  },
+  {
+   "typo": "estatura",
+   "correction": "estrutura",
+   "weight": 1
+  },
+  {
+   "typo": "fo",
+   "correction": "do",
+   "weight": 1
+  },
+  {
+   "typo": "ser",
+   "correction": "será",
+   "weight": 1
+  },
+  {
+   "typo": "esta",
+   "correction": "está",
+   "weight": 1
+  },
+  {
+   "typo": "possue",
+   "correction": "possui",
+   "weight": 1
+  },
+  {
+   "typo": "lembre",
+   "correction": "redefinição",
+   "weight": 1
+  },
+  {
+   "typo": "limpar",
+   "correction": "otimizar",
+   "weight": 1
+  },
+  {
+   "typo": "se",
+   "correction": "sem",
+   "weight": 1
+  },
+  {
+   "typo": "passar",
+   "correction": "passa",
+   "weight": 1
+  },
+  {
+   "typo": "pare",
+   "correction": "para",
+   "weight": 1
+  },
+  {
+   "typo": "pode",
+   "correction": "podem",
+   "weight": 1
+  },
+  {
+   "typo": "usuário",
+   "correction": "usuários",
+   "weight": 1
+  }
+ ]
+}

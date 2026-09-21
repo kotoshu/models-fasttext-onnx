@@ -1,0 +1,1528 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "ru",
+ "klass": "nonword",
+ "n": 304,
+ "pairs": [
+  {
+   "typo": "комлекта",
+   "correction": "комплекта",
+   "weight": 12
+  },
+  {
+   "typo": "комлект",
+   "correction": "комплект",
+   "weight": 6
+  },
+  {
+   "typo": "содержить",
+   "correction": "содержит",
+   "weight": 5
+  },
+  {
+   "typo": "расчитывать",
+   "correction": "рассчитывать",
+   "weight": 4
+  },
+  {
+   "typo": "комманды",
+   "correction": "команды",
+   "weight": 4
+  },
+  {
+   "typo": "шиблону",
+   "correction": "шаблону",
+   "weight": 3
+  },
+  {
+   "typo": "переодически",
+   "correction": "периодически",
+   "weight": 3
+  },
+  {
+   "typo": "выбранно",
+   "correction": "выбрано",
+   "weight": 3
+  },
+  {
+   "typo": "добавяет",
+   "correction": "добавляет",
+   "weight": 3
+  },
+  {
+   "typo": "испольщование",
+   "correction": "использование",
+   "weight": 3
+  },
+  {
+   "typo": "использовава",
+   "correction": "использовав",
+   "weight": 3
+  },
+  {
+   "typo": "модете",
+   "correction": "можете",
+   "weight": 3
+  },
+  {
+   "typo": "могкт",
+   "correction": "могут",
+   "weight": 3
+  },
+  {
+   "typo": "дубет",
+   "correction": "будет",
+   "weight": 3
+  },
+  {
+   "typo": "комплектор",
+   "correction": "комплектов",
+   "weight": 3
+  },
+  {
+   "typo": "добать",
+   "correction": "добавить",
+   "weight": 3
+  },
+  {
+   "typo": "распрастраняется",
+   "correction": "распространяется",
+   "weight": 3
+  },
+  {
+   "typo": "комлекты",
+   "correction": "комплекты",
+   "weight": 3
+  },
+  {
+   "typo": "времененную",
+   "correction": "временную",
+   "weight": 3
+  },
+  {
+   "typo": "черевато",
+   "correction": "чревато",
+   "weight": 3
+  },
+  {
+   "typo": "качетсве",
+   "correction": "качестве",
+   "weight": 3
+  },
+  {
+   "typo": "долен",
+   "correction": "должен",
+   "weight": 3
+  },
+  {
+   "typo": "страктуры",
+   "correction": "структуры",
+   "weight": 3
+  },
+  {
+   "typo": "связаным",
+   "correction": "связанным",
+   "weight": 3
+  },
+  {
+   "typo": "регистироваться",
+   "correction": "регистрироваться",
+   "weight": 3
+  },
+  {
+   "typo": "обеспепичает",
+   "correction": "обеспечивает",
+   "weight": 3
+  },
+  {
+   "typo": "изменеию",
+   "correction": "изменению",
+   "weight": 3
+  },
+  {
+   "typo": "прилжения",
+   "correction": "приложения",
+   "weight": 3
+  },
+  {
+   "typo": "воостановление",
+   "correction": "восстановление",
+   "weight": 3
+  },
+  {
+   "typo": "едножды",
+   "correction": "единожды",
+   "weight": 3
+  },
+  {
+   "typo": "приожение",
+   "correction": "приложение",
+   "weight": 3
+  },
+  {
+   "typo": "однин",
+   "correction": "один",
+   "weight": 3
+  },
+  {
+   "typo": "стнаница",
+   "correction": "страница",
+   "weight": 3
+  },
+  {
+   "typo": "сотировать",
+   "correction": "сортировать",
+   "weight": 2
+  },
+  {
+   "typo": "потметки",
+   "correction": "пометки",
+   "weight": 2
+  },
+  {
+   "typo": "соответсвие",
+   "correction": "соответствие",
+   "weight": 2
+  },
+  {
+   "typo": "аргуметнов",
+   "correction": "аргументов",
+   "weight": 2
+  },
+  {
+   "typo": "месацам",
+   "correction": "месяцам",
+   "weight": 2
+  },
+  {
+   "typo": "pattenrn",
+   "correction": "pattern",
+   "weight": 2
+  },
+  {
+   "typo": "испольщуйте",
+   "correction": "используйте",
+   "weight": 2
+  },
+  {
+   "typo": "использлвать",
+   "correction": "использовать",
+   "weight": 2
+  },
+  {
+   "typo": "поддежривают",
+   "correction": "поддерживают",
+   "weight": 2
+  },
+  {
+   "typo": "стоблбца",
+   "correction": "столбца",
+   "weight": 2
+  },
+  {
+   "typo": "генарация",
+   "correction": "генерация",
+   "weight": 2
+  },
+  {
+   "typo": "остаровжны",
+   "correction": "осторожны",
+   "weight": 2
+  },
+  {
+   "typo": "сочитании",
+   "correction": "сочетании",
+   "weight": 2
+  },
+  {
+   "typo": "зкапускаем",
+   "correction": "запускаем",
+   "weight": 2
+  },
+  {
+   "typo": "высичление",
+   "correction": "вычисление",
+   "weight": 2
+  },
+  {
+   "typo": "аргементы",
+   "correction": "аргументы",
+   "weight": 2
+  },
+  {
+   "typo": "считаеть",
+   "correction": "считать",
+   "weight": 2
+  },
+  {
+   "typo": "подчерпнуть",
+   "correction": "почерпнуть",
+   "weight": 2
+  },
+  {
+   "typo": "увререны",
+   "correction": "уверены",
+   "weight": 2
+  },
+  {
+   "typo": "иницализации",
+   "correction": "инициализации",
+   "weight": 2
+  },
+  {
+   "typo": "кавычка",
+   "correction": "кавычках",
+   "weight": 2
+  },
+  {
+   "typo": "огранизовал",
+   "correction": "организовал",
+   "weight": 2
+  },
+  {
+   "typo": "равенстсво",
+   "correction": "равенство",
+   "weight": 2
+  },
+  {
+   "typo": "посморим",
+   "correction": "посмотрим",
+   "weight": 2
+  },
+  {
+   "typo": "пьесс",
+   "correction": "пьес",
+   "weight": 2
+  },
+  {
+   "typo": "измменить",
+   "correction": "изменить",
+   "weight": 2
+  },
+  {
+   "typo": "отлчно",
+   "correction": "отлично",
+   "weight": 2
+  },
+  {
+   "typo": "зотите",
+   "correction": "хотите",
+   "weight": 2
+  },
+  {
+   "typo": "недобно",
+   "correction": "неудобно",
+   "weight": 2
+  },
+  {
+   "typo": "зерколом",
+   "correction": "зеркалом",
+   "weight": 2
+  },
+  {
+   "typo": "количесвом",
+   "correction": "количеством",
+   "weight": 2
+  },
+  {
+   "typo": "обьединение",
+   "correction": "объединение",
+   "weight": 2
+  },
+  {
+   "typo": "cпасибо",
+   "correction": "спасибо",
+   "weight": 2
+  },
+  {
+   "typo": "секономить",
+   "correction": "сэкономить",
+   "weight": 2
+  },
+  {
+   "typo": "букать",
+   "correction": "бронировать",
+   "weight": 2
+  },
+  {
+   "typo": "кваритиру",
+   "correction": "квартиру",
+   "weight": 2
+  },
+  {
+   "typo": "пунка",
+   "correction": "пункта",
+   "weight": 2
+  },
+  {
+   "typo": "занчения",
+   "correction": "значения",
+   "weight": 2
+  },
+  {
+   "typo": "ппоэтому",
+   "correction": "поэтому",
+   "weight": 2
+  },
+  {
+   "typo": "пплатили",
+   "correction": "платили",
+   "weight": 2
+  },
+  {
+   "typo": "трубовой",
+   "correction": "трудовой",
+   "weight": 2
+  },
+  {
+   "typo": "слака",
+   "correction": "чата",
+   "weight": 2
+  },
+  {
+   "typo": "подоходят",
+   "correction": "подходят",
+   "weight": 2
+  },
+  {
+   "typo": "возмонжость",
+   "correction": "возможность",
+   "weight": 2
+  },
+  {
+   "typo": "сидушка",
+   "correction": "сидение",
+   "weight": 2
+  },
+  {
+   "typo": "укражения",
+   "correction": "упражнения",
+   "weight": 2
+  },
+  {
+   "typo": "разивает",
+   "correction": "разбивает",
+   "weight": 2
+  },
+  {
+   "typo": "привествуем",
+   "correction": "приветствуем",
+   "weight": 2
+  },
+  {
+   "typo": "выполненой",
+   "correction": "выполненной",
+   "weight": 2
+  },
+  {
+   "typo": "читайет",
+   "correction": "читает",
+   "weight": 2
+  },
+  {
+   "typo": "отображатся",
+   "correction": "отображаться",
+   "weight": 2
+  },
+  {
+   "typo": "аттрибут",
+   "correction": "атрибут",
+   "weight": 2
+  },
+  {
+   "typo": "andriod",
+   "correction": "android",
+   "weight": 2
+  },
+  {
+   "typo": "обявлены",
+   "correction": "объявлены",
+   "weight": 2
+  },
+  {
+   "typo": "атрбут",
+   "correction": "атрибут",
+   "weight": 2
+  },
+  {
+   "typo": "упралять",
+   "correction": "управлять",
+   "weight": 2
+  },
+  {
+   "typo": "прдробного",
+   "correction": "подробного",
+   "weight": 1
+  },
+  {
+   "typo": "ващей",
+   "correction": "вашей",
+   "weight": 1
+  },
+  {
+   "typo": "оставте",
+   "correction": "оставьте",
+   "weight": 1
+  },
+  {
+   "typo": "поодерживает",
+   "correction": "поддерживает",
+   "weight": 1
+  },
+  {
+   "typo": "отсутстует",
+   "correction": "отсутствует",
+   "weight": 1
+  },
+  {
+   "typo": "соотвтсвтеющие",
+   "correction": "соответствующие",
+   "weight": 1
+  },
+  {
+   "typo": "интвервал",
+   "correction": "интервал",
+   "weight": 1
+  },
+  {
+   "typo": "подраздер",
+   "correction": "подраздел",
+   "weight": 1
+  },
+  {
+   "typo": "созвращена",
+   "correction": "возвращена",
+   "weight": 1
+  },
+  {
+   "typo": "невно",
+   "correction": "неявно",
+   "weight": 1
+  },
+  {
+   "typo": "модулль",
+   "correction": "модуль",
+   "weight": 1
+  },
+  {
+   "typo": "зависипостей",
+   "correction": "зависимостей",
+   "weight": 1
+  },
+  {
+   "typo": "областе",
+   "correction": "области",
+   "weight": 1
+  },
+  {
+   "typo": "заисит",
+   "correction": "зависит",
+   "weight": 1
+  },
+  {
+   "typo": "глобавльных",
+   "correction": "глобальных",
+   "weight": 1
+  },
+  {
+   "typo": "преподататели",
+   "correction": "преподаватели",
+   "weight": 1
+  },
+  {
+   "typo": "исмотрите",
+   "correction": "смотрите",
+   "weight": 1
+  },
+  {
+   "typo": "пиложения",
+   "correction": "приложения",
+   "weight": 1
+  },
+  {
+   "typo": "фукнции",
+   "correction": "функции",
+   "weight": 1
+  },
+  {
+   "typo": "качесве",
+   "correction": "качестве",
+   "weight": 1
+  },
+  {
+   "typo": "отличи",
+   "correction": "отличии",
+   "weight": 1
+  },
+  {
+   "typo": "исопльзуя",
+   "correction": "используя",
+   "weight": 1
+  },
+  {
+   "typo": "заваисит",
+   "correction": "зависит",
+   "weight": 1
+  },
+  {
+   "typo": "оприсание",
+   "correction": "описание",
+   "weight": 1
+  },
+  {
+   "typo": "расшифровывется",
+   "correction": "расшифровывается",
+   "weight": 1
+  },
+  {
+   "typo": "соотвествие",
+   "correction": "соответствие",
+   "weight": 1
+  },
+  {
+   "typo": "локальныйй",
+   "correction": "локальный",
+   "weight": 1
+  },
+  {
+   "typo": "онда",
+   "correction": "одна",
+   "weight": 1
+  },
+  {
+   "typo": "агрументам",
+   "correction": "аргументам",
+   "weight": 1
+  },
+  {
+   "typo": "авктивации",
+   "correction": "активации",
+   "weight": 1
+  },
+  {
+   "typo": "нописать",
+   "correction": "написать",
+   "weight": 1
+  },
+  {
+   "typo": "учётгной",
+   "correction": "учётной",
+   "weight": 1
+  },
+  {
+   "typo": "назаченные",
+   "correction": "назначенные",
+   "weight": 1
+  },
+  {
+   "typo": "присоеденить",
+   "correction": "присоединить",
+   "weight": 1
+  },
+  {
+   "typo": "наблдюдать",
+   "correction": "наблюдать",
+   "weight": 1
+  },
+  {
+   "typo": "проверочые",
+   "correction": "проверочные",
+   "weight": 1
+  },
+  {
+   "typo": "привышении",
+   "correction": "превышении",
+   "weight": 1
+  },
+  {
+   "typo": "зарегисрированы",
+   "correction": "зарегистрированы",
+   "weight": 1
+  },
+  {
+   "typo": "испольуете",
+   "correction": "используете",
+   "weight": 1
+  },
+  {
+   "typo": "колиство",
+   "correction": "количество",
+   "weight": 1
+  },
+  {
+   "typo": "присоедениться",
+   "correction": "присоединиться",
+   "weight": 1
+  },
+  {
+   "typo": "пользовтелей",
+   "correction": "пользователей",
+   "weight": 1
+  },
+  {
+   "typo": "обеъкт",
+   "correction": "объект",
+   "weight": 1
+  },
+  {
+   "typo": "мужду",
+   "correction": "между",
+   "weight": 1
+  },
+  {
+   "typo": "инстуркции",
+   "correction": "инструкции",
+   "weight": 1
+  },
+  {
+   "typo": "струкутру",
+   "correction": "структуру",
+   "weight": 1
+  },
+  {
+   "typo": "замечение",
+   "correction": "замечание",
+   "weight": 1
+  },
+  {
+   "typo": "углублятся",
+   "correction": "углубляться",
+   "weight": 1
+  },
+  {
+   "typo": "порядом",
+   "correction": "порядок",
+   "weight": 1
+  },
+  {
+   "typo": "обьявляется",
+   "correction": "объявляется",
+   "weight": 1
+  },
+  {
+   "typo": "сравке",
+   "correction": "справке",
+   "weight": 1
+  },
+  {
+   "typo": "согласо",
+   "correction": "согласно",
+   "weight": 1
+  },
+  {
+   "typo": "новшевства",
+   "correction": "новшества",
+   "weight": 1
+  },
+  {
+   "typo": "поможе",
+   "correction": "поможет",
+   "weight": 1
+  },
+  {
+   "typo": "констатнты",
+   "correction": "константы",
+   "weight": 1
+  },
+  {
+   "typo": "сущестование",
+   "correction": "существование",
+   "weight": 1
+  },
+  {
+   "typo": "разжелить",
+   "correction": "разделить",
+   "weight": 1
+  },
+  {
+   "typo": "функии",
+   "correction": "функции",
+   "weight": 1
+  },
+  {
+   "typo": "можнно",
+   "correction": "можно",
+   "weight": 1
+  },
+  {
+   "typo": "фунций",
+   "correction": "функций",
+   "weight": 1
+  },
+  {
+   "typo": "интрвелами",
+   "correction": "интервалами",
+   "weight": 1
+  },
+  {
+   "typo": "иставка",
+   "correction": "вставка",
+   "weight": 1
+  },
+  {
+   "typo": "сдержания",
+   "correction": "содержания",
+   "weight": 1
+  },
+  {
+   "typo": "дргое",
+   "correction": "другое",
+   "weight": 1
+  },
+  {
+   "typo": "аттрибутов",
+   "correction": "атрибутов",
+   "weight": 1
+  },
+  {
+   "typo": "навание",
+   "correction": "название",
+   "weight": 1
+  },
+  {
+   "typo": "источик",
+   "correction": "источник",
+   "weight": 1
+  },
+  {
+   "typo": "поддеривает",
+   "correction": "поддерживает",
+   "weight": 1
+  },
+  {
+   "typo": "отрисовки",
+   "correction": "вывода",
+   "weight": 1
+  },
+  {
+   "typo": "выбертие",
+   "correction": "выберите",
+   "weight": 1
+  },
+  {
+   "typo": "раположен",
+   "correction": "расположен",
+   "weight": 1
+  },
+  {
+   "typo": "использваны",
+   "correction": "использованы",
+   "weight": 1
+  },
+  {
+   "typo": "напрмер",
+   "correction": "например",
+   "weight": 1
+  },
+  {
+   "typo": "каталогоах",
+   "correction": "каталогах",
+   "weight": 1
+  },
+  {
+   "typo": "тпиов",
+   "correction": "типов",
+   "weight": 1
+  },
+  {
+   "typo": "бцдет",
+   "correction": "будет",
+   "weight": 1
+  },
+  {
+   "typo": "попрообовал",
+   "correction": "попробовал",
+   "weight": 1
+  },
+  {
+   "typo": "провреяется",
+   "correction": "проверяется",
+   "weight": 1
+  },
+  {
+   "typo": "терминаал",
+   "correction": "терминала",
+   "weight": 1
+  },
+  {
+   "typo": "анализирую",
+   "correction": "анализируя",
+   "weight": 1
+  },
+  {
+   "typo": "наблюдет",
+   "correction": "наблюдает",
+   "weight": 1
+  },
+  {
+   "typo": "обнаружени",
+   "correction": "обнаружения",
+   "weight": 1
+  },
+  {
+   "typo": "построитель",
+   "correction": "конструктор",
+   "weight": 1
+  },
+  {
+   "typo": "сожержит",
+   "correction": "содержит",
+   "weight": 1
+  },
+  {
+   "typo": "брайвера",
+   "correction": "драйвера",
+   "weight": 1
+  },
+  {
+   "typo": "выхов",
+   "correction": "вызов",
+   "weight": 1
+  },
+  {
+   "typo": "ккционерное",
+   "correction": "акционерное",
+   "weight": 1
+  },
+  {
+   "typo": "сграниченной",
+   "correction": "ограниченной",
+   "weight": 1
+  },
+  {
+   "typo": "докуемнтацию",
+   "correction": "документацию",
+   "weight": 1
+  },
+  {
+   "typo": "ежедевно",
+   "correction": "ежедневно",
+   "weight": 1
+  },
+  {
+   "typo": "провеь",
+   "correction": "проверь",
+   "weight": 1
+  },
+  {
+   "typo": "определям",
+   "correction": "определяем",
+   "weight": 1
+  },
+  {
+   "typo": "использвании",
+   "correction": "использовании",
+   "weight": 1
+  },
+  {
+   "typo": "имют",
+   "correction": "имеют",
+   "weight": 1
+  },
+  {
+   "typo": "уничтожет",
+   "correction": "уничтожит",
+   "weight": 1
+  },
+  {
+   "typo": "фнукция",
+   "correction": "функция",
+   "weight": 1
+  },
+  {
+   "typo": "настрое",
+   "correction": "настроек",
+   "weight": 1
+  },
+  {
+   "typo": "начела",
+   "correction": "начале",
+   "weight": 1
+  },
+  {
+   "typo": "еденичные",
+   "correction": "единичные",
+   "weight": 1
+  },
+  {
+   "typo": "клиенсткой",
+   "correction": "клиентской",
+   "weight": 1
+  },
+  {
+   "typo": "стуктуру",
+   "correction": "структуру",
+   "weight": 1
+  },
+  {
+   "typo": "некторые",
+   "correction": "некоторые",
+   "weight": 1
+  },
+  {
+   "typo": "системых",
+   "correction": "системах",
+   "weight": 1
+  },
+  {
+   "typo": "показыватся",
+   "correction": "показывается",
+   "weight": 1
+  },
+  {
+   "typo": "отсуствует",
+   "correction": "отсутствует",
+   "weight": 1
+  },
+  {
+   "typo": "ширини",
+   "correction": "ширины",
+   "weight": 1
+  },
+  {
+   "typo": "опредлить",
+   "correction": "определить",
+   "weight": 1
+  },
+  {
+   "typo": "имём",
+   "correction": "имён",
+   "weight": 1
+  },
+  {
+   "typo": "избежании",
+   "correction": "избежание",
+   "weight": 1
+  },
+  {
+   "typo": "должная",
+   "correction": "должна",
+   "weight": 1
+  },
+  {
+   "typo": "автоматичеки",
+   "correction": "автоматически",
+   "weight": 1
+  },
+  {
+   "typo": "пусой",
+   "correction": "пустой",
+   "weight": 1
+  },
+  {
+   "typo": "бибилиотека",
+   "correction": "библиотека",
+   "weight": 1
+  },
+  {
+   "typo": "несольких",
+   "correction": "нескольких",
+   "weight": 1
+  },
+  {
+   "typo": "перезоде",
+   "correction": "переходе",
+   "weight": 1
+  },
+  {
+   "typo": "иенах",
+   "correction": "именах",
+   "weight": 1
+  },
+  {
+   "typo": "можеет",
+   "correction": "можете",
+   "weight": 1
+  },
+  {
+   "typo": "миграцию",
+   "correction": "миграции",
+   "weight": 1
+  },
+  {
+   "typo": "команднй",
+   "correction": "командной",
+   "weight": 1
+  },
+  {
+   "typo": "сослать",
+   "correction": "сослаться",
+   "weight": 1
+  },
+  {
+   "typo": "явяется",
+   "correction": "является",
+   "weight": 1
+  },
+  {
+   "typo": "наора",
+   "correction": "набора",
+   "weight": 1
+  },
+  {
+   "typo": "польовательских",
+   "correction": "пользовательских",
+   "weight": 1
+  },
+  {
+   "typo": "возможнось",
+   "correction": "возможность",
+   "weight": 1
+  },
+  {
+   "typo": "соединеняется",
+   "correction": "соединяется",
+   "weight": 1
+  },
+  {
+   "typo": "умочанию",
+   "correction": "умолчанию",
+   "weight": 1
+  },
+  {
+   "typo": "неизместным",
+   "correction": "неизвестным",
+   "weight": 1
+  },
+  {
+   "typo": "запускется",
+   "correction": "запускается",
+   "weight": 1
+  },
+  {
+   "typo": "вызыве",
+   "correction": "вызове",
+   "weight": 1
+  },
+  {
+   "typo": "заданому",
+   "correction": "заданному",
+   "weight": 1
+  },
+  {
+   "typo": "вагему",
+   "correction": "вашему",
+   "weight": 1
+  },
+  {
+   "typo": "которе",
+   "correction": "которое",
+   "weight": 1
+  },
+  {
+   "typo": "визульных",
+   "correction": "визуальных",
+   "weight": 1
+  },
+  {
+   "typo": "устанавливет",
+   "correction": "устанавливает",
+   "weight": 1
+  },
+  {
+   "typo": "максимому",
+   "correction": "максимуму",
+   "weight": 1
+  },
+  {
+   "typo": "компоненентах",
+   "correction": "компонентах",
+   "weight": 1
+  },
+  {
+   "typo": "наприме",
+   "correction": "например",
+   "weight": 1
+  },
+  {
+   "typo": "заметели",
+   "correction": "заметили",
+   "weight": 1
+  },
+  {
+   "typo": "долны",
+   "correction": "должны",
+   "weight": 1
+  },
+  {
+   "typo": "трасформируется",
+   "correction": "трансформируется",
+   "weight": 1
+  },
+  {
+   "typo": "всео",
+   "correction": "всего",
+   "weight": 1
+  },
+  {
+   "typo": "комманд",
+   "correction": "команд",
+   "weight": 1
+  },
+  {
+   "typo": "нащем",
+   "correction": "нашем",
+   "weight": 1
+  },
+  {
+   "typo": "ссылкаться",
+   "correction": "ссылаться",
+   "weight": 1
+  },
+  {
+   "typo": "итек",
+   "correction": "итак",
+   "weight": 1
+  },
+  {
+   "typo": "замечатльно",
+   "correction": "замечательно",
+   "weight": 1
+  },
+  {
+   "typo": "ответственна",
+   "correction": "отвечает",
+   "weight": 1
+  },
+  {
+   "typo": "поспринимает",
+   "correction": "воспринимает",
+   "weight": 1
+  },
+  {
+   "typo": "хотм",
+   "correction": "хотим",
+   "weight": 1
+  },
+  {
+   "typo": "этоу",
+   "correction": "эту",
+   "weight": 1
+  },
+  {
+   "typo": "синхранизация",
+   "correction": "синхронизация",
+   "weight": 1
+  },
+  {
+   "typo": "инчае",
+   "correction": "иначе",
+   "weight": 1
+  },
+  {
+   "typo": "консоле",
+   "correction": "консоли",
+   "weight": 1
+  },
+  {
+   "typo": "коммандами",
+   "correction": "командами",
+   "weight": 1
+  },
+  {
+   "typo": "зтем",
+   "correction": "затем",
+   "weight": 1
+  },
+  {
+   "typo": "теберь",
+   "correction": "теперь",
+   "weight": 1
+  },
+  {
+   "typo": "описываеся",
+   "correction": "описывается",
+   "weight": 1
+  },
+  {
+   "typo": "последством",
+   "correction": "посредством",
+   "weight": 1
+  },
+  {
+   "typo": "соответствющий",
+   "correction": "соответствующий",
+   "weight": 1
+  },
+  {
+   "typo": "выпус",
+   "correction": "выпуск",
+   "weight": 1
+  },
+  {
+   "typo": "техт",
+   "correction": "тех",
+   "weight": 1
+  },
+  {
+   "typo": "окружюения",
+   "correction": "окружения",
+   "weight": 1
+  },
+  {
+   "typo": "обучится",
+   "correction": "обучиться",
+   "weight": 1
+  },
+  {
+   "typo": "связанна",
+   "correction": "связана",
+   "weight": 1
+  },
+  {
+   "typo": "времи",
+   "correction": "времени",
+   "weight": 1
+  },
+  {
+   "typo": "поддерживатся",
+   "correction": "поддерживаться",
+   "weight": 1
+  },
+  {
+   "typo": "тепереь",
+   "correction": "теперь",
+   "weight": 1
+  },
+  {
+   "typo": "изменениться",
+   "correction": "измениться",
+   "weight": 1
+  },
+  {
+   "typo": "новиника",
+   "correction": "новинка",
+   "weight": 1
+  },
+  {
+   "typo": "отсутсвии",
+   "correction": "отсутствии",
+   "weight": 1
+  },
+  {
+   "typo": "обноновлена",
+   "correction": "обновлена",
+   "weight": 1
+  },
+  {
+   "typo": "слуаев",
+   "correction": "случаев",
+   "weight": 1
+  },
+  {
+   "typo": "прейти",
+   "correction": "перейти",
+   "weight": 1
+  },
+  {
+   "typo": "содежимым",
+   "correction": "содержимым",
+   "weight": 1
+  },
+  {
+   "typo": "выполините",
+   "correction": "выполните",
+   "weight": 1
+  },
+  {
+   "typo": "сликом",
+   "correction": "слишком",
+   "weight": 1
+  },
+  {
+   "typo": "созадть",
+   "correction": "создавая",
+   "weight": 1
+  },
+  {
+   "typo": "успешн",
+   "correction": "успешно",
+   "weight": 1
+  },
+  {
+   "typo": "экзмепляра",
+   "correction": "экземпляра",
+   "weight": 1
+  },
+  {
+   "typo": "процесе",
+   "correction": "процессе",
+   "weight": 1
+  },
+  {
+   "typo": "управлнеие",
+   "correction": "управление",
+   "weight": 1
+  },
+  {
+   "typo": "соборки",
+   "correction": "сборки",
+   "weight": 1
+  },
+  {
+   "typo": "эелементов",
+   "correction": "элементов",
+   "weight": 1
+  },
+  {
+   "typo": "програмное",
+   "correction": "программное",
+   "weight": 1
+  },
+  {
+   "typo": "дружый",
+   "correction": "дружный",
+   "weight": 1
+  },
+  {
+   "typo": "знчение",
+   "correction": "значение",
+   "weight": 1
+  },
+  {
+   "typo": "размещаения",
+   "correction": "размещения",
+   "weight": 1
+  },
+  {
+   "typo": "парамтер",
+   "correction": "параметр",
+   "weight": 1
+  },
+  {
+   "typo": "именна",
+   "correction": "именно",
+   "weight": 1
+  },
+  {
+   "typo": "пробразует",
+   "correction": "преобразует",
+   "weight": 1
+  },
+  {
+   "typo": "которолировали",
+   "correction": "контролировали",
+   "weight": 1
+  },
+  {
+   "typo": "оббучения",
+   "correction": "обучения",
+   "weight": 1
+  },
+  {
+   "typo": "компьюрами",
+   "correction": "компьютерами",
+   "weight": 1
+  },
+  {
+   "typo": "определяеться",
+   "correction": "определяться",
+   "weight": 1
+  },
+  {
+   "typo": "приоретит",
+   "correction": "приоритет",
+   "weight": 1
+  },
+  {
+   "typo": "добавиьте",
+   "correction": "добавьте",
+   "weight": 1
+  },
+  {
+   "typo": "посколько",
+   "correction": "поскольку",
+   "weight": 1
+  },
+  {
+   "typo": "черех",
+   "correction": "через",
+   "weight": 1
+  },
+  {
+   "typo": "предочитают",
+   "correction": "предпочитают",
+   "weight": 1
+  },
+  {
+   "typo": "меропрития",
+   "correction": "мероприятия",
+   "weight": 1
+  },
+  {
+   "typo": "подержки",
+   "correction": "поддержки",
+   "weight": 1
+  },
+  {
+   "typo": "последнех",
+   "correction": "последних",
+   "weight": 1
+  },
+  {
+   "typo": "связитесь",
+   "correction": "свяжитесь",
+   "weight": 1
+  },
+  {
+   "typo": "временна",
+   "correction": "временная",
+   "weight": 1
+  },
+  {
+   "typo": "опредеённые",
+   "correction": "определённые",
+   "weight": 1
+  },
+  {
+   "typo": "пользвателя",
+   "correction": "пользователя",
+   "weight": 1
+  },
+  {
+   "typo": "пространтвах",
+   "correction": "пространствах",
+   "weight": 1
+  },
+  {
+   "typo": "знаение",
+   "correction": "значение",
+   "weight": 1
+  },
+  {
+   "typo": "соответсвующей",
+   "correction": "соответствующей",
+   "weight": 1
+  },
+  {
+   "typo": "представленых",
+   "correction": "представленных",
+   "weight": 1
+  },
+  {
+   "typo": "предназначеный",
+   "correction": "предназначенный",
+   "weight": 1
+  },
+  {
+   "typo": "оограничен",
+   "correction": "ограничен",
+   "weight": 1
+  },
+  {
+   "typo": "кнопом",
+   "correction": "кнопок",
+   "weight": 1
+  },
+  {
+   "typo": "использовалис",
+   "correction": "использовались",
+   "weight": 1
+  },
+  {
+   "typo": "привылки",
+   "correction": "привыкли",
+   "weight": 1
+  }
+ ]
+}

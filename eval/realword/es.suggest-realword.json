@@ -1,0 +1,438 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "es",
+ "klass": "realword",
+ "n": 86,
+ "pairs": [
+  {
+   "typo": "incluído",
+   "correction": "incluido",
+   "weight": 8
+  },
+  {
+   "typo": "estandar",
+   "correction": "estándar",
+   "weight": 4
+  },
+  {
+   "typo": "si",
+   "correction": "sí",
+   "weight": 4
+  },
+  {
+   "typo": "que",
+   "correction": "qué",
+   "weight": 4
+  },
+  {
+   "typo": "caracter",
+   "correction": "carácter",
+   "weight": 4
+  },
+  {
+   "typo": "sobe",
+   "correction": "sobre",
+   "weight": 3
+  },
+  {
+   "typo": "css",
+   "correction": "de",
+   "weight": 3
+  },
+  {
+   "typo": "han",
+   "correction": "ha",
+   "weight": 3
+  },
+  {
+   "typo": "area",
+   "correction": "área",
+   "weight": 3
+  },
+  {
+   "typo": "la",
+   "correction": "las",
+   "weight": 3
+  },
+  {
+   "typo": "imagenes",
+   "correction": "imágenes",
+   "weight": 3
+  },
+  {
+   "typo": "como",
+   "correction": "cómo",
+   "weight": 3
+  },
+  {
+   "typo": "you",
+   "correction": "yo",
+   "weight": 2
+  },
+  {
+   "typo": "sólo",
+   "correction": "solo",
+   "weight": 2
+  },
+  {
+   "typo": "ítems",
+   "correction": "elementos",
+   "weight": 2
+  },
+  {
+   "typo": "codigo",
+   "correction": "código",
+   "weight": 2
+  },
+  {
+   "typo": "on",
+   "correction": "con",
+   "weight": 2
+  },
+  {
+   "typo": "éste",
+   "correction": "este",
+   "weight": 2
+  },
+  {
+   "typo": "principalmente",
+   "correction": "especialmente",
+   "weight": 2
+  },
+  {
+   "typo": "cache",
+   "correction": "caché",
+   "weight": 2
+  },
+  {
+   "typo": "i",
+   "correction": "si",
+   "weight": 2
+  },
+  {
+   "typo": "domina",
+   "correction": "domine",
+   "weight": 2
+  },
+  {
+   "typo": "de",
+   "correction": "del",
+   "weight": 2
+  },
+  {
+   "typo": "metodo",
+   "correction": "método",
+   "weight": 2
+  },
+  {
+   "typo": "componente",
+   "correction": "componentes",
+   "weight": 2
+  },
+  {
+   "typo": "los",
+   "correction": "las",
+   "weight": 2
+  },
+  {
+   "typo": "encontro",
+   "correction": "encontró",
+   "weight": 2
+  },
+  {
+   "typo": "esta",
+   "correction": "este",
+   "weight": 1
+  },
+  {
+   "typo": "seccion",
+   "correction": "sección",
+   "weight": 1
+  },
+  {
+   "typo": "caracteristicas",
+   "correction": "características",
+   "weight": 1
+  },
+  {
+   "typo": "configuracion",
+   "correction": "configuración",
+   "weight": 1
+  },
+  {
+   "typo": "es",
+   "correction": "está",
+   "weight": 1
+  },
+  {
+   "typo": "al",
+   "correction": "a",
+   "weight": 1
+  },
+  {
+   "typo": "ref",
+   "correction": "refiere",
+   "weight": 1
+  },
+  {
+   "typo": "podremos",
+   "correction": "pondremos",
+   "weight": 1
+  },
+  {
+   "typo": "dibujo",
+   "correction": "dibujito",
+   "weight": 1
+  },
+  {
+   "typo": "performance",
+   "correction": "rendimiento",
+   "weight": 1
+  },
+  {
+   "typo": "corre",
+   "correction": "ocurre",
+   "weight": 1
+  },
+  {
+   "typo": "repuesta",
+   "correction": "respuesta",
+   "weight": 1
+  },
+  {
+   "typo": "por",
+   "correction": "para",
+   "weight": 1
+  },
+  {
+   "typo": "en",
+   "correction": "es",
+   "weight": 1
+  },
+  {
+   "typo": "interes",
+   "correction": "interés",
+   "weight": 1
+  },
+  {
+   "typo": "son",
+   "correction": "sin",
+   "weight": 1
+  },
+  {
+   "typo": "valido",
+   "correction": "válido",
+   "weight": 1
+  },
+  {
+   "typo": "digitos",
+   "correction": "dígitos",
+   "weight": 1
+  },
+  {
+   "typo": "aquí",
+   "correction": "a",
+   "weight": 1
+  },
+  {
+   "typo": "solo",
+   "correction": "sólo",
+   "weight": 1
+  },
+  {
+   "typo": "numero",
+   "correction": "número",
+   "weight": 1
+  },
+  {
+   "typo": "selecciona",
+   "correction": "seleccionar",
+   "weight": 1
+  },
+  {
+   "typo": "cadena",
+   "correction": "string",
+   "weight": 1
+  },
+  {
+   "typo": "raíz",
+   "correction": "root",
+   "weight": 1
+  },
+  {
+   "typo": "distribuciones",
+   "correction": "distros",
+   "weight": 1
+  },
+  {
+   "typo": "ellos",
+   "correction": "ellas",
+   "weight": 1
+  },
+  {
+   "typo": "nodo",
+   "correction": "node",
+   "weight": 1
+  },
+  {
+   "typo": "haz",
+   "correction": "hace",
+   "weight": 1
+  },
+  {
+   "typo": "hecho",
+   "correction": "dado",
+   "weight": 1
+  },
+  {
+   "typo": "post",
+   "correction": "artículo",
+   "weight": 1
+  },
+  {
+   "typo": "aún",
+   "correction": "aun",
+   "weight": 1
+  },
+  {
+   "typo": "indice",
+   "correction": "índice",
+   "weight": 1
+  },
+  {
+   "typo": "aplique",
+   "correction": "apliquen",
+   "weight": 1
+  },
+  {
+   "typo": "toda",
+   "correction": "todo",
+   "weight": 1
+  },
+  {
+   "typo": "estos",
+   "correction": "estas",
+   "weight": 1
+  },
+  {
+   "typo": "las",
+   "correction": "los",
+   "weight": 1
+  },
+  {
+   "typo": "aquéllos",
+   "correction": "aquellos",
+   "weight": 1
+  },
+  {
+   "typo": "poco",
+   "correction": "pocos",
+   "weight": 1
+  },
+  {
+   "typo": "automaticamente",
+   "correction": "automáticamente",
+   "weight": 1
+  },
+  {
+   "typo": "una",
+   "correction": "un",
+   "weight": 1
+  },
+  {
+   "typo": "felicitaciones",
+   "correction": "felicidades",
+   "weight": 1
+  },
+  {
+   "typo": "nacio",
+   "correction": "nació",
+   "weight": 1
+  },
+  {
+   "typo": "podes",
+   "correction": "puedes",
+   "weight": 1
+  },
+  {
+   "typo": "fué",
+   "correction": "fue",
+   "weight": 1
+  },
+  {
+   "typo": "comunmente",
+   "correction": "comúnmente",
+   "weight": 1
+  },
+  {
+   "typo": "ayudame",
+   "correction": "ayúdame",
+   "weight": 1
+  },
+  {
+   "typo": "dibujo",
+   "correction": "dibujar",
+   "weight": 1
+  },
+  {
+   "typo": "algun",
+   "correction": "algún",
+   "weight": 1
+  },
+  {
+   "typo": "mientas",
+   "correction": "mientras",
+   "weight": 1
+  },
+  {
+   "typo": "cual",
+   "correction": "cuál",
+   "weight": 1
+  },
+  {
+   "typo": "estas",
+   "correction": "estás",
+   "weight": 1
+  },
+  {
+   "typo": "estes",
+   "correction": "estés",
+   "weight": 1
+  },
+  {
+   "typo": "alertas",
+   "correction": "advertencias",
+   "weight": 1
+  },
+  {
+   "typo": "mas",
+   "correction": "más",
+   "weight": 1
+  },
+  {
+   "typo": "user",
+   "correction": "usar",
+   "weight": 1
+  },
+  {
+   "typo": "use",
+   "correction": "uses",
+   "weight": 1
+  },
+  {
+   "typo": "puede",
+   "correction": "puedes",
+   "weight": 1
+  },
+  {
+   "typo": "biblioteca",
+   "correction": "librería",
+   "weight": 1
+  },
+  {
+   "typo": "són",
+   "correction": "son",
+   "weight": 1
+  }
+ ]
+}
