@@ -1,0 +1,18 @@
+=== training ended Mon Sep 21 13:52:05 HKT 2026
+    return await _retry_transient_errors(
+  File "/Users/mulgogi/.local/share/mise/installs/python/3.10.5/lib/python3.10/site-packages/modal/_utils/grpc_utils.py", line 604, in _retry_transient_errors
+    process_exception_before_retry(
+  File "/Users/mulgogi/.local/share/mise/installs/python/3.10.5/lib/python3.10/site-packages/modal/_utils/grpc_utils.py", line 450, in process_exception_before_retry
+    raise ConnectionError(str(exc))
+modal.exception.ConnectionError: Deadline exceeded
+step 55000/150000 loss 1.0768 (57.5 min, 45.6M params)
+step 56000/150000 loss 0.9744 (58.5 min, 45.6M params)
+✓ Finished downloading files to local!
+{"n_instances": 20517, "table_covered_instances": 12725, "table_coverage": 0.6202, "scoreable_instances": 20369, "clean_eligible_tokens": 46747}
+     tau   flag% true-top%    fp%
+ 49.9628    3.4%      0.7%   0.5%
+ 44.4375    5.8%      1.4%   1.0%
+    39.0    9.8%      2.7%   2.0%
+ 31.5312   18.2%      5.6%   5.0%
+  25.875   28.7%      9.9%  10.0%
+=== C2 GATE DONE Mon Sep 21 13:59:26 HKT 2026
