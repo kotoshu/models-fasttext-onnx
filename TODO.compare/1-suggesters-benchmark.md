@@ -2,7 +2,12 @@
 
 ## Status
 
-executed (2026-09-21); re-executed under C6 (frequency SymSpell + language_code + ranked:true composite, gem PR kotoshu/kotoshu#226). de nonword: top-1 70.9%, top-3 86.1%, top-5 91.1% — top-3 and top-5 #1 across the field (Hunspell 54.4%/74.7%/77.2%, field SymSpell 73.4% on all slices — TOP mode returns one candidate). en bench in flight. C9 (TODO.compare/9) tracks the residual top-1 gap to take sole #1. real-word top-1 best-in-class at 9.1% but the class is context-bound and hard for everyone (Hunspell 7.4%, SymSpell 4.4%) - quantifying the context-scorer's product value. LanguageTool's 0 is a shape artifact (sentence-checker contract vs isolated words). Evidence: eval/reports/suggest-benchmark-en.json + the frozen splits (en.suggest-{nonword,realword}.json, 2000 pairs/class). En-route fixes: symspellpy's load_dictionary defaults to a SPACE separator; canonical pair extraction must reuse fetch_corpus.extract_pairs.
+executed and re-executed under C6 (2026-09-21). Final frozen verdict:
+**en — kotoshu #1 on all slices** (nonword 86.4/94.4/95.7 vs SymSpell
+85.4 flat, Hunspell 78.5/93.6/95.1; realword 9.4% best-in-class).
+**de — kotoshu #1 on top-3/top-5/realword** (91.1/92.4/11.1); top-1
+trails SymSpell by 3pp on 79 pairs (C9: umlauts, vowel substitution,
+frequency ties, transpositions). Reports: eval/reports/suggest-benchmark-{en,de}.json.
 
 ## Problem
 
