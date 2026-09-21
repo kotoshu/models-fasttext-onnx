@@ -2,7 +2,7 @@
 
 ## Status
 
-executed (2026-09-21) — kotoshu BEATS Hunspell at non-word top-1 (83.4% vs 78.5%), trails SymSpell by 2.0pp (85.4%) while crushing it at top-3 (92.8% vs 85.4% - SymSpell's TOP mode returns one candidate); real-word top-1 best-in-class at 9.1% but the class is context-bound and hard for everyone (Hunspell 7.4%, SymSpell 4.4%) - quantifying the context-scorer's product value. LanguageTool's 0 is a shape artifact (sentence-checker contract vs isolated words). Evidence: eval/reports/suggest-benchmark-en.json + the frozen splits (en.suggest-{nonword,realword}.json, 2000 pairs/class). En-route fixes: symspellpy's load_dictionary defaults to a SPACE separator; canonical pair extraction must reuse fetch_corpus.extract_pairs.
+executed (2026-09-21); re-executed under C6 (frequency SymSpell + language_code + ranked:true composite, gem PR kotoshu/kotoshu#226). de nonword: top-1 70.9%, top-3 86.1%, top-5 91.1% — top-3 and top-5 #1 across the field (Hunspell 54.4%/74.7%/77.2%, field SymSpell 73.4% on all slices — TOP mode returns one candidate). en bench in flight. C9 (TODO.compare/9) tracks the residual top-1 gap to take sole #1. real-word top-1 best-in-class at 9.1% but the class is context-bound and hard for everyone (Hunspell 7.4%, SymSpell 4.4%) - quantifying the context-scorer's product value. LanguageTool's 0 is a shape artifact (sentence-checker contract vs isolated words). Evidence: eval/reports/suggest-benchmark-en.json + the frozen splits (en.suggest-{nonword,realword}.json, 2000 pairs/class). En-route fixes: symspellpy's load_dictionary defaults to a SPACE separator; canonical pair extraction must reuse fetch_corpus.extract_pairs.
 
 ## Problem
 
