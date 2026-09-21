@@ -1,0 +1,368 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "de",
+ "klass": "realword",
+ "n": 72,
+ "pairs": [
+  {
+   "typo": "erhälst",
+   "correction": "erhältst",
+   "weight": 8
+  },
+  {
+   "typo": "true",
+   "correction": "false",
+   "weight": 3
+  },
+  {
+   "typo": "user",
+   "correction": "benutzer",
+   "weight": 3
+  },
+  {
+   "typo": "nit",
+   "correction": "mit",
+   "weight": 2
+  },
+  {
+   "typo": "nich",
+   "correction": "nicht",
+   "weight": 2
+  },
+  {
+   "typo": "ist",
+   "correction": "hast",
+   "weight": 2
+  },
+  {
+   "typo": "names",
+   "correction": "namens",
+   "weight": 2
+  },
+  {
+   "typo": "anschliessend",
+   "correction": "anschließend",
+   "weight": 2
+  },
+  {
+   "typo": "diese",
+   "correction": "dieser",
+   "weight": 2
+  },
+  {
+   "typo": "we",
+   "correction": "wer",
+   "weight": 2
+  },
+  {
+   "typo": "nun",
+   "correction": "nur",
+   "weight": 2
+  },
+  {
+   "typo": "wähle",
+   "correction": "wählen",
+   "weight": 2
+  },
+  {
+   "typo": "ihre",
+   "correction": "ihr",
+   "weight": 2
+  },
+  {
+   "typo": "ihn",
+   "correction": "sie",
+   "weight": 2
+  },
+  {
+   "typo": "wir",
+   "correction": "wird",
+   "weight": 2
+  },
+  {
+   "typo": "comment",
+   "correction": "feedback",
+   "weight": 2
+  },
+  {
+   "typo": "comments",
+   "correction": "feedback",
+   "weight": 2
+  },
+  {
+   "typo": "where",
+   "correction": "were",
+   "weight": 1
+  },
+  {
+   "typo": "da",
+   "correction": "dar",
+   "weight": 1
+  },
+  {
+   "typo": "seiten",
+   "correction": "seite",
+   "weight": 1
+  },
+  {
+   "typo": "is",
+   "correction": "ist",
+   "weight": 1
+  },
+  {
+   "typo": "diese",
+   "correction": "dieses",
+   "weight": 1
+  },
+  {
+   "typo": "vom",
+   "correction": "von",
+   "weight": 1
+  },
+  {
+   "typo": "one",
+   "correction": "eins",
+   "weight": 1
+  },
+  {
+   "typo": "diese",
+   "correction": "die",
+   "weight": 1
+  },
+  {
+   "typo": "photo",
+   "correction": "foto",
+   "weight": 1
+  },
+  {
+   "typo": "photos",
+   "correction": "fotos",
+   "weight": 1
+  },
+  {
+   "typo": "bereinigt",
+   "correction": "geleert",
+   "weight": 1
+  },
+  {
+   "typo": "wiedergeben",
+   "correction": "wiedergegeben",
+   "weight": 1
+  },
+  {
+   "typo": "iss",
+   "correction": "ist",
+   "weight": 1
+  },
+  {
+   "typo": "diesen",
+   "correction": "dieses",
+   "weight": 1
+  },
+  {
+   "typo": "infos",
+   "correction": "info",
+   "weight": 1
+  },
+  {
+   "typo": "deuten",
+   "correction": "deutet",
+   "weight": 1
+  },
+  {
+   "typo": "läd",
+   "correction": "lädt",
+   "weight": 1
+  },
+  {
+   "typo": "eine",
+   "correction": "ein",
+   "weight": 1
+  },
+  {
+   "typo": "weiter",
+   "correction": "weitere",
+   "weight": 1
+  },
+  {
+   "typo": "soll",
+   "correction": "sollte",
+   "weight": 1
+  },
+  {
+   "typo": "erkennen",
+   "correction": "erkennt",
+   "weight": 1
+  },
+  {
+   "typo": "seinen",
+   "correction": "dessen",
+   "weight": 1
+  },
+  {
+   "typo": "antworte",
+   "correction": "antworten",
+   "weight": 1
+  },
+  {
+   "typo": "dein",
+   "correction": "deinen",
+   "weight": 1
+  },
+  {
+   "typo": "dieses",
+   "correction": "dieser",
+   "weight": 1
+  },
+  {
+   "typo": "sollten",
+   "correction": "sollte",
+   "weight": 1
+  },
+  {
+   "typo": "sollte",
+   "correction": "sollten",
+   "weight": 1
+  },
+  {
+   "typo": "for",
+   "correction": "vor",
+   "weight": 1
+  },
+  {
+   "typo": "author",
+   "correction": "autor",
+   "weight": 1
+  },
+  {
+   "typo": "dd",
+   "correction": "du",
+   "weight": 1
+  },
+  {
+   "typo": "ss",
+   "correction": "es",
+   "weight": 1
+  },
+  {
+   "typo": "dem",
+   "correction": "den",
+   "weight": 1
+  },
+  {
+   "typo": "arbeite",
+   "correction": "arbeiten",
+   "weight": 1
+  },
+  {
+   "typo": "unseren",
+   "correction": "unser",
+   "weight": 1
+  },
+  {
+   "typo": "acht",
+   "correction": "sieben",
+   "weight": 1
+  },
+  {
+   "typo": "eine",
+   "correction": "einen",
+   "weight": 1
+  },
+  {
+   "typo": "lernen",
+   "correction": "sehen",
+   "weight": 1
+  },
+  {
+   "typo": "die",
+   "correction": "sie",
+   "weight": 1
+  },
+  {
+   "typo": "t",
+   "correction": "d",
+   "weight": 1
+  },
+  {
+   "typo": "allgemeine",
+   "correction": "allgemeinen",
+   "weight": 1
+  },
+  {
+   "typo": "unserer",
+   "correction": "unseren",
+   "weight": 1
+  },
+  {
+   "typo": "eingeben",
+   "correction": "ein",
+   "weight": 1
+  },
+  {
+   "typo": "konnt",
+   "correction": "konnte",
+   "weight": 1
+  },
+  {
+   "typo": "sind",
+   "correction": "wurden",
+   "weight": 1
+  },
+  {
+   "typo": "vollständige",
+   "correction": "vollständigen",
+   "weight": 1
+  },
+  {
+   "typo": "übergeordnet",
+   "correction": "übergeordnete",
+   "weight": 1
+  },
+  {
+   "typo": "schau",
+   "correction": "schaue",
+   "weight": 1
+  },
+  {
+   "typo": "bietet",
+   "correction": "bieten",
+   "weight": 1
+  },
+  {
+   "typo": "wart",
+   "correction": "warnt",
+   "weight": 1
+  },
+  {
+   "typo": "das",
+   "correction": "dass",
+   "weight": 1
+  },
+  {
+   "typo": "abgemeldet",
+   "correction": "angemeldet",
+   "weight": 1
+  },
+  {
+   "typo": "mir",
+   "correction": "mit",
+   "weight": 1
+  },
+  {
+   "typo": "int",
+   "correction": "zu",
+   "weight": 1
+  },
+  {
+   "typo": "würde",
+   "correction": "wurde",
+   "weight": 1
+  },
+  {
+   "typo": "stimmten",
+   "correction": "stimmen",
+   "weight": 1
+  }
+ ]
+}

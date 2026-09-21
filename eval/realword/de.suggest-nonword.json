@@ -1,0 +1,403 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "de",
+ "klass": "nonword",
+ "n": 79,
+ "pairs": [
+  {
+   "typo": "sktiven",
+   "correction": "aktiven",
+   "weight": 3
+  },
+  {
+   "typo": "ihrt",
+   "correction": "ihr",
+   "weight": 2
+  },
+  {
+   "typo": "hoffentliche",
+   "correction": "hoffentlich",
+   "weight": 2
+  },
+  {
+   "typo": "gesteck",
+   "correction": "gesteckt",
+   "weight": 2
+  },
+  {
+   "typo": "bswp",
+   "correction": "bspw",
+   "weight": 2
+  },
+  {
+   "typo": "eingebrauter",
+   "correction": "eingebauter",
+   "weight": 2
+  },
+  {
+   "typo": "arichivieren",
+   "correction": "archivieren",
+   "weight": 2
+  },
+  {
+   "typo": "inforamtionen",
+   "correction": "informationen",
+   "weight": 2
+  },
+  {
+   "typo": "newsleter",
+   "correction": "newsletter",
+   "weight": 2
+  },
+  {
+   "typo": "ermittlet",
+   "correction": "ermittelt",
+   "weight": 2
+  },
+  {
+   "typo": "saved",
+   "correction": "save",
+   "weight": 1
+  },
+  {
+   "typo": "authorisiert",
+   "correction": "autorisiert",
+   "weight": 1
+  },
+  {
+   "typo": "allgmein",
+   "correction": "allgemein",
+   "weight": 1
+  },
+  {
+   "typo": "ertsllen",
+   "correction": "erstellen",
+   "weight": 1
+  },
+  {
+   "typo": "eingenen",
+   "correction": "eigenen",
+   "weight": 1
+  },
+  {
+   "typo": "benuzte",
+   "correction": "benutzte",
+   "weight": 1
+  },
+  {
+   "typo": "kontkatieren",
+   "correction": "kontaktieren",
+   "weight": 1
+  },
+  {
+   "typo": "enhaltenen",
+   "correction": "enthaltenen",
+   "weight": 1
+  },
+  {
+   "typo": "eläutern",
+   "correction": "erläutern",
+   "weight": 1
+  },
+  {
+   "typo": "erfogreich",
+   "correction": "erfolgreich",
+   "weight": 1
+  },
+  {
+   "typo": "sue",
+   "correction": "sie",
+   "weight": 1
+  },
+  {
+   "typo": "whant",
+   "correction": "want",
+   "weight": 1
+  },
+  {
+   "typo": "verwewndete",
+   "correction": "verwendete",
+   "weight": 1
+  },
+  {
+   "typo": "breits",
+   "correction": "bereits",
+   "weight": 1
+  },
+  {
+   "typo": "whenn",
+   "correction": "wenn",
+   "weight": 1
+  },
+  {
+   "typo": "nene",
+   "correction": "neue",
+   "weight": 1
+  },
+  {
+   "typo": "verlbeibende",
+   "correction": "verbleibende",
+   "weight": 1
+  },
+  {
+   "typo": "änder",
+   "correction": "ändern",
+   "weight": 1
+  },
+  {
+   "typo": "weden",
+   "correction": "werden",
+   "weight": 1
+  },
+  {
+   "typo": "fäälig",
+   "correction": "fällig",
+   "weight": 1
+  },
+  {
+   "typo": "vergangenene",
+   "correction": "vergangenen",
+   "weight": 1
+  },
+  {
+   "typo": "nehrfach",
+   "correction": "mehrfach",
+   "weight": 1
+  },
+  {
+   "typo": "abzulgen",
+   "correction": "abzulegen",
+   "weight": 1
+  },
+  {
+   "typo": "konvertierz",
+   "correction": "konvertiert",
+   "weight": 1
+  },
+  {
+   "typo": "availabe",
+   "correction": "available",
+   "weight": 1
+  },
+  {
+   "typo": "eingzuhalten",
+   "correction": "einzuhalten",
+   "weight": 1
+  },
+  {
+   "typo": "verlankt",
+   "correction": "verlangt",
+   "weight": 1
+  },
+  {
+   "typo": "deing",
+   "correction": "dein",
+   "weight": 1
+  },
+  {
+   "typo": "beabeiten",
+   "correction": "bearbeiten",
+   "weight": 1
+  },
+  {
+   "typo": "elntern",
+   "correction": "eltern",
+   "weight": 1
+  },
+  {
+   "typo": "gejöscht",
+   "correction": "gelöscht",
+   "weight": 1
+  },
+  {
+   "typo": "anzigen",
+   "correction": "anzeigen",
+   "weight": 1
+  },
+  {
+   "typo": "weclhe",
+   "correction": "welche",
+   "weight": 1
+  },
+  {
+   "typo": "sptäer",
+   "correction": "später",
+   "weight": 1
+  },
+  {
+   "typo": "benuze",
+   "correction": "benutze",
+   "weight": 1
+  },
+  {
+   "typo": "enem",
+   "correction": "einem",
+   "weight": 1
+  },
+  {
+   "typo": "steck",
+   "correction": "steckt",
+   "weight": 1
+  },
+  {
+   "typo": "gefundne",
+   "correction": "gefunden",
+   "weight": 1
+  },
+  {
+   "typo": "bleibn",
+   "correction": "bleiben",
+   "weight": 1
+  },
+  {
+   "typo": "verunstaltungen",
+   "correction": "veranstaltungen",
+   "weight": 1
+  },
+  {
+   "typo": "historsiche",
+   "correction": "historische",
+   "weight": 1
+  },
+  {
+   "typo": "seperat",
+   "correction": "separat",
+   "weight": 1
+  },
+  {
+   "typo": "makiere",
+   "correction": "markiere",
+   "weight": 1
+  },
+  {
+   "typo": "enginer",
+   "correction": "engine",
+   "weight": 1
+  },
+  {
+   "typo": "entscheidene",
+   "correction": "entscheidende",
+   "weight": 1
+  },
+  {
+   "typo": "nehem",
+   "correction": "nehmen",
+   "weight": 1
+  },
+  {
+   "typo": "wiviele",
+   "correction": "wieviele",
+   "weight": 1
+  },
+  {
+   "typo": "ermüglichen",
+   "correction": "ermöglichen",
+   "weight": 1
+  },
+  {
+   "typo": "voneineander",
+   "correction": "voneinander",
+   "weight": 1
+  },
+  {
+   "typo": "maste",
+   "correction": "master",
+   "weight": 1
+  },
+  {
+   "typo": "doie",
+   "correction": "die",
+   "weight": 1
+  },
+  {
+   "typo": "syncron",
+   "correction": "synchron",
+   "weight": 1
+  },
+  {
+   "typo": "keien",
+   "correction": "keine",
+   "weight": 1
+  },
+  {
+   "typo": "dasß",
+   "correction": "dass",
+   "weight": 1
+  },
+  {
+   "typo": "brwoser",
+   "correction": "browser",
+   "weight": 1
+  },
+  {
+   "typo": "berreits",
+   "correction": "bereits",
+   "weight": 1
+  },
+  {
+   "typo": "befindent",
+   "correction": "befindet",
+   "weight": 1
+  },
+  {
+   "typo": "extenen",
+   "correction": "externen",
+   "weight": 1
+  },
+  {
+   "typo": "ug",
+   "correction": "bug",
+   "weight": 1
+  },
+  {
+   "typo": "werdne",
+   "correction": "werden",
+   "weight": 1
+  },
+  {
+   "typo": "datein",
+   "correction": "dateien",
+   "weight": 1
+  },
+  {
+   "typo": "üngültige",
+   "correction": "ungültige",
+   "weight": 1
+  },
+  {
+   "typo": "abebrochen",
+   "correction": "abgebrochen",
+   "weight": 1
+  },
+  {
+   "typo": "riehe",
+   "correction": "reihe",
+   "weight": 1
+  },
+  {
+   "typo": "lann",
+   "correction": "kann",
+   "weight": 1
+  },
+  {
+   "typo": "ertelle",
+   "correction": "erstelle",
+   "weight": 1
+  },
+  {
+   "typo": "benögt",
+   "correction": "benötigt",
+   "weight": 1
+  },
+  {
+   "typo": "hinzufügsen",
+   "correction": "hinzufügen",
+   "weight": 1
+  },
+  {
+   "typo": "bilschirm",
+   "correction": "bildschirm",
+   "weight": 1
+  }
+ ]
+}

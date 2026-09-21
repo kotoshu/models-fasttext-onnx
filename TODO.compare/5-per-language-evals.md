@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-21) — rides the C1 harness
+executed for en + de (2026-09-21) — de: 79 nonword + 72 realword pairs (the corpus is thin for de, labeled). de nonword top-1: SymSpell 73.4% (wiki unigram dictionary) > Hunspell 54.4% > kotoshu 50.6%; real-word: kotoshu 8.3% best-in-class (Hunspell 5.6%). The pattern mirrors en: context-free engines are strong on nonwords, the real-word class is the open frontier. Future languages: one command each (extract pairs -> run harness) wherever a dictionary + Phase-0 pairs exist.
 
 ## Problem
 

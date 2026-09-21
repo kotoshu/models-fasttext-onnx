@@ -7,6 +7,7 @@ bounded subsample) at top-1/3/5 exact-match of the human correction.
 """
 import argparse
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -63,11 +64,12 @@ def run_symspell(words, lang):
     return results
 
 
-def run_kotoshu(words):
+def run_kotoshu(words, lang="en"):
+    env = dict(os.environ, BENCH_LANG=lang)
     proc = subprocess.run(
         ["ruby", "/tmp/bench_kotoshu.rb"],
         input="\n".join(words) + "\n", capture_output=True, text=True,
-        cwd=str(Path.home() / "src/kotoshu/kotoshu"), timeout=3600)
+        cwd=str(Path.home() / "src/kotoshu/kotoshu"), env=env, timeout=3600)
     mapping = {}
     for line in proc.stdout.splitlines():
         try:
@@ -136,7 +138,7 @@ def main():
             elif name == "symspell":
                 preds = fn(words, args.lang)
             else:
-                preds = fn(words)
+                preds = fn(words, args.lang)
             per_class[klass] = score(preds, pairs)
         report["engines"][name] = per_class
         print(f"{name}: {json.dumps(per_class)}", flush=True)
