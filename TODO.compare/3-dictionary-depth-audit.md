@@ -2,7 +2,7 @@
 
 ## Status
 
-in-progress (2026-09-21)
+executed (2026-09-21) — the gap is EXACTLY the CJK set: 53/57 model languages have full dictionary coverage (many with regional variants); the only four with NO dictionary of any variant are ja, zh-Hans-CN, zh-Hant-HK, zh-Hant-TW — the known CJK problem (kana/kanji and Chinese spelling are not Hunspell-shaped; they need per-variant open wordlists, e.g. MOE/edu.tw-derived for zh-Hant). Reverse set: 9 dictionary-only languages with no model (fo fur hyw ie ltg nds rw tlh tlh-Latn — Klingon included; small/regional, candidates for the mini-tier fleet later). Evidence: eval/reports/dictionary-coverage.json. FOLLOW-UP: the zh dictionary acquisition arc (wordlist sourcing + conversion) is the single highest-impact dictionary task.
 
 ## Problem
 

@@ -171,6 +171,7 @@ eval/cbench/
 # as is the design doc + reports convention everywhere else.
 eval/realword/*.json
 !eval/realword/*.probe.*.json
+!eval/realword/*.suggest-*.json
 eval/realword/*.clean.jsonl
 # Confusion tables are small frozen evidence (plan 15 Phase-0) and are
 # committed; giants that would dwarf them (ja/ko until the
