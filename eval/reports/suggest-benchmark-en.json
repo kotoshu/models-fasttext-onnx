@@ -33,27 +33,17 @@
   },
   "kotoshu": {
    "nonword": {
-    "top1": 0.8335,
-    "top3": 0.928,
-    "top5": 0.9395,
+    "top1": 0.864,
+    "top3": 0.9435,
+    "top5": 0.9565,
     "n": 2000
    },
    "realword": {
-    "top1": 0.0905,
-    "top3": 0.117,
+    "top1": 0.094,
+    "top3": 0.1165,
     "top5": 0.122,
     "n": 2000
    }
-  },
-  "languagetool": {
-   "note": "public API, bounded 300-pair subsample, rate-limit aware",
-   "nonword+realword": {
-    "top1": 0.0,
-    "top3": 0.0,
-    "top5": 0.0,
-    "n": 300
-   }
   }
- },
- "verdict": "kotoshu is competitive with the field on non-word correction: top-1 83.4% vs Hunspell 78.5% (kotoshu wins) and SymSpell 85.4% (SymSpell edges by 2.0pp, but returns a single candidate - top-3 is 92.8% vs 85.4%). The real-word class is hard for every context-free engine (9.1% best) - exactly the class the context-scorer arc targets, and this benchmark quantifies its value. LanguageTool's 0 is a benchmark-shape artifact: it checks full sentences, not isolated words, so its word-level score is not comparable to its real product contract."
+ }
 }
