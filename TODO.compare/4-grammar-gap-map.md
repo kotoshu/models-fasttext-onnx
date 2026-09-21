@@ -2,7 +2,7 @@
 
 ## Status
 
-scoped (2026-09-21) — measured gap map, no fake implementation
+scoped and measured (2026-09-21) — the inventory is THREE English rules total (EN_A_VS_AN, EN_THERE_THEIR, EN_DOUBLE_NEGATIVE) over 8 pattern-matcher classes (rule_engine/rule_loader + YAML rules in the dictionaries repo, en/grammar/rules.yaml); the engine is open/closed and the gap is rule CONTENT, not plumbing. LanguageTool-class coverage means thousands of rules per major language (per their published docs; no precise count asserted here) across grammar, style, register, and typography categories. The honest path: (1) a rule-authoring harness with per-rule FP budgets (the typo arc's lesson - never ship a rule on vibes); (2) priority from C1's error-class breakdown; (3) per-language batches. This is a multi-quarter content program - this plan records the map and recipe; it does not pretend to ship it in one pass.
 
 ## Problem
 
