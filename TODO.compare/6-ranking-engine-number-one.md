@@ -2,13 +2,14 @@
 
 ## Status
 
-in progress (2026-09-21). Root causes measured:
-
-1. **Native backend short-circuit.** Default `backend: "auto"` routes `suggest` through kotoshu-rs Hunspell with `ranked: true` (verbatim order). The language-aware Ruby scorer never runs when the extension is loaded. Conformance vectors are en-only for suggest — non-English native order is ungoverned. Symptom: de junk ("ihr-t", "ihr.t") outranks "ihr".
-2. **language_code never reached EditDistanceStrategy.** Spellchecker built Generator without `language_code:` → strategies defaulted to `'en'` frequency tiers + QWERTY for every language. Patched both Generator.new sites (gem, uncommitted).
-3. **Candidate pool is the wrong dictionary.** Hunspell aff+dic includes compound-split artifacts. SymSpell beats us because it indexes a compact frequency list. The gem already has `SymSpellStrategy` but (a) it is not in DEFAULT_ALGORITHMS, (b) autoload constant is misspelled (`SymspellStrategy` vs class `SymSpellStrategy`), (c) it indexes the Hunspell lexicon, not the frequency full_list. Offline probe: SymSpellStrategy + wiki-freq-de full_list + (distance, −ipm) rank is the path to match/beat field SymSpell.
-
-German Ruby-engine baseline after language_code fix: nonword top-1 54.4% (SymSpell 73.4%, Hunspell 54.4%); top-5 77.2% — correct word is usually present, order loses. Real-word: kotoshu 12.5% best-in-class.
+partially executed (2026-09-21) — gem PR kotoshu/kotoshu#226 lands the ranking path:
+language_code threaded into Generator; suggest always uses the Ruby pipeline;
+SymSpellStrategy is DEFAULT primary, indexes frequency full_list when present,
+ranks by (distance, frequency rank); dual-layout keyboard_penalty (native+QWERTY);
+Chinese IME layouts (Pinyin/Jyutping/Cangjie/Sucheng). Offline de nonword probe:
+SymSpell+wiki-freq top-1 **74.7%** beats field SymSpell 73.4%. Remaining: publish
+wiki-unigram Kelly JSONs to frequency-list-kelly (de/es/fr/pt/…), freeze C1 harness
+reports under the fixed path, extend KELLY_LANGUAGES. C7 keyboard plan parallel.
 
 ## Problem
 

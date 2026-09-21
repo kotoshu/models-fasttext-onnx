@@ -2,7 +2,13 @@
 
 ## Status
 
-scoped (2026-09-21). Gem ships 17 layouts (arabic, azerty, bulgarian, devanagari_inscript, dubeolsik, dvorak, greek, hebrew, hrsl, jcuken, latin, persian, qwerty, qwertz, serbian, turkish_q, ukrainian). Registry.layout_for picks ONE layout per language_code (exact → base → script default → QWERTY). Missing: Chinese IME layouts (pinyin≈QWERTY keys with tone digits, cangjie, sucheng, cantonese/jyutping). Owner constraint: a user may type on a **native** layout OR plain **QWERTY** (or any Latin layout) — we can only guess, accept config, or detect via declarative signal; we might never know.
+partially executed (2026-09-21) — gem PR #226: Registry.layouts_for returns
+[native, QWERTY] when they differ; EditDistanceStrategy keyboard_penalty takes
+min across the set; Chinese IME layouts added (Pinyin/Jyutping/Cangjie/Sucheng)
+with regional zh codes; supports_language? exact-match so zh-Hant-TW is not
+stolen by bare zh→Pinyin. Remaining: user-config keyboard_layouts: override on
+Configuration; IME-specific confusion pairs (tone digits, cangjie radicals);
+keyboard-aware error class in C1 harness.
 
 ## Problem
 
