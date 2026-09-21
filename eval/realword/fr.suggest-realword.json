@@ -1,0 +1,1203 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "fr",
+ "klass": "realword",
+ "n": 239,
+ "pairs": [
+  {
+   "typo": "donnée",
+   "correction": "données",
+   "weight": 6
+  },
+  {
+   "typo": "dépendance",
+   "correction": "dépendances",
+   "weight": 6
+  },
+  {
+   "typo": "à",
+   "correction": "a",
+   "weight": 4
+  },
+  {
+   "typo": "le",
+   "correction": "la",
+   "weight": 4
+  },
+  {
+   "typo": "champs",
+   "correction": "champ",
+   "weight": 4
+  },
+  {
+   "typo": "vous",
+   "correction": "vos",
+   "weight": 4
+  },
+  {
+   "typo": "a",
+   "correction": "à",
+   "weight": 4
+  },
+  {
+   "typo": "librairie",
+   "correction": "bibliothèque",
+   "weight": 3
+  },
+  {
+   "typo": "on",
+   "correction": "ont",
+   "weight": 3
+  },
+  {
+   "typo": "chaines",
+   "correction": "chaînes",
+   "weight": 3
+  },
+  {
+   "typo": "simple",
+   "correction": "simples",
+   "weight": 3
+  },
+  {
+   "typo": "classe",
+   "correction": "classes",
+   "weight": 3
+  },
+  {
+   "typo": "chemin",
+   "correction": "chemins",
+   "weight": 3
+  },
+  {
+   "typo": "plis",
+   "correction": "plus",
+   "weight": 3
+  },
+  {
+   "typo": "paramètre",
+   "correction": "paramètres",
+   "weight": 2
+  },
+  {
+   "typo": "connecte",
+   "correction": "connexion",
+   "weight": 2
+  },
+  {
+   "typo": "project",
+   "correction": "projet",
+   "weight": 2
+  },
+  {
+   "typo": "entrer",
+   "correction": "entrez",
+   "weight": 2
+  },
+  {
+   "typo": "créé",
+   "correction": "créez",
+   "weight": 2
+  },
+  {
+   "typo": "importé",
+   "correction": "importée",
+   "weight": 2
+  },
+  {
+   "typo": "de",
+   "correction": "des",
+   "weight": 2
+  },
+  {
+   "typo": "soutient",
+   "correction": "soutien",
+   "weight": 2
+  },
+  {
+   "typo": "crée",
+   "correction": "créer",
+   "weight": 2
+  },
+  {
+   "typo": "aller",
+   "correction": "allez",
+   "weight": 2
+  },
+  {
+   "typo": "arrêter",
+   "correction": "arrêtez",
+   "weight": 2
+  },
+  {
+   "typo": "template",
+   "correction": "templates",
+   "weight": 2
+  },
+  {
+   "typo": "continue",
+   "correction": "continu",
+   "weight": 2
+  },
+  {
+   "typo": "permet",
+   "correction": "permette",
+   "weight": 2
+  },
+  {
+   "typo": "selon",
+   "correction": "seront",
+   "weight": 2
+  },
+  {
+   "typo": "un",
+   "correction": "une",
+   "weight": 2
+  },
+  {
+   "typo": "élement",
+   "correction": "élément",
+   "weight": 2
+  },
+  {
+   "typo": "model",
+   "correction": "modèle",
+   "weight": 2
+  },
+  {
+   "typo": "comment",
+   "correction": "feedback",
+   "weight": 2
+  },
+  {
+   "typo": "comments",
+   "correction": "feedback",
+   "weight": 2
+  },
+  {
+   "typo": "pas",
+   "correction": "par",
+   "weight": 2
+  },
+  {
+   "typo": "composants",
+   "correction": "composant",
+   "weight": 2
+  },
+  {
+   "typo": "préférés",
+   "correction": "préférées",
+   "weight": 2
+  },
+  {
+   "typo": "de",
+   "correction": "du",
+   "weight": 2
+  },
+  {
+   "typo": "function",
+   "correction": "fonction",
+   "weight": 2
+  },
+  {
+   "typo": "fonctionnalité",
+   "correction": "fonctionnalités",
+   "weight": 2
+  },
+  {
+   "typo": "chaine",
+   "correction": "chaîne",
+   "weight": 2
+  },
+  {
+   "typo": "chercher",
+   "correction": "cherchez",
+   "weight": 2
+  },
+  {
+   "typo": "sur",
+   "correction": "sûr",
+   "weight": 1
+  },
+  {
+   "typo": "de",
+   "correction": "dans",
+   "weight": 1
+  },
+  {
+   "typo": "utilisée",
+   "correction": "utilisé",
+   "weight": 1
+  },
+  {
+   "typo": "ecrit",
+   "correction": "écrit",
+   "weight": 1
+  },
+  {
+   "typo": "donné",
+   "correction": "donnée",
+   "weight": 1
+  },
+  {
+   "typo": "francais",
+   "correction": "français",
+   "weight": 1
+  },
+  {
+   "typo": "les",
+   "correction": "des",
+   "weight": 1
+  },
+  {
+   "typo": "projets",
+   "correction": "projet",
+   "weight": 1
+  },
+  {
+   "typo": "address",
+   "correction": "adresse",
+   "weight": 1
+  },
+  {
+   "typo": "dan",
+   "correction": "dans",
+   "weight": 1
+  },
+  {
+   "typo": "mois",
+   "correction": "moins",
+   "weight": 1
+  },
+  {
+   "typo": "nous",
+   "correction": "vous",
+   "weight": 1
+  },
+  {
+   "typo": "basé",
+   "correction": "basés",
+   "weight": 1
+  },
+  {
+   "typo": "prêt",
+   "correction": "près",
+   "weight": 1
+  },
+  {
+   "typo": "désirer",
+   "correction": "désirez",
+   "weight": 1
+  },
+  {
+   "typo": "exécuter",
+   "correction": "exécutez",
+   "weight": 1
+  },
+  {
+   "typo": "aménagés",
+   "correction": "aménagées",
+   "weight": 1
+  },
+  {
+   "typo": "utilisé",
+   "correction": "utilisée",
+   "weight": 1
+  },
+  {
+   "typo": "notifications",
+   "correction": "notification",
+   "weight": 1
+  },
+  {
+   "typo": "profile",
+   "correction": "profil",
+   "weight": 1
+  },
+  {
+   "typo": "quan",
+   "correction": "quand",
+   "weight": 1
+  },
+  {
+   "typo": "to",
+   "correction": "ton",
+   "weight": 1
+  },
+  {
+   "typo": "nus",
+   "correction": "nous",
+   "weight": 1
+  },
+  {
+   "typo": "digitales",
+   "correction": "numériques",
+   "weight": 1
+  },
+  {
+   "typo": "se",
+   "correction": "de",
+   "weight": 1
+  },
+  {
+   "typo": "parent",
+   "correction": "parente",
+   "weight": 1
+  },
+  {
+   "typo": "obtenir",
+   "correction": "avoir",
+   "weight": 1
+  },
+  {
+   "typo": "seulement",
+   "correction": "seuls",
+   "weight": 1
+  },
+  {
+   "typo": "supporté",
+   "correction": "supportée",
+   "weight": 1
+  },
+  {
+   "typo": "de",
+   "correction": "ne",
+   "weight": 1
+  },
+  {
+   "typo": "désolé",
+   "correction": "désolés",
+   "weight": 1
+  },
+  {
+   "typo": "références",
+   "correction": "référence",
+   "weight": 1
+  },
+  {
+   "typo": "necessaire",
+   "correction": "nécessaire",
+   "weight": 1
+  },
+  {
+   "typo": "produit",
+   "correction": "objet",
+   "weight": 1
+  },
+  {
+   "typo": "periode",
+   "correction": "période",
+   "weight": 1
+  },
+  {
+   "typo": "ici",
+   "correction": "donc",
+   "weight": 1
+  },
+  {
+   "typo": "copié",
+   "correction": "copiée",
+   "weight": 1
+  },
+  {
+   "typo": "maitriser",
+   "correction": "maîtriser",
+   "weight": 1
+  },
+  {
+   "typo": "sophistiqué",
+   "correction": "sophistiquée",
+   "weight": 1
+  },
+  {
+   "typo": "puisse",
+   "correction": "puissent",
+   "weight": 1
+  },
+  {
+   "typo": "appelles",
+   "correction": "appelle",
+   "weight": 1
+  },
+  {
+   "typo": "dépot",
+   "correction": "dépôt",
+   "weight": 1
+  },
+  {
+   "typo": "le",
+   "correction": "du",
+   "weight": 1
+  },
+  {
+   "typo": "les",
+   "correction": "la",
+   "weight": 1
+  },
+  {
+   "typo": "base",
+   "correction": "bases",
+   "weight": 1
+  },
+  {
+   "typo": "resources",
+   "correction": "ressources",
+   "weight": 1
+  },
+  {
+   "typo": "rendu",
+   "correction": "rendue",
+   "weight": 1
+  },
+  {
+   "typo": "dépendances",
+   "correction": "dépendance",
+   "weight": 1
+  },
+  {
+   "typo": "future",
+   "correction": "futures",
+   "weight": 1
+  },
+  {
+   "typo": "infrastructure",
+   "correction": "infrastructures",
+   "weight": 1
+  },
+  {
+   "typo": "rester",
+   "correction": "reste",
+   "weight": 1
+  },
+  {
+   "typo": "petites",
+   "correction": "petit",
+   "weight": 1
+  },
+  {
+   "typo": "coeur",
+   "correction": "cœur",
+   "weight": 1
+  },
+  {
+   "typo": "soeur",
+   "correction": "sœur",
+   "weight": 1
+  },
+  {
+   "typo": "noeuds",
+   "correction": "nœuds",
+   "weight": 1
+  },
+  {
+   "typo": "oeuvre",
+   "correction": "œuvre",
+   "weight": 1
+  },
+  {
+   "typo": "and",
+   "correction": "et",
+   "weight": 1
+  },
+  {
+   "typo": "mécaniques",
+   "correction": "mécanismes",
+   "weight": 1
+  },
+  {
+   "typo": "monitoring",
+   "correction": "suivi",
+   "weight": 1
+  },
+  {
+   "typo": "monter",
+   "correction": "montrer",
+   "weight": 1
+  },
+  {
+   "typo": "billets",
+   "correction": "billet",
+   "weight": 1
+  },
+  {
+   "typo": "validation",
+   "correction": "validations",
+   "weight": 1
+  },
+  {
+   "typo": "donnerons",
+   "correction": "donneront",
+   "weight": 1
+  },
+  {
+   "typo": "numéros",
+   "correction": "numéro",
+   "weight": 1
+  },
+  {
+   "typo": "offrent",
+   "correction": "offre",
+   "weight": 1
+  },
+  {
+   "typo": "bibliothèques",
+   "correction": "bibliothèque",
+   "weight": 1
+  },
+  {
+   "typo": "protocole",
+   "correction": "protocoles",
+   "weight": 1
+  },
+  {
+   "typo": "coupant",
+   "correction": "couper",
+   "weight": 1
+  },
+  {
+   "typo": "license",
+   "correction": "licence",
+   "weight": 1
+  },
+  {
+   "typo": "appliquer",
+   "correction": "applique",
+   "weight": 1
+  },
+  {
+   "typo": "ajoutez",
+   "correction": "ajoute",
+   "weight": 1
+  },
+  {
+   "typo": "compilés",
+   "correction": "compilées",
+   "weight": 1
+  },
+  {
+   "typo": "fais",
+   "correction": "fait",
+   "weight": 1
+  },
+  {
+   "typo": "ue",
+   "correction": "que",
+   "weight": 1
+  },
+  {
+   "typo": "vu",
+   "correction": "de",
+   "weight": 1
+  },
+  {
+   "typo": "package",
+   "correction": "packages",
+   "weight": 1
+  },
+  {
+   "typo": "au",
+   "correction": "ah",
+   "weight": 1
+  },
+  {
+   "typo": "une",
+   "correction": "un",
+   "weight": 1
+  },
+  {
+   "typo": "ultérieure",
+   "correction": "ultérieur",
+   "weight": 1
+  },
+  {
+   "typo": "prenons",
+   "correction": "prenant",
+   "weight": 1
+  },
+  {
+   "typo": "cet",
+   "correction": "cette",
+   "weight": 1
+  },
+  {
+   "typo": "trouver",
+   "correction": "trouvé",
+   "weight": 1
+  },
+  {
+   "typo": "opérations",
+   "correction": "opération",
+   "weight": 1
+  },
+  {
+   "typo": "lequel",
+   "correction": "lesquels",
+   "weight": 1
+  },
+  {
+   "typo": "possibilité",
+   "correction": "possibilités",
+   "weight": 1
+  },
+  {
+   "typo": "context",
+   "correction": "contexte",
+   "weight": 1
+  },
+  {
+   "typo": "chose",
+   "correction": "choses",
+   "weight": 1
+  },
+  {
+   "typo": "valeur",
+   "correction": "valeurs",
+   "weight": 1
+  },
+  {
+   "typo": "réponses",
+   "correction": "réponse",
+   "weight": 1
+  },
+  {
+   "typo": "rencontré",
+   "correction": "rencontrés",
+   "weight": 1
+  },
+  {
+   "typo": "peut",
+   "correction": "veut",
+   "weight": 1
+  },
+  {
+   "typo": "tache",
+   "correction": "tâche",
+   "weight": 1
+  },
+  {
+   "typo": "à",
+   "correction": "en",
+   "weight": 1
+  },
+  {
+   "typo": "multiple",
+   "correction": "multiples",
+   "weight": 1
+  },
+  {
+   "typo": "manière",
+   "correction": "manières",
+   "weight": 1
+  },
+  {
+   "typo": "area",
+   "correction": "areas",
+   "weight": 1
+  },
+  {
+   "typo": "troisième",
+   "correction": "quatrième",
+   "weight": 1
+  },
+  {
+   "typo": "similaire",
+   "correction": "similaires",
+   "weight": 1
+  },
+  {
+   "typo": "surement",
+   "correction": "sûrement",
+   "weight": 1
+  },
+  {
+   "typo": "du",
+   "correction": "dû",
+   "weight": 1
+  },
+  {
+   "typo": "mène",
+   "correction": "mènent",
+   "weight": 1
+  },
+  {
+   "typo": "méthode",
+   "correction": "méthodes",
+   "weight": 1
+  },
+  {
+   "typo": "passé",
+   "correction": "passées",
+   "weight": 1
+  },
+  {
+   "typo": "en",
+   "correction": "des",
+   "weight": 1
+  },
+  {
+   "typo": "object",
+   "correction": "objet",
+   "weight": 1
+  },
+  {
+   "typo": "nouvelles",
+   "correction": "nouvelle",
+   "weight": 1
+  },
+  {
+   "typo": "utilisé",
+   "correction": "utiliser",
+   "weight": 1
+  },
+  {
+   "typo": "ca",
+   "correction": "ça",
+   "weight": 1
+  },
+  {
+   "typo": "ajouté",
+   "correction": "ajoutée",
+   "weight": 1
+  },
+  {
+   "typo": "fonctions",
+   "correction": "méthodes",
+   "weight": 1
+  },
+  {
+   "typo": "meme",
+   "correction": "même",
+   "weight": 1
+  },
+  {
+   "typo": "problème",
+   "correction": "problèmes",
+   "weight": 1
+  },
+  {
+   "typo": "rappelle",
+   "correction": "rappel",
+   "weight": 1
+  },
+  {
+   "typo": "accés",
+   "correction": "accès",
+   "weight": 1
+  },
+  {
+   "typo": "entendue",
+   "correction": "entendu",
+   "weight": 1
+  },
+  {
+   "typo": "appelé",
+   "correction": "appelée",
+   "weight": 1
+  },
+  {
+   "typo": "ce",
+   "correction": "se",
+   "weight": 1
+  },
+  {
+   "typo": "minimal",
+   "correction": "minimale",
+   "weight": 1
+  },
+  {
+   "typo": "passer",
+   "correction": "passez",
+   "weight": 1
+  },
+  {
+   "typo": "notamment",
+   "correction": "particulièrement",
+   "weight": 1
+  },
+  {
+   "typo": "ajuster",
+   "correction": "modifier",
+   "weight": 1
+  },
+  {
+   "typo": "déclaré",
+   "correction": "déclarée",
+   "weight": 1
+  },
+  {
+   "typo": "prochaine",
+   "correction": "prochain",
+   "weight": 1
+  },
+  {
+   "typo": "cette",
+   "correction": "cet",
+   "weight": 1
+  },
+  {
+   "typo": "productions",
+   "correction": "production",
+   "weight": 1
+  },
+  {
+   "typo": "command",
+   "correction": "commande",
+   "weight": 1
+  },
+  {
+   "typo": "recommande",
+   "correction": "recommandent",
+   "weight": 1
+  },
+  {
+   "typo": "récupérer",
+   "correction": "récupéré",
+   "weight": 1
+  },
+  {
+   "typo": "ces",
+   "correction": "ses",
+   "weight": 1
+  },
+  {
+   "typo": "définit",
+   "correction": "défini",
+   "weight": 1
+  },
+  {
+   "typo": "contant",
+   "correction": "contenant",
+   "weight": 1
+  },
+  {
+   "typo": "ensembles",
+   "correction": "ensemble",
+   "weight": 1
+  },
+  {
+   "typo": "eventuellement",
+   "correction": "éventuellement",
+   "weight": 1
+  },
+  {
+   "typo": "technique",
+   "correction": "techniquement",
+   "weight": 1
+  },
+  {
+   "typo": "appréciez",
+   "correction": "apprécié",
+   "weight": 1
+  },
+  {
+   "typo": "les",
+   "correction": "aux",
+   "weight": 1
+  },
+  {
+   "typo": "verra",
+   "correction": "verras",
+   "weight": 1
+  },
+  {
+   "typo": "compiler",
+   "correction": "compilé",
+   "weight": 1
+  },
+  {
+   "typo": "temps",
+   "correction": "tant",
+   "weight": 1
+  },
+  {
+   "typo": "et",
+   "correction": "de",
+   "weight": 1
+  },
+  {
+   "typo": "insuffisant",
+   "correction": "insuffisante",
+   "weight": 1
+  },
+  {
+   "typo": "peut",
+   "correction": "peux",
+   "weight": 1
+  },
+  {
+   "typo": "si",
+   "correction": "ci",
+   "weight": 1
+  },
+  {
+   "typo": "prêtent",
+   "correction": "prêtes",
+   "weight": 1
+  },
+  {
+   "typo": "parti",
+   "correction": "partis",
+   "weight": 1
+  },
+  {
+   "typo": "requête",
+   "correction": "requêtes",
+   "weight": 1
+  },
+  {
+   "typo": "déroulant",
+   "correction": "déroulante",
+   "weight": 1
+  },
+  {
+   "typo": "fonction",
+   "correction": "fonctions",
+   "weight": 1
+  },
+  {
+   "typo": "um",
+   "correction": "un",
+   "weight": 1
+  },
+  {
+   "typo": "peux",
+   "correction": "peut",
+   "weight": 1
+  },
+  {
+   "typo": "supérieurs",
+   "correction": "supérieur",
+   "weight": 1
+  },
+  {
+   "typo": "fournie",
+   "correction": "fourni",
+   "weight": 1
+  },
+  {
+   "typo": "fonctions",
+   "correction": "fonction",
+   "weight": 1
+  },
+  {
+   "typo": "mis",
+   "correction": "mise",
+   "weight": 1
+  },
+  {
+   "typo": "meilleur",
+   "correction": "meilleure",
+   "weight": 1
+  },
+  {
+   "typo": "tableaux",
+   "correction": "tableau",
+   "weight": 1
+  },
+  {
+   "typo": "gabarit",
+   "correction": "code",
+   "weight": 1
+  },
+  {
+   "typo": "tout",
+   "correction": "tous",
+   "weight": 1
+  },
+  {
+   "typo": "sureté",
+   "correction": "sûreté",
+   "weight": 1
+  },
+  {
+   "typo": "garantie",
+   "correction": "garantit",
+   "weight": 1
+  },
+  {
+   "typo": "seul",
+   "correction": "seuls",
+   "weight": 1
+  },
+  {
+   "typo": "assertions",
+   "correction": "assertion",
+   "weight": 1
+  },
+  {
+   "typo": "sûre",
+   "correction": "sûr",
+   "weight": 1
+  },
+  {
+   "typo": "créé",
+   "correction": "créée",
+   "weight": 1
+  },
+  {
+   "typo": "alor",
+   "correction": "alors",
+   "weight": 1
+  },
+  {
+   "typo": "champ",
+   "correction": "champs",
+   "weight": 1
+  },
+  {
+   "typo": "pass",
+   "correction": "passe",
+   "weight": 1
+  },
+  {
+   "typo": "reception",
+   "correction": "réception",
+   "weight": 1
+  },
+  {
+   "typo": "management",
+   "correction": "gestion",
+   "weight": 1
+  },
+  {
+   "typo": "de",
+   "correction": "à",
+   "weight": 1
+  },
+  {
+   "typo": "crée",
+   "correction": "créé",
+   "weight": 1
+  },
+  {
+   "typo": "surs",
+   "correction": "sûr",
+   "weight": 1
+  },
+  {
+   "typo": "par",
+   "correction": "pas",
+   "weight": 1
+  },
+  {
+   "typo": "composant",
+   "correction": "composants",
+   "weight": 1
+  },
+  {
+   "typo": "supporte",
+   "correction": "supportent",
+   "weight": 1
+  },
+  {
+   "typo": "force",
+   "correction": "forcent",
+   "weight": 1
+  },
+  {
+   "typo": "ça",
+   "correction": "cela",
+   "weight": 1
+  },
+  {
+   "typo": "savez",
+   "correction": "sachiez",
+   "weight": 1
+  },
+  {
+   "typo": "fusionnée",
+   "correction": "fusionnées",
+   "weight": 1
+  },
+  {
+   "typo": "pour",
+   "correction": "par",
+   "weight": 1
+  },
+  {
+   "typo": "attributs",
+   "correction": "attribut",
+   "weight": 1
+  },
+  {
+   "typo": "renseignés",
+   "correction": "renseignées",
+   "weight": 1
+  },
+  {
+   "typo": "actions",
+   "correction": "modules",
+   "weight": 1
+  },
+  {
+   "typo": "fournit",
+   "correction": "fourni",
+   "weight": 1
+  },
+  {
+   "typo": "préférences",
+   "correction": "préférence",
+   "weight": 1
+  },
+  {
+   "typo": "program",
+   "correction": "programme",
+   "weight": 1
+  },
+  {
+   "typo": "passer",
+   "correction": "passé",
+   "weight": 1
+  },
+  {
+   "typo": "favoris",
+   "correction": "favori",
+   "weight": 1
+  },
+  {
+   "typo": "façon",
+   "correction": "façons",
+   "weight": 1
+  },
+  {
+   "typo": "activer",
+   "correction": "activez",
+   "weight": 1
+  },
+  {
+   "typo": "toutes",
+   "correction": "tous",
+   "weight": 1
+  },
+  {
+   "typo": "veux",
+   "correction": "peux",
+   "weight": 1
+  },
+  {
+   "typo": "celà",
+   "correction": "cela",
+   "weight": 1
+  },
+  {
+   "typo": "uen",
+   "correction": "une",
+   "weight": 1
+  },
+  {
+   "typo": "vérifier",
+   "correction": "vérifié",
+   "weight": 1
+  },
+  {
+   "typo": "utiliser",
+   "correction": "utilisez",
+   "weight": 1
+  },
+  {
+   "typo": "ou",
+   "correction": "où",
+   "weight": 1
+  }
+ ]
+}

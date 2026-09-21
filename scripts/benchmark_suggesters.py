@@ -129,7 +129,8 @@ def main():
         words = [p["typo"] for p in pairs]
         all_words[klass] = (pairs, words)
 
-    dict_base = {"en": "en_US", "de": "de_DE_frami"}.get(args.lang, args.lang)
+    dict_base = {"en": "en_US", "de": "de_DE_frami", "es": "es_ES",
+                 "fr": "fr_FR", "pt": "pt_PT", "ru": "ru_RU"}.get(args.lang, args.lang)
     for name, fn in ENGINES.items():
         per_class = {}
         for klass, (pairs, words) in all_words.items():

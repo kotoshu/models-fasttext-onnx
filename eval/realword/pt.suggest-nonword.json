@@ -1,0 +1,628 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "pt",
+ "klass": "nonword",
+ "n": 124,
+ "pairs": [
+  {
+   "typo": "quide",
+   "correction": "guide",
+   "weight": 6
+  },
+  {
+   "typo": "reabir",
+   "correction": "reabrir",
+   "weight": 3
+  },
+  {
+   "typo": "errores",
+   "correction": "erros",
+   "weight": 3
+  },
+  {
+   "typo": "curor",
+   "correction": "cursor",
+   "weight": 3
+  },
+  {
+   "typo": "conínua",
+   "correction": "contínua",
+   "weight": 2
+  },
+  {
+   "typo": "pintana",
+   "correction": "pintada",
+   "weight": 2
+  },
+  {
+   "typo": "alugel",
+   "correction": "aluguel",
+   "weight": 2
+  },
+  {
+   "typo": "uutilizamos",
+   "correction": "utilizamos",
+   "weight": 2
+  },
+  {
+   "typo": "introduão",
+   "correction": "introdução",
+   "weight": 2
+  },
+  {
+   "typo": "pefeito",
+   "correction": "perfeito",
+   "weight": 2
+  },
+  {
+   "typo": "modulos",
+   "correction": "módulos",
+   "weight": 2
+  },
+  {
+   "typo": "coloborar",
+   "correction": "colaborar",
+   "weight": 2
+  },
+  {
+   "typo": "coamndo",
+   "correction": "comando",
+   "weight": 2
+  },
+  {
+   "typo": "recebey",
+   "correction": "recebeu",
+   "weight": 2
+  },
+  {
+   "typo": "builds",
+   "correction": "build",
+   "weight": 2
+  },
+  {
+   "typo": "soportada",
+   "correction": "suportada",
+   "weight": 2
+  },
+  {
+   "typo": "jutamos",
+   "correction": "juntamos",
+   "weight": 1
+  },
+  {
+   "typo": "unidadas",
+   "correction": "unidas",
+   "weight": 1
+  },
+  {
+   "typo": "restart",
+   "correction": "stop",
+   "weight": 1
+  },
+  {
+   "typo": "ramdom",
+   "correction": "random",
+   "weight": 1
+  },
+  {
+   "typo": "resquisições",
+   "correction": "requisições",
+   "weight": 1
+  },
+  {
+   "typo": "discurtir",
+   "correction": "discutir",
+   "weight": 1
+  },
+  {
+   "typo": "inha",
+   "correction": "linha",
+   "weight": 1
+  },
+  {
+   "typo": "lingaugem",
+   "correction": "linguagem",
+   "weight": 1
+  },
+  {
+   "typo": "videl",
+   "correction": "video",
+   "weight": 1
+  },
+  {
+   "typo": "installe",
+   "correction": "instale",
+   "weight": 1
+  },
+  {
+   "typo": "usário",
+   "correction": "usuário",
+   "weight": 1
+  },
+  {
+   "typo": "quaquer",
+   "correction": "qualquer",
+   "weight": 1
+  },
+  {
+   "typo": "demansiadas",
+   "correction": "demasiadas",
+   "weight": 1
+  },
+  {
+   "typo": "histrico",
+   "correction": "histórico",
+   "weight": 1
+  },
+  {
+   "typo": "dpara",
+   "correction": "para",
+   "weight": 1
+  },
+  {
+   "typo": "informarmações",
+   "correction": "informações",
+   "weight": 1
+  },
+  {
+   "typo": "porvisório",
+   "correction": "provisório",
+   "weight": 1
+  },
+  {
+   "typo": "algums",
+   "correction": "alguns",
+   "weight": 1
+  },
+  {
+   "typo": "confirgurar",
+   "correction": "configurar",
+   "weight": 1
+  },
+  {
+   "typo": "analiza",
+   "correction": "analisa",
+   "weight": 1
+  },
+  {
+   "typo": "desvatagem",
+   "correction": "desvantagem",
+   "weight": 1
+  },
+  {
+   "typo": "multiplos",
+   "correction": "múltiplos",
+   "weight": 1
+  },
+  {
+   "typo": "retrições",
+   "correction": "restrições",
+   "weight": 1
+  },
+  {
+   "typo": "oficical",
+   "correction": "oficial",
+   "weight": 1
+  },
+  {
+   "typo": "clausulas",
+   "correction": "cláusulas",
+   "weight": 1
+  },
+  {
+   "typo": "extender",
+   "correction": "estender",
+   "weight": 1
+  },
+  {
+   "typo": "excluido",
+   "correction": "excluído",
+   "weight": 1
+  },
+  {
+   "typo": "ques",
+   "correction": "que",
+   "weight": 1
+  },
+  {
+   "typo": "expresões",
+   "correction": "expressões",
+   "weight": 1
+  },
+  {
+   "typo": "facilmene",
+   "correction": "facilmente",
+   "weight": 1
+  },
+  {
+   "typo": "identifcar",
+   "correction": "identificar",
+   "weight": 1
+  },
+  {
+   "typo": "depedendo",
+   "correction": "dependendo",
+   "weight": 1
+  },
+  {
+   "typo": "construtir",
+   "correction": "construir",
+   "weight": 1
+  },
+  {
+   "typo": "tratatdo",
+   "correction": "tratado",
+   "weight": 1
+  },
+  {
+   "typo": "discusões",
+   "correction": "discussões",
+   "weight": 1
+  },
+  {
+   "typo": "interválo",
+   "correction": "intervalo",
+   "weight": 1
+  },
+  {
+   "typo": "abservar",
+   "correction": "observar",
+   "weight": 1
+  },
+  {
+   "typo": "indentificador",
+   "correction": "identificador",
+   "weight": 1
+  },
+  {
+   "typo": "paramêtros",
+   "correction": "parâmetros",
+   "weight": 1
+  },
+  {
+   "typo": "simpels",
+   "correction": "simples",
+   "weight": 1
+  },
+  {
+   "typo": "percore",
+   "correction": "percorre",
+   "weight": 1
+  },
+  {
+   "typo": "variáveil",
+   "correction": "variável",
+   "weight": 1
+  },
+  {
+   "typo": "correspondênca",
+   "correction": "correspondência",
+   "weight": 1
+  },
+  {
+   "typo": "contruir",
+   "correction": "construir",
+   "weight": 1
+  },
+  {
+   "typo": "variavéis",
+   "correction": "variáveis",
+   "weight": 1
+  },
+  {
+   "typo": "sinaxe",
+   "correction": "sintaxe",
+   "weight": 1
+  },
+  {
+   "typo": "igualidade",
+   "correction": "igualdade",
+   "weight": 1
+  },
+  {
+   "typo": "egular",
+   "correction": "regular",
+   "weight": 1
+  },
+  {
+   "typo": "revise",
+   "correction": "use",
+   "weight": 1
+  },
+  {
+   "typo": "framworks",
+   "correction": "frameworks",
+   "weight": 1
+  },
+  {
+   "typo": "conferêni",
+   "correction": "conferência",
+   "weight": 1
+  },
+  {
+   "typo": "combraça",
+   "correction": "cobrança",
+   "weight": 1
+  },
+  {
+   "typo": "sugerer",
+   "correction": "sugerir",
+   "weight": 1
+  },
+  {
+   "typo": "cppu",
+   "correction": "cpu",
+   "weight": 1
+  },
+  {
+   "typo": "construto",
+   "correction": "construtor",
+   "weight": 1
+  },
+  {
+   "typo": "retorn",
+   "correction": "retorna",
+   "weight": 1
+  },
+  {
+   "typo": "implatação",
+   "correction": "implantação",
+   "weight": 1
+  },
+  {
+   "typo": "discussã",
+   "correction": "discussão",
+   "weight": 1
+  },
+  {
+   "typo": "cimeçar",
+   "correction": "começar",
+   "weight": 1
+  },
+  {
+   "typo": "apresenar",
+   "correction": "apresentar",
+   "weight": 1
+  },
+  {
+   "typo": "multiplas",
+   "correction": "múltiplas",
+   "weight": 1
+  },
+  {
+   "typo": "envolvivas",
+   "correction": "envolvidas",
+   "weight": 1
+  },
+  {
+   "typo": "abilidades",
+   "correction": "habilidades",
+   "weight": 1
+  },
+  {
+   "typo": "opinionado",
+   "correction": "tendencioso",
+   "weight": 1
+  },
+  {
+   "typo": "parser",
+   "correction": "interpretador",
+   "weight": 1
+  },
+  {
+   "typo": "uo",
+   "correction": "o",
+   "weight": 1
+  },
+  {
+   "typo": "banbo",
+   "correction": "banco",
+   "weight": 1
+  },
+  {
+   "typo": "contribution",
+   "correction": "contributions",
+   "weight": 1
+  },
+  {
+   "typo": "compos",
+   "correction": "campos",
+   "weight": 1
+  },
+  {
+   "typo": "cateogory",
+   "correction": "category",
+   "weight": 1
+  },
+  {
+   "typo": "jaanela",
+   "correction": "janela",
+   "weight": 1
+  },
+  {
+   "typo": "lsita",
+   "correction": "lista",
+   "weight": 1
+  },
+  {
+   "typo": "ícno",
+   "correction": "ícone",
+   "weight": 1
+  },
+  {
+   "typo": "controlodor",
+   "correction": "controlador",
+   "weight": 1
+  },
+  {
+   "typo": "systema",
+   "correction": "sistema",
+   "weight": 1
+  },
+  {
+   "typo": "definidio",
+   "correction": "definido",
+   "weight": 1
+  },
+  {
+   "typo": "redfinir",
+   "correction": "redefinir",
+   "weight": 1
+  },
+  {
+   "typo": "comapração",
+   "correction": "comparação",
+   "weight": 1
+  },
+  {
+   "typo": "contrução",
+   "correction": "construção",
+   "weight": 1
+  },
+  {
+   "typo": "sevidor",
+   "correction": "servidor",
+   "weight": 1
+  },
+  {
+   "typo": "applicações",
+   "correction": "aplicações",
+   "weight": 1
+  },
+  {
+   "typo": "inscrease",
+   "correction": "increase",
+   "weight": 1
+  },
+  {
+   "typo": "deslise",
+   "correction": "deslize",
+   "weight": 1
+  },
+  {
+   "typo": "guardadad",
+   "correction": "guardadas",
+   "weight": 1
+  },
+  {
+   "typo": "insert",
+   "correction": "insira",
+   "weight": 1
+  },
+  {
+   "typo": "pagína",
+   "correction": "página",
+   "weight": 1
+  },
+  {
+   "typo": "inidicar",
+   "correction": "indicar",
+   "weight": 1
+  },
+  {
+   "typo": "instsalar",
+   "correction": "instalar",
+   "weight": 1
+  },
+  {
+   "typo": "disconto",
+   "correction": "desconto",
+   "weight": 1
+  },
+  {
+   "typo": "pedio",
+   "correction": "pedido",
+   "weight": 1
+  },
+  {
+   "typo": "instrções",
+   "correction": "instruções",
+   "weight": 1
+  },
+  {
+   "typo": "porraad",
+   "correction": "porrada",
+   "weight": 1
+  },
+  {
+   "typo": "instânciasa",
+   "correction": "instâncias",
+   "weight": 1
+  },
+  {
+   "typo": "dessenvolvido",
+   "correction": "desenvolvido",
+   "weight": 1
+  },
+  {
+   "typo": "intervaldo",
+   "correction": "intervalo",
+   "weight": 1
+  },
+  {
+   "typo": "treimento",
+   "correction": "treinamento",
+   "weight": 1
+  },
+  {
+   "typo": "deocrre",
+   "correction": "decorre",
+   "weight": 1
+  },
+  {
+   "typo": "regrassão",
+   "correction": "regressão",
+   "weight": 1
+  },
+  {
+   "typo": "ofença",
+   "correction": "ofensa",
+   "weight": 1
+  },
+  {
+   "typo": "funcion",
+   "correction": "function",
+   "weight": 1
+  },
+  {
+   "typo": "seçao",
+   "correction": "seção",
+   "weight": 1
+  },
+  {
+   "typo": "silumar",
+   "correction": "simular",
+   "weight": 1
+  },
+  {
+   "typo": "verefique",
+   "correction": "verifique",
+   "weight": 1
+  },
+  {
+   "typo": "variávels",
+   "correction": "variáveis",
+   "weight": 1
+  },
+  {
+   "typo": "opcioinal",
+   "correction": "opcional",
+   "weight": 1
+  },
+  {
+   "typo": "conecção",
+   "correction": "conexão",
+   "weight": 1
+  },
+  {
+   "typo": "informalçoes",
+   "correction": "informações",
+   "weight": 1
+  },
+  {
+   "typo": "incluidas",
+   "correction": "carregadas",
+   "weight": 1
+  }
+ ]
+}
