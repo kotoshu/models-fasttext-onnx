@@ -253,11 +253,23 @@ remains the product ceiling. The gate stands unweakened; plans 146/07
 remain blocked.
 
 
-## Phase 1 evidence (en, neural v3 sentence-constructed — GATE FAILED; three-run series complete)
+## Phase 1 evidence (en, neural v3 — GATE FAILED; CORRECTED 2026-09-21: v3 was a seed-repeat of v2, not the sentence construction)
 
-v3 (TODO.perfection, third issuance) split training into sentences so
-sentence-edge PAD-heavy centers dominate exactly as in eval (~90% vs
-v2's ~2% paragraph-boundary rate). 150k steps, loss 0.0141, 98 min.
+CORRECTION (found while preparing the scaled run, TODO.compare/2): the
+v3 "sentence-constructed" patch silently no-opped (a string replace
+whose target wording had drifted; the patch printed success without
+asserting). v3 therefore re-ran v2's construction with a different
+random seed. The 1.6%/1.4% agreement now reads as SEED STABILITY of
+the paragraph construction — a stronger result for that construction,
+but the sentence-construction axis itself is tested only in the scaled
+run (TODO.compare/2 carries sentence splitting + 45.6M params + 3
+shards together). Patches to this file now assert their targets.
+Original (incorrect) framing preserved below for the record.
+
+v3 (TODO.perfection, third issuance) was INTENDED to split training
+into sentences so sentence-edge PAD-heavy centers dominate exactly as
+in eval (~90% vs v2's ~2% paragraph-boundary rate). 150k steps, loss
+0.0141, 98 min.
 Verdict frozen in eval/realword/en.probe.neural-v3.json (v1/v2
 preserved alongside):
 

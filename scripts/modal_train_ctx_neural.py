@@ -46,8 +46,9 @@ def _clean_token(tok: str) -> str:
     return tok.strip(".,!?;:()[]{}\"'`´„“”…)([]…—–-").lower()
 
 
-@app.function(gpu="A10G", timeout=7200, volumes={"/corpus": volume})
-def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
+@app.function(gpu="A10G", timeout=21600, volumes={"/corpus": volume})
+def train(lang: str, steps: int, corpora_remote: list, vocab_remote: str,
+          d_model: int = 256, layers: int = 2, heads: int = 4, ffn: int = 1024) -> dict:
     import numpy as np
     import onnx
     import onnxruntime as ort
@@ -64,15 +65,15 @@ def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
         WINDOW is reserved for the missing center, so left context
         occupies 0..W-1 and right context W+1..2W)."""
 
-        def __init__(self, vocab: int):
+        def __init__(self, vocab: int, d_model: int, layers: int, heads: int, ffn: int):
             super().__init__()
-            self.tok = nn.Embedding(vocab + 1, D_MODEL)  # +1 = PAD
-            self.pos = nn.Embedding(CTX_LEN + 1, D_MODEL)
+            self.tok = nn.Embedding(vocab + 1, d_model)  # +1 = PAD
+            self.pos = nn.Embedding(CTX_LEN + 1, d_model)
             layer = nn.TransformerEncoderLayer(
-                D_MODEL, HEADS, FFN, batch_first=True, norm_first=True,
+                d_model, heads, ffn, batch_first=True, norm_first=True,
                 activation="gelu")
-            self.enc = nn.TransformerEncoder(layer, LAYERS)
-            self.head = nn.Linear(D_MODEL, vocab + 1)  # tied rows include PAD; never a target
+            self.enc = nn.TransformerEncoder(layer, layers)
+            self.head = nn.Linear(d_model, vocab + 1)  # tied rows include PAD; never a target
             self.head.weight = self.tok.weight
 
         def forward(self, context_ids, pos_ids):
@@ -86,30 +87,36 @@ def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
     V = max(vocab.values()) + 1
     PAD = V
 
-    def refill(buf: list, need: int):
-        buf.clear()
-        pf = pq.ParquetFile(str(Path("/corpus") / corpus_remote))
-        for batch in pf.iter_batches(batch_size=256, columns=["text"]):
-            for text in batch.column("text").to_pylist():
-                for para in (text or "").split("\n"):
-                    ids = [vocab[t] for t in (_clean_token(w) for w in para.split())
-                           if t in vocab]
-                    if len(ids) < 5:
-                        continue
-                    # v2 (P1): EVERY in-vocab center, padded to the
-                    # window - the eval scorer's exact construction, so
-                    # the PAD embedding trains and short contexts stay
-                    # in distribution (v1's untrained PAD dominated).
-                    for i in range(len(ids)):
-                        if ids[i] == 0:
-                            continue
-                        left = ids[max(0, i - WINDOW):i]
-                        right = ids[i + 1:i + 1 + WINDOW]
-                        buf.append((left, right, ids[i]))
-                        if len(buf) >= need:
-                            return
+    shard_i = 0
 
-    model = Cloze(V).to(device)
+    def refill(buf: list, need: int):
+        nonlocal shard_i
+        buf.clear()
+        for _attempt in range(len(corpora_remote)):
+            fname = corpora_remote[shard_i % len(corpora_remote)]
+            shard_i += 1
+            pf = pq.ParquetFile(str(Path("/corpus") / fname))
+            for batch in pf.iter_batches(batch_size=256, columns=["text"]):
+                for text in batch.column("text").to_pylist():
+                    # sentence-level windows (the eval's own unit):
+                    # eval sentences are short and PAD-heavy at the
+                    # edges, so training splits into sentences and pads
+                    # identically. Every in-vocab center.
+                    for sent in re.split(r"[.!?]+\s*", (text or "")):
+                        ids = [vocab[t] for t in (_clean_token(w) for w in sent.split())
+                               if t in vocab]
+                        if len(ids) < 3:
+                            continue
+                        for i in range(len(ids)):
+                            if ids[i] == 0:
+                                continue
+                            left = ids[max(0, i - WINDOW):i]
+                            right = ids[i + 1:i + 1 + WINDOW]
+                            buf.append((left, right, ids[i]))
+                            if len(buf) >= need:
+                                return
+
+    model = Cloze(V, d_model, layers, heads, ffn).to(device)
     n_params = sum(p.numel() for p in model.parameters())
     opt = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01)
 
@@ -196,15 +203,28 @@ def train(lang: str, steps: int, corpus_remote: str, vocab_remote: str) -> dict:
             "parity_err": parity_err, "minutes": round((time.time() - t0) / 60, 1)}
 
 
+EN_SHARDS = [
+    "eval/corpus/en-wiki-train-00000.parquet",
+    "eval/corpus/en-train-00001.parquet",
+    "eval/corpus/en-train-00002.parquet",
+]
+
+
 @app.local_entrypoint()
-def main(lang: str = "en", steps: int = 150000):
-    corpus_local = REPO_ROOT / "eval/corpus/en-wiki-train-00000.parquet"
+def main(lang: str = "en", steps: int = 150000, shards: int = 1,
+         d_model: int = 256, layers: int = 2, heads: int = 4, ffn: int = 1024):
     vocab_local = REPO_ROOT / f"models/{lang}/fasttext.{lang}.vocab.json"
     stamp = time.strftime("%Y%m%d-%H%M%S")
-    corpus_remote = f"neural-{lang}-{stamp}.parquet"
-    vocab_remote = f"neural-{lang}-{stamp}.vocab.json"
+    corpus_remotes = []
     with volume.batch_upload() as batch:
-        batch.put_file(str(corpus_local), corpus_remote)
+        for i in range(shards):
+            local = EN_SHARDS[i]
+            assert (REPO_ROOT / local).exists(), f"missing shard {local}"
+            remote = f"neural-{lang}-{stamp}-s{i}.parquet"
+            batch.put_file(str(REPO_ROOT / local), remote)
+            corpus_remotes.append(remote)
+        vocab_remote = f"neural-{lang}-{stamp}.vocab.json"
         batch.put_file(str(vocab_local), vocab_remote)
-    result = train.remote(lang, steps, corpus_remote, vocab_remote)
+    result = train.remote(lang, steps, corpus_remotes, vocab_remote,
+                          d_model=d_model, layers=layers, heads=heads, ffn=ffn)
     print(json.dumps(result, indent=1))
