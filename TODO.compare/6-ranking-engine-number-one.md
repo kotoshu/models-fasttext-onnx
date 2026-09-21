@@ -2,14 +2,17 @@
 
 ## Status
 
-partially executed (2026-09-21) — gem PR kotoshu/kotoshu#226 lands the ranking path:
-language_code threaded into Generator; suggest always uses the Ruby pipeline;
-SymSpellStrategy is DEFAULT primary, indexes frequency full_list when present,
-ranks by (distance, frequency rank); dual-layout keyboard_penalty (native+QWERTY);
-Chinese IME layouts (Pinyin/Jyutping/Cangjie/Sucheng). Offline de nonword probe:
-SymSpell+wiki-freq top-1 **74.7%** beats field SymSpell 73.4%. Remaining: publish
-wiki-unigram Kelly JSONs to frequency-list-kelly (de/es/fr/pt/…), freeze C1 harness
-reports under the fixed path, extend KELLY_LANGUAGES. C7 keyboard plan parallel.
+executed (2026-09-21) — gem PR kotoshu/kotoshu#226 + frequency-list-kelly#2 (merged).
+**English: kotoshu is #1 on every measured slice** (2000+2000 pairs, frozen
+eval/reports/suggest-benchmark-en.json): nonword top-1 86.4% (SymSpell 85.4%,
+Hunspell 78.5%), top-3 94.4%, top-5 95.7%; real-word top-1 9.4% best-in-class.
+Decisive fixes: true Damerau distance (not deletion-level approximation),
+double-letter pattern ordering (the dominant error class), alphabetical-tiebreak
+elimination (ranked:true end-to-end), Kelly+wiki blended en list (42,585 words).
+**German: #1 on top-3 (91.1%), top-5 (92.4%), real-word (11.1%)**; top-1 70.9%
+vs SymSpell 73.4% on 79 pairs — residual gap = C9. Native suggest path
+retired (Ruby pipeline is the ranking authority; native keeps correct?).
+Conformance: 2,630 vectors, 0 failures, 0 divergences.
 
 ## Problem
 
