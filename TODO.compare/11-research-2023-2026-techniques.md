@@ -24,3 +24,12 @@ The engine must adopt 2023-2026 techniques, not 2016-era ones, to stay #1.
 ## Consumers
 
 The real-word frontier; zh/ja quality; wave-2 evals; the C1 harness.
+
+## Adoption roadmap
+
+The full adoption roadmap lives in **TODO.sota/{1-9}** (the authoritative
+namespace): S1 synthetic typo engine (MulTypo-class), S2 constrained
+seq2seq corrector, S3 contextual MLM reranker, S4 CJK confusion layer,
+S5 offline-LLM loop, S6 ONNX fleet efficiency (KD-QAT), S7 retrieval
+grounding, S8 wave-2 realistic eval, S9 phonetic channel. This file
+keeps the raw sweep notes; TODO.sota carries the work.
