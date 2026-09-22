@@ -1,0 +1,236 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "it",
+ "klass": "realword",
+ "n": 38,
+ "pairs": [
+  {
+   "typo": "puro",
+   "correction": "pure",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "filo",
+   "correction": "fino",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "attuale",
+   "correction": "attuare",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rata",
+   "correction": "fata",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "coma",
+   "correction": "cima",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "accettare",
+   "correction": "accertare",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sordo",
+   "correction": "bordo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tela",
+   "correction": "tel.",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "prosa",
+   "correction": "prova",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ripido",
+   "correction": "rigido",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "topo",
+   "correction": "dopo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tale",
+   "correction": "male",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "udito",
+   "correction": "unito",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ateo",
+   "correction": "atto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "metro",
+   "correction": "vetro",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "stupore",
+   "correction": "stupire",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sito",
+   "correction": "dito",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "progetto",
+   "correction": "protetto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "parto",
+   "correction": "parte",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vivo",
+   "correction": "vino",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "suono",
+   "correction": "buono",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "logico",
+   "correction": "logica",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "privo",
+   "correction": "primo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "menu",
+   "correction": "meno",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "centro",
+   "correction": "contro",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nono",
+   "correction": "noto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fama",
+   "correction": "fame",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gesto",
+   "correction": "gusto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dare",
+   "correction": "dire",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "degno",
+   "correction": "segno",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "santo",
+   "correction": "santa",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "convenzione",
+   "correction": "convinzione",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "voce",
+   "correction": "vice",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pacco",
+   "correction": "sacco",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vocale",
+   "correction": "locale",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "detto",
+   "correction": "letto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bere",
+   "correction": "bene",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cane",
+   "correction": "pane",
+   "weight": 1,
+   "class": "realword-swap"
+  }
+ ]
+}

@@ -143,6 +143,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lang", default="en")
     ap.add_argument("--max", type=int, default=2000)
+    ap.add_argument("--split2", action="store_true",
+                    help="wave-2 synthetic splits (suggest2-*, per-class tags)")
     ap.add_argument("--languagetool", action="store_true",
                     help="add the public-API engine on a bounded subsample")
     args = ap.parse_args()
@@ -151,12 +153,20 @@ def main():
               "match": "case-insensitive exact", "engines": {}}
     all_words = {}
     for klass in ("nonword", "realword"):
-        pairs = load_pairs(args.lang, klass, args.max)
+        if args.split2:
+            s2 = REPO / f"eval/realword/{args.lang}.suggest2-{klass}.json"
+            payload = json.loads(s2.read_text())
+            pairs = payload["pairs"][: args.max]
+        else:
+            pairs = load_pairs(args.lang, klass, args.max)
         words = [p["typo"] for p in pairs]
         all_words[klass] = (pairs, words)
+    if args.split2:
+        report["split"] = "wave2-synthetic"
 
-    dict_base = {"en": "en_US", "de": "de_DE_frami", "es": "es_ES",
-                 "fr": "fr_FR", "pt": "pt_PT", "ru": "ru_RU"}.get(args.lang, args.lang)
+    dict_base = {"en": "en_US", "de": "de_DE_frami", "es": "es_ES", "fr": "fr_FR",
+                 "pt": "pt_PT", "ru": "ru_RU", "it": "it_IT", "nl": "nl_NL",
+                 "pl": "pl_PL"}.get(args.lang, args.lang)
     for name, fn in ENGINES.items():
         per_class = {}
         for klass, (pairs, words) in all_words.items():
@@ -179,7 +189,8 @@ def main():
             "nonword+realword": score(preds, sub_pairs)}
         print(f"languagetool: {report['engines']['languagetool']}", flush=True)
 
-    out = REPO / f"eval/reports/suggest-benchmark-{args.lang}.json"
+    suffix = "-wave2" if args.split2 else ""
+    out = REPO / f"eval/reports/suggest-benchmark-{args.lang}{suffix}.json"
     out.write_text(json.dumps(report, indent=1) + "\n")
     print(f"wrote {out}")
 

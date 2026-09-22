@@ -1,0 +1,17 @@
+{
+ "language": "nl",
+ "class_mix": {
+  "adjacent-sub": 762,
+  "double-insert": 425,
+  "far-sub": 445,
+  "transposition": 284,
+  "diacritic-omit": 4,
+  "double-delete": 80
+ },
+ "distance_dist": {
+  "1": 1716,
+  "2": 284
+ },
+ "nonword": 2000,
+ "realword": 40
+}

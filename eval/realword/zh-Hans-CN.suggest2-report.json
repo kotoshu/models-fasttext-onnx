@@ -1,0 +1,15 @@
+{
+ "language": "zh-Hans-CN",
+ "class_mix": {
+  "far-sub": 1170,
+  "transposition": 293,
+  "double-insert": 529,
+  "double-delete": 8
+ },
+ "distance_dist": {
+  "1": 1707,
+  "2": 293
+ },
+ "nonword": 2000,
+ "realword": 0
+}

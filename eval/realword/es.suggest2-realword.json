@@ -1,0 +1,1208 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "es",
+ "klass": "realword",
+ "n": 200,
+ "pairs": [
+  {
+   "typo": "descargado",
+   "correction": "descartado",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "unis",
+   "correction": "unix",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vino",
+   "correction": "fino",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bill",
+   "correction": "bull",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "foro",
+   "correction": "foto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hemo",
+   "correction": "nemo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "garra",
+   "correction": "barra",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "espira",
+   "correction": "expira",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sabe",
+   "correction": "sane",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "momo",
+   "correction": "mimo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hana",
+   "correction": "haha",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hades",
+   "correction": "haces",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "niego",
+   "correction": "nieto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "coates",
+   "correction": "costes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vilna",
+   "correction": "vilma",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mareo",
+   "correction": "mateo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tuto",
+   "correction": "tito",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gill",
+   "correction": "hill",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ardilla",
+   "correction": "arcilla",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "horma",
+   "correction": "norma",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "roja",
+   "correction": "roma",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "barrow",
+   "correction": "barros",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nachi",
+   "correction": "machi",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "euro",
+   "correction": "duro",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cebo",
+   "correction": "ceño",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ming",
+   "correction": "minh",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cane",
+   "correction": "dane",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "caldo",
+   "correction": "calco",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "yuyos",
+   "correction": "tuyos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dien",
+   "correction": "cien",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "semos",
+   "correction": "senos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "válido",
+   "correction": "cálido",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "botar",
+   "correction": "notar",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nros",
+   "correction": "bros",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "golero",
+   "correction": "bolero",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gorda",
+   "correction": "borda",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "roba",
+   "correction": "riba",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "belly",
+   "correction": "nelly",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "otro",
+   "correction": "otto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rondo",
+   "correction": "ronco",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "deque",
+   "correction": "seque",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "namas",
+   "correction": "mamas",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bender",
+   "correction": "vender",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "incitan",
+   "correction": "invitan",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sprinter",
+   "correction": "springer",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "deje",
+   "correction": "deme",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pegado",
+   "correction": "pegaso",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "same",
+   "correction": "dame",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "darth",
+   "correction": "earth",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "roco",
+   "correction": "rico",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tongo",
+   "correction": "tonto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "conrado",
+   "correction": "cobrado",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sudan",
+   "correction": "susan",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "minho",
+   "correction": "mingo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bone",
+   "correction": "gone",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vito",
+   "correction": "cito",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "samar",
+   "correction": "sanar",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sisa",
+   "correction": "susa",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sexo",
+   "correction": "seco",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "loas",
+   "correction": "loss",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pide",
+   "correction": "pode",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sebo",
+   "correction": "seno",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "negro",
+   "correction": "negri",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gallegas",
+   "correction": "galletas",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "call",
+   "correction": "vall",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abrio",
+   "correction": "agrio",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tufo",
+   "correction": "rufo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "marido",
+   "correction": "marico",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vano",
+   "correction": "vamo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "date",
+   "correction": "cate",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hueva",
+   "correction": "nueva",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mama",
+   "correction": "maja",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gastaba",
+   "correction": "bastaba",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "alomar",
+   "correction": "alojar",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vimos",
+   "correction": "vinos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "poli",
+   "correction": "polo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vivo",
+   "correction": "vico",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "seva",
+   "correction": "deva",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "garrotes",
+   "correction": "barrotes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "togo",
+   "correction": "tigo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hail",
+   "correction": "gail",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "foley",
+   "correction": "voley",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "eees",
+   "correction": "eres",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tonto",
+   "correction": "tongo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "teólogos",
+   "correction": "geólogos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bando",
+   "correction": "banco",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "chora",
+   "correction": "chota",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dica",
+   "correction": "diva",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "celi",
+   "correction": "deli",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kola",
+   "correction": "lola",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "moda",
+   "correction": "mofa",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mens",
+   "correction": "jens",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bota",
+   "correction": "bots",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vive",
+   "correction": "vice",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "oran",
+   "correction": "otan",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "putas",
+   "correction": "puras",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "amos",
+   "correction": "anos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fami",
+   "correction": "rami",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tana",
+   "correction": "tama",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bera",
+   "correction": "vera",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mapa",
+   "correction": "maps",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cita",
+   "correction": "vita",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mili",
+   "correction": "milk",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "roña",
+   "correction": "riña",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "paty",
+   "correction": "path",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "farias",
+   "correction": "varias",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "patriots",
+   "correction": "patriota",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "alba",
+   "correction": "alga",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ests",
+   "correction": "està",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bate",
+   "correction": "gate",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "blanca",
+   "correction": "blanda",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gaveta",
+   "correction": "gaceta",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "regar",
+   "correction": "retar",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bobina",
+   "correction": "bovina",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "domo",
+   "correction": "somo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "remo",
+   "correction": "remi",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mero",
+   "correction": "nero",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gena",
+   "correction": "tena",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cori",
+   "correction": "coro",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "jolly",
+   "correction": "molly",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "balls",
+   "correction": "valls",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mode",
+   "correction": "jode",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cobo",
+   "correction": "cono",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "came",
+   "correction": "dame",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "elda",
+   "correction": "elsa",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "contenga",
+   "correction": "contenta",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mach",
+   "correction": "nach",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vanos",
+   "correction": "vamos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "boli",
+   "correction": "bolo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "válida",
+   "correction": "cálida",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "marx",
+   "correction": "marc",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wena",
+   "correction": "sena",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dieta",
+   "correction": "diera",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "canina",
+   "correction": "cabina",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "seba",
+   "correction": "sena",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bond",
+   "correction": "bone",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "viti",
+   "correction": "vito",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sata",
+   "correction": "saga",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "riga",
+   "correction": "riba",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cevallos",
+   "correction": "ceballos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "daros",
+   "correction": "caros",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tico",
+   "correction": "toco",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "falls",
+   "correction": "falla",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abia",
+   "correction": "avia",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rotar",
+   "correction": "rogar",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "narcos",
+   "correction": "barcos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tobas",
+   "correction": "robas",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "festa",
+   "correction": "resta",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "buffer",
+   "correction": "buffet",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "risso",
+   "correction": "rosso",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lens",
+   "correction": "lena",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gaya",
+   "correction": "gays",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fije",
+   "correction": "dije",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "deducir",
+   "correction": "seducir",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fías",
+   "correction": "vías",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "calera",
+   "correction": "valera",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hand",
+   "correction": "hans",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pito",
+   "correction": "poto",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nisa",
+   "correction": "misa",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mice",
+   "correction": "nice",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "frita",
+   "correction": "grita",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nami",
+   "correction": "nani",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rija",
+   "correction": "rima",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "risa",
+   "correction": "rusa",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "baco",
+   "correction": "naco",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "copper",
+   "correction": "cooper",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "contr",
+   "correction": "conte",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "termi",
+   "correction": "termo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pavos",
+   "correction": "pacos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hado",
+   "correction": "nado",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "daran",
+   "correction": "datan",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fira",
+   "correction": "dira",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "daga",
+   "correction": "daba",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "save",
+   "correction": "safe",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "huían",
+   "correction": "guían",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "biene",
+   "correction": "viene",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "atos",
+   "correction": "agos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nero",
+   "correction": "mero",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "plat",
+   "correction": "play",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "waldo",
+   "correction": "saldo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "trava",
+   "correction": "grava",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sisi",
+   "correction": "sidi",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mofa",
+   "correction": "mora",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vara",
+   "correction": "cara",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gravados",
+   "correction": "grabados",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "udem",
+   "correction": "ídem",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "some",
+   "correction": "soñe",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gags",
+   "correction": "gaga",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "unan",
+   "correction": "unam",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "grabo",
+   "correction": "grano",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pega",
+   "correction": "peta",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "roles",
+   "correction": "rolex",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cande",
+   "correction": "canse",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tenia",
+   "correction": "genia",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "song",
+   "correction": "dong",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "arcilla",
+   "correction": "ardilla",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cara",
+   "correction": "cata",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "marco",
+   "correction": "narco",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "suri",
+   "correction": "siri",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fela",
+   "correction": "vela",
+   "weight": 1,
+   "class": "realword-swap"
+  }
+ ]
+}

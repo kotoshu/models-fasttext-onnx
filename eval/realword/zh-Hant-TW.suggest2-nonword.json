@@ -1,0 +1,12008 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "zh-Hant-TW",
+ "klass": "nonword",
+ "n": 2000,
+ "pairs": [
+  {
+   "typo": "e環賽",
+   "correction": "循環賽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "波塞r",
+   "correction": "波塞冬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "噴香噴",
+   "correction": "香噴噴",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "y幹事",
+   "correction": "總幹事",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r果說",
+   "correction": "如果說",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "盛c懷",
+   "correction": "盛宣懷",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m拉姆斯",
+   "correction": "勃拉姆斯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "生物科科技",
+   "correction": "生物科技",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "雙性戀戀",
+   "correction": "雙性戀",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "冒牌f",
+   "correction": "冒牌貨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "時為過早",
+   "correction": "為時過早",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "青藏高原原",
+   "correction": "青藏高原",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "安卡a",
+   "correction": "安卡拉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "證券y司",
+   "correction": "證券公司",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "先後序順",
+   "correction": "先後順序",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "總參q部",
+   "correction": "總參謀部",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u息時間",
+   "correction": "作息時間",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "有有生之年",
+   "correction": "有生之年",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "名噪時一",
+   "correction": "名噪一時",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "中中國作協",
+   "correction": "中國作協",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "真刀m槍",
+   "correction": "真刀真槍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "冠冠心病",
+   "correction": "冠心病",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "不在乎乎",
+   "correction": "不在乎",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "w江市",
+   "correction": "湛江市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "b祝會",
+   "correction": "慶祝會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "擦屁p",
+   "correction": "擦屁股",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "巴克s",
+   "correction": "巴克斯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "從容不迫迫",
+   "correction": "從容不迫",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "寶區安",
+   "correction": "寶安區",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "定位u",
+   "correction": "定位球",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "排卵e",
+   "correction": "排卵期",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o利桑那",
+   "correction": "亞利桑那",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "比比薩餅",
+   "correction": "比薩餅",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "小腎球",
+   "correction": "腎小球",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "索索緒爾",
+   "correction": "索緒爾",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "天c人禍",
+   "correction": "天災人禍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一言堂堂",
+   "correction": "一言堂",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "動脈化硬",
+   "correction": "動脈硬化",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "遠道y來",
+   "correction": "遠道而來",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "古遠時代",
+   "correction": "遠古時代",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "民事責責任",
+   "correction": "民事責任",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "聶i平",
+   "correction": "聶衛平",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "錦市州",
+   "correction": "錦州市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "繞f令",
+   "correction": "繞口令",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "定量分析析",
+   "correction": "定量分析",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "w育經費",
+   "correction": "教育經費",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "皮包骨骨",
+   "correction": "皮包骨",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "普普l通",
+   "correction": "普普通通",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "專o法",
+   "correction": "專利法",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "消防隊t",
+   "correction": "消防隊員",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "自f墳墓",
+   "correction": "自掘墳墓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "新民主義主革命",
+   "correction": "新民主主義革命",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "斯瓦i里",
+   "correction": "斯瓦希里",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "關禁q",
+   "correction": "關禁閉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "下b識",
+   "correction": "下意識",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "權力爭鬥",
+   "correction": "權力鬥爭",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "一情夜",
+   "correction": "一夜情",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "沈從u",
+   "correction": "沈從文",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "楊g青",
+   "correction": "楊柳青",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "午睡覺",
+   "correction": "睡午覺",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "y說紛紜",
+   "correction": "眾說紛紜",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "z可尼",
+   "correction": "馬可尼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "籃板球球",
+   "correction": "籃板球",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "阿彌陀r",
+   "correction": "阿彌陀佛",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "口腔潰潰瘍",
+   "correction": "口腔潰瘍",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "反作y力",
+   "correction": "反作用力",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "詐騙罪罪",
+   "correction": "詐騙罪",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "至高上無",
+   "correction": "至高無上",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "果然然如此",
+   "correction": "果然如此",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "國民收入入",
+   "correction": "國民收入",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "推m力",
+   "correction": "推動力",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "死死心塌地",
+   "correction": "死心塌地",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "自由由泳",
+   "correction": "自由泳",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "拉舞丁",
+   "correction": "拉丁舞",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "高k壓",
+   "correction": "高血壓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "分線數",
+   "correction": "分數線",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "哈e雷",
+   "correction": "哈拉雷",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "開誠h公",
+   "correction": "開誠佈公",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "二疊u",
+   "correction": "二疊紀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "手一遮天",
+   "correction": "一手遮天",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "論e排輩",
+   "correction": "論資排輩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "經濟v機",
+   "correction": "經濟危機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "咎由自取取",
+   "correction": "咎由自取",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "槲寄寄生",
+   "correction": "槲寄生",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "熱氣氣騰騰",
+   "correction": "熱氣騰騰",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "犯罪集團團",
+   "correction": "犯罪集團",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "恍然f悟",
+   "correction": "恍然大悟",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "安全t數",
+   "correction": "安全係數",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "嘉年n",
+   "correction": "嘉年華",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "小u團",
+   "correction": "小集團",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "扶扶輪社",
+   "correction": "扶輪社",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "公使使館",
+   "correction": "公使館",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "知情人人",
+   "correction": "知情人",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "入券場",
+   "correction": "入場券",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "殊特性",
+   "correction": "特殊性",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "鹽鹼地地",
+   "correction": "鹽鹼地",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "總i賽",
+   "correction": "總決賽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "有機酸酸",
+   "correction": "有機酸",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "g居點",
+   "correction": "定居點",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "馬紹爾o島",
+   "correction": "馬紹爾群島",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i當性",
+   "correction": "正當性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m臘文",
+   "correction": "希臘文",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "作曲者者",
+   "correction": "作曲者",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "堆積如j",
+   "correction": "堆積如山",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "食用油油",
+   "correction": "食用油",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "大w進",
+   "correction": "大躍進",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大z癌",
+   "correction": "大腸癌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "所t權",
+   "correction": "所有權",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o然亭",
+   "correction": "陶然亭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "斯因坦",
+   "correction": "斯坦因",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "交易易日",
+   "correction": "交易日",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "歐x巴",
+   "correction": "歐羅巴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "升降s",
+   "correction": "升降機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "受人益",
+   "correction": "受益人",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "都江l",
+   "correction": "都江堰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "老張師",
+   "correction": "張老師",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "津j布韋",
+   "correction": "津巴布韋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o手空拳",
+   "correction": "赤手空拳",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一年年一度",
+   "correction": "一年一度",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "蒙古古高原",
+   "correction": "蒙古高原",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "琴棋書k",
+   "correction": "琴棋書畫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j清早",
+   "correction": "大清早",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "十日談談",
+   "correction": "十日談",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "喀拉拉拉邦",
+   "correction": "喀拉拉邦",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "唐i璇",
+   "correction": "唐家璇",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "關係e",
+   "correction": "關係網",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "網球e",
+   "correction": "網球賽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "幻燈e",
+   "correction": "幻燈片",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "整a性",
+   "correction": "整體性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "東l縣",
+   "correction": "東海縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "主s曲",
+   "correction": "主題曲",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "生t線",
+   "correction": "生產線",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "崑崙e",
+   "correction": "崑崙山",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "汕汕尾市",
+   "correction": "汕尾市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "考t斯",
+   "correction": "考克斯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "時性間",
+   "correction": "時間性",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "衣衫衫襤褸",
+   "correction": "衣衫襤褸",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "波語蘭",
+   "correction": "波蘭語",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "中國共產t中央委員會",
+   "correction": "中國共產黨中央委員會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "窩z鬥",
+   "correction": "窩裡鬥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "v西蘭",
+   "correction": "新西蘭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "加里第波",
+   "correction": "加里波第",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "熱那亞亞",
+   "correction": "熱那亞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t直門",
+   "correction": "東直門",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u式足球",
+   "correction": "美式足球",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "而立之之年",
+   "correction": "而立之年",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "什樣麼",
+   "correction": "什麼樣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "垂s掙扎",
+   "correction": "垂死掙扎",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "自食其果果",
+   "correction": "自食其果",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "黎黎巴嫩",
+   "correction": "黎巴嫩",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "美其a曰",
+   "correction": "美其名曰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "壓倒n",
+   "correction": "壓倒性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "閃光彈彈",
+   "correction": "閃光彈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "代議制制",
+   "correction": "代議制",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "度印尼西亞語",
+   "correction": "印度尼西亞語",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "蒙t語",
+   "correction": "蒙古語",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "沒出d",
+   "correction": "沒出息",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "酒囊飯h",
+   "correction": "酒囊飯袋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "脫貧富致",
+   "correction": "脫貧致富",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "執e會",
+   "correction": "執委會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "卡文迪d",
+   "correction": "卡文迪什",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "金鍊術",
+   "correction": "鍊金術",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "u輪手槍",
+   "correction": "左輪手槍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "輕淡描寫",
+   "correction": "輕描淡寫",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "有有心無力",
+   "correction": "有心無力",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "吸z教訓",
+   "correction": "吸取教訓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "數據機機",
+   "correction": "數據機",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "混a子",
+   "correction": "混日子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "餐巾紙紙",
+   "correction": "餐巾紙",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "錯y良機",
+   "correction": "錯失良機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "核燃v",
+   "correction": "核燃料",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "劍拔弩弩張",
+   "correction": "劍拔弩張",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "停下來來",
+   "correction": "停下來",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "孫芳傳",
+   "correction": "孫傳芳",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "合性法",
+   "correction": "合法性",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "古生學物家",
+   "correction": "古生物學家",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "自由g",
+   "correction": "自由基",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "思想c",
+   "correction": "思想史",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "撲朔離迷",
+   "correction": "撲朔迷離",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "哺o類",
+   "correction": "哺乳類",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "t大小小",
+   "correction": "大大小小",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "雙眼皮皮",
+   "correction": "雙眼皮",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "在此之前前",
+   "correction": "在此之前",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "蒸餾f",
+   "correction": "蒸餾水",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "白市山",
+   "correction": "白山市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "戰戰爭片",
+   "correction": "戰爭片",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "不過為",
+   "correction": "不為過",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "許昌市市",
+   "correction": "許昌市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "起居s",
+   "correction": "起居室",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "百色e",
+   "correction": "百色市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "傳傳奇人物",
+   "correction": "傳奇人物",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e少數",
+   "correction": "極少數",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "劇戲家",
+   "correction": "戲劇家",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "女s味",
+   "correction": "女人味",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大大掃除",
+   "correction": "大掃除",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "湯顯e",
+   "correction": "湯顯祖",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "喜氣洋l",
+   "correction": "喜氣洋洋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "塞納e",
+   "correction": "塞納河",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "亞區太",
+   "correction": "亞太區",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "發射i",
+   "correction": "發射器",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "立獨宣言",
+   "correction": "獨立宣言",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "羅切斯d",
+   "correction": "羅切斯特",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "漢高祖祖",
+   "correction": "漢高祖",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "浮想o翩",
+   "correction": "浮想聯翩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "k紅大紫",
+   "correction": "大紅大紫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "細器胞",
+   "correction": "細胞器",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "佛山t",
+   "correction": "佛山市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "x花果",
+   "correction": "無花果",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "槲k生",
+   "correction": "槲寄生",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "世界地各",
+   "correction": "世界各地",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "人民政l",
+   "correction": "人民政府",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不功可沒",
+   "correction": "功不可沒",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "心如止g",
+   "correction": "心如止水",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e武門",
+   "correction": "宣武門",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "絕w多數",
+   "correction": "絕對多數",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "經濟e礎",
+   "correction": "經濟基礎",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "板z釘釘",
+   "correction": "板上釘釘",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "仗勢欺欺人",
+   "correction": "仗勢欺人",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "熱鬧熱鬧",
+   "correction": "熱熱鬧鬧",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "休斯敦敦",
+   "correction": "休斯敦",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "侵行權為",
+   "correction": "侵權行為",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "示顯器",
+   "correction": "顯示器",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "公j事業",
+   "correction": "公益事業",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "色e片",
+   "correction": "色情片",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u呵呵",
+   "correction": "樂呵呵",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "普通股股",
+   "correction": "普通股",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "克虜e",
+   "correction": "克虜伯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "絮絮絮叨叨",
+   "correction": "絮絮叨叨",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "中央處理器器",
+   "correction": "中央處理器",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "大s長龍",
+   "correction": "大排長龍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鋰s池",
+   "correction": "鋰電池",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "斃酷了",
+   "correction": "酷斃了",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "歐洲聯聯盟",
+   "correction": "歐洲聯盟",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "聖誕老q",
+   "correction": "聖誕老人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "成p量",
+   "correction": "成交量",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "火山島島",
+   "correction": "火山島",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "馬克主思義",
+   "correction": "馬克思主義",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "復興興黨",
+   "correction": "復興黨",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "參員議",
+   "correction": "參議員",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "氧化鐵鐵",
+   "correction": "氧化鐵",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "瞞天過海海",
+   "correction": "瞞天過海",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "l政政策",
+   "correction": "財政政策",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "羅宋湯湯",
+   "correction": "羅宋湯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "東n大學",
+   "correction": "東南大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "白起手家",
+   "correction": "白手起家",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "長頸鹿鹿",
+   "correction": "長頸鹿",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "心無騖旁",
+   "correction": "心無旁騖",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "按按摩器",
+   "correction": "按摩器",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "明爭暗暗鬥",
+   "correction": "明爭暗鬥",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "如意意算盤",
+   "correction": "如意算盤",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "房t區",
+   "correction": "房山區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "航k局",
+   "correction": "航空局",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "工r進度",
+   "correction": "工程進度",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a硯秋",
+   "correction": "程硯秋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "價廉物r",
+   "correction": "價廉物美",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "白沙沙瓦",
+   "correction": "白沙瓦",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "斯特z斯堡",
+   "correction": "斯特拉斯堡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "烏p察布",
+   "correction": "烏蘭察布",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "密麻麻",
+   "correction": "密密麻麻",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "策o人",
+   "correction": "策劃人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "環t時報",
+   "correction": "環球時報",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "唯唯物辯證法",
+   "correction": "唯物辯證法",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "微微量元素",
+   "correction": "微量元素",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "b生物學家",
+   "correction": "古生物學家",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "c揮者",
+   "correction": "指揮者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "否f權",
+   "correction": "否決權",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "打擊e器",
+   "correction": "打擊樂器",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j家婆",
+   "correction": "管家婆",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m民公社化",
+   "correction": "人民公社化",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "星際n戰",
+   "correction": "星際大戰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "超i體",
+   "correction": "超導體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鋼f家",
+   "correction": "鋼琴家",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "煩煩心事",
+   "correction": "煩心事",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "單倍e",
+   "correction": "單倍體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "經濟u機",
+   "correction": "經濟危機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r萊塢",
+   "correction": "好萊塢",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "巢h市",
+   "correction": "巢湖市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "紅衛衛兵",
+   "correction": "紅衛兵",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "擦球邊",
+   "correction": "擦邊球",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "以人為本本",
+   "correction": "以人為本",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "加減o除",
+   "correction": "加減乘除",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "律法責任",
+   "correction": "法律責任",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "a流表",
+   "correction": "電流表",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "老生常談談",
+   "correction": "老生常談",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "設計h",
+   "correction": "設計圖",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "消q靈通",
+   "correction": "消息靈通",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "資本論論",
+   "correction": "資本論",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "法屬圭a那",
+   "correction": "法屬圭亞那",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "阿阿貝爾",
+   "correction": "阿貝爾",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "親密a間",
+   "correction": "親密無間",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e不透",
+   "correction": "看不透",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "誤入歧n",
+   "correction": "誤入歧途",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "覽一無餘",
+   "correction": "一覽無餘",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "腦腦水腫",
+   "correction": "腦水腫",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "手到r來",
+   "correction": "手到擒來",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "劣a性",
+   "correction": "劣根性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聯合h",
+   "correction": "聯合會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一兵一卒卒",
+   "correction": "一兵一卒",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "伊寧x",
+   "correction": "伊寧市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "k三學社",
+   "correction": "九三學社",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "阿拉伯數數字",
+   "correction": "阿拉伯數字",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "志w者",
+   "correction": "志願者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "莫特扎",
+   "correction": "莫扎特",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "亞美尼o",
+   "correction": "亞美尼亞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "泰安市市",
+   "correction": "泰安市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "海軍i戰隊",
+   "correction": "海軍陸戰隊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "所n所聞",
+   "correction": "所見所聞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "必t可少",
+   "correction": "必不可少",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "臺灣島島",
+   "correction": "臺灣島",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "從而天降",
+   "correction": "從天而降",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "航站樓樓",
+   "correction": "航站樓",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "自以以為是",
+   "correction": "自以為是",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "中v關係",
+   "correction": "中日關係",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "工商銀w",
+   "correction": "工商銀行",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "全面戰v",
+   "correction": "全面戰爭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "小r包",
+   "correction": "小籠包",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "北京工業e學",
+   "correction": "北京工業大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s觸即發",
+   "correction": "一觸即發",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a羅洲",
+   "correction": "婆羅洲",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "過人來",
+   "correction": "過來人",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "p興市",
+   "correction": "紹興市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不情自禁",
+   "correction": "情不自禁",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "修u場",
+   "correction": "修羅場",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "長嫡子",
+   "correction": "嫡長子",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "深g痛絕",
+   "correction": "深惡痛絕",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "河q省",
+   "correction": "河南省",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "侯賽因因",
+   "correction": "侯賽因",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "長途跋涉涉",
+   "correction": "長途跋涉",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "邁r爾",
+   "correction": "邁克爾",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "封j制度",
+   "correction": "封建制度",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "超f然",
+   "correction": "超自然",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "情投意合合",
+   "correction": "情投意合",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "真命r子",
+   "correction": "真命天子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "人生在r",
+   "correction": "人生在世",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "自g語言",
+   "correction": "自然語言",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "洗劫r空",
+   "correction": "洗劫一空",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "坐以j斃",
+   "correction": "坐以待斃",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "獨獨到之處",
+   "correction": "獨到之處",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "張家w市",
+   "correction": "張家港市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "締k者",
+   "correction": "締造者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "簡z之",
+   "correction": "簡言之",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "薩克i管",
+   "correction": "薩克斯管",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s哥窟",
+   "correction": "吳哥窟",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a清氣爽",
+   "correction": "神清氣爽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "d規矩",
+   "correction": "守規矩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "臺灣省省",
+   "correction": "臺灣省",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "胚胎學學",
+   "correction": "胚胎學",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "好景不l",
+   "correction": "好景不長",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "保安u",
+   "correction": "保安團",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "核裂變變",
+   "correction": "核裂變",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "拍自照",
+   "correction": "自拍照",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "爆發性性",
+   "correction": "爆發性",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "總s事",
+   "correction": "總領事",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a所應當",
+   "correction": "理所應當",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "雙q線",
+   "correction": "雙絞線",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "麥m林",
+   "correction": "麥德林",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "本體n",
+   "correction": "本體論",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "c習營",
+   "correction": "研習營",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "智勇雙全全",
+   "correction": "智勇雙全",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "長久以以來",
+   "correction": "長久以來",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "換句說話",
+   "correction": "換句話說",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "膠q灣",
+   "correction": "膠州灣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "關禁v",
+   "correction": "關禁閉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "b數以上",
+   "correction": "半數以上",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p字獄",
+   "correction": "文字獄",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r原市",
+   "correction": "太原市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "正e軍",
+   "correction": "正規軍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "基基礎設施",
+   "correction": "基礎設施",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "不三k四",
+   "correction": "不三不四",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j辦權",
+   "correction": "主辦權",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "印歐u",
+   "correction": "印歐語",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "頂頭上w",
+   "correction": "頂頭上司",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "微電e",
+   "correction": "微電子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大k殺",
+   "correction": "大屠殺",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "臺邢市",
+   "correction": "邢臺市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "交員易",
+   "correction": "交易員",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "z州市",
+   "correction": "禹州市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "於忠職守",
+   "correction": "忠於職守",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "巴斯克克",
+   "correction": "巴斯克",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "烏拉爾山脈脈",
+   "correction": "烏拉爾山脈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "g孩子",
+   "correction": "女孩子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "哥d們",
+   "correction": "哥兒們",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "戴秉國國",
+   "correction": "戴秉國",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "世世代代代",
+   "correction": "世世代代",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "可t度",
+   "correction": "可信度",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "內政部長長",
+   "correction": "內政部長",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "孟什維n",
+   "correction": "孟什維克",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "股票市場場",
+   "correction": "股票市場",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "庫s德",
+   "correction": "庫爾德",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "克o木",
+   "correction": "克里木",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "金門z",
+   "correction": "金門縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "時斷時n",
+   "correction": "時斷時續",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "空z樓閣",
+   "correction": "空中樓閣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "路引人",
+   "correction": "引路人",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "上上個月",
+   "correction": "上個月",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "大呼c爾",
+   "correction": "大呼拉爾",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "昌許市",
+   "correction": "許昌市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "x普車",
+   "correction": "吉普車",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "消i靈通",
+   "correction": "消息靈通",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "思想史史",
+   "correction": "思想史",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "迎面而來來",
+   "correction": "迎面而來",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "x絲馬跡",
+   "correction": "蛛絲馬跡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "訊通網",
+   "correction": "通訊網",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "真空泵泵",
+   "correction": "真空泵",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "c業革命",
+   "correction": "工業革命",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r分榜",
+   "correction": "積分榜",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "布f娃",
+   "correction": "布娃娃",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n生巾",
+   "correction": "衛生巾",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "烏蘇u江",
+   "correction": "烏蘇里江",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "正正統派",
+   "correction": "正統派",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "玩世不f",
+   "correction": "玩世不恭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "呼尋機",
+   "correction": "尋呼機",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "過o人",
+   "correction": "過來人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e威作福",
+   "correction": "作威作福",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一o樣",
+   "correction": "一個樣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "王世充充",
+   "correction": "王世充",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t卡索",
+   "correction": "畢卡索",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "崑崙山山",
+   "correction": "崑崙山",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "馬拉拉加",
+   "correction": "馬拉加",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "安東尼尼",
+   "correction": "安東尼",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e年益壽",
+   "correction": "延年益壽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "外野野手",
+   "correction": "外野手",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "上頭鏡",
+   "correction": "上鏡頭",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "水利樞紐紐",
+   "correction": "水利樞紐",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "眾大文化",
+   "correction": "大眾文化",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "義不容x",
+   "correction": "義不容辭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "c分制",
+   "correction": "學分制",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "用公電話",
+   "correction": "公用電話",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "h心劑",
+   "correction": "強心劑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "城故縣",
+   "correction": "故城縣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "潛則規",
+   "correction": "潛規則",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "濟經作物",
+   "correction": "經濟作物",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "洛洛陽市",
+   "correction": "洛陽市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "珠角三",
+   "correction": "珠三角",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "多大數",
+   "correction": "大多數",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "採採購員",
+   "correction": "採購員",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "見多t廣",
+   "correction": "見多識廣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "旁遮普省省",
+   "correction": "旁遮普省",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "西洋v",
+   "correction": "西洋棋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "半u明",
+   "correction": "半透明",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "口腔g瘍",
+   "correction": "口腔潰瘍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "機動車v",
+   "correction": "機動車輛",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u人唯親",
+   "correction": "任人唯親",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聖誕老s",
+   "correction": "聖誕老人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "生父u",
+   "correction": "生父母",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "學哲系",
+   "correction": "哲學系",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "天e林",
+   "correction": "天然林",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "消防員員",
+   "correction": "消防員",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "非洲一統組織",
+   "correction": "非洲統一組織",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "中中間人",
+   "correction": "中間人",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "v想曲",
+   "correction": "隨想曲",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "馬來來人",
+   "correction": "馬來人",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "k類學",
+   "correction": "鳥類學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p湖四海",
+   "correction": "五湖四海",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "拉薩薩市",
+   "correction": "拉薩市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "老o口",
+   "correction": "老河口",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "十n宮",
+   "correction": "十二宮",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "那a子",
+   "correction": "那陣子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "操作系統統",
+   "correction": "操作系統",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "落g生根",
+   "correction": "落地生根",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "q木有",
+   "correction": "有木有",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "混q子",
+   "correction": "混日子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "中部南",
+   "correction": "中南部",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "風險險管理",
+   "correction": "風險管理",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "a施市",
+   "correction": "恩施市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "百年大e",
+   "correction": "百年大計",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "工u書",
+   "correction": "工具書",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "主t權",
+   "correction": "主辦權",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "驚為l人",
+   "correction": "驚為天人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一唯性",
+   "correction": "唯一性",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "赫爾穆特特",
+   "correction": "赫爾穆特",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "獅石子",
+   "correction": "石獅子",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "餘剩價值",
+   "correction": "剩餘價值",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "表裡如一一",
+   "correction": "表裡如一",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "無論a何",
+   "correction": "無論如何",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i爾勒市",
+   "correction": "庫爾勒市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "軍事事援助",
+   "correction": "軍事援助",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "自由由派",
+   "correction": "自由派",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "滿o紅",
+   "correction": "滿堂紅",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "達達州市",
+   "correction": "達州市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "冰凌激",
+   "correction": "冰激凌",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "書香香門第",
+   "correction": "書香門第",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "o學森",
+   "correction": "錢學森",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "官樣文章章",
+   "correction": "官樣文章",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "九w雲外",
+   "correction": "九霄雲外",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "出初茅廬",
+   "correction": "初出茅廬",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "哈士奇奇",
+   "correction": "哈士奇",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "r市公司",
+   "correction": "上市公司",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "文獻i",
+   "correction": "文獻學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "星際大大戰",
+   "correction": "星際大戰",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "北洋r師",
+   "correction": "北洋水師",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "求之不得得",
+   "correction": "求之不得",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "製e者",
+   "correction": "製作者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "超鏈w",
+   "correction": "超鏈接",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "薩達e",
+   "correction": "薩達姆",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "責任i",
+   "correction": "責任人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n南歐",
+   "correction": "東南歐",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "單眼u",
+   "correction": "單眼皮",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "廣告傳宣",
+   "correction": "廣告宣傳",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "絕對f",
+   "correction": "絕對值",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "師範校學",
+   "correction": "師範學校",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "想象t",
+   "correction": "想象力",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "關關禁閉",
+   "correction": "關禁閉",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "生v興隆",
+   "correction": "生意興隆",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s絡管理",
+   "correction": "網絡管理",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "心領神o",
+   "correction": "心領神會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "和共制",
+   "correction": "共和制",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "面面d",
+   "correction": "面面觀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "名正言z",
+   "correction": "名正言順",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "歷城區區",
+   "correction": "歷城區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "真真命天子",
+   "correction": "真命天子",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "s陽縣",
+   "correction": "山陽縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "強健身體",
+   "correction": "強身健體",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "布里斯斯班",
+   "correction": "布里斯班",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "上鏡鏡頭",
+   "correction": "上鏡頭",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "基層組組織",
+   "correction": "基層組織",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "q途島",
+   "correction": "中途島",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "無軌電y",
+   "correction": "無軌電車",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "退伍軍人人",
+   "correction": "退伍軍人",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "拉h水",
+   "correction": "拉下水",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "z廣告",
+   "correction": "做廣告",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一一般般",
+   "correction": "一般般",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "道m觀",
+   "correction": "道德觀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "馬拉r什",
+   "correction": "馬拉喀什",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "四分之一一",
+   "correction": "四分之一",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "委常會",
+   "correction": "常委會",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "南t市",
+   "correction": "南京市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "專業士人",
+   "correction": "專業人士",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "塞爾維亞亞",
+   "correction": "塞爾維亞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "馬達加斯s",
+   "correction": "馬達加斯加",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "里程b",
+   "correction": "里程碑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "熱i鬧鬧",
+   "correction": "熱熱鬧鬧",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "加格達t",
+   "correction": "加格達奇",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "歡呼c躍",
+   "correction": "歡呼雀躍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "別具一t",
+   "correction": "別具一格",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "萊萊州市",
+   "correction": "萊州市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "公平合理理",
+   "correction": "公平合理",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "f梅內伊",
+   "correction": "哈梅內伊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "c易逆差",
+   "correction": "貿易逆差",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "張北r",
+   "correction": "張北縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "貴陽陽市",
+   "correction": "貴陽市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "木質n",
+   "correction": "木質部",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "紅十字n",
+   "correction": "紅十字會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "辦公桌桌",
+   "correction": "辦公桌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "公湄河",
+   "correction": "湄公河",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "長老老會",
+   "correction": "長老會",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "克里斯托弗弗",
+   "correction": "克里斯托弗",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "五連大池",
+   "correction": "五大連池",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "見分曉曉",
+   "correction": "見分曉",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "企c家",
+   "correction": "企業家",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "晚服禮",
+   "correction": "晚禮服",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "荷荷槍實彈",
+   "correction": "荷槍實彈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "南o區",
+   "correction": "南崗區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鍾o市",
+   "correction": "鍾祥市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "袁崇煥煥",
+   "correction": "袁崇煥",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "地球儀儀",
+   "correction": "地球儀",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "小可愛愛",
+   "correction": "小可愛",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "目子錄",
+   "correction": "子目錄",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "黃鶴d",
+   "correction": "黃鶴樓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "中華k國總工會",
+   "correction": "中華全國總工會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "物以類聚聚",
+   "correction": "物以類聚",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "重重機槍",
+   "correction": "重機槍",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "一一兵一卒",
+   "correction": "一兵一卒",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "生育h力",
+   "correction": "生育能力",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "外匯n場",
+   "correction": "外匯市場",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "d官移植",
+   "correction": "器官移植",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不不時之需",
+   "correction": "不時之需",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "陰道口口",
+   "correction": "陰道口",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "金金山區",
+   "correction": "金山區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "玉皇m帝",
+   "correction": "玉皇大帝",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "四面t歌",
+   "correction": "四面楚歌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "天台i",
+   "correction": "天台宗",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "玩好兒",
+   "correction": "好玩兒",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "支柱產業業",
+   "correction": "支柱產業",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "s養素",
+   "correction": "營養素",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r氨酸",
+   "correction": "賴氨酸",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "電話線線",
+   "correction": "電話線",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "喪權辱辱國",
+   "correction": "喪權辱國",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "鹵化化物",
+   "correction": "鹵化物",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "融b一體",
+   "correction": "融為一體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "匹茲堡堡",
+   "correction": "匹茲堡",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "國部防長",
+   "correction": "國防部長",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "死有有餘辜",
+   "correction": "死有餘辜",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "精益求精精",
+   "correction": "精益求精",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "馬爾j",
+   "correction": "馬爾斯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "神k中樞",
+   "correction": "神經中樞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "備受t目",
+   "correction": "備受矚目",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "老學同",
+   "correction": "老同學",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "大放異彩彩",
+   "correction": "大放異彩",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e資源",
+   "correction": "水資源",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "議抗者",
+   "correction": "抗議者",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "v蘇打",
+   "correction": "小蘇打",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "千篇一i",
+   "correction": "千篇一律",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "阿羅約約",
+   "correction": "阿羅約",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "無名l雄",
+   "correction": "無名英雄",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "紅a燈",
+   "correction": "紅綠燈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "藍縣田",
+   "correction": "藍田縣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "r黎聖母院",
+   "correction": "巴黎聖母院",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "項目管m",
+   "correction": "項目管理",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "全u性",
+   "correction": "全球性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "僅次a",
+   "correction": "僅次於",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "最小值值",
+   "correction": "最小值",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "行m通",
+   "correction": "行得通",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "環境g護",
+   "correction": "環境保護",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m空站",
+   "correction": "航空站",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "千真萬確確",
+   "correction": "千真萬確",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "後會有期期",
+   "correction": "後會有期",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "希特特勒",
+   "correction": "希特勒",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "明明白x",
+   "correction": "明明白白",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "吉爾斯吉",
+   "correction": "吉爾吉斯",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "p開心",
+   "correction": "尋開心",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "渝渝中區",
+   "correction": "渝中區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "脊a骨",
+   "correction": "脊椎骨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j容易",
+   "correction": "好容易",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "火g手",
+   "correction": "火炬手",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鍾祥f",
+   "correction": "鍾祥市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "州隨市",
+   "correction": "隨州市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "交互作l",
+   "correction": "交互作用",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "新能能源",
+   "correction": "新能源",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "心肌炎炎",
+   "correction": "心肌炎",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "彌t佛",
+   "correction": "彌勒佛",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j神論者",
+   "correction": "無神論者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j應欽",
+   "correction": "何應欽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "槲寄q",
+   "correction": "槲寄生",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "硝硝酸銀",
+   "correction": "硝酸銀",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "馬馬爾斯",
+   "correction": "馬爾斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "光明明正大",
+   "correction": "光明正大",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "占z術",
+   "correction": "占星術",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "山水w",
+   "correction": "山水畫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "中央民族大u",
+   "correction": "中央民族大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "級冪數",
+   "correction": "冪級數",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "r用軟件",
+   "correction": "應用軟件",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "餐q業",
+   "correction": "餐飲業",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "海k區",
+   "correction": "海淀區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "芝n哥",
+   "correction": "芝加哥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "帶人頭",
+   "correction": "帶頭人",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "石f門",
+   "correction": "石庫門",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "自g批評",
+   "correction": "自我批評",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "d西西比",
+   "correction": "密西西比",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "乙二e",
+   "correction": "乙二醇",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "體育q",
+   "correction": "體育界",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "防t港",
+   "correction": "防城港",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "無以復r",
+   "correction": "無以復加",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "無處g在",
+   "correction": "無處不在",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "總t練",
+   "correction": "總教練",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o強不息",
+   "correction": "自強不息",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "高爾夫場球",
+   "correction": "高爾夫球場",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "防v堤",
+   "correction": "防波堤",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u臨其境",
+   "correction": "身臨其境",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "漫動畫",
+   "correction": "動漫畫",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "空無一r",
+   "correction": "空無一人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聖聖何塞",
+   "correction": "聖何塞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "俄國t",
+   "correction": "俄國人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "h爾文",
+   "correction": "卡爾文",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "濁o溪",
+   "correction": "濁水溪",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "遙逍法外",
+   "correction": "逍遙法外",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "r念之差",
+   "correction": "一念之差",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "契t夫",
+   "correction": "契訶夫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "保員管",
+   "correction": "保管員",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "一敗t地",
+   "correction": "一敗塗地",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "火藥e",
+   "correction": "火藥庫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "預付卡卡",
+   "correction": "預付卡",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "自然w",
+   "correction": "自然數",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "生死關k",
+   "correction": "生死關頭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "居民i",
+   "correction": "居民樓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a化期",
+   "correction": "孵化期",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "v西哥",
+   "correction": "墨西哥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "f太人",
+   "correction": "猶太人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "無所事",
+   "correction": "無所事事",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "聚聚苯乙烯",
+   "correction": "聚苯乙烯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "圭那亞",
+   "correction": "圭亞那",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "外弦之音",
+   "correction": "弦外之音",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "資料n",
+   "correction": "資料片",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "光緒x",
+   "correction": "光緒帝",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "z卻器",
+   "correction": "冷卻器",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "神經元元",
+   "correction": "神經元",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "爭霸k",
+   "correction": "爭霸戰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "福斯特特",
+   "correction": "福斯特",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "劍劍齒虎",
+   "correction": "劍齒虎",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "離心力力",
+   "correction": "離心力",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "腎上腺腺素",
+   "correction": "腎上腺素",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "y立自主",
+   "correction": "獨立自主",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "印度a",
+   "correction": "印度教",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "柯爾克孜族族",
+   "correction": "柯爾克孜族",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "巴希爾爾",
+   "correction": "巴希爾",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "雅雅礱江",
+   "correction": "雅礱江",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "界世聞名",
+   "correction": "世界聞名",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "匈牙d語",
+   "correction": "匈牙利語",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "霸霸王龍",
+   "correction": "霸王龍",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "三客劍",
+   "correction": "三劍客",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "一一針見血",
+   "correction": "一針見血",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "s安區",
+   "correction": "靜安區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "空無一人人",
+   "correction": "空無一人",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "哥兒兒們",
+   "correction": "哥兒們",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "米爾o",
+   "correction": "米爾頓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "腎上腺腺",
+   "correction": "腎上腺",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "曼德u",
+   "correction": "曼德拉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "男女扮裝",
+   "correction": "男扮女裝",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "人壽壽保險",
+   "correction": "人壽保險",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "周口市市",
+   "correction": "周口市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "骨如瘦柴",
+   "correction": "骨瘦如柴",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "除m劑",
+   "correction": "除草劑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鄂爾爾多斯",
+   "correction": "鄂爾多斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "無煤煙",
+   "correction": "無煙煤",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "v商引資",
+   "correction": "招商引資",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "國稅局局",
+   "correction": "國稅局",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "o會場",
+   "correction": "分會場",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "背信棄g",
+   "correction": "背信棄義",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "偵察r",
+   "correction": "偵察兵",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "h心武",
+   "correction": "劉心武",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "通用氣電",
+   "correction": "通用電氣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "玻璃窗窗",
+   "correction": "玻璃窗",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "憑u捏造",
+   "correction": "憑空捏造",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "學神家",
+   "correction": "神學家",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "簡言之之",
+   "correction": "簡言之",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "瀾瀾滄江",
+   "correction": "瀾滄江",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "列列寧主義",
+   "correction": "列寧主義",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "吐吐魯番",
+   "correction": "吐魯番",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "再好不n",
+   "correction": "再好不過",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "b施州",
+   "correction": "恩施州",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "腦溢血血",
+   "correction": "腦溢血",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "章z炎",
+   "correction": "章太炎",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "熱膨d",
+   "correction": "熱膨脹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "電子x",
+   "correction": "電子管",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "風p飄搖",
+   "correction": "風雨飄搖",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "辛巴達達",
+   "correction": "辛巴達",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "連鎖反應應",
+   "correction": "連鎖反應",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "國際慣s",
+   "correction": "國際慣例",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "要不不然",
+   "correction": "要不然",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "a午覺",
+   "correction": "睡午覺",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "熱l婭",
+   "correction": "熱比婭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "b魯多",
+   "correction": "特魯多",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i葉樹",
+   "correction": "闊葉樹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "發發明家",
+   "correction": "發明家",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "布基納n索",
+   "correction": "布基納法索",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m投意合",
+   "correction": "情投意合",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "t敗者",
+   "correction": "失敗者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "厚顏無g",
+   "correction": "厚顏無恥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "丘商市",
+   "correction": "商丘市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "問心無愧愧",
+   "correction": "問心無愧",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "a迫感",
+   "correction": "壓迫感",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "出遠k",
+   "correction": "出遠門",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "團v轉",
+   "correction": "團團轉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "商d部",
+   "correction": "商務部",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "錄像a",
+   "correction": "錄像片",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "京i鐵路",
+   "correction": "京廣鐵路",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "百s百勝",
+   "correction": "百戰百勝",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聽得見見",
+   "correction": "聽得見",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "這n子",
+   "correction": "這樣子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "真真理報",
+   "correction": "真理報",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "命中e定",
+   "correction": "命中註定",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "窮末途路",
+   "correction": "窮途末路",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "z拉斯",
+   "correction": "托拉斯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "小小喇叭",
+   "correction": "小喇叭",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "法q功",
+   "correction": "法輪功",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "瞠t結舌",
+   "correction": "瞠目結舌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "天天人合一",
+   "correction": "天人合一",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "衛生紙紙",
+   "correction": "衛生紙",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "最高人民d院",
+   "correction": "最高人民法院",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "t防針",
+   "correction": "預防針",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "g安市",
+   "correction": "延安市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "處女b",
+   "correction": "處女座",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "哈蘇托",
+   "correction": "蘇哈托",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "反f克炮",
+   "correction": "反坦克炮",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "黨代k",
+   "correction": "黨代會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "d安團",
+   "correction": "保安團",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s視網",
+   "correction": "電視網",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "b規賽",
+   "correction": "常規賽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "七里里香",
+   "correction": "七里香",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "汪洋大海海",
+   "correction": "汪洋大海",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "斯大林林",
+   "correction": "斯大林",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "昆蘭士州",
+   "correction": "昆士蘭州",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "b蒙拐騙",
+   "correction": "坑蒙拐騙",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "知y人",
+   "correction": "知情人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n著邊際",
+   "correction": "不著邊際",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "搗蛋n",
+   "correction": "搗蛋鬼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大個子子",
+   "correction": "大個子",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "干干擾素",
+   "correction": "干擾素",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "交交流電",
+   "correction": "交流電",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "慮焦不安",
+   "correction": "焦慮不安",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "三三河市",
+   "correction": "三河市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "d山大學",
+   "correction": "中山大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "說g過去",
+   "correction": "說不過去",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聯s員",
+   "correction": "聯絡員",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "脂s肝",
+   "correction": "脂肪肝",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "維多利n州",
+   "correction": "維多利亞州",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "父f官",
+   "correction": "父母官",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "酒l市",
+   "correction": "酒泉市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "t務站",
+   "correction": "服務站",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "戴秉j",
+   "correction": "戴秉國",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "v常感謝",
+   "correction": "非常感謝",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "婚r情",
+   "correction": "婚外情",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "永無無寧日",
+   "correction": "永無寧日",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "鬧洞v",
+   "correction": "鬧洞房",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "t年大計",
+   "correction": "百年大計",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j城風雨",
+   "correction": "滿城風雨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "生活品品質",
+   "correction": "生活品質",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "接o者",
+   "correction": "接受者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "就這是說",
+   "correction": "這就是說",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "鄒市城",
+   "correction": "鄒城市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "水利工程程",
+   "correction": "水利工程",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "時好時x",
+   "correction": "時好時壞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "冷血動i",
+   "correction": "冷血動物",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "五角樓大",
+   "correction": "五角大樓",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "a德縣",
+   "correction": "貴德縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r念冊",
+   "correction": "紀念冊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "出出亂子",
+   "correction": "出亂子",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "大沽口口",
+   "correction": "大沽口",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "地形形圖",
+   "correction": "地形圖",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "惠來p",
+   "correction": "惠來縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "南極洲洲",
+   "correction": "南極洲",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "民族族團結",
+   "correction": "民族團結",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "戰國勝",
+   "correction": "戰勝國",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "同性u",
+   "correction": "同性戀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "循規規蹈矩",
+   "correction": "循規蹈矩",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "中小小學",
+   "correction": "中小學",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "雲浮浮市",
+   "correction": "雲浮市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "i亞萍",
+   "correction": "鄧亞萍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "令令行禁止",
+   "correction": "令行禁止",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "a事本",
+   "correction": "記事本",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "處膜女",
+   "correction": "處女膜",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "交際花花",
+   "correction": "交際花",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "n高法院",
+   "correction": "最高法院",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j勒泰地區",
+   "correction": "阿勒泰地區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "z板球",
+   "correction": "籃板球",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "冷凝器器",
+   "correction": "冷凝器",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "大興c",
+   "correction": "大興區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "雲雲霄飛車",
+   "correction": "雲霄飛車",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "保家f國",
+   "correction": "保家衛國",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "破涕涕為笑",
+   "correction": "破涕為笑",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "y地自容",
+   "correction": "無地自容",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "二p五",
+   "correction": "二百五",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "來槍福",
+   "correction": "來福槍",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "工包頭",
+   "correction": "包工頭",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "蛋白質質",
+   "correction": "蛋白質",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "高個子子",
+   "correction": "高個子",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "n陽縣",
+   "correction": "山陽縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "保證金金",
+   "correction": "保證金",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "中產階x",
+   "correction": "中產階級",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "極端y子",
+   "correction": "極端分子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "共i制",
+   "correction": "共和制",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "地地心引力",
+   "correction": "地心引力",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "鹽城市市",
+   "correction": "鹽城市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "長汀a",
+   "correction": "長汀縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "通州p",
+   "correction": "通州區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "黑漆漆漆",
+   "correction": "黑漆漆",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "方d感",
+   "correction": "方向感",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "康涅狄格格",
+   "correction": "康涅狄格",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "m盛時期",
+   "correction": "鼎盛時期",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "皇太太后",
+   "correction": "皇太后",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "布里托斯",
+   "correction": "布里斯托",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "非l要",
+   "correction": "非必要",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "h般性",
+   "correction": "一般性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "作工證",
+   "correction": "工作證",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "正本清源源",
+   "correction": "正本清源",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "素食食者",
+   "correction": "素食者",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "歷史史劇",
+   "correction": "歷史劇",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "電d箱",
+   "correction": "電冰箱",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鹽鹼e",
+   "correction": "鹽鹼地",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "陽安市",
+   "correction": "安陽市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "穎脫而出",
+   "correction": "脫穎而出",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "不請請自來",
+   "correction": "不請自來",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "全神貫注注",
+   "correction": "全神貫注",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "演u者",
+   "correction": "演奏者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "細i末節",
+   "correction": "細枝末節",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "弗拉基米爾爾",
+   "correction": "弗拉基米爾",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "評v家",
+   "correction": "評論家",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s淺入深",
+   "correction": "由淺入深",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "貿易k差",
+   "correction": "貿易逆差",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "g文臺",
+   "correction": "天文臺",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "治療師師",
+   "correction": "治療師",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "正名言順",
+   "correction": "名正言順",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "棚戶區區",
+   "correction": "棚戶區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "聯合t府",
+   "correction": "聯合政府",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "五湖海四",
+   "correction": "五湖四海",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "朝中o",
+   "correction": "朝中社",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "還沒有有",
+   "correction": "還沒有",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "路無可逃",
+   "correction": "無路可逃",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "y癢癢",
+   "correction": "撓癢癢",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o姑娘",
+   "correction": "灰姑娘",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "安紅縣",
+   "correction": "紅安縣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "同等學n",
+   "correction": "同等學力",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "裹足q前",
+   "correction": "裹足不前",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u林市",
+   "correction": "榆林市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "來得y",
+   "correction": "來得及",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聚碳酸酯酯",
+   "correction": "聚碳酸酯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "峰v路轉",
+   "correction": "峰迴路轉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大快快朵頤",
+   "correction": "大快朵頤",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "病理學g",
+   "correction": "病理學家",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "普i茶",
+   "correction": "普洱茶",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "習習慣法",
+   "correction": "習慣法",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "汙水w理",
+   "correction": "汙水處理",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "南昌起w",
+   "correction": "南昌起義",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "從從長計議",
+   "correction": "從長計議",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "強i犯",
+   "correction": "強姦犯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "q極光",
+   "correction": "北極光",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "平e無奇",
+   "correction": "平淡無奇",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "出出差錯",
+   "correction": "出差錯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e蓋率",
+   "correction": "覆蓋率",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "核體糖",
+   "correction": "核糖體",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "案專組",
+   "correction": "專案組",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "拖f機",
+   "correction": "拖拉機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "加炮農",
+   "correction": "加農炮",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "鄭振振鐸",
+   "correction": "鄭振鐸",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "泛神s",
+   "correction": "泛神論",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "殘疾人人",
+   "correction": "殘疾人",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "a留良",
+   "correction": "呂留良",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o薩卡",
+   "correction": "盧薩卡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "梁漱j",
+   "correction": "梁漱溟",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "邀f賽",
+   "correction": "邀請賽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "電磁e",
+   "correction": "電磁場",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "東英條機",
+   "correction": "東條英機",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "心肌q死",
+   "correction": "心肌梗死",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "加加工廠",
+   "correction": "加工廠",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "蛋j尿",
+   "correction": "蛋白尿",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "q共體",
+   "correction": "歐共體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "緊隨隨其後",
+   "correction": "緊隨其後",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "華盛j",
+   "correction": "華盛頓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a澤東",
+   "correction": "毛澤東",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "織女星星",
+   "correction": "織女星",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "莫u山",
+   "correction": "莫干山",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "華p士",
+   "correction": "華萊士",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "埃文斯斯",
+   "correction": "埃文斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "a田縣",
+   "correction": "羅田縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "包裝k",
+   "correction": "包裝紙",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "首都國際機場場",
+   "correction": "首都國際機場",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "周川小",
+   "correction": "周小川",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "j魯日",
+   "correction": "布魯日",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "f轉彎",
+   "correction": "急轉彎",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "各族人p",
+   "correction": "各族人民",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a盡全力",
+   "correction": "竭盡全力",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "讀閱器",
+   "correction": "閱讀器",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "老爺爺爺",
+   "correction": "老爺爺",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "阿爾巴尼尼亞",
+   "correction": "阿爾巴尼亞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "l間諜",
+   "correction": "反間諜",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "博y縣",
+   "correction": "博羅縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "雷雷克斯",
+   "correction": "雷克斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "碳酸鈉鈉",
+   "correction": "碳酸鈉",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "摩納n",
+   "correction": "摩納哥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "高潔露",
+   "correction": "高露潔",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "t兵不動",
+   "correction": "按兵不動",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "硝硝基苯",
+   "correction": "硝基苯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "洪承e",
+   "correction": "洪承疇",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "無可挽s",
+   "correction": "無可挽回",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "李舜舜臣",
+   "correction": "李舜臣",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "漯市河",
+   "correction": "漯河市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "內政部t",
+   "correction": "內政部長",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "演藝t",
+   "correction": "演藝界",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "姆湯遜",
+   "correction": "湯姆遜",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "先行l",
+   "correction": "先行者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "戒毒a",
+   "correction": "戒毒所",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "心肌肌梗死",
+   "correction": "心肌梗死",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "三分之一一",
+   "correction": "三分之一",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "網球場場",
+   "correction": "網球場",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "五臟腑六",
+   "correction": "五臟六腑",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "葫蘆蘆島",
+   "correction": "葫蘆島",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "水i資源",
+   "correction": "水力資源",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "女兒身身",
+   "correction": "女兒身",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "梁漱溟溟",
+   "correction": "梁漱溟",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "s一天",
+   "correction": "前一天",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "高爾t球場",
+   "correction": "高爾夫球場",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "祖之沖",
+   "correction": "祖沖之",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "中市衛",
+   "correction": "中衛市",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "不牢可破",
+   "correction": "牢不可破",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "坦坦克車",
+   "correction": "坦克車",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "垃圾圾車",
+   "correction": "垃圾車",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "q央軍事委員會",
+   "correction": "中央軍事委員會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "f道理",
+   "correction": "講道理",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "統計f料",
+   "correction": "統計資料",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "巴黎聖母母院",
+   "correction": "巴黎聖母院",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "奉奉獻精神",
+   "correction": "奉獻精神",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "o時賽",
+   "correction": "加時賽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "電子器r",
+   "correction": "電子器件",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "愛a蘭人",
+   "correction": "愛爾蘭人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "陸軍s校",
+   "correction": "陸軍上校",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "宣傳傳單",
+   "correction": "宣傳單",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "人多眾勢",
+   "correction": "人多勢眾",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "人人自i",
+   "correction": "人人自危",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "資t中心",
+   "correction": "資訊中心",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "三a褲",
+   "correction": "三角褲",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n能燈",
+   "correction": "節能燈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "充電u",
+   "correction": "充電站",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "沉t岩",
+   "correction": "沉積岩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "第一眼眼",
+   "correction": "第一眼",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "業失者",
+   "correction": "失業者",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "現金a",
+   "correction": "現金流",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e華山",
+   "correction": "九華山",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大l會",
+   "correction": "大都會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o淡無奇",
+   "correction": "平淡無奇",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "禍不單f",
+   "correction": "禍不單行",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "杜杜蕾斯",
+   "correction": "杜蕾斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e毛蟲",
+   "correction": "毛毛蟲",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鄧州州市",
+   "correction": "鄧州市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "銀u色",
+   "correction": "銀灰色",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "萬事如意意",
+   "correction": "萬事如意",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "擦擦肩而過",
+   "correction": "擦肩而過",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "特n伊",
+   "correction": "特洛伊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s蠍座",
+   "correction": "天蠍座",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "竹溪n",
+   "correction": "竹溪縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大k嚷嚷",
+   "correction": "大聲嚷嚷",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "y水長流",
+   "correction": "細水長流",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "陸平縣",
+   "correction": "平陸縣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "噶w派",
+   "correction": "噶舉派",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "半m刊",
+   "correction": "半月刊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "更年z",
+   "correction": "更年期",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o黎大學",
+   "correction": "巴黎大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "優寡柔斷",
+   "correction": "優柔寡斷",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "取決c",
+   "correction": "取決於",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "天寒地地凍",
+   "correction": "天寒地凍",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "濫權用力",
+   "correction": "濫用權力",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "原j序數",
+   "correction": "原子序數",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "試衣間間",
+   "correction": "試衣間",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "天旋旋地轉",
+   "correction": "天旋地轉",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "福院利",
+   "correction": "福利院",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "可可想而知",
+   "correction": "可想而知",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "阿富汗汗",
+   "correction": "阿富汗",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "腦f經",
+   "correction": "腦神經",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "工工程師",
+   "correction": "工程師",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "升班g",
+   "correction": "升班馬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a心病狂",
+   "correction": "喪心病狂",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "兄h姐妹",
+   "correction": "兄弟姐妹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "k主權",
+   "correction": "宗主權",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i行業",
+   "correction": "銀行業",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "字十架",
+   "correction": "十字架",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "e爾克孜族",
+   "correction": "柯爾克孜族",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "手g擒來",
+   "correction": "手到擒來",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不不可",
+   "correction": "不可不",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "裝糊塗塗",
+   "correction": "裝糊塗",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "重晶s",
+   "correction": "重晶石",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "上海海戲劇學院",
+   "correction": "上海戲劇學院",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "字符z",
+   "correction": "字符串",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "專z片",
+   "correction": "專題片",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "愛沙尼尼亞",
+   "correction": "愛沙尼亞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "一一般而言",
+   "correction": "一般而言",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "達o協議",
+   "correction": "達成協議",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j果體",
+   "correction": "松果體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "功成身q",
+   "correction": "功成身退",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "美國n線",
+   "correction": "美國在線",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "優權先",
+   "correction": "優先權",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "主辦c",
+   "correction": "主辦國",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "芝麻q",
+   "correction": "芝麻油",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "基d巴斯",
+   "correction": "基里巴斯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "發k光大",
+   "correction": "發揚光大",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "犯罪g子",
+   "correction": "犯罪分子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "風o浪尖",
+   "correction": "風口浪尖",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "丹尼斯斯",
+   "correction": "丹尼斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "土石石方",
+   "correction": "土石方",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "易交所",
+   "correction": "交易所",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "中中國地質大學",
+   "correction": "中國地質大學",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "家n菜",
+   "correction": "家常菜",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "運p商",
+   "correction": "運營商",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "窮e不捨",
+   "correction": "窮追不捨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "自由放w",
+   "correction": "自由放任",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "得意洋i",
+   "correction": "得意洋洋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "地下水位位",
+   "correction": "地下水位",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "婚姻x",
+   "correction": "婚姻法",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大合唱唱",
+   "correction": "大合唱",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "讚讚不絕口",
+   "correction": "讚不絕口",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "o記本電腦",
+   "correction": "筆記本電腦",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "娃娃x",
+   "correction": "娃娃魚",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "f天地",
+   "correction": "小天地",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "親眼目f",
+   "correction": "親眼目睹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "戰e群",
+   "correction": "戰鬥群",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "元西前",
+   "correction": "西元前",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "交通管制制",
+   "correction": "交通管制",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "沙文主y",
+   "correction": "沙文主義",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "勞g合同",
+   "correction": "勞動合同",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "商洛c",
+   "correction": "商洛市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "肉x動物",
+   "correction": "肉食動物",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "告一一段落",
+   "correction": "告一段落",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "五倍倍子",
+   "correction": "五倍子",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "戚光繼",
+   "correction": "戚繼光",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "掉以u心",
+   "correction": "掉以輕心",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "漢陽陽區",
+   "correction": "漢陽區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "臨x實驗",
+   "correction": "臨床實驗",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "b反相機",
+   "correction": "單反相機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "時代代廣場",
+   "correction": "時代廣場",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "死記i背",
+   "correction": "死記硬背",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "戀不捨",
+   "correction": "戀戀不捨",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "碳碳化硅",
+   "correction": "碳化硅",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "華爾爾街日報",
+   "correction": "華爾街日報",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "說到到底",
+   "correction": "說到底",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "凱旋門門",
+   "correction": "凱旋門",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "巴爾幹幹",
+   "correction": "巴爾幹",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "航天天飛機",
+   "correction": "航天飛機",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "集體主義義",
+   "correction": "集體主義",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "舒a赫",
+   "correction": "舒馬赫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "望眾所歸",
+   "correction": "眾望所歸",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "黑澤明明",
+   "correction": "黑澤明",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "歸屬t",
+   "correction": "歸屬感",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "分期s款",
+   "correction": "分期付款",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "福福安市",
+   "correction": "福安市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "聯r會",
+   "correction": "聯歡會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "重武器器",
+   "correction": "重武器",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "語學義",
+   "correction": "語義學",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "l遙法外",
+   "correction": "逍遙法外",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "公v金",
+   "correction": "公積金",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "匹茲v",
+   "correction": "匹茲堡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u務教育",
+   "correction": "義務教育",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "外來詞詞",
+   "correction": "外來詞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "兵馬o",
+   "correction": "兵馬俑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "魔i師",
+   "correction": "魔法師",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "自強s息",
+   "correction": "自強不息",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n由體操",
+   "correction": "自由體操",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "永e性",
+   "correction": "永久性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s護神",
+   "correction": "守護神",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "傑奎奎琳",
+   "correction": "傑奎琳",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "黑塞哥哥維那",
+   "correction": "黑塞哥維那",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "批發場市",
+   "correction": "批發市場",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "花草草",
+   "correction": "花花草草",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "寡頭w治",
+   "correction": "寡頭政治",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "之趨若鶩",
+   "correction": "趨之若鶩",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "q票處",
+   "correction": "售票處",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "有機機磷",
+   "correction": "有機磷",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "y蘭經",
+   "correction": "古蘭經",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "厭菌氧",
+   "correction": "厭氧菌",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "東北s",
+   "correction": "東北角",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聯快邦遞",
+   "correction": "聯邦快遞",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "大大師級",
+   "correction": "大師級",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "拉夫羅t",
+   "correction": "拉夫羅夫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "犯罪者者",
+   "correction": "犯罪者",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "對流層層",
+   "correction": "對流層",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "雪a加霜",
+   "correction": "雪上加霜",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "d無止境",
+   "correction": "永無止境",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "青青年團",
+   "correction": "青年團",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "佛蒙特特",
+   "correction": "佛蒙特",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "聞聞風而動",
+   "correction": "聞風而動",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "癩蛤蟆蟆",
+   "correction": "癩蛤蟆",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "入海f",
+   "correction": "入海口",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "榆林o",
+   "correction": "榆林市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "殺人放i",
+   "correction": "殺人放火",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "下半半身",
+   "correction": "下半身",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "亞亞瑟王",
+   "correction": "亞瑟王",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "蓋頭骨",
+   "correction": "頭蓋骨",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "威風凜u",
+   "correction": "威風凜凜",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "半自自動",
+   "correction": "半自動",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "桂林o",
+   "correction": "桂林市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "奮顧不身",
+   "correction": "奮不顧身",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "餓y子",
+   "correction": "餓肚子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "西班牙牙語",
+   "correction": "西班牙語",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "b話費",
+   "correction": "電話費",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n入口",
+   "correction": "出入口",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "凡凡士林",
+   "correction": "凡士林",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "親s黨",
+   "correction": "親民黨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "分崩離q",
+   "correction": "分崩離析",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "靈e市",
+   "correction": "靈寶市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "爾蓋語",
+   "correction": "蓋爾語",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "天天主堂",
+   "correction": "天主堂",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "學學前教育",
+   "correction": "學前教育",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "散b詩",
+   "correction": "散文詩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "軟織組",
+   "correction": "軟組織",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "艾森豪威e",
+   "correction": "艾森豪威爾",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "朱利利安",
+   "correction": "朱利安",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "彭彭博社",
+   "correction": "彭博社",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "莫有須",
+   "correction": "莫須有",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "胡錦f",
+   "correction": "胡錦濤",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "賊海王",
+   "correction": "海賊王",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "離離合器",
+   "correction": "離合器",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "p孜以求",
+   "correction": "孜孜以求",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "軟m綿",
+   "correction": "軟綿綿",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "執f會",
+   "correction": "執委會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "通犯緝",
+   "correction": "通緝犯",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "s拜天",
+   "correction": "禮拜天",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "蒸q水",
+   "correction": "蒸餾水",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "毒毒理學",
+   "correction": "毒理學",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "保養品品",
+   "correction": "保養品",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e占庭",
+   "correction": "拜占庭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m丁漢",
+   "correction": "諾丁漢",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "慰p婦",
+   "correction": "慰安婦",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i江紅",
+   "correction": "滿江紅",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "v等獎",
+   "correction": "一等獎",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "法西u主義",
+   "correction": "法西斯主義",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "預k系統",
+   "correction": "預警系統",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "當塗縣縣",
+   "correction": "當塗縣",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "b動資產",
+   "correction": "流動資產",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "辯論n",
+   "correction": "辯論會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "廣縣饒",
+   "correction": "廣饒縣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "保護者者",
+   "correction": "保護者",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "同性i",
+   "correction": "同性愛",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a肢動物",
+   "correction": "節肢動物",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "航空s",
+   "correction": "航空站",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "太r報",
+   "correction": "太陽報",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "潑水水節",
+   "correction": "潑水節",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "水溶a",
+   "correction": "水溶性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "噴r器",
+   "correction": "噴霧器",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "過氧e氫",
+   "correction": "過氧化氫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r情達理",
+   "correction": "通情達理",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u共戴天",
+   "correction": "不共戴天",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "懸h橋",
+   "correction": "懸索橋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s門關",
+   "correction": "鬼門關",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "經濟濟林",
+   "correction": "經濟林",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "編輯輯部",
+   "correction": "編輯部",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "冠狀狀動脈",
+   "correction": "冠狀動脈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "m誕樹",
+   "correction": "聖誕樹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "蔣h石",
+   "correction": "蔣介石",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r育率",
+   "correction": "生育率",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "淡a湖",
+   "correction": "淡水湖",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "四一b",
+   "correction": "四一二",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e子商務",
+   "correction": "電子商務",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "衣原體體",
+   "correction": "衣原體",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "白頭偕老老",
+   "correction": "白頭偕老",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "老家人",
+   "correction": "老人家",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "世界i",
+   "correction": "世界級",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "群群策群力",
+   "correction": "群策群力",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "n河區",
+   "correction": "瀋河區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "廈門m",
+   "correction": "廈門市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "生物k",
+   "correction": "生物學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i通市",
+   "correction": "昭通市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "中新網網",
+   "correction": "中新網",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "乖s女",
+   "correction": "乖乖女",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "合而為一一",
+   "correction": "合而為一",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "s小二",
+   "correction": "店小二",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鎮江市市",
+   "correction": "鎮江市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "輕a飄",
+   "correction": "輕飄飄",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鄧l萍",
+   "correction": "鄧亞萍",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "行李李架",
+   "correction": "行李架",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "d孩兒",
+   "correction": "女孩兒",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "工作室室",
+   "correction": "工作室",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "c議會",
+   "correction": "市議會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p一色",
+   "correction": "清一色",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "全民投n",
+   "correction": "全民投票",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "馬不r蹄",
+   "correction": "馬不停蹄",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "q紅酒綠",
+   "correction": "燈紅酒綠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "助學o",
+   "correction": "助學金",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "人云云亦",
+   "correction": "人云亦云",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "一a一毫",
+   "correction": "一絲一毫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "後b箱",
+   "correction": "後備箱",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聖u節",
+   "correction": "聖誕節",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一時半x兒",
+   "correction": "一時半會兒",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a齊奧",
+   "correction": "拉齊奧",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不倒翁翁",
+   "correction": "不倒翁",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "鴨綠江江",
+   "correction": "鴨綠江",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "墓i銘",
+   "correction": "墓誌銘",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "伯明n",
+   "correction": "伯明翰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e女座",
+   "correction": "處女座",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "內內心深處",
+   "correction": "內心深處",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "i飲而盡",
+   "correction": "一飲而盡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "精無打采",
+   "correction": "無精打采",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "達斡爾族族",
+   "correction": "達斡爾族",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "s到擒來",
+   "correction": "手到擒來",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "對線角",
+   "correction": "對角線",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "o母雙亡",
+   "correction": "父母雙亡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "就地地取材",
+   "correction": "就地取材",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "家國文物局",
+   "correction": "國家文物局",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "張曼曼玉",
+   "correction": "張曼玉",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "堅韌拔不",
+   "correction": "堅韌不拔",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "數a百計",
+   "correction": "數以百計",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "有r物",
+   "correction": "有機物",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "節目單單",
+   "correction": "節目單",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "功大告成",
+   "correction": "大功告成",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "o大爺",
+   "correction": "老大爺",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "半條r",
+   "correction": "半條命",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "g學金",
+   "correction": "助學金",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "可不限量",
+   "correction": "不可限量",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "貧困區地",
+   "correction": "貧困地區",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "梁山縣縣",
+   "correction": "梁山縣",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "目無中人",
+   "correction": "目中無人",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "兜圈t",
+   "correction": "兜圈子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "保區護",
+   "correction": "保護區",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "證明s",
+   "correction": "證明書",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "石油i出國組織",
+   "correction": "石油輸出國組織",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "先天足不",
+   "correction": "先天不足",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "止g住",
+   "correction": "止不住",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "d腦筋",
+   "correction": "傷腦筋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "水漲船y",
+   "correction": "水漲船高",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "緊鑼o鼓",
+   "correction": "緊鑼密鼓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "涇涇渭分明",
+   "correction": "涇渭分明",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "留留尼旺",
+   "correction": "留尼旺",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "d俄羅斯",
+   "correction": "白俄羅斯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p色食品",
+   "correction": "綠色食品",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "慶大祝會",
+   "correction": "慶祝大會",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "填物充",
+   "correction": "填充物",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "保a區",
+   "correction": "保留區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "刮鬍u",
+   "correction": "刮鬍子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "傳輸l率",
+   "correction": "傳輸速率",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "g外廣告",
+   "correction": "戶外廣告",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "啟蒙蒙運動",
+   "correction": "啟蒙運動",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "安e閥",
+   "correction": "安全閥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "c崗岩",
+   "correction": "花崗岩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "再好i過",
+   "correction": "再好不過",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "賀拉斯斯",
+   "correction": "賀拉斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "不恬知恥",
+   "correction": "恬不知恥",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "消毒劑劑",
+   "correction": "消毒劑",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "秀洪柱",
+   "correction": "洪秀柱",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "地卡亞",
+   "correction": "卡地亞",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "節節退敗",
+   "correction": "節節敗退",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "意g流",
+   "correction": "意識流",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "耶和和華",
+   "correction": "耶和華",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "z殊教育",
+   "correction": "特殊教育",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "波哥哥大",
+   "correction": "波哥大",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "地水表",
+   "correction": "地表水",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "孫i芳",
+   "correction": "孫傳芳",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "西峽r",
+   "correction": "西峽縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "小品文文",
+   "correction": "小品文",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "基本上上",
+   "correction": "基本上",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "消化道道",
+   "correction": "消化道",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "伐木工工",
+   "correction": "伐木工",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e字路口",
+   "correction": "十字路口",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "頭皮n",
+   "correction": "頭皮屑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "漫漫無目的",
+   "correction": "漫無目的",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "l近聞名",
+   "correction": "遠近聞名",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s宗棠",
+   "correction": "左宗棠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不法行行為",
+   "correction": "不法行為",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "p像獎",
+   "correction": "金像獎",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "百貨商商店",
+   "correction": "百貨商店",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "情g員",
+   "correction": "情報員",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "攝影棚棚",
+   "correction": "攝影棚",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "d浪板",
+   "correction": "衝浪板",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s法性",
+   "correction": "合法性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不好w",
+   "correction": "不好過",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "保人險",
+   "correction": "保險人",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "除此之x",
+   "correction": "除此之外",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "原k本本",
+   "correction": "原原本本",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "水水汪汪",
+   "correction": "水汪汪",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "明晃晃晃",
+   "correction": "明晃晃",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t時代",
+   "correction": "同時代",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s宙飛船",
+   "correction": "宇宙飛船",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "蒲松f",
+   "correction": "蒲松齡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "d維板",
+   "correction": "纖維板",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "粗心意大",
+   "correction": "粗心大意",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "一鳴驚驚人",
+   "correction": "一鳴驚人",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "長臂臂猿",
+   "correction": "長臂猿",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "長q三角洲",
+   "correction": "長江三角洲",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不不眠不休",
+   "correction": "不眠不休",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "張張家港市",
+   "correction": "張家港市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "倫哥布",
+   "correction": "哥倫布",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "歐h區",
+   "correction": "歐元區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "果然t此",
+   "correction": "果然如此",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "亂七八八糟",
+   "correction": "亂七八糟",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "大r積",
+   "correction": "大面積",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "爵士士樂",
+   "correction": "爵士樂",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "不堪設想想",
+   "correction": "不堪設想",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "黃山a",
+   "correction": "黃山市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "瞰鳥圖",
+   "correction": "鳥瞰圖",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "生魚r",
+   "correction": "生魚片",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "搜隊索",
+   "correction": "搜索隊",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "i工學校",
+   "correction": "技工學校",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "三第方",
+   "correction": "第三方",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "擎w柱",
+   "correction": "擎天柱",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "史無前例例",
+   "correction": "史無前例",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "吃吃喝",
+   "correction": "吃吃喝喝",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "家過家",
+   "correction": "過家家",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "滿腹腹經綸",
+   "correction": "滿腹經綸",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "乳a癌",
+   "correction": "乳腺癌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "工作作面",
+   "correction": "工作面",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "科爾沁p翼中旗",
+   "correction": "科爾沁左翼中旗",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "外x設計",
+   "correction": "外觀設計",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "製造w",
+   "correction": "製造廠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "白雲區區",
+   "correction": "白雲區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "降水量量",
+   "correction": "降水量",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "手o車",
+   "correction": "手推車",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "清清真寺",
+   "correction": "清真寺",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "批評v",
+   "correction": "批評家",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "敬而之遠",
+   "correction": "敬而遠之",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "周周總理",
+   "correction": "周總理",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "並肩作q",
+   "correction": "並肩作戰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "耐火o料",
+   "correction": "耐火材料",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "打天j",
+   "correction": "打天下",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "羅密p",
+   "correction": "羅密歐",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p德拉",
+   "correction": "曼德拉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "x理道德",
+   "correction": "倫理道德",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "生力產",
+   "correction": "生產力",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "w姑庵",
+   "correction": "尼姑庵",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "學生會會",
+   "correction": "學生會",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "g克共和國",
+   "correction": "捷克共和國",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "l自忠",
+   "correction": "張自忠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "德e志聯邦共和國",
+   "correction": "德意志聯邦共和國",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "北b大學",
+   "correction": "北京大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "本年h",
+   "correction": "本年度",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "蒙代爾爾",
+   "correction": "蒙代爾",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "事百可樂",
+   "correction": "百事可樂",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "小橋流i",
+   "correction": "小橋流水",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "奧里n邦",
+   "correction": "奧里薩邦",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "經驗富豐",
+   "correction": "經驗豐富",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "治外法r",
+   "correction": "治外法權",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "倖存者者",
+   "correction": "倖存者",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "選題擇",
+   "correction": "選擇題",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "下半場場",
+   "correction": "下半場",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "高露h",
+   "correction": "高露潔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e政處分",
+   "correction": "行政處分",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "c事處",
+   "correction": "人事處",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "成阜門",
+   "correction": "阜成門",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "自自我實現",
+   "correction": "自我實現",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "津巴r韋",
+   "correction": "津巴布韋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "新j西",
+   "correction": "新澤西",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "責無旁m",
+   "correction": "責無旁貸",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "民m傳說",
+   "correction": "民間傳說",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "扮女男裝",
+   "correction": "女扮男裝",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "植物落群",
+   "correction": "植物群落",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "操操縱桿",
+   "correction": "操縱桿",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "收音o",
+   "correction": "收音機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "第二次世界大u",
+   "correction": "第二次世界大戰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "醍o灌頂",
+   "correction": "醍醐灌頂",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "有限公司司",
+   "correction": "有限公司",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "武武士刀",
+   "correction": "武士刀",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "人力車車",
+   "correction": "人力車",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "如意i盤",
+   "correction": "如意算盤",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "c可多得",
+   "correction": "不可多得",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "k直門",
+   "correction": "西直門",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "蘭開斯特特",
+   "correction": "蘭開斯特",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "移動硬盤盤",
+   "correction": "移動硬盤",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "中國國民革黨命委員會",
+   "correction": "中國國民黨革命委員會",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "e令官",
+   "correction": "司令官",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "高錳鉀酸",
+   "correction": "高錳酸鉀",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "貨真h實",
+   "correction": "貨真價實",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "模h器",
+   "correction": "模擬器",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鐵e市",
+   "correction": "鐵嶺市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "威威海市",
+   "correction": "威海市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "發n率",
+   "correction": "發病率",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "江a縣",
+   "correction": "江孜縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一個w",
+   "correction": "一個樣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "弗弗洛姆",
+   "correction": "弗洛姆",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e槍手",
+   "correction": "神槍手",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "汪涵道",
+   "correction": "汪道涵",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "英國廣播公r",
+   "correction": "英國廣播公司",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "近親繁殖殖",
+   "correction": "近親繁殖",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "上高q",
+   "correction": "上高縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "白求恩恩",
+   "correction": "白求恩",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "突破口口",
+   "correction": "突破口",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "一u到晚",
+   "correction": "一天到晚",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "按勞分配配",
+   "correction": "按勞分配",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "聖易路斯",
+   "correction": "聖路易斯",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "s工夫",
+   "correction": "下工夫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j車位",
+   "correction": "停車位",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "接j而來",
+   "correction": "接踵而來",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "h有惡報",
+   "correction": "惡有惡報",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "官方語x",
+   "correction": "官方語言",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "破紀紀錄",
+   "correction": "破紀錄",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "維特x斯坦",
+   "correction": "維特根斯坦",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "x陶紀",
+   "correction": "奧陶紀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "代表表作",
+   "correction": "代表作",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "怦怦然心動",
+   "correction": "怦然心動",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "帽子戲戲法",
+   "correction": "帽子戲法",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "鏡上頭",
+   "correction": "上鏡頭",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "波動m",
+   "correction": "波動性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "原汁原z",
+   "correction": "原汁原味",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "高高風險",
+   "correction": "高風險",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t不相識",
+   "correction": "素不相識",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大昭寺寺",
+   "correction": "大昭寺",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "阿薩h",
+   "correction": "阿薩姆",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "集體經濟濟",
+   "correction": "集體經濟",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "德國s",
+   "correction": "德國人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "拇大指",
+   "correction": "大拇指",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "無孔w入",
+   "correction": "無孔不入",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p之一炬",
+   "correction": "付之一炬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "產業命革",
+   "correction": "產業革命",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "回回合制",
+   "correction": "回合制",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "m分區",
+   "correction": "軍分區",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "旅遊c",
+   "correction": "旅遊者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "放s機",
+   "correction": "放映機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "多晶硅硅",
+   "correction": "多晶硅",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "無濟事於",
+   "correction": "無濟於事",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "時小工",
+   "correction": "小時工",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "戶口口本",
+   "correction": "戶口本",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "風火輪輪",
+   "correction": "風火輪",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "審x長",
+   "correction": "審計長",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "牽手手",
+   "correction": "手牽手",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "天天河區",
+   "correction": "天河區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "黃i高原",
+   "correction": "黃土高原",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "平谷區區",
+   "correction": "平谷區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "烏c別克",
+   "correction": "烏孜別克",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "法i代理",
+   "correction": "法定代理",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "瞭如指掌掌",
+   "correction": "瞭如指掌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "西澳大大利亞",
+   "correction": "西澳大利亞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e立大學",
+   "correction": "州立大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "潛移默化化",
+   "correction": "潛移默化",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "巴莫勒",
+   "correction": "巴勒莫",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "陳i扁",
+   "correction": "陳水扁",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "信以為真真",
+   "correction": "信以為真",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "r何容易",
+   "correction": "談何容易",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "治喬敦",
+   "correction": "喬治敦",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "包工頭頭",
+   "correction": "包工頭",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "腫n學",
+   "correction": "腫瘤學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "耀武k威",
+   "correction": "耀武揚威",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "思想識意",
+   "correction": "思想意識",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "一丘b貉",
+   "correction": "一丘之貉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "醫m室",
+   "correction": "醫務室",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "流行行病",
+   "correction": "流行病",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "c花運",
+   "correction": "桃花運",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "斯斯諾克",
+   "correction": "斯諾克",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "支配c",
+   "correction": "支配權",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一一團糟",
+   "correction": "一團糟",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "在f之前",
+   "correction": "在此之前",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "臨時時工",
+   "correction": "臨時工",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "埃因因霍溫",
+   "correction": "埃因霍溫",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "隱埋姓名",
+   "correction": "隱姓埋名",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "不了之",
+   "correction": "不了了之",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "敲詐勒勒索",
+   "correction": "敲詐勒索",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "可卡卡因",
+   "correction": "可卡因",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "星三集團",
+   "correction": "三星集團",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "證公處",
+   "correction": "公證處",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "音節樂",
+   "correction": "音樂節",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "羅馬j亞",
+   "correction": "羅馬尼亞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "徵特值",
+   "correction": "特徵值",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "y結者",
+   "correction": "終結者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "秋後算s",
+   "correction": "秋後算賬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "半決決賽",
+   "correction": "半決賽",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "阿羅i",
+   "correction": "阿羅約",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j熱能",
+   "correction": "地熱能",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n不了",
+   "correction": "受不了",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "十四行v",
+   "correction": "十四行詩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "容v兒",
+   "correction": "容祖兒",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "卡拉什尼f夫",
+   "correction": "卡拉什尼科夫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "古k字",
+   "correction": "古文字",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "電負y",
+   "correction": "電負性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i試院",
+   "correction": "考試院",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j影業",
+   "correction": "電影業",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "打j罵俏",
+   "correction": "打情罵俏",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "傳者播",
+   "correction": "傳播者",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "如假包包換",
+   "correction": "如假包換",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "哪門門子",
+   "correction": "哪門子",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "小小年年紀",
+   "correction": "小小年紀",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "洪全秀",
+   "correction": "洪秀全",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "皮j科",
+   "correction": "皮膚科",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "棕櫚e",
+   "correction": "棕櫚樹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "改者革",
+   "correction": "改革者",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "e不可支",
+   "correction": "樂不可支",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "臨界x",
+   "correction": "臨界點",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "奧巴馬馬",
+   "correction": "奧巴馬",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "n收眼底",
+   "correction": "盡收眼底",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "移花花接木",
+   "correction": "移花接木",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "性別歧i",
+   "correction": "性別歧視",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "風雨雨",
+   "correction": "風風雨雨",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "n月艙",
+   "correction": "登月艙",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "小心h翼",
+   "correction": "小心翼翼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "愛新覺g",
+   "correction": "愛新覺羅",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "額i縣",
+   "correction": "額敏縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "蘇萊c",
+   "correction": "蘇萊曼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "撲朔迷迷離",
+   "correction": "撲朔迷離",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "業商中心",
+   "correction": "商業中心",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "興中t",
+   "correction": "興中會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s密者",
+   "correction": "告密者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "蒙古s",
+   "correction": "蒙古包",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "保皇i",
+   "correction": "保皇黨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "無無影形",
+   "correction": "無影無形",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "m高窟",
+   "correction": "莫高窟",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "新婚夫w",
+   "correction": "新婚夫婦",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j氏體",
+   "correction": "馬氏體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "米高o",
+   "correction": "米高揚",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "不不以為意",
+   "correction": "不以為意",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "三x戀",
+   "correction": "三角戀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i衣房",
+   "correction": "洗衣房",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "香香港科技大學",
+   "correction": "香港科技大學",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "豐v縣",
+   "correction": "豐順縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "k州市",
+   "correction": "常州市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "六w形",
+   "correction": "六邊形",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "沒大沒沒小",
+   "correction": "沒大沒小",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "y華富貴",
+   "correction": "榮華富貴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "深思s慮",
+   "correction": "深思熟慮",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a州市",
+   "correction": "溫州市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "放e室",
+   "correction": "放映室",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u屑病",
+   "correction": "銀屑病",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "喀麥y",
+   "correction": "喀麥隆",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "l泉市",
+   "correction": "酒泉市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "租借o",
+   "correction": "租借地",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "水q畫",
+   "correction": "水墨畫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "主題題公園",
+   "correction": "主題公園",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "大w小怪",
+   "correction": "大驚小怪",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "恨不o",
+   "correction": "恨不得",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "天天下第一",
+   "correction": "天下第一",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e心如意",
+   "correction": "稱心如意",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "h評家",
+   "correction": "批評家",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "長t電話",
+   "correction": "長途電話",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "亞d灣",
+   "correction": "亞丁灣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "成人t",
+   "correction": "成人禮",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "西西王母",
+   "correction": "西王母",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "獨車輪",
+   "correction": "獨輪車",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "核彈頭頭",
+   "correction": "核彈頭",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "重見見天日",
+   "correction": "重見天日",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "金屬素元",
+   "correction": "金屬元素",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "爆炸物物",
+   "correction": "爆炸物",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "不l乎",
+   "correction": "不外乎",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "連衣裙裙",
+   "correction": "連衣裙",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "老祖s",
+   "correction": "老祖宗",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "左u為難",
+   "correction": "左右為難",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "助助聽器",
+   "correction": "助聽器",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "過氧物化",
+   "correction": "過氧化物",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "左膀右e",
+   "correction": "左膀右臂",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e加杜古",
+   "correction": "瓦加杜古",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "白白楊樹",
+   "correction": "白楊樹",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "五彩繽紛紛",
+   "correction": "五彩繽紛",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "進十制",
+   "correction": "十進制",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "密西y",
+   "correction": "密西根",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "赤峰c",
+   "correction": "赤峰市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "聽不進i",
+   "correction": "聽不進去",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "和平談判判",
+   "correction": "和平談判",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "放放在心上",
+   "correction": "放在心上",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "死g餘辜",
+   "correction": "死有餘辜",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "同等c力",
+   "correction": "同等學力",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "價g物美",
+   "correction": "價廉物美",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "以身作d",
+   "correction": "以身作則",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o屍間",
+   "correction": "停屍間",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "食s鏈",
+   "correction": "食物鏈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "中國民主促會進",
+   "correction": "中國民主促進會",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "感性認識識",
+   "correction": "感性認識",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "z子戶",
+   "correction": "釘子戶",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "k料庫",
+   "correction": "資料庫",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "喪b費",
+   "correction": "喪葬費",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "口蹄疫疫",
+   "correction": "口蹄疫",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "外資企t",
+   "correction": "外資企業",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "利比亞亞",
+   "correction": "利比亞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "e劫一空",
+   "correction": "洗劫一空",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "開門紅紅",
+   "correction": "開門紅",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "f效能",
+   "correction": "高效能",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "保險u",
+   "correction": "保險金",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "兩極k",
+   "correction": "兩極化",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "俏俏皮話",
+   "correction": "俏皮話",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "尼瑪縣縣",
+   "correction": "尼瑪縣",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "旅遊j點",
+   "correction": "旅遊景點",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "電話g",
+   "correction": "電話簿",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "流浪l",
+   "correction": "流浪狗",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "引l辭職",
+   "correction": "引咎辭職",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u樂節",
+   "correction": "音樂節",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m感交集",
+   "correction": "百感交集",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "玉蘭蘭花",
+   "correction": "玉蘭花",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "庇f所",
+   "correction": "庇護所",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "海i體",
+   "correction": "海綿體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "五五臺山",
+   "correction": "五臺山",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "掛號費費",
+   "correction": "掛號費",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "二甲苯苯",
+   "correction": "二甲苯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "想y然",
+   "correction": "想當然",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "史密斯斯",
+   "correction": "史密斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "r破人亡",
+   "correction": "家破人亡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "煽x性",
+   "correction": "煽動性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "辛u疾",
+   "correction": "辛棄疾",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "天下平太",
+   "correction": "天下太平",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "水赤河",
+   "correction": "赤水河",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "如火t荼",
+   "correction": "如火如荼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鈦w金",
+   "correction": "鈦合金",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一g零一夜",
+   "correction": "一千零一夜",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "萬事開頭難難",
+   "correction": "萬事開頭難",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "社會黨黨",
+   "correction": "社會黨",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "金融機i",
+   "correction": "金融機構",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "便警衣察",
+   "correction": "便衣警察",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "k手稱快",
+   "correction": "拍手稱快",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "穿h時空",
+   "correction": "穿越時空",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "馬達加t加",
+   "correction": "馬達加斯加",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "歷史觀觀",
+   "correction": "歷史觀",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "鋸木木廠",
+   "correction": "鋸木廠",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "苦行u",
+   "correction": "苦行僧",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "馬l尼",
+   "correction": "馬丁尼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "渾然r成",
+   "correction": "渾然天成",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "千島h",
+   "correction": "千島湖",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "千千姿百態",
+   "correction": "千姿百態",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "自尋煩煩惱",
+   "correction": "自尋煩惱",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "聽聽得見",
+   "correction": "聽得見",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "社社會主義",
+   "correction": "社會主義",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "鋼鐵廠廠",
+   "correction": "鋼鐵廠",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "臨i工",
+   "correction": "臨時工",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "q朝鮮",
+   "correction": "北朝鮮",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "徇私枉枉法",
+   "correction": "徇私枉法",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "滴水水不漏",
+   "correction": "滴水不漏",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "愛丁e",
+   "correction": "愛丁堡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "非同尋w",
+   "correction": "非同尋常",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "哺a類",
+   "correction": "哺乳類",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "逃逃之夭夭",
+   "correction": "逃之夭夭",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t平間",
+   "correction": "太平間",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "生還s",
+   "correction": "生還者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "暴風潮",
+   "correction": "風暴潮",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "陳b達",
+   "correction": "陳伯達",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "梭子蟹蟹",
+   "correction": "梭子蟹",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "健康康檢查",
+   "correction": "健康檢查",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "忍俊不m",
+   "correction": "忍俊不禁",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p呆子",
+   "correction": "書呆子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "障礙物物",
+   "correction": "障礙物",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "商業模模式",
+   "correction": "商業模式",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "j南克",
+   "correction": "伯南克",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "建寧縣縣",
+   "correction": "建寧縣",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "開開創性",
+   "correction": "開創性",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "天f葵",
+   "correction": "天竺葵",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "診聽器",
+   "correction": "聽診器",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "s然不覺",
+   "correction": "渾然不覺",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "章釗士",
+   "correction": "章士釗",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "u枝花市",
+   "correction": "攀枝花市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "人鼎聲沸",
+   "correction": "人聲鼎沸",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "基設礎施",
+   "correction": "基礎設施",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "石石敬瑭",
+   "correction": "石敬瑭",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "基e格",
+   "correction": "基辛格",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "盛凌氣人",
+   "correction": "盛氣凌人",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "辜t銘",
+   "correction": "辜鴻銘",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "第二g",
+   "correction": "第二天",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "t誕不經",
+   "correction": "荒誕不經",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "苦口l心",
+   "correction": "苦口婆心",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "救生b",
+   "correction": "救生圈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "觀光光局",
+   "correction": "觀光局",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "有機n學",
+   "correction": "有機化學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "平工均資",
+   "correction": "平均工資",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "百s富翁",
+   "correction": "百萬富翁",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "新聞自r",
+   "correction": "新聞自由",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "咖啡f",
+   "correction": "咖啡店",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "承上啟下下",
+   "correction": "承上啟下",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "宜蘭v",
+   "correction": "宜蘭市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "十八萬千里",
+   "correction": "十萬八千里",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "察檢署",
+   "correction": "檢察署",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "爺們i",
+   "correction": "爺們兒",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "書秘處",
+   "correction": "秘書處",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "一閃而n",
+   "correction": "一閃而過",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "f蛋白",
+   "correction": "球蛋白",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "窮山水盡",
+   "correction": "山窮水盡",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "美術n",
+   "correction": "美術家",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "未來q義",
+   "correction": "未來主義",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "停戰f定",
+   "correction": "停戰協定",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "救衣生",
+   "correction": "救生衣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "運e學",
+   "correction": "運籌學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "溶解a",
+   "correction": "溶解度",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "孫逸逸仙",
+   "correction": "孫逸仙",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "犯罪現場場",
+   "correction": "犯罪現場",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "火岩成",
+   "correction": "火成岩",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "內蒙古自自治區",
+   "correction": "內蒙古自治區",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "變變化無常",
+   "correction": "變化無常",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "喜新t舊",
+   "correction": "喜新厭舊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "圖u機",
+   "correction": "圖靈機",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "盤t市",
+   "correction": "盤錦市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "九五五之尊",
+   "correction": "九五之尊",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "籃x隊",
+   "correction": "籃球隊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "涼山i族自治州",
+   "correction": "涼山彝族自治州",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "泉州市市",
+   "correction": "泉州市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "來之不易易",
+   "correction": "來之不易",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "中b年人",
+   "correction": "中老年人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "茶會話",
+   "correction": "茶話會",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "德意志志民主共和國",
+   "correction": "德意志民主共和國",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "a至於",
+   "correction": "不至於",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "鄂托托克旗",
+   "correction": "鄂托克旗",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "軌道交通通",
+   "correction": "軌道交通",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "異t體",
+   "correction": "異構體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "礦w水",
+   "correction": "礦泉水",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "運r車",
+   "correction": "運鈔車",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "人k呼吸",
+   "correction": "人工呼吸",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "熱o鬧鬧",
+   "correction": "熱熱鬧鬧",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "歌歌舞團",
+   "correction": "歌舞團",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t義縣",
+   "correction": "武義縣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "哈馬斯斯",
+   "correction": "哈馬斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "球k白",
+   "correction": "球蛋白",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "老爺o",
+   "correction": "老爺車",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "明辨辨是非",
+   "correction": "明辨是非",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "人助為樂",
+   "correction": "助人為樂",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "馬a迪",
+   "correction": "馬哈迪",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "調制解調o",
+   "correction": "調制解調器",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "d歷在目",
+   "correction": "歷歷在目",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "安縣吉",
+   "correction": "安吉縣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "平方英u",
+   "correction": "平方英尺",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "播員音",
+   "correction": "播音員",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "數為不多",
+   "correction": "為數不多",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "生態家學",
+   "correction": "生態學家",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "克拉d諾亞爾斯克",
+   "correction": "克拉斯諾亞爾斯克",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "保守v",
+   "correction": "保守黨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "吳三w",
+   "correction": "吳三桂",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "太太陽光",
+   "correction": "太陽光",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "受害p",
+   "correction": "受害者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "矯枉q正",
+   "correction": "矯枉過正",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "國家元首首",
+   "correction": "國家元首",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "管家i",
+   "correction": "管家婆",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u垂青史",
+   "correction": "名垂青史",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "艾哈邁德德",
+   "correction": "艾哈邁德",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "定瀘橋",
+   "correction": "瀘定橋",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "x體化",
+   "correction": "一體化",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "手底x",
+   "correction": "手底下",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "拋s引玉",
+   "correction": "拋磚引玉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "林g玉",
+   "correction": "林黛玉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "k子核",
+   "correction": "原子核",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e比瑞亞",
+   "correction": "賴比瑞亞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "t託投資公司",
+   "correction": "信託投資公司",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "精病神學",
+   "correction": "精神病學",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "d娃娃",
+   "correction": "布娃娃",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a洛姆",
+   "correction": "弗洛姆",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "e力資源",
+   "correction": "水力資源",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "母細w",
+   "correction": "母細胞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "說說不上來",
+   "correction": "說不上來",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "政治委a",
+   "correction": "政治委員",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "人事部g",
+   "correction": "人事部門",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "心h口服",
+   "correction": "心服口服",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "救生圈圈",
+   "correction": "救生圈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "中央o學",
+   "correction": "中央大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "堅忍忍不拔",
+   "correction": "堅忍不拔",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "運輸艦艦",
+   "correction": "運輸艦",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "k利局",
+   "correction": "專利局",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "威斯r星",
+   "correction": "威斯康星",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一箭仇之",
+   "correction": "一箭之仇",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "香港科技大d",
+   "correction": "香港科技大學",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a冥之中",
+   "correction": "冥冥之中",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "為時o早",
+   "correction": "為時過早",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "昂首闊步步",
+   "correction": "昂首闊步",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "生b線",
+   "correction": "生命線",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "q吞虎嚥",
+   "correction": "狼吞虎嚥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "傳w者",
+   "correction": "傳播者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "多數黨黨",
+   "correction": "多數黨",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "氏盧縣",
+   "correction": "盧氏縣",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "兄弟弟姐妹",
+   "correction": "兄弟姐妹",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "i舜臣",
+   "correction": "李舜臣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "三叉戟戟",
+   "correction": "三叉戟",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "范瑋琪琪",
+   "correction": "范瑋琪",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "不在少數數",
+   "correction": "不在少數",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "株r市",
+   "correction": "株洲市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "曉紀嵐",
+   "correction": "紀曉嵐",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "相而對言",
+   "correction": "相對而言",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "o人味",
+   "correction": "女人味",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "捷克共和國國",
+   "correction": "捷克共和國",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "股份公a",
+   "correction": "股份公司",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "禮拜v",
+   "correction": "禮拜四",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "丁字字褲",
+   "correction": "丁字褲",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "m原子",
+   "correction": "氫原子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "原m量",
+   "correction": "原子量",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "錄取率率",
+   "correction": "錄取率",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "從從頭到腳",
+   "correction": "從頭到腳",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "不多t少",
+   "correction": "不多不少",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "蛇n美人",
+   "correction": "蛇蠍美人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "儀隴縣縣",
+   "correction": "儀隴縣",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "法律制v",
+   "correction": "法律制裁",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "小氣z",
+   "correction": "小氣鬼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "檔案案室",
+   "correction": "檔案室",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "底比斯斯",
+   "correction": "底比斯",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "肉搏戰戰",
+   "correction": "肉搏戰",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "生命危r",
+   "correction": "生命危險",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "萬o油",
+   "correction": "萬金油",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "百花合",
+   "correction": "百合花",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "u斯尼樂園",
+   "correction": "迪斯尼樂園",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "x希米亞",
+   "correction": "波希米亞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "交叉s",
+   "correction": "交叉口",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "男女關h",
+   "correction": "男女關係",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "勤勤懇g",
+   "correction": "勤勤懇懇",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "有無心力",
+   "correction": "有心無力",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "a心全意",
+   "correction": "全心全意",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "自朱清",
+   "correction": "朱自清",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "姍來姍遲",
+   "correction": "姍姍來遲",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "閻羅v",
+   "correction": "閻羅王",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "女人主",
+   "correction": "女主人",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "格不入",
+   "correction": "格格不入",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "隨機c",
+   "correction": "隨機數",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "與世隔絕絕",
+   "correction": "與世隔絕",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "花言巧u",
+   "correction": "花言巧語",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i行包",
+   "correction": "旅行包",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "溢於言l",
+   "correction": "溢於言表",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "進u貨",
+   "correction": "進口貨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "s草一木",
+   "correction": "一草一木",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "民政政局",
+   "correction": "民政局",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "z名冊",
+   "correction": "花名冊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r山陵",
+   "correction": "中山陵",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "其樂無無窮",
+   "correction": "其樂無窮",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "收y國有",
+   "correction": "收歸國有",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "碳氫化合l",
+   "correction": "碳氫化合物",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "麻省理工工學院",
+   "correction": "麻省理工學院",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "登嘉t",
+   "correction": "登嘉樓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "安倍晉三三",
+   "correction": "安倍晉三",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t志之士",
+   "correction": "有志之士",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "野生植m",
+   "correction": "野生植物",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "h韶涵",
+   "correction": "張韶涵",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "l東省",
+   "correction": "山東省",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "害群之馬馬",
+   "correction": "害群之馬",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "n龍會",
+   "correction": "黑龍會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "一路上上",
+   "correction": "一路上",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "流行l",
+   "correction": "流行語",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "巨蟹座座",
+   "correction": "巨蟹座",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "o人聽聞",
+   "correction": "駭人聽聞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "急急於求成",
+   "correction": "急於求成",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "華東理工大學學",
+   "correction": "華東理工大學",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "互n有無",
+   "correction": "互通有無",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "翻來來覆去",
+   "correction": "翻來覆去",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "聘任p",
+   "correction": "聘任制",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "v份證",
+   "correction": "身份證",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "散熱o",
+   "correction": "散熱器",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n泉河",
+   "correction": "萬泉河",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "更有p者",
+   "correction": "更有甚者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "原始z會",
+   "correction": "原始社會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "有錢能使鬼推e",
+   "correction": "有錢能使鬼推磨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "希h伯特",
+   "correction": "希爾伯特",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "w藝雙馨",
+   "correction": "德藝雙馨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "評團審",
+   "correction": "評審團",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "剖腹腹產",
+   "correction": "剖腹產",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "研究p",
+   "correction": "研究院",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "在天之靈靈",
+   "correction": "在天之靈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "普p斯頓",
+   "correction": "普林斯頓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "唐高o",
+   "correction": "唐高祖",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "搖滾z",
+   "correction": "搖滾樂",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "八路軍軍",
+   "correction": "八路軍",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t拉盛",
+   "correction": "法拉盛",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "令行禁止止",
+   "correction": "令行禁止",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "t約記者",
+   "correction": "特約記者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "搖籃曲曲",
+   "correction": "搖籃曲",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "老糊n",
+   "correction": "老糊塗",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "製造廠廠",
+   "correction": "製造廠",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "o不客氣",
+   "correction": "毫不客氣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "j陣子",
+   "correction": "一陣子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "理所當應",
+   "correction": "理所應當",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "馬薩諸n",
+   "correction": "馬薩諸塞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "埃德v",
+   "correction": "埃德加",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "掠奪者者",
+   "correction": "掠奪者",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "p氏體",
+   "correction": "奧氏體",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "法蘭p",
+   "correction": "法蘭西",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "緊n狀態",
+   "correction": "緊張狀態",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "第一w金",
+   "correction": "第一桶金",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "u內外",
+   "correction": "境內外",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "毛澤東東",
+   "correction": "毛澤東",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "弗里德o希",
+   "correction": "弗里德里希",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "水s性",
+   "correction": "水溶性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "格香里拉",
+   "correction": "香格里拉",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "天然資源源",
+   "correction": "天然資源",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "b倒性",
+   "correction": "壓倒性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "n發現場",
+   "correction": "案發現場",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "旅行行袋",
+   "correction": "旅行袋",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "一r勁兒",
+   "correction": "一個勁兒",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "h里西亞",
+   "correction": "西里西亞",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "略r一二",
+   "correction": "略知一二",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "花生n",
+   "correction": "花生醬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "絕多大數",
+   "correction": "絕大多數",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "t外之音",
+   "correction": "弦外之音",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "紈絝x弟",
+   "correction": "紈絝子弟",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i天師",
+   "correction": "張天師",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "走p無路",
+   "correction": "走投無路",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "主z翁",
+   "correction": "主人翁",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "交易y",
+   "correction": "交易者",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "分百率",
+   "correction": "百分率",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "保險l",
+   "correction": "保險套",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "擦邊球球",
+   "correction": "擦邊球",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "付款r",
+   "correction": "付款人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p婦人",
+   "correction": "貴婦人",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "監護權權",
+   "correction": "監護權",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "信不任案",
+   "correction": "不信任案",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "弓手箭",
+   "correction": "弓箭手",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "q冒藥",
+   "correction": "感冒藥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "心地引力",
+   "correction": "地心引力",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "i雲覆雨",
+   "correction": "翻雲覆雨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "機見行事",
+   "correction": "見機行事",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "自作多a",
+   "correction": "自作多情",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "辛巴h",
+   "correction": "辛巴達",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "津津味有",
+   "correction": "津津有味",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "成問n",
+   "correction": "成問題",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "差速速器",
+   "correction": "差速器",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "風雨無i",
+   "correction": "風雨無阻",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m陽鏡",
+   "correction": "太陽鏡",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "中w邦",
+   "correction": "中央邦",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "多x善感",
+   "correction": "多愁善感",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "最低資工",
+   "correction": "最低工資",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "吉吉爾伯特",
+   "correction": "吉爾伯特",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "按兵兵不動",
+   "correction": "按兵不動",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "阿e姆",
+   "correction": "阿薩姆",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p致性",
+   "correction": "一致性",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "歷歷在在目",
+   "correction": "歷歷在目",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "喀麥隆隆",
+   "correction": "喀麥隆",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "火焰噴m器",
+   "correction": "火焰噴射器",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "o王子",
+   "correction": "小王子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "i站式",
+   "correction": "一站式",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "及時時雨",
+   "correction": "及時雨",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "農農產品",
+   "correction": "農產品",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "漂白粉粉",
+   "correction": "漂白粉",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "道德敗壞壞",
+   "correction": "道德敗壞",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "齊桓公公",
+   "correction": "齊桓公",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "k滿洲國",
+   "correction": "偽滿洲國",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "出發點點",
+   "correction": "出發點",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "接力g",
+   "correction": "接力賽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "吉成思汗",
+   "correction": "成吉思汗",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "筆記t",
+   "correction": "筆記本",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大汗汗淋漓",
+   "correction": "大汗淋漓",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "因緣際g",
+   "correction": "因緣際會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "楚懷b",
+   "correction": "楚懷王",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "g棄疾",
+   "correction": "辛棄疾",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "v正案",
+   "correction": "修正案",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "手術y",
+   "correction": "手術檯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "p設廳",
+   "correction": "建設廳",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "民g主義",
+   "correction": "民族主義",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "w姻法",
+   "correction": "婚姻法",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "行刑q",
+   "correction": "行刑隊",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "娃娃娃魚",
+   "correction": "娃娃魚",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "大o廣眾",
+   "correction": "大庭廣眾",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "遼太d",
+   "correction": "遼太祖",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "r尚往來",
+   "correction": "禮尚往來",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "充充電器",
+   "correction": "充電器",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "b器件",
+   "correction": "元器件",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "國家計劃委員z",
+   "correction": "國家計劃委員會",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "y代化",
+   "correction": "現代化",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "去年z",
+   "correction": "去年底",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "打打退堂鼓",
+   "correction": "打退堂鼓",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "o花結果",
+   "correction": "開花結果",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "老字x",
+   "correction": "老字號",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "格黑爾",
+   "correction": "黑格爾",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "負責責任",
+   "correction": "負責任",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "官c勾結",
+   "correction": "官商勾結",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "組p式",
+   "correction": "組合式",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "盟同軍",
+   "correction": "同盟軍",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "影h力",
+   "correction": "影響力",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "維納q",
+   "correction": "維納斯",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "淮海戰p",
+   "correction": "淮海戰役",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "m林頓",
+   "correction": "柯林頓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "源q不絕",
+   "correction": "源源不絕",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "阿c納",
+   "correction": "阿森納",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "無軌車電",
+   "correction": "無軌電車",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "命生力",
+   "correction": "生命力",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "三演國義",
+   "correction": "三國演義",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "g臍眼",
+   "correction": "肚臍眼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "肥皂泡泡",
+   "correction": "肥皂泡",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "審判長長",
+   "correction": "審判長",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "宜都市市",
+   "correction": "宜都市",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "知識s子",
+   "correction": "知識分子",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "a勒岡州",
+   "correction": "俄勒岡州",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "全d煥",
+   "correction": "全斗煥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "大官法",
+   "correction": "大法官",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "造製業",
+   "correction": "製造業",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "廈h市",
+   "correction": "廈門市",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "教練練機",
+   "correction": "教練機",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "y晶硅",
+   "correction": "多晶硅",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "w唱會",
+   "correction": "演唱會",
+   "weight": 1,
+   "class": "far-sub"
+  }
+ ]
+}

@@ -1,0 +1,248 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "nl",
+ "klass": "realword",
+ "n": 40,
+ "pairs": [
+  {
+   "typo": "graan",
+   "correction": "traan",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dune",
+   "correction": "dunn",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hofs",
+   "correction": "hoff",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gehakt",
+   "correction": "gelakt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lane",
+   "correction": "lang",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "roks",
+   "correction": "boks",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "looi",
+   "correction": "look",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bankje",
+   "correction": "balkje",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "keno",
+   "correction": "reno",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "frost",
+   "correction": "front",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bert",
+   "correction": "beat",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "alia",
+   "correction": "alba",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fico",
+   "correction": "rico",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "keep",
+   "correction": "kees",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dinkel",
+   "correction": "winkel",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vivi",
+   "correction": "viva",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "binden",
+   "correction": "binnen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sati",
+   "correction": "saai",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sept",
+   "correction": "sent",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "barbecue",
+   "correction": "barbeque",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bels",
+   "correction": "bols",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "leed",
+   "correction": "feed",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hela",
+   "correction": "hola",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "king",
+   "correction": "ring",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "patch",
+   "correction": "pitch",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "soar",
+   "correction": "soap",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gedachten",
+   "correction": "gedichten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kleien",
+   "correction": "kleren",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "riga",
+   "correction": "rina",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mond",
+   "correction": "wond",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "maus",
+   "correction": "maïs",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zeer",
+   "correction": "neer",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kool",
+   "correction": "knol",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wekker",
+   "correction": "bekker",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mesa",
+   "correction": "meta",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "well",
+   "correction": "welt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ring",
+   "correction": "ging",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abbo",
+   "correction": "abby",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lins",
+   "correction": "zins",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "heul",
+   "correction": "heil",
+   "weight": 1,
+   "class": "realword-swap"
+  }
+ ]
+}

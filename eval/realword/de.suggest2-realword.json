@@ -1,0 +1,1208 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "de",
+ "klass": "realword",
+ "n": 200,
+ "pairs": [
+  {
+   "typo": "filler",
+   "correction": "fuller",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cars",
+   "correction": "cara",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "inna",
+   "correction": "unna",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "jaha",
+   "correction": "jana",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "codes",
+   "correction": "codex",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "reinste",
+   "correction": "feinste",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "farn",
+   "correction": "farm",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hehe",
+   "correction": "hege",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hörte",
+   "correction": "härte",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "besonderen",
+   "correction": "besonderem",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "milky",
+   "correction": "milka",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "betroffenen",
+   "correction": "getroffenen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "verlier",
+   "correction": "verlief",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abba",
+   "correction": "abby",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nettes",
+   "correction": "bettes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kerbe",
+   "correction": "kerne",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "demi",
+   "correction": "demo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "clam",
+   "correction": "clan",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "janne",
+   "correction": "hanne",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "halden",
+   "correction": "halfen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "küsten",
+   "correction": "kästen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "virus",
+   "correction": "vitus",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fanny",
+   "correction": "danny",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "linie",
+   "correction": "linke",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nini",
+   "correction": "mini",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gong",
+   "correction": "bong",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wirtz",
+   "correction": "wirth",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "siegen",
+   "correction": "sieben",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fail",
+   "correction": "faul",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abschluss",
+   "correction": "anschluss",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tätige",
+   "correction": "tägige",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gedenke",
+   "correction": "bedenke",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gens",
+   "correction": "bens",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "willen",
+   "correction": "wollen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mood",
+   "correction": "moos",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "angeboren",
+   "correction": "angeboten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "führen",
+   "correction": "rühren",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "handke",
+   "correction": "handle",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mile",
+   "correction": "mild",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wehen",
+   "correction": "wegen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zoller",
+   "correction": "toller",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ablehnung",
+   "correction": "anlehnung",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tack",
+   "correction": "zack",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "garth",
+   "correction": "barth",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "linder",
+   "correction": "kinder",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gezogenen",
+   "correction": "bezogenen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abgewiesen",
+   "correction": "angewiesen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wette",
+   "correction": "werte",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "güte",
+   "correction": "tüte",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "anno",
+   "correction": "anni",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "stünden",
+   "correction": "ständen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "berührt",
+   "correction": "gerührt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "named",
+   "correction": "names",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "junk",
+   "correction": "juni",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wirz",
+   "correction": "witz",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "betr",
+   "correction": "bett",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "domo",
+   "correction": "como",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dirne",
+   "correction": "diene",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "galten",
+   "correction": "halten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sorben",
+   "correction": "sorgen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "segen",
+   "correction": "sehen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "armer",
+   "correction": "armee",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "niete",
+   "correction": "biete",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "soon",
+   "correction": "spon",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "xiao",
+   "correction": "ciao",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "writer",
+   "correction": "weiter",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ihren",
+   "correction": "uhren",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "absetzen",
+   "correction": "ansetzen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "leno",
+   "correction": "leni",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gone",
+   "correction": "tone",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "löse",
+   "correction": "löwe",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wick",
+   "correction": "sick",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gesuchten",
+   "correction": "besuchten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "anrede",
+   "correction": "abrede",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "salz",
+   "correction": "salt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nazionale",
+   "correction": "nationale",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "aung",
+   "correction": "yung",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "time",
+   "correction": "tine",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nässe",
+   "correction": "nüsse",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "eich",
+   "correction": "euch",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "eingeschränktem",
+   "correction": "eingeschränkten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "jeep",
+   "correction": "keep",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "biet",
+   "correction": "bier",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "volle",
+   "correction": "bolle",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abgeleitet",
+   "correction": "angeleitet",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "aldo",
+   "correction": "also",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nanu",
+   "correction": "manu",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "chet",
+   "correction": "chez",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gitta",
+   "correction": "gotta",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gods",
+   "correction": "goes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "magd",
+   "correction": "jagd",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sender",
+   "correction": "sendet",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "luken",
+   "correction": "liken",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "alte",
+   "correction": "akte",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sick",
+   "correction": "wick",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lindy",
+   "correction": "linda",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "arms",
+   "correction": "arma",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "glei",
+   "correction": "blei",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gleich",
+   "correction": "bleich",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "waas",
+   "correction": "ways",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zank",
+   "correction": "hank",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "main",
+   "correction": "jain",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "regen",
+   "correction": "fegen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "andrew",
+   "correction": "andres",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gemalte",
+   "correction": "bemalte",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dido",
+   "correction": "didi",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tröster",
+   "correction": "tröstet",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dann",
+   "correction": "damn",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "elie",
+   "correction": "elke",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gebotenen",
+   "correction": "gebogenen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sachse",
+   "correction": "wachse",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "angefragt",
+   "correction": "abgefragt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "stiftet",
+   "correction": "stifter",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fruchten",
+   "correction": "feuchten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sander",
+   "correction": "wander",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "brit",
+   "correction": "brut",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lott",
+   "correction": "lotz",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abwesenden",
+   "correction": "anwesenden",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "schütze",
+   "correction": "schätze",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gestandenen",
+   "correction": "bestandenen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hurn",
+   "correction": "hirn",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nero",
+   "correction": "hero",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hake",
+   "correction": "jake",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kanst",
+   "correction": "kamst",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "harre",
+   "correction": "harfe",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "blocken",
+   "correction": "blicken",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "schiebe",
+   "correction": "schiene",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zick",
+   "correction": "tick",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lina",
+   "correction": "luna",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mill",
+   "correction": "milo",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rechten",
+   "correction": "fechten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "riese",
+   "correction": "fiese",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kong",
+   "correction": "jong",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gestürzt",
+   "correction": "bestürzt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "holo",
+   "correction": "holl",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "geschämt",
+   "correction": "beschämt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "leit",
+   "correction": "leut",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abhängen",
+   "correction": "anhängen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rees",
+   "correction": "tees",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lees",
+   "correction": "leds",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dang",
+   "correction": "fang",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "berl",
+   "correction": "verl",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "guss",
+   "correction": "fuss",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "anfällt",
+   "correction": "abfällt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "macht",
+   "correction": "nacht",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bulk",
+   "correction": "bull",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gale",
+   "correction": "tale",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fiel",
+   "correction": "viel",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "besetzen",
+   "correction": "gesetzen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "überspringen",
+   "correction": "übersprungen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "berne",
+   "correction": "bernd",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "trade",
+   "correction": "trace",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "soll",
+   "correction": "doll",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "glattes",
+   "correction": "blattes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zoll",
+   "correction": "holl",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "stadthafen",
+   "correction": "stadthagen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "alva",
+   "correction": "alfa",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lässt",
+   "correction": "lädst",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vids",
+   "correction": "vida",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "laufendem",
+   "correction": "laufenden",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ausländischem",
+   "correction": "ausländischen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zischen",
+   "correction": "tischen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "regem",
+   "correction": "regen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zecke",
+   "correction": "hecke",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lutter",
+   "correction": "kutter",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vorn",
+   "correction": "corn",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zahn",
+   "correction": "zahm",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "felten",
+   "correction": "velten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fiele",
+   "correction": "viele",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "voran",
+   "correction": "vorab",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fande",
+   "correction": "rande",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "grabes",
+   "correction": "graves",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "salzen",
+   "correction": "walzen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "folgenden",
+   "correction": "folgendem",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "remis",
+   "correction": "remix",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "frischen",
+   "correction": "frischem",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rührende",
+   "correction": "führende",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "blonde",
+   "correction": "blinde",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "genua",
+   "correction": "genus",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "anrufen",
+   "correction": "abrufen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "beet",
+   "correction": "beer",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "marc",
+   "correction": "marx",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mora",
+   "correction": "mira",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "riots",
+   "correction": "roots",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fuel",
+   "correction": "fiel",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "visa",
+   "correction": "vida",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "jesse",
+   "correction": "messe",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wagten",
+   "correction": "sagten",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dera",
+   "correction": "sera",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rune",
+   "correction": "rund",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "minus",
+   "correction": "minis",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gaye",
+   "correction": "faye",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "abschliessender",
+   "correction": "anschliessender",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "maja",
+   "correction": "naja",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "biegt",
+   "correction": "birgt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mais",
+   "correction": "maus",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "penh",
+   "correction": "penn",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fame",
+   "correction": "game",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kühlem",
+   "correction": "kühlen",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tuck",
+   "correction": "tick",
+   "weight": 1,
+   "class": "realword-swap"
+  }
+ ]
+}
