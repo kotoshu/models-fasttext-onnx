@@ -2,39 +2,16 @@
 
 ## Status
 
-open (2026-09-21). After C6 (frequency SymSpell + composite ranked:true):
-kotoshu de nonword top-5 91.1% / top-3 86.1% / top-1 70.9% vs field
-SymSpell 73.4% (all slices) and Hunspell 54.4%. Top-1 gap of ~3pp on
-79 pairs (small sample, ±6pp CI). The 25 top-1 misses cluster into
-four mechanical patterns — each a one-design-change fix:
-
-1. **Umlaut/extended-letter handling.** SymSpell deletes against a
-   single-byte view of the word; substitutions like ö→ö (same letter,
-   different encoding) or ß→ss miss the index. Example: `gejöscht` →
-   `gelöscht` not found; `fäälig` → `fällig` not found. Fix: normalize
-   word + dictionary to NFC + fold common equivalents before indexing
-   (and reverse at output).
-
-2. **Vowel substitution.** `sue` → `sie` (i/u substitution, deletion
-   index misses). Edit-distance distance-1 includes substitutions but
-   SymSpell's deletion-neighborhood only generates single deletions.
-   Fix: add an EditDistance pre-pass at distance-1 to fill substitutions
-   when SymSpell's pool is sparse.
-
-3. **Frequency-tie ordering.** Cases where truth shares distance 1
-   with a higher-frequency false positive (`benutzte` vs `benutze`,
-   `bereits` vs `beits`). Fix: small per-char keyboard-proximity
-   penalty inside SymSpell's tiebreak — the true correction's
-   substitution pattern tends to involve adjacent keys more often
-   than the random miss.
-
-4. **Transpositions not handled by SymSpell by default.** Several
-   typos are letter-swaps. SymSpellStrategy has a handle_transpositions
-   flag — verify it is on (default true per source) and that the
-   per-language precompute reuses it.
-
-Each fix is small, has a clear eval signal, and folds into C6's
-frequency SymSpell channel.
+pattern 1 (diacritics) executed (2026-09-22): SymSpellStrategy now
+indexes folded deletion keys and scores with fold-normalized Damerau
+(ä≈a, é≈e, ß≈ss; NFD combining-mark strip). The published de list was
+ALSO rebuilt — its ctx-table source was 100% ASCII (umlaut words were
+missing from the candidate pool entirely; frequency-list-kelly#5).
+de nonword: 70.9 → **72.2%** top-1 (field SymSpell 73.4% = 1 pair on
+n=79), top-3 89.9% #1; de realword top-3 15.3 → 18.1%. Patterns 2-4
+(vowel substitution, frequency ties, transposition polish) remain
+open; at n=79 the residual is inside split noise — wave-2 splits are
+the real verdict.
 
 ## Problem
 
