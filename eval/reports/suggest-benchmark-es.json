@@ -1,0 +1,49 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v1",
+ "language": "es",
+ "match": "case-insensitive exact",
+ "engines": {
+  "hunspell": {
+   "nonword": {
+    "top1": 0.5915,
+    "top3": 0.7324,
+    "top5": 0.7746,
+    "n": 71
+   },
+   "realword": {
+    "top1": 0.2558,
+    "top3": 0.2558,
+    "top5": 0.2674,
+    "n": 86
+   }
+  },
+  "symspell": {
+   "nonword": {
+    "top1": 0.7465,
+    "top3": 0.7465,
+    "top5": 0.7465,
+    "n": 71
+   },
+   "realword": {
+    "top1": 0.0116,
+    "top3": 0.0116,
+    "top5": 0.0116,
+    "n": 86
+   }
+  },
+  "kotoshu": {
+   "nonword": {
+    "top1": 0.7606,
+    "top3": 0.8732,
+    "top5": 0.8732,
+    "n": 71
+   },
+   "realword": {
+    "top1": 0.1395,
+    "top3": 0.2442,
+    "top5": 0.2442,
+    "n": 86
+   }
+  }
+ }
+}
