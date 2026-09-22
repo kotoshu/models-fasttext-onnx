@@ -1,0 +1,1208 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "ru",
+ "klass": "realword",
+ "n": 200,
+ "pairs": [
+  {
+   "typo": "раком",
+   "correction": "таком",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "федорова",
+   "correction": "федотова",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "обедал",
+   "correction": "обещал",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "совать",
+   "correction": "сосать",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сему",
+   "correction": "чему",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "муку",
+   "correction": "суку",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сета",
+   "correction": "сера",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "делать",
+   "correction": "желать",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сквера",
+   "correction": "севера",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "выдвинуто",
+   "correction": "выдвинуть",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "крыма",
+   "correction": "крыса",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "чена",
+   "correction": "сена",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "руля",
+   "correction": "пуля",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "старка",
+   "correction": "станка",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "залп",
+   "correction": "зале",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "соток",
+   "correction": "сорок",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "манш",
+   "correction": "марш",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "баки",
+   "correction": "лаки",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "росту",
+   "correction": "посту",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "роща",
+   "correction": "роза",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "входят",
+   "correction": "сходят",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сего",
+   "correction": "сено",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ребе",
+   "correction": "небе",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "столп",
+   "correction": "стола",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "покрыть",
+   "correction": "покрыто",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "пира",
+   "correction": "пита",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "стад",
+   "correction": "стаю",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "мета",
+   "correction": "мера",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "носа",
+   "correction": "нова",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "шарп",
+   "correction": "шара",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "орда",
+   "correction": "орла",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "бони",
+   "correction": "боги",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "желаешь",
+   "correction": "делаешь",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "лина",
+   "correction": "лира",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "самое",
+   "correction": "самок",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "бала",
+   "correction": "баба",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "роль",
+   "correction": "поль",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "мечта",
+   "correction": "места",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "авив",
+   "correction": "авиа",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "выпад",
+   "correction": "выпал",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "тита",
+   "correction": "рита",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "карра",
+   "correction": "карта",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "чело",
+   "correction": "село",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "бабла",
+   "correction": "балла",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "камерных",
+   "correction": "каменных",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "соса",
+   "correction": "сова",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "несу",
+   "correction": "нему",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сеты",
+   "correction": "серы",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "мании",
+   "correction": "марии",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сужу",
+   "correction": "суду",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "спада",
+   "correction": "спала",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "эшби",
+   "correction": "эшли",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "изменение",
+   "correction": "измерение",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "снять",
+   "correction": "снято",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "петри",
+   "correction": "перри",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "эдит",
+   "correction": "элит",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "букер",
+   "correction": "букет",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "грея",
+   "correction": "греч",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сэру",
+   "correction": "мэру",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "рена",
+   "correction": "пена",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "пороком",
+   "correction": "потоком",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "лавра",
+   "correction": "лаура",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "токмо",
+   "correction": "токио",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "пара",
+   "correction": "пана",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "уступили",
+   "correction": "вступили",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "корыта",
+   "correction": "копыта",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "руль",
+   "correction": "пуль",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "корп",
+   "correction": "кори",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "чтим",
+   "correction": "чьим",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "тому",
+   "correction": "тьму",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "встала",
+   "correction": "устала",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "нейл",
+   "correction": "гейл",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "чана",
+   "correction": "сана",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "комо",
+   "correction": "косо",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "жарят",
+   "correction": "дарят",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "даша",
+   "correction": "дала",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "садо",
+   "correction": "сало",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "мной",
+   "correction": "иной",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "явной",
+   "correction": "ясной",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "укусов",
+   "correction": "вкусов",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "серега",
+   "correction": "серена",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "соси",
+   "correction": "сочи",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "трак",
+   "correction": "ирак",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "встроен",
+   "correction": "устроен",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "коде",
+   "correction": "коже",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "роза",
+   "correction": "рожа",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "маркер",
+   "correction": "маркет",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "марки",
+   "correction": "матки",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "вреда",
+   "correction": "среда",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "замер",
+   "correction": "замен",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "попы",
+   "correction": "поры",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "мани",
+   "correction": "сани",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "лара",
+   "correction": "дара",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "форд",
+   "correction": "фонд",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "входу",
+   "correction": "уходу",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "посте",
+   "correction": "почте",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "режь",
+   "correction": "резь",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "белье",
+   "correction": "белое",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "входа",
+   "correction": "схода",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "бени",
+   "correction": "бери",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "вена",
+   "correction": "вега",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "жана",
+   "correction": "дана",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "подп",
+   "correction": "поди",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "лаура",
+   "correction": "лавра",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "верн",
+   "correction": "вере",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "лани",
+   "correction": "бани",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "садист",
+   "correction": "садись",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "спал",
+   "correction": "впал",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "рита",
+   "correction": "ритм",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "верди",
+   "correction": "венди",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "посещении",
+   "correction": "помещении",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "марьино",
+   "correction": "мартино",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "тихое",
+   "correction": "тихон",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "году",
+   "correction": "голу",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "вова",
+   "correction": "сова",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "меир",
+   "correction": "метр",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "паре",
+   "correction": "парк",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "райт",
+   "correction": "найт",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "белы",
+   "correction": "беды",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "мига",
+   "correction": "миша",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "прибыло",
+   "correction": "прибыль",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "дугу",
+   "correction": "лугу",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "флота",
+   "correction": "флора",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "нору",
+   "correction": "ноту",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "чуда",
+   "correction": "суда",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "съем",
+   "correction": "схем",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "шута",
+   "correction": "шура",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "тесть",
+   "correction": "тесто",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "полос",
+   "correction": "полов",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "база",
+   "correction": "баха",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "элли",
+   "correction": "эшли",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "шине",
+   "correction": "шире",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "плену",
+   "correction": "елену",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "изменяется",
+   "correction": "измеряется",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "николо",
+   "correction": "николь",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "пролила",
+   "correction": "пробила",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "рыть",
+   "correction": "ныть",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "тони",
+   "correction": "тори",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "желал",
+   "correction": "делал",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "поли",
+   "correction": "поди",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "своё",
+   "correction": "свой",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "балу",
+   "correction": "бабу",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сена",
+   "correction": "вена",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "впору",
+   "correction": "спору",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "таки",
+   "correction": "раки",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "добби",
+   "correction": "лобби",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "мазо",
+   "correction": "мазь",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "саха",
+   "correction": "маха",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "явно",
+   "correction": "ясно",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ноту",
+   "correction": "роту",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "машина",
+   "correction": "малина",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "забито",
+   "correction": "забить",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "вхожу",
+   "correction": "входу",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ларс",
+   "correction": "барс",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "изъять",
+   "correction": "изъято",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "грань",
+   "correction": "грант",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "шарф",
+   "correction": "шары",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "темных",
+   "correction": "тесных",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "горы",
+   "correction": "норы",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "маши",
+   "correction": "маги",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "кори",
+   "correction": "корп",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сошел",
+   "correction": "вошел",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "впала",
+   "correction": "упала",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "дага",
+   "correction": "даша",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "приметы",
+   "correction": "примеры",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "чада",
+   "correction": "сада",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "фара",
+   "correction": "фарм",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "аида",
+   "correction": "мида",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ваше",
+   "correction": "саше",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "бака",
+   "correction": "лака",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "чуду",
+   "correction": "суду",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "желают",
+   "correction": "делают",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "байт",
+   "correction": "лайт",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "белое",
+   "correction": "белок",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "соли",
+   "correction": "моли",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "битве",
+   "correction": "литве",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "сана",
+   "correction": "вана",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "кора",
+   "correction": "кота",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "парке",
+   "correction": "папке",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "балда",
+   "correction": "балла",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "изменений",
+   "correction": "измерений",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "дили",
+   "correction": "жили",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "пожали",
+   "correction": "подали",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "складывает",
+   "correction": "вкладывает",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "саше",
+   "correction": "маше",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "корр",
+   "correction": "корт",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "кэти",
+   "correction": "кэри",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "мели",
+   "correction": "меди",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "иной",
+   "correction": "мной",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "шина",
+   "correction": "лина",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "блан",
+   "correction": "благ",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "десять",
+   "correction": "девять",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "прощу",
+   "correction": "прозу",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "главные",
+   "correction": "гласные",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "скул",
+   "correction": "сеул",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "бобби",
+   "correction": "лобби",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "шары",
+   "correction": "шарф",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "шубе",
+   "correction": "губе",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "суете",
+   "correction": "свете",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "расу",
+   "correction": "раму",
+   "weight": 1,
+   "class": "realword-swap"
+  }
+ ]
+}

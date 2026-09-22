@@ -1,0 +1,17 @@
+{
+ "language": "ru",
+ "class_mix": {
+  "adjacent-sub": 729,
+  "far-sub": 498,
+  "double-insert": 431,
+  "transposition": 294,
+  "double-delete": 30,
+  "diacritic-omit": 18
+ },
+ "distance_dist": {
+  "1": 1706,
+  "2": 294
+ },
+ "nonword": 2000,
+ "realword": 200
+}

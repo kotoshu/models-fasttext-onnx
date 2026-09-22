@@ -1,0 +1,16 @@
+{
+ "language": "en",
+ "class_mix": {
+  "adjacent-sub": 765,
+  "double-insert": 422,
+  "transposition": 306,
+  "far-sub": 455,
+  "double-delete": 52
+ },
+ "distance_dist": {
+  "1": 1694,
+  "2": 306
+ },
+ "nonword": 2000,
+ "realword": 200
+}

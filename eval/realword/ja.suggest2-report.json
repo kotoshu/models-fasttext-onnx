@@ -1,0 +1,16 @@
+{
+ "language": "ja",
+ "class_mix": {
+  "far-sub": 1174,
+  "transposition": 252,
+  "double-insert": 474,
+  "diacritic-omit": 97,
+  "double-delete": 3
+ },
+ "distance_dist": {
+  "1": 1748,
+  "2": 252
+ },
+ "nonword": 2000,
+ "realword": 0
+}

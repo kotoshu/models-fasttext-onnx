@@ -1,0 +1,15 @@
+{
+ "language": "zh-Hant-TW",
+ "class_mix": {
+  "far-sub": 1133,
+  "transposition": 288,
+  "double-insert": 571,
+  "double-delete": 8
+ },
+ "distance_dist": {
+  "1": 1712,
+  "2": 288
+ },
+ "nonword": 2000,
+ "realword": 0
+}

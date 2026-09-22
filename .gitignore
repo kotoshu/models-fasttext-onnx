@@ -172,6 +172,7 @@ eval/cbench/
 eval/realword/*.json
 !eval/realword/*.probe.*.json
 !eval/realword/*.suggest-*.json
+!eval/realword/*.suggest2-*.json
 eval/realword/*.clean.jsonl
 # Confusion tables are small frozen evidence (plan 15 Phase-0) and are
 # committed; giants that would dwarf them (ja/ko until the

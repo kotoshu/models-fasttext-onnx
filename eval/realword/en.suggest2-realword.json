@@ -1,0 +1,1208 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "en",
+ "klass": "realword",
+ "n": 200,
+ "pairs": [
+  {
+   "typo": "tats",
+   "correction": "tags",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "boom",
+   "correction": "boon",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tear",
+   "correction": "gear",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wart",
+   "correction": "wary",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ling",
+   "correction": "long",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pint",
+   "correction": "ping",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lessee",
+   "correction": "lesser",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "Ditch",
+   "correction": "Dutch",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pricy",
+   "correction": "privy",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "draftsman",
+   "correction": "craftsman",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "suited",
+   "correction": "suites",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rated",
+   "correction": "rates",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "barter",
+   "correction": "garter",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dense",
+   "correction": "sense",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vibe",
+   "correction": "vine",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "finger",
+   "correction": "ginger",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "glowing",
+   "correction": "blowing",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hots",
+   "correction": "hits",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "porta",
+   "correction": "ports",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bully",
+   "correction": "billy",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "visa",
+   "correction": "vida",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pimp",
+   "correction": "pump",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "brig",
+   "correction": "brit",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tang",
+   "correction": "rang",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "related",
+   "correction": "relates",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "loon",
+   "correction": "lion",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "birder",
+   "correction": "girder",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "camp",
+   "correction": "damp",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "oust",
+   "correction": "lust",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "strong",
+   "correction": "string",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "songs",
+   "correction": "sings",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gasses",
+   "correction": "basses",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rude",
+   "correction": "ride",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "blaze",
+   "correction": "glaze",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lung",
+   "correction": "ling",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lick",
+   "correction": "luck",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "probe",
+   "correction": "prone",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "betting",
+   "correction": "getting",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "duel",
+   "correction": "fuel",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "shards",
+   "correction": "shares",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "seeds",
+   "correction": "weeds",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cursed",
+   "correction": "curses",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gross",
+   "correction": "grows",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "notion",
+   "correction": "motion",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ture",
+   "correction": "tyre",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "blow",
+   "correction": "glow",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pills",
+   "correction": "pulls",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pant",
+   "correction": "pang",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "alluded",
+   "correction": "alludes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ware",
+   "correction": "ward",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "weeding",
+   "correction": "wedding",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "riled",
+   "correction": "filed",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "blast",
+   "correction": "boast",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bets",
+   "correction": "begs",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ruse",
+   "correction": "rude",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sense",
+   "correction": "dense",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "take",
+   "correction": "tale",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "impresses",
+   "correction": "impressed",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lane",
+   "correction": "land",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "moat",
+   "correction": "most",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rate",
+   "correction": "rage",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vert",
+   "correction": "very",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "globes",
+   "correction": "gloves",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "yang",
+   "correction": "hang",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "deserves",
+   "correction": "deserved",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "grave",
+   "correction": "grace",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gated",
+   "correction": "hated",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "deed",
+   "correction": "seed",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "revolved",
+   "correction": "revolves",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zine",
+   "correction": "zone",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "voices",
+   "correction": "voiced",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "doping",
+   "correction": "coping",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fait",
+   "correction": "fair",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "stride",
+   "correction": "strife",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fumble",
+   "correction": "rumble",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "full",
+   "correction": "fill",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "torpedoed",
+   "correction": "torpedoes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "persons",
+   "correction": "persona",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dent",
+   "correction": "debt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fest",
+   "correction": "feat",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "inventive",
+   "correction": "incentive",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gears",
+   "correction": "fears",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "Durch",
+   "correction": "Dutch",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sais",
+   "correction": "said",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "commenced",
+   "correction": "commences",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "socks",
+   "correction": "docks",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gill",
+   "correction": "hill",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "braver",
+   "correction": "beaver",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "trey",
+   "correction": "grey",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "terminates",
+   "correction": "terminated",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rise",
+   "correction": "ride",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "eyed",
+   "correction": "eyes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rapes",
+   "correction": "tapes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "must",
+   "correction": "just",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pita",
+   "correction": "pits",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cantons",
+   "correction": "canyons",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "researched",
+   "correction": "researches",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "biking",
+   "correction": "viking",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tint",
+   "correction": "tiny",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "charger",
+   "correction": "charter",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "coiled",
+   "correction": "cooled",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "this",
+   "correction": "thus",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "decoded",
+   "correction": "decided",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dine",
+   "correction": "eine",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vine",
+   "correction": "vibe",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ping",
+   "correction": "pong",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "buts",
+   "correction": "nuts",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wins",
+   "correction": "wind",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gold",
+   "correction": "fold",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "swung",
+   "correction": "swing",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mechs",
+   "correction": "mecha",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cafe",
+   "correction": "care",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "coping",
+   "correction": "doping",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "skill",
+   "correction": "skull",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gracing",
+   "correction": "grading",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "based",
+   "correction": "bases",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "spits",
+   "correction": "spots",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fine",
+   "correction": "vine",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nave",
+   "correction": "have",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cascaded",
+   "correction": "cascades",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vlog",
+   "correction": "blog",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "silo",
+   "correction": "sill",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wast",
+   "correction": "east",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hump",
+   "correction": "jump",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "frames",
+   "correction": "framed",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "milk",
+   "correction": "mill",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "clock",
+   "correction": "click",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tryst",
+   "correction": "trust",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "places",
+   "correction": "placed",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sine",
+   "correction": "dine",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "varied",
+   "correction": "varies",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fund",
+   "correction": "find",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mate",
+   "correction": "mare",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "jute",
+   "correction": "jure",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "packages",
+   "correction": "packaged",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "golf",
+   "correction": "gold",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "root",
+   "correction": "foot",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wife",
+   "correction": "wire",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "jason",
+   "correction": "mason",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "reissues",
+   "correction": "reissued",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "gage",
+   "correction": "gate",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "required",
+   "correction": "requires",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mane",
+   "correction": "jane",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nope",
+   "correction": "hope",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "honoree",
+   "correction": "honored",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ability",
+   "correction": "agility",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "electronics",
+   "correction": "electronica",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "match",
+   "correction": "march",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bene",
+   "correction": "bend",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rail",
+   "correction": "tail",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "stale",
+   "correction": "stake",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "potter",
+   "correction": "porter",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hone",
+   "correction": "home",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "obscures",
+   "correction": "obscured",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "branched",
+   "correction": "branches",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sown",
+   "correction": "down",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "shot",
+   "correction": "shit",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tale",
+   "correction": "gale",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ouster",
+   "correction": "oyster",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dislikes",
+   "correction": "disliked",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hives",
+   "correction": "gives",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bested",
+   "correction": "nested",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "damp",
+   "correction": "camp",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dyes",
+   "correction": "dues",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "jose",
+   "correction": "hose",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "owed",
+   "correction": "owes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bonds",
+   "correction": "bones",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "fractures",
+   "correction": "fractured",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tines",
+   "correction": "tunes",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "graced",
+   "correction": "traced",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "schedules",
+   "correction": "scheduled",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wore",
+   "correction": "wire",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "trace",
+   "correction": "grace",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tight",
+   "correction": "right",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "patents",
+   "correction": "parents",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "eighty",
+   "correction": "eighth",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "text",
+   "correction": "test",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "hulls",
+   "correction": "gulls",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cave",
+   "correction": "dave",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "suet",
+   "correction": "duet",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tide",
+   "correction": "ride",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "later",
+   "correction": "layer",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "stick",
+   "correction": "stuck",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "onside",
+   "correction": "inside",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "cited",
+   "correction": "cites",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "isle",
+   "correction": "idle",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "drip",
+   "correction": "drop",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dork",
+   "correction": "fork",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "bolt",
+   "correction": "volt",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "blamed",
+   "correction": "blames",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "waters",
+   "correction": "eaters",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sean",
+   "correction": "dean",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "vital",
+   "correction": "viral",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mana",
+   "correction": "nana",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "mods",
+   "correction": "mids",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "marker",
+   "correction": "market",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "flared",
+   "correction": "flares",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nerds",
+   "correction": "herds",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "safe",
+   "correction": "sage",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pulls",
+   "correction": "pills",
+   "weight": 1,
+   "class": "realword-swap"
+  }
+ ]
+}

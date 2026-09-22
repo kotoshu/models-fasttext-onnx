@@ -1,0 +1,248 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "pl",
+ "klass": "realword",
+ "n": 40,
+ "pairs": [
+  {
+   "typo": "ramek",
+   "correction": "ranek",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "budowania",
+   "correction": "budowaniu",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ojczyzno",
+   "correction": "ojczyzną",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "byleby",
+   "correction": "bylaby",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "langa",
+   "correction": "tanga",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "słonka",
+   "correction": "słonia",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "doda",
+   "correction": "woda",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rozszerzanie",
+   "correction": "rozszerzenie",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "sprawdziły",
+   "correction": "sprawdziło",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "poznaj",
+   "correction": "poznał",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "dale",
+   "correction": "date",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "owiń",
+   "correction": "świń",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "lodem",
+   "correction": "kodem",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "terre",
+   "correction": "terry",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "siekiery",
+   "correction": "siekiera",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zbliżające",
+   "correction": "zbliżający",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kuli",
+   "correction": "kusi",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "staro",
+   "correction": "stary",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pipe",
+   "correction": "pope",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "warta",
+   "correction": "warty",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "pilke",
+   "correction": "pilne",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "kast",
+   "correction": "kasa",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "swoista",
+   "correction": "swoistą",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "chao",
+   "correction": "zhao",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "aukcji",
+   "correction": "aukcja",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "holu",
+   "correction": "hola",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zostawia",
+   "correction": "zostawić",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "zniesiony",
+   "correction": "zniesione",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "roba",
+   "correction": "robi",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "oferowano",
+   "correction": "oferowane",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "roll",
+   "correction": "rolę",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "narodzenie",
+   "correction": "narodzenia",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "stonie",
+   "correction": "stanie",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "nanny",
+   "correction": "wanny",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "tini",
+   "correction": "tina",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "both",
+   "correction": "roth",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "rani",
+   "correction": "pani",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "wali",
+   "correction": "bali",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "ścięcia",
+   "correction": "ścięcie",
+   "weight": 1,
+   "class": "realword-swap"
+  },
+  {
+   "typo": "datki",
+   "correction": "matki",
+   "weight": 1,
+   "class": "realword-swap"
+  }
+ ]
+}

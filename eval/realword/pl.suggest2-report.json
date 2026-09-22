@@ -1,0 +1,17 @@
+{
+ "language": "pl",
+ "class_mix": {
+  "adjacent-sub": 742,
+  "transposition": 299,
+  "far-sub": 484,
+  "double-insert": 424,
+  "double-delete": 9,
+  "diacritic-omit": 42
+ },
+ "distance_dist": {
+  "1": 1701,
+  "2": 299
+ },
+ "nonword": 2000,
+ "realword": 40
+}
