@@ -43,18 +43,44 @@ def run_hunspell(words, dict_base):
     return [out.get(w, []) for w in words]
 
 
-def run_symspell(words, lang):
-    from symspellpy import SymSpell, Verbosity
-    z = np.load(REPO / f"models/{lang}/fasttext.{lang}.ctx.npz")
-    uni = z["unigram_counts"]
-    vocab = json.loads((REPO / f"models/{lang}/fasttext.{lang}.vocab.json").read_text())
-    vocab = vocab.get("word_to_idx", vocab)
-    idx2word = {i: w for w, i in vocab.items()}
-    with tempfile.NamedTemporaryFile("w", suffix=".tsv", delete=False) as fh:
+def _kelly_freq_path(lang):
+    """Field lane source: the same published kotoshu/frequency-list-kelly
+    list the gem's SymSpell channel indexes (apples-to-apples with the
+    kotoshu lane). Falls back to the training ctx table for en/de."""
+    ctx = REPO / f"models/{lang}/fasttext.{lang}.ctx.npz"
+    if ctx.exists():
+        z = np.load(ctx)
+        uni = z["unigram_counts"]
+        vocab = json.loads((REPO / f"models/{lang}/fasttext.{lang}.vocab.json").read_text())
+        vocab = vocab.get("word_to_idx", vocab)
+        idx2word = {i: w for w, i in vocab.items()}
+        fh = tempfile.NamedTemporaryFile("w", suffix=".tsv", delete=False)
         for i, count in enumerate(uni):
             if int(count) > 0 and i in idx2word:
                 fh.write(f"{idx2word[i]}\t{int(count)}\n")
-        freq_path = fh.name
+        fh.close()
+        return fh.name
+
+    cache = Path.home() / ".cache/kotoshu/frequency-lists" / lang / "frequency.json"
+    if not cache.exists():
+        url = f"https://raw.githubusercontent.com/kotoshu/frequency-list-kelly/main/data/{lang}.json"
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        import urllib.request
+        req = urllib.request.Request(url, headers={"User-Agent": "kotoshu-bench/1.0"})
+        cache.write_bytes(urllib.request.urlopen(req).read())
+    data = json.loads(cache.read_text())
+    base_rank = {e["word"]: e["rank"] for e in data.get("full_list", [])}
+    fh = tempfile.NamedTemporaryFile("w", suffix=".tsv", delete=False)
+    for e in data.get("full_list", []):
+        # wordfreq ranks: synthetic weight = N - rank so relative order holds
+        fh.write(f"{e['word']}\t{len(data['full_list']) - e['rank'] + 1}\n")
+    fh.close()
+    return fh.name
+
+
+def run_symspell(words, lang):
+    from symspellpy import SymSpell, Verbosity
+    freq_path = _kelly_freq_path(lang)
     sym = SymSpell(max_dictionary_edit_distance=2, prefix_length=7)
     sym.load_dictionary(freq_path, term_index=0, count_index=1, separator="\t", encoding="utf-8")
     results = []
@@ -69,7 +95,7 @@ def run_kotoshu(words, lang="en"):
     proc = subprocess.run(
         ["ruby", "/tmp/bench_kotoshu.rb"],
         input="\n".join(words) + "\n", capture_output=True, text=True,
-        cwd=str(Path.home() / "src/kotoshu/kotoshu"), env=env, timeout=3600)
+        cwd=str(Path.home() / "src/kotoshu/kotoshu"), env=env, timeout=10800)
     mapping = {}
     for line in proc.stdout.splitlines():
         try:
