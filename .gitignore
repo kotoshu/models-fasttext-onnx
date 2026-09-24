@@ -184,6 +184,7 @@ eval/confusion/*
 !eval/confusion/fr.json
 !eval/confusion/pt.json
 !eval/confusion/ru.json
+!eval/confusion/jyutping.json
 eval/cache/
 
 # Plan 16 ctx-LM training: the parquet corpus lives locally; frozen

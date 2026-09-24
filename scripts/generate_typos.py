@@ -88,6 +88,25 @@ def load_words(lang):
     return words, ranks
 
 
+def load_jyutping_groups():
+    """zh-Hant-HK IME class: char -> jyutping syllable from Unihan
+    kCantonese (scripts/build_jyutping_table.py writes the table)."""
+    path = Path("/tmp/cjk/jyutping.txt")
+    if not path.exists():
+        return {}
+    by_char = defaultdict(set)
+    by_syl = defaultdict(list)
+    seen = defaultdict(set)
+    with open(path, encoding="utf-8") as fh:
+        for line in fh:
+            ch, _, syl = line.strip().partition("\t")
+            if ch and syl and ch not in seen[syl]:
+                seen[syl].add(ch)
+                by_char[ch].add(syl)
+                by_syl[syl].append(ch)
+    return by_char, by_syl
+
+
 def load_pinyin_groups():
     """zh IME class: char -> pinyin syllable from CC-CEDICT."""
     path = Path("/tmp/cjk/cedict.txt")
@@ -113,7 +132,7 @@ def load_pinyin_groups():
     for ch, syls in groups.items():
         for s in syls:
             by_syl[s].append(ch)
-    return by_syl
+    return groups, by_syl
 
 
 class TypoGen:
@@ -124,16 +143,96 @@ class TypoGen:
         self.positions = load_layout_for(lang, layouts)
         self.adj = adjacency(self.positions)
         self.word_set = set(w.lower() for w in self.words)
-        self.pinyin = load_pinyin_groups() if lang.startswith("zh") else {}
+        self.ime_char = {}
+        self.ime_syls = {}
+        if lang == "zh-Hant-HK":
+            self.ime_char, self.ime_syls = load_jyutping_groups()
+        elif lang.startswith("zh"):
+            self.ime_char, self.ime_syls = load_pinyin_groups()
+        # Frequent own-script chars for the realword pool (non-Latin
+        # scripts never collide with the Latin fallback pool).
+        head_chars = defaultdict(int)
+        for w in self.words[:2000]:
+            for ch in w:
+                if not ch.isascii():
+                    head_chars[ch] += 1
+        self.own_pool = "".join(
+            ch for ch, _ in sorted(head_chars.items(), key=lambda kv: -kv[1])[:80]
+        )
 
     def _neighbors(self, ch):
         return self.adj.get(ch) or self.adj.get(fold_word(ch)) or []
+
+    VIET_TONES = "\u0300\u0301\u0309\u0303\u0323"  # `  '  ?  ~  .
+
+    def tone_mark_swap(self, w):
+        """vi: rotate the tone mark on one precomposed vowel (same
+        letters, wrong dấu — the telex/VIQR error class)."""
+        idxs = [i for i, ch in enumerate(w) if ch.lower() in "aeiouyàáâãăằắẵầấẩǣèéêẽẹềếểễệìíĩịòóôõọồốỗộờớởỡùúũụừứửữỳýỹỵ"]
+        if not idxs:
+            return None
+        import unicodedata as _ud
+        i = self.rng.choice(idxs)
+        ch = w[i]
+        d = _ud.normalize("NFD", ch)
+        tone = next((c for c in d if c in self.VIET_TONES), None)
+        if tone is None:
+            return None
+        others = [t for t in self.VIET_TONES if t != tone]
+        rep = _ud.normalize("NFC", d.replace(tone, self.rng.choice(others)))
+        if rep == ch:
+            return None
+        return w[:i] + rep + w[i + 1:], "tone-mark"
+
+    AR_SETS = ({"أ", "إ", "آ", "ا"}, {"ة", "ه"}, {"ى", "ي"})
+
+    def hamza_swap(self, w):
+        """ar: hamza / taa-marbuta / alif maqsura confusables."""
+        for k, s in enumerate(self.AR_SETS):
+            idxs = [i for i, ch in enumerate(w) if ch in s]
+            if idxs:
+                i = self.rng.choice(idxs)
+                alts = [c for c in s if c != w[i]]
+                return w[:i] + self.rng.choice(alts) + w[i + 1:], "hamza-swap"
+        return None
+
+    KO_JAMO_PAIRS = [("되", "돼"), ("안", "않"), ("개", "게"), ("애", "에"),
+                     ("내", "네"), ("해", "헤"), ("배", "베"), ("새", "세"),
+                     ("재", "제"), ("채", "체"), ("캐", "케"), ("태", "테"),
+                     ("패", "페"), ("래", "레"), ("얘", "예"), ("쉐", "셰"),
+                     ("외", "웨"), ("죄", "졔"), ("되", "데"), ("요", "용")]
+
+    def jamo_swap(self, w):
+        """ko: composed-syllable confusables (ㅐ/ㅔ, ㅚ/ㅞ class)."""
+        for a, b in self.KO_JAMO_PAIRS:
+            if a in w:
+                i = w.index(a)
+                return w[:i] + b + w[i + 1:], "jamo-confusion"
+            if b in w:
+                i = w.index(b)
+                return w[:i] + a + w[i + 1:], "jamo-confusion"
+        return None
+
+    def language_class(self, w):
+        if self.lang == "vi":
+            return self.tone_mark_swap(w)
+        if self.lang == "ar":
+            return self.hamza_swap(w)
+        if self.lang == "ko":
+            return self.jamo_swap(w)
+        return None
 
     def typo_of(self, word):
         """Return (typo, class) or None."""
         w = word
         if len(w) < 3 or not w.isalpha():
             return None
+        # language-specific orthographic confusions first (15%),
+        # then the generic layout chain
+        if self.rng.random() < 0.15:
+            res = self.language_class(w)
+            if res:
+                return res
         r = self.rng.random()
         # class mix: adjacent 30%, transposition 15%, double-insert 15%,
         # double-delete 10%, diacritic 10%, far-sub 10%, ime/realword rest
@@ -145,7 +244,9 @@ class TypoGen:
                 if self.rng.random() < 0.5:
                     rep = rep.upper() if w[idx].isupper() else rep
                 return w[:idx] + rep + w[idx + 1:], "adjacent-sub"
-            rep = self.rng.choice("abcdefghijklmnopqrstuvwxyz")
+            fallback = ("abcdefghijklmnopqrstuvwxyz"
+                        if w[idx].isascii() else (self.own_pool or "aeiounstr"))
+            rep = self.rng.choice(fallback)
             return w[:idx] + rep + w[idx + 1:], "far-sub"
         if r < 0.45 and idx < len(w) - 1:
             if w[idx].lower() != w[idx + 1].lower():
@@ -162,30 +263,163 @@ class TypoGen:
         if r < 0.80:
             for _ in range(8):
                 i = self.rng.randrange(len(w))
+                import unicodedata as _ud2
+                decomp = _ud2.normalize("NFD", w[i])
+                if not any(_ud2.combining(c) for c in decomp):
+                    return None
                 f = fold_word(w[i])
                 if f != w[i].lower():
                     plain = self.rng.choice(f)
                     rep = plain.upper() if w[i].isupper() else plain
                     return w[:i] + rep + w[i + 1:], "diacritic-omit"
             return None
-        if r < 0.90 and self.pinyin:
-            han = [c for c in w if c.lower() in self.pinyin]
+        if r < 0.90 and self.ime_char:
+            han = [c for c in w if c.lower() in self.ime_char]
             if han:
                 ch = self.rng.choice(han)
-                syl = self.rng.choice(list(self.pinyin[ch.lower()]))
-                alts = [c for c in self.pinyin.get(syl, []) if c != ch]
+                syl = self.rng.choice(list(self.ime_char[ch.lower()]))
+                alts = [c for c in self.ime_syls.get(syl, []) if c != ch]
                 if alts:
                     alt = self.rng.choice(alts)
                     i = w.lower().index(ch)
                     return w[:i] + alt + w[i + 1:], "ime-confusion"
             return None
-        # far-sub fallback
+        # far-sub fallback — own-script chars for non-Latin positions
         i = self.rng.randrange(len(w))
-        pool = "abcdefghijklmnopqrstuvwxyz" if w[i].isascii() else "aeiounstr"
+        if w[i].isascii():
+            pool = "abcdefghijklmnopqrstuvwxyz"
+        else:
+            pool = self.own_pool or "aeiounstr"
         rep = self.rng.choice(pool)
         if rep == w[i].lower():
             return None
         return w[:i] + rep + w[i + 1:], "far-sub"
+
+    def confusion_variants(self, w):
+        """All single-confusable variants of w, deterministically
+        (the constructive counterpart of language_class/ime swaps)."""
+        out = []
+        import unicodedata as _ud
+        if self.lang == "vi":
+            for i, ch in enumerate(w):
+                d = _ud.normalize("NFD", ch)
+                tone = next((c for c in d if c in self.VIET_TONES), None)
+                if tone is None:
+                    continue
+                for t in self.VIET_TONES:
+                    if t == tone:
+                        continue
+                    out.append((_ud.normalize("NFC", d.replace(tone, t)), "tone-mark"))
+        elif self.lang == "ar":
+            for i, ch in enumerate(w):
+                for s in self.AR_SETS:
+                    if ch in s:
+                        for alt in s:
+                            if alt != ch:
+                                out.append((w[:i] + alt + w[i + 1:], "hamza-swap"))
+        elif self.lang == "ko":
+            for a, b in self.KO_JAMO_PAIRS:
+                if a in w:
+                    out.append((w.replace(a, b, 1), "jamo-confusion"))
+                if b in w:
+                    out.append((w.replace(b, a, 1), "jamo-confusion"))
+        if self.ime_char:
+            for i, ch in enumerate(w):
+                syls = self.ime_char.get(ch.lower())
+                if not syls:
+                    continue
+                for syl in syls:
+                    for alt in self.ime_syls.get(syl, []):
+                        if alt != ch:
+                            out.append((w[:i] + alt + w[i + 1:], "ime-confusion"))
+        return out
+
+    def skeleton_realword_pairs(self, limit):
+        """vi real-word pairs: words sharing a tone-stripped skeleton
+        (chấu/chầu, hài/hại) — both sides real by construction, and the
+        vowel-cluster changes the tone-rotation model cannot enumerate
+        are covered."""
+        import unicodedata as _ud
+        groups = defaultdict(list)
+        for w in self.words:
+            if len(w) < 2:
+                continue
+            d = _ud.normalize("NFD", w)
+            key = "".join(c for c in d if c not in self.VIET_TONES)
+            groups[key].append(w)
+        out, seen = [], set()
+        for key, ws in groups.items():
+            if len(out) >= limit:
+                break
+            if len(ws) < 2:
+                continue
+            for i in range(len(ws)):
+                if len(out) >= limit:
+                    break
+                for j in range(i + 1, len(ws)):
+                    a, b = ws[i], ws[j]
+                    if a.lower() in seen:
+                        continue
+                    seen.add(a.lower())
+                    out.append({"typo": a, "correction": b,
+                                "weight": 1, "class": "tone-mark-realword"})
+                    break
+        return out
+
+    def confusion_realword_pairs(self, limit):
+        """Constructive real-word pairs: enumerate the confusion variants
+        of each list word and keep the ones where BOTH sides are real
+        words. Stable across RNG states (the rejection sampler exhausted
+        its proposal space and collapsed to single digits)."""
+        if self.lang == "vi":
+            return self.skeleton_realword_pairs(limit)
+        out, seen = [], set()
+        for w in self.words:
+            if len(out) >= limit:
+                break
+            if len(w) < 2:
+                continue
+            for cand, klass in self.confusion_variants(w):
+                cl = cand.lower()
+                if len(cand) < 2 or len(w) < 2:
+                    continue
+                if cl == w.lower() or cl in seen or cl not in self.word_set:
+                    continue
+                seen.add(cl)
+                out.append({"typo": cand, "correction": w,
+                            "weight": 1, "class": klass + "-realword"})
+                break
+        return out
+
+    def confusion_realword(self, attempts=6000):
+        """Real-word pairs from the confusion tables: swap a confusable
+        and keep the pair when BOTH sides are real words (the actual
+        real-word error class — 那/哪, the wrong-dấu spelling, 개/게,
+        the hamza variants)."""
+        for _ in range(attempts):
+            # full list: both-sides-real is guaranteed by word_set
+            # membership, so the frequency guard is not needed here
+            w = self.rng.choice(self.words)
+            if len(w) < 2:
+                continue
+            res = self.language_class(w)
+            if res:
+                cand, klass = res
+                if cand.lower() in self.word_set:
+                    return cand, w, klass + "-realword"
+            if self.ime_char:
+                han = [c for c in w if c.lower() in self.ime_char]
+                if han:
+                    ch = self.rng.choice(han)
+                    syl = self.rng.choice(list(self.ime_char[ch.lower()]))
+                    alts = [c for c in self.ime_syls.get(syl, []) if c != ch]
+                    if alts:
+                        alt = self.rng.choice(alts)
+                        i = w.lower().index(ch)
+                        cand = w[:i] + alt + w[i + 1:]
+                        if cand.lower() in self.word_set:
+                            return cand, w, "ime-confusion-realword"
+        return None
 
     def realword_pair(self, attempts=4000):
         """Valid neighbor at distance 1, both words real. Any single
@@ -196,7 +430,10 @@ class TypoGen:
             if len(w) < 4:
                 continue
             i = self.rng.randrange(len(w))
-            pool = "abcdefghijklmnopqrstuvwxyzàáâäèéêëìíîïòóôöùúûüñçãõåøæœ" + w[i].lower()
+            pool = "abcdefghijklmnopqrstuvwxyzàáâäèéêëìíîïòóôöùúûüñçãõåøæœ"
+            if not w[i].isascii() and self.own_pool:
+                pool = self.own_pool
+            pool += w[i].lower()
             rep = self.rng.choice(pool)
             if rep == w[i].lower():
                 continue
@@ -252,7 +489,8 @@ def main():
         classes[klass] += 1
         dists[d] += 1
 
-    rw = []
+    rw = list(gen.confusion_realword_pairs(args.realword))
+    seen_rw = {p["typo"].lower() for p in rw}
     attempts = 0
     while len(rw) < args.realword and attempts < 40:
         attempts += 1
@@ -260,8 +498,9 @@ def main():
         if not res:
             continue
         typo, truth = res
-        if typo.lower() in {p["typo"].lower() for p in rw}:
+        if typo.lower() in seen_rw:
             continue
+        seen_rw.add(typo.lower())
         rw.append({"typo": typo, "correction": truth, "weight": 1, "class": "realword-swap"})
 
     out = Path(args.out)

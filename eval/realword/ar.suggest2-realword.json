@@ -1,0 +1,1208 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "ar",
+ "klass": "realword",
+ "n": 200,
+ "pairs": [
+  {
+   "typo": "أب",
+   "correction": "آب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أت",
+   "correction": "آت",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أتي",
+   "correction": "آتي",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أثار",
+   "correction": "آثار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أخر",
+   "correction": "آخر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أذار",
+   "correction": "آذار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أل",
+   "correction": "آل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ألة",
+   "correction": "آلة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "الت",
+   "correction": "آلت",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ألي",
+   "correction": "آلي",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ألية",
+   "correction": "آلية",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أمن",
+   "correction": "آمن",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أن",
+   "correction": "آن",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أنذاك",
+   "correction": "آنذاك",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أه",
+   "correction": "آه",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أيار",
+   "correction": "آيار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أية",
+   "correction": "آية",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آب",
+   "correction": "أب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ابد",
+   "correction": "أبد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ابريل",
+   "correction": "أبريل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ابيض",
+   "correction": "أبيض",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اتصور",
+   "correction": "أتصور",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اتفق",
+   "correction": "أتفق",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اتم",
+   "correction": "أتم",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اتهم",
+   "correction": "أتهم",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آتى",
+   "correction": "أتى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آتي",
+   "correction": "أتي",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آثار",
+   "correction": "أثار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اثبت",
+   "correction": "أثبت",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آثر",
+   "correction": "أثر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اثري",
+   "correction": "أثري",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اثناء",
+   "correction": "أثناء",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اثير",
+   "correction": "أثير",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجاب",
+   "correction": "أجاب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجر",
+   "correction": "أجر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجرا",
+   "correction": "أجرا",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجرة",
+   "correction": "أجرة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجرى",
+   "correction": "أجرى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجزاء",
+   "correction": "أجزاء",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجسام",
+   "correction": "أجسام",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آجل",
+   "correction": "أجل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجلس",
+   "correction": "أجلس",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجمع",
+   "correction": "أجمع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجنبي",
+   "correction": "أجنبي",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجواء",
+   "correction": "أجواء",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اجيب",
+   "correction": "أجيب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احاديث",
+   "correction": "أحاديث",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احاول",
+   "correction": "أحاول",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احب",
+   "correction": "أحب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احتاج",
+   "correction": "أحتاج",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آحد",
+   "correction": "أحد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احدث",
+   "correction": "أحدث",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احدهم",
+   "correction": "أحدهم",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أحدى",
+   "correction": "احدى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احرار",
+   "correction": "أحرار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احزاب",
+   "correction": "أحزاب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احس",
+   "correction": "أحس",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احسن",
+   "correction": "أحسن",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احضر",
+   "correction": "أحضر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احلى",
+   "correction": "أحلى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احمد",
+   "correction": "أحمد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احمر",
+   "correction": "أحمر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "احمل",
+   "correction": "أحمل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آخ",
+   "correction": "أخ",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخاف",
+   "correction": "أخاف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخبار",
+   "correction": "أخبار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخبر",
+   "correction": "أخبر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخت",
+   "correction": "أخت",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آخذ",
+   "correction": "أخذ",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آخر",
+   "correction": "أخر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخرج",
+   "correction": "أخرج",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخشى",
+   "correction": "أخشى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخضر",
+   "correction": "أخضر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخطأ",
+   "correction": "أخطأ",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "إخطار",
+   "correction": "أخطار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخطر",
+   "correction": "أخطر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخلاق",
+   "correction": "أخلاق",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخو",
+   "correction": "أخو",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخى",
+   "correction": "أخى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اخير",
+   "correction": "أخير",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آداء",
+   "correction": "أداء",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آداب",
+   "correction": "أداب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اداة",
+   "correction": "أداة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادب",
+   "correction": "أدب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادخل",
+   "correction": "أدخل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادر",
+   "correction": "أدر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادراج",
+   "correction": "أدراج",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادرك",
+   "correction": "أدرك",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادرى",
+   "correction": "أدرى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادري",
+   "correction": "أدري",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادعو",
+   "correction": "أدعو",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادق",
+   "correction": "أدق",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "أدلي",
+   "correction": "أدلى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "إدنا",
+   "correction": "أدنا",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادنى",
+   "correction": "أدنى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادوار",
+   "correction": "أدوار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ادى",
+   "correction": "أدى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اديب",
+   "correction": "أديب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اذكر",
+   "correction": "أذكر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آذن",
+   "correction": "أذن",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آذى",
+   "correction": "أذى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اراد",
+   "correction": "أراد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اربعة",
+   "correction": "أربعة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اربعين",
+   "correction": "أربعين",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارجع",
+   "correction": "أرجع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارجو",
+   "correction": "أرجو",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارحب",
+   "correction": "أرحب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارحم",
+   "correction": "أرحم",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارد",
+   "correction": "أرد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "الاردن",
+   "correction": "الأردن",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارز",
+   "correction": "أرز",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارسل",
+   "correction": "أرسل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارشيف",
+   "correction": "أرشيف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارض",
+   "correction": "أرض",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارضي",
+   "correction": "أرضي",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارغب",
+   "correction": "أرغب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارفع",
+   "correction": "أرفع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارقى",
+   "correction": "أرقى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ارواح",
+   "correction": "أرواح",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اروع",
+   "correction": "أروع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آرى",
+   "correction": "أرى",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ازال",
+   "correction": "أزال",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ازداد",
+   "correction": "أزداد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ازرق",
+   "correction": "أزرق",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ازمة",
+   "correction": "أزمة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "ازواج",
+   "correction": "أزواج",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اساء",
+   "correction": "أساء",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسابيع",
+   "correction": "أسابيع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اساس",
+   "correction": "أساس",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اساسي",
+   "correction": "أساسي",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسبوع",
+   "correction": "أسبوع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "استاذ",
+   "correction": "أستاذ",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "استاذة",
+   "correction": "أستاذة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "استطع",
+   "correction": "أستطع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "استطيع",
+   "correction": "أستطيع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسد",
+   "correction": "أسد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آسرة",
+   "correction": "أسرة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسرع",
+   "correction": "أسرع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسس",
+   "correction": "أسس",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسطورة",
+   "correction": "أسطورة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسعد",
+   "correction": "أسعد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آسف",
+   "correction": "أسف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسفر",
+   "correction": "أسفر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسفل",
+   "correction": "أسفل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسلحة",
+   "correction": "أسلحة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسلم",
+   "correction": "أسلم",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسلوب",
+   "correction": "أسلوب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسمنت",
+   "correction": "أسمنت",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسنان",
+   "correction": "أسنان",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسهل",
+   "correction": "أسهل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسوأ",
+   "correction": "أسوأ",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسود",
+   "correction": "أسود",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اسير",
+   "correction": "أسير",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اشار",
+   "correction": "أشار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اشبه",
+   "correction": "أشبه",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اشد",
+   "correction": "أشد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "آشر",
+   "correction": "أشر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اشرف",
+   "correction": "أشرف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اشعة",
+   "correction": "أشعة",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اشغال",
+   "correction": "أشغال",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصاب",
+   "correction": "أصاب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصابع",
+   "correction": "أصابع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصبح",
+   "correction": "أصبح",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصح",
+   "correction": "أصح",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصحاب",
+   "correction": "أصحاب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصدر",
+   "correction": "أصدر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصدق",
+   "correction": "أصدق",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصر",
+   "correction": "أصر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصعب",
+   "correction": "أصعب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصغر",
+   "correction": "أصغر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصفر",
+   "correction": "أصفر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصل",
+   "correction": "أصل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصلح",
+   "correction": "أصلح",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصلي",
+   "correction": "أصلي",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصناف",
+   "correction": "أصناف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصول",
+   "correction": "أصول",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصيب",
+   "correction": "أصيب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اصيل",
+   "correction": "أصيل",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اضاف",
+   "correction": "أضاف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اضرار",
+   "correction": "أضرار",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اضطر",
+   "correction": "أضطر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اضع",
+   "correction": "أضع",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اضعف",
+   "correction": "أضعف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اضف",
+   "correction": "أضف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اضواء",
+   "correction": "أضواء",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اضيف",
+   "correction": "أضيف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اطباء",
+   "correction": "أطباء",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اطعم",
+   "correction": "أطعم",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اطفال",
+   "correction": "أطفال",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اطلب",
+   "correction": "أطلب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اطلق",
+   "correction": "أطلق",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اطول",
+   "correction": "أطول",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اطيب",
+   "correction": "أطيب",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اظن",
+   "correction": "أظن",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اظهر",
+   "correction": "أظهر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اعاد",
+   "correction": "أعاد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اعتبر",
+   "correction": "أعتبر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اعتذر",
+   "correction": "أعتذر",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اعترف",
+   "correction": "أعترف",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  },
+  {
+   "typo": "اعتقد",
+   "correction": "أعتقد",
+   "weight": 1,
+   "class": "hamza-swap-realword"
+  }
+ ]
+}

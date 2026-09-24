@@ -1,0 +1,1208 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "zh-Hant-HK",
+ "klass": "realword",
+ "n": 200,
+ "pairs": [
+  {
+   "typo": "她們",
+   "correction": "他們",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "公私",
+   "correction": "公司",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "之道",
+   "correction": "知道",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "計畫",
+   "correction": "計劃",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "須要",
+   "correction": "需要",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "筆會",
+   "correction": "不會",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "人文",
+   "correction": "人民",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "其它",
+   "correction": "其他",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "妳們",
+   "correction": "你們",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "必需",
+   "correction": "必須",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "期中",
+   "correction": "其中",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "忠心",
+   "correction": "中心",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "一夕",
+   "correction": "一直",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "市長",
+   "correction": "市場",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "鞋子",
+   "correction": "孩子",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "大加",
+   "correction": "大家",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "新民",
+   "correction": "新聞",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "友人",
+   "correction": "有人",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "哪些",
+   "correction": "那些",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "會以",
+   "correction": "會議",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "雙關",
+   "correction": "相關",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "延後",
+   "correction": "然後",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "哪個",
+   "correction": "那個",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "人猿",
+   "correction": "人員",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "瞬息",
+   "correction": "信息",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "那裏",
+   "correction": "哪裏",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "全在",
+   "correction": "存在",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "佈告",
+   "correction": "報告",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "爾後",
+   "correction": "以後",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "之源",
+   "correction": "資源",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "專頁",
+   "correction": "專業",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "支前",
+   "correction": "之前",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "少時",
+   "correction": "小時",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "傳球",
+   "correction": "全球",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "他們",
+   "correction": "它們",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "其間",
+   "correction": "期間",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "做成",
+   "correction": "造成",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "功業",
+   "correction": "工業",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "腦力",
+   "correction": "努力",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "制導",
+   "correction": "制度",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "乘員",
+   "correction": "成員",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "發報",
+   "correction": "發佈",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "可視",
+   "correction": "可是",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "解析",
+   "correction": "解釋",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "自燃",
+   "correction": "自然",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "哪裏",
+   "correction": "那裏",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "正色",
+   "correction": "正式",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "民俗",
+   "correction": "民族",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "大梁",
+   "correction": "大量",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "忠於",
+   "correction": "終於",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "美圓",
+   "correction": "美元",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "紋章",
+   "correction": "文章",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "亞州",
+   "correction": "亞洲",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "惟一",
+   "correction": "唯一",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "人事",
+   "correction": "人士",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "重申",
+   "correction": "重新",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "軍士",
+   "correction": "軍事",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "公文",
+   "correction": "公民",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "小雪",
+   "correction": "小説",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "淶源",
+   "correction": "來源",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "知悉",
+   "correction": "知識",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "減小",
+   "correction": "減少",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "女鞋",
+   "correction": "女孩",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "型式",
+   "correction": "形式",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "佈道",
+   "correction": "報道",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "機長",
+   "correction": "機場",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "哪樣",
+   "correction": "那樣",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "好象",
+   "correction": "好像",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "公報",
+   "correction": "公佈",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "它們",
+   "correction": "她們",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "金庸",
+   "correction": "金融",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "意式",
+   "correction": "意識",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "坂本",
+   "correction": "版本",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "不小",
+   "correction": "不少",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "水瓶",
+   "correction": "水平",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "規畫",
+   "correction": "規劃",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "難度",
+   "correction": "難道",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "公理",
+   "correction": "公里",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "律詩",
+   "correction": "律師",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "各色",
+   "correction": "角色",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "既得",
+   "correction": "記得",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "其他",
+   "correction": "其它",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "一加",
+   "correction": "一家",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "主將",
+   "correction": "主張",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "公元",
+   "correction": "公園",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "大營",
+   "correction": "大型",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "複習",
+   "correction": "複雜",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "小數",
+   "correction": "少數",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "學姐",
+   "correction": "學者",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "完工",
+   "correction": "員工",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "因數",
+   "correction": "因素",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "平價",
+   "correction": "評價",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "對仗",
+   "correction": "對象",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "複利",
+   "correction": "福利",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "享壽",
+   "correction": "享受",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "人材",
+   "correction": "人才",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "那個",
+   "correction": "哪個",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "國文",
+   "correction": "國民",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "資中",
+   "correction": "之中",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "樓下",
+   "correction": "留下",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "不支",
+   "correction": "不知",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "東經",
+   "correction": "東京",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "維茨",
+   "correction": "維持",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "祖上",
+   "correction": "早上",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "正事",
+   "correction": "正是",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "斯人",
+   "correction": "私人",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "星級",
+   "correction": "升級",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "小女",
+   "correction": "少女",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "日止",
+   "correction": "日子",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "特指",
+   "correction": "特徵",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "紀年",
+   "correction": "幾年",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "官軍",
+   "correction": "冠軍",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "轉而",
+   "correction": "轉移",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "酚類",
+   "correction": "分類",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "市場",
+   "correction": "市長",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "標緻",
+   "correction": "標誌",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "頻度",
+   "correction": "頻道",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "訊號",
+   "correction": "信號",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "聲名",
+   "correction": "聲明",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "受權",
+   "correction": "授權",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "置於",
+   "correction": "至於",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "施法",
+   "correction": "司法",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "加長",
+   "correction": "家長",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "敢情",
+   "correction": "感情",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "高宗",
+   "correction": "高中",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "餘下",
+   "correction": "如下",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "蒐集",
+   "correction": "收集",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "一至",
+   "correction": "一致",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "那些",
+   "correction": "哪些",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "自理",
+   "correction": "治理",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "全文",
+   "correction": "全民",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "黃帝",
+   "correction": "皇帝",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "立克",
+   "correction": "立刻",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "主詞",
+   "correction": "主持",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "宮主",
+   "correction": "公主",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "彗星",
+   "correction": "衞星",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "校場",
+   "correction": "校長",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "茅盾",
+   "correction": "矛盾",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "呈報",
+   "correction": "情報",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "海陽",
+   "correction": "海洋",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "婚配",
+   "correction": "分配",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "想像",
+   "correction": "想象",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "之名",
+   "correction": "知名",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "進宮",
+   "correction": "進攻",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "不予",
+   "correction": "不如",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "建城",
+   "correction": "建成",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "熟識",
+   "correction": "熟悉",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "您好",
+   "correction": "你好",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "創見",
+   "correction": "創建",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "平行",
+   "correction": "平衡",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "深情",
+   "correction": "心情",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "思惟",
+   "correction": "思維",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "撤消",
+   "correction": "撤銷",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "通信",
+   "correction": "通訊",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "不吝",
+   "correction": "不論",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "保全",
+   "correction": "保存",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "戰事",
+   "correction": "戰士",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "片子",
+   "correction": "騙子",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "毫毛",
+   "correction": "毫無",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "私人",
+   "correction": "詩人",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "合式",
+   "correction": "合適",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "大度",
+   "correction": "大道",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "兑付",
+   "correction": "對付",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "凸出",
+   "correction": "突出",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "院牆",
+   "correction": "院長",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "公會",
+   "correction": "工會",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "忿怒",
+   "correction": "憤怒",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "身型",
+   "correction": "新型",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "高效",
+   "correction": "高校",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "男方",
+   "correction": "南方",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "現今",
+   "correction": "現金",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "重覆",
+   "correction": "重複",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "加爾",
+   "correction": "加以",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "公證",
+   "correction": "公正",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "耐心",
+   "correction": "內心",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "引渡",
+   "correction": "引導",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "報道",
+   "correction": "報導",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "發案",
+   "correction": "法案",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "波瀾",
+   "correction": "波蘭",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "粽子",
+   "correction": "種子",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "反證",
+   "correction": "反正",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "客官",
+   "correction": "客觀",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "成仁",
+   "correction": "成人",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "白皙",
+   "correction": "白色",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "通訊",
+   "correction": "通信",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "傷人",
+   "correction": "商人",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "電訊",
+   "correction": "電信",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "葉面",
+   "correction": "頁面",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "分列",
+   "correction": "分裂",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "詩體",
+   "correction": "屍體",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "幹嗎",
+   "correction": "幹嘛",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "主樓",
+   "correction": "主流",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "型態",
+   "correction": "形態",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "模數",
+   "correction": "無數",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "王家",
+   "correction": "皇家",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "精采",
+   "correction": "精彩",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "那兒",
+   "correction": "哪兒",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "大福",
+   "correction": "大幅",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "題名",
+   "correction": "提名",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  },
+  {
+   "typo": "登錄",
+   "correction": "登陸",
+   "weight": 1,
+   "class": "ime-confusion-realword"
+  }
+ ]
+}
