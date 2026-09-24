@@ -2,10 +2,23 @@
 
 ## Status
 
-proposed (2026-09-24, owner directive: "add HK and KO and VI and AR").
-Prep (tables, lists, splits) proceeds alongside the serial bench queue
-(ja → fr/nl/pl/pt); the four new bench runs join the same serial queue
-after. Update this Status as each component lands.
+prep-complete (2026-09-24). All four languages have frozen splits
+(2,000 nonword + 200 realword, per-class tags) and frequency lists
+(kelly#8 merged: ko 26,795 / vi 10,387 / zh-Hant-HK 65,121 entries);
+the jyutping table (29,936 chars from Unihan kCantonese, 100% top-10k
+wordlist char coverage) is committed confusion evidence. Field dicts:
+ar/ko/vi staged in the dictionaries repo; HK's kotoshu lane resolves
+through the script-base fold to zh-Hant, and its field lane reads 0.0
+like the other CJK (no zh hunspell exists upstream) — disclosed.
+Benches queued serially behind fr/nl/pl/pt.
+
+Generator fixes landed en route (frozen splits keep their files): the
+ime-confusion class had been dead since S1 (char/syllable map
+inversion); far-sub and adjacent-sub fallbacks injected Latin letters
+into non-Latin scripts; diacritic-omit misfired on NFD hangul jamo;
+real-word pairs are now generated constructively from the confusion
+tables (the rejection sampler collapsed to single digits) with vi on
+tone-stripped skeleton groups.
 
 ## What already exists (verified 2026-09-24)
 
