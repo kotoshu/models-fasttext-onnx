@@ -1,0 +1,12008 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "ko",
+ "klass": "nonword",
+ "n": 2000,
+ "pairs": [
+  {
+   "typo": "통호와",
+   "correction": "여호와",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시킨다서",
+   "correction": "시킨다면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "경부고속도실",
+   "correction": "경부고속도로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "무정운",
+   "correction": "무더운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "일본인인",
+   "correction": "일본인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "해젠타",
+   "correction": "마젠타",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "피에르르",
+   "correction": "피에르",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "제작경",
+   "correction": "제작진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으니깐깐",
+   "correction": "으니깐",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "룸메이트트",
+   "correction": "룸메이트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "메세세지",
+   "correction": "메세지",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "생서요",
+   "correction": "생겨요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "요라웠",
+   "correction": "놀라웠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "볼교록",
+   "correction": "볼수록",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "모른고다",
+   "correction": "모른다고",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "였으소",
+   "correction": "였으니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "클통즈",
+   "correction": "클로즈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "심심리학자",
+   "correction": "심리학자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "란동리",
+   "correction": "란제리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "회피커",
+   "correction": "스피커",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김세세영",
+   "correction": "김세영",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "창업도",
+   "correction": "창업자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단이크",
+   "correction": "케이크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해다려야",
+   "correction": "기다려야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아름한",
+   "correction": "아름답",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다가갔갔",
+   "correction": "다가갔",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "드려용",
+   "correction": "드려요",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "바꾼자",
+   "correction": "바꾼다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "슈구마켓",
+   "correction": "슈퍼마켓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수이너",
+   "correction": "마이너",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바주주의",
+   "correction": "민주주의",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "끼아들",
+   "correction": "끼어들",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "삼형각",
+   "correction": "삼각형",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "이듬회",
+   "correction": "이듬해",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소개팅팅",
+   "correction": "소개팅",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "싱통즈",
+   "correction": "싱글즈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스스토어",
+   "correction": "스토어",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "선방서",
+   "correction": "소방서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아무래래도",
+   "correction": "아무래도",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "장리거",
+   "correction": "장거리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "인격태격",
+   "correction": "티격태격",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나이시클럽",
+   "correction": "나이트클럽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교우승",
+   "correction": "준우승",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정미즈",
+   "correction": "시미즈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가미다고",
+   "correction": "가진다고",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그이즈",
+   "correction": "아이즈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다녀로",
+   "correction": "다녀왔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교상기",
+   "correction": "교정기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아이이템",
+   "correction": "아이템",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "클리크",
+   "correction": "클라크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보건정",
+   "correction": "보건부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동아시시아",
+   "correction": "동아시아",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "전시도",
+   "correction": "전시실",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "학장교",
+   "correction": "학교장",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "성동의",
+   "correction": "성동구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "구석상석",
+   "correction": "구석구석",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "에티오나아",
+   "correction": "에티오피아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "로알에",
+   "correction": "알로에",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "다전학",
+   "correction": "유전학",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "실름다움",
+   "correction": "아름다움",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "줄줄께요",
+   "correction": "줄께요",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "카오스스",
+   "correction": "카오스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "캐스통",
+   "correction": "캐스터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스폰회",
+   "correction": "스폰서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성한행",
+   "correction": "성폭행",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수수차례",
+   "correction": "수차례",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "상당수수",
+   "correction": "상당수",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "리스트트",
+   "correction": "리스트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "박의범",
+   "correction": "박재범",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "몰아바",
+   "correction": "몰아내",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "개소소리",
+   "correction": "개소리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "만난다제",
+   "correction": "만난다면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "강릉리",
+   "correction": "강릉시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자본생의",
+   "correction": "자본주의",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성사구",
+   "correction": "성동구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "뒤통다",
+   "correction": "뒤통수",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "최상급급",
+   "correction": "최상급",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "숨소일",
+   "correction": "숨소리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "당항전",
+   "correction": "대항전",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지언정정",
+   "correction": "지언정",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "하회힐",
+   "correction": "하이힐",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이병헌헌",
+   "correction": "이병헌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "기트력",
+   "correction": "기억력",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수어진",
+   "correction": "이어진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고고학학",
+   "correction": "고고학",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "삼각각형",
+   "correction": "삼각형",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "합는단",
+   "correction": "합창단",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이이재용",
+   "correction": "이재용",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "청서서",
+   "correction": "청구서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "쫓아내내",
+   "correction": "쫓아내",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "부드워러",
+   "correction": "부드러워",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "구탠포드",
+   "correction": "스탠포드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부의장장",
+   "correction": "부의장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이래서서",
+   "correction": "이래서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "만반자",
+   "correction": "동반자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교아들인다",
+   "correction": "받아들인다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바아타",
+   "correction": "아바타",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "포애버",
+   "correction": "포에버",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "부작요",
+   "correction": "부작용",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "헤야죠",
+   "correction": "해야죠",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "쫓아아가",
+   "correction": "쫓아가",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "벌벌어졌",
+   "correction": "벌어졌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "손꼽꼽히",
+   "correction": "손꼽히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "두소워했",
+   "correction": "두려워했",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "달로구",
+   "correction": "달서구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "운동장장",
+   "correction": "운동장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스커커트",
+   "correction": "스커트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "소금조",
+   "correction": "소금물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "차차오르",
+   "correction": "차오르",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "주시마",
+   "correction": "다시마",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "캥루거",
+   "correction": "캥거루",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "가자해",
+   "correction": "가해자",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "줄여야야",
+   "correction": "줄여야",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스크린린",
+   "correction": "스크린",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "문행성",
+   "correction": "소행성",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "알간채",
+   "correction": "알아채",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "신박혜",
+   "correction": "박신혜",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "천연기전물",
+   "correction": "천연기념물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동미애",
+   "correction": "추미애",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스거르",
+   "correction": "거스르",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "지질학학",
+   "correction": "지질학",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "미틱스",
+   "correction": "미스틱",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "고장장난",
+   "correction": "고장난",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "만신감",
+   "correction": "만족감",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "배단야",
+   "correction": "배워야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "훈훈련소",
+   "correction": "훈련소",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "마우이이",
+   "correction": "마우이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "테러리스무",
+   "correction": "테러리스트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다브이",
+   "correction": "다이브",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "조호세",
+   "correction": "산호세",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "태라스",
+   "correction": "테라스",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "자소전",
+   "correction": "자서전",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "움직회다",
+   "correction": "움직인다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "잡아네",
+   "correction": "잡아내",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "크라이자러",
+   "correction": "크라이슬러",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의력망",
+   "correction": "전력망",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교편통",
+   "correction": "교통편",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "원자력력",
+   "correction": "원자력",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "전지현현",
+   "correction": "전지현",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "입지식",
+   "correction": "입학식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "에반실",
+   "correction": "에반스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "살진딘",
+   "correction": "살라딘",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하얏가",
+   "correction": "하얏트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으겨둔",
+   "correction": "남겨둔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아스레",
+   "correction": "아레스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "하거카",
+   "correction": "하루카",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "송은만",
+   "correction": "송은이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라마인",
+   "correction": "로마인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "삼위장체",
+   "correction": "삼위일체",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "한시면서",
+   "correction": "한다면서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성수위",
+   "correction": "성수동",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비막식",
+   "correction": "개막식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "않창호",
+   "correction": "안창호",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "뜨거데",
+   "correction": "뜨거웠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프라자버시",
+   "correction": "프라이버시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하차르트",
+   "correction": "모차르트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아브라그",
+   "correction": "아브라함",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나오상",
+   "correction": "나오미",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "원계자",
+   "correction": "설계자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아름다다움",
+   "correction": "아름다움",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "계모니카",
+   "correction": "하모니카",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "서강서",
+   "correction": "서강대",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "러갤리",
+   "correction": "갤러리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "라디에에이터",
+   "correction": "라디에이터",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "가파른른",
+   "correction": "가파른",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "데와려",
+   "correction": "데려와",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "그갈자리",
+   "correction": "전갈자리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이테블",
+   "correction": "테이블",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "중는자",
+   "correction": "중성자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "종종사자",
+   "correction": "종사자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "국무원",
+   "correction": "승무원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해경까",
+   "correction": "해줄까",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고투비",
+   "correction": "비투비",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "리프스트",
+   "correction": "프리스트",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "한겨겨레",
+   "correction": "한겨레",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "도입마",
+   "correction": "도입부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "무거수",
+   "correction": "무용수",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "매매킨토시",
+   "correction": "매킨토시",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "공토어",
+   "correction": "스토어",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "풀났려",
+   "correction": "풀려났",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "진서단",
+   "correction": "진단서",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "두려웠웠",
+   "correction": "두려웠",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "무무한도전",
+   "correction": "무한도전",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "네려서",
+   "correction": "내려서",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "줄비안",
+   "correction": "줄리안",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하다려야",
+   "correction": "기다려야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "재품군",
+   "correction": "제품군",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "파이브브",
+   "correction": "파이브",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "거슴살",
+   "correction": "가슴살",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "경기장장",
+   "correction": "경기장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "인지원",
+   "correction": "박지원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "신신속히",
+   "correction": "신속히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "한회찬",
+   "correction": "노회찬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아이요",
+   "correction": "아이템",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "염기서화",
+   "correction": "염기서열",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "노린다다",
+   "correction": "노린다",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "마오네즈",
+   "correction": "마요네즈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동리고는",
+   "correction": "그리고는",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "리이바",
+   "correction": "리바이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "그리곤곤",
+   "correction": "그리곤",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "찾아온다다",
+   "correction": "찾아온다",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "통어났",
+   "correction": "태어났",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "옷오이",
+   "correction": "옷걸이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "알록록달",
+   "correction": "알록달록",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "지난달달",
+   "correction": "지난달",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "법학의",
+   "correction": "법의학",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "떠올으",
+   "correction": "떠올릴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "쏟아졌졌",
+   "correction": "쏟아졌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "보보따리",
+   "correction": "보따리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "지난날날",
+   "correction": "지난날",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "월데트리트",
+   "correction": "월스트리트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "들어생요",
+   "correction": "들어와요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수여어",
+   "correction": "수여식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "머나진",
+   "correction": "나머진",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "후세인인",
+   "correction": "후세인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "분명체",
+   "correction": "생명체",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스래드",
+   "correction": "스레드",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "행여기",
+   "correction": "여행기",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "기구르트",
+   "correction": "요구르트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "트로피피",
+   "correction": "트로피",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "교도영",
+   "correction": "교도관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성시경경",
+   "correction": "성시경",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "블라인데",
+   "correction": "블라인드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어지럽럽",
+   "correction": "어지럽",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "시로수",
+   "correction": "가로수",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "들다니까",
+   "correction": "들으니까",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라브이",
+   "correction": "라이브",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "중징구",
+   "correction": "중징계",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아테원",
+   "correction": "아테네",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비트코인인",
+   "correction": "비트코인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "움직조",
+   "correction": "움직였",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "데사스",
+   "correction": "데우스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "말니먹",
+   "correction": "말아먹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마가렛렛",
+   "correction": "마가렛",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "가세건",
+   "correction": "가디건",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성라타",
+   "correction": "올라타",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "만해진",
+   "correction": "유해진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가입자자",
+   "correction": "가입자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "리라이",
+   "correction": "드라이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "리리퀘스트",
+   "correction": "리퀘스트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "버렸시니",
+   "correction": "버렸으니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "패터주",
+   "correction": "패터슨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "클라영",
+   "correction": "클라크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다하면",
+   "correction": "다방면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아우라라",
+   "correction": "아우라",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "래이지",
+   "correction": "레이지",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "끊임없없",
+   "correction": "끊임없",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "문재재인",
+   "correction": "문재인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "생사력",
+   "correction": "생산력",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의가락",
+   "correction": "발가락",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "콘텐요",
+   "correction": "콘텐츠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "코코아아",
+   "correction": "코코아",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "쓰의져",
+   "correction": "쓰러져",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스나이신",
+   "correction": "스나이퍼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "모터쇼쇼",
+   "correction": "모터쇼",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "마스드트",
+   "correction": "마스코트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라일스",
+   "correction": "라오스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도영갈",
+   "correction": "도망갈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "후동인",
+   "correction": "후세인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "원창시",
+   "correction": "창원시",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "볼보리",
+   "correction": "볼거리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "솔솔리드",
+   "correction": "솔리드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "유희왕왕",
+   "correction": "유희왕",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "하발력",
+   "correction": "순발력",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하이이틴",
+   "correction": "하이틴",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "건건국대",
+   "correction": "건국대",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "김종스",
+   "correction": "김종민",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바라통다",
+   "correction": "바라본다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성선구",
+   "correction": "성북구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "는빠서",
+   "correction": "나빠서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "세면대대",
+   "correction": "세면대",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "그지일",
+   "correction": "그지없",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "념기식",
+   "correction": "기념식",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "적십아",
+   "correction": "적십자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김진주",
+   "correction": "김남주",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스티미",
+   "correction": "스티치",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "건드렸렸",
+   "correction": "건드렸",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "곧로어",
+   "correction": "곧이어",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "휩진려",
+   "correction": "휩쓸려",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마우우이",
+   "correction": "마우이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "카해이션",
+   "correction": "카네이션",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "리우스스",
+   "correction": "리우스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "전계연",
+   "correction": "전도연",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "끌어아여",
+   "correction": "끌어들여",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "에니메이터",
+   "correction": "애니메이터",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "대호사",
+   "correction": "변호사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지메로",
+   "correction": "로메로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "완보히",
+   "correction": "완벽히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "내내말이",
+   "correction": "내말이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "원우키",
+   "correction": "유우키",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지이나",
+   "correction": "차이나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보주으나",
+   "correction": "보였으나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이재거",
+   "correction": "이재현",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "독일물",
+   "correction": "독극물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "미용만",
+   "correction": "미용사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "는는다는",
+   "correction": "는다는",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "감전성",
+   "correction": "감수성",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "진린터",
+   "correction": "프린터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "티는토리",
+   "correction": "티스토리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부득이이",
+   "correction": "부득이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "에탄요",
+   "correction": "에탄올",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "내려서서",
+   "correction": "내려서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "리퀴분",
+   "correction": "리퀴드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "대문암",
+   "correction": "대장암",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지표표면",
+   "correction": "지표면",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "시계청",
+   "correction": "통계청",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "승강신",
+   "correction": "승강기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "연원수",
+   "correction": "연수원",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "인어전주",
+   "correction": "인어공주",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "미소바",
+   "correction": "미소년",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "대호구역",
+   "correction": "보호구역",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "와이서",
+   "correction": "와이드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "실아나",
+   "correction": "살아나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이브생",
+   "correction": "이브닝",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "레신싱",
+   "correction": "레이싱",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "원대문",
+   "correction": "남대문",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이훈지",
+   "correction": "이지훈",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "마생내",
+   "correction": "마침내",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "음진중심",
+   "correction": "음악중심",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "간나다",
+   "correction": "나간다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "떨일질",
+   "correction": "떨어질",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이타트",
+   "correction": "타이트",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "두비운",
+   "correction": "두터운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "페미니트스",
+   "correction": "페미니스트",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "다녀용",
+   "correction": "다녀요",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "시얼리",
+   "correction": "시리얼",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "기영상",
+   "correction": "동영상",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "발사사대",
+   "correction": "발사대",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스스트립",
+   "correction": "스트립",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "홀리회이",
+   "correction": "홀리데이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고고분군",
+   "correction": "고분군",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "할로회",
+   "correction": "할로우",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "파파라다이스",
+   "correction": "파라다이스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이술사",
+   "correction": "미술사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "경찰찰청",
+   "correction": "경찰청",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "비대대칭",
+   "correction": "비대칭",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "키워트",
+   "correction": "키워야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "배이글",
+   "correction": "베이글",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "구자독",
+   "correction": "구독자",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "추운대",
+   "correction": "추운데",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "핵핵폭탄",
+   "correction": "핵폭탄",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "체육공원원",
+   "correction": "체육공원",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스스톡홀름",
+   "correction": "스톡홀름",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이이리스",
+   "correction": "이리스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "주리스티안",
+   "correction": "크리스티안",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "등하인물",
+   "correction": "등장인물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "전문원",
+   "correction": "전문의",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "레너사",
+   "correction": "레너드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "종백원",
+   "correction": "백종원",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "파파이팅",
+   "correction": "파이팅",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "미혼모모",
+   "correction": "미혼모",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "티요시",
+   "correction": "티모시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동에고",
+   "correction": "디에고",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고포증",
+   "correction": "공포증",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고혈혈압",
+   "correction": "고혈압",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "설계계자",
+   "correction": "설계자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "바라일",
+   "correction": "바라본",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "트문자",
+   "correction": "방문자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "에에이프릴",
+   "correction": "에이프릴",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "백만이자",
+   "correction": "백만장자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "삼겹살살",
+   "correction": "삼겹살",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "달스다",
+   "correction": "달한다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "슬로회",
+   "correction": "슬로건",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "잘츠부크르",
+   "correction": "잘츠부르크",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "마음껏껏",
+   "correction": "마음껏",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "선입상",
+   "correction": "선입견",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "대조관",
+   "correction": "대법관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "떨실져요",
+   "correction": "떨어져요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그런다다",
+   "correction": "그런다",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "관리는",
+   "correction": "관리원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시뮬이레터",
+   "correction": "시뮬레이터",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "굳서히",
+   "correction": "굳건히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "산악회회",
+   "correction": "산악회",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스태프프",
+   "correction": "스태프",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "교서동",
+   "correction": "서교동",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "와이로",
+   "correction": "와이즈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하동동군",
+   "correction": "하동군",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "고고성능",
+   "correction": "고성능",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "민정위",
+   "correction": "민방위",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "여어이",
+   "correction": "기어이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "일고이",
+   "correction": "일일이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "결정체체",
+   "correction": "결정체",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "부도군",
+   "correction": "부여군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "거슬슬리",
+   "correction": "거슬리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "어로그램",
+   "correction": "홀로그램",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스테이신",
+   "correction": "스테이크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동유럽럽",
+   "correction": "동유럽",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "쫓아나",
+   "correction": "쫓아오",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "태슬라",
+   "correction": "테슬라",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "불명예예",
+   "correction": "불명예",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "수수치심",
+   "correction": "수치심",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "밸나스",
+   "correction": "밸런스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "신문다",
+   "correction": "신문사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "인공호흡흡기",
+   "correction": "인공호흡기",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "마고워요",
+   "correction": "고마워요",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "소지국",
+   "correction": "소지섭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "와일드카드드",
+   "correction": "와일드카드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "뉴질비드",
+   "correction": "뉴질랜드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "혁명가가",
+   "correction": "혁명가",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "수울증",
+   "correction": "조울증",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "네셔널",
+   "correction": "내셔널",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "배생맨",
+   "correction": "배트맨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "전회세",
+   "correction": "전기세",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "문딩스",
+   "correction": "홀딩스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도부덕",
+   "correction": "부도덕",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "이공표",
+   "correction": "이름표",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기뻐요요",
+   "correction": "기뻐요",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "자파람",
+   "correction": "휘파람",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사사진사",
+   "correction": "사진사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "컨의턴트",
+   "correction": "컨설턴트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "돌아만",
+   "correction": "돌아보",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "멈춘그",
+   "correction": "멈춘다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "제나소닉",
+   "correction": "파나소닉",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "강제원",
+   "correction": "강동원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "래전드",
+   "correction": "레전드",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "현대로",
+   "correction": "현대판",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어처구없니",
+   "correction": "어처구니없",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "나와무",
+   "correction": "나와서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "일장인물",
+   "correction": "등장인물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그라운드드",
+   "correction": "그라운드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "울스시",
+   "correction": "울산시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그바지",
+   "correction": "그런지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단로토",
+   "correction": "프로토",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그럴보",
+   "correction": "그럴까",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "카펠라라",
+   "correction": "카펠라",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "나이사클럽",
+   "correction": "나이트클럽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사하리",
+   "correction": "사거리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정회시",
+   "correction": "정회원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "세이주",
+   "correction": "세이프",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "뭄국이",
+   "correction": "뭄바이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지다어",
+   "correction": "지어다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "아야야죠",
+   "correction": "아야죠",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "라셔서",
+   "correction": "계셔서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "행헤진",
+   "correction": "행해진",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "지구이",
+   "correction": "지구대",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교어지",
+   "correction": "흩어지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "테러인스트",
+   "correction": "테러리스트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자화다",
+   "correction": "자화상",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바로오",
+   "correction": "바오로",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "인디애나나",
+   "correction": "인디애나",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이회장",
+   "correction": "대회장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "생망감",
+   "correction": "실망감",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "실습한",
+   "correction": "실습실",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수릅쓰",
+   "correction": "무릅쓰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스텔라라",
+   "correction": "스텔라",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "필리제",
+   "correction": "필리핀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어지간히히",
+   "correction": "어지간히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "아쿠정",
+   "correction": "아쿠아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다다시금",
+   "correction": "다시금",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "그바이",
+   "correction": "리바이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그럴다",
+   "correction": "그럴지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "목이걸",
+   "correction": "목걸이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "달린단",
+   "correction": "달린다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "빼앗하",
+   "correction": "빼앗긴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "발라간",
+   "correction": "발라드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가어워",
+   "correction": "가벼워",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "생이렉트",
+   "correction": "다이렉트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의정부공",
+   "correction": "의정부시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "담아관",
+   "correction": "담당관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "과테테말라",
+   "correction": "과테말라",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "유권아",
+   "correction": "유권자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "강주량",
+   "correction": "강수량",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "행정부부",
+   "correction": "행정부",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "딸꾹질질",
+   "correction": "딸꾹질",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "악악순환",
+   "correction": "악순환",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "오래주래",
+   "correction": "오래오래",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정신서",
+   "correction": "정신력",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "카미보이",
+   "correction": "카우보이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "타와루",
+   "correction": "와타루",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "건주회사",
+   "correction": "지주회사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "한국일보보",
+   "correction": "한국일보",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "트언자",
+   "correction": "예언자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지니스",
+   "correction": "지저스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "피으키오",
+   "correction": "피노키오",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도시정",
+   "correction": "도시바",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "머탱스",
+   "correction": "머스탱",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "말레이지아",
+   "correction": "말레이시아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바이정린",
+   "correction": "바이올린",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "인라인인",
+   "correction": "인라인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "메릴랜국",
+   "correction": "메릴랜드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교마트폰",
+   "correction": "스마트폰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "트성구",
+   "correction": "유성구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자성물산",
+   "correction": "삼성물산",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "만약점",
+   "correction": "취약점",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시설진",
+   "correction": "시설물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "계무렇",
+   "correction": "아무렇",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "흥겨운운",
+   "correction": "흥겨운",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "챔피피언십",
+   "correction": "챔피언십",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "프란시스스",
+   "correction": "프란시스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "요춘기",
+   "correction": "사춘기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하카국",
+   "correction": "하카타",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교어왔",
+   "correction": "넘어왔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "저출산산",
+   "correction": "저출산",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "통레르기",
+   "correction": "알레르기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "조각로",
+   "correction": "조각가",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "분구수거",
+   "correction": "분리수거",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "는경련",
+   "correction": "전경련",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동지안",
+   "correction": "동해안",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "털무놓",
+   "correction": "털어놓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "병학리",
+   "correction": "병리학",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "체코슬자바키아",
+   "correction": "체코슬로바키아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김광신",
+   "correction": "김광수",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "에여스",
+   "correction": "에반스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "심리리학자",
+   "correction": "심리학자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "백도사전",
+   "correction": "백과사전",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마무무리",
+   "correction": "마무리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "성북구구",
+   "correction": "성북구",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "아이쿠쿠",
+   "correction": "아이쿠",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "메르국",
+   "correction": "메르스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "상시나",
+   "correction": "아시나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "케이지지",
+   "correction": "케이지",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "판마라",
+   "correction": "판도라",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "망설임임",
+   "correction": "망설임",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "여주경공",
+   "correction": "여주인공",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "크라거슬러",
+   "correction": "크라이슬러",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "는파이",
+   "correction": "스파이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오성리",
+   "correction": "오소리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "화살표표",
+   "correction": "화살표",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "앨배라마",
+   "correction": "앨라배마",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "카와원",
+   "correction": "카와이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "승리자자",
+   "correction": "승리자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "어린선이",
+   "correction": "어린아이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "캐이프",
+   "correction": "케이프",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "고통분투",
+   "correction": "고군분투",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도전히",
+   "correction": "온전히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "카페페인",
+   "correction": "카페인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이이커리",
+   "correction": "베이커리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "거침트",
+   "correction": "거침없",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "른오발",
+   "correction": "오른발",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "벤틀이",
+   "correction": "벤틀리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "손동주",
+   "correction": "손재주",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마도뱀",
+   "correction": "도마뱀",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "동영여",
+   "correction": "동영상",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해너레이션",
+   "correction": "제너레이션",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단날로그",
+   "correction": "아날로그",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "유유라",
+   "correction": "유유히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정지부",
+   "correction": "종지부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "두변리",
+   "correction": "변두리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "의리스틴",
+   "correction": "크리스틴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보지간히",
+   "correction": "어지간히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소둘렀",
+   "correction": "휘둘렀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "레건이",
+   "correction": "레이건",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "인원인",
+   "correction": "인도인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아스조",
+   "correction": "아스널",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성가관",
+   "correction": "성균관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "연만술",
+   "correction": "연금술",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "닙아니다만",
+   "correction": "아닙니다만",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "스테이시시",
+   "correction": "스테이시",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "라성드",
+   "correction": "라이드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "컨설턴트트",
+   "correction": "컨설턴트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "제나가",
+   "correction": "빗나가",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "우즈베키스스탄",
+   "correction": "우즈베키스탄",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "사서시",
+   "correction": "서사시",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "후계건",
+   "correction": "후계자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기준점점",
+   "correction": "기준점",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "박찬욱욱",
+   "correction": "박찬욱",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "넘친가",
+   "correction": "넘친다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "미츠츠루",
+   "correction": "미츠루",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "소소유자",
+   "correction": "소유자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "인교가요",
+   "correction": "인기가요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "요영원",
+   "correction": "요양원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "와청대",
+   "correction": "청와대",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "마을버대",
+   "correction": "마을버스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "짊어간",
+   "correction": "짊어지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "서부전",
+   "correction": "심부전",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "떠오를를",
+   "correction": "떠오를",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "뉴어서",
+   "correction": "뉴어크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "빗나가가",
+   "correction": "빗나가",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "함부위",
+   "correction": "함부로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하냐하면",
+   "correction": "왜냐하면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으지신",
+   "correction": "으신지",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "헛소소문",
+   "correction": "헛소문",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "대치치동",
+   "correction": "대치동",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "웃제거리",
+   "correction": "웃음거리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "중으부",
+   "correction": "중심부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "애송거",
+   "correction": "애송이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "악트센",
+   "correction": "악센트",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "로칼리",
+   "correction": "칼로리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "글더라스",
+   "correction": "더글라스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "조로심",
+   "correction": "조바심",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "잔디보",
+   "correction": "잔디밭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "코교피",
+   "correction": "코스피",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지도력력",
+   "correction": "지도력",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "선세자",
+   "correction": "왕세자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "블리리자드",
+   "correction": "블리자드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "면으서",
+   "correction": "으면서",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "늘원놓",
+   "correction": "늘어놓",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "돌잔치치",
+   "correction": "돌잔치",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "늘어세",
+   "correction": "늘어진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "트랜생션",
+   "correction": "트랜잭션",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "굳건히히",
+   "correction": "굳건히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "대학드",
+   "correction": "대학교",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "데이구",
+   "correction": "데이먼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "상간지",
+   "correction": "주간지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "주그아웃",
+   "correction": "로그아웃",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동분회",
+   "correction": "동문회",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "카데에",
+   "correction": "카에데",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "의문정",
+   "correction": "의문점",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비으나",
+   "correction": "됐으나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김정일일",
+   "correction": "김정일",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "교박꼬박",
+   "correction": "꼬박꼬박",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "야마자비",
+   "correction": "야마자키",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "위파구",
+   "correction": "송파구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "니자자리",
+   "correction": "사자자리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고지서서",
+   "correction": "고지서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "엠파일어",
+   "correction": "엠파이어",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아소래도",
+   "correction": "아무래도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기정하지마",
+   "correction": "걱정하지마",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기단차",
+   "correction": "기관차",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "제프요",
+   "correction": "제프리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "피통약",
+   "correction": "피임약",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사령나",
+   "correction": "사령탑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "석분법",
+   "correction": "분석법",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "가까진",
+   "correction": "가까우",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "루알미늄",
+   "correction": "알루미늄",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "남계르",
+   "correction": "남다르",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "엑스거",
+   "correction": "엑스맨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "거느소",
+   "correction": "거느리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "천문학만",
+   "correction": "천문학자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아주국니",
+   "correction": "아주머니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "멧돼수",
+   "correction": "멧돼지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해소기업",
+   "correction": "중소기업",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비켜진",
+   "correction": "비켜라",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다이팅",
+   "correction": "라이팅",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "개척다",
+   "correction": "개척자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동호호회",
+   "correction": "동호회",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "하는킹",
+   "correction": "하이킹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기생스북",
+   "correction": "기네스북",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "선풍통",
+   "correction": "선풍기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나날전",
+   "correction": "나날이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보보여준다",
+   "correction": "보여준다",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "김영선",
+   "correction": "김선영",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "장단간",
+   "correction": "장시간",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "대통통령령",
+   "correction": "대통령령",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "산호전",
+   "correction": "산호초",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "승강선",
+   "correction": "승강기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "핀드란",
+   "correction": "핀란드",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "스키경",
+   "correction": "스키니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "접제착",
+   "correction": "접착제",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "보드니다",
+   "correction": "보냅니다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "로눠서",
+   "correction": "나눠서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "편형없",
+   "correction": "형편없",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "무학상",
+   "correction": "문학상",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "농어촌촌",
+   "correction": "농어촌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "가오이",
+   "correction": "가까이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "새워져",
+   "correction": "세워져",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "튀어경왔",
+   "correction": "튀어나왔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "태권구",
+   "correction": "태권도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도파정",
+   "correction": "도파민",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스비터",
+   "correction": "스웨터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으다려",
+   "correction": "으려다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "소대원",
+   "correction": "부대원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "경상도북",
+   "correction": "경상북도",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "성마야",
+   "correction": "엄마야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "승강강장",
+   "correction": "승강장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "식생다",
+   "correction": "식생활",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "순전히히",
+   "correction": "순전히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "조진청",
+   "correction": "조달청",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "웨딩드래스",
+   "correction": "웨딩드레스",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "무생문화재",
+   "correction": "무형문화재",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "운전소",
+   "correction": "운전사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "학고모",
+   "correction": "학부모",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프로타토입",
+   "correction": "프로토타입",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "경제해",
+   "correction": "경제력",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "경문계",
+   "correction": "인문계",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "드나요",
+   "correction": "드나들",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "니어노",
+   "correction": "니시노",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부총총리",
+   "correction": "부총리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "선계과",
+   "correction": "선악과",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "판경리",
+   "correction": "판소리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "위타곤",
+   "correction": "펜타곤",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고메즈즈",
+   "correction": "고메즈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "미찬히",
+   "correction": "찬찬히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보였으공",
+   "correction": "보였으며",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "옐로로우",
+   "correction": "옐로우",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "그라저나",
+   "correction": "그나저나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자스티스",
+   "correction": "저스티스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "공동무",
+   "correction": "공동체",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시간나",
+   "correction": "시간표",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "실용음바",
+   "correction": "실용음악",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "전통문당",
+   "correction": "전통문화",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "빼만겼",
+   "correction": "빼앗겼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "에국전트",
+   "correction": "에이전트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "쫓지났",
+   "correction": "쫓겨났",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "화구자",
+   "correction": "화학자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "텀블무",
+   "correction": "텀블러",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "미나한",
+   "correction": "미나미",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "연합합군",
+   "correction": "연합군",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "니린다",
+   "correction": "드린다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "놀지운",
+   "correction": "놀라운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "인넷터",
+   "correction": "인터넷",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "괴롭대",
+   "correction": "괴롭힌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "넘하가",
+   "correction": "넘어가",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가생등",
+   "correction": "가로등",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스자울",
+   "correction": "스러울",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나서눠",
+   "correction": "나눠서",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "마국식",
+   "correction": "미국식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "니선틴",
+   "correction": "니코틴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "선자이크",
+   "correction": "모자이크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "순찰찰대",
+   "correction": "순찰대",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "쳐미서",
+   "correction": "미쳐서",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "스로운",
+   "correction": "해로운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김민오",
+   "correction": "김민경",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "크리스토퍼퍼",
+   "correction": "크리스토퍼",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "빈센트트",
+   "correction": "빈센트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "간이힐",
+   "correction": "하이힐",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "돌되아보",
+   "correction": "되돌아보",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "합쳐조",
+   "correction": "합쳐진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "녹거당",
+   "correction": "녹색당",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도거운",
+   "correction": "즐거운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "히스토회",
+   "correction": "히스토리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "느와르르",
+   "correction": "느와르",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "움아인",
+   "correction": "움직인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라이아스",
+   "correction": "라이센스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의컬리스트",
+   "correction": "보컬리스트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해이틀",
+   "correction": "타이틀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동물주",
+   "correction": "동물원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "드건려",
+   "correction": "건드려",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "교업병",
+   "correction": "직업병",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "크리위찬",
+   "correction": "크리스찬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가킨리다",
+   "correction": "가리킨다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "몸부림림",
+   "correction": "몸부림",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "완전히히",
+   "correction": "완전히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "시자청",
+   "correction": "시청자",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "진다고고",
+   "correction": "진다고",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "에이이프릴",
+   "correction": "에이프릴",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "배선원",
+   "correction": "배심원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자당심",
+   "correction": "자부심",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김테균",
+   "correction": "김태균",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "정밀도도",
+   "correction": "정밀도",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "영육공원",
+   "correction": "체육공원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "베내치아",
+   "correction": "베네치아",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "수목원원",
+   "correction": "수목원",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "케네통",
+   "correction": "케네스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "한당다",
+   "correction": "당한다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "중환자자실",
+   "correction": "중환자실",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "깜빡했했",
+   "correction": "깜빡했",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "일메인",
+   "correction": "도메인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "트러스실",
+   "correction": "트러스트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가까웠웠",
+   "correction": "가까웠",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "오리소",
+   "correction": "오소리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "도디아",
+   "correction": "나디아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "인디에나",
+   "correction": "인디애나",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "플계닛",
+   "correction": "플래닛",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "느낍니니다",
+   "correction": "느낍니다",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "번번이이",
+   "correction": "번번이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "더러간",
+   "correction": "더러운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "눈정라",
+   "correction": "눈보라",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "허리자",
+   "correction": "허리띠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "파노노라마",
+   "correction": "파노라마",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "대용량량",
+   "correction": "대용량",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "타나낸",
+   "correction": "나타낸",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "어이없없",
+   "correction": "어이없",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "극북곰",
+   "correction": "북극곰",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "악하향",
+   "correction": "악영향",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이준해",
+   "correction": "이준기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "카탈으그",
+   "correction": "카탈로그",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "총선생회",
+   "correction": "총학생회",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동부모",
+   "correction": "조부모",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "야구당",
+   "correction": "야구장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "토스트트",
+   "correction": "토스트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "레오불",
+   "correction": "레드불",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정커힐",
+   "correction": "워커힐",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "돌으갈",
+   "correction": "돌아갈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "대대각선",
+   "correction": "대각선",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "노르망어",
+   "correction": "노르망디",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사인회회",
+   "correction": "사인회",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "테테일러",
+   "correction": "테일러",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "고마워서",
+   "correction": "고마워요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가시사대",
+   "correction": "가라사대",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "몸거게",
+   "correction": "몸무게",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "두만강강",
+   "correction": "두만강",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "넘나갔",
+   "correction": "넘어갔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "은메로",
+   "correction": "은메달",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "무서바",
+   "correction": "무서워",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어에컨",
+   "correction": "에어컨",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "코그리",
+   "correction": "코끼리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "법치치주의",
+   "correction": "법치주의",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "시일종관",
+   "correction": "시종일관",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "코동리",
+   "correction": "코끼리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "잉리글쉬",
+   "correction": "잉글리쉬",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "골조야",
+   "correction": "골라야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "메인보문",
+   "correction": "메인보드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "일으수",
+   "correction": "일으키",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아대씨",
+   "correction": "아저씨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스크랩랩",
+   "correction": "스크랩",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "기거법",
+   "correction": "기본법",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스머머프",
+   "correction": "스머프",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "트래일",
+   "correction": "트레일",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "파쳐헤",
+   "correction": "파헤쳐",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "찾아간간",
+   "correction": "찾아간",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "희생양양",
+   "correction": "희생양",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "프린스으",
+   "correction": "프린스턴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "옵티머머스",
+   "correction": "옵티머스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "나타난난",
+   "correction": "나타난",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "리임스",
+   "correction": "타임스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "꼬위리",
+   "correction": "꼬투리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "원민경",
+   "correction": "김민경",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "애테르",
+   "correction": "에테르",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "보호구구역",
+   "correction": "보호구역",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "올빼미미",
+   "correction": "올빼미",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "달달라도",
+   "correction": "달라도",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "요대캐피탈",
+   "correction": "현대캐피탈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "샤프무",
+   "correction": "샤프트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다큐대터리",
+   "correction": "다큐멘터리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "발의니",
+   "correction": "발코니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "리엘엇",
+   "correction": "엘리엇",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "반반대파",
+   "correction": "반대파",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "인플레레이션",
+   "correction": "인플레이션",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "컨텐제",
+   "correction": "컨텐츠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "걸어서서",
+   "correction": "걸어서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "모른동",
+   "correction": "모른다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "구조원",
+   "correction": "승조원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기장국",
+   "correction": "기장군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "광역일",
+   "correction": "광역시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "액브티",
+   "correction": "액티브",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "망도쳤",
+   "correction": "도망쳤",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "종사비",
+   "correction": "종사자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "머머레이",
+   "correction": "머레이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "와이키키키",
+   "correction": "와이키키",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "서스스펜션",
+   "correction": "서스펜션",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "타이이핑",
+   "correction": "타이핑",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "정가교사",
+   "correction": "가정교사",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "쓰져러",
+   "correction": "쓰러져",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "스파이크크",
+   "correction": "스파이크",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "유피토아",
+   "correction": "유토피아",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "정수리리",
+   "correction": "정수리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "탈바바꿈",
+   "correction": "탈바꿈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "는연진",
+   "correction": "출연진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "중국식식",
+   "correction": "중국식",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "인되요",
+   "correction": "인데요",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "플란트트",
+   "correction": "플란트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "부러니",
+   "correction": "부러운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "터모스",
+   "correction": "모터스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "야구의",
+   "correction": "야구단",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "국전구",
+   "correction": "전국구",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "경심부",
+   "correction": "중심부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바사네",
+   "correction": "바네사",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "불쾌무",
+   "correction": "불쾌감",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "남겨제",
+   "correction": "남겨진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라가던",
+   "correction": "라던가",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "궁금증증",
+   "correction": "궁금증",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "윗사분",
+   "correction": "윗부분",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자유로여",
+   "correction": "자유로이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "공감포",
+   "correction": "공포감",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "남당생",
+   "correction": "남동생",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "니으면",
+   "correction": "졌으면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라디애이터",
+   "correction": "라디에이터",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "로이장",
+   "correction": "로이터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "참참기름",
+   "correction": "참기름",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "보리한",
+   "correction": "보리스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "로르도",
+   "correction": "보르도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아어랍",
+   "correction": "아랍어",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "나장요",
+   "correction": "나아요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "크리에이티티브",
+   "correction": "크리에이티브",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "중중남미",
+   "correction": "중남미",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "신정없이",
+   "correction": "정신없이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "이클공스",
+   "correction": "이클립스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스토크크",
+   "correction": "스토크",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "는다지",
+   "correction": "는다니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "유자학",
+   "correction": "유전학",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "현대라피탈",
+   "correction": "현대캐피탈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그신다면",
+   "correction": "으신다면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "개회인",
+   "correction": "개회식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "속거썹",
+   "correction": "속눈썹",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "독시어",
+   "correction": "독일어",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "평주상",
+   "correction": "평화상",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어마프",
+   "correction": "어설프",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "영동완",
+   "correction": "김동완",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "발요락",
+   "correction": "발가락",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "건공진",
+   "correction": "건방진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "외이통상부",
+   "correction": "외교통상부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "당가지",
+   "correction": "바가지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "쳐다봐봐",
+   "correction": "쳐다봐",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "내이처",
+   "correction": "네이처",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "가로질니",
+   "correction": "가로질러",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의변인",
+   "correction": "대변인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "계획연",
+   "correction": "계획서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "범졔자",
+   "correction": "범죄자",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "가운운데",
+   "correction": "가운데",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "경영영진",
+   "correction": "경영진",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "네이여",
+   "correction": "네이버",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "대대중",
+   "correction": "김대중",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나넘들",
+   "correction": "넘나들",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "인는요",
+   "correction": "인가요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "총생산산",
+   "correction": "총생산",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "떠올영",
+   "correction": "떠올릴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "서대문나",
+   "correction": "서대문구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "선간제",
+   "correction": "기간제",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단려서",
+   "correction": "들려서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "회의대",
+   "correction": "회의장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "티티머니",
+   "correction": "티머니",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "구려진",
+   "correction": "버려진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비밀번조",
+   "correction": "비밀번호",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "몰보치",
+   "correction": "몰아치",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "리울대",
+   "correction": "서울대",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "네세운",
+   "correction": "내세운",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "거키스탄",
+   "correction": "파키스탄",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하인라이트",
+   "correction": "하이라이트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "팔로트",
+   "correction": "팔레트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "유교대",
+   "correction": "유대교",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "대조주",
+   "correction": "창조주",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "화노우에",
+   "correction": "이노우에",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "흡귀혈",
+   "correction": "흡혈귀",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "불명교",
+   "correction": "불명확",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "괴화혀",
+   "correction": "괴롭혀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어트워",
+   "correction": "어두워",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "포포커스",
+   "correction": "포커스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "프랑크통르트",
+   "correction": "프랑크푸르트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "크크로니클",
+   "correction": "크로니클",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "산부시",
+   "correction": "부산시",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "마르바",
+   "correction": "마르코",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "올아브",
+   "correction": "올리브",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "칸만이",
+   "correction": "칸막이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "추천상",
+   "correction": "추천인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "빨치산산",
+   "correction": "빨치산",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "패이퍼",
+   "correction": "페이퍼",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "드드러난",
+   "correction": "드러난",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "부적적합",
+   "correction": "부적합",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "홀그로램",
+   "correction": "홀로그램",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "수착순",
+   "correction": "선착순",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "될될까요",
+   "correction": "될까요",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "시어터터",
+   "correction": "시어터",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "맞춰야야",
+   "correction": "맞춰야",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "엎위리",
+   "correction": "엎드리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "휴나실",
+   "correction": "휴게실",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보낼낼까",
+   "correction": "보낼까",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "아비러니",
+   "correction": "아이러니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으라요",
+   "correction": "으라는",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오달음",
+   "correction": "깨달음",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "저스대",
+   "correction": "저스틴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지스저",
+   "correction": "지저스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "인전군",
+   "correction": "인민군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아이이카",
+   "correction": "아이카",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "학교교장",
+   "correction": "학교장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "성면서",
+   "correction": "라면서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "내말말이",
+   "correction": "내말이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "플플래그",
+   "correction": "플래그",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "프로메데우스",
+   "correction": "프로메테우스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마데요",
+   "correction": "던데요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "전나실",
+   "correction": "전나무",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아무는",
+   "correction": "아무개",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "쉐이생",
+   "correction": "쉐이크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "경스턴",
+   "correction": "윈스턴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "줄선아",
+   "correction": "줄리아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "요종국",
+   "correction": "김종국",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보려갔",
+   "correction": "내려갔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김무만",
+   "correction": "김무성",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "뇌양종",
+   "correction": "뇌종양",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "활약아",
+   "correction": "활약상",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프부크",
+   "correction": "프랭크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아리무",
+   "correction": "아무리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "그고스도인",
+   "correction": "그리스도인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "여동욱",
+   "correction": "이동욱",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "유사리",
+   "correction": "사유리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "레레전드",
+   "correction": "레전드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "계획교",
+   "correction": "계획안",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그바너",
+   "correction": "바그너",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "안정미",
+   "correction": "안정감",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "로지법",
+   "correction": "금지법",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "실화질",
+   "correction": "고화질",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "캠퍼도",
+   "correction": "캠퍼스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "중고한",
+   "correction": "중고차",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지하지",
+   "correction": "지하실",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "후나이",
+   "correction": "후지이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "통정환",
+   "correction": "김정환",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라생스",
+   "correction": "라이스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아메칸리",
+   "correction": "아메리칸",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "고구구려",
+   "correction": "고구려",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "목목욕탕",
+   "correction": "목욕탕",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "내서려",
+   "correction": "내려서",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "계니지먼트",
+   "correction": "매니지먼트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "뭡니정",
+   "correction": "뭡니까",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단단행본",
+   "correction": "단행본",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "진다면면",
+   "correction": "진다면",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "명명령어",
+   "correction": "명령어",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "리표회",
+   "correction": "발표회",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "생어갔",
+   "correction": "들어갔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보드카카",
+   "correction": "보드카",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "루루퍼스",
+   "correction": "루퍼스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "해학부",
+   "correction": "해부학",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "파인애플플",
+   "correction": "파인애플",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "바쁜쁜데",
+   "correction": "바쁜데",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "나빠빠요",
+   "correction": "나빠요",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스파파클",
+   "correction": "스파클",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스티브브",
+   "correction": "스티브",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스자비",
+   "correction": "스티비",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "재독자",
+   "correction": "독재자",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "마단카",
+   "correction": "마이카",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나타거",
+   "correction": "나타낸",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "분위신",
+   "correction": "분위기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고생질",
+   "correction": "고품질",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "워크크숍",
+   "correction": "워크숍",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "신칸센센",
+   "correction": "신칸센",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "돗소리",
+   "correction": "돗자리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "걸으그",
+   "correction": "걸으면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부공서",
+   "correction": "부어서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그라라비아",
+   "correction": "그라비아",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "객트식",
+   "correction": "객관식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "배고문",
+   "correction": "배고파",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "얽마이",
+   "correction": "얽매이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "박정정민",
+   "correction": "박정민",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "올빼의",
+   "correction": "올빼미",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김연한",
+   "correction": "김연아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동거리",
+   "correction": "먹거리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "레다비언",
+   "correction": "레즈비언",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스블리싱",
+   "correction": "퍼블리싱",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이해어",
+   "correction": "이해찬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "냐니까까",
+   "correction": "냐니까",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "아실에미리트",
+   "correction": "아랍에미리트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "로미아",
+   "correction": "로미오",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "엑스라트",
+   "correction": "엑스트라",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "이로한",
+   "correction": "이로운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시사사저널",
+   "correction": "시사저널",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "입의권",
+   "correction": "입장권",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오조제",
+   "correction": "방조제",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사시저널",
+   "correction": "시사저널",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "스케이트트보드",
+   "correction": "스케이트보드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "소탄복",
+   "correction": "방탄복",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가평군군",
+   "correction": "가평군",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "려올다보",
+   "correction": "올려다보",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "동리사",
+   "correction": "아리사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보는가드",
+   "correction": "보디가드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "휩어였",
+   "correction": "휩싸였",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "조심심히",
+   "correction": "조심히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "부고군",
+   "correction": "부여군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기러그",
+   "correction": "플러그",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "요리실",
+   "correction": "요리법",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "병나장",
+   "correction": "병원장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동아아일보",
+   "correction": "동아일보",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "바로구",
+   "correction": "바로크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "손한히",
+   "correction": "손꼽히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "생리문",
+   "correction": "생리학",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "여객선선",
+   "correction": "여객선",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "급장성",
+   "correction": "급성장",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "몽블아",
+   "correction": "몽블랑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비서관관",
+   "correction": "비서관",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "잔제고",
+   "correction": "잔다고",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "공미시",
+   "correction": "공주시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "캐터스",
+   "correction": "캐스터",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "으셨세요",
+   "correction": "으셨어요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "장례식장장",
+   "correction": "장례식장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "길가리",
+   "correction": "길거리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "뮤부컬",
+   "correction": "뮤지컬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오이올렛",
+   "correction": "바이올렛",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사사라져야",
+   "correction": "사라져야",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "드러스",
+   "correction": "플러스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "월리스스",
+   "correction": "월리스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "일자히",
+   "correction": "일제히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "압단기",
+   "correction": "압축기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동두진",
+   "correction": "동두천",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "싸구이",
+   "correction": "싸구려",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마코더",
+   "correction": "캠코더",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "꺼쌍풀",
+   "correction": "쌍꺼풀",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "성현주",
+   "correction": "김현주",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "상리엄스",
+   "correction": "윌리엄스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "연세대대",
+   "correction": "연세대",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "음가악",
+   "correction": "음악가",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "하여여간",
+   "correction": "하여간",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "다반이",
+   "correction": "반다이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "수십미",
+   "correction": "수십억",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지니어건",
+   "correction": "지니어스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "경의시",
+   "correction": "경주시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스타타일",
+   "correction": "스타일",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "보육원원",
+   "correction": "보육원",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "알갱화",
+   "correction": "알갱이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "들의야",
+   "correction": "들어야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고영진",
+   "correction": "김영진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "생겨정",
+   "correction": "생겨요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "대이호",
+   "correction": "이대호",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "자기장장",
+   "correction": "자기장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "다녀도도",
+   "correction": "다녀도",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "기이디어",
+   "correction": "아이디어",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "통나비",
+   "correction": "통나무",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "워싱싱턴",
+   "correction": "워싱턴",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "한면다서",
+   "correction": "한다면서",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "원리티",
+   "correction": "퀄리티",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다이너마는트",
+   "correction": "다이너마이트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "올라라갈",
+   "correction": "올라갈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "슬하퍼",
+   "correction": "슬퍼하",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "파충류류",
+   "correction": "파충류",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "급무소",
+   "correction": "급식소",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보발디",
+   "correction": "비발디",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "추연서",
+   "correction": "추천서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가득히히",
+   "correction": "가득히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "경분증",
+   "correction": "신분증",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "살아정",
+   "correction": "살아왔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "세탈감",
+   "correction": "박탈감",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "통발놈",
+   "correction": "씨발놈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "청소부기",
+   "correction": "청소년기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "방배동동",
+   "correction": "방배동",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이바오",
+   "correction": "바이오",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "장감난",
+   "correction": "장난감",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "역보행",
+   "correction": "역주행",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시에틀",
+   "correction": "시애틀",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "독일인인",
+   "correction": "독일인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "되문려",
+   "correction": "되살려",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "투맨맨",
+   "correction": "맨투맨",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "종교시",
+   "correction": "종교인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "개발여",
+   "correction": "개발자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기건식",
+   "correction": "기념식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "매그스너",
+   "correction": "매그너스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "트위사트",
+   "correction": "트위스트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "을지동",
+   "correction": "을지로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김실진",
+   "correction": "김유진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "취헤야",
+   "correction": "취해야",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "봅니연",
+   "correction": "봅니다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "여붙야",
+   "correction": "붙여야",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "문학사사",
+   "correction": "문학사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "지워워졌",
+   "correction": "지워졌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "앤드어",
+   "correction": "앤드류",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "몰위넣",
+   "correction": "몰아넣",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "닐아까",
+   "correction": "아닐까",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "했으나나",
+   "correction": "했으나",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "귀웠여",
+   "correction": "귀여웠",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "아데노신신",
+   "correction": "아데노신",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "코스제",
+   "correction": "코스터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "헤설자",
+   "correction": "해설자",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "페문소나",
+   "correction": "페르소나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "전리창",
+   "correction": "유리창",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나낸타",
+   "correction": "나타낸",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "토보야",
+   "correction": "토모야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스스티커",
+   "correction": "스티커",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "팔먹아",
+   "correction": "팔아먹",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "레트이",
+   "correction": "트레이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "영져서",
+   "correction": "해져서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교통편편",
+   "correction": "교통편",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "계스카",
+   "correction": "아스카",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "설리고",
+   "correction": "설리번",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다이너사티",
+   "correction": "다이너스티",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "담아아내",
+   "correction": "담아내",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "타이스",
+   "correction": "타이머",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바로우",
+   "correction": "플로우",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "상관위이",
+   "correction": "상관없이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의래야지",
+   "correction": "그래야지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소전지",
+   "correction": "소시지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프랑통",
+   "correction": "프랑코",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비화장",
+   "correction": "비행장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바이이브",
+   "correction": "바이브",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "일즈벨트",
+   "correction": "루즈벨트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시티위",
+   "correction": "시티즌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "알이바이",
+   "correction": "알리바이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "엄청난난",
+   "correction": "엄청난",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "부포시",
+   "correction": "군포시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하린다",
+   "correction": "울린다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "후레거",
+   "correction": "후레쉬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으부분",
+   "correction": "대부분",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "윗사람람",
+   "correction": "윗사람",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "로크니클",
+   "correction": "크로니클",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "도날오",
+   "correction": "도날드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "예술재",
+   "correction": "예술제",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "서라시아",
+   "correction": "유라시아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그정구",
+   "correction": "수정구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "태난어다",
+   "correction": "태어난다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "라조벌",
+   "correction": "라이벌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "두려워장",
+   "correction": "두려워했",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "한답답니다",
+   "correction": "한답니다",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "헤군기지",
+   "correction": "해군기지",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "아사수",
+   "correction": "아사히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "상트원",
+   "correction": "상담원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단백백질",
+   "correction": "단백질",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "미다란",
+   "correction": "미란다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "일으서",
+   "correction": "일으킬",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "원도라",
+   "correction": "판도라",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "당해서서",
+   "correction": "당해서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "롯데월한",
+   "correction": "롯데월드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "는려온",
+   "correction": "내려온",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자급자선",
+   "correction": "자급자족",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "생본인",
+   "correction": "일본인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "질아심",
+   "correction": "질투심",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "무사라이",
+   "correction": "사무라이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "낭만주성",
+   "correction": "낭만주의",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "문로콜리",
+   "correction": "브로콜리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "미딜락",
+   "correction": "캐딜락",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "폴리내시아",
+   "correction": "폴리네시아",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "미야자키키",
+   "correction": "미야자키",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "앞선리",
+   "correction": "앞머리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기업로",
+   "correction": "기업가",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그그리구",
+   "correction": "그리구",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "건화지",
+   "correction": "건방지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지스포",
+   "correction": "지포스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "조세주",
+   "correction": "구세주",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "독차차지",
+   "correction": "독차지",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이학년",
+   "correction": "고학년",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "선티즌",
+   "correction": "시티즌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "레보리카",
+   "correction": "레플리카",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스도링스",
+   "correction": "스프링스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "안동로메다",
+   "correction": "안드로메다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하이틴틴",
+   "correction": "하이틴",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "세까봐",
+   "correction": "할까봐",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "심중부",
+   "correction": "중심부",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "계이치",
+   "correction": "신이치",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아나톨드",
+   "correction": "아나톨리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "운회동",
+   "correction": "운동회",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "경경영학",
+   "correction": "경영학",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "빌보드드",
+   "correction": "빌보드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "태않군",
+   "correction": "태안군",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "오세세훈",
+   "correction": "오세훈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "줄든어",
+   "correction": "줄어든",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "들집이",
+   "correction": "집들이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "데건요",
+   "correction": "건데요",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "올림픽픽",
+   "correction": "올림픽",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "그란바",
+   "correction": "그란데",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해바라기기",
+   "correction": "해바라기",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "틀포랜드",
+   "correction": "포틀랜드",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "신명시",
+   "correction": "광명시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "매개당수",
+   "correction": "매개변수",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "국시당",
+   "correction": "국민당",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "옷차분",
+   "correction": "옷차림",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교원서",
+   "correction": "탄원서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가위이",
+   "correction": "가까이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "술자신",
+   "correction": "술자리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "틀없림이",
+   "correction": "틀림없이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "들어온온",
+   "correction": "들어온",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "생생명력",
+   "correction": "생명력",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "초목지",
+   "correction": "목초지",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "생물체체",
+   "correction": "생물체",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "매교지",
+   "correction": "매립지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부배르",
+   "correction": "배부르",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "인라이언트",
+   "correction": "클라이언트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "특정정인",
+   "correction": "특정인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "지려났",
+   "correction": "밀려났",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "발가화",
+   "correction": "발가락",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소소지품",
+   "correction": "소지품",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "으가루",
+   "correction": "밀가루",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정요로",
+   "correction": "정말로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "납새자",
+   "correction": "납세자",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "도차역",
+   "correction": "기차역",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "않드레아",
+   "correction": "안드레아",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "엘살바드르",
+   "correction": "엘살바도르",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오스트아리",
+   "correction": "오스트리아",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "관스자",
+   "correction": "관계자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "위차지",
+   "correction": "독차지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "산산다는",
+   "correction": "산다는",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "청개자리",
+   "correction": "청개구리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부드시",
+   "correction": "부천시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "집행유원",
+   "correction": "집행유예",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "창씨게명",
+   "correction": "창씨개명",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "일시관",
+   "correction": "전시관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "노르망여",
+   "correction": "노르망디",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가어져",
+   "correction": "떨어져",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "주혀냈",
+   "correction": "밝혀냈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "줍시사",
+   "correction": "줍시다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으부로",
+   "correction": "함부로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지휘자자",
+   "correction": "지휘자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "클교리넷",
+   "correction": "클라리넷",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "박욱찬",
+   "correction": "박찬욱",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "스위프트트",
+   "correction": "스위프트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "구구청장",
+   "correction": "구청장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "제갈갈량",
+   "correction": "제갈량",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "화풀이이",
+   "correction": "화풀이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "슬당프",
+   "correction": "슬럼프",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어드려",
+   "correction": "어울려",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "만려났",
+   "correction": "풀려났",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "피소제럴드",
+   "correction": "피츠제럴드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아름다워용",
+   "correction": "아름다워요",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "그착역",
+   "correction": "종착역",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "물생학자",
+   "correction": "생물학자",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "양라기",
+   "correction": "양고기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "앤더더슨",
+   "correction": "앤더슨",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "자파마",
+   "correction": "파자마",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "카운동",
+   "correction": "카운터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "터무신",
+   "correction": "터무니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "선글고스",
+   "correction": "선글라스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "내려마",
+   "correction": "내려졌",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소회사",
+   "correction": "자회사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "슬럼나",
+   "correction": "슬럼프",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "토일요",
+   "correction": "토요일",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "목소리리",
+   "correction": "목소리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "재각기",
+   "correction": "제각기",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "홍석천천",
+   "correction": "홍석천",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "돌린전",
+   "correction": "돌린다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "무이언맨",
+   "correction": "아이언맨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "조인트트",
+   "correction": "조인트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "흥흥겨운",
+   "correction": "흥겨운",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "나타났나며",
+   "correction": "나타났으며",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "넘어져수",
+   "correction": "넘어져서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "안도감감",
+   "correction": "안도감",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "일주일일",
+   "correction": "일주일",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "그화유산",
+   "correction": "문화유산",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "영궁화",
+   "correction": "무궁화",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보소건",
+   "correction": "보건소",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "비올구",
+   "correction": "비올라",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "항리아",
+   "correction": "항아리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "도로사공",
+   "correction": "도로공사",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "교로관",
+   "correction": "교도관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "는산물",
+   "correction": "생산물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스영일",
+   "correction": "스마일",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "파생치",
+   "correction": "파헤치",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "민방서",
+   "correction": "민방위",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마르크하주의",
+   "correction": "마르크스주의",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어머니니",
+   "correction": "어머니",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "쓴다다는",
+   "correction": "쓴다는",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "오유증",
+   "correction": "후유증",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도품질",
+   "correction": "고품질",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "들어내내",
+   "correction": "들어내",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "디오니나스",
+   "correction": "디오니소스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "전스베가스",
+   "correction": "라스베가스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도도요타",
+   "correction": "도요타",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "한털링",
+   "correction": "스털링",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해어나",
+   "correction": "헤어나",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "울기기",
+   "correction": "기울기",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "넘넘친다",
+   "correction": "넘친다",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "한계점점",
+   "correction": "한계점",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "머스스탱",
+   "correction": "머스탱",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "비전히",
+   "correction": "온전히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "운동회회",
+   "correction": "운동회",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "는섬유",
+   "correction": "광섬유",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "통팡이",
+   "correction": "지팡이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이따따가",
+   "correction": "이따가",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "따른비",
+   "correction": "따른다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "언드데",
+   "correction": "언데드",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "하어라이트",
+   "correction": "하이라이트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "터두운",
+   "correction": "두터운",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "강해해졌",
+   "correction": "강해졌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "기감약",
+   "correction": "감기약",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "하생신",
+   "correction": "하반신",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "꼽힌위",
+   "correction": "꼽힌다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수오미",
+   "correction": "나오미",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그레서",
+   "correction": "그래서",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "집권동",
+   "correction": "집권당",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "훈민정정음",
+   "correction": "훈민정음",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "나지라",
+   "correction": "는지라",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "티격태격격",
+   "correction": "티격태격",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "윤종드",
+   "correction": "윤종신",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "퍼당슨",
+   "correction": "퍼거슨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "드큘라라",
+   "correction": "드라큘라",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "암모니여",
+   "correction": "암모니아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "원망경",
+   "correction": "망원경",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "느껴드",
+   "correction": "느껴본",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성레시",
+   "correction": "프레시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "미적분분",
+   "correction": "미적분",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "외무으",
+   "correction": "외무부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "조선일생",
+   "correction": "조선일보",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단의장",
+   "correction": "단체장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "완성당",
+   "correction": "완성도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "멜리회",
+   "correction": "멜리사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "됩고까",
+   "correction": "됩니까",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "브도보",
+   "correction": "브라보",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "구스타브브",
+   "correction": "구스타브",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "캐하트",
+   "correction": "캐스트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "현오문",
+   "correction": "현관문",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어펴봐야",
+   "correction": "살펴봐야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "유전인",
+   "correction": "유대인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "장춘다",
+   "correction": "멈춘다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "잠실지",
+   "correction": "잠실역",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "삼국국유사",
+   "correction": "삼국유사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "통로즈업",
+   "correction": "클로즈업",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "로정희",
+   "correction": "박정희",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어쩌면면",
+   "correction": "어쩌면",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "시스실즈",
+   "correction": "시스템즈",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "린거다",
+   "correction": "거린다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "그신이",
+   "correction": "그레이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "포인거",
+   "correction": "포인트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이리저고",
+   "correction": "이리저리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "교이첼",
+   "correction": "레이첼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이에프릴",
+   "correction": "에이프릴",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "스자크",
+   "correction": "스토크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사다라이",
+   "correction": "사무라이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "헤만져",
+   "correction": "헤어져",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "박기치",
+   "correction": "박치기",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "는타낼",
+   "correction": "나타낼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "개으르",
+   "correction": "게으르",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "마이너너",
+   "correction": "마이너",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "선드회",
+   "correction": "선교회",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "심지정",
+   "correction": "심정지",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "나눅스",
+   "correction": "리눅스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "새이브",
+   "correction": "세이브",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "일너편",
+   "correction": "건너편",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "위합성",
+   "correction": "광합성",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "연국구",
+   "correction": "전국구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "휴기턴",
+   "correction": "휴스턴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부녀자자",
+   "correction": "부녀자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "문학으",
+   "correction": "문학사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "검정시고",
+   "correction": "검정고시",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "라분베리",
+   "correction": "라즈베리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "알미루늄",
+   "correction": "알루미늄",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "구랍어",
+   "correction": "아랍어",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "울부군",
+   "correction": "울주군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "건지법",
+   "correction": "방지법",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "레는토랑",
+   "correction": "레스토랑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "충전공",
+   "correction": "충전기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정세안",
+   "correction": "아세안",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "실로마",
+   "correction": "아로마",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "출퇴무",
+   "correction": "출퇴근",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보랑켄슈타인",
+   "correction": "프랑켄슈타인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으이스",
+   "correction": "에이스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "관해서서",
+   "correction": "관해서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "보아국니",
+   "correction": "보아하니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "공동동체",
+   "correction": "공동체",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "영안군",
+   "correction": "진안군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고돋움",
+   "correction": "발돋움",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비상사태태",
+   "correction": "비상사태",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "예교군",
+   "correction": "예산군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "전자파파",
+   "correction": "전자파",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "기다려야야",
+   "correction": "기다려야",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이승그",
+   "correction": "이승현",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "만방관",
+   "correction": "소방관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "내문려",
+   "correction": "내버려",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "늘어어",
+   "correction": "늘어났",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "을게리",
+   "correction": "게을리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "산타클로스스",
+   "correction": "산타클로스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "트래일러",
+   "correction": "트레일러",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "석손희",
+   "correction": "손석희",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "근본주주의",
+   "correction": "근본주의",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "찾아낸낸",
+   "correction": "찾아낸",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "시지가",
+   "correction": "시가지",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "상반신신",
+   "correction": "상반신",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "성신데",
+   "correction": "계신데",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "연산동동",
+   "correction": "연산동",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "김종화",
+   "correction": "김종국",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "돌갔아",
+   "correction": "돌아갔",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "임적자",
+   "correction": "적임자",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "으구로",
+   "correction": "으므로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다사앤",
+   "correction": "다이앤",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가승객",
+   "correction": "탑승객",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "려가다",
+   "correction": "려다가",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "리테어",
+   "correction": "테리어",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "매니지먼트트",
+   "correction": "매니지먼트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "교교구장",
+   "correction": "교구장",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "요그우먼",
+   "correction": "개그우먼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "뉴뉴스타파",
+   "correction": "뉴스타파",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "동자아",
+   "correction": "동남아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수념식",
+   "correction": "기념식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아시않",
+   "correction": "아시안",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "오래간라",
+   "correction": "오래간만",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "만런다고",
+   "correction": "그런다고",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "알려준만",
+   "correction": "알려준다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "말다툼툼",
+   "correction": "말다툼",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "간부색",
+   "correction": "피부색",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "니년원",
+   "correction": "소년원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프린세그",
+   "correction": "프린세스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "쫓쫓겨났",
+   "correction": "쫓겨났",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "클도프",
+   "correction": "클램프",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "뭘까요요",
+   "correction": "뭘까요",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "엉로리",
+   "correction": "엉터리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "달와려",
+   "correction": "달려와",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "중소라업",
+   "correction": "중소기업",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "행사부",
+   "correction": "행정부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그트비아",
+   "correction": "라트비아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "울버도",
+   "correction": "울버린",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "유카리리",
+   "correction": "유카리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "타타이가",
+   "correction": "타이가",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "구라임",
+   "correction": "크라임",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "공진효",
+   "correction": "공효진",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "여여배우",
+   "correction": "여배우",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "조통부",
+   "correction": "조건부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사라집연다",
+   "correction": "사라집니다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "웨리슬",
+   "correction": "웨슬리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "그랬부",
+   "correction": "그랬었",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "강정도",
+   "correction": "강원도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "루루즈벨트",
+   "correction": "루즈벨트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "엑전맨",
+   "correction": "엑스맨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "최고위위",
+   "correction": "최고위",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "홍서호",
+   "correction": "홍진호",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "리린스",
+   "correction": "프린스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "엑스레레이",
+   "correction": "엑스레이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "부천천시",
+   "correction": "부천시",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "원주하",
+   "correction": "원주시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "슬퍼요요",
+   "correction": "슬퍼요",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "트니당",
+   "correction": "습니당",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "영려야",
+   "correction": "버려야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단울러",
+   "correction": "아울러",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의세기",
+   "correction": "반세기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "선라드",
+   "correction": "발라드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "코펜고겐",
+   "correction": "코펜하겐",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마자나",
+   "correction": "마리나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다이신",
+   "correction": "다이스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "당려와",
+   "correction": "달려와",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사토토시",
+   "correction": "사토시",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "순장히",
+   "correction": "순순히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "국둘러",
+   "correction": "서둘러",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가수지르",
+   "correction": "가로지르",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "송송신기",
+   "correction": "송신기",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "붙잡혔혔",
+   "correction": "붙잡혔",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "어넘간다",
+   "correction": "넘어간다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "제사작",
+   "correction": "제작사",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "불불러야",
+   "correction": "불러야",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "식식민지",
+   "correction": "식민지",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "세워서서",
+   "correction": "세워서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "성당금",
+   "correction": "배당금",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시세서리",
+   "correction": "액세서리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "재스처",
+   "correction": "제스처",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "시성스",
+   "correction": "시퀀스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "준준결승",
+   "correction": "준결승",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "어홀히",
+   "correction": "소홀히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "청와이",
+   "correction": "청와대",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "장사무소",
+   "correction": "동사무소",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "파너트십",
+   "correction": "파트너십",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "대부원",
+   "correction": "부대원",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "신호분",
+   "correction": "신호등",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "근무지지",
+   "correction": "근무지",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "마젠진",
+   "correction": "마젠타",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고구웠",
+   "correction": "고마웠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "래이다",
+   "correction": "레이다",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "블로건",
+   "correction": "블로거",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "강동동구",
+   "correction": "강동구",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "한나라라당",
+   "correction": "한나라당",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "통구무",
+   "correction": "통나무",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동아일일보",
+   "correction": "동아일보",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "가습기기",
+   "correction": "가습기",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "물문볼",
+   "correction": "물어볼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "장출소",
+   "correction": "출장소",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "재조조명",
+   "correction": "재조명",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "세세기말",
+   "correction": "세기말",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "드건이크",
+   "correction": "드레이크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자웨터",
+   "correction": "스웨터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지켜봐라",
+   "correction": "지켜봐야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "굿바이이",
+   "correction": "굿바이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "로롤라인",
+   "correction": "캐롤라인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그승컵",
+   "correction": "우승컵",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "카메라건",
+   "correction": "카메라맨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "재부판",
+   "correction": "재판부",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "부정부부패",
+   "correction": "부정부패",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "선택로",
+   "correction": "선택지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "따라라와",
+   "correction": "따라와",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "데보갔",
+   "correction": "데려갔",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마어져",
+   "correction": "떨어져",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동동자",
+   "correction": "동반자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "웨어터",
+   "correction": "웨이터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "퍼선슨",
+   "correction": "퍼거슨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "알일진",
+   "correction": "알려진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "우라팅",
+   "correction": "라우팅",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "포르르투갈",
+   "correction": "포르투갈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "도표면",
+   "correction": "지표면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자본사의",
+   "correction": "자본주의",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나가가사키",
+   "correction": "나가사키",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "킴화리",
+   "correction": "킴벌리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보행자자",
+   "correction": "보행자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "누군군가의",
+   "correction": "누군가의",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "타이타타닉",
+   "correction": "타이타닉",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "화베르토",
+   "correction": "로베르토",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "공바꼭질",
+   "correction": "숨바꼭질",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "갱스스터",
+   "correction": "갱스터",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "상금자리",
+   "correction": "보금자리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지리다",
+   "correction": "지킨다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의레젠테이션",
+   "correction": "프레젠테이션",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "파라세이스",
+   "correction": "파라다이스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "디스플래이",
+   "correction": "디스플레이",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "도련바",
+   "correction": "도련님",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단려줘",
+   "correction": "알려줘",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "차모르트",
+   "correction": "모차르트",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "조문인",
+   "correction": "조선인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "늘어난난",
+   "correction": "늘어난",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "당나나귀",
+   "correction": "당나귀",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "급식의",
+   "correction": "급식소",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "리권도",
+   "correction": "태권도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "커다란란",
+   "correction": "커다란",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "영문한",
+   "correction": "영문학",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "무데위",
+   "correction": "무작위",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자웨선",
+   "correction": "자외선",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "코스도",
+   "correction": "코스닥",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하노자",
+   "correction": "하노이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "못당이",
+   "correction": "못난이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아닙니만다",
+   "correction": "아닙니다만",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "언언론인",
+   "correction": "언론인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이동동",
+   "correction": "이동욱",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프프란치스코",
+   "correction": "프란치스코",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "버팔리",
+   "correction": "버팔로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "모교고사",
+   "correction": "모의고사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "한성표",
+   "correction": "편성표",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "국아웃",
+   "correction": "폴아웃",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기다려려",
+   "correction": "기다려",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "갱년서",
+   "correction": "갱년기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김김성주",
+   "correction": "김성주",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "입후후보",
+   "correction": "입후보",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "영가도",
+   "correction": "영종도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그구자",
+   "correction": "그림자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단겨서",
+   "correction": "챙겨서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라벤다",
+   "correction": "라벤더",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어국움",
+   "correction": "어려움",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "양제장",
+   "correction": "양조장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "카바트",
+   "correction": "카스트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부스러의",
+   "correction": "부스러기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "떠오일",
+   "correction": "떠오른",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "담담당관",
+   "correction": "담당관",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "괴괴벨스",
+   "correction": "괴벨스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "드드릴께요",
+   "correction": "드릴께요",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "오이나",
+   "correction": "다이나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김대경",
+   "correction": "김미경",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수양경찰",
+   "correction": "해양경찰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아무라",
+   "correction": "아수라",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아비요",
+   "correction": "아세요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "닭갈갈비",
+   "correction": "닭갈비",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "대대머리",
+   "correction": "대머리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "국민동운",
+   "correction": "국민운동",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "적십자자사",
+   "correction": "적십자사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "수글라데시",
+   "correction": "방글라데시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바바르",
+   "correction": "이바르",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나라프",
+   "correction": "나이프",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "집합거",
+   "correction": "집합체",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "멧되지",
+   "correction": "멧돼지",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "총아장",
+   "correction": "총회장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소전승",
+   "correction": "역전승",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "메제지",
+   "correction": "메모지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "모리가",
+   "correction": "모리스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "반기명",
+   "correction": "반투명",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "떠올다",
+   "correction": "떠올릴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부안오",
+   "correction": "부안군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "일어본",
+   "correction": "일본어",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "와즈이",
+   "correction": "와이즈",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "단대인",
+   "correction": "유대인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사대부부",
+   "correction": "사대부",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "서줄까",
+   "correction": "해줄까",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하이트트",
+   "correction": "하이트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "헤드가",
+   "correction": "헤드폰",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "더블블린",
+   "correction": "더블린",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "원극히",
+   "correction": "지극히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "박감탈",
+   "correction": "박탈감",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "오운틴",
+   "correction": "마운틴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자료실실",
+   "correction": "자료실",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스탠퍼선",
+   "correction": "스탠퍼드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "총미기",
+   "correction": "총궐기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "남서쪽쪽",
+   "correction": "남서쪽",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "싸교려",
+   "correction": "싸구려",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나폴래옹",
+   "correction": "나폴레옹",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "히틀무",
+   "correction": "히틀러",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "원해요요",
+   "correction": "원해요",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "인내대표",
+   "correction": "원내대표",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "단회과",
+   "correction": "사회과",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "에다다가",
+   "correction": "에다가",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "조독감",
+   "correction": "조감독",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "때때때로",
+   "correction": "때때로",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "난다면면",
+   "correction": "난다면",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "듬이해",
+   "correction": "이듬해",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "레딩코",
+   "correction": "레코딩",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "어서님",
+   "correction": "어머님",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기로할",
+   "correction": "기뻐할",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으로비",
+   "correction": "으로써",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "박박탈감",
+   "correction": "박탈감",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "유니버여",
+   "correction": "유니버스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스폰전",
+   "correction": "스폰지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "과과거사",
+   "correction": "과거사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "제조합",
+   "correction": "재조합",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "통보신",
+   "correction": "진보신",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "트렁크크",
+   "correction": "트렁크",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "시서터",
+   "correction": "시어터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "커뮤니케마션",
+   "correction": "커뮤니케이션",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "실까용",
+   "correction": "실까요",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "갑시소",
+   "correction": "갑시다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하정우우",
+   "correction": "하정우",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "돌해이",
+   "correction": "돌멩이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어장스틱",
+   "correction": "어쿠스틱",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도스리",
+   "correction": "도리스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "불장소",
+   "correction": "불기소",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "위서관",
+   "correction": "비서관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기독교교",
+   "correction": "기독교",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "페리라",
+   "correction": "페라리",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "필비델피아",
+   "correction": "필라델피아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바으너리",
+   "correction": "바이너리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "킨텍스스",
+   "correction": "킨텍스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "여를까",
+   "correction": "부를까",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비레나",
+   "correction": "아레나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "불위저",
+   "correction": "불도저",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "건어봐도",
+   "correction": "물어봐도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "장의인",
+   "correction": "장본인",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "전야재",
+   "correction": "전야제",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "인사박물관",
+   "correction": "역사박물관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "삼성전자자",
+   "correction": "삼성전자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "자려서",
+   "correction": "그려서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "서속자",
+   "correction": "상속자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "까다롭롭",
+   "correction": "까다롭",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "분하니",
+   "correction": "멍하니",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "인원심",
+   "correction": "인내심",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "청상년기",
+   "correction": "청소년기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "갈게당",
+   "correction": "갈게요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "짐바당웨",
+   "correction": "짐바브웨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정음을",
+   "correction": "였음을",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사진사사",
+   "correction": "사진사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "트탠딩",
+   "correction": "스탠딩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지자거",
+   "correction": "지자체",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이랜드드",
+   "correction": "이랜드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이레임워크",
+   "correction": "프레임워크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아강지",
+   "correction": "강아지",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "무용경물",
+   "correction": "무용지물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "덧실였",
+   "correction": "덧붙였",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "중소기업정",
+   "correction": "중소기업청",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아세티",
+   "correction": "아이티",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해숙히",
+   "correction": "깊숙히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나대기",
+   "correction": "꼭대기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아소과",
+   "correction": "소아과",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "으렁르",
+   "correction": "으르렁",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "그리스도마",
+   "correction": "그리스도교",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "인터페이이스",
+   "correction": "인터페이스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "대데시",
+   "correction": "대전시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "특만시",
+   "correction": "특별시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아찾온",
+   "correction": "찾아온",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "알알프레드",
+   "correction": "알프레드",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "바바닷속",
+   "correction": "바닷속",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "포천주",
+   "correction": "포천시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바라이버시",
+   "correction": "프라이버시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "양승태태",
+   "correction": "양승태",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "라공비아",
+   "correction": "라트비아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "가수릭",
+   "correction": "가톨릭",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "안다화",
+   "correction": "안다고",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "월마트트",
+   "correction": "월마트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "아닌요가",
+   "correction": "아닌가요",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "확명히",
+   "correction": "명확히",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "줘소지",
+   "correction": "줘야지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "들으선고",
+   "correction": "들으려고",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "쿠로다다",
+   "correction": "쿠로다",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "김지무",
+   "correction": "김지원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "패밀트",
+   "correction": "패밀리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오산통",
+   "correction": "오산시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소수원",
+   "correction": "과수원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "여의자",
+   "correction": "용의자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해결결사",
+   "correction": "해결사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "창립자자",
+   "correction": "창립자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "올동야",
+   "correction": "올려야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "포터영",
+   "correction": "포터블",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "올리리비아",
+   "correction": "올리비아",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "휘실러",
+   "correction": "휘둘러",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의냐는",
+   "correction": "느냐는",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "혁명어",
+   "correction": "혁명가",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "동비원",
+   "correction": "경비원",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정나회",
+   "correction": "정교회",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "의여야",
+   "correction": "보여야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "자르카타",
+   "correction": "자카르타",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "자예품",
+   "correction": "공예품",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "하는하",
+   "correction": "하하하",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "위위키백과",
+   "correction": "위키백과",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "소문자자",
+   "correction": "소문자",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "루조벨트",
+   "correction": "루스벨트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보욱더",
+   "correction": "더욱더",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "쇠신기",
+   "correction": "쇠고기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "국레카",
+   "correction": "유레카",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "요월일",
+   "correction": "월요일",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "돼풀이",
+   "correction": "되풀이",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "경쟁사사",
+   "correction": "경쟁사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "은달메",
+   "correction": "은메달",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "바라데",
+   "correction": "바라지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "주성성분",
+   "correction": "주성분",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "고군령",
+   "correction": "고령군",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "케스퍼",
+   "correction": "캐스퍼",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "테블릿",
+   "correction": "태블릿",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "래슬링",
+   "correction": "레슬링",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "막무니내",
+   "correction": "막무가내",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "부부를까",
+   "correction": "부를까",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "아시라",
+   "correction": "아라시",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "심헤졌",
+   "correction": "심해졌",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "망데진",
+   "correction": "망가진",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "생림픽",
+   "correction": "올림픽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "뒷이야성",
+   "correction": "뒷이야기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "안수레",
+   "correction": "안드레",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "산청다",
+   "correction": "산청군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "서하이오",
+   "correction": "오하이오",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "본거거지",
+   "correction": "본거지",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "안내문문",
+   "correction": "안내문",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이브스스",
+   "correction": "이브스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이다스",
+   "correction": "다이스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "싱클어레",
+   "correction": "싱클레어",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "흔당리",
+   "correction": "흔들리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "앨경슨",
+   "correction": "앨리슨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "찾아냈냈",
+   "correction": "찾아냈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "하장품",
+   "correction": "화장품",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "움주일",
+   "correction": "움직일",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이라너",
+   "correction": "라이너",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "령명어",
+   "correction": "명령어",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "열통구",
+   "correction": "열기구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "코조소",
+   "correction": "코뿔소",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "슬화건",
+   "correction": "슬로건",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "이뤄신",
+   "correction": "이뤄질",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어제비",
+   "correction": "족제비",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "거라비안",
+   "correction": "아라비안",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "알록달록록",
+   "correction": "알록달록",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "사사라짐",
+   "correction": "사라짐",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "헤도셋",
+   "correction": "헤드셋",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "상리움",
+   "correction": "그리움",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "우승오",
+   "correction": "우승컵",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "나빠서서",
+   "correction": "나빠서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "나전무",
+   "correction": "전나무",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "사라위",
+   "correction": "사라지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지소칠",
+   "correction": "지나칠",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마스터진",
+   "correction": "마스터스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "만모장",
+   "correction": "메모장",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스젝키스",
+   "correction": "젝스키스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "소식품",
+   "correction": "장식품",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소년회",
+   "correction": "청년회",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어인국",
+   "correction": "서인국",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "괴당혀",
+   "correction": "괴롭혀",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소고동",
+   "correction": "소고기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "레몬이드",
+   "correction": "레이몬드",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "싸워서서",
+   "correction": "싸워서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "화요일일",
+   "correction": "화요일",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "어린이주",
+   "correction": "어린이집",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "미여야",
+   "correction": "죽여야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프도파일",
+   "correction": "프로파일",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아사대",
+   "correction": "발사대",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보고스",
+   "correction": "보리스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "번역문",
+   "correction": "번역기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "볼까용",
+   "correction": "볼까요",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "공시주의",
+   "correction": "공산주의",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "드릴게화",
+   "correction": "드릴게요",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "파해치",
+   "correction": "파헤치",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "연락처처",
+   "correction": "연락처",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "가스와라",
+   "correction": "스가와라",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "림이종",
+   "correction": "림프종",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "김제의",
+   "correction": "김제동",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "달난아",
+   "correction": "달아난",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "배이커리",
+   "correction": "베이커리",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "캥의루",
+   "correction": "캥거루",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "해부군",
+   "correction": "정부군",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "비엔부",
+   "correction": "비엔나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "웨드이",
+   "correction": "웨이드",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "슬기프",
+   "correction": "슬럼프",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "생비활",
+   "correction": "생활비",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "외친오",
+   "correction": "외친다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "으려면면",
+   "correction": "으려면",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스트레회지",
+   "correction": "스트레인지",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "소소중히",
+   "correction": "소중히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "전요엽",
+   "correction": "전두엽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오지연",
+   "correction": "김지연",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "항생제제",
+   "correction": "항생제",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "유새윤",
+   "correction": "유세윤",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "세해야",
+   "correction": "세비야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "브로소",
+   "correction": "브로커",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "떠나보내내",
+   "correction": "떠나보내",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "당풍우",
+   "correction": "폭풍우",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "트리회",
+   "correction": "트리트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프프롤로그",
+   "correction": "프롤로그",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "보보험료",
+   "correction": "보험료",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "자옷락",
+   "correction": "옷자락",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "찜질방방",
+   "correction": "찜질방",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "로이운",
+   "correction": "이로운",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "거문자",
+   "correction": "대문자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "새겨거",
+   "correction": "새겨져",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "유세요",
+   "correction": "유세윤",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "랑플크톤",
+   "correction": "플랑크톤",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "바탠튼",
+   "correction": "스탠튼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기실려야",
+   "correction": "기다려야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라상스",
+   "correction": "라이스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "브단더",
+   "correction": "브라더",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "어쨌여",
+   "correction": "어쨌든",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "안전트벨",
+   "correction": "안전벨트",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "비상식식",
+   "correction": "비상식",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "튀어나온온",
+   "correction": "튀어나온",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "김준형",
+   "correction": "김형준",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "니유티",
+   "correction": "유니티",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "어스턴",
+   "correction": "보스턴",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "니치학",
+   "correction": "정치학",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다만렉트",
+   "correction": "다이렉트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "집이들",
+   "correction": "집들이",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "원론회",
+   "correction": "토론회",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바거루",
+   "correction": "캥거루",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "시시퀀스",
+   "correction": "시퀀스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "로케이션션",
+   "correction": "로케이션",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "도나나텔로",
+   "correction": "도나텔로",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "사르쳤",
+   "correction": "가르쳤",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "관새청",
+   "correction": "관세청",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "에거핑크",
+   "correction": "에이핑크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "외외로워",
+   "correction": "외로워",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "해신철",
+   "correction": "신해철",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "노하버",
+   "correction": "하노버",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "레볼루션션",
+   "correction": "레볼루션",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "상상세히",
+   "correction": "상세히",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이아카",
+   "correction": "아이카",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "캠퍼스스",
+   "correction": "캠퍼스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "백백화점",
+   "correction": "백화점",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "경향신문문",
+   "correction": "경향신문",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "하찰기",
+   "correction": "정찰기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "스케건프",
+   "correction": "스케이프",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "산업체체",
+   "correction": "산업체",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "상계동동",
+   "correction": "상계동",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "간와이",
+   "correction": "하와이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "카사블랑카카",
+   "correction": "카사블랑카",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "풀니났",
+   "correction": "풀려났",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "광어병",
+   "correction": "광우병",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "벌어져져",
+   "correction": "벌어져",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "프로이어",
+   "correction": "프로이트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오부라",
+   "correction": "오페라",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "옥타타비아누스",
+   "correction": "옥타비아누스",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "성크로",
+   "correction": "매크로",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "입로춤",
+   "correction": "입맞춤",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "예비역역",
+   "correction": "예비역",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "바학식",
+   "correction": "입학식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "경주미",
+   "correction": "경주마",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "컨트화",
+   "correction": "컨트리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그킨슨병",
+   "correction": "파킨슨병",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "클램램프",
+   "correction": "클램프",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이데아아",
+   "correction": "이데아",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "안중근근",
+   "correction": "안중근",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "해해적선",
+   "correction": "해적선",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "멀쩡회",
+   "correction": "멀쩡히",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "갑작스다운",
+   "correction": "갑작스러운",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "마르크크",
+   "correction": "마르크",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "드마라",
+   "correction": "드라마",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "어린린양",
+   "correction": "어린양",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "조창주",
+   "correction": "창조주",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "제소시",
+   "correction": "제주시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "체코슬로바키아아",
+   "correction": "체코슬로바키아",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "발레리국",
+   "correction": "발레리나",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "운하드",
+   "correction": "하운드",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "나하니다",
+   "correction": "나옵니다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오랫동소",
+   "correction": "오랫동안",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "승승장정",
+   "correction": "승승장구",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "일학교",
+   "correction": "중학교",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "서셔야",
+   "correction": "가셔야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "차일제",
+   "correction": "차단제",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "윗부분분",
+   "correction": "윗부분",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "김진진표",
+   "correction": "김진표",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "트리연",
+   "correction": "트리스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "성성희롱",
+   "correction": "성희롱",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "넘넘어졌",
+   "correction": "넘어졌",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "고교년",
+   "correction": "고학년",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "격투오",
+   "correction": "격투기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "기해져",
+   "correction": "전해져",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그루로",
+   "correction": "그루브",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "오산라",
+   "correction": "오산시",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "제작사사",
+   "correction": "제작사",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "칸막위",
+   "correction": "칸막이",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "대이관",
+   "correction": "대사관",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프고세서",
+   "correction": "프로세서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "함양군군",
+   "correction": "함양군",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "립버니다",
+   "correction": "버립니다",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "트랜아",
+   "correction": "트랜드",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "티커스",
+   "correction": "커티스",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "지마막",
+   "correction": "마지막",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "사사로잡혔",
+   "correction": "사로잡혔",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "국름날",
+   "correction": "여름날",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아오이브",
+   "correction": "아카이브",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "저저고리",
+   "correction": "저고리",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "헤급비",
+   "correction": "헤비급",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "성키퍼",
+   "correction": "골키퍼",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "만만리장성",
+   "correction": "만리장성",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "아이바바",
+   "correction": "아이바",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "개트사",
+   "correction": "개인사",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "불러일키으",
+   "correction": "불러일으키",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "아무런런",
+   "correction": "아무런",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "수허아비",
+   "correction": "허수아비",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "엑스다리아",
+   "correction": "엑스페리아",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프랑장",
+   "correction": "프랑크",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "그제서해",
+   "correction": "그제서야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "순상력",
+   "correction": "순발력",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "유네스생",
+   "correction": "유네스코",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "수게월",
+   "correction": "수개월",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "학학생회",
+   "correction": "학생회",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "한한마디",
+   "correction": "한마디",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "아아래층",
+   "correction": "아래층",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "교전조",
+   "correction": "전교조",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "다다이나",
+   "correction": "다이나",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "런생맨",
+   "correction": "런닝맨",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "원산물",
+   "correction": "특산물",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "프로젝시",
+   "correction": "프로젝터",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "추천천서",
+   "correction": "추천서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "자료나",
+   "correction": "자료실",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "따그위",
+   "correction": "그따위",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "당원도",
+   "correction": "강원도",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "당아낸",
+   "correction": "알아낸",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "잡힌문",
+   "correction": "잡힌다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "울아렛",
+   "correction": "아울렛",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "라프임",
+   "correction": "프라임",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "다위와",
+   "correction": "다가와",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "넷플상스",
+   "correction": "넷플릭스",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "겉모습습",
+   "correction": "겉모습",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "가디디건",
+   "correction": "가디건",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "정반상",
+   "correction": "정반대",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "아버간",
+   "correction": "아버님",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "바이비",
+   "correction": "아이비",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "매가럽",
+   "correction": "매끄럽",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "모여브",
+   "correction": "모티브",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "다이너마이트트",
+   "correction": "다이너마이트",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "암스테르요",
+   "correction": "암스테르담",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "보스자",
+   "correction": "보유자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "애볼라",
+   "correction": "에볼라",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "대관대",
+   "correction": "대관식",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "게나리",
+   "correction": "개나리",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "플마이어",
+   "correction": "플레이어",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "정없신",
+   "correction": "정신없",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "시켜위",
+   "correction": "시켜야",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "망진여",
+   "correction": "망설여",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "둘러러보",
+   "correction": "둘러보",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "회지자",
+   "correction": "선지자",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "려내와서",
+   "correction": "내려와서",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "낙하도",
+   "correction": "낙하산",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "브으핑",
+   "correction": "브리핑",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "늘어구다",
+   "correction": "늘어난다",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "퍼나리",
+   "correction": "퍼뜨리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "허띠리",
+   "correction": "허리띠",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "메리문",
+   "correction": "메리트",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "고고지서",
+   "correction": "고지서",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "등록번번호",
+   "correction": "등록번호",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "이스탄미",
+   "correction": "이스탄불",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "서프라이이즈",
+   "correction": "서프라이즈",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "스리어",
+   "correction": "캐리어",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "지춘문예",
+   "correction": "신춘문예",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "흥선생명",
+   "correction": "흥국생명",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사정개",
+   "correction": "사냥개",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "터미내이터",
+   "correction": "터미네이터",
+   "weight": 1,
+   "class": "jamo-confusion"
+  },
+  {
+   "typo": "그라산",
+   "correction": "한라산",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "사진해",
+   "correction": "사진첩",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "맞벌이이",
+   "correction": "맞벌이",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "낸다단",
+   "correction": "낸다면",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "도수기",
+   "correction": "정수기",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "변변호인",
+   "correction": "변호인",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "칭해오",
+   "correction": "칭다오",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "법무위",
+   "correction": "법무부",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "계국서",
+   "correction": "계산서",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "떨어보리",
+   "correction": "떨어트리",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "라디오오",
+   "correction": "라디오",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "정중히히",
+   "correction": "정중히",
+   "weight": 1,
+   "class": "double-insert"
+  }
+ ]
+}

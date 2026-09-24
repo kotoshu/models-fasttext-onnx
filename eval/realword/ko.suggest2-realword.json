@@ -1,0 +1,1208 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "ko",
+ "klass": "realword",
+ "n": 200,
+ "pairs": [
+  {
+   "typo": "세용",
+   "correction": "세요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "사요",
+   "correction": "사용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "문재",
+   "correction": "문제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "해용",
+   "correction": "해요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "내요",
+   "correction": "네요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "아용",
+   "correction": "아요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "현제",
+   "correction": "현재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "중용",
+   "correction": "중요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "보네",
+   "correction": "보내",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "이요",
+   "correction": "이용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "예기",
+   "correction": "얘기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "게인",
+   "correction": "개인",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "아레",
+   "correction": "아래",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "네일",
+   "correction": "내일",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "그레",
+   "correction": "그래",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "전채",
+   "correction": "전체",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재발",
+   "correction": "제발",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "오레",
+   "correction": "오래",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "군용",
+   "correction": "군요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "가용",
+   "correction": "가요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "고용",
+   "correction": "고요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재일",
+   "correction": "제일",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "아네",
+   "correction": "아내",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "세끼",
+   "correction": "새끼",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재외",
+   "correction": "제외",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "주재",
+   "correction": "주제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "지네",
+   "correction": "지내",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "실재",
+   "correction": "실제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "개요",
+   "correction": "게요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "세로",
+   "correction": "새로",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재주",
+   "correction": "제주",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "새기",
+   "correction": "세기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재목",
+   "correction": "제목",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "래이",
+   "correction": "레이",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "이레",
+   "correction": "이래",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "헤라",
+   "correction": "해라",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "체재",
+   "correction": "체제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "강재",
+   "correction": "강제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "고요",
+   "correction": "고용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "새우",
+   "correction": "세우",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재기",
+   "correction": "제기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제단",
+   "correction": "재단",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "요기",
+   "correction": "용기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "수용",
+   "correction": "수요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제정",
+   "correction": "재정",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "결재",
+   "correction": "결제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "시네",
+   "correction": "시내",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "화제",
+   "correction": "화재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "대용",
+   "correction": "대요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "수요",
+   "correction": "수용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "요서",
+   "correction": "용서",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재정",
+   "correction": "제정",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "페스",
+   "correction": "패스",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "배리",
+   "correction": "베리",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재이",
+   "correction": "제이",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "화재",
+   "correction": "화제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "기제",
+   "correction": "기재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "래스",
+   "correction": "레스",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "용인",
+   "correction": "요인",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "연제",
+   "correction": "연재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "게시",
+   "correction": "개시",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "요도",
+   "correction": "용도",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제현",
+   "correction": "재현",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "모레",
+   "correction": "모래",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "요인",
+   "correction": "용인",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "해이",
+   "correction": "헤이",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "바레",
+   "correction": "바래",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "개시",
+   "correction": "게시",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "게장",
+   "correction": "개장",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "문제",
+   "correction": "문재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "문화제",
+   "correction": "문화재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "고배",
+   "correction": "고베",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제고",
+   "correction": "재고",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "케리",
+   "correction": "캐리",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "사재",
+   "correction": "사제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "배재",
+   "correction": "배제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "소용",
+   "correction": "소요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "자용",
+   "correction": "자요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "배드",
+   "correction": "베드",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "태일",
+   "correction": "테일",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "새로",
+   "correction": "세로",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "인제",
+   "correction": "인재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재인",
+   "correction": "제인",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "배스",
+   "correction": "베스",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "자재",
+   "correction": "자제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "배타",
+   "correction": "베타",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "용법",
+   "correction": "요법",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "세우",
+   "correction": "새우",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "용건",
+   "correction": "요건",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "게요",
+   "correction": "개요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제제",
+   "correction": "제재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "그래",
+   "correction": "그레",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "다용",
+   "correction": "다요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "이용",
+   "correction": "이요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "트래",
+   "correction": "트레",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "주제",
+   "correction": "주재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "도용",
+   "correction": "도요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "부제",
+   "correction": "부재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "인재",
+   "correction": "인제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "네요",
+   "correction": "내요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "베리",
+   "correction": "배리",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "헤치",
+   "correction": "해치",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "소요",
+   "correction": "소용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "프래",
+   "correction": "프레",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "올래",
+   "correction": "올레",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "도요",
+   "correction": "도용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재물",
+   "correction": "제물",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "베트",
+   "correction": "배트",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "새미",
+   "correction": "세미",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "쉐프",
+   "correction": "셰프",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제수",
+   "correction": "재수",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "지내",
+   "correction": "지네",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "태리",
+   "correction": "테리",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "드래",
+   "correction": "드레",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "배트",
+   "correction": "베트",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "애드",
+   "correction": "에드",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제외",
+   "correction": "재외",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "내일",
+   "correction": "네일",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "패스",
+   "correction": "페스",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "교제",
+   "correction": "교재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제기",
+   "correction": "재기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "수재",
+   "correction": "수제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "부재",
+   "correction": "부제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제발",
+   "correction": "재발",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "레리",
+   "correction": "래리",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "정재",
+   "correction": "정제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "교재",
+   "correction": "교제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "실제",
+   "correction": "실재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "용지",
+   "correction": "요지",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "일용",
+   "correction": "일요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "유채",
+   "correction": "유체",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재치",
+   "correction": "제치",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "베드",
+   "correction": "배드",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "사채",
+   "correction": "사체",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "선재",
+   "correction": "선제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "자제",
+   "correction": "자재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제주",
+   "correction": "재주",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "게리",
+   "correction": "개리",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "얘기",
+   "correction": "예기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "헤지",
+   "correction": "해지",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "개리",
+   "correction": "게리",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "브레드",
+   "correction": "브래드",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "가요",
+   "correction": "가용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "세기",
+   "correction": "새기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "요지",
+   "correction": "용지",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "결제",
+   "correction": "결재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제물",
+   "correction": "재물",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제회",
+   "correction": "재회",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "패스트",
+   "correction": "페스트",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "애요",
+   "correction": "애용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "사용",
+   "correction": "사요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "에드",
+   "correction": "애드",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재고",
+   "correction": "제고",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제치",
+   "correction": "재치",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "케스",
+   "correction": "캐스",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "시내",
+   "correction": "시네",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "오래",
+   "correction": "오레",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "모래",
+   "correction": "모레",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "애용",
+   "correction": "애요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제원",
+   "correction": "재원",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "캐리",
+   "correction": "케리",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "해라",
+   "correction": "헤라",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "군요",
+   "correction": "군용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "레스",
+   "correction": "래스",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "용시",
+   "correction": "요시",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제일",
+   "correction": "재일",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "방제",
+   "correction": "방재",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "이래",
+   "correction": "이레",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "기요",
+   "correction": "기용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재단",
+   "correction": "제단",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "기용",
+   "correction": "기요",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "성채",
+   "correction": "성체",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "약재",
+   "correction": "약제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "캐스",
+   "correction": "케스",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "대요",
+   "correction": "대용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "용기",
+   "correction": "요기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "금새",
+   "correction": "금세",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "해일",
+   "correction": "헤일",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "드레",
+   "correction": "드래",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "패트",
+   "correction": "페트",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "래스터",
+   "correction": "레스터",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "베스",
+   "correction": "배스",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "페스트",
+   "correction": "패스트",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "재방",
+   "correction": "제방",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "해지",
+   "correction": "헤지",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "보내",
+   "correction": "보네",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "패인",
+   "correction": "페인",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "기재",
+   "correction": "기제",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "베타",
+   "correction": "배타",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "페기",
+   "correction": "패기",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제인",
+   "correction": "재인",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "금세",
+   "correction": "금새",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "마태",
+   "correction": "마테",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "패소",
+   "correction": "페소",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "아요",
+   "correction": "아용",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "요법",
+   "correction": "용법",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "제방",
+   "correction": "재방",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "새끼",
+   "correction": "세끼",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "세미",
+   "correction": "새미",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  },
+  {
+   "typo": "셰프",
+   "correction": "쉐프",
+   "weight": 1,
+   "class": "jamo-confusion-realword"
+  }
+ ]
+}

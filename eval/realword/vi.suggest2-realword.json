@@ -1,0 +1,1208 @@
+{
+ "spec": "kotoshu.suggest-benchmark/v2-synthetic",
+ "language": "vi",
+ "klass": "realword",
+ "n": 200,
+ "pairs": [
+  {
+   "typo": "là",
+   "correction": "lá",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lá",
+   "correction": "la",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "la",
+   "correction": "lạ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lạ",
+   "correction": "lã",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lã",
+   "correction": "lả",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "và",
+   "correction": "va",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "va",
+   "correction": "vả",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "vả",
+   "correction": "vã",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "vã",
+   "correction": "vá",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "vá",
+   "correction": "vạ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "có",
+   "correction": "cỏ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cỏ",
+   "correction": "co",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "co",
+   "correction": "cò",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cò",
+   "correction": "cọ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "của",
+   "correction": "cua",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cua",
+   "correction": "cùa",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cùa",
+   "correction": "cuả",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "được",
+   "correction": "đươc",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đươc",
+   "correction": "đước",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đước",
+   "correction": "đựơc",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "một",
+   "correction": "mốt",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "mốt",
+   "correction": "môt",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "các",
+   "correction": "cac",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "không",
+   "correction": "khổng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "khổng",
+   "correction": "khống",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "trong",
+   "correction": "trọng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "trọng",
+   "correction": "tròng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cho",
+   "correction": "chó",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chó",
+   "correction": "chỏ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "người",
+   "correction": "ngươi",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "này",
+   "correction": "nay",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nay",
+   "correction": "nảy",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nảy",
+   "correction": "nãy",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nãy",
+   "correction": "náy",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "với",
+   "correction": "vời",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "vời",
+   "correction": "vơi",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đã",
+   "correction": "đá",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đá",
+   "correction": "đa",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đa",
+   "correction": "đà",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đà",
+   "correction": "đả",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đả",
+   "correction": "đạ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thể",
+   "correction": "thế",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thế",
+   "correction": "thê",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thê",
+   "correction": "thề",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thề",
+   "correction": "thệ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "để",
+   "correction": "đề",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đề",
+   "correction": "đế",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đế",
+   "correction": "đệ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đệ",
+   "correction": "đê",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đê",
+   "correction": "đễ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "như",
+   "correction": "nhừ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhừ",
+   "correction": "nhữ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhữ",
+   "correction": "nhử",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "những",
+   "correction": "nhưng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đến",
+   "correction": "đền",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đền",
+   "correction": "đên",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "khi",
+   "correction": "khí",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "khí",
+   "correction": "khỉ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "làm",
+   "correction": "lam",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lam",
+   "correction": "lãm",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lãm",
+   "correction": "lạm",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sẽ",
+   "correction": "sẻ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sẻ",
+   "correction": "se",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "từ",
+   "correction": "tự",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tự",
+   "correction": "tư",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tư",
+   "correction": "tử",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tử",
+   "correction": "tứ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ra",
+   "correction": "rã",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "rã",
+   "correction": "rà",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "rà",
+   "correction": "rạ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "công",
+   "correction": "cộng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cộng",
+   "correction": "cổng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cổng",
+   "correction": "cống",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cống",
+   "correction": "cồng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "họ",
+   "correction": "ho",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ho",
+   "correction": "hò",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tại",
+   "correction": "tài",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tài",
+   "correction": "tai",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tai",
+   "correction": "tái",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tái",
+   "correction": "tải",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "về",
+   "correction": "vệ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "vệ",
+   "correction": "vế",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "vế",
+   "correction": "vê",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "vê",
+   "correction": "vể",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đó",
+   "correction": "đỏ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đỏ",
+   "correction": "đo",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đo",
+   "correction": "đò",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đò",
+   "correction": "đọ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cũng",
+   "correction": "cùng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cùng",
+   "correction": "cung",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cung",
+   "correction": "củng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "củng",
+   "correction": "cúng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "cúng",
+   "correction": "cụng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thành",
+   "correction": "thanh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thanh",
+   "correction": "thánh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thánh",
+   "correction": "thạnh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thạnh",
+   "correction": "thảnh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lại",
+   "correction": "lai",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lai",
+   "correction": "lái",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lái",
+   "correction": "lãi",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lãi",
+   "correction": "lài",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "lài",
+   "correction": "lải",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đầu",
+   "correction": "đấu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đấu",
+   "correction": "đâu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đâu",
+   "correction": "đậu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đậu",
+   "correction": "đẩu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chỉ",
+   "correction": "chi",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chi",
+   "correction": "chị",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chị",
+   "correction": "chí",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chí",
+   "correction": "chì",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "năm",
+   "correction": "nằm",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nằm",
+   "correction": "nắm",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sự",
+   "correction": "sử",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sử",
+   "correction": "sư",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sư",
+   "correction": "sứ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tôi",
+   "correction": "tối",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tối",
+   "correction": "tội",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "tội",
+   "correction": "tồi",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bị",
+   "correction": "bí",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bí",
+   "correction": "bi",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bi",
+   "correction": "bỉ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bỉ",
+   "correction": "bì",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "học",
+   "correction": "hóc",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "hóc",
+   "correction": "hoc",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "phải",
+   "correction": "phái",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "phái",
+   "correction": "phai",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chính",
+   "correction": "chỉnh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chỉnh",
+   "correction": "chinh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chinh",
+   "correction": "chình",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ngày",
+   "correction": "ngay",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ngay",
+   "correction": "ngáy",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "số",
+   "correction": "sổ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sổ",
+   "correction": "sô",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sô",
+   "correction": "sộ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ông",
+   "correction": "ống",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ống",
+   "correction": "ổng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "động",
+   "correction": "đồng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đồng",
+   "correction": "đông",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đông",
+   "correction": "đống",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đống",
+   "correction": "đổng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "mà",
+   "correction": "mã",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "mã",
+   "correction": "ma",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ma",
+   "correction": "má",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "má",
+   "correction": "mạ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "mạ",
+   "correction": "mả",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhà",
+   "correction": "nha",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nha",
+   "correction": "nhã",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhã",
+   "correction": "nhá",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhá",
+   "correction": "nhả",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhả",
+   "correction": "nhạ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thì",
+   "correction": "thị",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thị",
+   "correction": "thi",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thi",
+   "correction": "thí",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thí",
+   "correction": "thỉ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "việc",
+   "correction": "viêc",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sau",
+   "correction": "sáu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "điều",
+   "correction": "điệu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "điệu",
+   "correction": "điêu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "điêu",
+   "correction": "điếu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "điếu",
+   "correction": "điểu",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "còn",
+   "correction": "con",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chúng",
+   "correction": "chung",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chung",
+   "correction": "chủng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "chủng",
+   "correction": "chùng",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "gia",
+   "correction": "giá",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "giá",
+   "correction": "giả",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "giả",
+   "correction": "già",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "già",
+   "correction": "giã",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "mình",
+   "correction": "minh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "rất",
+   "correction": "rât",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đi",
+   "correction": "đĩ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bộ",
+   "correction": "bố",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bố",
+   "correction": "bổ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bổ",
+   "correction": "bồ",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bồ",
+   "correction": "bô",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhân",
+   "correction": "nhận",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhận",
+   "correction": "nhẫn",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhẫn",
+   "correction": "nhấn",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thực",
+   "correction": "thức",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thức",
+   "correction": "thưc",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bạn",
+   "correction": "bản",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bản",
+   "correction": "ban",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ban",
+   "correction": "bán",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "bán",
+   "correction": "bàn",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "hiện",
+   "correction": "hiến",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "hiến",
+   "correction": "hiển",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "hiển",
+   "correction": "hiền",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "hiền",
+   "correction": "hiên",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thời",
+   "correction": "thới",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "thới",
+   "correction": "thơi",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "anh",
+   "correction": "ảnh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "ảnh",
+   "correction": "ánh",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "hơn",
+   "correction": "hờn",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "hờn",
+   "correction": "hớn",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "nhất",
+   "correction": "nhật",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sinh",
+   "correction": "sính",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "sính",
+   "correction": "sình",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đây",
+   "correction": "đầy",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đầy",
+   "correction": "đấy",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  },
+  {
+   "typo": "đấy",
+   "correction": "đẩy",
+   "weight": 1,
+   "class": "tone-mark-realword"
+  }
+ ]
+}
