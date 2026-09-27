@@ -2,6 +2,44 @@
 
 ## Status
 
+benches-freezing (2026-09-27). vi and zh-Hant-HK are frozen WINS on
+the current gem (vi nonword top-1 67.30 vs field 65.15; HK 77.00 vs
+75.35, top-3 96.75 / top-5 98.40, realword only-nonzero at 2.5/3.5);
+zh-Hans-CN (76.10 vs 75.45) and zh-Hant-TW (81.70 vs 81.45) re-froze
+as wins on their exact variant-pure lists; ja re-froze at 73.90 vs
+72.30 now provably kelly-indexed on both lanes. ko/ar benches and the
+en/de/es/it/ru/nl/pt re-freezes (stale under gem#233 fold-scoping) run
+in parallel on Modal; reportless preemption casualties re-spawn at
+drain.
+
+Two engine fixes landed en route (both gem PRs, CI green):
+- gem#235 — vi left FOLD_SCORING_LANGUAGES (set is now de sv): the
+  dấu fold merged tone-distinct candidates into frequency-decided
+  ties (lăng/làng → lang) and gave toneless words false 0-distances
+  (kwán → kwan); a 2,000-pair lane-diff probe classified 183 field-only
+  top-1 losses (adjacent-sub 72, far-sub 58, transposition 48) with the
+  tone classes near-absent. Vi 59.15 → 67.30 on the one-line change.
+- gem#236 — variant-pure frequency resolution: the bundle used to
+  carry the script-folded code (zh-Hant-HK → zh-Hant), so the suggest
+  strategy indexed the zh-Hant kelly list and HK anchors never entered
+  the slate (62/62 probed field-only losses had the target absent
+  entirely; slates were per-segment tail fragments with duplicates).
+  The bundle now carries the requested code, resolve prefers the exact
+  kelly list, and the provider cascade is exact → script-fold → base
+  (a missing HK list falls to zh-Hant, never script-mixed zh). HK
+  59.40 → 77.00; zh-Hans-CN and zh-Hant-TW re-froze on their own lists
+  instead of folded fallbacks. ja/it/ru/de cache symlinks into the
+  purged /tmp/fleet-freq were repaired from kelly main (de matched the
+  recorded checksum byte-for-byte; ja/it/ru differ — the fleet-retrain
+  variants are lost, mismatch disclosed in cache metadata).
+
+Field-lane context for the vi verdict (arXiv 2021-2025 sweep):
+Vietnamese VSC SOTA is sentence-level contextual/neural (VSEC
+BPE-Transformer 86.8/81.5; BERT+Transformer 86.24 BLEU; LLM post-OCR
+AAAI 2025) — no lexicon-level technique selects tone without context,
+so raw mechanical ranking is the correct suggest-tier play and tone
+ambiguity stays S2/S3 context-tier territory.
+
 prep-complete (2026-09-24). All four languages have frozen splits
 (2,000 nonword + 200 realword, per-class tags) and frequency lists
 (kelly#8 merged: ko 26,795 / vi 10,387 / zh-Hant-HK 65,121 entries);

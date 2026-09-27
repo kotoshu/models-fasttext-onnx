@@ -1,0 +1,23 @@
+{
+ "language": "vi",
+ "class_mix": {
+  "adjacent-sub": 615,
+  "transposition": 307,
+  "double-insert": 504,
+  "far-sub": 494,
+  "double-delete": 19,
+  "tone-mark": 42,
+  "diacritic-omit": 19
+ },
+ "distance_dist": {
+  "1": 1691,
+  "2": 309
+ },
+ "nonword": 2000,
+ "realword": 200,
+ "dictionary_validity_gate": {
+  "enabled": true,
+  "rejected_dictionary_valid": 2953,
+  "date": "2026-09-27"
+ }
+}

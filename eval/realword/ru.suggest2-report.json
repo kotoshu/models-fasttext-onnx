@@ -1,17 +1,22 @@
 {
  "language": "ru",
  "class_mix": {
-  "adjacent-sub": 729,
-  "far-sub": 498,
-  "double-insert": 431,
-  "transposition": 294,
-  "double-delete": 30,
-  "diacritic-omit": 18
+  "adjacent-sub": 699,
+  "far-sub": 517,
+  "double-insert": 424,
+  "transposition": 333,
+  "double-delete": 22,
+  "diacritic-omit": 5
  },
  "distance_dist": {
-  "1": 1706,
-  "2": 294
+  "1": 1667,
+  "2": 333
  },
  "nonword": 2000,
- "realword": 200
+ "realword": 40,
+ "dictionary_validity_gate": {
+  "enabled": true,
+  "rejected_dictionary_valid": 1259,
+  "date": "2026-09-27"
+ }
 }

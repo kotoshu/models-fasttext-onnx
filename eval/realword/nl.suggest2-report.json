@@ -1,17 +1,21 @@
 {
  "language": "nl",
  "class_mix": {
-  "adjacent-sub": 762,
-  "double-insert": 425,
-  "far-sub": 445,
-  "transposition": 284,
-  "diacritic-omit": 4,
-  "double-delete": 80
+  "adjacent-sub": 700,
+  "far-sub": 469,
+  "double-insert": 433,
+  "transposition": 331,
+  "double-delete": 67
  },
  "distance_dist": {
-  "1": 1716,
-  "2": 284
+  "1": 1669,
+  "2": 331
  },
  "nonword": 2000,
- "realword": 40
+ "realword": 40,
+ "dictionary_validity_gate": {
+  "enabled": true,
+  "rejected_dictionary_valid": 933,
+  "date": "2026-09-27"
+ }
 }

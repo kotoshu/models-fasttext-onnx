@@ -1,17 +1,22 @@
 {
  "language": "pt",
  "class_mix": {
-  "adjacent-sub": 760,
-  "double-insert": 461,
-  "far-sub": 469,
-  "transposition": 269,
-  "double-delete": 26,
-  "diacritic-omit": 15
+  "adjacent-sub": 656,
+  "far-sub": 494,
+  "double-insert": 472,
+  "transposition": 359,
+  "double-delete": 15,
+  "diacritic-omit": 4
  },
  "distance_dist": {
-  "1": 1731,
-  "2": 269
+  "1": 1641,
+  "2": 359
  },
  "nonword": 2000,
- "realword": 200
+ "realword": 40,
+ "dictionary_validity_gate": {
+  "enabled": true,
+  "rejected_dictionary_valid": 3005,
+  "date": "2026-09-27"
+ }
 }

@@ -1,16 +1,21 @@
 {
  "language": "en",
  "class_mix": {
-  "adjacent-sub": 765,
-  "double-insert": 422,
-  "transposition": 306,
-  "far-sub": 455,
-  "double-delete": 52
+  "adjacent-sub": 693,
+  "far-sub": 483,
+  "transposition": 332,
+  "double-insert": 452,
+  "double-delete": 40
  },
  "distance_dist": {
-  "1": 1694,
-  "2": 306
+  "1": 1668,
+  "2": 332
  },
  "nonword": 2000,
- "realword": 200
+ "realword": 40,
+ "dictionary_validity_gate": {
+  "enabled": true,
+  "rejected_dictionary_valid": 976,
+  "date": "2026-09-27"
+ }
 }

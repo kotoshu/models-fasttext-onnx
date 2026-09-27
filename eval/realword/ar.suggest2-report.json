@@ -1,0 +1,23 @@
+{
+ "language": "ar",
+ "class_mix": {
+  "adjacent-sub": 615,
+  "double-insert": 432,
+  "hamza-swap": 317,
+  "far-sub": 397,
+  "transposition": 234,
+  "diacritic-omit": 3,
+  "double-delete": 2
+ },
+ "distance_dist": {
+  "1": 1754,
+  "2": 246
+ },
+ "nonword": 2000,
+ "realword": 200,
+ "dictionary_validity_gate": {
+  "enabled": true,
+  "rejected_dictionary_valid": 7389,
+  "date": "2026-09-27"
+ }
+}

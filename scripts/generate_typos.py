@@ -16,7 +16,9 @@ edit-distance distribution and class mix against the human splits.
 """
 import argparse
 import json
+import os
 import random
+import subprocess
 import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -25,6 +27,53 @@ REPO = Path(__file__).resolve().parent.parent
 LAYOUTS_PATH = Path("/tmp/layout-grids.json")
 
 FOLD_EXCEPTIONS = {"ß": "ss"}
+
+
+class SpellAuthority:
+    """The engine's own dictionary-validity authority (staged hunspell
+    dict, CJK folded the way the resource cache folds). A 'nonword'
+    typo that hunspell accepts is a correctly-spelled word: the engine
+    declines by contract (handles? = word not in dictionary) and the
+    pair is a guaranteed miss by construction — the ko wave-2 probe
+    found 26/2,000 such pairs, ar 303/2,000. Languages without a
+    staged dict disable the gate (nothing to enforce against)."""
+
+    def __init__(self, lang):
+        cache = Path(os.path.expanduser("~/.cache/kotoshu/languages"))
+        fold = lang.split("-")
+        base = fold[0]
+        if len(fold) > 1 and len(fold[1]) == 4:
+            base = f"{base}-{fold[1].capitalize()}"
+        index = cache / base / "spelling" / "index"
+        self.dict_path = str(index) if (cache / base / "spelling").exists() else None
+        self.proc = None
+        self.cache = {}
+
+    def valid(self, word):
+        if word in self.cache:
+            return self.cache[word]
+        if self.proc is None:
+            if not self.dict_path:
+                self.cache[word] = False
+                return False
+            self.proc = subprocess.Popen(
+                ["hunspell", "-a", "-d", self.dict_path],
+                stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                stderr=subprocess.DEVNULL, text=True)
+            self.proc.stdout.readline()
+        self.proc.stdin.write(word + "\n")
+        self.proc.stdin.flush()
+        while True:
+            line = self.proc.stdout.readline()
+            if not line or line.startswith(("&", "#")):
+                verdict = False
+                break
+            if line.startswith("@"):
+                continue
+            verdict = True
+            break
+        self.cache[word] = verdict
+        return verdict
 
 
 def fold_word(word):
@@ -465,13 +514,13 @@ def main():
 
     layouts = json.loads(LAYOUTS_PATH.read_text())["layouts"]
     gen = TypoGen(args.lang, layouts, args.seed)
+    authority = SpellAuthority(args.lang)
 
-    pairs, seen = [], set()
-    classes = Counter()
-    dists = Counter()
-    while len(pairs) < args.nonword:
-        if not gen.words:
-            break
+    # Phase 1 — draw candidates (everything but the dictionary gate).
+    candidates, seen = [], set()
+    draws = 0
+    while len(candidates) < args.nonword * 20 and draws < args.nonword * 200:
+        draws += 1
         w = gen.rng.choice(gen.words)
         if gen.word_set and w.lower() not in gen.word_set:
             continue
@@ -481,13 +530,27 @@ def main():
         typo, klass = res
         if typo == w or typo.lower() in gen.word_set or typo.lower() in seen:
             continue
-        seen.add(typo.lower())
         d = gen.edit_distance(typo.lower(), w.lower())
         if d == 0 or d > 2:
             continue
-        pairs.append({"typo": typo, "correction": w, "weight": 1, "class": klass})
-        classes[klass] += 1
-        dists[d] += 1
+        seen.add(typo.lower())
+        candidates.append({"typo": typo, "correction": w, "weight": 1,
+                           "class": klass, "d": d})
+    # Phase 2 — one batch validity pass: hunspell -l prints the words
+    # it REJECTS (misspelled); candidates absent from that list are
+    # correctly-spelled words and must not masquerade as nonwords.
+    misspelled = set()
+    if candidates and authority.dict_path:
+        batch = "\n".join(c["typo"] for c in candidates) + "\n"
+        proc = subprocess.run(
+            ["hunspell", "-l", "-d", authority.dict_path],
+            input=batch, capture_output=True, text=True)
+        misspelled = set(proc.stdout.split())
+    rejected_valid = sum(1 for c in candidates if c["typo"] not in misspelled)
+
+    pairs = [c for c in candidates if c["typo"] in misspelled][:args.nonword]
+    classes = Counter(p["class"] for p in pairs)
+    dists = Counter(p.pop("d") for p in pairs)
 
     rw = list(gen.confusion_realword_pairs(args.realword))
     seen_rw = {p["typo"].lower() for p in rw}
@@ -513,7 +576,10 @@ def main():
         print(f"wrote {path} n={len(rows)}")
 
     report = {"language": args.lang, "class_mix": dict(classes),
-              "distance_dist": dict(dists), "nonword": len(pairs), "realword": len(rw)}
+              "distance_dist": dict(dists), "nonword": len(pairs), "realword": len(rw),
+              "dictionary_validity_gate": {"enabled": authority.dict_path is not None,
+                                           "rejected_dictionary_valid": rejected_valid,
+                                           "date": "2026-09-27"}}
     rp = out / f"{args.lang}.suggest2-report.json"
     rp.write_text(json.dumps(report, indent=1))
     print("class mix:", dict(classes))
