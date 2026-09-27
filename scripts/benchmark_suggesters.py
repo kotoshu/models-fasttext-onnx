@@ -95,7 +95,8 @@ def run_kotoshu(words, lang="en"):
     proc = subprocess.run(
         ["ruby", "/tmp/bench_kotoshu.rb"],
         input="\n".join(words) + "\n", capture_output=True, text=True,
-        cwd=str(Path.home() / "src/kotoshu/kotoshu"), env=env, timeout=10800)
+        cwd=str(Path.home() / "src/kotoshu/kotoshu"), env=env,
+        timeout=int(os.environ.get("KOTOSHU_BENCH_TIMEOUT", "10800")))
     mapping = {}
     for line in proc.stdout.splitlines():
         try:
@@ -129,6 +130,8 @@ ENGINES = {"hunspell": run_hunspell, "symspell": run_symspell, "kotoshu": run_ko
 
 def score(predictions, pairs):
     n = len(pairs)
+    if n == 0:
+        return {"top1": None, "top3": None, "top5": None, "n": 0, "note": "empty class"}
     top = {1: 0, 3: 0, 5: 0}
     for pred, pair in zip(predictions, pairs):
         target = pair["correction"].lower()

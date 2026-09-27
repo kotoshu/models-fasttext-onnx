@@ -11,12 +11,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "do5le",
-   "correction": "doyle",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "màgn",
    "correction": "màng",
    "weight": 1,
@@ -33,12 +27,6 @@
    "correction": "khán",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "nghễ",
-   "correction": "nghề",
-   "weight": 1,
-   "class": "tone-mark"
   },
   {
    "typo": "lăog",
@@ -167,12 +155,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "múm",
-   "correction": "mũm",
-   "weight": 1,
-   "class": "tone-mark"
-  },
-  {
    "typo": "pdnelope",
    "correction": "penelope",
    "weight": 1,
@@ -233,12 +215,6 @@
    "class": "tone-mark"
   },
   {
-   "typo": "t3ùng",
-   "correction": "trùng",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "tane",
    "correction": "lane",
    "weight": 1,
@@ -273,12 +249,6 @@
    "correction": "edit",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "4rừu",
-   "correction": "trừu",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "thẫy",
@@ -611,18 +581,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "[itt",
-   "correction": "pitt",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "l8m",
-   "correction": "lợm",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "hựa",
    "correction": "dựa",
    "weight": 1,
@@ -699,12 +657,6 @@
    "correction": "lẩm",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "hum",
-   "correction": "hùm",
-   "weight": 1,
-   "class": "diacritic-omit"
   },
   {
    "typo": "croleone",
@@ -881,12 +833,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "luth2r",
-   "correction": "luther",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "sucrz",
    "correction": "sucre",
    "weight": 1,
@@ -921,12 +867,6 @@
    "correction": "đáo",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": ".yon",
-   "correction": "lyon",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "vmage",
@@ -983,12 +923,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "h8ok",
-   "correction": "hook",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "conbection",
    "correction": "connection",
    "weight": 1,
@@ -1003,12 +937,6 @@
   {
    "typo": "rii",
    "correction": "roi",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ph2",
-   "correction": "phế",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -1073,12 +1001,6 @@
    "class": "transposition"
   },
   {
-   "typo": "việ4",
-   "correction": "việt",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ufd",
    "correction": "ufc",
    "weight": 1,
@@ -1139,18 +1061,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "man5",
-   "correction": "many",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "w3ight",
-   "correction": "wright",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "cobg",
    "correction": "cong",
    "weight": 1,
@@ -1179,12 +1089,6 @@
    "correction": "haven",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "camill2",
-   "correction": "camille",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "ffritz",
@@ -1289,18 +1193,6 @@
    "class": "transposition"
   },
   {
-   "typo": "y8o",
-   "correction": "yoo",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "puer4o",
-   "correction": "puerto",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "vât",
    "correction": "vứt",
    "weight": 1,
@@ -1335,12 +1227,6 @@
    "correction": "gardenia",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "g.ass",
-   "correction": "glass",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "fei",
@@ -1491,12 +1377,6 @@
    "correction": "morgan",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "muỗ7",
-   "correction": "muỗi",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "ntàng",
@@ -1847,12 +1727,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "9hèo",
-   "correction": "phèo",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "lucembourg",
    "correction": "luxembourg",
    "weight": 1,
@@ -1875,12 +1749,6 @@
    "correction": "lise",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "v7ii",
-   "correction": "viii",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "wgtford",
@@ -1937,12 +1805,6 @@
    "class": "transposition"
   },
   {
-   "typo": "ne1s",
-   "correction": "news",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "pattmrson",
    "correction": "patterson",
    "weight": 1,
@@ -1995,12 +1857,6 @@
    "correction": "valley",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "9hú",
-   "correction": "phú",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "cluture",
@@ -2077,12 +1933,6 @@
   {
    "typo": "lpn",
    "correction": "lớn",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "telegra[h",
-   "correction": "telegraph",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -2245,12 +2095,6 @@
   {
    "typo": "ziri",
    "correction": "siri",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "téc",
-   "correction": "tép",
    "weight": 1,
    "class": "far-sub"
   },
@@ -2513,12 +2357,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "green;and",
-   "correction": "greenland",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "nbuỵ",
    "correction": "nguỵ",
    "weight": 1,
@@ -2535,12 +2373,6 @@
    "correction": "thanos",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "clayt8n",
-   "correction": "clayton",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "hobs",
@@ -2633,12 +2465,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "annett2",
-   "correction": "annette",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "bbỏng",
    "correction": "bỏng",
    "weight": 1,
@@ -2711,12 +2537,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "xẹo",
-   "correction": "xéo",
-   "weight": 1,
-   "class": "tone-mark"
-  },
-  {
    "typo": "nwữ",
    "correction": "ngữ",
    "weight": 1,
@@ -2777,22 +2597,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "4ang",
-   "correction": "tang",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "đặu",
    "correction": "đặn",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "3ửa",
-   "correction": "rửa",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "ẫvy",
@@ -2927,12 +2735,6 @@
    "class": "transposition"
   },
   {
-   "typo": "sible5",
-   "correction": "sibley",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "yrị",
    "correction": "trị",
    "weight": 1,
@@ -2975,12 +2777,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "rec8very",
-   "correction": "recovery",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "mmcqueen",
    "correction": "mcqueen",
    "weight": 1,
@@ -3011,12 +2807,6 @@
    "class": "transposition"
   },
   {
-   "typo": "ma3ch",
-   "correction": "march",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "vifo",
    "correction": "vivo",
    "weight": 1,
@@ -3033,12 +2823,6 @@
    "correction": "vua",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "1hite",
-   "correction": "white",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "idlab",
@@ -3077,12 +2861,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "ana;og",
-   "correction": "analog",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "cuu",
    "correction": "cứu",
    "weight": 1,
@@ -3113,12 +2891,6 @@
    "class": "transposition"
   },
   {
-   "typo": "cảy",
-   "correction": "cáy",
-   "weight": 1,
-   "class": "tone-mark"
-  },
-  {
    "typo": "thậận",
    "correction": "thận",
    "weight": 1,
@@ -3145,12 +2917,6 @@
   {
    "typo": "tụd",
    "correction": "tục",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "d8g",
-   "correction": "dog",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -3239,12 +3005,6 @@
    "class": "double-insert"
   },
   {
-   "typo": ",ắn",
-   "correction": "mắn",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ggim",
    "correction": "ghim",
    "weight": 1,
@@ -3299,12 +3059,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "h8a",
-   "correction": "hòa",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ằiên",
    "correction": "điên",
    "weight": 1,
@@ -3355,18 +3109,6 @@
   {
    "typo": "bolling",
    "correction": "bowling",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "hòi",
-   "correction": "nòi",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "gâm",
-   "correction": "gầm",
    "weight": 1,
    "class": "far-sub"
   },
@@ -3437,12 +3179,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "bra7n",
-   "correction": "brain",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "mattur",
    "correction": "matter",
    "weight": 1,
@@ -3457,12 +3193,6 @@
   {
    "typo": "hlrus",
    "correction": "horus",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "al;an",
-   "correction": "allan",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -3489,12 +3219,6 @@
    "correction": "samson",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "skinn5",
-   "correction": "skinny",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "jeongg",
@@ -3533,12 +3257,6 @@
    "class": "diacritic-omit"
   },
   {
-   "typo": "bì,",
-   "correction": "bìm",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "kotty",
    "correction": "kitty",
    "weight": 1,
@@ -3559,12 +3277,6 @@
   {
    "typo": "simpsoh",
    "correction": "simpson",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "bay2rn",
-   "correction": "bayern",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -3597,12 +3309,6 @@
    "correction": "nghỉ",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "go.den",
-   "correction": "golden",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "sảph",
@@ -3755,12 +3461,6 @@
    "class": "tone-mark"
   },
   {
-   "typo": "dím",
-   "correction": "dìm",
-   "weight": 1,
-   "class": "tone-mark"
-  },
-  {
    "typo": "dếip",
    "correction": "diếp",
    "weight": 1,
@@ -3793,12 +3493,6 @@
   {
    "typo": "roj",
    "correction": "rom",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "4cvn",
-   "correction": "tcvn",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -3909,12 +3603,6 @@
    "correction": "chà",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ngãng",
-   "correction": "ngàng",
-   "weight": 1,
-   "class": "tone-mark"
   },
   {
    "typo": "álch",
@@ -4253,12 +3941,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "t3o",
-   "correction": "tro",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "hatmond",
    "correction": "hammond",
    "weight": 1,
@@ -4577,12 +4259,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "ey2",
-   "correction": "eye",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "yara",
    "correction": "tara",
    "weight": 1,
@@ -4611,12 +4287,6 @@
    "correction": "tbn",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "bạ4",
-   "correction": "bạt",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "baarr",
@@ -4651,18 +4321,6 @@
   {
    "typo": "brolke",
    "correction": "brooke",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "fleur5",
-   "correction": "fleury",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "[am",
-   "correction": "pam",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -4835,12 +4493,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": ",ông",
-   "correction": "kông",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "vurgil",
    "correction": "virgil",
    "weight": 1,
@@ -4985,12 +4637,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "bâu",
-   "correction": "bây",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "tuurbo",
    "correction": "turbo",
    "weight": 1,
@@ -5047,12 +4693,6 @@
   {
    "typo": "uctaina",
    "correction": "ucraina",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "or;ando",
-   "correction": "orlando",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -5141,12 +4781,6 @@
    "class": "transposition"
   },
   {
-   "typo": "dòi",
-   "correction": "dõi",
-   "weight": 1,
-   "class": "tone-mark"
-  },
-  {
    "typo": "bùùn",
    "correction": "bùn",
    "weight": 1,
@@ -5163,12 +4797,6 @@
    "correction": "futsal",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "b8m",
-   "correction": "bợm",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "behg",
@@ -5279,12 +4907,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "n6c",
-   "correction": "nực",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "annatoly",
    "correction": "anatoly",
    "weight": 1,
@@ -5313,12 +4935,6 @@
    "correction": "gym",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "a.abama",
-   "correction": "alabama",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "emzym",
@@ -5405,12 +5021,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "4ừng",
-   "correction": "từng",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ltú",
    "correction": "lút",
    "weight": 1,
@@ -5419,12 +5029,6 @@
   {
    "typo": "kvỉ",
    "correction": "khỉ",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "oát",
-   "correction": "bát",
    "weight": 1,
    "class": "far-sub"
   },
@@ -6017,12 +5621,6 @@
    "class": "double-delete"
   },
   {
-   "typo": "dọp",
-   "correction": "cọp",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "xxung",
    "correction": "xung",
    "weight": 1,
@@ -6239,12 +5837,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "vụ4",
-   "correction": "vụt",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "mrằn",
    "correction": "trằn",
    "weight": 1,
@@ -6443,12 +6035,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "bương",
-   "correction": "nương",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "geng",
    "correction": "feng",
    "weight": 1,
@@ -6501,12 +6087,6 @@
    "correction": "coffee",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "crysta.",
-   "correction": "crystal",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "ạđc",
@@ -6611,12 +6191,6 @@
    "class": "transposition"
   },
   {
-   "typo": "thịch",
-   "correction": "thích",
-   "weight": 1,
-   "class": "tone-mark"
-  },
-  {
    "typo": "nẹpp",
    "correction": "nẹp",
    "weight": 1,
@@ -6681,12 +6255,6 @@
    "correction": "ráp",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "b.air",
-   "correction": "blair",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "ogất",
@@ -6827,12 +6395,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "jac,ie",
-   "correction": "jackie",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "tnôn",
    "correction": "thôn",
    "weight": 1,
@@ -6869,12 +6431,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "c6ộn",
-   "correction": "cuộn",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "haanoi",
    "correction": "hanoi",
    "weight": 1,
@@ -6885,12 +6441,6 @@
    "correction": "mập",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "dọi",
-   "correction": "rọi",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "trợs",
@@ -7013,12 +6563,6 @@
    "class": "tone-mark"
   },
   {
-   "typo": "c.yde",
-   "correction": "clyde",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "truuble",
    "correction": "trouble",
    "weight": 1,
@@ -7121,12 +6665,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "t3ẻo",
-   "correction": "trẻo",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "gettini",
    "correction": "getting",
    "weight": 1,
@@ -7195,18 +6733,6 @@
   {
    "typo": "horthern",
    "correction": "northern",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "thu2",
-   "correction": "thuê",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "3éo",
-   "correction": "réo",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -7295,12 +6821,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "ku3t",
-   "correction": "kurt",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "feedrer",
    "correction": "federer",
    "weight": 1,
@@ -7311,12 +6831,6 @@
    "correction": "soo",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "khảnh",
-   "correction": "khánh",
-   "weight": 1,
-   "class": "tone-mark"
   },
   {
    "typo": "lowee",
@@ -7409,22 +6923,10 @@
    "class": "transposition"
   },
   {
-   "typo": "isabe;la",
-   "correction": "isabella",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "biblee",
    "correction": "bible",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "`uýt",
-   "correction": "quýt",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "carolihe",
@@ -7643,12 +7145,6 @@
    "class": "diacritic-omit"
   },
   {
-   "typo": "ehom2",
-   "correction": "ehome",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ldopold",
    "correction": "leopold",
    "weight": 1,
@@ -7745,12 +7241,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "als8",
-   "correction": "also",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "qqua",
    "correction": "aqua",
    "weight": 1,
@@ -7761,12 +7251,6 @@
    "correction": "goodman",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": ";hiếu",
-   "correction": "phiếu",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "bỗgn",
@@ -7847,22 +7331,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": ".ugo",
-   "correction": "lugo",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "thămm",
    "correction": "thăm",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "tói",
-   "correction": "rói",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "divixion",
@@ -7979,22 +7451,10 @@
    "class": "transposition"
   },
   {
-   "typo": ",ichelin",
-   "correction": "michelin",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "owo",
    "correction": "own",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "ph8",
-   "correction": "phô",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "trĩch",
@@ -8189,12 +7649,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "2os",
-   "correction": "eos",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "mackeznie",
    "correction": "mackenzie",
    "weight": 1,
@@ -8315,12 +7769,6 @@
    "class": "transposition"
   },
   {
-   "typo": "w8rd",
-   "correction": "word",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "deb",
    "correction": "det",
    "weight": 1,
@@ -8357,12 +7805,6 @@
    "class": "transposition"
   },
   {
-   "typo": "ebo.a",
-   "correction": "ebola",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "hancocj",
    "correction": "hancock",
    "weight": 1,
@@ -8387,12 +7829,6 @@
    "class": "double-insert"
   },
   {
-   "typo": ";ia",
-   "correction": "pia",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "mioler",
    "correction": "miller",
    "weight": 1,
@@ -8403,12 +7839,6 @@
    "correction": "ngốn",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "tun",
-   "correction": "fun",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "gima",
@@ -8433,12 +7863,6 @@
    "correction": "xoăn",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "3hodes",
-   "correction": "rhodes",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "cejil",
@@ -8473,18 +7897,6 @@
   {
    "typo": "quro",
    "correction": "quẹo",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "v8i",
-   "correction": "voi",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": ",afia",
-   "correction": "mafia",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -8549,12 +7961,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "ston2",
-   "correction": "stone",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "cnít",
    "correction": "chít",
    "weight": 1,
@@ -8587,24 +7993,6 @@
   {
    "typo": "vhả",
    "correction": "chả",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "r6ng",
-   "correction": "rung",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ch6c",
-   "correction": "chức",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "cu8i",
-   "correction": "cuối",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -8711,18 +8099,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "nây",
-   "correction": "nâu",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "háu",
-   "correction": "hàu",
-   "weight": 1,
-   "class": "tone-mark"
-  },
-  {
    "typo": "pạo",
    "correction": "tạo",
    "weight": 1,
@@ -8751,12 +8127,6 @@
    "correction": "warren",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "smithson7an",
-   "correction": "smithsonian",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "dừhg",
@@ -8835,24 +8205,6 @@
    "correction": "serge",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "rapha2l",
-   "correction": "raphael",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "tạ9",
-   "correction": "tạp",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "t8m",
-   "correction": "tóm",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "stokc",
@@ -9107,12 +8459,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "`uỳ",
-   "correction": "quỳ",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "xxưng",
    "correction": "xưng",
    "weight": 1,
@@ -9165,12 +8511,6 @@
    "correction": "cause",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "chằn",
-   "correction": "chẵn",
-   "weight": 1,
-   "class": "tone-mark"
   },
   {
    "typo": "gôôn",
@@ -9341,22 +8681,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "th8i",
-   "correction": "thơi",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "cuộh",
    "correction": "cuộc",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "ngão",
-   "correction": "ngáo",
-   "weight": 1,
-   "class": "tone-mark"
   },
   {
    "typo": "paiistan",
@@ -9425,18 +8753,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "interna;",
-   "correction": "internal",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "fost2r",
-   "correction": "foster",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ngòc",
    "correction": "ngóc",
    "weight": 1,
@@ -9473,18 +8789,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "vo7ce",
-   "correction": "voice",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "cal2b",
-   "correction": "caleb",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "aseen",
    "correction": "asen",
    "weight": 1,
@@ -9507,12 +8811,6 @@
    "correction": "israel",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "ques4ion",
-   "correction": "question",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "loángg",
@@ -9629,22 +8927,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "d6nn",
-   "correction": "dunn",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "moblie",
    "correction": "mobile",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "rơ7",
-   "correction": "rơi",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "grdnde",
@@ -9655,12 +8941,6 @@
   {
    "typo": "pgăng",
    "correction": "phăng",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "tr5",
-   "correction": "try",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -9719,12 +8999,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "ph7m",
-   "correction": "phim",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "osyuz",
    "correction": "soyuz",
    "weight": 1,
@@ -9743,12 +9017,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "`uệ",
-   "correction": "quệ",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "kithcen",
    "correction": "kitchen",
    "weight": 1,
@@ -9761,22 +9029,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "róng",
-   "correction": "bóng",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "farrel",
    "correction": "farrell",
    "weight": 1,
    "class": "double-delete"
-  },
-  {
-   "typo": "coste;lo",
-   "correction": "costello",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "dhàng",
@@ -9891,12 +9147,6 @@
    "correction": "nọc",
    "weight": 1,
    "class": "tone-mark"
-  },
-  {
-   "typo": "toen",
-   "correction": "tone",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "lááy",
@@ -10109,12 +9359,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ka9pa",
-   "correction": "kappa",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "churchilll",
    "correction": "churchill",
    "weight": 1,
@@ -10181,18 +9425,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "g6ơm",
-   "correction": "gươm",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "m8rales",
-   "correction": "morales",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "nigeriia",
    "correction": "nigeria",
    "weight": 1,
@@ -10217,34 +9449,16 @@
    "class": "transposition"
   },
   {
-   "typo": "loe",
-   "correction": "lóe",
-   "weight": 1,
-   "class": "diacritic-omit"
-  },
-  {
    "typo": "huyệệt",
    "correction": "huyệt",
    "weight": 1,
    "class": "double-insert"
   },
   {
-   "typo": "fo.ey",
-   "correction": "foley",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ssen",
    "correction": "asen",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ngủn",
-   "correction": "ngủi",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "mzde",
@@ -10299,12 +9513,6 @@
    "correction": "chiết",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "chiếp",
-   "correction": "nhiếp",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "anythihg",
@@ -10553,12 +9761,6 @@
    "class": "double-delete"
   },
   {
-   "typo": ",arvin",
-   "correction": "marvin",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "bhuya",
    "correction": "khuya",
    "weight": 1,
@@ -10677,12 +9879,6 @@
    "correction": "singh",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": ".én",
-   "correction": "lén",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "nuc",
@@ -10805,12 +10001,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "bà8",
-   "correction": "bào",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "vdgeta",
    "correction": "vegeta",
    "weight": 1,
@@ -10859,12 +10049,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "e3icsson",
-   "correction": "ericsson",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "kpẹ",
    "correction": "kẹp",
    "weight": 1,
@@ -10873,12 +10057,6 @@
   {
    "typo": "cjỏ",
    "correction": "chỏ",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "mald7ves",
-   "correction": "maldives",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -11387,12 +10565,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "vers7on",
-   "correction": "version",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "prixy",
    "correction": "proxy",
    "weight": 1,
@@ -11405,20 +10577,8 @@
    "class": "transposition"
   },
   {
-   "typo": "ng8ng",
-   "correction": "ngỗng",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "makinf",
    "correction": "making",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ang2lo",
-   "correction": "angelo",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -11493,12 +10653,6 @@
    "correction": "biểu",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "s4ephen",
-   "correction": "stephen",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "lôngg",
@@ -11627,12 +10781,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "hia",
-   "correction": "họa",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "biretta",
    "correction": "beretta",
    "weight": 1,
@@ -11717,18 +10865,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "qu5ết",
-   "correction": "quyết",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "benedic4",
-   "correction": "benedict",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "chedk",
    "correction": "check",
    "weight": 1,
@@ -11773,12 +10909,6 @@
   {
    "typo": "clzudia",
    "correction": "claudia",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ma3ia",
-   "correction": "maria",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -11849,12 +10979,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "ch6i",
-   "correction": "chúi",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "derw",
    "correction": "drew",
    "weight": 1,
@@ -11905,18 +11029,6 @@
   {
    "typo": "waybe",
    "correction": "wayne",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ac7d",
-   "correction": "acid",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "mồ7",
-   "correction": "mồi",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -12001,6 +11113,894 @@
   {
    "typo": "surrface",
    "correction": "surface",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "cse",
+   "correction": "ces",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "classs",
+   "correction": "class",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "chja",
+   "correction": "chứa",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "kjích",
+   "correction": "khích",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "vecotr",
+   "correction": "vector",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "mấyy",
+   "correction": "mấy",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "jenifer",
+   "correction": "jennifer",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "crassuss",
+   "correction": "crassus",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "tthpt",
+   "correction": "thpt",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "takws",
+   "correction": "takes",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "mangsn",
+   "correction": "mangan",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "rhẽ",
+   "correction": "chẽ",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "aamoled",
+   "correction": "amoled",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "odi",
+   "correction": "doi",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "pyí",
+   "correction": "phí",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "jữu",
+   "correction": "hữu",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "storate",
+   "correction": "storage",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "diu",
+   "correction": "dịu",
+   "weight": 1,
+   "class": "diacritic-omit"
+  },
+  {
+   "typo": "cadillav",
+   "correction": "cadillac",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "lnúg",
+   "correction": "lúng",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "mccyo",
+   "correction": "mccoy",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "sometimed",
+   "correction": "sometimes",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "standatd",
+   "correction": "standard",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "abobtt",
+   "correction": "abbott",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "negsn",
+   "correction": "negan",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "msa",
+   "correction": "mas",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "đnờ",
+   "correction": "đờn",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "isaacc",
+   "correction": "isaac",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "íựơc",
+   "correction": "đựơc",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "mcczin",
+   "correction": "mccain",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "fryy",
+   "correction": "fry",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "lenk",
+   "correction": "lens",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "tnago",
+   "correction": "tango",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "choàbg",
+   "correction": "choàng",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "edt",
+   "correction": "eat",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "khiễgn",
+   "correction": "khiễng",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "rsw",
+   "correction": "raw",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "dơơi",
+   "correction": "dơi",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "xnake",
+   "correction": "snake",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "maara",
+   "correction": "amara",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "chỗn",
+   "correction": "chốn",
+   "weight": 1,
+   "class": "tone-mark"
+  },
+  {
+   "typo": "patm",
+   "correction": "palm",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "hờo",
+   "correction": "hão",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ppokémon",
+   "correction": "pokémon",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "godfrwy",
+   "correction": "godfrey",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "incole",
+   "correction": "nicole",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "phuwg",
+   "correction": "phung",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "gzound",
+   "correction": "ground",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "juliqn",
+   "correction": "julian",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "miậu",
+   "correction": "miếu",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "andreqs",
+   "correction": "andreas",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "webew",
+   "correction": "weber",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "diacovery",
+   "correction": "discovery",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "edem",
+   "correction": "eden",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "tec",
+   "correction": "etc",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "protxcol",
+   "correction": "protocol",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "elizaa",
+   "correction": "eliza",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "cọx",
+   "correction": "cọc",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "buckinbham",
+   "correction": "buckingham",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "gởii",
+   "correction": "gởi",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "byýt",
+   "correction": "buýt",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "lộnf",
+   "correction": "lộng",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "whwn",
+   "correction": "when",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "hýut",
+   "correction": "huýt",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "qmoniac",
+   "correction": "amoniac",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "freecom",
+   "correction": "freedom",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "exura",
+   "correction": "extra",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "asmterdam",
+   "correction": "amsterdam",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "uct",
+   "correction": "utc",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "oởi",
+   "correction": "cởi",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "luvia",
+   "correction": "lucia",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "nhữm",
+   "correction": "nhảm",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "faalls",
+   "correction": "falls",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "davses",
+   "correction": "davies",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ubddy",
+   "correction": "buddy",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "mấuu",
+   "correction": "mấu",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ett",
+   "correction": "eat",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "cesate",
+   "correction": "cesare",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "tọrn",
+   "correction": "trọn",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "folo",
+   "correction": "fool",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "ụlt",
+   "correction": "lụt",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "lũũy",
+   "correction": "lũy",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "hdãn",
+   "correction": "hoãn",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "viess",
+   "correction": "views",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "dẩm",
+   "correction": "xẩm",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "brazill",
+   "correction": "brazil",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "blackbeerry",
+   "correction": "blackberry",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "foorget",
+   "correction": "forget",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "aetive",
+   "correction": "active",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "eon",
+   "correction": "won",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "locaal",
+   "correction": "local",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "goằng",
+   "correction": "hoằng",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "gphan",
+   "correction": "gohan",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "tryy",
+   "correction": "truy",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "uefx",
+   "correction": "uefa",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "nááy",
+   "correction": "náy",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "pepttde",
+   "correction": "peptide",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "aeopold",
+   "correction": "leopold",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "mượtt",
+   "correction": "mượt",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "chqng",
+   "correction": "chạng",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "mưtớ",
+   "correction": "mướt",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "jic",
+   "correction": "mic",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "uiệt",
+   "correction": "miệt",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "dắc",
+   "correction": "sắc",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "đựnng",
+   "correction": "đựng",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "kenha",
+   "correction": "kenya",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "lcass",
+   "correction": "class",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "thầz",
+   "correction": "thầy",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "đlc",
+   "correction": "đốc",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "nhúú",
+   "correction": "nhú",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "sallly",
+   "correction": "sally",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "gpắ",
+   "correction": "gắp",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "destrryer",
+   "correction": "destroyer",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "storiea",
+   "correction": "stories",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "proteein",
+   "correction": "protein",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "kgôn",
+   "correction": "khôn",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "swna",
+   "correction": "swan",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "đủủi",
+   "correction": "đủi",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "pprice",
+   "correction": "price",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "mqtthew",
+   "correction": "matthew",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "holoway",
+   "correction": "holloway",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "bargon",
+   "correction": "barton",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "esprelso",
+   "correction": "espresso",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "thuốốc",
+   "correction": "thuốc",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "miel",
+   "correction": "mile",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "lexingtno",
+   "correction": "lexington",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "bỏn",
+   "correction": "vỏn",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "nfcc",
+   "correction": "nfc",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "kji",
+   "correction": "koi",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "albd",
+   "correction": "alba",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "đđường",
+   "correction": "đường",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "criccket",
+   "correction": "cricket",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "orsa",
+   "correction": "rosa",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "oẫy",
+   "correction": "lẫy",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "farrelk",
+   "correction": "farrell",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "gửk",
+   "correction": "gửi",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "lạnp",
+   "correction": "lạng",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "phillpi",
+   "correction": "phillip",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "hazadr",
+   "correction": "hazard",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "smartphome",
+   "correction": "smartphone",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "đậuu",
+   "correction": "đậu",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "fountain",
+   "correction": "mountain",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "oatton",
+   "correction": "patton",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "òùa",
+   "correction": "đùa",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "thnug",
+   "correction": "thung",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "tômg",
+   "correction": "tông",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "xri",
+   "correction": "sri",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "liight",
+   "correction": "light",
    "weight": 1,
    "class": "double-insert"
   }

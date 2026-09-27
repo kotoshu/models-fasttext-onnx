@@ -5,12 +5,6 @@
  "n": 2000,
  "pairs": [
   {
-   "typo": "عجه",
-   "correction": "عجة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "ضنبك",
    "correction": "ذنبك",
    "weight": 1,
@@ -23,34 +17,16 @@
    "class": "double-insert"
   },
   {
-   "typo": "لللمخ",
-   "correction": "للمخ",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "للأدإء",
+   "typo": "للأدأء",
    "correction": "للأداء",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "ولسب",
-   "correction": "وحسب",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "خساائر",
    "correction": "خسائر",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "والإ1لاح",
-   "correction": "والإصلاح",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "وأشؤاء",
@@ -119,12 +95,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "أأخبار",
-   "correction": "أخبار",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "ييتظرها",
    "correction": "ينتظرها",
    "weight": 1,
@@ -149,34 +119,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "وتبولون",
-   "correction": "وتقولون",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "فخفت",
-   "correction": "وخفت",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "ىودون",
    "correction": "يودون",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "ناكون",
-   "correction": "واكون",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "قصائي",
-   "correction": "قضائي",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "مارااح",
@@ -185,31 +131,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "رنُ",
-   "correction": "رنة",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "تسإلك",
+   "typo": "تسالك",
    "correction": "تسألك",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "لبنص",
-   "correction": "للنص",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "الم-فعية",
-   "correction": "المدفعية",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "بآلأذى",
+   "typo": "بإلأذى",
    "correction": "بالأذى",
    "weight": 1,
    "class": "hamza-swap"
@@ -227,31 +155,13 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "فلحيوانات",
-   "correction": "للحيوانات",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "إرمل",
-   "correction": "أرمل",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "بالموضس",
    "correction": "بالموضة",
    "weight": 1,
    "class": "far-sub"
   },
   {
-   "typo": "سإتي",
-   "correction": "سآتي",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "لتدأول",
+   "typo": "لتدآول",
    "correction": "لتداول",
    "weight": 1,
    "class": "hamza-swap"
@@ -269,12 +179,6 @@
    "class": "transposition"
   },
   {
-   "typo": "وخطه",
-   "correction": "وخطة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "التكوينْت",
    "correction": "التكوينات",
    "weight": 1,
@@ -285,12 +189,6 @@
    "correction": "الروضان",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ببرميل",
-   "correction": "برميل",
-   "weight": 1,
-   "class": "double-insert"
   },
   {
    "typo": "الجواطنون",
@@ -305,7 +203,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "قأد",
+   "typo": "قآد",
    "correction": "قاد",
    "weight": 1,
    "class": "hamza-swap"
@@ -315,18 +213,6 @@
    "correction": "المسارات",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "ودث",
-   "correction": "ودق",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ت8يف",
-   "correction": "تخيف",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "مزظف",
@@ -371,12 +257,6 @@
    "class": "transposition"
   },
   {
-   "typo": "يثنني",
-   "correction": "يثني",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "المصةر",
    "correction": "المصور",
    "weight": 1,
@@ -389,7 +269,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وروأندا",
+   "typo": "وروآندا",
    "correction": "ورواندا",
    "weight": 1,
    "class": "hamza-swap"
@@ -431,18 +311,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "وحبيلة",
-   "correction": "وحبيبة",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "دريتي",
-   "correction": "ديرتي",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "ستسعمر",
    "correction": "ستستمر",
    "weight": 1,
@@ -453,12 +321,6 @@
    "correction": "حوليات",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "تضفيرها",
-   "correction": "تشفيرها",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "الزتحرش",
@@ -515,12 +377,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ستعيط",
-   "correction": "ستعطي",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "ستؤولل",
    "correction": "ستؤول",
    "weight": 1,
@@ -539,19 +395,13 @@
    "class": "transposition"
   },
   {
-   "typo": "مضلً",
-   "correction": "مضلل",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "تحدسثه",
    "correction": "تحديثه",
    "weight": 1,
    "class": "adjacent-sub"
   },
   {
-   "typo": "غأبرييل",
+   "typo": "غآبرييل",
    "correction": "غابرييل",
    "weight": 1,
    "class": "hamza-swap"
@@ -569,7 +419,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "بأرتياح",
+   "typo": "بآرتياح",
    "correction": "بارتياح",
    "weight": 1,
    "class": "hamza-swap"
@@ -585,12 +435,6 @@
    "correction": "استطاعت",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "أفعابها",
-   "correction": "أفعالها",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "كينزز",
@@ -647,19 +491,13 @@
    "class": "transposition"
   },
   {
-   "typo": "بتلى",
-   "correction": "بالى",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ولههذه",
    "correction": "ولهذه",
    "weight": 1,
    "class": "double-insert"
   },
   {
-   "typo": "آلتراخي",
+   "typo": "إلتراخي",
    "correction": "التراخي",
    "weight": 1,
    "class": "hamza-swap"
@@ -689,12 +527,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "انتحلا",
-   "correction": "انتحر",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "أذعب",
    "correction": "أذهب",
    "weight": 1,
@@ -711,12 +543,6 @@
    "correction": "هيجل",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "فضلع",
-   "correction": "فضلت",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "وفلسفةة",
@@ -797,7 +623,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "الإرستقراطية",
+   "typo": "الارستقراطية",
    "correction": "الأرستقراطية",
    "weight": 1,
    "class": "hamza-swap"
@@ -817,18 +643,6 @@
   {
    "typo": "باسلقوط",
    "correction": "بالسقوط",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "ذاتاي",
-   "correction": "ذاتيا",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "وتتح",
-   "correction": "وتحت",
    "weight": 1,
    "class": "transposition"
   },
@@ -863,7 +677,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "بيعرفوإ",
+   "typo": "بيعرفوأ",
    "correction": "بيعرفوا",
    "weight": 1,
    "class": "hamza-swap"
@@ -875,7 +689,7 @@
    "class": "transposition"
   },
   {
-   "typo": "معونإت",
+   "typo": "معونأت",
    "correction": "معونات",
    "weight": 1,
    "class": "hamza-swap"
@@ -929,7 +743,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "مضآد",
+   "typo": "مضإد",
    "correction": "مضاد",
    "weight": 1,
    "class": "hamza-swap"
@@ -977,7 +791,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "بصنإعة",
+   "typo": "بصنأعة",
    "correction": "بصناعة",
    "weight": 1,
    "class": "hamza-swap"
@@ -1007,20 +821,14 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ألأخوه",
+   "typo": "آلأخوه",
    "correction": "الأخوه",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "وإلموجود",
+   "typo": "وألموجود",
    "correction": "والموجود",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "ألكندي",
-   "correction": "الكندي",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -1043,7 +851,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "القإذفات",
+   "typo": "القأذفات",
    "correction": "القاذفات",
    "weight": 1,
    "class": "hamza-swap"
@@ -1067,12 +875,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "إلتق",
-   "correction": "ألتق",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "الفحوصتا",
    "correction": "الفحوصات",
    "weight": 1,
@@ -1091,12 +893,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "تكففه",
-   "correction": "تكلفه",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ضتحلى",
    "correction": "يتحلى",
    "weight": 1,
@@ -1105,18 +901,6 @@
   {
    "typo": "الألبار",
    "correction": "الألباب",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ووقاد",
-   "correction": "وقاد",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "فبفل",
-   "correction": "فلفل",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -1151,12 +935,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "أحسوا",
-   "correction": "أحسنا",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "صأقول",
    "correction": "وأقول",
    "weight": 1,
@@ -1187,26 +965,14 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "أتتخلص",
-   "correction": "أتخلص",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "منووع",
    "correction": "منزوع",
    "weight": 1,
    "class": "adjacent-sub"
   },
   {
-   "typo": "الروأبي",
+   "typo": "الروآبي",
    "correction": "الروابي",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "فهنإك",
-   "correction": "فهناك",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -1215,12 +981,6 @@
    "correction": "الخميسي",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "إلمهتدين",
-   "correction": "المهتدين",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "اللمستبد",
@@ -1233,12 +993,6 @@
    "correction": "قادرون",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "أثإره",
-   "correction": "أثاره",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "تواا",
@@ -1271,12 +1025,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "لعقب",
-   "correction": "بعقب",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "boyy",
    "correction": "boy",
    "weight": 1,
@@ -1299,12 +1047,6 @@
    "correction": "عاهد",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "بحرَه",
-   "correction": "بحريه",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "القتحام",
@@ -1331,12 +1073,6 @@
    "class": "transposition"
   },
   {
-   "typo": "وهدا",
-   "correction": "ودها",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "يكوت",
    "correction": "يموت",
    "weight": 1,
@@ -1353,18 +1089,6 @@
    "correction": "مسكته",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "التثويب",
-   "correction": "التصويب",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ألعنبري",
-   "correction": "العنبري",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "التصصرف",
@@ -1421,12 +1145,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ُغوار",
-   "correction": "أغوار",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "جازهيته",
    "correction": "جاهزيته",
    "weight": 1,
@@ -1439,28 +1157,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "0وازات",
-   "correction": "جوازات",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "miight",
    "correction": "might",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "الخضاري",
-   "correction": "الحضاري",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "نخته",
-   "correction": "نعته",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "بصثتك",
@@ -1475,7 +1175,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "وخسأرة",
+   "typo": "وخسآرة",
    "correction": "وخسارة",
    "weight": 1,
    "class": "hamza-swap"
@@ -1485,12 +1185,6 @@
    "correction": "حطين",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "زين7م",
-   "correction": "زينهم",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "التيبيت",
@@ -1511,7 +1205,7 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "موتهأ",
+   "typo": "موتهآ",
    "correction": "موتها",
    "weight": 1,
    "class": "hamza-swap"
@@ -1521,12 +1215,6 @@
    "correction": "توقفي",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "كشخ1",
-   "correction": "كشخص",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "الثزاني",
@@ -1539,24 +1227,6 @@
    "correction": "الفلل",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "أقتن6",
-   "correction": "أقتنع",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ألمزروع",
-   "correction": "المزروع",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "صولتنا",
-   "correction": "وصلتنا",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "كرء",
@@ -1595,12 +1265,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "وفدعها",
-   "correction": "ودفعها",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "عرلين",
    "correction": "عربين",
    "weight": 1,
@@ -1625,7 +1289,7 @@
    "class": "transposition"
   },
   {
-   "typo": "قرآءة",
+   "typo": "قرإءة",
    "correction": "قراءة",
    "weight": 1,
    "class": "hamza-swap"
@@ -1685,7 +1349,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "بأرواحنإ",
+   "typo": "بأرواحنأ",
    "correction": "بأرواحنا",
    "weight": 1,
    "class": "hamza-swap"
@@ -1703,7 +1367,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "وعإزف",
+   "typo": "وعأزف",
    "correction": "وعازف",
    "weight": 1,
    "class": "hamza-swap"
@@ -1723,18 +1387,6 @@
   {
    "typo": "مواقغها",
    "correction": "مواقفها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "أ‌شن",
-   "correction": "أكشن",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "وخمص",
-   "correction": "وحمص",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -1763,12 +1415,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ورزم",
-   "correction": "ورمز",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "للمطقع",
    "correction": "للمقطع",
    "weight": 1,
@@ -1779,12 +1425,6 @@
    "correction": "والديمقراطية",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "وصلاه",
-   "correction": "وصلته",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "طبلل",
@@ -1809,12 +1449,6 @@
    "correction": "عامي",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "-راير",
-   "correction": "دراير",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "رسميت",
@@ -1883,12 +1517,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وسحن",
-   "correction": "وشحن",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "وئحكى",
    "correction": "ويحكى",
    "weight": 1,
@@ -1919,22 +1547,10 @@
    "class": "transposition"
   },
   {
-   "typo": "الإبتسإمة",
+   "typo": "الإبتسأمة",
    "correction": "الإبتسامة",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "كسو",
-   "correction": "كوس",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "لللعنوان",
-   "correction": "للعنوان",
-   "weight": 1,
-   "class": "double-insert"
   },
   {
    "typo": "عاففيتها",
@@ -1943,19 +1559,19 @@
    "class": "double-insert"
   },
   {
-   "typo": "آلمناهضة",
+   "typo": "إلمناهضة",
    "correction": "المناهضة",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "بخإر",
+   "typo": "بخأر",
    "correction": "بخار",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "للآغنية",
+   "typo": "للإغنية",
    "correction": "للأغنية",
    "weight": 1,
    "class": "hamza-swap"
@@ -1967,7 +1583,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "إلنوت",
+   "typo": "ألنوت",
    "correction": "النوت",
    "weight": 1,
    "class": "hamza-swap"
@@ -2045,7 +1661,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "هاأ",
+   "typo": "هاآ",
    "correction": "هاا",
    "weight": 1,
    "class": "hamza-swap"
@@ -2069,20 +1685,8 @@
    "class": "transposition"
   },
   {
-   "typo": "إلمثالي",
-   "correction": "المثالي",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "المحإمل",
+   "typo": "المحأمل",
    "correction": "المحامل",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "إكشف",
-   "correction": "اكشف",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -2111,13 +1715,13 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "قطعنآ",
+   "typo": "قطعنإ",
    "correction": "قطعنا",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "باربأر",
+   "typo": "باربآر",
    "correction": "باربار",
    "weight": 1,
    "class": "hamza-swap"
@@ -2153,32 +1757,8 @@
    "class": "transposition"
   },
   {
-   "typo": "سترجي",
-   "correction": "ستجري",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "مسئوله",
-   "correction": "مسئولة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "ضختلافها",
    "correction": "اختلافها",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "بجليك",
-   "correction": "رجليك",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "دعَتنا",
-   "correction": "دعوتنا",
    "weight": 1,
    "class": "far-sub"
   },
@@ -2297,18 +1877,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "لبعدوا",
-   "correction": "ابعدوا",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "ألدامس",
-   "correction": "الدامس",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "تعرفيت",
    "correction": "تعرفين",
    "weight": 1,
@@ -2337,12 +1905,6 @@
    "correction": "لانجاز",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "إلسعيده",
-   "correction": "السعيده",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "صبرىى",
@@ -2375,26 +1937,8 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "قَسية",
-   "correction": "قاسية",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "سلجهنمية",
    "correction": "الجهنمية",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "نجرى",
-   "correction": "نجري",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "فرعتنا",
-   "correction": "فرحتنا",
    "weight": 1,
    "class": "far-sub"
   },
@@ -2405,14 +1949,8 @@
    "class": "far-sub"
   },
   {
-   "typo": "دي-",
-   "correction": "ديد",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "الآيجابية",
-   "correction": "الايجابية",
+   "typo": "للأيفون",
+   "correction": "للآيفون",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -2441,7 +1979,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "جرحآ",
+   "typo": "جرحإ",
    "correction": "جرحا",
    "weight": 1,
    "class": "hamza-swap"
@@ -2501,19 +2039,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "والآراب",
-   "correction": "والتراب",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "شمهد",
    "correction": "مشهد",
    "weight": 1,
    "class": "transposition"
   },
   {
-   "typo": "وألتخزين",
+   "typo": "وآلتخزين",
    "correction": "والتخزين",
    "weight": 1,
    "class": "hamza-swap"
@@ -2525,22 +2057,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "حرباي",
-   "correction": "حربيا",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "ويقامم",
    "correction": "ويقام",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "عركت",
-   "correction": "عرضت",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "رجااة",
@@ -2555,7 +2075,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "انقلابآ",
+   "typo": "انقلابإ",
    "correction": "انقلابا",
    "weight": 1,
    "class": "hamza-swap"
@@ -2577,18 +2097,6 @@
    "correction": "تعريض",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "أبطالاه",
-   "correction": "أبطاله",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "تقييد7",
-   "correction": "تقييده",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "امتانن",
@@ -2615,18 +2123,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "وللأعراق",
-   "correction": "والأعراق",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "جزري",
-   "correction": "جوري",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "skories",
    "correction": "stories",
    "weight": 1,
@@ -2645,14 +2141,8 @@
    "class": "far-sub"
   },
   {
-   "typo": "يتبعهآ",
+   "typo": "يتبعهإ",
    "correction": "يتبعها",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "إلعائله",
-   "correction": "العائله",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -2669,13 +2159,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "فإرمر",
+   "typo": "فأرمر",
    "correction": "فارمر",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "وألدخل",
+   "typo": "وآلدخل",
    "correction": "والدخل",
    "weight": 1,
    "class": "hamza-swap"
@@ -2685,12 +2175,6 @@
    "correction": "كردستان",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "الحًابات",
-   "correction": "الحسابات",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "اصطداام",
@@ -2711,7 +2195,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "باعتبآره",
+   "typo": "باعتبإره",
    "correction": "باعتباره",
    "weight": 1,
    "class": "hamza-swap"
@@ -2759,22 +2243,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "ُصفتك",
-   "correction": "وصفتك",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "تفادياا",
    "correction": "تفاديا",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "إلحس",
-   "correction": "الحس",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "وباراهيم",
@@ -2783,7 +2255,7 @@
    "class": "transposition"
   },
   {
-   "typo": "أيجل",
+   "typo": "آيجل",
    "correction": "ايجل",
    "weight": 1,
    "class": "hamza-swap"
@@ -2807,37 +2279,19 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "إكسر",
-   "correction": "أكسر",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "إلساخطين",
-   "correction": "الساخطين",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "واضعف",
-   "correction": "وضاعف",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "استحضز",
    "correction": "استحضر",
    "weight": 1,
    "class": "far-sub"
   },
   {
-   "typo": "فيرآ",
+   "typo": "فيرإ",
    "correction": "فيرا",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "كارفاخأل",
+   "typo": "كارفاخآل",
    "correction": "كارفاخال",
    "weight": 1,
    "class": "hamza-swap"
@@ -2849,7 +2303,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وآسندت",
+   "typo": "وإسندت",
    "correction": "وأسندت",
    "weight": 1,
    "class": "hamza-swap"
@@ -2865,12 +2319,6 @@
    "correction": "محتلة",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "تطبَق",
-   "correction": "تطبيق",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "حزبةم",
@@ -2897,13 +2345,13 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "دأو",
+   "typo": "دآو",
    "correction": "داو",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "نيآت",
+   "typo": "نيإت",
    "correction": "نيات",
    "weight": 1,
    "class": "hamza-swap"
@@ -2913,18 +2361,6 @@
    "correction": "للان",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "فودهه",
-   "correction": "فوده",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "إعدا-ات",
-   "correction": "إعدادات",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "أدامزز",
@@ -2939,7 +2375,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "مخبرآ",
+   "typo": "مخبرإ",
    "correction": "مخبرا",
    "weight": 1,
    "class": "hamza-swap"
@@ -2969,7 +2405,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "يتبناهأ",
+   "typo": "يتبناهآ",
    "correction": "يتبناها",
    "weight": 1,
    "class": "hamza-swap"
@@ -2993,13 +2429,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "بدوآم",
+   "typo": "بدوإم",
    "correction": "بدوام",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "للقإدة",
+   "typo": "للقأدة",
    "correction": "للقادة",
    "weight": 1,
    "class": "hamza-swap"
@@ -3017,7 +2453,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "الآستشفاء",
+   "typo": "الإستشفاء",
    "correction": "الاستشفاء",
    "weight": 1,
    "class": "hamza-swap"
@@ -3041,7 +2477,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "بآلتعليمات",
+   "typo": "بإلتعليمات",
    "correction": "بالتعليمات",
    "weight": 1,
    "class": "hamza-swap"
@@ -3057,12 +2493,6 @@
    "correction": "ومحددة",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "إلمفوض",
-   "correction": "المفوض",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "شاعدو",
@@ -3083,20 +2513,8 @@
    "class": "far-sub"
   },
   {
-   "typo": "أأفقيا",
-   "correction": "أفقيا",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "نآحيتها",
+   "typo": "نإحيتها",
    "correction": "ناحيتها",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "تضحى",
-   "correction": "تضحي",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -3125,22 +2543,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "عمريه",
-   "correction": "عمرية",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "كبريتآت",
+   "typo": "كبريتإت",
    "correction": "كبريتات",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "يلك",
-   "correction": "يفك",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "بسمحوا",
@@ -3155,12 +2561,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "تلاحظوا",
-   "correction": "تلاحظون",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "معاارضو",
    "correction": "معارضو",
    "weight": 1,
@@ -3173,16 +2573,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "تدخلوإ",
+   "typo": "تدخلوأ",
    "correction": "تدخلوا",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "فطلة",
-   "correction": "مطلة",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "ههاها",
@@ -3203,13 +2597,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "المثإرة",
+   "typo": "المثأرة",
    "correction": "المثارة",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "أليحيى",
+   "typo": "آليحيى",
    "correction": "اليحيى",
    "weight": 1,
    "class": "hamza-swap"
@@ -3245,12 +2639,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "والفضلية",
-   "correction": "والفضيلة",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "ككسي",
    "correction": "كسي",
    "weight": 1,
@@ -3263,13 +2651,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "م‌عصبة",
-   "correction": "متعصبة",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "عرسآن",
+   "typo": "عرسإن",
    "correction": "عرسان",
    "weight": 1,
    "class": "hamza-swap"
@@ -3283,18 +2665,6 @@
   {
    "typo": "ىين",
    "correction": "يين",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "آنتشرت",
-   "correction": "أنتشرت",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "ألروج",
-   "correction": "الروج",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -3335,7 +2705,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "آحب",
+   "typo": "إحب",
    "correction": "أحب",
    "weight": 1,
    "class": "hamza-swap"
@@ -3347,28 +2717,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ال1يانه",
-   "correction": "الصيانه",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "حزنة",
-   "correction": "حزنه",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "تأميناع",
    "correction": "تأمينات",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ُلقرنفل",
-   "correction": "القرنفل",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "بوقكت",
@@ -3379,12 +2731,6 @@
   {
    "typo": "تيأء",
    "correction": "تيأس",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "الأواهي",
-   "correction": "الأواني",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -3413,20 +2759,8 @@
    "class": "double-insert"
   },
   {
-   "typo": "رآنية",
+   "typo": "رإنية",
    "correction": "رانية",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "أقليهم",
-   "correction": "أهليهم",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "بحركه",
-   "correction": "بحركة",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -3449,12 +2783,6 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "قيا-تك",
-   "correction": "قيادتك",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "للاستغلامات",
    "correction": "للاستعلامات",
    "weight": 1,
@@ -3473,7 +2801,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "آرأئهم",
+   "typo": "آرآئهم",
    "correction": "آرائهم",
    "weight": 1,
    "class": "hamza-swap"
@@ -3503,16 +2831,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "مصأرع",
+   "typo": "مصآرع",
    "correction": "مصارع",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "ترسيي",
-   "correction": "ترسي",
-   "weight": 1,
-   "class": "double-insert"
   },
   {
    "typo": "فلغائه",
@@ -3523,12 +2845,6 @@
   {
    "typo": "ابنهتم",
    "correction": "ابنتهم",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "كبهر",
-   "correction": "كبره",
    "weight": 1,
    "class": "transposition"
   },
@@ -3593,7 +2909,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "للإسطول",
+   "typo": "للاسطول",
    "correction": "للأسطول",
    "weight": 1,
    "class": "hamza-swap"
@@ -3617,7 +2933,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "بوإبل",
+   "typo": "بوأبل",
    "correction": "بوابل",
    "weight": 1,
    "class": "hamza-swap"
@@ -3633,12 +2949,6 @@
    "correction": "والجمارك",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "بيدرْ",
-   "correction": "بيدرو",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "زنحن",
@@ -3659,12 +2969,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "الفادية",
-   "correction": "الفادحة",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "اختفظ",
    "correction": "احتفظ",
    "weight": 1,
@@ -3677,28 +2981,16 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "أفطلق",
-   "correction": "فأطلق",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "كمتفية",
    "correction": "مكتفية",
    "weight": 1,
    "class": "transposition"
   },
   {
-   "typo": "الاردآف",
+   "typo": "الاردإف",
    "correction": "الارداف",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "دلوتنا",
-   "correction": "دولتنا",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "فههمي",
@@ -3713,12 +3005,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وسيي",
-   "correction": "وسي",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "تتدفع",
    "correction": "تندفع",
    "weight": 1,
@@ -3729,12 +3015,6 @@
    "correction": "يسابق",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "قلف",
-   "correction": "قفل",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "اللمتطرف",
@@ -3755,22 +3035,10 @@
    "class": "transposition"
   },
   {
-   "typo": "أللغاز",
-   "correction": "ألغاز",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "وسيوز",
    "correction": "سويوز",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "تفادت",
-   "correction": "تفاوت",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "اتصبح",
@@ -3791,7 +3059,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "آلبرنابيو",
+   "typo": "إلبرنابيو",
    "correction": "البرنابيو",
    "weight": 1,
    "class": "hamza-swap"
@@ -3799,12 +3067,6 @@
   {
    "typo": "الةصنيع",
    "correction": "التصنيع",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "أنملت",
-   "correction": "أنزلت",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -3821,19 +3083,13 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "إلبيضة",
-   "correction": "البيضة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "ومتمىز",
    "correction": "ومتميز",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "بالمنظأر",
+   "typo": "بالمنظآر",
    "correction": "بالمنظار",
    "weight": 1,
    "class": "hamza-swap"
@@ -3857,18 +3113,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "لمحلتا",
-   "correction": "لمحلات",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "الإهرامات",
-   "correction": "الاهرامات",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "إيبصي",
    "correction": "إيباي",
    "weight": 1,
@@ -3881,25 +3125,13 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "تعمجت",
-   "correction": "تعمدت",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "بأحوأل",
+   "typo": "بأحوآل",
    "correction": "بأحوال",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "الإدوات",
-   "correction": "الادوات",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "بلأحدود",
+   "typo": "بلآحدود",
    "correction": "بلاحدود",
    "weight": 1,
    "class": "hamza-swap"
@@ -3939,12 +3171,6 @@
    "correction": "يشتبه",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "سورته",
-   "correction": "صورته",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "اريح",
@@ -3995,19 +3221,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "أسئل‌",
-   "correction": "أسئله",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "ودبتوم",
    "correction": "ودبلوم",
    "weight": 1,
    "class": "far-sub"
   },
   {
-   "typo": "ومجآني",
+   "typo": "ومجإني",
    "correction": "ومجاني",
    "weight": 1,
    "class": "hamza-swap"
@@ -4015,12 +3235,6 @@
   {
    "typo": "بفايا",
    "correction": "بقايا",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "أثر7ا",
-   "correction": "أثرها",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -4041,12 +3255,6 @@
    "correction": "اعمالنا",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "تفي-",
-   "correction": "تفيد",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "لفيدين",
@@ -4073,7 +3281,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "يجتمعوأ",
+   "typo": "يجتمعوآ",
    "correction": "يجتمعوا",
    "weight": 1,
    "class": "hamza-swap"
@@ -4089,18 +3297,6 @@
    "correction": "الفقمة",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "نفترش",
-   "correction": "نفترض",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ِينطق",
-   "correction": "وينطق",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "الحظفرة",
@@ -4127,46 +3323,34 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ألمساواة",
-   "correction": "المساواة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "دمأغها",
+   "typo": "دمآغها",
    "correction": "دماغها",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "إلفحوص",
-   "correction": "الفحوص",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "جأليري",
+   "typo": "جآليري",
    "correction": "جاليري",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "محركإ",
+   "typo": "محركأ",
    "correction": "محركا",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "الخِسة",
-   "correction": "الخمسة",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "ققبر",
    "correction": "قبر",
    "weight": 1,
    "class": "double-insert"
+  },
+  {
+   "typo": "وإخرون",
+   "correction": "واخرون",
+   "weight": 1,
+   "class": "hamza-swap"
   },
   {
    "typo": "نأنصاره",
@@ -4181,28 +3365,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "ماثلا",
-   "correction": "مماثلا",
-   "weight": 1,
-   "class": "double-delete"
-  },
-  {
-   "typo": "حوريه",
-   "correction": "حورية",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "ااضمادات",
    "correction": "الضمادات",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "مِونين",
-   "correction": "مكونين",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "عتائر",
@@ -4211,7 +3377,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "العرأب",
+   "typo": "العرآب",
    "correction": "العراب",
    "weight": 1,
    "class": "hamza-swap"
@@ -4271,22 +3437,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ُنه",
-   "correction": "كنه",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "الاسإءة",
+   "typo": "الاسأءة",
    "correction": "الاساءة",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "خدمتم",
-   "correction": "خدمتك",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "يشعرضا",
@@ -4299,12 +3453,6 @@
    "correction": "مقاما",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "ونيه",
-   "correction": "ونية",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "السوييدية",
@@ -4337,12 +3485,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "اًنخعي",
-   "correction": "النخعي",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "التدقمي",
    "correction": "التقدمي",
    "weight": 1,
@@ -4367,12 +3509,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "ُقنابل",
-   "correction": "بقنابل",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "دأبر",
    "correction": "أدبر",
    "weight": 1,
@@ -4389,12 +3525,6 @@
    "correction": "حميات",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "البطيريين",
-   "correction": "البيطريين",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "تريي",
@@ -4451,6 +3581,12 @@
    "class": "far-sub"
   },
   {
+   "typo": "إرى",
+   "correction": "آرى",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
    "typo": "يسدار",
    "correction": "سيدار",
    "weight": 1,
@@ -4469,7 +3605,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "إعطتك",
+   "typo": "اعطتك",
    "correction": "أعطتك",
    "weight": 1,
    "class": "hamza-swap"
@@ -4481,7 +3617,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وبإستثناء",
+   "typo": "وبأستثناء",
    "correction": "وباستثناء",
    "weight": 1,
    "class": "hamza-swap"
@@ -4511,7 +3647,7 @@
    "class": "transposition"
   },
   {
-   "typo": "طنطأوى",
+   "typo": "طنطآوى",
    "correction": "طنطاوى",
    "weight": 1,
    "class": "hamza-swap"
@@ -4541,7 +3677,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "بألسحب",
+   "typo": "بآلسحب",
    "correction": "بالسحب",
    "weight": 1,
    "class": "hamza-swap"
@@ -4563,12 +3699,6 @@
    "correction": "ياولدي",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ألموديل",
-   "correction": "الموديل",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "كقبن",
@@ -4599,12 +3729,6 @@
    "correction": "والأسر",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "الحاطب",
-   "correction": "الحاجب",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "وتزىل",
@@ -4673,12 +3797,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "سيشيب",
-   "correction": "سيشيل",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ويتوده",
    "correction": "ويتوجه",
    "weight": 1,
@@ -4701,12 +3819,6 @@
    "correction": "استفد",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "لبانة",
-   "correction": "لابنة",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "لةجهات",
@@ -4781,7 +3893,7 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "التحأيل",
+   "typo": "التحآيل",
    "correction": "التحايل",
    "weight": 1,
    "class": "hamza-swap"
@@ -4805,20 +3917,8 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ق1دوا",
-   "correction": "قصدوا",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "عوإصف",
+   "typo": "عوأصف",
    "correction": "عواصف",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "إلمحفزات",
-   "correction": "المحفزات",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -4829,7 +3929,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وذآع",
+   "typo": "وذإع",
    "correction": "وذاع",
    "weight": 1,
    "class": "hamza-swap"
@@ -4847,31 +3947,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "جهر",
-   "correction": "قهر",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "آلغوث",
+   "typo": "إلغوث",
    "correction": "الغوث",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "لعل7ا",
-   "correction": "لعلها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "استشهاد7",
-   "correction": "استشهاده",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "لإعلم",
+   "typo": "لاعلم",
    "correction": "لأعلم",
    "weight": 1,
    "class": "hamza-swap"
@@ -4899,12 +3981,6 @@
    "correction": "الاجرام",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "إلمتحققة",
-   "correction": "المتحققة",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "الجسيد",
@@ -4937,7 +4013,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "قوأتها",
+   "typo": "قوآتها",
    "correction": "قواتها",
    "weight": 1,
    "class": "hamza-swap"
@@ -4973,7 +4049,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "قتآلا",
+   "typo": "قتإلا",
    "correction": "قتالا",
    "weight": 1,
    "class": "hamza-swap"
@@ -5045,7 +4121,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "والثلإجات",
+   "typo": "والثلأجات",
    "correction": "والثلاجات",
    "weight": 1,
    "class": "hamza-swap"
@@ -5081,12 +4157,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ّقيرا",
-   "correction": "فقيرا",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "بىد",
    "correction": "بيد",
    "weight": 1,
@@ -5117,7 +4187,7 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "ذرعإ",
+   "typo": "ذرعأ",
    "correction": "ذرعا",
    "weight": 1,
    "class": "hamza-swap"
@@ -5153,7 +4223,7 @@
    "class": "transposition"
   },
   {
-   "typo": "كرآهيته",
+   "typo": "كرإهيته",
    "correction": "كراهيته",
    "weight": 1,
    "class": "hamza-swap"
@@ -5171,12 +4241,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "لخفيها",
-   "correction": "أخفيها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "خجواته",
    "correction": "خطواته",
    "weight": 1,
@@ -5187,12 +4251,6 @@
    "correction": "waiting",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "حاصية",
-   "correction": "خاصية",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "ترقح",
@@ -5213,24 +4271,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "إنتقده",
-   "correction": "انتقده",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "تعطن",
-   "correction": "تطعن",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "ببدلية",
-   "correction": "ببلدية",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "كاتريني",
    "correction": "كاترينا",
    "weight": 1,
@@ -5249,7 +4289,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "وإتلتيكو",
+   "typo": "واتلتيكو",
    "correction": "وأتلتيكو",
    "weight": 1,
    "class": "hamza-swap"
@@ -5265,12 +4305,6 @@
    "correction": "تنضم",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "حُوتي",
-   "correction": "حلوتي",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "حجزهاا",
@@ -5297,12 +4331,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "إلنقود",
-   "correction": "النقود",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "لققلبه",
    "correction": "لقلبه",
    "weight": 1,
@@ -5325,12 +4353,6 @@
    "correction": "والغموض",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ثمِ",
-   "correction": "ثمن",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "بالحيورنات",
@@ -5369,26 +4391,14 @@
    "class": "far-sub"
   },
   {
-   "typo": "توقعاها",
-   "correction": "توقعتها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "يطلعزن",
    "correction": "يطلعون",
    "weight": 1,
    "class": "adjacent-sub"
   },
   {
-   "typo": "ستينيإت",
+   "typo": "ستينيأت",
    "correction": "ستينيات",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "إلفيل",
-   "correction": "الفيل",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -5397,12 +4407,6 @@
    "correction": "يقودهم",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "تماديني",
-   "correction": "تناديني",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "اعامادات",
@@ -5417,25 +4421,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "يعت",
-   "correction": "بعت",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "وفينن",
    "correction": "وفين",
    "weight": 1,
    "class": "double-insert"
   },
   {
-   "typo": "بيانع",
-   "correction": "بيانه",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "التآمل",
+   "typo": "التإمل",
    "correction": "التأمل",
    "weight": 1,
    "class": "hamza-swap"
@@ -5465,12 +4457,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "تذف",
-   "correction": "تذل",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "الغاين",
    "correction": "الغاني",
    "weight": 1,
@@ -5495,24 +4481,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "إضعف",
-   "correction": "أضعف",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "سيدنؤ",
-   "correction": "سيدني",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "‌خوم",
-   "correction": "تخوم",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "تسبابها",
    "correction": "أسبابها",
    "weight": 1,
@@ -5523,12 +4491,6 @@
    "correction": "المدقق",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "لهليات",
-   "correction": "لآليات",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "بمحتتوى",
@@ -5555,34 +4517,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "للمعالجتها",
-   "correction": "لمعالجتها",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "ةاعد",
    "correction": "واعد",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "وسائلاها",
-   "correction": "وسائلها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "وحذرك",
-   "correction": "وحذرت",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "لآبنه",
-   "correction": "لابنه",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "شرووطي",
@@ -5603,7 +4541,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "وامتيآزات",
+   "typo": "وامتيإزات",
    "correction": "وامتيازات",
    "weight": 1,
    "class": "hamza-swap"
@@ -5615,19 +4553,13 @@
    "class": "far-sub"
   },
   {
-   "typo": "سنجاء",
-   "correction": "سجناء",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "سعآت",
+   "typo": "سعإت",
    "correction": "سعات",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "سآبدأ",
+   "typo": "سإبدأ",
    "correction": "سأبدأ",
    "weight": 1,
    "class": "hamza-swap"
@@ -5645,19 +4577,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "التيلية",
-   "correction": "التالية",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "آلمنخفض",
+   "typo": "إلمنخفض",
    "correction": "المنخفض",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "جأسبر",
+   "typo": "جآسبر",
    "correction": "جاسبر",
    "weight": 1,
    "class": "hamza-swap"
@@ -5687,7 +4613,7 @@
    "class": "diacritic-omit"
   },
   {
-   "typo": "للمهأجرين",
+   "typo": "للمهآجرين",
    "correction": "للمهاجرين",
    "weight": 1,
    "class": "hamza-swap"
@@ -5705,19 +4631,13 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "للعك",
-   "correction": "لعلك",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "فألآن",
+   "typo": "فآلآن",
    "correction": "فالآن",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "درإجون",
+   "typo": "درأجون",
    "correction": "دراجون",
    "weight": 1,
    "class": "hamza-swap"
@@ -5749,12 +4669,6 @@
   {
    "typo": "بللمظهر",
    "correction": "بالمظهر",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ولللهم",
-   "correction": "واللهم",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -5813,13 +4727,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "مجهودة",
-   "correction": "مجهوده",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "المحاضرأت",
+   "typo": "المحاضرآت",
    "correction": "المحاضرات",
    "weight": 1,
    "class": "hamza-swap"
@@ -5855,18 +4763,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "تتفاديه",
-   "correction": "تفاديه",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "أتل4ت",
-   "correction": "أتلفت",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "خلدمته",
    "correction": "لخدمته",
    "weight": 1,
@@ -5891,22 +4787,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "قبطيه",
-   "correction": "قبطية",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "ةجعلنا",
    "correction": "وجعلنا",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ّكبه",
-   "correction": "ركبه",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "يلتأكد",
@@ -5957,32 +4841,8 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "للحوض",
-   "correction": "للحوم",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "الياباني7",
-   "correction": "اليابانيه",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "زلكن",
-   "correction": "ولكن",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "غلنشأة",
    "correction": "النشأة",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "وجر9",
-   "correction": "وجرح",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -5995,18 +4855,6 @@
   {
    "typo": "المفاهي",
    "correction": "الملاهي",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "والضر",
-   "correction": "والشر",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "أقو-",
-   "correction": "أقود",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -6033,12 +4881,6 @@
    "correction": "بنيامين",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "ودينيه",
-   "correction": "ودينية",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "وتضهعا",
@@ -6077,7 +4919,7 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "آلملئ",
+   "typo": "إلملئ",
    "correction": "الملئ",
    "weight": 1,
    "class": "hamza-swap"
@@ -6087,12 +4929,6 @@
    "correction": "تقنعه",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "صماه",
-   "correction": "سماه",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "تنظيرر",
@@ -6107,22 +4943,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "4اليري",
-   "correction": "فاليري",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "خفضم",
    "correction": "خفتم",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "ألجنية",
-   "correction": "الجنية",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "المستضضعفين",
@@ -6137,7 +4961,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "آلشمالي",
+   "typo": "إلشمالي",
    "correction": "الشمالي",
    "weight": 1,
    "class": "hamza-swap"
@@ -6149,7 +4973,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "يسإعدوا",
+   "typo": "يسأعدوا",
    "correction": "يساعدوا",
    "weight": 1,
    "class": "hamza-swap"
@@ -6169,12 +4993,6 @@
   {
    "typo": "اللاطتوز",
    "correction": "اللاكتوز",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "تنال7",
-   "correction": "تناله",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -6201,12 +5019,6 @@
    "correction": "النزيف",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "وإع",
-   "correction": "واع",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "غندم",
@@ -6251,24 +5063,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ترجز",
-   "correction": "ترجم",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ت‌كيكه",
-   "correction": "تفكيكه",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "يأنن",
-   "correction": "يأن",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "سيرجىو",
    "correction": "سيرجيو",
    "weight": 1,
@@ -6293,12 +5087,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "وسمم",
-   "correction": "وسم",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "ىريده",
    "correction": "اريده",
    "weight": 1,
@@ -6317,12 +5105,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "أضرتنا",
-   "correction": "أسرتنا",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "والبرازلي",
    "correction": "والبرازيل",
    "weight": 1,
@@ -6335,7 +5117,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "بأسمأئها",
+   "typo": "بأسمآئها",
    "correction": "بأسمائها",
    "weight": 1,
    "class": "hamza-swap"
@@ -6347,7 +5129,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "اتحإديا",
+   "typo": "اتحأديا",
    "correction": "اتحاديا",
    "weight": 1,
    "class": "hamza-swap"
@@ -6413,7 +5195,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "خذوإ",
+   "typo": "خذوأ",
    "correction": "خذوا",
    "weight": 1,
    "class": "hamza-swap"
@@ -6449,13 +5231,7 @@
    "class": "transposition"
   },
   {
-   "typo": "وتحل3",
-   "correction": "وتحلق",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "للحركإت",
+   "typo": "للحركأت",
    "correction": "للحركات",
    "weight": 1,
    "class": "hamza-swap"
@@ -6467,16 +5243,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "المفأجأه",
+   "typo": "المفآجأه",
    "correction": "المفاجأه",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "عوددنا",
-   "correction": "عودنا",
-   "weight": 1,
-   "class": "double-insert"
   },
   {
    "typo": "ميينه",
@@ -6491,13 +5261,13 @@
    "class": "far-sub"
   },
   {
-   "typo": "ميزأن",
+   "typo": "ميزآن",
    "correction": "ميزان",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "لعلإقة",
+   "typo": "لعلأقة",
    "correction": "لعلاقة",
    "weight": 1,
    "class": "hamza-swap"
@@ -6507,12 +5277,6 @@
    "correction": "المواضيع",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "السكرتاريةة",
-   "correction": "السكرتارية",
-   "weight": 1,
-   "class": "double-insert"
   },
   {
    "typo": "أهزس",
@@ -6575,12 +5339,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "وفلحا",
-   "correction": "وفلاح",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "دنؤء",
    "correction": "دنيء",
    "weight": 1,
@@ -6599,7 +5357,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "التوام",
+   "typo": "التوآم",
    "correction": "التوأم",
    "weight": 1,
    "class": "hamza-swap"
@@ -6609,12 +5367,6 @@
    "correction": "إقناعها",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "ا‌أقمشة",
-   "correction": "الأقمشة",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "التتوجيهية",
@@ -6641,12 +5393,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "إعدها",
-   "correction": "أعدها",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "متسخةة",
    "correction": "متسخة",
    "weight": 1,
@@ -6665,12 +5411,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "بليغه",
-   "correction": "بليغة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "اافضة",
    "correction": "الفضة",
    "weight": 1,
@@ -6683,38 +5423,20 @@
    "class": "double-insert"
   },
   {
-   "typo": "هأن",
+   "typo": "هآن",
    "correction": "هان",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "متوإجدين",
+   "typo": "متوأجدين",
    "correction": "متواجدين",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "ماصا",
-   "correction": "ماسا",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ومعبح",
    "correction": "ومسبح",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "للأبواق",
-   "correction": "للأبواب",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "لاًها",
-   "correction": "لانها",
    "weight": 1,
    "class": "far-sub"
   },
@@ -6737,16 +5459,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "المخباة",
+   "typo": "المخبآة",
    "correction": "المخبأة",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "ب-ك",
-   "correction": "بدك",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "لاعمارات",
@@ -6761,28 +5477,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "لللمصطلح",
-   "correction": "للمصطلح",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "خرقجا",
    "correction": "خريجا",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "إحنها",
-   "correction": "شحنها",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "مقلدو",
-   "correction": "مقلدة",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "استعداهدم",
@@ -6791,13 +5489,7 @@
    "class": "transposition"
   },
   {
-   "typo": "متو3عين",
-   "correction": "متوقعين",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "فرآئض",
+   "typo": "فرإئض",
    "correction": "فرائض",
    "weight": 1,
    "class": "hamza-swap"
@@ -6833,12 +5525,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "داخلاك",
-   "correction": "داخلك",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ىلمستوحى",
    "correction": "المستوحى",
    "weight": 1,
@@ -6851,8 +5537,14 @@
    "class": "transposition"
   },
   {
-   "typo": "إنشأت",
+   "typo": "إنشآت",
    "correction": "إنشات",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "وآذكر",
+   "correction": "واذكر",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -6863,7 +5555,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "تشآهدون",
+   "typo": "تشإهدون",
    "correction": "تشاهدون",
    "weight": 1,
    "class": "hamza-swap"
@@ -6893,19 +5585,13 @@
    "class": "far-sub"
   },
   {
-   "typo": "بيت‌",
-   "correction": "بيتن",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "التتدريب",
    "correction": "التدريب",
    "weight": 1,
    "class": "double-insert"
   },
   {
-   "typo": "آلعنبر",
+   "typo": "إلعنبر",
    "correction": "العنبر",
    "weight": 1,
    "class": "hamza-swap"
@@ -6923,34 +5609,10 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "أمميات",
-   "correction": "أمنيات",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ناكس",
-   "correction": "ناسك",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "حينت",
-   "correction": "حينا",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ئحوى",
    "correction": "فحوى",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "وتلزمان",
-   "correction": "والزمان",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "واعضاو",
@@ -6987,12 +5649,6 @@
    "correction": "بالانتماء",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ننهب",
-   "correction": "نهب",
-   "weight": 1,
-   "class": "double-insert"
   },
   {
    "typo": "ابتسك",
@@ -7049,28 +5705,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "فلتخن",
-   "correction": "فلتكن",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "إلمستمدة",
-   "correction": "المستمدة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "لآلفزيون",
    "correction": "لتلفزيون",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "لوحتاه",
-   "correction": "لوحاته",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "راوها",
@@ -7091,7 +5729,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "فقهإ",
+   "typo": "فقهأ",
    "correction": "فقها",
    "weight": 1,
    "class": "hamza-swap"
@@ -7133,10 +5771,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "خرمي",
-   "correction": "هرمي",
+   "typo": "وآثبت",
+   "correction": "واثبت",
    "weight": 1,
-   "class": "adjacent-sub"
+   "class": "hamza-swap"
   },
   {
    "typo": "واللسعار",
@@ -7151,34 +5789,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "وبسعره",
-   "correction": "وبسرعه",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "مآدية",
+   "typo": "مإدية",
    "correction": "مادية",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "مفلسو",
-   "correction": "مفلسة",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "ألمستقلة",
-   "correction": "المستقلة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "أشنت",
-   "correction": "أشنع",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "ممجبر",
@@ -7217,16 +5831,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "وإلمكون",
+   "typo": "وألمكون",
    "correction": "والمكون",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "ال6روة",
-   "correction": "العروة",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "الإخواةي",
@@ -7277,7 +5885,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "التسآمي",
+   "typo": "التسإمي",
    "correction": "التسامي",
    "weight": 1,
    "class": "hamza-swap"
@@ -7295,25 +5903,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "بولكم",
-   "correction": "بالكم",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "6كس",
-   "correction": "عكس",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "yac",
    "correction": "mac",
    "weight": 1,
    "class": "far-sub"
   },
   {
-   "typo": "شؤونهآ",
+   "typo": "شؤونهإ",
    "correction": "شؤونها",
    "weight": 1,
    "class": "hamza-swap"
@@ -7355,7 +5951,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "التقأضي",
+   "typo": "التقآضي",
    "correction": "التقاضي",
    "weight": 1,
    "class": "hamza-swap"
@@ -7373,25 +5969,19 @@
    "class": "double-insert"
   },
   {
-   "typo": "بالانتحاب",
-   "correction": "بالانتحار",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "اسبدائي",
    "correction": "البدائي",
    "weight": 1,
    "class": "far-sub"
   },
   {
-   "typo": "وآفتح",
+   "typo": "وإفتح",
    "correction": "وأفتح",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "متإهات",
+   "typo": "متأهات",
    "correction": "متاهات",
    "weight": 1,
    "class": "hamza-swap"
@@ -7419,12 +6009,6 @@
    "correction": "العريقة",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "وكلحانات",
-   "correction": "والحانات",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "تتبلغني",
@@ -7493,12 +6077,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "أكفظه",
-   "correction": "أحفظه",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "يللهث",
    "correction": "يلهث",
    "weight": 1,
@@ -7529,22 +6107,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ألمرتضى",
-   "correction": "المرتضى",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "ظالتصديق",
    "correction": "والتصديق",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "وكالب",
-   "correction": "وطالب",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "يتسعع",
@@ -7589,7 +6155,7 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "وانتقأد",
+   "typo": "وانتقآد",
    "correction": "وانتقاد",
    "weight": 1,
    "class": "hamza-swap"
@@ -7607,13 +6173,19 @@
    "class": "far-sub"
   },
   {
+   "typo": "آصبح",
+   "correction": "اصبح",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
    "typo": "مارأةكم",
    "correction": "مارأيكم",
    "weight": 1,
    "class": "far-sub"
   },
   {
-   "typo": "تخصصإت",
+   "typo": "تخصصأت",
    "correction": "تخصصات",
    "weight": 1,
    "class": "hamza-swap"
@@ -7625,22 +6197,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "الساهي",
-   "correction": "الساهر",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "اللشمراني",
    "correction": "الشمراني",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "صَع",
-   "correction": "صدع",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "يسميةم",
@@ -7663,12 +6223,6 @@
   {
    "typo": "توظيقهم",
    "correction": "توظيفهم",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "لأستار",
-   "correction": "لأسعار",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -7709,12 +6263,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "للمحمد",
-   "correction": "لمحمد",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "يياقلبي",
    "correction": "ياقلبي",
    "weight": 1,
@@ -7727,8 +6275,8 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وتقنيه",
-   "correction": "وتقنية",
+   "typo": "الآسطول",
+   "correction": "الاسطول",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -7737,12 +6285,6 @@
    "correction": "إمكانات",
    "weight": 1,
    "class": "diacritic-omit"
-  },
-  {
-   "typo": "وليهه",
-   "correction": "وليه",
-   "weight": 1,
-   "class": "double-insert"
   },
   {
    "typo": "بالشكك",
@@ -7757,12 +6299,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "عمشا",
-   "correction": "عماش",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "الأواسخ",
    "correction": "الأوساخ",
    "weight": 1,
@@ -7773,12 +6309,6 @@
    "correction": "يشمل",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "متعرجه",
-   "correction": "متعرجة",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "اغانثه",
@@ -7793,12 +6323,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "للكسب",
-   "correction": "لكسب",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
    "typo": "وحذب",
    "correction": "وحذر",
    "weight": 1,
@@ -7809,18 +6333,6 @@
    "correction": "بالمركبة",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "يهلا",
-   "correction": "سهلا",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "إلكلاب",
-   "correction": "الكلاب",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "ابمنطقية",
@@ -7865,7 +6377,7 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "ألداودي",
+   "typo": "آلداودي",
    "correction": "الداودي",
    "weight": 1,
    "class": "hamza-swap"
@@ -7877,7 +6389,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "يزودنأ",
+   "typo": "يزودنآ",
    "correction": "يزودنا",
    "weight": 1,
    "class": "hamza-swap"
@@ -7895,7 +6407,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "يدإعب",
+   "typo": "يدأعب",
    "correction": "يداعب",
    "weight": 1,
    "class": "hamza-swap"
@@ -7923,18 +6435,6 @@
    "correction": "الفينيقية",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "وْضعت",
-   "correction": "ووضعت",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "آملاي",
-   "correction": "آمالي",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "مبروط",
@@ -7967,7 +6467,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "لصرإع",
+   "typo": "لصرأع",
    "correction": "لصراع",
    "weight": 1,
    "class": "hamza-swap"
@@ -8009,13 +6509,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "للتسليح",
-   "correction": "لتسليح",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "هآئمة",
+   "typo": "هإئمة",
    "correction": "هائمة",
    "weight": 1,
    "class": "hamza-swap"
@@ -8069,18 +6563,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "وبدورة",
-   "correction": "وبدوره",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "ونديب",
-   "correction": "ونجيب",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "اولفطريات",
    "correction": "والفطريات",
    "weight": 1,
@@ -8105,7 +6587,7 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "الآسرع",
+   "typo": "الإسرع",
    "correction": "الاسرع",
    "weight": 1,
    "class": "hamza-swap"
@@ -8153,22 +6635,10 @@
    "class": "transposition"
   },
   {
-   "typo": "زملإئي",
+   "typo": "زملأئي",
    "correction": "زملائي",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "فبيل",
-   "correction": "حبيل",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "تتفهمك",
-   "correction": "تفهمك",
-   "weight": 1,
-   "class": "double-insert"
   },
   {
    "typo": "اهساحرات",
@@ -8219,12 +6689,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ألمتوافق",
-   "correction": "المتوافق",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "الكريهى",
    "correction": "الكريهة",
    "weight": 1,
@@ -8239,12 +6703,6 @@
   {
    "typo": "العللانية",
    "correction": "العلانية",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "يكتتب",
-   "correction": "يكتب",
    "weight": 1,
    "class": "double-insert"
   },
@@ -8303,12 +6761,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "أتر",
-   "correction": "أرت",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "ولادفء",
    "correction": "والدفء",
    "weight": 1,
@@ -8333,22 +6785,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "الأصواف",
-   "correction": "الأوصاف",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "والتحالييل",
    "correction": "والتحاليل",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "لتقينه",
-   "correction": "تلقينه",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "تصرحح",
@@ -8369,12 +6809,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "وأقلب",
-   "correction": "وأقبل",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "للإإرادة",
    "correction": "للإرادة",
    "weight": 1,
@@ -8393,13 +6827,13 @@
    "class": "far-sub"
   },
   {
-   "typo": "وآلمدني",
+   "typo": "وإلمدني",
    "correction": "والمدني",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "أبيضإ",
+   "typo": "أبيضأ",
    "correction": "أبيضا",
    "weight": 1,
    "class": "hamza-swap"
@@ -8429,7 +6863,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "مأريو",
+   "typo": "مآريو",
    "correction": "ماريو",
    "weight": 1,
    "class": "hamza-swap"
@@ -8477,12 +6911,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "للعنكبوتية",
-   "correction": "العنكبوتية",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "النهائيي",
    "correction": "النهائي",
    "weight": 1,
@@ -8501,7 +6929,7 @@
    "class": "transposition"
   },
   {
-   "typo": "أقفآل",
+   "typo": "أقفإل",
    "correction": "أقفال",
    "weight": 1,
    "class": "hamza-swap"
@@ -8519,7 +6947,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "المآكينات",
+   "typo": "المإكينات",
    "correction": "الماكينات",
    "weight": 1,
    "class": "hamza-swap"
@@ -8585,7 +7013,7 @@
    "class": "transposition"
   },
   {
-   "typo": "شأنإ",
+   "typo": "شأنأ",
    "correction": "شأنا",
    "weight": 1,
    "class": "hamza-swap"
@@ -8603,18 +7031,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "نصلل",
-   "correction": "نصلي",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "ليعطى",
-   "correction": "ليعطي",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "اتلاهتا",
    "correction": "اتلانتا",
    "weight": 1,
@@ -8627,16 +7043,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "احجية",
+   "typo": "آحجية",
    "correction": "أحجية",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "أ4حص",
-   "correction": "أفحص",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "تععرية",
@@ -8651,25 +7061,19 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "بآبشع",
+   "typo": "بإبشع",
    "correction": "بأبشع",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "وآعظم",
+   "typo": "وإعظم",
    "correction": "وأعظم",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "ومنظمه",
-   "correction": "ومنظمة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "ديانأت",
+   "typo": "ديانآت",
    "correction": "ديانات",
    "weight": 1,
    "class": "hamza-swap"
@@ -8679,12 +7083,6 @@
    "correction": "دخولها",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "ألركلة",
-   "correction": "الركلة",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "اللثما",
@@ -8705,7 +7103,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "آلمسجونين",
+   "typo": "إلمسجونين",
    "correction": "المسجونين",
    "weight": 1,
    "class": "hamza-swap"
@@ -8735,13 +7133,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "للكمان",
-   "correction": "للمكان",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "دأؤود",
+   "typo": "دآؤود",
    "correction": "داؤود",
    "weight": 1,
    "class": "hamza-swap"
@@ -8759,16 +7151,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "لملإحظة",
+   "typo": "لملأحظة",
    "correction": "لملاحظة",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "بفرك",
-   "correction": "تفرك",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "احللزونية",
@@ -8801,22 +7187,10 @@
    "class": "transposition"
   },
   {
-   "typo": "طباه",
-   "correction": "طباخ",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ايضربة",
    "correction": "الضربة",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "الوجلة",
-   "correction": "الجولة",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "بالخخارج",
@@ -8843,7 +7217,7 @@
    "class": "transposition"
   },
   {
-   "typo": "وألنسخة",
+   "typo": "وآلنسخة",
    "correction": "والنسخة",
    "weight": 1,
    "class": "hamza-swap"
@@ -8909,7 +7283,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "لعيأدة",
+   "typo": "لعيآدة",
    "correction": "لعيادة",
    "weight": 1,
    "class": "hamza-swap"
@@ -8957,7 +7331,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "آستغرب",
+   "typo": "إستغرب",
    "correction": "استغرب",
    "weight": 1,
    "class": "hamza-swap"
@@ -8969,7 +7343,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "الصوأمع",
+   "typo": "الصوآمع",
    "correction": "الصوامع",
    "weight": 1,
    "class": "hamza-swap"
@@ -8993,20 +7367,8 @@
    "class": "transposition"
   },
   {
-   "typo": "وإضافت",
-   "correction": "وأضافت",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "الاغريزة",
    "correction": "الغريزة",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "يعجبكن",
-   "correction": "يعجبكم",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -9019,12 +7381,6 @@
   {
    "typo": "غلكارتون",
    "correction": "الكارتون",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "وذرينه",
-   "correction": "وذريته",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -9047,7 +7403,7 @@
    "class": "transposition"
   },
   {
-   "typo": "ديانإ",
+   "typo": "ديانأ",
    "correction": "ديانا",
    "weight": 1,
    "class": "hamza-swap"
@@ -9059,7 +7415,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وألمحال",
+   "typo": "وآلمحال",
    "correction": "والمحال",
    "weight": 1,
    "class": "hamza-swap"
@@ -9077,19 +7433,19 @@
    "class": "far-sub"
   },
   {
-   "typo": "وألتقدم",
+   "typo": "وآلتقدم",
    "correction": "والتقدم",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "يلإ",
+   "typo": "يلأ",
    "correction": "يلا",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "الآمنية",
+   "typo": "الإمنية",
    "correction": "الامنية",
    "weight": 1,
    "class": "hamza-swap"
@@ -9099,12 +7455,6 @@
    "correction": "الفجوة",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "أكدينا",
-   "correction": "أيدينا",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "يقوول",
@@ -9137,12 +7487,6 @@
    "class": "far-sub"
   },
   {
-   "typo": "يإبني",
-   "correction": "يابني",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "أرهث",
    "correction": "أرهق",
    "weight": 1,
@@ -9171,12 +7515,6 @@
    "correction": "تحد",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "ضعية",
-   "correction": "ضعيه",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "شكرتارية",
@@ -9221,7 +7559,7 @@
    "class": "transposition"
   },
   {
-   "typo": "جإمعي",
+   "typo": "جأمعي",
    "correction": "جامعي",
    "weight": 1,
    "class": "hamza-swap"
@@ -9233,7 +7571,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "لإيحق",
+   "typo": "لأيحق",
    "correction": "لايحق",
    "weight": 1,
    "class": "hamza-swap"
@@ -9241,12 +7579,6 @@
   {
    "typo": "والبروتسن",
    "correction": "والبروتين",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "كفلسين",
-   "correction": "مفلسين",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -9335,16 +7667,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "احلل",
+   "typo": "آحلل",
    "correction": "أحلل",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "تس9ب",
-   "correction": "تسحب",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "يرغأ",
@@ -9353,34 +7679,16 @@
    "class": "far-sub"
   },
   {
-   "typo": "للدالي",
-   "correction": "الدالي",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ْامها",
    "correction": "عامها",
    "weight": 1,
    "class": "far-sub"
   },
   {
-   "typo": "جعلتهأ",
+   "typo": "جعلتهآ",
    "correction": "جعلتها",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "يرك6",
-   "correction": "يركع",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "افس",
-   "correction": "ايس",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "غدخالها",
@@ -9389,19 +7697,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "دوائيي",
-   "correction": "دوائي",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "العسرة",
-   "correction": "العشرة",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "دوإر",
+   "typo": "دوأر",
    "correction": "دوار",
    "weight": 1,
    "class": "hamza-swap"
@@ -9449,12 +7745,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "فرضة",
-   "correction": "فرضه",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "تتحضى",
    "correction": "تحضى",
    "weight": 1,
@@ -9483,18 +7773,6 @@
    "correction": "بأنواع",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "محققه",
-   "correction": "محققة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "مصرحي",
-   "correction": "مسرحي",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "سؤوفاكيا",
@@ -9533,16 +7811,10 @@
    "class": "transposition"
   },
   {
-   "typo": "المسآهم",
+   "typo": "المسإهم",
    "correction": "المساهم",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "ف-احة",
-   "correction": "فداحة",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "الجللبية",
@@ -9569,37 +7841,13 @@
    "class": "far-sub"
   },
   {
-   "typo": "ربإ",
-   "correction": "ربا",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "م3اتلي",
-   "correction": "مقاتلي",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "تتحلم",
    "correction": "تتكلم",
    "weight": 1,
    "class": "adjacent-sub"
   },
   {
-   "typo": "أجهكم",
-   "correction": "أجلكم",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "مه-ئ",
-   "correction": "مهدئ",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "وقآئي",
+   "typo": "وقإئي",
    "correction": "وقائي",
    "weight": 1,
    "class": "hamza-swap"
@@ -9611,16 +7859,10 @@
    "class": "transposition"
   },
   {
-   "typo": "والقأئد",
+   "typo": "والقآئد",
    "correction": "والقائد",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "سيح1ل",
-   "correction": "سيحصل",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "اللسود",
@@ -9641,22 +7883,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ساندة",
-   "correction": "ساندر",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "معاايه",
    "correction": "معاليه",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "إلخلقية",
-   "correction": "الخلقية",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "للفمادق",
@@ -9671,12 +7901,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ضُور",
-   "correction": "ضمور",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "مداحح",
    "correction": "مداح",
    "weight": 1,
@@ -9689,7 +7913,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "الفنآ",
+   "typo": "الفنإ",
    "correction": "الفنا",
    "weight": 1,
    "class": "hamza-swap"
@@ -9707,19 +7931,13 @@
    "class": "transposition"
   },
   {
-   "typo": "وجدفاه",
-   "correction": "وجدناه",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "عدق",
    "correction": "تدق",
    "weight": 1,
    "class": "adjacent-sub"
   },
   {
-   "typo": "بإلسكوت",
+   "typo": "بألسكوت",
    "correction": "بالسكوت",
    "weight": 1,
    "class": "hamza-swap"
@@ -9731,7 +7949,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "ونسآء",
+   "typo": "ونسإء",
    "correction": "ونساء",
    "weight": 1,
    "class": "hamza-swap"
@@ -9749,34 +7967,16 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "وبشده",
-   "correction": "وبشدة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "وومنافسة",
    "correction": "ومنافسة",
    "weight": 1,
    "class": "double-insert"
   },
   {
-   "typo": "وطيرتن",
-   "correction": "وطيران",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ءاكنيها",
    "correction": "ساكنيها",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "يعناك",
-   "correction": "عيناك",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "التليفزيولية",
@@ -9791,13 +7991,7 @@
    "class": "transposition"
   },
   {
-   "typo": "نقس",
-   "correction": "نجس",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "ربهأ",
+   "typo": "ربهآ",
    "correction": "ربها",
    "weight": 1,
    "class": "hamza-swap"
@@ -9807,18 +8001,6 @@
    "correction": "والأجواء",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "م1افحة",
-   "correction": "مصافحة",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "بحلاته",
-   "correction": "رحلاته",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "الفاسدونن",
@@ -9845,12 +8027,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "نئرها",
-   "correction": "نشرها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "امناّ",
    "correction": "امناء",
    "weight": 1,
@@ -9869,7 +8045,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "ثلإث",
+   "typo": "ثلأث",
    "correction": "ثلاث",
    "weight": 1,
    "class": "hamza-swap"
@@ -9911,31 +8087,13 @@
    "class": "far-sub"
   },
   {
-   "typo": "ْلقبرصي",
-   "correction": "القبرصي",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "إصبروا",
-   "correction": "اصبروا",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "بشابة",
-   "correction": "بشارة",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "تتنحدر",
    "correction": "تنحدر",
    "weight": 1,
    "class": "double-insert"
   },
   {
-   "typo": "الأكرآد",
+   "typo": "الأكرإد",
    "correction": "الأكراد",
    "weight": 1,
    "class": "hamza-swap"
@@ -9965,13 +8123,13 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "بإلتصوير",
+   "typo": "بألتصوير",
    "correction": "بالتصوير",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "السيآحي",
+   "typo": "السيإحي",
    "correction": "السياحي",
    "weight": 1,
    "class": "hamza-swap"
@@ -10013,12 +8171,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "أميلي",
-   "correction": "إميلي",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "محبوسص",
    "correction": "محبوسة",
    "weight": 1,
@@ -10037,34 +8189,16 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "تخصهآ",
+   "typo": "تخصهإ",
    "correction": "تخصها",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "وعجا",
-   "correction": "وجعا",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "سجنعلها",
    "correction": "سنجعلها",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "شب6ان",
-   "correction": "شبعان",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "وسوُية",
-   "correction": "وسورية",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "محاياد",
@@ -10077,12 +8211,6 @@
    "correction": "السببية",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "إلإماراتية",
-   "correction": "الإماراتية",
-   "weight": 1,
-   "class": "hamza-swap"
   },
   {
    "typo": "ممعطفا",
@@ -10139,34 +8267,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "ب‌كم",
-   "correction": "بيكم",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "نزا",
-   "correction": "نوا",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ىختبئ",
    "correction": "يختبئ",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "رشيي",
-   "correction": "رشي",
-   "weight": 1,
-   "class": "double-insert"
-  },
-  {
-   "typo": "وتخب",
-   "correction": "وتحب",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "ععصر",
@@ -10205,7 +8309,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "سيهآت",
+   "typo": "سيهإت",
    "correction": "سيهات",
    "weight": 1,
    "class": "hamza-swap"
@@ -10235,7 +8339,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "آسميه",
+   "typo": "إسميه",
    "correction": "اسميه",
    "weight": 1,
    "class": "hamza-swap"
@@ -10245,12 +8349,6 @@
    "correction": "تعملي",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "وكنزل",
-   "correction": "ومنزل",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "الهاشش",
@@ -10277,18 +8375,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "سد-ت",
-   "correction": "سددت",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "آلراء",
-   "correction": "لآراء",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "شاردى",
    "correction": "شاردة",
    "weight": 1,
@@ -10307,16 +8393,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "شعبأ",
+   "typo": "شعبآ",
    "correction": "شعبا",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "ال6ربيه",
-   "correction": "العربيه",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "لمدىر",
@@ -10325,20 +8405,8 @@
    "class": "hamza-swap"
   },
   {
-   "typo": "نرخ",
-   "correction": "نخر",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "تازم",
    "correction": "عازم",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "مجترفا",
-   "correction": "محترفا",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -10349,32 +8417,20 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "بألسياره",
+   "typo": "بآلسياره",
    "correction": "بالسياره",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "الغريآني",
+   "typo": "الغريإني",
    "correction": "الغرياني",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "هجؤها",
-   "correction": "هجرها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "توطيهه",
    "correction": "توجيهه",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "منغص",
-   "correction": "مناص",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -10397,12 +8453,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "إلمسروق",
-   "correction": "المسروق",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "السأقفية",
    "correction": "الأسقفية",
    "weight": 1,
@@ -10421,12 +8471,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "لللون",
-   "correction": "اللون",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "منابعات",
    "correction": "متابعات",
    "weight": 1,
@@ -10439,28 +8483,10 @@
    "class": "transposition"
   },
   {
-   "typo": "هارجها",
-   "correction": "خارجها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "صادمى",
    "correction": "صادما",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "يوجع",
-   "correction": "يوجه",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "قيداه",
-   "correction": "قيدها",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "المجفوع",
@@ -10475,20 +8501,14 @@
    "class": "double-insert"
   },
   {
-   "typo": "4وجد",
-   "correction": "فوجد",
+   "typo": "شآنك",
+   "correction": "شأنك",
    "weight": 1,
-   "class": "adjacent-sub"
+   "class": "hamza-swap"
   },
   {
    "typo": "الىس",
    "correction": "الأس",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "وتمون",
-   "correction": "وتموت",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -10505,12 +8525,6 @@
    "class": "transposition"
   },
   {
-   "typo": "ِحرب",
-   "correction": "لحرب",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "بنح",
    "correction": "بوح",
    "weight": 1,
@@ -10523,8 +8537,8 @@
    "class": "double-insert"
   },
   {
-   "typo": "إلماجستير",
-   "correction": "الماجستير",
+   "typo": "آراضيهم",
+   "correction": "اراضيهم",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -10535,7 +8549,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "وآلمؤن",
+   "typo": "وإلمؤن",
    "correction": "والمؤن",
    "weight": 1,
    "class": "hamza-swap"
@@ -10565,12 +8579,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "كهضبي",
-   "correction": "كهربي",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "ورعيفة",
    "correction": "وضعيفة",
    "weight": 1,
@@ -10589,14 +8597,8 @@
    "class": "double-insert"
   },
   {
-   "typo": "ألمملكه",
+   "typo": "آلمملكه",
    "correction": "المملكه",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "إلسنام",
-   "correction": "السنام",
    "weight": 1,
    "class": "hamza-swap"
   },
@@ -10607,13 +8609,13 @@
    "class": "far-sub"
   },
   {
-   "typo": "لاختلإف",
+   "typo": "لاختلأف",
    "correction": "لاختلاف",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "اخطار",
+   "typo": "آخطار",
    "correction": "أخطار",
    "weight": 1,
    "class": "hamza-swap"
@@ -10635,12 +8637,6 @@
    "correction": "نقودا",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "أسك",
-   "correction": "أمك",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "بالحضادات",
@@ -10673,7 +8669,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "كألكلاب",
+   "typo": "كآلكلاب",
    "correction": "كالكلاب",
    "weight": 1,
    "class": "hamza-swap"
@@ -10689,12 +8685,6 @@
    "correction": "المسابح",
    "weight": 1,
    "class": "far-sub"
-  },
-  {
-   "typo": "القاتلو",
-   "correction": "القاتلة",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "بالهساب",
@@ -10733,7 +8723,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "آلزخارف",
+   "typo": "إلزخارف",
    "correction": "الزخارف",
    "weight": 1,
    "class": "hamza-swap"
@@ -10745,13 +8735,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "استيائ7م",
-   "correction": "استيائهم",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "نظرتنأ",
+   "typo": "نظرتنآ",
    "correction": "نظرتنا",
    "weight": 1,
    "class": "hamza-swap"
@@ -10773,12 +8757,6 @@
    "correction": "ديابلو",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "نتلظى",
-   "correction": "نتلقى",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "تخيلواا",
@@ -10805,7 +8783,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "ملآمح",
+   "typo": "ملإمح",
    "correction": "ملامح",
    "weight": 1,
    "class": "hamza-swap"
@@ -10817,22 +8795,10 @@
    "class": "double-insert"
   },
   {
-   "typo": "أأظاهر",
-   "correction": "أتظاهر",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "السويف",
    "correction": "السيوف",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "خشبك",
-   "correction": "مشبك",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "خوألد",
@@ -10871,7 +8837,7 @@
    "class": "double-insert"
   },
   {
-   "typo": "إجآدة",
+   "typo": "إجإدة",
    "correction": "إجادة",
    "weight": 1,
    "class": "hamza-swap"
@@ -10899,12 +8865,6 @@
    "correction": "بتشريح",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "أومان",
-   "correction": "ألمان",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "والبنيي",
@@ -10943,28 +8903,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "نهب7ا",
-   "correction": "نهبها",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "الإصبار",
-   "correction": "الإبصار",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
-   "typo": "آلذبحة",
+   "typo": "إلذبحة",
    "correction": "الذبحة",
    "weight": 1,
    "class": "hamza-swap"
-  },
-  {
-   "typo": "خلوان",
-   "correction": "خولان",
-   "weight": 1,
-   "class": "transposition"
   },
   {
    "typo": "زهوج",
@@ -10991,7 +8933,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "ممزقإ",
+   "typo": "ممزقأ",
    "correction": "ممزقا",
    "weight": 1,
    "class": "hamza-swap"
@@ -11021,7 +8963,7 @@
    "class": "transposition"
   },
   {
-   "typo": "أنطلاقا",
+   "typo": "آنطلاقا",
    "correction": "انطلاقا",
    "weight": 1,
    "class": "hamza-swap"
@@ -11031,12 +8973,6 @@
    "correction": "لرغبة",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "وضي3",
-   "correction": "وضيق",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "صقد",
@@ -11075,28 +9011,10 @@
    "class": "far-sub"
   },
   {
-   "typo": "لمسيحيين",
-   "correction": "للمسيحيين",
-   "weight": 1,
-   "class": "double-delete"
-  },
-  {
-   "typo": "وحديه",
-   "correction": "وحيده",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "ىلنزعة",
    "correction": "النزعة",
    "weight": 1,
    "class": "adjacent-sub"
-  },
-  {
-   "typo": "أفخي",
-   "correction": "أفخم",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "فولكلا",
@@ -11105,7 +9023,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "جآيلز",
+   "typo": "جإيلز",
    "correction": "جايلز",
    "weight": 1,
    "class": "hamza-swap"
@@ -11129,16 +9047,16 @@
    "class": "far-sub"
   },
   {
-   "typo": "آلبحريني",
+   "typo": "إلبحريني",
    "correction": "البحريني",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "ُلمطلقه",
-   "correction": "المطلقه",
+   "typo": "آحتسب",
+   "correction": "احتسب",
    "weight": 1,
-   "class": "far-sub"
+   "class": "hamza-swap"
   },
   {
    "typo": "اصببت",
@@ -11153,12 +9071,6 @@
    "class": "transposition"
   },
   {
-   "typo": "بآسمي",
-   "correction": "بأسمي",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
    "typo": "ّيلر",
    "correction": "ويلر",
    "weight": 1,
@@ -11169,12 +9081,6 @@
    "correction": "للشحن",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "ِالزلازل",
-   "correction": "والزلازل",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "ئعدم",
@@ -11201,7 +9107,7 @@
    "class": "double-delete"
   },
   {
-   "typo": "مغأرة",
+   "typo": "مغآرة",
    "correction": "مغارة",
    "weight": 1,
    "class": "hamza-swap"
@@ -11215,12 +9121,6 @@
   {
    "typo": "للموسيثى",
    "correction": "للموسيقى",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "وسعلا",
-   "correction": "وسعى",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -11249,19 +9149,13 @@
    "class": "double-insert"
   },
   {
-   "typo": "المحسان",
-   "correction": "المحاسن",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "تقفع",
    "correction": "تقلع",
    "weight": 1,
    "class": "adjacent-sub"
   },
   {
-   "typo": "يحأول",
+   "typo": "يحآول",
    "correction": "يحاول",
    "weight": 1,
    "class": "hamza-swap"
@@ -11303,7 +9197,7 @@
    "class": "transposition"
   },
   {
-   "typo": "الجغرافيإ",
+   "typo": "الجغرافيأ",
    "correction": "الجغرافيا",
    "weight": 1,
    "class": "hamza-swap"
@@ -11351,12 +9245,6 @@
    "class": "transposition"
   },
   {
-   "typo": "بحضور7",
-   "correction": "بحضوره",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ااجياد",
    "correction": "الجياد",
    "weight": 1,
@@ -11369,7 +9257,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "وفقرإء",
+   "typo": "وفقرأء",
    "correction": "وفقراء",
    "weight": 1,
    "class": "hamza-swap"
@@ -11393,20 +9281,8 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "كفايت7",
-   "correction": "كفايته",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ءاذجا",
    "correction": "ساذجا",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "غللا",
-   "correction": "غلى",
    "weight": 1,
    "class": "adjacent-sub"
   },
@@ -11427,12 +9303,6 @@
    "correction": "الجوهرة",
    "weight": 1,
    "class": "transposition"
-  },
-  {
-   "typo": "شفناك",
-   "correction": "شفتاك",
-   "weight": 1,
-   "class": "adjacent-sub"
   },
   {
    "typo": "يتللأأ",
@@ -11489,12 +9359,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "المرشف",
-   "correction": "المشرف",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "تييسر",
    "correction": "تيسر",
    "weight": 1,
@@ -11507,13 +9371,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "للجريده",
-   "correction": "للجريدة",
-   "weight": 1,
-   "class": "hamza-swap"
-  },
-  {
-   "typo": "الصإلحية",
+   "typo": "الصألحية",
    "correction": "الصالحية",
    "weight": 1,
    "class": "hamza-swap"
@@ -11561,19 +9419,13 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "نرتآح",
+   "typo": "نرتإح",
    "correction": "نرتاح",
    "weight": 1,
    "class": "hamza-swap"
   },
   {
-   "typo": "راس7م",
-   "correction": "راسهم",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "التفأهة",
+   "typo": "التفآهة",
    "correction": "التفاهة",
    "weight": 1,
    "class": "hamza-swap"
@@ -11615,18 +9467,6 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "متلافة",
-   "correction": "مترفة",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
-   "typo": "تجليك",
-   "correction": "تدليك",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "أعدمتت",
    "correction": "أعدمت",
    "weight": 1,
@@ -11639,22 +9479,10 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "إعفانات",
-   "correction": "إعلانات",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "ساببقاتها",
    "correction": "سابقاتها",
    "weight": 1,
    "class": "double-insert"
-  },
-  {
-   "typo": "أولودة",
-   "correction": "أولوية",
-   "weight": 1,
-   "class": "far-sub"
   },
   {
    "typo": "يلعنيف",
@@ -11687,18 +9515,6 @@
    "class": "transposition"
   },
   {
-   "typo": "ب‌شرين",
-   "correction": "بعشرين",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "فلتذن",
-   "correction": "فلتكن",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "ملتزميم",
    "correction": "ملتزمين",
    "weight": 1,
@@ -11723,12 +9539,6 @@
    "class": "double-insert"
   },
   {
-   "typo": "مز‌رف",
-   "correction": "مزخرف",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
    "typo": "استفزغز",
    "correction": "استفزاز",
    "weight": 1,
@@ -11747,13 +9557,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "م‌ن",
-   "correction": "مين",
-   "weight": 1,
-   "class": "far-sub"
-  },
-  {
-   "typo": "إنيميا",
+   "typo": "انيميا",
    "correction": "أنيميا",
    "weight": 1,
    "class": "hamza-swap"
@@ -11777,7 +9581,7 @@
    "class": "far-sub"
   },
   {
-   "typo": "النغمإت",
+   "typo": "النغمأت",
    "correction": "النغمات",
    "weight": 1,
    "class": "hamza-swap"
@@ -11861,12 +9665,6 @@
    "class": "transposition"
   },
   {
-   "typo": "بجره",
-   "correction": "يجره",
-   "weight": 1,
-   "class": "adjacent-sub"
-  },
-  {
    "typo": "بسااط",
    "correction": "بساط",
    "weight": 1,
@@ -11915,7 +9713,7 @@
    "class": "adjacent-sub"
   },
   {
-   "typo": "رآعيا",
+   "typo": "رإعيا",
    "correction": "راعيا",
    "weight": 1,
    "class": "hamza-swap"
@@ -11993,16 +9791,2218 @@
    "class": "double-insert"
   },
   {
-   "typo": "ابغي",
-   "correction": "باغي",
-   "weight": 1,
-   "class": "transposition"
-  },
-  {
    "typo": "لصتشويش",
    "correction": "للتشويش",
    "weight": 1,
    "class": "far-sub"
+  },
+  {
+   "typo": "المقتدم",
+   "correction": "المتقدم",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "وؤهاجم",
+   "correction": "ويهاجم",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ممحاو",
+   "correction": "ممحاة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "للسإئق",
+   "correction": "للسائق",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "ننيران",
+   "correction": "نيران",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "سيةلة",
+   "correction": "سيولة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "تلمرسى",
+   "correction": "المرسى",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "قسحق",
+   "correction": "بسحق",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "نكتلم",
+   "correction": "نتكلم",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "للإيرانين",
+   "correction": "للإيرانيين",
+   "weight": 1,
+   "class": "double-delete"
+  },
+  {
+   "typo": "باوو",
+   "correction": "بانو",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "رشرف",
+   "correction": "بشرف",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "خريا",
+   "correction": "ثريا",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "amv",
+   "correction": "amy",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "يستى",
+   "correction": "يسرى",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "والتليفزيونن",
+   "correction": "والتليفزيون",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "وتواافد",
+   "correction": "وتوافد",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "تغآمر",
+   "correction": "تغامر",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "كيننوة",
+   "correction": "كينونة",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "ذئراهم",
+   "correction": "ذكراهم",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "مصدومأ",
+   "correction": "مصدوما",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "سباعع",
+   "correction": "سباع",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "التصصفية",
+   "correction": "التصفية",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "بلومبيبغ",
+   "correction": "بلومبيرغ",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "فلايقه",
+   "correction": "فريقه",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "مطرإ",
+   "correction": "مطرز",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "تجرتبنا",
+   "correction": "تجربتنا",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "هممتت",
+   "correction": "هممت",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "سكتو",
+   "correction": "سكتة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "كسلأ",
+   "correction": "كسلا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "الإمتحاخات",
+   "correction": "الإمتحانات",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "دومينفو",
+   "correction": "دومينغو",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "تقليدإ",
+   "correction": "تقليدا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "بالتسلسب",
+   "correction": "بالتسلسل",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "رنجر",
+   "correction": "بنجر",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "المولوجة",
+   "correction": "المولودة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "بقآئد",
+   "correction": "بقائد",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "لاتخأذ",
+   "correction": "لاتخاذ",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "للححاق",
+   "correction": "للحاق",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "طاعب",
+   "correction": "طابع",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "بوريتو",
+   "correction": "بويرتو",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "تزويدمه",
+   "correction": "تزويدهم",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "تلامذتهه",
+   "correction": "تلامذته",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "وغلتوت",
+   "correction": "والتوت",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "لرقآبة",
+   "correction": "لرقابة",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "صغيراتت",
+   "correction": "صغيرات",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "لاإثم",
+   "correction": "الإثم",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "تسائفت",
+   "correction": "تسائلت",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ششمع",
+   "correction": "شمع",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "للتوقسع",
+   "correction": "للتوقيع",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "والتيذيب",
+   "correction": "والتعذيب",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "الهيااكل",
+   "correction": "الهياكل",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ررباب",
+   "correction": "رباب",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "والضتاء",
+   "correction": "والشتاء",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "المننتقلة",
+   "correction": "المنتقلة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "البيطرييين",
+   "correction": "البيطريين",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "حاسسي",
+   "correction": "حاسي",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "بالسأهم",
+   "correction": "بالأسهم",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "صراها",
+   "correction": "تراها",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "وىلتقويم",
+   "correction": "والتقويم",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "تكاليفف",
+   "correction": "تكاليف",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ييوسف",
+   "correction": "بيوسف",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "نزلاتت",
+   "correction": "نزلات",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "عيدة",
+   "correction": "عيشة",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "مسروراا",
+   "correction": "مسرورا",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "يعاىن",
+   "correction": "يعانى",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "ريونيوج",
+   "correction": "ريونيون",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "دبتب",
+   "correction": "دباب",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "والخسمين",
+   "correction": "والخمسين",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "بنغآزي",
+   "correction": "بنغازي",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "استجدادية",
+   "correction": "استبدادية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "لالإرهابيين",
+   "correction": "بالإرهابيين",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "جمهنرهم",
+   "correction": "جمهورهم",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ؤنكح",
+   "correction": "ينكح",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "لكاميصا",
+   "correction": "لكاميرا",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "كتكاب",
+   "correction": "ككتاب",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "خاؤجيا",
+   "correction": "خارجيا",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "االمقنعة",
+   "correction": "المقنعة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "سيرتةم",
+   "correction": "سيرتهم",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "خراجيم",
+   "correction": "خراطيم",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "اشودك",
+   "correction": "اشوفك",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "يرزقط",
+   "correction": "يرزقك",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "edis",
+   "correction": "edit",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "لبكتشف",
+   "correction": "ليكتشف",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "عبموك",
+   "correction": "علموك",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "بإلعديد",
+   "correction": "بالعديد",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "نيوبورن",
+   "correction": "نيوبورت",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "نأعرب",
+   "correction": "وأعرب",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "كامإرا",
+   "correction": "كامارا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "للتذككير",
+   "correction": "للتذكير",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "متدينىن",
+   "correction": "متدينين",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "االختراعات",
+   "correction": "الاختراعات",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "جقنيات",
+   "correction": "تقنيات",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ارلومى",
+   "correction": "الرومى",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "كقأنون",
+   "correction": "كقانون",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "اامجاني",
+   "correction": "المجاني",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "المخطنفين",
+   "correction": "المخطوفين",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "وققلم",
+   "correction": "وقلم",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "نمنراست",
+   "correction": "تمنراست",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "كلمرام",
+   "correction": "المرام",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "باِراد",
+   "correction": "باطراد",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "المِواضعة",
+   "correction": "المتواضعة",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "نلببس",
+   "correction": "نلبس",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "بنطقتين",
+   "correction": "بنقطتين",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "بفتيأت",
+   "correction": "بفتيات",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "للفزم",
+   "correction": "للفهم",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "هباس",
+   "correction": "هباء",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "كحضية",
+   "correction": "كقضية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "إرنستت",
+   "correction": "إرنست",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ماةس",
+   "correction": "ماتس",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الخإصه",
+   "correction": "الخاصه",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "هضر",
+   "correction": "ضهر",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "eun",
+   "correction": "fun",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "لانغدزن",
+   "correction": "لانغدون",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "سنجابب",
+   "correction": "سنجاب",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "بإجلأء",
+   "correction": "بإجلاء",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "منعقة",
+   "correction": "منسقة",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "وآعمال",
+   "correction": "واعمال",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "لايشاهد",
+   "correction": "ليشاهد",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "بااحارس",
+   "correction": "بالحارس",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "تةواصل",
+   "correction": "تتواصل",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "تححرمنا",
+   "correction": "تحرمنا",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "إلفظيع",
+   "correction": "الفظيع",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "آحساسه",
+   "correction": "إحساسه",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "بحقنى",
+   "correction": "بحقنا",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "نخصتر",
+   "correction": "نختصر",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "نذهى",
+   "correction": "نذهب",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "يسألخ",
+   "correction": "يسأله",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "فرنسوأ",
+   "correction": "فرنسوا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "وانتههي",
+   "correction": "وانتهي",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "خاتزا",
+   "correction": "خاتما",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "نصفقق",
+   "correction": "نصفق",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "خرجى",
+   "correction": "خرجا",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "وموسكوو",
+   "correction": "وموسكو",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "وسزتمكن",
+   "correction": "وسيتمكن",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "المنظزرة",
+   "correction": "المنظورة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "نفطثة",
+   "correction": "نفطية",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "يجعاه",
+   "correction": "يجعله",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "مصرواي",
+   "correction": "مصراوي",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "ملاتفاقية",
+   "correction": "للاتفاقية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "مصحوبؤ",
+   "correction": "مصحوبة",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "المششكوك",
+   "correction": "المشكوك",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "وىلملازم",
+   "correction": "والملازم",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "غاضببا",
+   "correction": "غاضبا",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "اختفاله",
+   "correction": "احتفاله",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ةانخفاض",
+   "correction": "بانخفاض",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "الإزعاز",
+   "correction": "الإزعاج",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "نودر",
+   "correction": "ندور",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "التنكسار",
+   "correction": "الانكسار",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الاانقلابي",
+   "correction": "الانقلابي",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "القتالس",
+   "correction": "القتالي",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "والتاريخخي",
+   "correction": "والتاريخي",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "مهضبط",
+   "correction": "منضبط",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "كلكرة",
+   "correction": "كفكرة",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "هولدح",
+   "correction": "هولدر",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "يتكلمهآ",
+   "correction": "يتكلمها",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "بعجبات",
+   "correction": "بعجلات",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ثآبه",
+   "correction": "ثوبه",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "متفائًون",
+   "correction": "متفائلون",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ىلإبادة",
+   "correction": "الإبادة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ستايكلاند",
+   "correction": "ستريكلاند",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "يتيحح",
+   "correction": "يتيح",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "النيساابوري",
+   "correction": "النيسابوري",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "إحدث",
+   "correction": "احدث",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "نجاهدو",
+   "correction": "مجاهدو",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "هاتسون",
+   "correction": "واتسون",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ييحزنني",
+   "correction": "يحزنني",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "تعلىق",
+   "correction": "تعليق",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "عزييز",
+   "correction": "عزيز",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الإسلاام",
+   "correction": "الإسلام",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "جمهورنس",
+   "correction": "جمهورنا",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "حيرإن",
+   "correction": "حيران",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "بآلعضلات",
+   "correction": "بالعضلات",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "الملابوطة",
+   "correction": "المربوطة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الخطثن",
+   "correction": "الخطين",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "نعترأ",
+   "correction": "نعترف",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "حنأني",
+   "correction": "حناني",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "الريحاننية",
+   "correction": "الريحانية",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "أثلرة",
+   "correction": "أثارة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "محبببة",
+   "correction": "محببة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الأماللي",
+   "correction": "الأمالي",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ععالمى",
+   "correction": "عالمى",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "وكنتجية",
+   "correction": "وكنتيجة",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "البرنربيو",
+   "correction": "البرنابيو",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "مابسيل",
+   "correction": "مارسيل",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الإإزام",
+   "correction": "الإلزام",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "وزنيهة",
+   "correction": "ونزيهة",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "استنكرذ",
+   "correction": "استنكرت",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "نهفم",
+   "correction": "نفهم",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "العمليى",
+   "correction": "العملية",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "اندثرض",
+   "correction": "اندثرت",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ؤندية",
+   "correction": "هندية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "وولأني",
+   "correction": "ولأني",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "maris",
+   "correction": "paris",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "كونتى",
+   "correction": "كونتي",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "ورتحيل",
+   "correction": "وترحيل",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "التمريناا",
+   "correction": "التمرينات",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "النأمينات",
+   "correction": "التأمينات",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الإستشاريين",
+   "correction": "الاستشاريين",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "التسكيلات",
+   "correction": "التشكيلات",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "حملتنإ",
+   "correction": "حملتنا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "روندآ",
+   "correction": "روندا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "غلإجراء",
+   "correction": "الإجراء",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "غأيوس",
+   "correction": "غايوس",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "قاصلاات",
+   "correction": "قاصرات",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الاآوء",
+   "correction": "الاسوء",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "قذلئف",
+   "correction": "قذائف",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "واالشهرة",
+   "correction": "والشهرة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الفوإحش",
+   "correction": "الفواحش",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "وفيلص",
+   "correction": "وفيصل",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "زورران",
+   "correction": "زوران",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "غوارديولل",
+   "correction": "غوارديولا",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "باحضالا",
+   "correction": "باحضار",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "اببق",
+   "correction": "ابق",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "غىمرة",
+   "correction": "غامرة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "قلشب",
+   "correction": "الشب",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "غرائام",
+   "correction": "غراهام",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "استيفءا",
+   "correction": "استيفاء",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "ومستئل",
+   "correction": "ومسائل",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الآنا",
+   "correction": "الانا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "يقوهدم",
+   "correction": "يقودهم",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "اسشلك",
+   "correction": "اسئلك",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "اموغل",
+   "correction": "اموال",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "والجلييد",
+   "correction": "والجليد",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الافكترونيه",
+   "correction": "الالكترونيه",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "تبقاليد",
+   "correction": "بتقاليد",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "وزاان",
+   "correction": "وزان",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ممزله",
+   "correction": "منزله",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "وألخارجية",
+   "correction": "والخارجية",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "منيراا",
+   "correction": "منيرا",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "عجسبا",
+   "correction": "عجيبا",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "صدقةني",
+   "correction": "صدقوني",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "السذغجة",
+   "correction": "السذاجة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "والرطوهة",
+   "correction": "والرطوبة",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "تعوثضه",
+   "correction": "تعويضه",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "مأرسي",
+   "correction": "ميرسي",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "وعلإ",
+   "correction": "وعلا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "افمسلمات",
+   "correction": "المسلمات",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ابمصير",
+   "correction": "المصير",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "قالعبادة",
+   "correction": "بالعبادة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ميغاابايت",
+   "correction": "ميغابايت",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "اعصينية",
+   "correction": "الصينية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "لعماللة",
+   "correction": "لعمالة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الفمجان",
+   "correction": "الفنجان",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "مؤلفآت",
+   "correction": "مؤلفات",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "ضىعك",
+   "correction": "ضيعك",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "مرضهل",
+   "correction": "مرضها",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "إعغرته",
+   "correction": "إعارته",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "أنةي",
+   "correction": "أنوي",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الرصافى",
+   "correction": "الرصافة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "لغهه",
+   "correction": "لغه",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الوى",
+   "correction": "سلوى",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "nate",
+   "correction": "note",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "هنانوو",
+   "correction": "هنانو",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "عضويتهه",
+   "correction": "عضويته",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الأسبقيِ",
+   "correction": "الأسبقية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "هاةفي",
+   "correction": "هاتفي",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "اشتياره",
+   "correction": "اختياره",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "معتود",
+   "correction": "متعود",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "زاليابان",
+   "correction": "واليابان",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "طيلاي",
+   "correction": "طيري",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الؤمل",
+   "correction": "الممل",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ele",
+   "correction": "lee",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "وىمينة",
+   "correction": "وأمينة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ربىت",
+   "correction": "ربيت",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "زسخر",
+   "correction": "مسخر",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "التمميلية",
+   "correction": "التكميلية",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "بإجراءءات",
+   "correction": "بإجراءات",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ptter",
+   "correction": "peter",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "اورا",
+   "correction": "أورا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "مججهولين",
+   "correction": "مجهولين",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "والعحودية",
+   "correction": "والعبودية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "إلإخباري",
+   "correction": "الإخباري",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "الرأبعه",
+   "correction": "الأربعه",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "بالإتصؤل",
+   "correction": "بالإتصال",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "عيارض",
+   "correction": "يعارض",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "باستخرأج",
+   "correction": "باستخراج",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "زغربب",
+   "correction": "زغرب",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "المتناقع",
+   "correction": "المتناقض",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "الغيلبية",
+   "correction": "الغالبية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "الغىليين",
+   "correction": "الغاليين",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "يبغضض",
+   "correction": "يبغض",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ألمزاحمية",
+   "correction": "المزاحمية",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "ممسئولية",
+   "correction": "مسئولية",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "مسلنر",
+   "correction": "ميلنر",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "أعىق",
+   "correction": "أعاق",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ااجانبي",
+   "correction": "الجانبي",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الماوش",
+   "correction": "الماوس",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "شداعة",
+   "correction": "شجاعة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "الأكزيام",
+   "correction": "الأكزيما",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "تستثرق",
+   "correction": "تستغرق",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "تداريين",
+   "correction": "إداريين",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "غلتمام",
+   "correction": "التمام",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "توآجد",
+   "correction": "تواجد",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "ظوليدج",
+   "correction": "كوليدج",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ومتخصس",
+   "correction": "ومتخصص",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "وااعتبره",
+   "correction": "واعتبره",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "وأجببر",
+   "correction": "وأجبر",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "لليزنة",
+   "correction": "للزينة",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "والألومنيوك",
+   "correction": "والألومنيوم",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "لمججزرة",
+   "correction": "لمجزرة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الإزدهخر",
+   "correction": "الإزدهار",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "إنشإءه",
+   "correction": "إنشاءه",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "معتبض",
+   "correction": "معترض",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ئينية",
+   "correction": "عينية",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "الاعنال",
+   "correction": "الاعمال",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "uby",
+   "correction": "buy",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "battel",
+   "correction": "battle",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "بالكرةة",
+   "correction": "بالكرة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "للاموسيقي",
+   "correction": "للموسيقي",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "أريدد",
+   "correction": "أريد",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "ووشد",
+   "correction": "وشد",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "والاشرب",
+   "correction": "والشرب",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "أروايلي",
+   "correction": "أورايلي",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "التححفة",
+   "correction": "التحفة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "حرقآ",
+   "correction": "حرقا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "لعمارو",
+   "correction": "لعمارة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "للبحيره",
+   "correction": "للبحيرة",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "أحثرت",
+   "correction": "أكثرت",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "متهمم",
+   "correction": "متهم",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "قروى",
+   "correction": "قروي",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "والانب",
+   "correction": "والابن",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "كمبأدرة",
+   "correction": "كمبادرة",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "بقيذي",
+   "correction": "بقيتي",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "لآنتشار",
+   "correction": "لانتشار",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "وسطمئن",
+   "correction": "ويطمئن",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "إلىه",
+   "correction": "إلهى",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "حوراسة",
+   "correction": "وحراسة",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "للرضيس",
+   "correction": "للرئيس",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "تافزيونيا",
+   "correction": "تلفزيونيا",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "سىجعل",
+   "correction": "سيجعل",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "كانم",
+   "correction": "كانه",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "محدقإ",
+   "correction": "محدقا",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "بالإصلآح",
+   "correction": "بالإصلاح",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "تتستعد",
+   "correction": "تستعد",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "الصيي",
+   "correction": "الصبي",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "ىيل",
+   "correction": "آيل",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "يظزم",
+   "correction": "يجزم",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "الشئي",
+   "correction": "الشيئ",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "الزناجاة",
+   "correction": "المناجاة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "رمناطق",
+   "correction": "بمناطق",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "حسص",
+   "correction": "حصص",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "وممارساتّا",
+   "correction": "وممارساتها",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "والأشجاث",
+   "correction": "والأشجار",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "الغمله",
+   "correction": "العمله",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "التتبانة",
+   "correction": "التبانة",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "منفيذ",
+   "correction": "منفذي",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "هاوه",
+   "correction": "هواه",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "وتمزيف",
+   "correction": "وتمزيق",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "اضأصيل",
+   "correction": "الأصيل",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "للعوهمل",
+   "correction": "للعوامل",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ؤزن",
+   "correction": "يزن",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "بآلظروف",
+   "correction": "بالظروف",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "حشظشة",
+   "correction": "حشيشة",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "والئموع",
+   "correction": "والشموع",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "مطوحن",
+   "correction": "مطحون",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "وآلخوف",
+   "correction": "والخوف",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "نحتمس",
+   "correction": "تحتمس",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "شففاؤه",
+   "correction": "شفاؤه",
+   "weight": 1,
+   "class": "double-insert"
+  },
+  {
+   "typo": "إكملت",
+   "correction": "أكملت",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "حضرمون",
+   "correction": "حضرموت",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "إلجرحى",
+   "correction": "الجرحى",
+   "weight": 1,
+   "class": "hamza-swap"
+  },
+  {
+   "typo": "فندة",
+   "correction": "فودة",
+   "weight": 1,
+   "class": "adjacent-sub"
+  },
+  {
+   "typo": "إرتفعا",
+   "correction": "إرتفاع",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "بادخلة",
+   "correction": "بداخلة",
+   "weight": 1,
+   "class": "transposition"
+  },
+  {
+   "typo": "آلمسعودي",
+   "correction": "المسعودي",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "ودائعت",
+   "correction": "ودافعت",
+   "weight": 1,
+   "class": "far-sub"
+  },
+  {
+   "typo": "بالنززول",
+   "correction": "بالنزول",
+   "weight": 1,
+   "class": "double-insert"
   }
  ]
 }

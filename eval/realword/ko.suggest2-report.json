@@ -1,0 +1,27 @@
+{
+ "language": "ko",
+ "class_mix": {
+  "far-sub": 1169,
+  "double-insert": 501,
+  "transposition": 255,
+  "jamo-confusion": 75
+ },
+ "distance_dist": {
+  "1": 1745,
+  "2": 255
+ },
+ "nonword": 2000,
+ "realword": 200,
+ "dictionary_validity_gate": {
+  "enabled": true,
+  "rejected_dictionary_valid": 2297,
+  "date": "2026-09-27"
+ },
+ "manual_removals": [
+  {
+   "typo": "\ud589\uc5ec\uae30",
+   "correction": "\uc5ec\ud589\uae30",
+   "reason": "gem correct? accepts (affix/compound edge the batch -l pass rejected); engine correctly declines"
+  }
+ ]
+}
