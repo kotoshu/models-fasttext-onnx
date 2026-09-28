@@ -12,6 +12,25 @@ en/de/es/it/ru/nl/pt re-freezes (stale under gem#233 fold-scoping) run
 in parallel on Modal; reportless preemption casualties re-spawn at
 drain.
 
+## Interscript integration (2026-09-28)
+
+P0 LANDED (gem #238, merged): vowelless-script normalization — Arabic
+haraqat (U+064B-065F/U+0670) and Hebrew niqqud strip at the Generator
+ingress and in the fold via Suggestions::VOWELLESS_MARKS; suggest()
+previously returned [] for correctly-vocalized input. Gates: 2,630
+conformance vectors 0 failures (the corpus caught a literal-whitespace
+regex bug mid-development), vocalized typos now produce identical
+slates to unvocalized twins. Roadmap adopted from interscript's ranked
+proposal, our gates: P1 homograph disambiguation via sentence
+diacritization (95MB int4 tier / REST endpoint; gate = labeled
+homograph-context set, measured suggestion-ranker gain); P2
+vowel-error detection (typed-vs-predicted; gate = precision on seeded
+errors); P3 phonemic/G2P keys — including the romanization-key channel
+prototyped live against interscript's maps (29,382 ar words indexed in
+10.5s via alalc-ara-Arab-Latn-1997 + fold normalization; mrhb ->
+مرحبا; 200/200 retrieval). Bench splits carry no vocalized typos, so
+the in-flight wave is unaffected by #238.
+
 Two engine fixes landed en route (both gem PRs, CI green):
 - gem#235 — vi left FOLD_SCORING_LANGUAGES (set is now de sv): the
   dấu fold merged tone-distinct candidates into frequency-decided
