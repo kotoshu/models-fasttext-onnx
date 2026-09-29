@@ -21,9 +21,12 @@ LANGS = ["en", "de", "es", "fr", "it", "ja", "ko", "nl", "pl", "pt",
 # number still matches its fingerprint predates the clean splits.
 PRE_GATE_FIELD = {
     "en": 0.855, "de": 0.870, "es": 0.820, "it": 0.940, "nl": 0.846,
-    "pt": 0.809, "ru": 0.864, "zh-Hans-CN": 0.7545, "zh-Hant-TW": 0.8145,
-    "ko": 0.613,
+    "pt": 0.809, "ru": 0.864, "ko": 0.613,
 }
+# zh-Hans-CN / zh-Hant-TW are deliberately absent: their splits were
+# never regenerated (0 dictionary-valid typos), so old and new field
+# numbers are identical and the fingerprint cannot discriminate — the
+# volume-mtime audit is the authority for those two.
 
 
 def field_top1(report):
