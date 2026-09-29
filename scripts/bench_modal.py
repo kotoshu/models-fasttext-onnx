@@ -74,6 +74,11 @@ def run_bench(lang: str):
     report = report_path.read_text() if report_path.exists() else None
     if report:
         Path(f"/vol/suggest-benchmark-{lang}-wave2.json").write_text(report)
+    else:
+        # A reportless lane must never hide (two campaigns lost hours to
+        # silent reportless exits) — persist the failure for collect.
+        Path(f"/vol/FAILED-{lang}.txt").write_text(
+            f"rc={proc.returncode}\n{proc.stdout[-2000:]}\n{proc.stderr[-3000:]}")
     return {
         "lang": lang,
         "rc": proc.returncode,
