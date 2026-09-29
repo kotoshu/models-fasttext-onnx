@@ -1,8 +1,7 @@
 # Announcement draft — wave-2: all 16 languages at or above every baseline
 
-STATUS: draft — the de row refreshes when its final-era lane lands
-(the last lane of the program). Publish after TODO.final/1 closes and
-the owner releases the gem.
+STATUS: final — 16/16 frozen (TODO.final/1 closed), gem 1.0.7 live
+on rubygems. Publishable as-is.
 
 ---
 
@@ -17,7 +16,7 @@ of them.
 | language | kotoshu top-1 | best baseline | realword (kotoshu vs baseline) |
 |---|---|---|---|
 | en | 87.6 | 86.5 | 2.5 vs 1.0 |
-| de | 87.8* | 87.0 | 17.0 vs 0.0 |
+| de | 87.8 | 86.8 | 17.0 vs 0.0 |
 | es | 85.5 | 84.0 | 14.0 vs 0.0 |
 | fr | 84.3 | 81.5 | 14.0 vs 7.5 |
 | it | 87.2 | 84.3 | 0.0 vs 0.0 |
@@ -32,8 +31,6 @@ of them.
 | zh-Hant-TW | 81.7 | 81.5 | — |
 | zh-Hant-HK | 77.0 | 75.4 | 2.5 vs 0.0 |
 | ar | 68.0 | 65.8 | 26.5 vs 0.0 |
-
-\* de refreshes with the final lane.
 
 Exact-match top-1 over frozen, per-class-tagged splits (2,000 nonword
 + 200 realword pairs per language), field lanes = SymSpell (symspellpy
