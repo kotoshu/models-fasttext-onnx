@@ -5,6 +5,10 @@ score: type the romanization, get the native word.
 
 ## State
 
+- Gate PASSED locally: 82.5% top-1 / 84.5% top-5 on the 200-pair
+  probe (≥ 80% bar). The full 2,000-pair Modal measurement freezes
+  the class number.
+
 - Sidecar published: kelly#9 (data/ar.translit.json, 75,382
   fold-normalized ALA-LC keys over 101,307 words).
 - Channel merged: gem #239 (ASCII queries on non-Latin languages;
