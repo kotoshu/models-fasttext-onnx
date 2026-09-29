@@ -2,11 +2,19 @@
 
 ## Status
 
-RUNNING (2026-09-22). Splits frozen (12 languages × suggest2-*).
-kelly#6 merged (nl/pl); gem PR #229 (KELLY 18 codes). Field dicts:
-it/nl/pl added (wooorm). Harness: --split2 lane + wave2 report names.
-Benchmarks executing in background (kotoshu lane is slow on big
-dictionaries — hours; reports land in eval/reports/*-wave2.json). Deliverables: ≥2,000 nonword + ≥200 realword pairs per language for en de es fr pt ru it nl pl + zh-Hans-CN zh-Hant-TW ja (class-tagged); kelly lists for nl/pl (missing); hunspell field dicts for new languages; full C1 harness runs per language (field lanes + kotoshu); frozen reports; public repo republish; verdict table with class columns.
+DONE (2026-09-29). 16/16 languages meet the gate — kotoshu ≥ every
+field lane on nonword AND realword — on the final engine (gem
+#235/#236/#237/#238) and dictionary-gated splits (models #8). The
+verdict table is frozen in eval/reports/verdict-table.md (generator:
+scripts/final_verdict_table.py); every number is a committed report.
+Releases live: gem 1.0.7 (rubygems), kotoshu-rs 0.3.0 (crates.io),
+kotoshu-server 1.1.0 (kotoshu 1.0.7). Results page:
+kotoshu.org/models-fasttext-onnx/wave2/. S8-E4 extension (zh-Hant-HK/
+ko/vi/ar) closed under TODO.sota-impl/11; the closing program is
+TODO.final. En route: the split dictionary gate (ar 303/it 44/vi 30/
+ko 26 dictionary-valid pairs removed — the ar 16.1 anomaly's true
+mechanism), tail dedup in gem+rs, vi raw scoring, variant-pure lists,
+vowelless normalization (interscript P0).
 
 ## Gate
 
