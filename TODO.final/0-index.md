@@ -9,8 +9,8 @@ the gem; optional unpublished WASM backend running the legacy path).
 
 | # | file | state |
 |---|------|-------|
-| 1 | final-verdict-freeze | wave in flight (14/16 landed); audit + table + docs gated on it |
-| 2 | rust-parity-vowelless | DONE this pass (PR merged) |
-| 3 | ts-server-parity | server gem bump = release-gated; wasm ceiling documented |
+| 1 | final-verdict-freeze | DONE — 16/16 WIN frozen (PR #11); table + generator committed |
+| 2 | rust-parity-vowelless | DONE — kotoshu-rs #59 merged |
+| 3 | ts-server-parity | UNBLOCKED — gem 1.0.7 on rubygems; server picks up `~> 1.0` on next deploy; wasm ceiling documented |
 | 4 | interscript-roadmap | P1/P2/P3 + translit channel — plans with gates, not started |
-| 5 | release-and-announcement | draft done; gem version + publish = owner decisions |
+| 5 | release-and-announcement | DONE — gem 1.0.7 + crates.io 0.3.0 live; site page published (kotoshu.org/models-fasttext-onnx/wave2/); draft finalized |
