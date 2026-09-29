@@ -5,9 +5,12 @@ score: type the romanization, get the native word.
 
 ## State
 
-- Gate PASSED locally: 82.5% top-1 / 84.5% top-5 on the 200-pair
-  probe (≥ 80% bar). The full 2,000-pair Modal measurement freezes
-  the class number.
+- FROZEN (2026-09-30): the full 2,000-pair Modal measurement reads
+  kotoshu 78.9% top-1 / 80.5% top-5 vs symspell 2.4% (its structural
+  zero — no cross-script capability). The 200-pair local probe read
+  82.5/84.5. The class freezes as a capability verdict: no field lane
+  can enter it. Report: eval/reports/suggest-benchmark-ar-translit-
+  capability.json.
 
 - Sidecar published: kelly#9 (data/ar.translit.json, 75,382
   fold-normalized ALA-LC keys over 101,307 words).
