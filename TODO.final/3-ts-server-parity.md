@@ -17,5 +17,5 @@ kotoshu-server running the gem. Consequences:
    merges into the wasm build automatically). A SymSpell-in-wasm
    redesign (chunked/on-demand tables) is a separate owner-gated arc —
    do not attempt within this program.
-3. Client release notes should state: HTTP = full parity after the
-   server bump; WASM = legacy ranking until the ceiling arc lands.
+3. Client release notes should state: HTTP = full parity (server 1.1.1 carries gem 1.0.8 — the romanization
+   channel included); WASM = legacy ranking until the ceiling arc lands.
