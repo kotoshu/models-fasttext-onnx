@@ -100,6 +100,70 @@ def write_report(result):
     return json.loads(text)
 
 
+@app.function(cpu=1, memory=8192, timeout=86_400, volumes={"/vol": volume})
+def translit_capability(lang: str):
+    """Capability-class measurement: the {lang}.suggest3-translit.json
+    split (romanization typo -> native word). Field lanes have no
+    cross-script capability — they are measured anyway for the record
+    and are expected to score ~0. The kotoshu lane is the only
+    meaningful number."""
+    import json as _json
+    pairs = _json.loads(Path(f"/root/repo/eval/realword/{lang}.suggest3-translit.json").read_text())["pairs"]
+    words = [p["typo"] for p in pairs]
+    env = dict(os.environ, BENCH_LANG=lang, KOTOSHU_BENCH_TIMEOUT="86400")
+    out = {}
+    # kotoshu lane (the gem HTTP-equivalent: the ruby lane script)
+    proc = subprocess.run(
+        ["ruby", "/tmp/bench_kotoshu.rb"],
+        input="\n".join(words) + "\n", capture_output=True, text=True,
+        cwd="/root/src/kotoshu/kotoshu", env=env)
+    mapping = {}
+    for line in proc.stdout.splitlines():
+        try:
+            mapping.update(_json.loads(line))
+        except _json.JSONDecodeError:
+            pass
+    top1 = sum(1 for p in pairs if (mapping.get(p["typo"]) or [None])[0]
+               and mapping[p["typo"]][0].lower() == p["correction"].lower())
+    top5 = sum(1 for p in pairs if p["correction"].lower() in
+               [x.lower() for x in (mapping.get(p["typo"]) or [])[:5]])
+    # field lanes for the record (expected ~0: no cross-script capability)
+    field = {}
+    try:
+        from symspellpy import SymSpell, Verbosity
+        import tempfile
+        cache = Path("/root/.cache/kotoshu/frequency-lists") / lang / "frequency.json"
+        data = _json.loads(cache.read_text())
+        n = len(data["full_list"])
+        fh = tempfile.NamedTemporaryFile("w", suffix=".tsv", delete=False)
+        for e in data["full_list"]:
+            fh.write(f"{e['word']}\t{n - e['rank'] + 1}\n")
+        fh.close()
+        sym = SymSpell(max_dictionary_edit_distance=2, prefix_length=7)
+        sym.load_dictionary(fh.name, term_index=0, count_index=1, separator="\t", encoding="utf-8")
+        f_top1 = f_top5 = 0
+        for p in pairs:
+            got = [s.term for s in sym.lookup(p["typo"], Verbosity.TOP, 2)[:8]]
+            if got and got[0].lower() == p["correction"].lower():
+                f_top1 += 1
+            if p["correction"].lower() in [x.lower() for x in got[:5]]:
+                f_top5 += 1
+        field["symspell"] = {"top1": round(f_top1 / len(pairs), 4),
+                             "top5": round(f_top5 / len(pairs), 4), "n": len(pairs)}
+    except Exception as e:
+        field["symspell"] = {"error": str(e)[:120]}
+    report = {
+        "spec": "kotoshu.translit-capability/v1", "language": lang,
+        "class": "translit (romanization typo -> native word)",
+        "engines": {
+            "kotoshu": {"top1": round(top1 / len(pairs), 4),
+                        "top5": round(top5 / len(pairs), 4), "n": len(pairs)},
+            **field}}
+    out_path = Path(f"/vol/suggest-benchmark-{lang}-translit-capability.json")
+    out_path.write_text(_json.dumps(report, indent=1) + "\n")
+    return report
+
+
 @app.local_entrypoint()
 def spawn(langs: str = ""):
     """Fire-and-forget: launch lanes server-side; safe to close the
