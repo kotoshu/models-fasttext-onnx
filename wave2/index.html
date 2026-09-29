@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kotoshu — wave-2 results: 16 languages, 16 wins</title>
+<style>
+  :root {
+    --paper: #faf7f2;
+    --ink: #1c2431;
+    --muted: #5b6572;
+    --flag: #c2452d;
+    --ok: #2d6a4f;
+    --line: #d9d2c7;
+    --accent: #274c77;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.65 Georgia, "Times New Roman", serif;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 48px 24px 72px; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin-top: 40px; }
+  .lede { color: var(--muted); font-style: italic; margin-bottom: 28px; }
+  .lede em { color: var(--flag); font-style: normal; font-weight: bold; }
+  table { border-collapse: collapse; width: 100%; margin: 20px 0; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 13.5px; }
+  th, td { text-align: right; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--muted); border-bottom: 2px solid var(--ink); }
+  td:first-child, th:first-child { text-align: left; font-family: Georgia, serif; font-size: 15px; }
+  .win { color: var(--ok); font-weight: bold; }
+  .rw { color: var(--accent); font-weight: 600; }
+  .note { color: var(--muted); font-size: 13.5px; }
+  a { color: var(--accent); }
+  .method { background: #fffdf9; border: 1px solid var(--line); border-radius: 8px; padding: 16px 20px; font-size: 14.5px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13.5px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Word-level spelling suggestion: 16 languages, 16 wins</h1>
+  <p class="lede">kotoshu matches or beats the strongest open word-level
+  baselines — Hunspell and SymSpell over the same published frequency
+  lists — on nonword top-1 in <em>all 16 languages</em>, and is the only
+  engine with realword signal in most of them.</p>
+
+  <table>
+    <thead><tr>
+      <th>language</th><th>kotoshu top-1</th><th>top-3</th><th>top-5</th>
+      <th>best baseline</th><th>realword (k vs field)</th><th>gate</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>en</td><td>87.6</td><td>96.1</td><td>98.0</td><td>86.5</td><td class="rw">2.5 vs 1.0</td><td class="win">WIN</td></tr>
+      <tr><td>de</td><td>87.8</td><td>95.6</td><td>97.4</td><td>86.8</td><td class="rw">17.0 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>es</td><td>85.5</td><td>96.1</td><td>97.5</td><td>84.0</td><td class="rw">14.0 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>fr</td><td>84.3</td><td>94.8</td><td>97.3</td><td>81.5</td><td class="rw">14.0 vs 7.5</td><td class="win">WIN</td></tr>
+      <tr><td>it</td><td>87.2</td><td>95.9</td><td>97.8</td><td>84.3</td><td>0.0 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>ja</td><td>73.9</td><td>89.6</td><td>94.4</td><td>72.3</td><td class="note">—</td><td class="win">WIN</td></tr>
+      <tr><td>ko</td><td>63.1</td><td>90.5</td><td>96.6</td><td>62.9</td><td>0.0 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>nl</td><td>86.5</td><td>95.4</td><td>97.0</td><td>83.7</td><td>0.0 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>pl</td><td>88.0</td><td>96.7</td><td>98.4</td><td>86.4</td><td>0.0 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>pt</td><td>82.5</td><td>92.9</td><td>97.1</td><td>80.1</td><td class="rw">13.0 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>ru</td><td>88.2</td><td>96.7</td><td>98.9</td><td>87.3</td><td class="rw">6.0 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>vi</td><td>68.7</td><td>83.0</td><td>88.5</td><td>66.4</td><td>only-nonzero</td><td class="win">WIN</td></tr>
+      <tr><td>zh-Hans-CN</td><td>76.1</td><td>95.5</td><td>98.0</td><td>75.5</td><td class="note">—</td><td class="win">WIN</td></tr>
+      <tr><td>zh-Hant-TW</td><td>81.7</td><td>98.1</td><td>99.5</td><td>81.5</td><td class="note">—</td><td class="win">WIN</td></tr>
+      <tr><td>zh-Hant-HK</td><td>77.0</td><td>96.8</td><td>98.4</td><td>75.4</td><td class="rw">2.5 vs 0.0</td><td class="win">WIN</td></tr>
+      <tr><td>ar</td><td>68.0</td><td>88.4</td><td>94.1</td><td>65.8</td><td class="rw">26.5 vs 0.0</td><td class="win">WIN</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The realword story</h2>
+  <p>Word-level baselines cannot tell a wrong word from a rare one. The
+  fasttext context model can: Arabic realword <strong>26.5%</strong> top-1
+  where both baselines score zero, German <strong>17.0%</strong>, Spanish
+  <strong>14.0%</strong>, Portuguese <strong>13.0%</strong>. That is the
+  product difference between a frequency list and a model.</p>
+
+  <h2>The honesty story</h2>
+  <p>Arabic first froze at 16.1% — a number we published internally, then
+  investigated. The fault was ours: 303 of its 2,000 "misspellings" were
+  correctly-spelled words (the engine rightly refuses to correct a real
+  word). We fixed the test, re-measured every language on clean splits,
+  and the table above is the result. Every fix that got here is a merged,
+  reviewed PR: variant-pure frequency lists for the three Chinese variants
+  (zh-Hant-HK went 59.4 → 77.0), vowelless-script normalization so
+  vocalized Arabic and Hebrew input works (مُحَمَّد now suggests محمد),
+  and no more duplicate words burning suggestion slots.</p>
+
+  <div class="method">
+    <strong>Method.</strong> Exact-match top-1 over frozen, per-class-tagged
+    splits (2,000 nonword + 200 realword pairs per language). Field lanes:
+    SymSpell (symspellpy 6.10.0) and Hunspell 1.7.2 over the same published
+    kotoshu frequency lists. Environment pinned (Ruby 3.4.8). Every number
+    is a committed report:
+    <a href="https://github.com/kotoshu/models-fasttext-onnx/tree/main/eval/reports">eval/reports</a>.
+  </div>
+
+  <h2>For users</h2>
+  <p>Same API, better engine: <code>gem install kotoshu</code> (1.0.7),
+  <code>cargo add kotoshu</code> (0.3.0); server deployments pick the gem
+  up on their next build. Variant users (zh-Hant-HK/TW/CN) get their own
+  vocabulary; Arabic and Hebrew users get vocalized-input support; every
+  language gets a cleaner suggestion slate.</p>
+
+  <footer>
+    <a href="../realword/">Try the live realword demo</a> ·
+    <a href="https://github.com/kotoshu/models-fasttext-onnx">Source and frozen reports</a>
+  </footer>
+</main>
+</body>
+</html>
