@@ -2,9 +2,13 @@
 
 ## Status
 
-authored (2026-09-22). This file is the execution graph for S1-S9: what
-depends on what, which gate freezes each node, and what "done" means
-for the whole program. Update it whenever a gate verdict lands.
+authored (2026-09-22); updated 2026-09-29 — **S8 CLOSED: the wave-2
+gate is frozen 16/16** (every language ≥ every field lane on nonword
+and realword; eval/reports/verdict-table.md). Releases shipped from
+the S8 baseline: gem 1.0.7, kotoshu-rs 0.3.0, kotoshu-server 1.1.0;
+results page live (kotoshu.org/models-fasttext-onnx/wave2/). The
+closing program is TODO.final; S2/S3/S9 gates now cite the frozen
+S8 numbers as the bar to beat.
 
 ## The graph
 
