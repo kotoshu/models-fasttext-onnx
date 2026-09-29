@@ -165,6 +165,13 @@ def translit_capability(lang: str):
 
 
 @app.local_entrypoint()
+def spawn_translit(langs: str = "ar"):
+    """Fire-and-forget the translit capability measurement."""
+    handles = [translit_capability.spawn(lang) for lang in langs.split(",")]
+    print("spawned capability:", [h.object_id for h in handles])
+
+
+@app.local_entrypoint()
 def spawn(langs: str = ""):
     """Fire-and-forget: launch lanes server-side; safe to close the
     terminal immediately. Reports persist in the kotoshu-bench-reports
@@ -205,16 +212,20 @@ def collect():
     vol = modal.Volume.from_name("kotoshu-bench-reports")
     names = [e.path for e in vol.listdir("/") if e.path.endswith(".json")]
     for name in sorted(names):
-        lang = (Path(name).name
-                .removeprefix("suggest-benchmark-")
-                .removesuffix("-wave2.json"))
-        out = LOCAL_REPO / f"eval/reports/suggest-benchmark-{lang}-wave2.json"
+        base = Path(name).name.removesuffix(".json")
+        out = LOCAL_REPO / f"eval/reports/{base}.json"
         with open(out, "wb") as fh:
             for chunk in vol.read_file(name):
                 fh.write(chunk)
         report = json.loads(out.read_text())
-        nw = report["engines"]["kotoshu"]["nonword"]
-        print(f"{lang}: kotoshu nonword top1={nw['top1']}")
+        ks = report["engines"]["kotoshu"]
+        if "nonword" in ks:
+            print(f"{base}: kotoshu nonword top1={ks['nonword']['top1']}")
+        else:
+            print(f"{base}: kotoshu top1={ks.get('top1')}")
+        # cleanup: the collect also fetches stray FAILED markers
+    for marker in (LOCAL_REPO / "eval/reports").glob("FAILED-*.txt"):
+        marker.unlink()
 
 
 @app.local_entrypoint()

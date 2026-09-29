@@ -1,0 +1,17 @@
+{
+ "spec": "kotoshu.translit-capability/v1",
+ "language": "ar",
+ "class": "translit (romanization typo -> native word)",
+ "engines": {
+  "kotoshu": {
+   "top1": 0.789,
+   "top5": 0.8055,
+   "n": 2000
+  },
+  "symspell": {
+   "top1": 0.024,
+   "top5": 0.024,
+   "n": 2000
+  }
+ }
+}
