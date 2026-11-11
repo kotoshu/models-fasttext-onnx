@@ -48,7 +48,7 @@ jobs:
               )
               try:
                   with urllib.request.urlopen(req, timeout=60) as resp:
-                      etag = resp.headers.get("ETag")
+                      etag = (resp.headers.get("ETag") or "").strip('"')
                       size = resp.headers.get("Content-Length")
               except Exception as exc:
                   drift_lines.append(
@@ -65,7 +65,7 @@ jobs:
                   continue
 
               changes = []
-              if info["etag"] is not None and info["etag"] != etag:
+              if info["etag"] is not None and info["etag"].strip('"') != etag:
                   changes.append(f"etag `{info['etag']}` -> `{etag}`")
               if info["size_bytes"] is not None and info["size_bytes"] != int(size):
                   changes.append(f"size {info['size_bytes']} -> {size}")
