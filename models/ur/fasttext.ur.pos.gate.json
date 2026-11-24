@@ -1,0 +1,6 @@
+{
+ "heldout_tokens": 705,
+ "correct": 485,
+ "accuracy": 0.6879,
+ "note": "PIPELINE VALIDATION ONLY — accuracy gate deferred until the 100K gold arrives"
+}
