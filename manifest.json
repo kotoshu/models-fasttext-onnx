@@ -2,7 +2,7 @@
   "generated_at": "2026-09-17T18:39:44Z",
   "language_count": 60,
   "repo_version": "v1",
-  "resource_count": 402,
+  "resource_count": 399,
   "resources": {
     "models/ar/fasttext.ar.fluency.onnx": {
       "conversion_method": "fasttext_to_onnx.py",
@@ -3934,6 +3934,20 @@
       "size": 2198260,
       "source": "zh-hant-tw.bin (fastText skipgram dim=300 minn=1 maxn=3 bucket=2M epoch=5, Modal 16-core)",
       "type": "vocab"
+    },
+    "models/ur/fasttext.ur.pos.onnx": {
+      "size": 3242848,
+      "sha256": "97f82f112897530322c90d5a379e97bbaea15067b19042783856f7402964a879",
+      "language": "ur",
+      "type": "onnx",
+      "source": "FastText Common Crawl"
+    },
+    "models/ur/fasttext.ur.pos.vocab.json": {
+      "size": 13223,
+      "sha256": "9e9b98e89835dc4e6e572035561cb17c63756bdc82947f2a3358c95959774ed0",
+      "language": "ur",
+      "type": "vocab",
+      "source": "FastText Common Crawl"
     }
   },
   "version": 1
